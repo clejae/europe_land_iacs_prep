@@ -85,7 +85,7 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
 
     ## Reproject file
     print("Reprojecting.")
-    iacs = iacs.to_crs(4326)
+    iacs = iacs.to_crs(4326) # WGS 84
 
     ## Check if all crops were classified
     check = iacs.loc[iacs["EC_hcat_c"].isna()].copy()
@@ -145,6 +145,8 @@ def main():
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
     print("end: " + etime)
+
+    # POSTGRESQL Database
 
 
 if __name__ == '__main__':

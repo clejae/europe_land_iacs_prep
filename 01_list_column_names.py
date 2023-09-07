@@ -94,7 +94,7 @@ def list_column_names_of_iacs_data_in_dir(in_dir, out_pth, encoding=None, ignore
     # Get list of all IACS geospatial data in folder
     iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
 
-    # Drop files that should be ignores
+    # Drop files that should be ignored
     if ignore_files_descr:
         iacs_files = [file for file in iacs_files if ignore_files_descr not in file]
 

@@ -65,7 +65,7 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
     ## Get list of IACS files
     iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
 
-    # Drop files that should be ignores
+    # Drop files that should be ignored
     if ignore_files_descr:
         iacs_files = [file for file in iacs_files if ignore_files_descr not in file]
 
