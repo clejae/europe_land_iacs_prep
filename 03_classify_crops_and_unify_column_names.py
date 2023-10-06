@@ -87,6 +87,10 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
     print("Reprojecting.")
     iacs = iacs.to_crs(4326) # WGS 84
 
+    ## Classify entries with no crop as unkown
+    iacs.loc[iacs["crop_name"].isna(), "EC_hcat_n"] = "not_known_and_other"
+    iacs.loc[iacs["crop_name"].isna(), "EC_hcat_c"] = 3399000000
+
     ## Check if all crops were classified
     check = iacs.loc[iacs["EC_hcat_c"].isna()].copy()
     unique_crops = check["crop_name"].unique()
