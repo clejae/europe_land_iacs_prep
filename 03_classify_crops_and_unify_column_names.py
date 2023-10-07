@@ -33,6 +33,8 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
     tr_df = pd.read_excel(col_translate_pth)
     cl_df = pd.read_excel(crop_class_pth)
 
+
+
     ## Optional: Subset the columns that should be in the final file
     print("Unifying column names.")
     tr_df = tr_df.loc[tr_df["prelim"] == 1].copy()
@@ -53,18 +55,26 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
         iacs["field_id"] = range(len(iacs))
 
     ## Merge on crop name if it is availalbe in IACS data
-    ## Then it is also likely it is available in classification table but I check anyways
+    ## Then it is also likely it is available in classification table but we check anyways
     print("Classifying crops.")
     if ("crop_name" in iacs.columns) & ("crop_name" in cl_df.columns):
         print("Classifying (i.e. merging) on crop name.")
         if ("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns):
             ## Drop crop_code because otherwise it will occur twice with appendic _x and _y
             iacs.drop(columns="crop_code", inplace=True)
+        ## As we are classifying on crop name, we drop duplicates that might have arised, because of different codes
+        cl_df.drop_duplicates(subset=["crop_name"], inplace=True)
+        if iacs["crop_name"].dtype != 'object':
+            iacs["crop_name"] = iacs["crop_name"].astype(int)
         iacs = pd.merge(iacs, cl_df, how="left", on="crop_name")
     elif ("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns):
         print("Classifying (i.e. merging) on crop code")
         if ("crop_name" in iacs.columns) & ("crop_name" in cl_df.columns):
             iacs.drop(columns="crop_name", inplace=True)
+        if iacs["crop_code"].dtype != 'object':
+            iacs["crop_code"] = iacs["crop_code"].astype(int)
+        ## As we are classifying on crop codes, we drop duplicates that might have arised, because of different names
+        cl_df.drop_duplicates(subset=["crop_code"], inplace=True)
         iacs = pd.merge(iacs, cl_df, how="left", on="crop_code")
     else:
         warnings.warn("Could not classify the crop names or crop codes. Either one of them has to be in the IACS file and the classification table.")
@@ -91,6 +101,10 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
     iacs.loc[iacs["crop_name"].isna(), "EC_hcat_n"] = "not_known_and_other"
     iacs.loc[iacs["crop_name"].isna(), "EC_hcat_c"] = 3399000000
 
+    ## Create output folder
+    folder = os.path.dirname(iacs_new_pth)
+    helper_functions.create_folder(folder)
+
     ## Check if all crops were classified
     check = iacs.loc[iacs["EC_hcat_c"].isna()].copy()
     unique_crops = check["crop_name"].unique()
@@ -100,8 +114,6 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
 
     ## Write out
     print("Writing out.")
-    folder = os.path.dirname(iacs_new_pth)
-    helper_functions.create_folder(folder)
     iacs.to_file(iacs_new_pth, encoding=file_encoding)
 
 
@@ -114,7 +126,15 @@ def main():
     run_dict = {
         # "BE/FLA": {"region_id": "BE_FLA", "file_encoding": "utf-8"},
         # "AT": {"region_id": "AT", "file_encoding": "utf-8"},
-        "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1"},
+        # "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1"},
+        # "SI": {"region_id": "SI", "file_encoding": "utf-8"},
+        # "NL": {"region_id": "NL", "file_encoding": "utf-8"},
+        # "FI": {"region_id": "FI", "file_encoding": "ISO-8859-1"},
+
+        ## Here are 9 crops missing in the crop classification -- need to be added
+        "LV": {"region_id": "LV", "file_encoding": "utf-8"},
+        ## Here is some problem with the crop name column of the years 2021 and after. We need to find the right column
+        "SK": {"region_id": "SK", "file_encoding": "utf-8", "skip_years": [2018, 2019, 2020]},
     }
 
     ## Loop over country codes in dict for processing
@@ -124,6 +144,10 @@ def main():
         col_translate_pth = f"data/tables/{region_id}_column_name_translation.xlsx"
         crop_class_pth = f"{CROP_CLASSIFICATION_FOLDER}/{region_id}_crop_classification_final.xlsx"
         file_encoding = run_dict[country_code]["file_encoding"]
+        if "skip_years" in run_dict[country_code]:
+            skip_years = run_dict[country_code]["skip_years"]
+        else:
+            skip_years = []
 
         ## Get list of all available files
         in_dir = fr"data\vector\IACS\{country_code}"
@@ -136,6 +160,9 @@ def main():
         for i, iacs_pth in enumerate(iacs_files):
             print(f"{i + 1}/{len(iacs_files)} - Processing - {iacs_pth}")
             year = helper_functions.get_year_from_path(iacs_pth)
+            if int(year) in skip_years:
+                print(f"Skipping year {year}")
+                continue
             unify_column_names(
                 iacs_pth=iacs_pth,
                 file_encoding=file_encoding,
