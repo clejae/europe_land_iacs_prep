@@ -10,6 +10,18 @@ def list_geospatial_data_in_dir(dir):
 
     return files_grabbed
 
+def list_csv_files_in_dir(dir):
+
+    import glob
+
+    types = ('**/*.csv', '*.csv')  # the tuple of file types
+    files_grabbed = []
+    for files in types:
+        files_grabbed.extend(glob.glob(rf"{dir}\{files}"))
+
+    return files_grabbed
+
+
 
 def create_folder(directory):
     """
