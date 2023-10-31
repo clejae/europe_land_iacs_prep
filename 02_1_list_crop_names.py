@@ -92,21 +92,46 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
         col_year = f"{region_id}_{year}"
         col_dict = dict(zip(tr_df["column_name"], tr_df[col_year]))
 
+        ## create a list of crop names and crop codes, so if multiple crop columns are provided (and separated by "|")
+        ## then they can be looped over
+        if type(col_dict["crop_name"]) != float:
+            col_dict["crop_name"] = col_dict["crop_name"].split("|")
+        if type(col_dict["crop_code"]) != float:
+            col_dict["crop_code"] = col_dict["crop_code"].split("|")
+
         if (type(col_dict["crop_name"]) == float) & (type(col_dict["crop_code"]) == float):
             print(F"No crop name or crop type column in {path}. Skipping.")
             continue
 
         ## Loop over features to derive crop names of current file
         for feat in lyr:
+            names = []
+            codes = []
             if type(col_dict["crop_code"]) != float:
-                crop_code = feat.GetField(col_dict["crop_code"])
+                for c_code in col_dict["crop_code"]:
+                    crop_code = feat.GetField(c_code)
+                    codes.append(crop_code)
             else:
                 crop_code = ""
+                codes.append(crop_code)
             if type(col_dict["crop_name"]) != float:
-                crop_name = feat.GetField(col_dict["crop_name"])
+                for c_name in col_dict["crop_name"]:
+                    crop_name = feat.GetField(c_name)
+                    names.append(crop_name)
             else:
                 crop_name = ""
-            res_lst.append((crop_code, crop_name))
+                names.append(crop_name)
+
+            if len(names) == len(codes):
+                for i, name in enumerate(names):
+                    res_lst.append((codes[i], name))
+            elif len(names) > len(codes):
+                for i, name in enumerate(names):
+                    res_lst.append(("", name))
+            elif len(codes) > len(names):
+                for i, code in enumerate(codes):
+                    res_lst.append((code, ""))
+
         lyr.ResetReading()
         ds = None
 
@@ -341,12 +366,72 @@ def main():
         #     "eurocrops_pth": False,
         #     "file_encoding": "utf-8",
         # },
-        "FR/FR": {
-            "region_id": "FR_FR",
-            "from_lang": "fr",
+        # "FR/FR": {
+        #     "region_id": "FR_FR",
+        #     "from_lang": "fr",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8",
+        #     "ignore_files_descr": "ILOTS_ANONYMES"
+        # },
+        # "PT/ALE": {
+        #     "region_id": "PT_ALE",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        "PT/ALG": {
+            "region_id": "PT_ALG",
+            "from_lang": "pt",
             "eurocrops_pth": True,
-            "file_encoding": "utf-8",
-            "ignore_files_descr": "ILOTS_ANONYMES"
+            "file_encoding": "utf-8"
+        },
+        "PT/AML": {
+            "region_id": "PT_AML",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/CE": {
+            "region_id": "PT_CE",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/CEN": {
+            "region_id": "PT_CEN",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/CES": {
+            "region_id": "PT_CES",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/NO": {
+            "region_id": "PT_NO",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/NON": {
+            "region_id": "PT_NON",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/NOS": {
+            "region_id": "PT_NOS",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/PT": {
+            "region_id": "PT_PT",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
         }
     }
 
