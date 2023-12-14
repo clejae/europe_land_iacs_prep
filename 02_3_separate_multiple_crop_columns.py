@@ -23,6 +23,31 @@ os.chdir(WD)
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 
+def pt_combine_crop_codes_with_crop_names(crop_codes_pth, crop_names_pth):
+
+    ## Load input
+    codes_df = pd.read_csv(crop_codes_pth)
+    names_df = pd.read_excel(crop_names_pth)
+
+    ## Save backup of original codes df as it takes quite long to create
+
+    ## Merge in both ways to identify possible misses
+    merge_df1 = pd.merge(names_df, codes_df, "left", left_on="CTnum", right_on="crop_code")
+    print(f"There are {len(merge_df1.loc[merge_df1['crop_code'].isna()])} entries in the {crop_names_pth} that don't occur in the IACS data.")
+    miss_df = merge_df1.loc[merge_df1['crop_code'].isna()].copy()
+    merge_df2 = pd.merge(codes_df[["crop_code"]], names_df, "left", left_on="crop_code", right_on="CTnum")
+    print(f"There are {len(merge_df2.loc[merge_df2['CTnum'].isna()])} entries in the IACS data that don't occur in the {crop_names_pth}.")
+
+    ## Clean the second merge-df and concatenate with misses in the other merge-df
+    merge_df2 = merge_df2[["crop_code", "CT_português", "CT"]].copy()
+    miss_df = miss_df[["CTnum", "CT_português", "CT"]].copy()
+    miss_df.rename(columns={"CTnum": "crop_code", "CT_português": "crop_name",  "CT": "translated_name"}, inplace=True)
+    merge_df2.rename(columns={"CT_português": "crop_name", "CT": "translated_name"}, inplace=True)
+    out_df = pd.concat([merge_df2, miss_df])
+    out_df.dropna(subset="crop_code", inplace=True)
+
+    ## Write out
+    out_df.to_csv(crop_codes_pth, index=False)
 
 def main():
     stime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
@@ -30,12 +55,43 @@ def main():
     os.chdir(WD)
 
     run_dict = {
-        "PT/ALE": {
-            "region_id": "PT_ALE",
+        ## The portugese files sometimes come with fieldblocks and sometimes with fields - not all years need to be separated
+        "PT/PT": {
+            "region_id": "PT_PT",
             "file_encoding": "utf-8",
-            "skip_years": [2018, 2019, 2020, 2021, 2022],
-            "ignore_files_descr":  "_sep_.gpkg"
+            "pt_special_function": pt_combine_crop_codes_with_crop_names
         }
+        # "PT/ALE": {
+        #     "region_id": "PT_ALE",
+        #     "file_encoding": "utf-8",
+        #     "skip_years": [2018, 2019, 2020, 2021, 2022],
+        #     "ignore_files_descr":  "_sep_.gpkg",
+        # "PT/ALG": {
+        #     "region_id": "PT_ALG",
+        #     "file_encoding": "utf-8"},
+        # "PT/AML": {
+        #     "region_id": "PT_AML",
+        #     "file_encoding": "utf-8",
+        #     "ignore_files_descr": "_sep_.gpkg"},
+        # "PT/CE": {
+        #     "region_id": "PT_CE",
+        #     "file_encoding": "utf-8"},
+        # "PT/CEN": {
+        #     "region_id": "PT_CEN",
+        #     "file_encoding": "utf-8"},
+        # "PT/CES": {
+        #     "region_id": "PT_CES",
+        #     "file_encoding": "utf-8"},
+        # "PT/NO": {
+        #     "region_id": "PT_NO",
+        #     "file_encoding": "utf-8"},
+        # "PT/NON": {
+        #     "region_id": "PT_NON",
+        #     "file_encoding": "utf-8"},
+        # "PT/NOS": {
+        #     "region_id": "PT_NOS",
+        #     "file_encoding": "utf-8"},
+
     }
 
     for country_code in run_dict:
@@ -86,8 +142,17 @@ def main():
             if type(col_dict["crop_code"]) != float:
                 col_dict["crop_code"] = col_dict["crop_code"].split("|")
 
+            target_column = None
+            if type(col_dict["crop_name"]) != float and len(col_dict["crop_name"]) > 1:
+                target_column = "crop_name"
+            elif type(col_dict["crop_code"]) != float and len(col_dict["crop_code"]) > 1:
+                target_column = "crop_code"
+            else:
+                print("Only one target column ('crop_name' or 'crop_code') provided. Nothing to be done.")
+                continue
+
             ## If multiple crop name columns are provided, then separate the additional crop columns into a csv
-            if len(col_dict["crop_name"]) > 1:
+            if target_column:
                 print("Multiple crop columns provided. Separating them into csv.")
                 ## Create separated file
                 ## Open file and layer
@@ -106,7 +171,7 @@ def main():
                     tr_df.to_excel(col_translate_pth)
 
                 ## loop over the crop columns
-                for col in col_dict["crop_name"][1:]:
+                for col in col_dict[target_column][1:]:
                     cols.remove(col)
                     cols_csv.append(col)
 
@@ -119,7 +184,7 @@ def main():
                 gdf.to_file(root + "_sep.gpkg")
 
                 ## melt additional crop columns from wide to long df and save as csv
-                df = pd.melt(df, id_vars=cols_csv[0], value_vars=cols_csv[1:], var_name="crop_number", value_name="crop_name")
+                df = pd.melt(df, id_vars=cols_csv[0], value_vars=cols_csv[1:], var_name="crop_number", value_name=target_column)
                 df.dropna(inplace=True)
                 df.to_csv(root + "_sep.csv", index=False)
 
@@ -137,7 +202,7 @@ def main():
                     new_path = fr"{folder}\{os.path.basename(path)}"
                     os.rename(path, new_path)
             else:
-                print("Only one crop column provided. Nothing to be done.")
+                print("Only one target column ('crop_name' or 'crop_code') provided. Nothing to be done.")
 
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())

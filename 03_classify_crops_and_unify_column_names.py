@@ -45,11 +45,21 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
     col_year = f"{region_id}_{year}"
     col_dict = dict(zip(tr_df.loc[tr_df[col_year].notna(), col_year], tr_df.loc[tr_df[col_year].notna(), "column_name"]))
 
+    ## In some cases, multiple columns are provided (e.g. for crops in field blocks), therefore the dictionary has to
+    ## be corrected.
+    keys = list(col_dict.keys())
+    keys_dict = {i: i.split('|')[0] for i in keys}
+    col_dict = {keys_dict[key]: col_dict[key] for key in keys_dict}
+
     ## Rename columns
     iacs.rename(columns=col_dict, inplace=True)
 
     ## Check if column with field size in ha is already in file. if not create
     if ext in ['.gpkg', '.gdb', '.shp', '.geojson']:
+
+        if not iacs.crs.is_projected:
+            iacs = iacs.to_crs(3857)
+
         if not "field_size" in iacs.columns:
             iacs["field_size"] = iacs.geometry.area / 10000
 
@@ -78,6 +88,8 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
             iacs["crop_code"] = iacs["crop_code"].astype(int)
         ## As we are classifying on crop codes, we drop duplicates that might have arised, because of different names
         cl_df.drop_duplicates(subset=["crop_code"], inplace=True)
+        cl_df.dropna(subset="crop_code", inplace=True)
+        iacs["crop_code"] = iacs["crop_code"].astype(cl_df["crop_code"].dtype)
         iacs = pd.merge(iacs, cl_df, how="left", on="crop_code")
     else:
         warnings.warn("Could not classify the crop names or crop codes. Either one of them has to be in the IACS file and the classification table.")
@@ -97,14 +109,14 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
             iacs[col] = ""
     iacs = iacs[cols].copy()
 
-    ## Reproject file
-    if ext in ['.gpkg', '.gdb', '.shp', '.geojson']:
-        print("Reprojecting.")
-        iacs = iacs.to_crs(4326) # WGS 84
-
     ## Classify entries with no crop as unkown
     iacs.loc[iacs["crop_name"].isna(), "EC_hcat_n"] = "not_known_and_other"
     iacs.loc[iacs["crop_name"].isna(), "EC_hcat_c"] = 3399000000
+
+    ## Reproject
+    if ext in ['.gpkg', '.gdb', '.shp', '.geojson']:
+        print("Reprojecting.")
+        iacs = iacs.to_crs(4326)  # WGS 84
 
     ## Create output folder
     folder = os.path.dirname(iacs_new_pth)
@@ -144,11 +156,11 @@ def main():
         # "NL": {"region_id": "NL", "file_encoding": "utf-8"},
         # "FI": {"region_id": "FI", "file_encoding": "ISO-8859-1"},
 
-        ## Here are 9 crops missing in the crop classification -- need to be added
+        #
         # "LV": {"region_id": "LV", "file_encoding": "utf-8"},
         ## Here is some problem with the crop name column of the years 2021 and after. We need to find the right column
-        "SK": {"region_id": "SK", "file_encoding": "utf-8", "skip_years": [2018, 2019, 2020, 2021, 2022]},
-        "LV": {"region_id": "LV", "file_encoding": "utf-8"},
+        # "SK": {"region_id": "SK", "file_encoding": "utf-8", "skip_years": [2018, 2019, 2020, 2021, 2022]},
+        # "LV": {"region_id": "LV", "file_encoding": "utf-8"},
 
         # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8",  "ignore_files_descr": "ILOTS_ANONYMES"},
 
@@ -207,6 +219,37 @@ def main():
         #            "col_translate_pth": f"data/tables/FR_SUBREGIONS_column_name_translation_vector.xlsx",
         #            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
         #            "col_transl_descr_overwrite": "FR"},
+
+        # "PT/PT": {"region_id": "PT_PT", "file_encoding": "utf-8"},
+
+        # "PT/ALE": {
+        #     "region_id": "PT_ALE",
+        #     "file_encoding": "utf-8"},
+        # "PT/ALG": {
+        #     "region_id": "PT_ALG",
+        #     "file_encoding": "utf-8"},
+        # "PT/AML": {
+        #     "region_id": "PT_AML",
+        #     "file_encoding": "utf-8"},
+        # "PT/CE": {
+        #     "region_id": "PT_CE",
+        #     "file_encoding": "utf-8"},
+        # "PT/CEN": {
+        #     "region_id": "PT_CEN",
+        #     "file_encoding": "utf-8"},
+        # "PT/CES": {
+        #     "region_id": "PT_CES",
+        #     "file_encoding": "utf-8"},
+        # "PT/NO": {
+        #     "region_id": "PT_NO",
+        #     "file_encoding": "utf-8"},
+        # "PT/NON": {
+        #     "region_id": "PT_NON",
+        #     "file_encoding": "utf-8"},
+        # "PT/NOS": {
+        #     "region_id": "PT_NOS",
+        #     "file_encoding": "utf-8"}
+
     }
 
     ## Loop over country codes in dict for processing
@@ -282,6 +325,7 @@ def main():
         ## For the years 2017-2014, the files are separated into subregions.
         ## There are also field blocks instead of fields. The share of the different crops per block
         ## is provided in a separate csv file. The main crop is provided in the vector file.
+        ## Use  "col_translate_pth" and "crop_class_pth" to provide paths that deviate from the common naming pattern
         # "FR/ARA": {"region_id": "FR_ARA", "file_encoding": "utf-8",
         #            "col_translate_pth": f"data/tables/FR_SUBREGIONS_column_name_translation_csv.xlsx",
         #            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
@@ -334,6 +378,36 @@ def main():
         #            "col_translate_pth": f"data/tables/FR_SUBREGIONS_column_name_translation_csv.xlsx",
         #            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
         #            "col_transl_descr_overwrite": "FR", "csv_sep": ";"},
+        "PT/PT": {
+            "region_id": "PT_PT",
+            "file_encoding": "utf-8"},
+        "PT/ALE": {
+            "region_id": "PT_ALE",
+            "file_encoding": "utf-8"},
+        "PT/ALG": {
+            "region_id": "PT_ALG",
+            "file_encoding": "utf-8"},
+        "PT/AML": {
+            "region_id": "PT_AML",
+            "file_encoding": "utf-8"},
+        "PT/CE": {
+            "region_id": "PT_CE",
+            "file_encoding": "utf-8"},
+        "PT/CEN": {
+            "region_id": "PT_CEN",
+            "file_encoding": "utf-8"},
+        "PT/CES": {
+            "region_id": "PT_CES",
+            "file_encoding": "utf-8"},
+        "PT/NO": {
+            "region_id": "PT_NO",
+            "file_encoding": "utf-8"},
+        "PT/NON": {
+            "region_id": "PT_NON",
+            "file_encoding": "utf-8"},
+        "PT/NOS": {
+            "region_id": "PT_NOS",
+            "file_encoding": "utf-8"}
     }
 
     ## Loop over country codes in dict for processing

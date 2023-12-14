@@ -302,6 +302,32 @@ def get_french_values_from_csv(in_dir, out_pth):
     out_df.to_csv(out_pth, index=False)
 
 
+def pt_combine_crop_codes_with_crop_names(crop_codes_pth, crop_names_pth):
+
+    ## Load input
+    codes_df = pd.read_csv(crop_codes_pth)
+    names_df = pd.read_excel(crop_names_pth)
+
+    ## Save backup of original codes df as it takes quite long to create
+
+    ## Merge in both ways to identify possible misses
+    merge_df1 = pd.merge(names_df, codes_df, "left", left_on="CTnum", right_on="crop_code")
+    print(f"There are {len(merge_df1.loc[merge_df1['crop_code'].isna()])} entries in the {crop_names_pth} that don't occur in the IACS data.")
+    miss_df = merge_df1.loc[merge_df1['crop_code'].isna()].copy()
+    merge_df2 = pd.merge(codes_df[["crop_code"]], names_df, "left", left_on="crop_code", right_on="CTnum")
+    print(f"There are {len(merge_df2.loc[merge_df2['CTnum'].isna()])} entries in the IACS data that don't occur in the {crop_names_pth}.")
+
+    ## Clean the second merge-df and concatenate with misses in the other merge-df
+    merge_df2 = merge_df2[["crop_code", "CT_português", "CT"]].copy()
+    miss_df = miss_df[["CTnum", "CT_português", "CT"]].copy()
+    miss_df.rename(columns={"CTnum": "crop_code", "CT_português": "crop_name",  "CT": "translated_name"}, inplace=True)
+    merge_df2.rename(columns={"CT_português": "crop_name", "CT": "translated_name"}, inplace=True)
+    out_df = pd.concat([merge_df2, miss_df])
+    out_df.dropna(subset="crop_code", inplace=True)
+
+    ## Write out
+    out_df.to_csv(crop_codes_pth, index=False)
+
 def main():
     stime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
@@ -360,7 +386,7 @@ def main():
         #     "file_encoding": "utf-8"
         # }
         # "FR/SUBREGIONS": {
-        #     "special_function": get_french_values_from_csv,
+        #     "fr_special_function": get_french_values_from_csv,
         #     "region_id": "FR_SUBREGIONS",
         #     "from_lang": "fr",
         #     "eurocrops_pth": False,
@@ -379,60 +405,64 @@ def main():
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
         # },
-        "PT/ALG": {
-            "region_id": "PT_ALG",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/AML": {
-            "region_id": "PT_AML",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/CE": {
-            "region_id": "PT_CE",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/CEN": {
-            "region_id": "PT_CEN",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/CES": {
-            "region_id": "PT_CES",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/NO": {
-            "region_id": "PT_NO",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/NON": {
-            "region_id": "PT_NON",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/NOS": {
-            "region_id": "PT_NOS",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
-        "PT/PT": {
-            "region_id": "PT_PT",
-            "from_lang": "pt",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        }
+        # "PT/ALG": {
+        #     "region_id": "PT_ALG",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        # "PT/AML": {
+        #     "region_id": "PT_AML",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        # "PT/CE": {
+        #     "region_id": "PT_CE",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        # "PT/CEN": {
+        #     "region_id": "PT_CEN",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        # "PT/CES": {
+        #     "region_id": "PT_CES",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        # "PT/NO": {
+        #     "region_id": "PT_NO",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+
+        # "PT/NON": {
+        #     "region_id": "PT_NON",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+
+        # "PT/NOS": {
+        #     "region_id": "PT_NOS",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+
+        # "PT/PT": {
+        #     "region_id": "PT_PT",
+        #     "from_lang": "pt",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8",
+        #     "pt_special_function": pt_combine_crop_codes_with_crop_names
+        # }
     }
 
     for country_code in run_dict:
@@ -449,20 +479,28 @@ def main():
         ## start: Tue, 01 Aug 2023 13:56:06
         ## end: Tue, 01 Aug 2023 14:17:21
 
-        if "special_function" in run_dict[country_code]:
+        # if "fr_special_function" in run_dict[country_code]:
+        #     # call the function
+        #     run_dict[country_code]["fr_special_function"](
+        #         in_dir=fr"data\vector\IACS\FR",
+        #         out_pth=rf"data\tables\crop_names\FR_SUBREGIONS_unique_crop_names.csv")
+        # else:
+        #     list_crop_names_ogr(
+        #         in_dir=fr"data\vector\IACS\{country_code}",
+        #         region_id=region_id,
+        #         col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
+        #         out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
+        #         encoding=encoding,
+        #         ignore_files_descr=ignore_files_descr
+        #     )
+
+        if "pt_special_function" in run_dict[country_code]:
             # call the function
-            run_dict[country_code]["special_function"](
-                in_dir=fr"data\vector\IACS\FR",
-                out_pth=rf"data\tables\crop_names\FR_SUBREGIONS_unique_crop_names.csv")
-        else:
-            list_crop_names_ogr(
-                in_dir=fr"data\vector\IACS\{country_code}",
-                region_id=region_id,
-                col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
-                out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
-                encoding=encoding,
-                ignore_files_descr=ignore_files_descr
-            )
+            run_dict[country_code]["pt_special_function"](
+                crop_codes_pth=r"data\tables\crop_names\PT_PT_unique_crop_names.csv",
+                crop_names_pth=r"data\vector\IACS\PT\Crops.xlsx"
+               )
+
         ## Debug mode, 2 files
         ## start: Tue, 01 Aug 2023 14:19:10
         ## end: Tue, 01 Aug 2023 14:21:11
