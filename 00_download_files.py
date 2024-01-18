@@ -1,9 +1,13 @@
 import os
 import urllib
 import py7zr
+import zipfile
 import shutil
 import glob
+
 import helper_functions
+
+########## FRANCE ##########
 
 ## Define download links for France
 download_lst = ["https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_REGION_PACK_DIFF_2011$RPG_1-0__SHP_LAMB93_R84-2011_2011-01-01/file/RPG_1-0__SHP_LAMB93_R84-2011_2011-01-01.7z",
@@ -139,3 +143,19 @@ for path in output_lst:
     for file in files:
         shutil.move(file, out_pth)
 
+
+########## SPAIN ##########
+districts = ["CASTELLON", "VALLADOLID", "VIZCAYA", "ZAMORA", "ZARAGOZA"]
+
+for district in districts:
+    print(district)
+    unzip_list = glob.glob(fr"Q:\Europe-LAND\data\vector\IACS\ES\{district}\*.zip")
+
+    for i, path in enumerate(unzip_list):
+        print(f"{i}/{len(unzip_list)} - UZ {path}")
+        ## Get folder
+        folder = rf"Q:\Europe-LAND\data\vector\IACS\ES\{district}"
+
+        ## Unzip
+        with zipfile.ZipFile(path, 'r') as zip_ref:
+            zip_ref.extractall(folder)

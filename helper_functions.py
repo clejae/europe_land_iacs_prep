@@ -2,7 +2,7 @@ def list_geospatial_data_in_dir(dir):
 
     import glob
 
-    types = ('**/*.gpkg', '**/*.gdb', '**/*.shp', '**/*.geojson', '*.gpkg', '*.gdb', '*.shp', '*.geojson')  # the tuple of file types
+    types = ('**/*.gpkg', '**/*.gdb', '**/*.shp', '**/*.geojson',  '*.gpkg', '*.gdb', '*.shp', '*.geojson')  # the tuple of file types
     files_grabbed = []
     for files in types:
         files_grabbed.extend(glob.glob(rf"{dir}\{files}"))

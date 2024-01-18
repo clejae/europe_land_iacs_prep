@@ -23,7 +23,7 @@ COL_NAMES_FOLDER = r"data\tables\column_names"
 CROP_CLASSIFICATION_FOLDER = r"data\tables\crop_classifications"
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
-def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pth, region_id, year, iacs_new_pth, csv_sep=","):
+def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pth, region_id, year, iacs_new_pth, csv_sep=",", pre_transformation_crs=None):
     print("Unifying column names, classifying crops, reprojecting and saving as gpkg (or csv if input is csv).")
 
     ## Open files
@@ -56,6 +56,10 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
 
     ## Check if column with field size in ha is already in file. if not create
     if ext in ['.gpkg', '.gdb', '.shp', '.geojson']:
+
+        if pre_transformation_crs:
+            iacs.crs = None
+            iacs.set_crs(epsg=pre_transformation_crs, inplace=True)
 
         if not iacs.crs.is_projected:
             iacs = iacs.to_crs(3857)
@@ -156,7 +160,6 @@ def main():
         # "NL": {"region_id": "NL", "file_encoding": "utf-8"},
         # "FI": {"region_id": "FI", "file_encoding": "ISO-8859-1"},
 
-        #
         # "LV": {"region_id": "LV", "file_encoding": "utf-8"},
         ## Here is some problem with the crop name column of the years 2021 and after. We need to find the right column
         # "SK": {"region_id": "SK", "file_encoding": "utf-8", "skip_years": [2018, 2019, 2020, 2021, 2022]},
@@ -249,7 +252,11 @@ def main():
         # "PT/NOS": {
         #     "region_id": "PT_NOS",
         #     "file_encoding": "utf-8"}
-
+        "HR": {
+            "region_id": "HR",
+            "file_encoding": "utf-8",
+            "pre_transformation_crs":3765
+        }
     }
 
     ## Loop over country codes in dict for processing
@@ -286,6 +293,12 @@ def main():
         if ignore_files_descr:
             iacs_files = [file for file in iacs_files if ignore_files_descr not in file]
 
+        ## Get epsg code for input files that are not correctly defined in the files, e.g. in Croatia
+        if "pre_transformation_crs" in run_dict[country_code]:
+            pre_transformation_crs = run_dict[country_code]["pre_transformation_crs"]
+        else:
+            pre_transformation_crs = None
+
         ## Temporary, if you want to subset the list.
         # iacs_files = iacs_files[12:13]
 
@@ -314,6 +327,7 @@ def main():
                 region_id=region_id,
                 year=year,
                 iacs_new_pth=iacs_new_pth,
+                pre_transformation_crs=pre_transformation_crs
             )
 
     ####################################################################################################################
@@ -378,36 +392,36 @@ def main():
         #            "col_translate_pth": f"data/tables/FR_SUBREGIONS_column_name_translation_csv.xlsx",
         #            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
         #            "col_transl_descr_overwrite": "FR", "csv_sep": ";"},
-        "PT/PT": {
-            "region_id": "PT_PT",
-            "file_encoding": "utf-8"},
-        "PT/ALE": {
-            "region_id": "PT_ALE",
-            "file_encoding": "utf-8"},
-        "PT/ALG": {
-            "region_id": "PT_ALG",
-            "file_encoding": "utf-8"},
-        "PT/AML": {
-            "region_id": "PT_AML",
-            "file_encoding": "utf-8"},
-        "PT/CE": {
-            "region_id": "PT_CE",
-            "file_encoding": "utf-8"},
-        "PT/CEN": {
-            "region_id": "PT_CEN",
-            "file_encoding": "utf-8"},
-        "PT/CES": {
-            "region_id": "PT_CES",
-            "file_encoding": "utf-8"},
-        "PT/NO": {
-            "region_id": "PT_NO",
-            "file_encoding": "utf-8"},
-        "PT/NON": {
-            "region_id": "PT_NON",
-            "file_encoding": "utf-8"},
-        "PT/NOS": {
-            "region_id": "PT_NOS",
-            "file_encoding": "utf-8"}
+        # "PT/PT": {
+        #     "region_id": "PT_PT",
+        #     "file_encoding": "utf-8"},
+        # "PT/ALE": {
+        #     "region_id": "PT_ALE",
+        #     "file_encoding": "utf-8"},
+        # "PT/ALG": {
+        #     "region_id": "PT_ALG",
+        #     "file_encoding": "utf-8"},
+        # "PT/AML": {
+        #     "region_id": "PT_AML",
+        #     "file_encoding": "utf-8"},
+        # "PT/CE": {
+        #     "region_id": "PT_CE",
+        #     "file_encoding": "utf-8"},
+        # "PT/CEN": {
+        #     "region_id": "PT_CEN",
+        #     "file_encoding": "utf-8"},
+        # "PT/CES": {
+        #     "region_id": "PT_CES",
+        #     "file_encoding": "utf-8"},
+        # "PT/NO": {
+        #     "region_id": "PT_NO",
+        #     "file_encoding": "utf-8"},
+        # "PT/NON": {
+        #     "region_id": "PT_NON",
+        #     "file_encoding": "utf-8"},
+        # "PT/NOS": {
+        #     "region_id": "PT_NOS",
+        #     "file_encoding": "utf-8"}
     }
 
     ## Loop over country codes in dict for processing
@@ -480,8 +494,6 @@ def main():
                 iacs_new_pth=csv_new_pth,
                 csv_sep=csv_sep
             )
-
-
 
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())

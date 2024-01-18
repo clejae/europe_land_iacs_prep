@@ -55,7 +55,8 @@ def get_geodata_column_names(path, encoding="utf-8"):
         ".gdb": "OpenFileGDB",
         ".geojson": "GeoJSON",
         ".gpkg": "GPKG",
-        ".shp": "ESRI Shapefile"
+        ".shp": "ESRI Shapefile",
+        ".gml": "GML"
     }
 
     driver = ogr.GetDriverByName(driver_dict[file_extension])
@@ -131,7 +132,7 @@ def list_column_names_of_iacs_data_in_dir(in_dir, out_pth, encoding=None, ignore
             add = max_len - len(res_dict[key])
             for i in range(add):
                 res_dict[key].append("")
-    enc = helper_functions.most_common(enc_lst)
+    # enc = helper_functions.most_common(enc_lst)
 
     ## Save to df and disc
     out_df = pd.DataFrame.from_dict(res_dict)
@@ -149,6 +150,7 @@ def main():
     run_dict = {
         # "AT": {"file_encoding": "utf-8"},
         # "BE/FLA": {"file_encoding": "utf-8"},
+        "BE/WAL": {"file_encoding": "ISO-8859-1"},
         # "NL": {"file_encoding": "utf-8"},
         # "FI": {"file_encoding": "utf-8"},
         # "DK": {"file_encoding": "ISO-8859-1"},
@@ -170,16 +172,17 @@ def main():
         # "FR/OCC": {"file_encoding": "utf-8"},
         # "FR/PDL": {"file_encoding": "utf-8"},
         # "FR/PRO": {"file_encoding": "utf-8"},
-        "PT/ALE": {"file_encoding": "utf-8"},
-        "PT/ALG": {"file_encoding": "utf-8"},
-        "PT/AML": {"file_encoding": "utf-8"},
-        "PT/CE": {"file_encoding": "utf-8"},
-        "PT/CEN": {"file_encoding": "utf-8"},
-        "PT/CES": {"file_encoding": "utf-8"},
-        "PT/NO": {"file_encoding": "utf-8"},
-        "PT/NON": {"file_encoding": "utf-8"},
-        "PT/NOS": {"file_encoding": "utf-8"},
-        "PT/PT": {"file_encoding": "utf-8"}
+        # "PT/ALE": {"file_encoding": "utf-8"},
+        # "PT/ALG": {"file_encoding": "utf-8"},
+        # "PT/AML": {"file_encoding": "utf-8"},
+        # "PT/CE": {"file_encoding": "utf-8"},
+        # "PT/CEN": {"file_encoding": "utf-8"},
+        # "PT/CES": {"file_encoding": "utf-8"},
+        # "PT/NO": {"file_encoding": "utf-8"},
+        # "PT/NON": {"file_encoding": "utf-8"},
+        # "PT/NOS": {"file_encoding": "utf-8"},
+        # "PT/PT": {"file_encoding": "utf-8"}
+        # "SE": {"file_encoding": "utf-8"}
     }
 
     for country_code in run_dict:

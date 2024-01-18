@@ -223,6 +223,8 @@ def match_crop_names_with_eurocrops_classification(crop_names_pth, eurocrops_cl_
         df_match.sort_values(by="crop_name", inplace=True)
     elif num_ccodes > num_cnames:
         cn_cols = ["crop_code"]
+        datatype = df_cnames["crop_code"].dtype
+        df_eucr["original_code"] = df_eucr["original_code"].astype(datatype)
         df_match = pd.merge(df_cnames[cn_cols], df_eucr[ec_cols + ["original_code"]], how="outer", left_on="crop_code", right_on="original_code")
         df_match.sort_values(by="crop_code", inplace=True)
         df_match.loc[df_match["crop_name"].isna(), "crop_name"] = ""
@@ -463,6 +465,24 @@ def main():
         #     "file_encoding": "utf-8",
         #     "pt_special_function": pt_combine_crop_codes_with_crop_names
         # }
+        # "BE/WAL": {
+        #    "region_id": "BE_WAL",
+        #    "from_lang": "fr",
+        #    "eurocrops_pth": False,
+        #     "file_encoding": "ISO-8859-1"
+        # },
+        # "SE": {
+        #    "region_id": "SE",
+        #    "from_lang": "sv",
+        #    "eurocrops_pth": True,
+        #     "file_encoding": "ISO-8859-1"
+        # }
+        "ES": {
+           "region_id": "ES",
+           "from_lang": "es",
+           "eurocrops_pth": False,
+            "file_encoding": "utf-8"
+            }
     }
 
     for country_code in run_dict:
@@ -479,20 +499,20 @@ def main():
         ## start: Tue, 01 Aug 2023 13:56:06
         ## end: Tue, 01 Aug 2023 14:17:21
 
-        # if "fr_special_function" in run_dict[country_code]:
-        #     # call the function
-        #     run_dict[country_code]["fr_special_function"](
-        #         in_dir=fr"data\vector\IACS\FR",
-        #         out_pth=rf"data\tables\crop_names\FR_SUBREGIONS_unique_crop_names.csv")
-        # else:
-        #     list_crop_names_ogr(
-        #         in_dir=fr"data\vector\IACS\{country_code}",
-        #         region_id=region_id,
-        #         col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
-        #         out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
-        #         encoding=encoding,
-        #         ignore_files_descr=ignore_files_descr
-        #     )
+        if "fr_special_function" in run_dict[country_code]:
+            # call the function
+            run_dict[country_code]["fr_special_function"](
+                in_dir=fr"data\vector\IACS\FR",
+                out_pth=rf"data\tables\crop_names\FR_SUBREGIONS_unique_crop_names.csv")
+        else:
+            list_crop_names_ogr(
+                in_dir=fr"data\vector\IACS\{country_code}",
+                region_id=region_id,
+                col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
+                out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
+                encoding=encoding,
+                ignore_files_descr=ignore_files_descr
+            )
 
         if "pt_special_function" in run_dict[country_code]:
             # call the function
@@ -505,13 +525,13 @@ def main():
         ## start: Tue, 01 Aug 2023 14:19:10
         ## end: Tue, 01 Aug 2023 14:21:11
 
-        ## Do this only if NO EuroCrops classification was provided on their github repo
-        ## This derives it from the shapefiles
-        # get_eurocrops_classification(
-        #     eurocrops_pth=path/to/eurocrop_iacs_file_w_classification.shp,
-        #     region_id=region_id,
-        #     col_translate_pth=rf"data\tables\{country_code}_column_name_translation.xlsx",
-        #     out_pth=rf"data\tables\crop_names\{region_id}_EuroCrops_classification.csv")
+        ## Do this only if NO EuroCrops classification was provided on their github repo but a shapefile
+        ## This derives the classification from the shapefile
+        # # get_eurocrops_classification(
+        # #     eurocrops_pth=path/to/eurocrop_iacs_file_w_classification.shp,
+        # #     region_id=region_id,
+        # #     col_translate_pth=rf"data\tables\{country_code}_column_name_translation.xlsx",
+        # #     out_pth=rf"data\tables\crop_names\{region_id}_EuroCrops_classification.csv")
 
         if eurocrops_pth:
             match_crop_names_with_eurocrops_classification(
