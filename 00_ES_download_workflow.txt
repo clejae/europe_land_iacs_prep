@@ -1,0 +1,15 @@
+Workflow for downloading the available spanish IACS data (sp. SIGPAC) with extended (200+) crop classes via QGIS.
+
+Info/experience regarding the "SIGPAC Downloader" plugin:
+Agricultural data is only available on provincial/municipal level. There seem to be two versions of the spanish IACS data, one with only 23 classes and one extended with more than 200 classes. The data for 2023 doesn't include the extended but just 23 separate classes. The data from 2022 has the 200+ classes, however, the option to download the entire province doesn't work for for that year (switches to 2023). Thus, every municipality had to be downloaded individually using the plugin (Data I could find on spanish geoportals / online was only for 2023 and also didn't included the extended crop classes). To automate the download process, I downloaded and wrote a small script in AutoHotkey.
+
+Workflow with Autohotkey:
+install "SIGPAC Downloader" plugin
+install AutoHotkey, have "SIGPAC download-2_listen.ahk" ready
+run and open the plugin in qgis:
+-choose province
+-select first municipality, define location and hit "Descarga" to download, leave Descarga selected afterwards
+-press Ctrl+ALT+U to start the Autohotkey script (it includes a loop which goes through the download window selecting the next municipality of the province and downloading it)
+-double-click on the "SIGPAC download-2_listen.ahk" file to stop it once all files of province are downloaded
+
+-optional: adjust "wait for download" time in script depending on your internet download rate

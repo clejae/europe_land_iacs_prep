@@ -477,19 +477,44 @@ def main():
         #    "eurocrops_pth": True,
         #     "file_encoding": "ISO-8859-1"
         # }
-        "ES": {
-           "region_id": "ES",
-           "from_lang": "es",
-           "eurocrops_pth": False,
-            "file_encoding": "utf-8"
-            }
+        # "ES": {
+        #    "region_id": "ES",
+        #    "from_lang": "es",
+        #    "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        #     }
+        # "BG": {
+        #     "region_id": "BG",
+        #     "from_lang": "bg",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "windows-1251"}
+        # "RO": {
+        #     "region_id": "RO",
+        #     "from_lang": "ro",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8",
+        #
+        # },
+        "CZ": {
+            "region_id": "CZ",
+            "from_lang": "cs",
+            "file_encoding": "ISO-8859-1",
+            "eurocrops_pth": False,
+            "ignore_files_descr": "IACS_Czechia"}
     }
 
+    ## Loop through tasks in run_dict
     for country_code in run_dict:
         print(country_code)
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
         eurocrops_pth = run_dict[country_code]["eurocrops_pth"]
         encoding = run_dict[country_code]["file_encoding"]
+
+        if "skip_list_crop_names" in run_dict[country_code]:
+            skip_list_crop_names = run_dict[country_code]["skip_list_crop_names"]
+        else:
+            skip_list_crop_names = False
+
         if "ignore_files_descr" in run_dict[country_code]:
             ignore_files_descr = run_dict[country_code]["ignore_files_descr"]
         else:
@@ -499,27 +524,28 @@ def main():
         ## start: Tue, 01 Aug 2023 13:56:06
         ## end: Tue, 01 Aug 2023 14:17:21
 
-        if "fr_special_function" in run_dict[country_code]:
-            # call the function
-            run_dict[country_code]["fr_special_function"](
-                in_dir=fr"data\vector\IACS\FR",
-                out_pth=rf"data\tables\crop_names\FR_SUBREGIONS_unique_crop_names.csv")
-        else:
-            list_crop_names_ogr(
-                in_dir=fr"data\vector\IACS\{country_code}",
-                region_id=region_id,
-                col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
-                out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
-                encoding=encoding,
-                ignore_files_descr=ignore_files_descr
-            )
+        if not skip_list_crop_names:
+            if "fr_special_function" in run_dict[country_code]:
+                # call the function
+                run_dict[country_code]["fr_special_function"](
+                    in_dir=fr"data\vector\IACS\FR",
+                    out_pth=rf"data\tables\crop_names\FR_SUBREGIONS_unique_crop_names.csv")
+            else:
+                list_crop_names_ogr(
+                    in_dir=fr"data\vector\IACS\{country_code}",
+                    region_id=region_id,
+                    col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
+                    out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
+                    encoding=encoding,
+                    ignore_files_descr=ignore_files_descr
+                )
 
-        if "pt_special_function" in run_dict[country_code]:
-            # call the function
-            run_dict[country_code]["pt_special_function"](
-                crop_codes_pth=r"data\tables\crop_names\PT_PT_unique_crop_names.csv",
-                crop_names_pth=r"data\vector\IACS\PT\Crops.xlsx"
-               )
+            if "pt_special_function" in run_dict[country_code]:
+                # call the function
+                run_dict[country_code]["pt_special_function"](
+                    crop_codes_pth=r"data\tables\crop_names\PT_PT_unique_crop_names.csv",
+                    crop_names_pth=r"data\vector\IACS\PT\Crops.xlsx"
+                   )
 
         ## Debug mode, 2 files
         ## start: Tue, 01 Aug 2023 14:19:10

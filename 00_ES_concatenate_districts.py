@@ -46,8 +46,9 @@ def combine_subdistricts(in_dir, crop_names_pth, district, year, out_dir):
 
     print("Combining.")
     out_file = pd.concat(file_list)
-
-    out_pth = f"{out_dir}\IACS_{district[:3]}_year.gpkg"
+    out_folder = f"{out_dir}\{district[:3]}"
+    helper_functions.create_folder(out_folder)
+    out_pth = f"{out_folder}\IACS_{district[:3]}_{year}.gpkg"
     print("Writing out to", out_pth)
     out_file.to_file(out_pth, driver="GPKG")
 
@@ -59,10 +60,10 @@ def main():
 
     year = 2022
 
-    districts = [x[0] for x in os.walk(r"data\vector\IACS\ES")]
+    districts = [x[0] for x in os.walk(r"data\vector\IACS\ES_temp")]
     # districts = glob.glob('data/vector/IACS/ES/*/')
-    districts = districts[11:]
-    # districts = ["CASTELLON", "VALLADOLID", "VIZCAYA", "ZAMORA", "ZARAGOZA"]
+    # districts = districts[1:]
+    districts = [x for x in districts if "- VAL" in x]
 
     for district_dir in districts:
         district = os.path.basename(district_dir)

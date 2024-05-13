@@ -150,7 +150,8 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    ## Input for geodata harmonization (in some cases, e.g. France, some csv file have also to be harmonized. see below)
+    ## Input for geodata harmonization (in some cases, e.g. France or Portugal,
+    ## some csv file have also to be harmonized. See below)
 
     run_dict = {
         # "BE/FLA": {"region_id": "BE_FLA", "file_encoding": "utf-8"},
@@ -162,12 +163,12 @@ def main():
 
         # "LV": {"region_id": "LV", "file_encoding": "utf-8"},
         ## Here is some problem with the crop name column of the years 2021 and after. We need to find the right column
-        # "SK": {"region_id": "SK", "file_encoding": "utf-8", "skip_years": [2018, 2019, 2020, 2021, 2022]},
+        # "SK": {"region_id": "SK", "file_encoding": "utf-8", "skip_years": [2016, 2017]}, #"skip_years": [2018, 2019, 2020, 2021, 2022]
         # "LV": {"region_id": "LV", "file_encoding": "utf-8"},
 
         # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8",  "ignore_files_descr": "ILOTS_ANONYMES"},
 
-        ## For the years 2017-2014, the files are separated into subregions.
+        ## For the years 2007-2014, the files are separated into subregions.
         ## There are also field blocks instead of fields. The share of the different crops per block
         ## is provided in a separate csv file. The main crop is provided in the vector file.
         # "FR/ARA": {"region_id": "FR_ARA", "file_encoding": "utf-8",
@@ -251,13 +252,34 @@ def main():
         #     "file_encoding": "utf-8"},
         # "PT/NOS": {
         #     "region_id": "PT_NOS",
-        #     "file_encoding": "utf-8"}
-        "HR": {
-            "region_id": "HR",
-            "file_encoding": "utf-8",
-            "pre_transformation_crs":3765
-        }
+        #     "file_encoding": "utf-8"},
+        # "HR": {
+        #     "region_id": "HR",
+        #     "file_encoding": "utf-8",
+        #     "pre_transformation_crs": 3765,
+        # "SE": {
+        #     "region_id": "SE",
+        #     "file_encoding": "ISO-8859-1"
+        # },
+        # "BE/WAL": {
+        #    "region_id": "BE_WAL",
+        #     "file_encoding": "ISO-8859-1"
+        # },
+        # "ES/ALA": {"region_id": "ES_ALA",
+        #            "file_encoding": "utf-8",
+        #            "col_translate_pth": f"data/tables/ES_column_name_translation.xlsx",
+        #            "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx"},
     }
+
+    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = list(ES_districts["code"])
+    run_dict = {f"ES/{district}": {
+        "region_id": f"ES_{district}",
+        "file_encoding": "utf-8",
+        "col_translate_pth": f"data/tables/ES_column_name_translation.xlsx",
+        "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+        "col_transl_descr_overwrite": "ES"
+    } for district in ES_districts}
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -480,7 +502,10 @@ def main():
             csv_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\IACS-{region_id}-{year}.csv"
 
             ## If an overwrite for the column translation is provided, it means that the columns in the
-            ## column name translation table do not use the original region ID but another one
+            ## column-name translation table do not use the original region ID but another one
+            ## E.g. for France and Spain we use only one column-name translation table, although there are multiple sub-
+            ## regions. Normally, the columns names in the table contain the region code, e.g. ES_ALA_YYYY,
+            ## but because it is only one table for all, it contains only the ES_YYYY
             if "col_transl_descr_overwrite" in run_dict[country_code]:
                 region_id = run_dict[country_code]["col_transl_descr_overwrite"]
 

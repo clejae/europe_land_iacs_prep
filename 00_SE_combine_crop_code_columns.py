@@ -19,13 +19,38 @@ os.chdir(WD)
 def combine_crop_codes_and_add_organic_information():
     df_crops = pd.read_excel(r"data\vector\IACS\SE\crop_codes_prepared.xlsx")
 
-    pth_lst = [r"data\vector\IACS\SE_temp\2020\beslutade_skiften_2020.shp",
-               r"data\vector\IACS\SE_temp\2021\Beslutade_skiften_2021.shp"]
-    # pth_lst = [r"data\vector\IACS\SE_temp\2020\sub_2020.gpkg"]
+    year_dict = {
+        2020: {
+            "path": r"data\vector\IACS\SE_temp\MULTI_KUNDRED_SKIFTE2020_GV.shp",
+            "blockid": "SAMIBLOCK_",
+            "skiftesbok": "SKIFTESBET",
+            "main_crop_id": "GRDKOD_MAR",
+            "sub_crop_id": "GRDKOD_UND"
+        },
+        2021: {
+            "path": r"data\vector\IACS\SE_temp\KUNDRED_SKIFTE_2021.gpkg",
+            "blockid": "SAMIBLOCK_",
+            "skiftesbok": "SKIFTESBET",
+            "main_crop_id": "GRDKOD_MAR",
+            "sub_crop_id": "GRDKOD_UND"
+        },
+        2022: {
+            "path": r"data\vector\IACS\SE_temp\KUNDRED_SKIFTE_2022.gpkg",
+            "blockid": "sami_blockid",
+            "skiftesbok": "skiftesbeteckning",
+            "main_crop_id": "grodkod_markanvandning",
+            "sub_crop_id": "grodkod_under"
+        }
+    }
 
-    for pth in pth_lst:
 
-        year = helper_functions.get_year_from_path(pth)
+    for year in year_dict:
+
+        pth = year_dict[year]["path"]
+        blockid = year_dict[year]["blockid"]
+        skiftesbok = year_dict[year]["skiftesbok"]
+        main_crop_id = year_dict[year]["main_crop_id"]
+        sub_crop_id = year_dict[year]["sub_crop_id"]
 
         print("Reading input", year)
         xl_org = pd.ExcelFile(rf"data\vector\IACS\SE\_organic_SBI-2683 LPIS_parcelid_{year}.xlsx")
@@ -41,9 +66,10 @@ def combine_crop_codes_and_add_organic_information():
 
         # Combine all DataFrames into one
         df_org = pd.concat(list_of_dfs, ignore_index=True)
-        df_org["organic_applied"] = df["Organic applied?"].map({"Y": 1, "N": 0})
+        df_org["organic_applied"] = df_org["Organic applied?"].map({"Y": 1, "N": 0})
 
         gdf = gpd.read_file(pth)
+        gdf["individid"] = gdf[blockid] + gdf[skiftesbok]
 
         print("Adding organic information")
         gdf = pd.merge(gdf, df_org[["LPIS (11)+parcel_id", "organic_applied"]], "left", left_on="individid", right_on="LPIS (11)+parcel_id")
@@ -52,8 +78,8 @@ def combine_crop_codes_and_add_organic_information():
         # t2 = gdf.loc[gdf["organic_applied"].notna()].copy()
 
         print("Combining crop codes and assigning crop names")
-        gdf["code"] = gdf["GRDKOD_MAR"] + '_' + gdf["GRDKOD_UND"]
-        gdf.loc[gdf["GRDKOD_UND"].isna(), "code"] = gdf.loc[gdf["GRDKOD_UND"].isna(), "GRDKOD_MAR"]
+        gdf["code"] = gdf[main_crop_id] + '_' + gdf[sub_crop_id]
+        gdf.loc[gdf[sub_crop_id].isna(), "code"] = gdf.loc[gdf[sub_crop_id].isna(), main_crop_id]
         gdf["code"] = gdf["code"].astype(str)
 
         df_crops["Grödkod"] = df_crops["Grödkod"].astype(str)

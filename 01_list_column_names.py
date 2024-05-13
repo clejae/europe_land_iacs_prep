@@ -59,7 +59,7 @@ def get_geodata_column_names(path, encoding="utf-8"):
         ".gml": "GML"
     }
 
-    driver = ogr.GetDriverByName(driver_dict[file_extension])
+    driver = ogr.GetDriverByName(driver_dict[str.lower(file_extension)])
     ds = driver.Open(path, 0)
     lyr = ds.GetLayer(0)
     lyr_def = lyr.GetLayerDefn()
@@ -150,7 +150,7 @@ def main():
     run_dict = {
         # "AT": {"file_encoding": "utf-8"},
         # "BE/FLA": {"file_encoding": "utf-8"},
-        "BE/WAL": {"file_encoding": "ISO-8859-1"},
+        # "BE/WAL": {"file_encoding": "ISO-8859-1"},
         # "NL": {"file_encoding": "utf-8"},
         # "FI": {"file_encoding": "utf-8"},
         # "DK": {"file_encoding": "ISO-8859-1"},
@@ -182,7 +182,11 @@ def main():
         # "PT/NON": {"file_encoding": "utf-8"},
         # "PT/NOS": {"file_encoding": "utf-8"},
         # "PT/PT": {"file_encoding": "utf-8"}
-        # "SE": {"file_encoding": "utf-8"}
+        # "SE": {"file_encoding": "utf-8", "ignore_files_descr": "skiften"},
+        # "BG": {"file_encoding": "windows-1251"},
+        # "ES/ALA": {"file_encoding": "utf-8"},
+        "CZ": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"}
+        # "RO": {"file_encoding": "utf-8"}
     }
 
     for country_code in run_dict:
