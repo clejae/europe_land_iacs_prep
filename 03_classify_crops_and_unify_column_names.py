@@ -23,7 +23,7 @@ COL_NAMES_FOLDER = r"data\tables\column_names"
 CROP_CLASSIFICATION_FOLDER = r"data\tables\crop_classifications"
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
-def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pth, region_id, year, iacs_new_pth, csv_sep=",", pre_transformation_crs=None):
+def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth, crop_class_pth, region_id, year, iacs_new_pth, csv_sep=",", pre_transformation_crs=None):
     print("Unifying column names, classifying crops, reprojecting and saving as gpkg (or csv if input is csv).")
 
     ## Open files
@@ -145,6 +145,50 @@ def unify_column_names(iacs_pth, file_encoding, col_translate_pth, crop_class_pt
     if ext_new in ['.csv']:
         iacs.to_csv(iacs_new_pth, index=False)
 
+def unify_column_names_in_animal_data(iacs_animal_pth, col_translate_pth, region_id, year, iacs_animal_new_pth, csv_sep=",", farm_id_dtype="str"):
+
+    tr_df = pd.read_excel(col_translate_pth)
+
+    print("Unifying column names.")
+    tr_df = tr_df.loc[tr_df["prelim"] == 1].copy()
+
+    ## Create a dictionary that translates old column names to unified column names
+    col_year = f"{region_id}_{year}"
+    col_dict = dict(
+        zip(tr_df.loc[tr_df[col_year].notna(), col_year], tr_df.loc[tr_df[col_year].notna(), "column_name"]))
+
+    col_dict_inv = inv_map = {v: k for k, v in col_dict.items()}
+
+    types = {col_dict_inv["farm_id"]: farm_id_dtype}
+
+    ## Open files
+    print("Reading input.")
+    root, ext = os.path.splitext(iacs_animal_pth)
+    if ext in ['.xlsx', '.xls']:
+        animal_df = pd.read_excel(iacs_animal_pth, dtype=types)
+    if ext in ['.csv']:
+        animal_df = pd.read_csv(iacs_animal_pth, dtype=types, sep=csv_sep)
+
+    ## Rename columns
+    animal_df.rename(columns=col_dict, inplace=True)
+
+    ### Get all column names that should appear in final file
+    cols = tr_df["column_name"].tolist()  # [col_dict[k] for k in col_dict]
+    if ext in ['.gpkg', '.gdb', '.shp', '.geojson']:
+        cols.append("geometry")
+
+    ### Check if all columns are in the file
+    ## If not add the column and then subset file to the selected columns
+    for col in cols:
+        if col not in animal_df.columns:
+            animal_df[col] = ""
+    animal_df = animal_df[cols].copy()
+
+    ## Write out
+    print("Writing out.")
+    animal_df.to_csv(iacs_animal_new_pth, index=False)
+
+
 def main():
     stime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
@@ -265,21 +309,30 @@ def main():
         #    "region_id": "BE_WAL",
         #     "file_encoding": "ISO-8859-1"
         # },
-        # "ES/ALA": {"region_id": "ES_ALA",
-        #            "file_encoding": "utf-8",
-        #            "col_translate_pth": f"data/tables/ES_column_name_translation.xlsx",
-        #            "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx"},
+        # "DE/BB": {
+        #     "region_id": "DE_BB",
+        #     "file_encoding": "ISO-8859-1",
+        #     "skip_years": range(2005, 2019)}
+        # "CZ": {
+        #     "region_id": "CZ",
+        #     "file_encoding": "ISO-8859-1",
+        #     "ignore_files_descr": "IACS_Czechia"},
+        "RO": {
+            "region_id": "RO",
+            "file_encoding": "utf-8"
+        }
     }
 
-    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    ES_districts = list(ES_districts["code"])
-    run_dict = {f"ES/{district}": {
-        "region_id": f"ES_{district}",
-        "file_encoding": "utf-8",
-        "col_translate_pth": f"data/tables/ES_column_name_translation.xlsx",
-        "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
-        "col_transl_descr_overwrite": "ES"
-    } for district in ES_districts}
+    ## For spain create a dictionary in a loop, because of the many subregions
+    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    # ES_districts = list(ES_districts["code"])
+    # run_dict = {f"ES/{district}": {
+    #     "region_id": f"ES_{district}",
+    #     "file_encoding": "utf-8",
+    #     "col_translate_pth": f"data/tables/ES_column_name_translation.xlsx",
+    #     "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+    #     "col_transl_descr_overwrite": "ES"
+    # } for district in ES_districts}
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -341,7 +394,7 @@ def main():
             if "col_transl_descr_overwrite" in run_dict[country_code]:
                 region_id = run_dict[country_code]["col_transl_descr_overwrite"]
 
-            unify_column_names(
+            unify_column_names_in_vector_data(
                 iacs_pth=iacs_pth,
                 file_encoding=file_encoding,
                 col_translate_pth=col_translate_pth,
@@ -509,7 +562,7 @@ def main():
             if "col_transl_descr_overwrite" in run_dict[country_code]:
                 region_id = run_dict[country_code]["col_transl_descr_overwrite"]
 
-            unify_column_names(
+            unify_column_names_in_vector_data(
                 iacs_pth=csv_pth,
                 file_encoding=file_encoding,
                 col_translate_pth=col_translate_pth,
@@ -520,6 +573,62 @@ def main():
                 csv_sep=csv_sep
             )
 
+    ####################################################################################################################
+    ## Input for animal table harmonization
+
+    run_dict = {
+        # "DE/BB": {"region_id": "DE_BB"}
+    }
+
+    ## Loop over country codes in dict for processing
+    for country_code in run_dict:
+        ## Derive input variables for function
+        region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
+        col_translate_pth = f"data/tables/{region_id}_column_name_translation_animals.xlsx"
+
+        ## Get years that should be skipped
+        if "skip_years" in run_dict[country_code]:
+            skip_years = run_dict[country_code]["skip_years"]
+        else:
+            skip_years = []
+
+        ## Get files that should be skipped
+        if "ignore_files_descr" in run_dict[country_code]:
+            ignore_files_descr = run_dict[country_code]["ignore_files_descr"]
+        else:
+            ignore_files_descr = None
+
+        ## Get list of all available files
+        in_dir = fr"data\vector\IACS\{country_code}"
+        table_files = helper_functions.list_tables_files_in_dir(in_dir)
+
+        ## Exclude files that should be skipped
+        if ignore_files_descr:
+            table_files = [file for file in table_files if ignore_files_descr not in file]
+
+        ## Temporary, if you want to subset the list.
+        # table_files = table_files[12:13]
+
+        ## Loop over files to unify columns and classify crops
+        for i, table_pth in enumerate(table_files):
+            print(f"{i + 1}/{len(table_files)} - Processing - {table_pth}")
+            year = helper_functions.get_year_from_path(table_pth)
+            if int(year) in skip_years:
+                print(f"Skipping year {year}")
+                continue
+
+            ## First create out path with original region ID
+            ## We have to fetch the region ID for safety reason again, as it might have been overwritten later on
+            region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
+            csv_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\IACS_animals-{region_id}-{year}.csv"
+
+            unify_column_names_in_animal_data(
+                iacs_animal_pth=table_pth,
+                col_translate_pth=col_translate_pth,
+                region_id=region_id,
+                year=year,
+                iacs_animal_new_pth=csv_new_pth
+            )
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)

@@ -57,10 +57,8 @@ def list_crop_names(in_dir, region_id, col_translate_pth, out_pth):
     out_df.to_csv(out_pth, index=False)
 
 
-def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding, ignore_files_descr=None):
+def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding, ignore_files_descr=None, file_year_encoding=None):
     print("Derive list of unique crop names from IACS files.")
-
-    os.environ['SHAPE_ENCODING'] = encoding
 
     ## Get list of IACS files
     iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
@@ -76,6 +74,13 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
     res_lst = []
     for path in iacs_files:
         year = helper_functions.get_year_from_path(path)
+        if file_year_encoding:
+            if year in file_year_encoding:
+                year_encoding = file_year_encoding[year]
+                os.environ['SHAPE_ENCODING'] = year_encoding
+            else:
+                os.environ['SHAPE_ENCODING'] = encoding
+
         print(f"Processing: {year} - {path}")
 
         ## Open file and layer
@@ -124,13 +129,16 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
 
             if len(names) == len(codes):
                 for i, name in enumerate(names):
-                    res_lst.append((codes[i], name))
+                    res_lst.append((codes[i], name, year))
+                    # res_lst.append((codes[i], name))
             elif len(names) > len(codes):
                 for i, name in enumerate(names):
-                    res_lst.append(("", name))
+                    res_lst.append(("", name, year))
+                    # res_lst.append(("", name))
             elif len(codes) > len(names):
                 for i, code in enumerate(codes):
-                    res_lst.append((code, ""))
+                    res_lst.append((code, "", year))
+                    # res_lst.append((code, ""))
 
         lyr.ResetReading()
         ds = None
@@ -139,7 +147,8 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
     res_lst = list(set(res_lst))
 
     ## Turn into df and save to file
-    out_df = pd.DataFrame(res_lst, columns=["crop_code", "crop_name"])
+    out_df = pd.DataFrame(res_lst, columns=["crop_code", "crop_name", "year"])
+    # out_df = pd.DataFrame(res_lst, columns=["crop_code", "crop_name"])
     out_df.sort_values(by="crop_name", inplace=True)
     out_df.to_csv(out_pth, index=False)
 
@@ -193,7 +202,7 @@ def match_crop_names_with_eurocrops_classification(crop_names_pth, eurocrops_cl_
     cnames = df_cnames["crop_name"].unique()
     num_cnames = len(cnames)
     ccodes  = df_cnames["crop_code"].unique()
-    num_ccodes = len(ccodes )
+    num_ccodes = len(ccodes)
 
     ## Translate crop names
     df_cnames.loc[df_cnames["crop_name"].isna(), "crop_name"] = ""
@@ -222,7 +231,8 @@ def match_crop_names_with_eurocrops_classification(crop_names_pth, eurocrops_cl_
         df_match = pd.merge(df_cnames, df_eucr[ec_cols], how="outer", on="crop_name")
         df_match.sort_values(by="crop_name", inplace=True)
     elif num_ccodes > num_cnames:
-        cn_cols = ["crop_code"]
+        # cn_cols = ["crop_code"]
+        cn_cols = ["crop_code", "year"]
         datatype = df_cnames["crop_code"].dtype
         df_eucr["original_code"] = df_eucr["original_code"].astype(datatype)
         df_match = pd.merge(df_cnames[cn_cols], df_eucr[ec_cols + ["original_code"]], how="outer", left_on="crop_code", right_on="original_code")
@@ -341,11 +351,12 @@ def main():
         #    "from_lang": "nl",
         #    "eurocrops_pth": r"data\vector\EuroCrops\BE_FLA_2021\BE_VLG_2021_EC21.shp"
         # },
-        # "AT": {
-        #     "region_id": "AT",
-        #     "from_lang": "de",
-        #     "eurocrops_pth": r"data\vector\EuroCrops\AT_2021\AT_2021_EC21.shp"
-        # },
+        "AT": {
+            "region_id": "AT",
+            "from_lang": "de",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
         # "NL": {
         #     "region_id": "NL",
         #     "from_lang": "nl",
@@ -495,12 +506,30 @@ def main():
         #     "file_encoding": "utf-8",
         #
         # },
-        "CZ": {
-            "region_id": "CZ",
-            "from_lang": "cs",
-            "file_encoding": "ISO-8859-1",
-            "eurocrops_pth": False,
-            "ignore_files_descr": "IACS_Czechia"}
+        # "CZ": {
+        #     "region_id": "CZ",
+        #     "from_lang": "cs",
+        #     "file_encoding": "ISO-8859-1",
+        #     "eurocrops_pth": False,
+        #     "ignore_files_descr": "IACS_Czechia"},
+        # "DE/BB": {
+        #     "region_id": "DE_BB",
+        #     "from_lang": "de",
+        #     "file_encoding": "ISO-8859-1",
+        #     "eurocrops_pth": True},
+        # "DE/ST": {
+        #     "region_id": "DE_ST",
+        #     "from_lang": "de",
+        #     "file_encoding": "utf-8",
+        #     "ignore_files_descr": "Referenz",
+        #     "eurocrops_pth": False},
+        # "DE/SL": {
+        #     "region_id": "DE_SL",
+        #     "from_lang": "de",
+        #     "file_encoding": "utf-8",
+        #     "file_year_encoding": {"2023": "windows-1252"},
+        #     "ignore_files_descr": "Antrag",
+        #     "eurocrops_pth": False}
     }
 
     ## Loop through tasks in run_dict
@@ -520,6 +549,11 @@ def main():
         else:
             ignore_files_descr = None
 
+        if "file_year_encoding" in run_dict[country_code]:
+            file_year_encoding = run_dict[country_code]["file_year_encoding"]
+        else:
+            file_year_encoding = None
+
         ## list_crop_names(), Debug mode, 2 files:
         ## start: Tue, 01 Aug 2023 13:56:06
         ## end: Tue, 01 Aug 2023 14:17:21
@@ -537,6 +571,7 @@ def main():
                     col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
                     out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
                     encoding=encoding,
+                    file_year_encoding=file_year_encoding,
                     ignore_files_descr=ignore_files_descr
                 )
 
