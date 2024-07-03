@@ -82,7 +82,9 @@ def test_som(features):
     run_som(features=features, sigma=1.5, lr=0.5, num_iterations=1000)
 
 def plot_grid_search_results_total(df_res, out_pth):
+
     fig, axs = plt.subplots(nrows=4, figsize=(30, 30))
+
     axs[0].plot(df_res["index"], df_res["q_err"], label="Mean dist", color='blue')
     axs[0].set_xlabel("Sigma")
     axs[0].set_xticks(df_res["index"], labels=df_res["sigma"], rotation=90, fontsize=7)
@@ -109,7 +111,7 @@ def plot_grid_search_results_total(df_res, out_pth):
     axs[3].legend()
     plt.tight_layout()
     plt.savefig(out_pth)
-    plt.close()
+    # plt.close()
 
 def plot_grid_search_results_sub(df_res, cluster_size, out_pth):
     df_sub = df_res.loc[df_res["cluster_size"] == cluster_size].copy()
@@ -141,7 +143,7 @@ def plot_grid_search_results_sub(df_res, cluster_size, out_pth):
     plt.savefig(out_pth)
     plt.close()
 
-def plot_cluster_characteristics(som, features, input_cols, out_pth):
+def plot_cluster_characteristics(som, features, input_cols, out_pth, type='bar'):
     nrows = len(som._neigx)
     ncols = len(som._neigy)
 
@@ -167,8 +169,21 @@ def plot_cluster_characteristics(som, features, input_cols, out_pth):
         # Get a color for each bar from the colormap
         colors = [cmap(i % cmap.N) for i in range(len(input_cols))]
         axs[wn].set_title(f"{wn_name}, No. farms: {no_farms}")
-        axs[wn].barh(y=input_cols, width=cluster_averages, color=colors)
-        axs[wn].set_yticks(ticks=range(len(input_cols)), labels=input_cols, fontsize=10)
+
+        if type == "bar":
+            axs[wn].barh(y=input_cols, width=cluster_averages, color=colors)
+            axs[wn].set_yticks(ticks=range(len(input_cols)), labels=input_cols, fontsize=10)
+
+        if type == "boxplot":
+            # axs[wn].barh(y=input_cols, width=cluster_averages, color=colors)
+            box = axs[wn].boxplot(df_sub[input_cols], patch_artist=True, vert=False, showfliers=False)
+
+            # Color the boxplots
+            for patch, color in zip(box['boxes'], colors):
+                patch.set_facecolor(color)
+
+            axs[wn].set_yticks(ticks=range(1, len(input_cols)+1), labels=input_cols, fontsize=10)
+            # axs[wn].set_yticklabels(input_cols, fontsize=10)
     plt.tight_layout()
     plt.savefig(out_pth)
     plt.close()
@@ -232,12 +247,7 @@ def grid_search(test_features):
     df_res = pd.DataFrame.from_dict(out_dict, orient="columns")
     df_res.to_excel(r"figures\qad_som\grid_search_results.xlsx")
 
-    plot_grid_search_results_total(df_res=df_res,
-                                   out_pth=r"figures\qad_som\grid_seach_som_performance.png")
-    plot_grid_search_results_sub(df_res=df_res, cluster_size=(4, 4),
-                                 out_pth=r"figures\qad_som\grid_seach_som_performance_4x4.png")
-    plot_grid_search_results_sub(df_res=df_res, cluster_size=(4, 5),
-                                 out_pth=r"figures\qad_som\grid_seach_som_performance_4x5.png")
+
 
 
 def plot_map_of_farm_centroids(gdf, col, municips, colour_dict, out_pth):
@@ -316,7 +326,7 @@ def plot_map_of_main_category_per_polygon(polygon_gdf, col, colour_dict, out_pth
         shp2 = gpd.read_file(shp2_pth)
         shp2.plot(edgecolor='black', facecolor="none", ax=ax, lw=0.1, zorder=2)
 
-    ax.legend(handles=custom_patches, bbox_to_anchor=(1.55, 1.0), ncol=1)
+    ax.legend(handles=custom_patches, bbox_to_anchor=(0.1, 0.1), ncol=1) #bbox_to_anchor=(1.55, 1.0)
     ax.axis("off")
     # ax.set_xlabel('Longitude')
     # ax.set_ylabel('Latitude')
@@ -343,10 +353,19 @@ def plot_frequencies(som, features, out_pth):
 
 
 def plot_cluster_colors_in_barplot(class_colors_dict, out_pth):
-    plt.figure(figsize=(5, 10))
+    plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = True
+    plt.rcParams['ytick.left'] = plt.rcParams['ytick.labelleft'] = False
+    plt.rcParams['axes.spines.left'] = False
+    plt.rcParams['axes.spines.right'] = False
+    plt.rcParams['axes.spines.top'] = False
+    plt.rcParams['axes.spines.bottom'] = False
+
+    plt.figure(figsize=(10, 10))
     for i, (class_name, color) in enumerate(class_colors_dict.items()):
         plt.barh(i, 1, color=color)
-    plt.yticks(range(len(class_colors_dict)), list(class_colors_dict.keys()))
+    plt.yticks(range(len(class_colors_dict)), list(class_colors_dict.keys()), fontsize=15)
+    plt.xticks([])
+    plt.autoscale()
     plt.tight_layout()
     plt.savefig(out_pth)
 
@@ -359,10 +378,10 @@ def main():
     input_pth = fr"data\tables\IACS_EU_Land_farms\IACS_animals-DE_BB-2018.csv"
     input_df = pd.read_csv(input_pth, dtype={"farm_id": str})
     input_df = input_df.loc[input_df["farm_id"].str.slice(0, 2) == "12"].copy()
-    input_cols = ['cereals', 'fallow_unmaintained', 'grassland',
-       'green_plants_legumes_soy', 'herbe_fruits_vegetables', 'oilseed_crops',
+    input_cols = ['cereals', 'maize', 'fallow_unmaintained', 'grassland',
+       'green_plants_legumes_soy', 'fruits_vegetables', 'oilseed_crops',
        'other_crops', 'permanent', 'root_vegetables_potatoes', 'farm_size', 'organic_share', 'median_field_size',
-       'q95_field_size', 'cattle', 'poultry', 'sheep', 'hogs']
+       'q95_field_size', 'cattle']
 
     features = np.array(input_df[input_cols])
 
@@ -372,7 +391,7 @@ def main():
     ## All the code below was taken from: https://github.com/BecayeSoft/Machine-Learning/tree/main/Deep%20Learning/SOM
     ## Normalize the data
     sc = MinMaxScaler(feature_range=(0, 1))
-    for i in [9, 10, 11, 12, 13, 14, 15, 16]:
+    for i in [10, 11, 12, 13, 14]:
         features[:, i] = sc.fit_transform(features[:, i].reshape(-1, 1)).T
 
     ## Run with parameters suggested in  https://github.com/BecayeSoft/Machine-Learning/tree/main/Deep%20Learning/SOM
@@ -382,12 +401,27 @@ def main():
     ## Grid search on test features
     # test_features = sc.fit_transform(test_features)
     # grid_search(test_features)
+
+    # df_res = pd.read_excel(r"figures\qad_som\grid_search_results.xlsx")
+    # plot_grid_search_results_total(df_res=df_res,
+    #                                out_pth=r"figures\qad_som\grid_seach_som_performance.png")
+    # plot_grid_search_results_sub(df_res=df_res, cluster_size='(3, 3)',
+    #                              out_pth=r"figures\qad_som\grid_seach_som_performance_3x3.png")
+    # plot_grid_search_results_sub(df_res=df_res, cluster_size='(3, 4)',
+    #                              out_pth=r"figures\qad_som\grid_seach_som_performance_3x4.png")
+    # plot_grid_search_results_sub(df_res=df_res, cluster_size='(3, 5)',
+    #                              out_pth=r"figures\qad_som\grid_seach_som_performance_3x5.png")
+    # plot_grid_search_results_sub(df_res=df_res, cluster_size='(4, 4)',
+    #                              out_pth=r"figures\qad_som\grid_seach_som_performance_4x4.png")
+    # plot_grid_search_results_sub(df_res=df_res, cluster_size='(4, 5)',
+    #                              out_pth=r"figures\qad_som\grid_seach_som_performance_4x5.png")
+
     ## Manually select the best parameters
 
     ## Create the final SOM
-    # final_som = run_som(features=features, sigma=1.0, lr=.5, num_iterations=1000, map_dimensions=(4, 4))
-
-    ## saving the som in the file som.p
+    # final_som = run_som(features=features, sigma=1.0, lr=.25, num_iterations=1000, map_dimensions=(3, 4))
+    #
+    # ## saving the som in the file som.p
     # with open(r"figures\qad_som\final_som.p", 'wb') as outfile:
     #     pickle.dump(final_som, outfile)
 
@@ -420,31 +454,50 @@ def main():
     gdf.set_crs(3035, inplace=True)
 
     # Plotting
-    # plot_cluster_characteristics(som=final_som, features=features, input_cols=input_cols,
-    #                              out_pth=r"figures\qad_som\final_som_cluster_characteristics.png")
-    #
+    plot_cluster_characteristics(som=final_som, features=features, input_cols=input_cols,
+                                 out_pth=r"figures\qad_som\final_som_cluster_characteristics_barplot.png", type="bar")
+    plot_cluster_characteristics(som=final_som, features=features, input_cols=input_cols,
+                                 out_pth=r"figures\qad_som\final_som_cluster_characteristics_boxplot.png", type="boxplot")
+
     # plot_u_matrix(som=final_som, out_pth=r"figures\qad_som\final_som_u-matrix.png")
     # plot_frequencies(som=final_som, features=features, out_pth=r"figures\qad_som\final_som_frequencies.png")
 
     ## Map main cluster per municipality
+    ## For run with: features=features, sigma=1.0, lr=.5, num_iterations=1000, map_dimensions=(4, 4)
+    # cluster_name_dict = {
+    #     "0_2": "large - conv. - div. crops + cattle",
+    #     "0_3": "medi. - conv. - cereals",
+    #     "1_0": "medi. - conv. - legumes + grassl.",
+    #     "1_2": "medi. - conv. - cereals + oilseed",
+    #     "1_3": "medi. - conv. - cereals + legumes",
+    #     "0_1": "small - conv. - special crops",
+    #     "3_0": "small - conv. - grassland",
+    #     "2_0": "small - conv. - grassl. + cereals",
+    #     "2_1": "small - conv. - grassl. + cereals",
+    #     "1_1": "small - conv. - cereals + grassl.",
+    #     "0_0": "small - part. org. - perm. crops",
+    #     "3_1": "small - part. org. - grassl.",
+    #     "3_2": "small - org. - grassl. - cattle",
+    #     "3_3": "medi. - org. - div. crops + cattle",
+    #     "2_2": "medi. - org. - div. crops + sheep",
+    #     "2_3": "medi. - org. - cereals + legumes"
+    # }
+
     cluster_name_dict = {
-        "0_2": "large - conv. - div. crops + cattle",
+        "0_2": "large - conv. - maize + cereals - cattle",
         "0_3": "medi. - conv. - cereals",
-        "1_0": "medi. - conv. - legumes + grassl.",
-        "1_2": "medi. - conv. - cereals + oilseed",
-        "1_3": "medi. - conv. - cereals + legumes",
-        "0_1": "small - conv. - special crops",
-        "3_0": "small - conv. - grassland",
-        "2_0": "small - conv. - grassl. + cereals",
-        "2_1": "small - conv. - grassl. + cereals",
-        "1_1": "small - conv. - cereals + grassl.",
-        "0_0": "small - part. org. - perm. crops",
-        "3_1": "small - part. org. - grassl.",
-        "3_2": "small - org. - grassl. - cattle",
-        "3_3": "medi. - org. - div. crops + cattle",
-        "2_2": "medi. - org. - div. crops + sheep",
-        "2_3": "medi. - org. - cereals + legumes"
+        "0_1": "medi. - conv. - oilseed + cereals",
+        "1_1": "small - conv. - grassland + cereals",
+        "1_0": "small - conv. - grassland + div. crops",
+        "2_0": "small - conv. - grassland",
+        "0_0": "small - conv. - perm. + other crops",
+        "1_2": "medi. - part. org. - grassland + div. crops - cattle",
+        "1_3": "medi. - part. org. - grassland + div. crops - cattle",
+        "2_1": "medi. - part. org. - grassland + div. crops - cattle",
+        "2_2": "medi. - org. - grassland - cattle",
+        "2_3": "medi. - org. - grassland + div. crops - cattle",
     }
+
     gdf["cluster_name"] = gdf["winning_nodes"].map(cluster_name_dict)
 
     municips = gpd.read_file(r"data\vector\administrative\VG250_GEM_DE_BB.shp")
@@ -481,7 +534,7 @@ def main():
     colors = sns.color_palette("Spectral", len(classes))
     class_colors = dict(zip(classes, colors))
 
-    # plot_cluster_colors_in_barplot(class_colors_dict=class_colors, out_pth=r"figures\qad_som\cluster_colors.png")
+    plot_cluster_colors_in_barplot(class_colors_dict=class_colors, out_pth=r"figures\qad_som\cluster_colors.png")
 
     # plot_map_of_farm_centroids(gdf=gdf, col="cluster_name", municips=municips, colour_dict=class_colors,
     #                            out_pth=r"figures\qad_som\final_som_clusters_of_farm_centroids.png")
@@ -496,7 +549,7 @@ def main():
     #                                       shp2_pth=r"data\vector\administrative\VG250_GEM_DE_BB.shp")
 
     print("Read IACS")
-    # iacs = gpd.read_file(r"data\vector\IACS_EU_Land\DE\BB\IACS-DE_BB-2018.geoparquet")
+    # iacs = gpd.read_file(r"data\vector\IACS_EU_Land\DE\BB\IACS-DE_BB-2018.gpkg")
     # iacs.to_parquet(r"data\vector\IACS_EU_Land\DE\BB\IACS-DE_BB-2018.geoparquet")
     iacs = gpd.read_parquet(r"data\vector\IACS_EU_Land\DE\BB\IACS-DE_BB-2018.geoparquet")
     iacs.to_crs(3035, inplace=True)
@@ -504,33 +557,31 @@ def main():
     iacs["cluster_name"] = iacs["winning_nodes"].map(cluster_name_dict)
 
     print("Plot")
-    # plot_map_of_main_category_per_polygon(polygon_gdf=iacs, col="cluster_name", colour_dict=class_colors,
-    #                                       out_pth=r"figures\qad_som\final_som_category_per_field.png",
-    #                                       title="Farm type per field",
-    #                                       shp2_pth=r"data\vector\administrative\VG250_GEM_DE_BB.shp")
+    plot_map_of_main_category_per_polygon(polygon_gdf=iacs, col="cluster_name", colour_dict=class_colors,
+                                          out_pth=r"figures\qad_som\final_som_category_per_field.png",
+                                          title="Farm type per field",
+                                          shp2_pth=r"data\vector\administrative\VG250_GEM_DE_BB.shp")
 
-    import json
-    for cname in iacs["cluster_name"].unique():
-        print(cname)
-        iacs_sub = iacs.copy()
-        iacs_sub.loc[iacs_sub["cluster_name"] != cname, "cluster_name"] = np.nan
-        # plot_map_of_main_category_per_polygon(polygon_gdf=iacs_sub, col="cluster_name", colour_dict=class_colors,
-        #                                       out_pth=fr"figures\qad_som\final_som_category_per_field_{cname}.png",
-        #                                       title=cname,
-        #                                       shp2_pth=r"data\vector\administrative\VG250_GEM_DE_BB.shp")
-        iacs_sub = iacs_sub.loc[iacs_sub["cluster_name"] == cname].copy()
-        no_farms = len(iacs_sub["farm_id"].unique())
-        total_area = iacs_sub["field_size"].sum()
-        main_crops = iacs_sub.groupby(["EC_hcat_n"])[["field_size"]].sum().reset_index()
-        main_crops.sort_values(by="field_size", ascending=False, inplace=True)
-        out_dict = {"no. farms": no_farms, "total_area": total_area}
-        for row in main_crops.itertuples():
-            out_dict[row.EC_hcat_n] = row.field_size
-
-        with open(fr"figures\qad_som\final_som_{cname}.json", "w") as pth:
-            json.dump(out_dict, pth, indent=4)
-
-
+    # import json
+    # for cname in iacs["cluster_name"].unique():
+    #     print(cname)
+    #     iacs_sub = iacs.copy()
+    #     iacs_sub.loc[iacs_sub["cluster_name"] != cname, "cluster_name"] = np.nan
+    #     # plot_map_of_main_category_per_polygon(polygon_gdf=iacs_sub, col="cluster_name", colour_dict=class_colors,
+    #     #                                       out_pth=fr"figures\qad_som\final_som_category_per_field_{cname}.png",
+    #     #                                       title=cname,
+    #     #                                       shp2_pth=r"data\vector\administrative\VG250_GEM_DE_BB.shp")
+    #     iacs_sub = iacs_sub.loc[iacs_sub["cluster_name"] == cname].copy()
+    #     no_farms = len(iacs_sub["farm_id"].unique())
+    #     total_area = iacs_sub["field_size"].sum()
+    #     main_crops = iacs_sub.groupby(["EC_hcat_n"])[["field_size"]].sum().reset_index()
+    #     main_crops.sort_values(by="field_size", ascending=False, inplace=True)
+    #     out_dict = {"no. farms": no_farms, "total_area": total_area}
+    #     for row in main_crops.itertuples():
+    #         out_dict[row.EC_hcat_n] = row.field_size
+    #
+    #     with open(fr"figures\qad_som\final_som_{cname}.json", "w") as pth:
+    #         json.dump(out_dict, pth, indent=4)
 
     # iacs_sub = iacs.loc[iacs["farm_id"].isin(input_df.loc[input_df["grassland"] == 1, "farm_id"])].copy()
     # iacs_sub.to_file(r"data\temp\BB_grassland_farms.gpkg", driver="GPKG")

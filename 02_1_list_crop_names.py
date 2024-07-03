@@ -256,7 +256,8 @@ def translate_crop_names(crop_names_pth, from_lang, country_code, out_pth):
     df_cnames = pd.read_csv(crop_names_pth)
 
     ## Translate crop names
-    df_cnames.dropna(inplace=True)
+    df_cnames.dropna(inplace=True, subset=["crop_name"])
+    df_cnames.drop_duplicates(subset=["crop_code", "crop_name"], inplace=True)
     # translator_en = Translator(provider="mymemory", to_lang="en", from_lang=from_lang) #['mymemory', 'microsoft', 'deepl', 'libre']
     # translator_de = Translator(provider="mymemory", to_lang="de", from_lang=from_lang)
     # df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(translator_en.translate)
@@ -351,12 +352,12 @@ def main():
         #    "from_lang": "nl",
         #    "eurocrops_pth": r"data\vector\EuroCrops\BE_FLA_2021\BE_VLG_2021_EC21.shp"
         # },
-        "AT": {
-            "region_id": "AT",
-            "from_lang": "de",
-            "eurocrops_pth": True,
-            "file_encoding": "utf-8"
-        },
+        # "AT": {
+        #     "region_id": "AT",
+        #     "from_lang": "de",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
         # "NL": {
         #     "region_id": "NL",
         #     "from_lang": "nl",
@@ -529,7 +530,15 @@ def main():
         #     "file_encoding": "utf-8",
         #     "file_year_encoding": {"2023": "windows-1252"},
         #     "ignore_files_descr": "Antrag",
-        #     "eurocrops_pth": False}
+        #     "eurocrops_pth": False},
+        "CY/APPL": {
+            "region_id": "CY_APPL",
+            "from_lang": "el",
+            "eurocrops_pth": False,
+            "skip_list_crop_names": True,
+            "file_encoding": "utf-8",
+            "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
+        }
     }
 
     ## Loop through tasks in run_dict
@@ -594,15 +603,20 @@ def main():
         # #     col_translate_pth=rf"data\tables\{country_code}_column_name_translation.xlsx",
         # #     out_pth=rf"data\tables\crop_names\{region_id}_EuroCrops_classification.csv")
 
+        if "crop_names_pth" in run_dict[country_code]:
+            crop_names_pth = run_dict[country_code]["crop_names_pth"]
+        else:
+            crop_names_pth = rf"data\tables\crop_names\{region_id}_unique_crop_names.csv"
+
         if eurocrops_pth:
             match_crop_names_with_eurocrops_classification(
-                crop_names_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
+                crop_names_pth=crop_names_pth,
                 eurocrops_cl_pth=rf"data\tables\crop_names\{region_id}_EuroCrops_classification.csv",
                 from_lang=run_dict[country_code]["from_lang"],
                 out_pth=rf"data\tables\crop_names\{region_id}_crop_names_w_EuroCrops_class.xlsx")
         else:
             translate_crop_names(
-                crop_names_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
+                crop_names_pth=crop_names_pth,
                 from_lang=run_dict[country_code]["from_lang"],
                 country_code=region_id,
                 out_pth=rf"data\tables\crop_names\{region_id}_crop_names_w_translation.xlsx")

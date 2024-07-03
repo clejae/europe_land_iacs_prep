@@ -86,11 +86,11 @@ def main():
     os.chdir(WD)
 
     run_dict = {
-        # "DE/BB": {
-        #     "region_id": "DE_BB",
-        #     "years": [2018],
-        #     "iacs_file_encoding": "ISO-8859-1"
-        # }
+        "DE/BB": {
+            "region_id": "DE_BB",
+            "years": [2018],
+            "iacs_file_encoding": "ISO-8859-1"
+        }
     }
 
     for country_code in run_dict:

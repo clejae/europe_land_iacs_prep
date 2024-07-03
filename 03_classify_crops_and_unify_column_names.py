@@ -317,10 +317,21 @@ def main():
         #     "region_id": "CZ",
         #     "file_encoding": "ISO-8859-1",
         #     "ignore_files_descr": "IACS_Czechia"},
-        "RO": {
-            "region_id": "RO",
-            "file_encoding": "utf-8"
-        }
+        # "RO": {
+        #     "region_id": "RO",
+        #     "file_encoding": "utf-8"
+        # },
+        # "DE/ST": {
+        #     "region_id": "DE_ST",
+        #     "file_encoding": "utf-8",
+        #     "ignore_files_descr": "Referenz"
+        # },
+        "DE/SL": {
+            "region_id": "DE_SL",
+            "file_encoding": "utf-8",
+            "file_year_encoding": {"2023": "windows-1252"},
+            "ignore_files_descr": "Antrag",
+            }
     }
 
     ## For spain create a dictionary in a loop, because of the many subregions
@@ -340,7 +351,7 @@ def main():
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
         col_translate_pth = f"data/tables/{region_id}_column_name_translation.xlsx"
         crop_class_pth = f"{CROP_CLASSIFICATION_FOLDER}/{region_id}_crop_classification_final.xlsx"
-        file_encoding = run_dict[country_code]["file_encoding"]
+
 
         ## If the file naming of the columns translation and the crop classificaiton table deviate, then correct them
         if "col_translate_pth" in run_dict[country_code]:
@@ -359,6 +370,11 @@ def main():
             ignore_files_descr = run_dict[country_code]["ignore_files_descr"]
         else:
             ignore_files_descr = None
+
+        if "file_year_encoding" in run_dict[country_code]:
+            file_year_encoding = run_dict[country_code]["file_year_encoding"]
+        else:
+            file_year_encoding = None
 
         ## Get list of all available files
         in_dir = fr"data\vector\IACS\{country_code}"
@@ -393,6 +409,14 @@ def main():
             ## column name translation table do not use the original region ID but another one
             if "col_transl_descr_overwrite" in run_dict[country_code]:
                 region_id = run_dict[country_code]["col_transl_descr_overwrite"]
+
+            if file_year_encoding:
+                if year in file_year_encoding:
+                    file_encoding = file_year_encoding[year]
+                else:
+                    file_encoding = run_dict[country_code]["file_encoding"]
+            else:
+                file_encoding = run_dict[country_code]["file_encoding"]
 
             unify_column_names_in_vector_data(
                 iacs_pth=iacs_pth,

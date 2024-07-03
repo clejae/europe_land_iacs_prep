@@ -253,11 +253,13 @@ def main():
         # "SE": {"file_encoding": "utf-8", "ignore_files_descr": "skiften"},
         # "BG": {"file_encoding": "windows-1251"},
         # "ES/ALA": {"file_encoding": "utf-8"},
-        # "CZ": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"}
-        # "RO": {"file_encoding": "utf-8"}
+        # "CZ": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"},
+        # "RO": {"file_encoding": "utf-8"},
         # "DE/BB": {"file_encoding": "ISO-8859-1"},
         # "DE/ST": {"file_encoding": "utf-8", "ignore_files_descr": "Referenz"},
-        # "DE/SL": {"file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"}, "ignore_files_descr": "Antrag"}
+        # "DE/SL": {"file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"}, "ignore_files_descr": "Antrag"},
+        "CY/LPIS": {"file_encoding": "utf-8"},
+        "CY/APPL": {"file_encoding": "utf-8"}
     }
 
     for country_code in run_dict:
@@ -281,7 +283,7 @@ def main():
     run_dict = {
         # "DE/BB": {"file_encoding": "ISO-8859-1"},
         # "DE/ST": {"file_encoding": "utf-8", "ignore_files_descr": "Referenz"}
-        "AT": {"file_encoding": "ISO-8859-1", "sep": ";", "ignore_files_descr": "Measure"}
+        # "AT": {"file_encoding": "ISO-8859-1", "sep": ";", "ignore_files_descr": "Measure"}
     }
 
     for country_code in run_dict:
