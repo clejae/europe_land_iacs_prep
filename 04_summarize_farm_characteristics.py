@@ -29,7 +29,7 @@ def summarize_farm_characteristics(iacs_pth, iacs_file_encoding, animals_pth, cr
     animals = pd.read_csv(animals_pth, dtype={farm_id_col: str})
 
     ## TEMPORARY:
-    recl_df = pd.read_excel(r"data\tables\hcat_levels_v2\hcat_levels_all.xlsx", "qad_reclassification")
+    recl_df = pd.read_excel(r"data\tables\hcat_levels_v2\EU-LAND derived\hcat_levels_all.xlsx", "qad_reclassification")
     iacs = pd.merge(iacs, recl_df[["level_6", "qad_reclassification"]], how="left", left_on="EC_hcat_c",
                     right_on="level_6")
     def q95(x):

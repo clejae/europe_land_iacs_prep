@@ -219,12 +219,12 @@ def main():
         # "AT": {"file_encoding": "utf-8"},
         # "BE/FLA": {"file_encoding": "utf-8"},
         # "BE/WAL": {"file_encoding": "ISO-8859-1"},
-        # "NL": {"file_encoding": "utf-8"},
+        "NL": {"file_encoding": "utf-8"},
         # "FI": {"file_encoding": "utf-8"},
         # "DK": {"file_encoding": "ISO-8859-1"},
         # "HR": {"file_encoding": "utf-8"},
         # "LV": {"file_encoding": "utf-8"},
-        # "SI": {"file_encoding": "utf-8"},
+        "SI": {"file_encoding": "utf-8"},
         # "SK": {"file_encoding": "utf-8"},
         # "FR/FR": {"file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
         # "FR/ARA": {"file_encoding": "utf-8"},
@@ -258,8 +258,9 @@ def main():
         # "DE/BB": {"file_encoding": "ISO-8859-1"},
         # "DE/ST": {"file_encoding": "utf-8", "ignore_files_descr": "Referenz"},
         # "DE/SL": {"file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"}, "ignore_files_descr": "Antrag"},
-        "CY/LPIS": {"file_encoding": "utf-8"},
-        "CY/APPL": {"file_encoding": "utf-8"}
+        # "CY/LPIS": {"file_encoding": "utf-8"},
+        # "CY/APPL": {"file_encoding": "utf-8"},
+        # "EL": {"file_encoding": "utf-8", "ignore_files_descr": "stables"}
     }
 
     for country_code in run_dict:
@@ -282,8 +283,9 @@ def main():
     ## List column names of the IACS animal data listed in the dictionary
     run_dict = {
         # "DE/BB": {"file_encoding": "ISO-8859-1"},
-        # "DE/ST": {"file_encoding": "utf-8", "ignore_files_descr": "Referenz"}
-        # "AT": {"file_encoding": "ISO-8859-1", "sep": ";", "ignore_files_descr": "Measure"}
+        # "DE/ST": {"file_encoding": "utf-8", "ignore_files_descr": "Referenz"},
+        # "AT": {"file_encoding": "ISO-8859-1", "sep": ";", "ignore_files_descr": "Measure"},
+        ## "EL": {"file_encoding": "utf-8", "ignore_files_descr": "parcels"} # do not run. first the code needs to be adapted to also be able to run on geodata
     }
 
     for country_code in run_dict:

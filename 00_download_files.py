@@ -1,9 +1,10 @@
 import os
-import urllib
+import urllib.request
 import py7zr
 import zipfile
 import shutil
 import glob
+import ssl
 
 import helper_functions
 
@@ -115,9 +116,32 @@ download_lst = [
     "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_REGION_PACK_DIFF_2012$RPG_1-0__SHP_UTM22RGFG95_R03-2012_2012-01-01/file/RPG_1-0__SHP_UTM22RGFG95_R03-2012_2012-01-01.7z",
     "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_REGION_PACK_DIFF_2012$RPG_1-0__SHP_RGR92UTM40S_R04-2012_2012-01-01/file/RPG_1-0__SHP_RGR92UTM40S_R04-2012_2012-01-01.7z"
 ]
+#https://data.geopf.fr/telechargement/download/RPG
+download_lst = [
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG/RPG_2-0__GPKG_LAMB93_FXX_2022-01-01/RPG_2-0__GPKG_LAMB93_FXX_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R84_2022-01-01/RPG_2-0__SHP_LAMB93_R84_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R27_2022-01-01/RPG_2-0__SHP_LAMB93_R27_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R53_2022-01-01/RPG_2-0__SHP_LAMB93_R53_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R24_2022-01-01/RPG_2-0__SHP_LAMB93_R24_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R94_2022-01-01/RPG_2-0__SHP_LAMB93_R94_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R44_2022-01-01/RPG_2-0__SHP_LAMB93_R44_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R32_2022-01-01/RPG_2-0__SHP_LAMB93_R32_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R11_2022-01-01/RPG_2-0__SHP_LAMB93_R11_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R28_2022-01-01/RPG_2-0__SHP_LAMB93_R28_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R75_2022-01-01/RPG_2-0__SHP_LAMB93_R75_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R76_2022-01-01/RPG_2-0__SHP_LAMB93_R76_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R52_2022-01-01/RPG_2-0__SHP_LAMB93_R52_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_LAMB93_R93_2022-01-01/RPG_2-0__SHP_LAMB93_R93_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_UTM20W84GUAD_D971_2022-01-01/RPG_2-0__SHP_UTM20W84GUAD_D971_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_UTM20W84MART_D972_2022-01-01/RPG_2-0__SHP_UTM20W84MART_D972_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_UTM22RGFG95_D973_2022-01-01/RPG_2-0__SHP_UTM22RGFG95_D973_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_RGR92UTM40S_D974_2022-01-01/RPG_2-0__SHP_RGR92UTM40S_D974_2022-01-01.7z.001",
+    "https://wxs.ign.fr/0zf5kvnyfgyss0dk5dvvq9n7/telechargement/prepackage/RPG_2-0__SHP_RGM04UTM38S_D976_2022-01-01/RPG_2-0__SHP_RGM04UTM38S_D976_2022-01-01.7z.001"
+    ]
 
 
 ## Download
+context = ssl._create_unverified_context()
 output_lst = [fr"Q:\Europe-LAND\data\vector\IACS\FR\downloads\{os.path.basename(url)}" for url in download_lst]
 for i, download in enumerate(download_lst):
     print(f"DL {i+1}/{len(download_lst)}, {download}")
@@ -145,17 +169,17 @@ for path in output_lst:
 
 
 ########## SPAIN ##########
-districts = ["CASTELLON", "VALLADOLID", "VIZCAYA", "ZAMORA", "ZARAGOZA"]
-
-for district in districts:
-    print(district)
-    unzip_list = glob.glob(fr"Q:\Europe-LAND\data\vector\IACS\ES\{district}\*.zip")
-
-    for i, path in enumerate(unzip_list):
-        print(f"{i}/{len(unzip_list)} - UZ {path}")
-        ## Get folder
-        folder = rf"Q:\Europe-LAND\data\vector\IACS\ES\{district}"
-
-        ## Unzip
-        with zipfile.ZipFile(path, 'r') as zip_ref:
-            zip_ref.extractall(folder)
+# districts = ["CASTELLON", "VALLADOLID", "VIZCAYA", "ZAMORA", "ZARAGOZA"]
+#
+# for district in districts:
+#     print(district)
+#     unzip_list = glob.glob(fr"Q:\Europe-LAND\data\vector\IACS\ES\{district}\*.zip")
+#
+#     for i, path in enumerate(unzip_list):
+#         print(f"{i}/{len(unzip_list)} - UZ {path}")
+#         ## Get folder
+#         folder = rf"Q:\Europe-LAND\data\vector\IACS\ES\{district}"
+#
+#         ## Unzip
+#         with zipfile.ZipFile(path, 'r') as zip_ref:
+#             zip_ref.extractall(folder)

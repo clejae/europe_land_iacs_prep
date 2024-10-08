@@ -232,7 +232,7 @@ def match_crop_names_with_eurocrops_classification(crop_names_pth, eurocrops_cl_
         df_match.sort_values(by="crop_name", inplace=True)
     elif num_ccodes > num_cnames:
         # cn_cols = ["crop_code"]
-        cn_cols = ["crop_code", "year"]
+        cn_cols = ["crop_code"] #, "year"
         datatype = df_cnames["crop_code"].dtype
         df_eucr["original_code"] = df_eucr["original_code"].astype(datatype)
         df_match = pd.merge(df_cnames[cn_cols], df_eucr[ec_cols + ["original_code"]], how="outer", left_on="crop_code", right_on="original_code")
@@ -264,6 +264,7 @@ def translate_crop_names(crop_names_pth, from_lang, country_code, out_pth):
     # df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(translator_de.translate)
     df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='de').translate)
     df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='en').translate)
+    df_cnames["crop_name_dk"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='da').translate)
 
     ## Merge tables
     df_cnames.sort_values(by="crop_name", inplace=True)
@@ -361,7 +362,8 @@ def main():
         # "NL": {
         #     "region_id": "NL",
         #     "from_lang": "nl",
-        #     "eurocrops_pth": r"data\vector\EuroCrops\NL_2020\NL_2020_EC21.shp"
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
         # },
         # "FI": {
         #     "region_id": "FI",
@@ -504,8 +506,7 @@ def main():
         #     "region_id": "RO",
         #     "from_lang": "ro",
         #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8",
-        #
+        #     "file_encoding": "utf-8"
         # },
         # "CZ": {
         #     "region_id": "CZ",
@@ -531,13 +532,29 @@ def main():
         #     "file_year_encoding": {"2023": "windows-1252"},
         #     "ignore_files_descr": "Antrag",
         #     "eurocrops_pth": False},
-        "CY/APPL": {
-            "region_id": "CY_APPL",
-            "from_lang": "el",
+        # "CY/APPL": {
+        #     "region_id": "CY_APPL",
+        #     "from_lang": "el",
+        #     "eurocrops_pth": False,
+        #     "skip_list_crop_names": True,
+        #     "file_encoding": "utf-8",
+        #     "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
+        # },
+        # "EL": {
+        #     "region_id": "EL",
+        #     "from_lang": "el",
+        #     "eurocrops_pth": False,
+        #     "skip_list_crop_names": True,
+        #     "file_encoding": "utf-8",
+        #     "crop_names_pth": "data/tables/crop_names/EL_unique_crop_names.csv"
+        # },
+        "HU": {
+            "region_id": "HU",
+            "from_lang": "hu",
             "eurocrops_pth": False,
             "skip_list_crop_names": True,
             "file_encoding": "utf-8",
-            "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
+            "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
         }
     }
 
