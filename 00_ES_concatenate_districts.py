@@ -7,7 +7,7 @@ from os.path import dirname, abspath
 import time
 import geopandas as gpd
 import pandas as pd
-from osgeo import ogr
+import zipfile
 
 import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
@@ -24,6 +24,17 @@ def combine_subdistricts(in_dir, crop_names_pth, district, year, out_dir):
     # linea_declaration contains the code for each parcel
     # thus cod_producto has to be assigned to the linea_declaration
     # are there information on farms? exp_num @Phillip Metadata
+
+    unzip_list = glob.glob(fr"data\vector\IACS\ES_temp\{year}\{district}\*.zip")
+
+    for i, path in enumerate(unzip_list):
+        print(f"{i}/{len(unzip_list)} - UZ {path}")
+        ## Get folder
+        folder = rf"data\vector\IACS\ES_temp\{year}\{district}"
+
+        ## Unzip
+        with zipfile.ZipFile(path, 'r') as zip_ref:
+            zip_ref.extractall(folder)
 
     iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
 
@@ -58,21 +69,20 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    year = 2022
+    for year in [2023]: # [2022]
+        # districts = [x[0] for x in os.walk(fr"data\vector\IACS\ES_temp\{year}")]
+        districts = glob.glob(f'data/vector/IACS/ES_temp/{year}/*')
+        districts = districts[17:]
+        # districts = [x for x in districts if "- VAL" in x]
 
-    districts = [x[0] for x in os.walk(r"data\vector\IACS\ES_temp")]
-    # districts = glob.glob('data/vector/IACS/ES/*/')
-    # districts = districts[1:]
-    districts = [x for x in districts if "- VAL" in x]
-
-    for district_dir in districts:
-        district = os.path.basename(district_dir)
-        combine_subdistricts(
-            in_dir=district_dir,
-            crop_names_pth=r"data\vector\IACS\ES\crop_names.csv",
-            district=district,
-            year=year,
-            out_dir=r"data\vector\IACS\ES")
+        for district_dir in districts:
+            district = os.path.basename(district_dir)
+            combine_subdistricts(
+                in_dir=district_dir,
+                crop_names_pth=r"data\vector\IACS\ES\crop_names.csv",
+                district=district,
+                year=year,
+                out_dir=r"data\vector\IACS\ES")
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)

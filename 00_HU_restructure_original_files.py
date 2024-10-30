@@ -18,6 +18,7 @@ os.chdir(WD)
 def restructure_data():
     years = list(range(2016, 2025))
     years.remove(2022)
+    years = [2019]
 
     for year in years:
 
@@ -56,12 +57,13 @@ def restructure_data():
 
         geom_dict1 = pd.Series(gdf1.geometry.values, index=gdf1.blosz).to_dict()
         geom_dict2 = pd.Series(gdf2.geometry.values, index=gdf2.blosz).to_dict()
-        geom_dict = geom_dict1|geom_dict2
+        geom_dict = geom_dict1 | geom_dict2
 
         df_vec["geometry"] = df_vec[block_col].map(geom_dict)
         df_vec.reset_index(inplace=True)
         df_vec.drop(columns=["temp_id", "index"], inplace=True)
         df_vec = gpd.GeoDataFrame(df_vec)
+        # df_vec.crs = df_vec.to_crs(23700)
 
         df_csv.drop(columns=["temp_id"], inplace=True)
 

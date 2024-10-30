@@ -57,7 +57,8 @@ def list_crop_names(in_dir, region_id, col_translate_pth, out_pth):
     out_df.to_csv(out_pth, index=False)
 
 
-def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding, ignore_files_descr=None, file_year_encoding=None):
+def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding, ignore_files_descr=None,
+                        file_year_encoding=None, multiple_crop_entries_sep=False):
     print("Derive list of unique crop names from IACS files.")
 
     ## Get list of IACS files
@@ -114,15 +115,23 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
             codes = []
             if type(col_dict["crop_code"]) != float:
                 for c_code in col_dict["crop_code"]:
-                    crop_code = feat.GetField(c_code)
-                    codes.append(crop_code)
+                    if multiple_crop_entries_sep:
+                        crop_codes = str(feat.GetField(c_code)).split(multiple_crop_entries_sep)
+                        codes += crop_codes
+                    else:
+                        crop_code = feat.GetField(c_code)
+                        codes.append(crop_code)
             else:
                 crop_code = ""
                 codes.append(crop_code)
             if type(col_dict["crop_name"]) != float:
                 for c_name in col_dict["crop_name"]:
-                    crop_name = feat.GetField(c_name)
-                    names.append(crop_name)
+                    if multiple_crop_entries_sep:
+                        crop_names = str(feat.GetField(c_name)).split(multiple_crop_entries_sep)
+                        names += crop_names
+                    else:
+                        crop_name = feat.GetField(c_name)
+                        names.append(crop_name)
             else:
                 crop_name = ""
                 names.append(crop_name)
