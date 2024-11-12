@@ -236,7 +236,13 @@ def main():
         # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
         ## For the years 2007-2014, the files are separated into subregions.
         # "HR": {"region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765},
-        "HU": {"region_id": "HU", "file_encoding": "utf-8"},
+        # "HU": {"region_id": "HU", "file_encoding": "utf-8"},
+        "IT/EMR": {"region_id": "IT_EMR", "file_encoding": "utf-8",
+                   "organic_dict_year": {"2018": {0: 0, 1: 1}, "2019": {0: 0, 1: 1}, "2020": {0: 0, 1: 1},
+                                          "2021": {1: 0, 2: 2, 3: 1, 4: 0}, "2022": {1: 0, 2: 2, 3: 1, 4: 0},
+                                          "2023": {1: 0, 2: 2, 3: 1, 4: 0}, "2024": {1: 0, 2: 2, 3: 1, 4: 0}}},
+        # "IT/MAR": {"region_id": "IT_MAR", "file_encoding": "utf-8"},
+        # "IT/TOS": {"region_id": "IT_TOS", "file_encoding": "utf-8"},
         # "LV": {"region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"},
         # "NL": {"region_id": "NL", "file_encoding": "utf-8", "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}, "skip_years": range(2022, 2023)},
         # "PT/PT": {"region_id": "PT_PT", "file_encoding": "utf-8"},
@@ -334,6 +340,11 @@ def main():
         else:
             organic_dict = None
 
+        if "organic_dict_year" in run_dict[country_code]:
+            organic_dict_year = run_dict[country_code]["organic_dict_year"]
+        else:
+            organic_dict_year = None
+
         ## Temporary, if you want to subset the list.
         # iacs_files = iacs_files[12:13]
 
@@ -354,6 +365,7 @@ def main():
             if "col_transl_descr_overwrite" in run_dict[country_code]:
                 region_id = run_dict[country_code]["col_transl_descr_overwrite"]
 
+            ## If a file encoding dictionary for specific years is provided, fetch the current version here
             if file_year_encoding:
                 if year in file_year_encoding:
                     file_encoding = file_year_encoding[year]
@@ -361,6 +373,13 @@ def main():
                     file_encoding = run_dict[country_code]["file_encoding"]
             else:
                 file_encoding = run_dict[country_code]["file_encoding"]
+
+            ## If a organic dictionary for specific years is provided, fetch the current version here
+            if organic_dict_year:
+                if year in organic_dict_year:
+                    organic_dict = organic_dict_year[year]
+                else:
+                    organic_dict = None
 
             unify_column_names_in_vector_data(
                 iacs_pth=iacs_pth,
@@ -381,10 +400,10 @@ def main():
 
     ## Use  "col_translate_pth" and "crop_class_pth" to provide paths that deviate from the common naming pattern
     run_dict = {
-        "HU": {
-            "region_id": "HU",
-            "file_encoding": "utf-8"
-        },
+        # "HU": {
+        #     "region_id": "HU",
+        #     "file_encoding": "utf-8"
+        # },
         # "PT/PT": {
         #     "region_id": "PT_PT",
         #     "file_encoding": "utf-8"},

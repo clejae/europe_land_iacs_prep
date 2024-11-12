@@ -523,19 +523,25 @@ def main():
         #     "file_encoding": "ISO-8859-1",
         #     "eurocrops_pth": False,
         #     "ignore_files_descr": "IACS_Czechia"},
-        # "DE/BB": {
-        #     "region_id": "DE_BB",
+        # "DE/BRB": {
+        #     "region_id": "DE_BRB",
         #     "from_lang": "de",
         #     "file_encoding": "ISO-8859-1",
         #     "eurocrops_pth": True},
-        # "DE/ST": {
-        #     "region_id": "DE_ST",
+        "DE/NRW": {
+            "region_id": "DE_NRW",
+            "from_lang": "de",
+            "file_encoding": "ISO-8859-1",
+            "ignore_files_descr": "HIST",
+            "eurocrops_pth": True},
+        # "DE/SAT": {
+        #     "region_id": "DE_SAT",
         #     "from_lang": "de",
         #     "file_encoding": "utf-8",
         #     "ignore_files_descr": "Referenz",
         #     "eurocrops_pth": False},
-        # "DE/SL": {
-        #     "region_id": "DE_SL",
+        # "DE/SAA": {
+        #     "region_id": "DE_SAA",
         #     "from_lang": "de",
         #     "file_encoding": "utf-8",
         #     "file_year_encoding": {"2023": "windows-1252"},
@@ -549,6 +555,12 @@ def main():
         #     "file_encoding": "utf-8",
         #     "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
         # },
+        # "EE": {
+        #     "region_id": "EE",
+        #     "from_lang": "et",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
         # "EL": {
         #     "region_id": "EL",
         #     "from_lang": "el",
@@ -557,14 +569,38 @@ def main():
         #     "file_encoding": "utf-8",
         #     "crop_names_pth": "data/tables/crop_names/EL_unique_crop_names.csv"
         # },
-        "HU": {
-            "region_id": "HU",
-            "from_lang": "hu",
-            "eurocrops_pth": False,
-            "skip_list_crop_names": True,
-            "file_encoding": "utf-8",
-            "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
-        }
+        # "HU": {
+        #     "region_id": "HU",
+        #     "from_lang": "hu",
+        #     "eurocrops_pth": False,
+        #     "skip_list_crop_names": True,
+        #     "file_encoding": "utf-8",
+        #     "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
+        # },
+        # "IT/EMR": {
+        #     "region_id": "IT_EMR",
+        #     "from_lang": "it",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
+        # "IT/MAR": {
+        #     "region_id": "IT_MAR",
+        #     "from_lang": "it",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
+        # "IT/TOS": {
+        #     "region_id": "IT_TOS",
+        #     "from_lang": "it",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
+        # "IE": {
+        #     "region_id": "IE",
+        #     "from_lang": "en",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
     }
 
     ## Loop through tasks in run_dict

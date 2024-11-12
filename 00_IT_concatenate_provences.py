@@ -60,7 +60,7 @@ def main():
 
     run_dict = {
         # "IT_temp/Toscana": {"file_encoding": "utf-8", "years": range(2016, 2017), "region_abbreviation": "TOS"},
-        "IT_temp/Emilia-Romagna": {"file_encoding": "utf-8", "years": range(2021, 2025), "region_abbreviation": "EMR"},
+        "IT_temp/Emilia-Romagna": {"file_encoding": "utf-8", "years": range(2023, 2025), "region_abbreviation": "EMR"},
     }
 
     for country_code in run_dict:

@@ -72,8 +72,8 @@ def main():
     for year in [2023]: # [2022]
         # districts = [x[0] for x in os.walk(fr"data\vector\IACS\ES_temp\{year}")]
         districts = glob.glob(f'data/vector/IACS/ES_temp/{year}/*')
-        districts = districts[17:]
-        # districts = [x for x in districts if "- VAL" in x]
+        # districts = [districts[16]]
+        districts = [x for x in districts if "CIU" in x]
 
         for district_dir in districts:
             district = os.path.basename(district_dir)

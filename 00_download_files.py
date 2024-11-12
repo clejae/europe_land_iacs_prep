@@ -5,6 +5,11 @@ import zipfile
 import shutil
 import glob
 import ssl
+import geopandas as gpd
+import requests
+import geojson
+from pyproj import CRS
+from owslib.wfs import WebFeatureService
 
 import helper_functions
 
@@ -169,28 +174,49 @@ import helper_functions
 
 
 ########## SPAIN ##########
-download_lst = [
-    f"https://www.fega.gob.es/atom/2024/ld_2024/13%20-%20CIUDAD%20REAL/13{i:03d}_ld_2023_20230116_gpkg.zip" for
-    i in range(35, 103)]
-download_lst.append("https://www.fega.gob.es/atom/2023/ld_2023/13%20-%20CIUDAD%20REAL/13900_ld_2023_20230116_gpkg.zip")
-
-ssl._create_default_https_context = ssl._create_unverified_context
-output_lst = [fr"Q:\Europe-LAND\data\vector\IACS\ES_temp\downloads\{os.path.basename(url)}" for url in download_lst]
-for i, download in enumerate(download_lst):
-    print(f"DL {i+1}/{len(download_lst)}, {download}")
-    urllib.request.urlretrieve(download, output_lst[i])
-
-districts = ["CIUDAD REAL"]
+# download_lst = [
+#     f"https://www.fega.gob.es/atom/2024/ld_2024/13%20-%20CIUDAD%20REAL/13{i:03d}_ld_2023_20230116_gpkg.zip" for
+#     i in range(35, 103)]
+# download_lst.append("https://www.fega.gob.es/atom/2023/ld_2023/13%20-%20CIUDAD%20REAL/13900_ld_2023_20230116_gpkg.zip")
 #
-for district in districts:
-    print(district)
-    unzip_list = glob.glob(fr"Q:\Europe-LAND\data\vector\IACS\ES_temp\{district}\*.zip")
+# ssl._create_default_https_context = ssl._create_unverified_context
+# output_lst = [fr"Q:\Europe-LAND\data\vector\IACS\ES_temp\downloads\{os.path.basename(url)}" for url in download_lst]
+# for i, download in enumerate(download_lst):
+#     print(f"DL {i+1}/{len(download_lst)}, {download}")
+#     urllib.request.urlretrieve(download, output_lst[i])
+#
+# districts = ["CIUDAD REAL"]
+# #
+# for district in districts:
+#     print(district)
+#     unzip_list = glob.glob(fr"Q:\Europe-LAND\data\vector\IACS\ES_temp\{district}\*.zip")
+#
+#     for i, path in enumerate(unzip_list):
+#         print(f"{i}/{len(unzip_list)} - UZ {path}")
+#         ## Get folder
+#         folder = rf"Q:\Europe-LAND\data\vector\IACS\ES_temp\{district}"
+#
+#         ## Unzip
+#         with zipfile.ZipFile(path, 'r') as zip_ref:
+#             zip_ref.extractall(folder)
 
-    for i, path in enumerate(unzip_list):
-        print(f"{i}/{len(unzip_list)} - UZ {path}")
-        ## Get folder
-        folder = rf"Q:\Europe-LAND\data\vector\IACS\ES_temp\{district}"
+## Estonia
 
-        ## Unzip
-        with zipfile.ZipFile(path, 'r') as zip_ref:
-            zip_ref.extractall(folder)
+url = "https://kls.pria.ee/geoserver/inspire_gsaa/wfs" #?service=WFS&request=GetCapabilities
+
+for year in range(2009, 2024):
+    # Specify parameters (read data in json format).
+    params = dict(
+        service="WFS",
+        version="2.0.0",
+        request="GetFeature",
+        typeName=f"inspire_gsaa:LU.GSAA.AGRICULTURAL_PARCELS_{year}",
+        outputFormat="json",
+    )
+
+    r = requests.get(url, params=params)
+
+    data = gpd.GeoDataFrame.from_features(geojson.loads(r.content), crs="EPSG:3301")
+
+    out_pth = fr"Q:\Europe-LAND\data\vector\IACS\EE\AGRICULTURAL_PARCELS_{year}.gpkg"
+    data.to_file(out_pth, driver="GPKG")

@@ -16,14 +16,14 @@ os.chdir(WD)
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def restructure_data():
-    years = list(range(2016, 2025))
-    years.remove(2022)
-    years = [2019]
+    years = list(range(2021, 2025))
+    # years.remove(2022)
+    # years = [2019]
 
     for year in years:
 
-        pth1 = fr"Q:\Europe-LAND\data\vector\IACS\HU\{year}\ige_blokk_metszet_{year}_1.shp"
-        pth2 = fr"Q:\Europe-LAND\data\vector\IACS\HU\{year}\ige_blokk_metszet_{year}_2.shp"
+        pth1 = fr"Q:\Europe-LAND\data\vector\IACS\HU_temp\{year}\ige_blokk_metszet_{year}_1.shp"
+        pth2 = fr"Q:\Europe-LAND\data\vector\IACS\HU_temp\{year}\ige_blokk_metszet_{year}_2.shp"
 
         print("Reading input", year)
         gdf1 = gpd.read_file(pth1)
