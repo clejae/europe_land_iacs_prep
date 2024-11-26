@@ -13,3 +13,5 @@ run and open the plugin in qgis:
 -double-click on the "SIGPAC download-2_listen.ahk" file to stop it once all files of province are downloaded
 
 -optional: adjust "wait for download" time in script depending on your internet download rate
+
+There is also another way. See script ES_b_download_data.py.

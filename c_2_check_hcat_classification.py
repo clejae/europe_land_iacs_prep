@@ -71,7 +71,7 @@ def main():
     # run_dict = {f"ES/{district}": {
     #     "region_id": f"ES_{district}",
     #     "file_encoding": "utf-8",
-    #     "col_translate_pth": f"data/tables/ES_column_name_translation.xlsx",
+    #     "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
     #     "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
     #     "col_transl_descr_overwrite": "ES"
     # } for district in ES_districts}

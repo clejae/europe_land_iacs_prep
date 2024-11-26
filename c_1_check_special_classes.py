@@ -48,7 +48,6 @@ def main():
     df_out.drop_duplicates(inplace=True)
     df_out.to_csv(r"Q:\Europe-LAND\data\tables\hcat_levels_v2\reclassification\candidate_classes_for_reclassification.csv", index=False)
 
-
     df1 = df_lst[0]
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())

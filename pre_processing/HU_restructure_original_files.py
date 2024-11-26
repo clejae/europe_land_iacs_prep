@@ -11,14 +11,14 @@ import pandas as pd
 import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
-WD = dirname(dirname(abspath(__file__)))
+WD = dirname(dirname(dirname(abspath(__file__))))
 os.chdir(WD)
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def restructure_data():
-    years = list(range(2021, 2025))
+    years = list(range(2022, 2025))
     # years.remove(2022)
-    # years = [2019]
+    years = [2021]
 
     for year in years:
 
@@ -68,7 +68,9 @@ def restructure_data():
         df_csv.drop(columns=["temp_id"], inplace=True)
 
         print("Writing out.")
-        df_vec.to_file(rf"data\vector\IACS\HU\{year}\ige_blokk_metszet_{year}.gpkg", driver="GPKG")
+        # df_vec.to_file(rf"data\vector\IACS\HU\{year}\ige_blokk_metszet_{year}.gpkg", driver="GPKG")#
+        helper_functions.create_folder(rf"data\vector\IACS\HU\{year}")
+        df_vec.to_parquet(rf"data\vector\IACS\HU\{year}\ige_blokk_metszet_{year}.geoparquet")
         df_csv.to_csv(rf"data\vector\IACS\HU\{year}\ige_blokk_metszet_{year}.csv", index=False)
 
 

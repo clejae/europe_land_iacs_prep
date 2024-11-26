@@ -25,8 +25,6 @@ import helper_functions
 WD = dirname(dirname(abspath(__file__)))
 os.chdir(WD)
 
-COL_TRANSL_PTH = r"data\tables\AT_column_name_translation.xlsx"
-
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def list_crop_names(in_dir, region_id, col_translate_pth, out_pth):
     ## Get list of IACS files
@@ -90,7 +88,8 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
             ".gdb": "OpenFileGDB",
             ".geojson": "GeoJSON",
             ".gpkg": "GPKG",
-            ".shp": "ESRI Shapefile"
+            ".shp": "ESRI Shapefile",
+            ".geoparquet": "Parquet"
         }
         driver = ogr.GetDriverByName(driver_dict[file_extension])
         ds = driver.Open(path, 0)
@@ -138,16 +137,16 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
 
             if len(names) == len(codes):
                 for i, name in enumerate(names):
-                    res_lst.append((codes[i], name, year))
-                    # res_lst.append((codes[i], name))
+                    # res_lst.append((codes[i], name, year))
+                    res_lst.append((codes[i], name))
             elif len(names) > len(codes):
                 for i, name in enumerate(names):
-                    res_lst.append(("", name, year))
-                    # res_lst.append(("", name))
+                    # res_lst.append(("", name, year))
+                    res_lst.append(("", name))
             elif len(codes) > len(names):
                 for i, code in enumerate(codes):
-                    res_lst.append((code, "", year))
-                    # res_lst.append((code, ""))
+                    # res_lst.append((code, "", year))
+                    res_lst.append((code, ""))
 
         lyr.ResetReading()
         ds = None
@@ -156,8 +155,8 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
     res_lst = list(set(res_lst))
 
     ## Turn into df and save to file
-    out_df = pd.DataFrame(res_lst, columns=["crop_code", "crop_name", "year"])
-    # out_df = pd.DataFrame(res_lst, columns=["crop_code", "crop_name"])
+    # out_df = pd.DataFrame(res_lst, columns=["crop_code", "crop_name", "year"])
+    out_df = pd.DataFrame(res_lst, columns=["crop_code", "crop_name"])
     out_df.sort_values(by="crop_name", inplace=True)
     out_df.to_csv(out_pth, index=False)
 
@@ -173,7 +172,8 @@ def get_eurocrops_classification(eurocrops_pth, region_id, col_translate_pth, ou
         ".gdb": "OpenFileGDB",
         ".geojson": "GeoJSON",
         ".gpkg": "GPKG",
-        ".shp": "ESRI Shapefile"
+        ".shp": "ESRI Shapefile",
+        ".geoparquet": "Parquet"
     }
     driver = ogr.GetDriverByName(driver_dict[file_extension])
     ds = driver.Open(eurocrops_pth, 0)
@@ -357,59 +357,110 @@ def main():
     os.chdir(WD)
 
     run_dict = {
-        # "BE/FLA": {
-        #    "region_id": "BE_FLA",
-        #    "from_lang": "nl",
-        #    "eurocrops_pth": r"data\vector\EuroCrops\BE_FLA_2021\BE_VLG_2021_EC21.shp"
-        # },
         # "AT": {
         #     "region_id": "AT",
         #     "from_lang": "de",
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
         # },
-        # "NL": {
-        #     "region_id": "NL",
-        #     "from_lang": "nl",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
+        # "BE/FLA": {
+        #    "region_id": "BE_FLA",
+        #    "from_lang": "nl",
+        #    "eurocrops_pth": r"data\vector\EuroCrops\BE_FLA_2021\BE_VLG_2021_EC21.shp"
         # },
-        # "FI": {
-        #     "region_id": "FI",
-        #     "from_lang": "fi",
-        #     "eurocrops_pth": False,
+        # "BE/WAL": {
+        #    "region_id": "BE_WAL",
+        #    "from_lang": "fr",
+        #    "eurocrops_pth": False,
         #     "file_encoding": "ISO-8859-1"
         # },
+        # "BG": {
+        #     "region_id": "BG",
+        #     "from_lang": "bg",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "windows-1251"}
+        # "CY/APPL": {
+        #     "region_id": "CY_APPL",
+        #     "from_lang": "el",
+        #     "eurocrops_pth": False,
+        #     "skip_list_crop_names": True,
+        #     "file_encoding": "utf-8",
+        #     "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
+        # },
+        # "CZ": {
+        #     "region_id": "CZ",
+        #     "from_lang": "cs",
+        #     "file_encoding": "ISO-8859-1",
+        #     "eurocrops_pth": False,
+        #     "ignore_files_descr": "IACS_Czechia"},
+        # "DE/BRB": {
+        #     "region_id": "DE_BRB",
+        #     "from_lang": "de",
+        #     "file_encoding": "ISO-8859-1",
+        #     "eurocrops_pth": True},
+        # "DE/LSA": {
+        #     "region_id": "DE_LSA",
+        #     "from_lang": "de",
+        #     "file_encoding": "utf-8",
+        #     "eurocrops_pth": True,
+        #     "ignore_files_descr": "other_files"},
+        # "DE/NRW": {
+        #     "region_id": "DE_NRW",
+        #     "from_lang": "de",
+        #     "file_encoding": "ISO-8859-1",
+        #     "ignore_files_descr": "HIST",
+        #     "eurocrops_pth": True},
+        # "DE/SAT": {
+        #     "region_id": "DE_SAT",
+        #     "from_lang": "de",
+        #     "file_encoding": "utf-8",
+        #     "ignore_files_descr": "Referenz",
+        #     "eurocrops_pth": False},
+        # "DE/SAA": {
+        #     "region_id": "DE_SAA",
+        #     "from_lang": "de",
+        #     "file_encoding": "utf-8",
+        #     "file_year_encoding": {"2023": "windows-1252"},
+        #     "ignore_files_descr": "Antrag",
+        #     "eurocrops_pth": False},
+        "DE/THU": {
+            "region_id": "DE_THU",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "ZN",
+            "eurocrops_pth": False},
         # "DK": {
         #     "region_id": "DK",
         #     "from_lang": "da",
         #     "eurocrops_pth": True,
         #     "file_encoding": "ISO-8859-1"
         # },
-        # "HR": {
-        #     "region_id": "HR",
-        #     "from_lang": "hr",
+        # "EE": {
+        #     "region_id": "EE",
+        #     "from_lang": "et",
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
         # },
-        # "LV": {
-        #     "region_id": "LV",
-        #     "from_lang": "lv",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
+        # "EL": {
+        #     "region_id": "EL",
+        #     "from_lang": "el",
+        #     "eurocrops_pth": False,
+        #     "skip_list_crop_names": True,
+        #     "file_encoding": "utf-8",
+        #     "crop_names_pth": "data/tables/crop_names/EL_unique_crop_names.csv"
         # },
-        # "SI": {
-        #     "region_id": "SI",
-        #     "from_lang": "sl",
-        #     "eurocrops_pth": True,
+        # "ES": {
+        #    "region_id": "ES",
+        #    "from_lang": "es",
+        #    "eurocrops_pth": False,
         #     "file_encoding": "utf-8"
+        #     }
+        # "FI": {
+        #     "region_id": "FI",
+        #     "from_lang": "fi",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "ISO-8859-1"
         # },
-        # "SK": {
-        #     "region_id": "SK",
-        #     "from_lang": "sk",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # }
         # "FR/SUBREGIONS": {
         #     "fr_special_function": get_french_values_from_csv,
         #     "region_id": "FR_SUBREGIONS",
@@ -423,6 +474,56 @@ def main():
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8",
         #     "ignore_files_descr": "ILOTS_ANONYMES"
+        # },
+        # "HR": {
+        #     "region_id": "HR",
+        #     "from_lang": "hr",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        # "HU": {
+        #     "region_id": "HU",
+        #     "from_lang": "hu",
+        #     "eurocrops_pth": False,
+        #     "skip_list_crop_names": True,
+        #     "file_encoding": "utf-8",
+        #     "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
+        # },
+        # "IE": {
+        #     "region_id": "IE",
+        #     "from_lang": "en",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
+        # "IT/EMR": {
+        #     "region_id": "IT_EMR",
+        #     "from_lang": "it",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
+        # "IT/MAR": {
+        #     "region_id": "IT_MAR",
+        #     "from_lang": "it",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
+        # "IT/TOS": {
+        #     "region_id": "IT_TOS",
+        #     "from_lang": "it",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
+        # },
+        # "LV": {
+        #     "region_id": "LV",
+        #     "from_lang": "lv",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
+        # },
+        # "NL": {
+        #     "region_id": "NL",
+        #     "from_lang": "nl",
+        #     "eurocrops_pth": True,
+        #     "file_encoding": "utf-8"
         # },
         # "PT/ALE": {
         #     "region_id": "PT_ALE",
@@ -466,21 +567,18 @@ def main():
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
         # },
-
         # "PT/NON": {
         #     "region_id": "PT_NON",
         #     "from_lang": "pt",
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
         # },
-
         # "PT/NOS": {
         #     "region_id": "PT_NOS",
         #     "from_lang": "pt",
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
         # },
-
         # "PT/PT": {
         #     "region_id": "PT_PT",
         #     "from_lang": "pt",
@@ -488,11 +586,11 @@ def main():
         #     "file_encoding": "utf-8",
         #     "pt_special_function": pt_combine_crop_codes_with_crop_names
         # }
-        # "BE/WAL": {
-        #    "region_id": "BE_WAL",
-        #    "from_lang": "fr",
-        #    "eurocrops_pth": False,
-        #     "file_encoding": "ISO-8859-1"
+        # "RO": {
+        #     "region_id": "RO",
+        #     "from_lang": "ro",
+        #     "eurocrops_pth": False,
+        #     "file_encoding": "utf-8"
         # },
         # "SE": {
         #    "region_id": "SE",
@@ -500,107 +598,18 @@ def main():
         #    "eurocrops_pth": True,
         #     "file_encoding": "ISO-8859-1"
         # }
-        # "ES": {
-        #    "region_id": "ES",
-        #    "from_lang": "es",
-        #    "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        #     }
-        # "BG": {
-        #     "region_id": "BG",
-        #     "from_lang": "bg",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "windows-1251"}
-        # "RO": {
-        #     "region_id": "RO",
-        #     "from_lang": "ro",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "CZ": {
-        #     "region_id": "CZ",
-        #     "from_lang": "cs",
-        #     "file_encoding": "ISO-8859-1",
-        #     "eurocrops_pth": False,
-        #     "ignore_files_descr": "IACS_Czechia"},
-        # "DE/BRB": {
-        #     "region_id": "DE_BRB",
-        #     "from_lang": "de",
-        #     "file_encoding": "ISO-8859-1",
-        #     "eurocrops_pth": True},
-        "DE/NRW": {
-            "region_id": "DE_NRW",
-            "from_lang": "de",
-            "file_encoding": "ISO-8859-1",
-            "ignore_files_descr": "HIST",
-            "eurocrops_pth": True},
-        # "DE/SAT": {
-        #     "region_id": "DE_SAT",
-        #     "from_lang": "de",
-        #     "file_encoding": "utf-8",
-        #     "ignore_files_descr": "Referenz",
-        #     "eurocrops_pth": False},
-        # "DE/SAA": {
-        #     "region_id": "DE_SAA",
-        #     "from_lang": "de",
-        #     "file_encoding": "utf-8",
-        #     "file_year_encoding": {"2023": "windows-1252"},
-        #     "ignore_files_descr": "Antrag",
-        #     "eurocrops_pth": False},
-        # "CY/APPL": {
-        #     "region_id": "CY_APPL",
-        #     "from_lang": "el",
-        #     "eurocrops_pth": False,
-        #     "skip_list_crop_names": True,
-        #     "file_encoding": "utf-8",
-        #     "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
-        # },
-        # "EE": {
-        #     "region_id": "EE",
-        #     "from_lang": "et",
+        # "SI": {
+        #     "region_id": "SI",
+        #     "from_lang": "sl",
         #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
         # },
-        # "EL": {
-        #     "region_id": "EL",
-        #     "from_lang": "el",
-        #     "eurocrops_pth": False,
-        #     "skip_list_crop_names": True,
-        #     "file_encoding": "utf-8",
-        #     "crop_names_pth": "data/tables/crop_names/EL_unique_crop_names.csv"
-        # },
-        # "HU": {
-        #     "region_id": "HU",
-        #     "from_lang": "hu",
-        #     "eurocrops_pth": False,
-        #     "skip_list_crop_names": True,
-        #     "file_encoding": "utf-8",
-        #     "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
-        # },
-        # "IT/EMR": {
-        #     "region_id": "IT_EMR",
-        #     "from_lang": "it",
-        #     "eurocrops_pth": False,
+        # "SK": {
+        #     "region_id": "SK",
+        #     "from_lang": "sk",
+        #     "eurocrops_pth": True,
         #     "file_encoding": "utf-8"
-        # },
-        # "IT/MAR": {
-        #     "region_id": "IT_MAR",
-        #     "from_lang": "it",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "IT/TOS": {
-        #     "region_id": "IT_TOS",
-        #     "from_lang": "it",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "IE": {
-        #     "region_id": "IE",
-        #     "from_lang": "en",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
+        # }
     }
 
     ## Loop through tasks in run_dict
@@ -639,7 +648,7 @@ def main():
                 list_crop_names_ogr(
                     in_dir=fr"data\vector\IACS\{country_code}",
                     region_id=region_id,
-                    col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
+                    col_translate_pth=rf"data\tables\column_name_translations\{region_id}_column_name_translation.xlsx",
                     out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
                     encoding=encoding,
                     file_year_encoding=file_year_encoding,
@@ -662,7 +671,7 @@ def main():
         # # get_eurocrops_classification(
         # #     eurocrops_pth=path/to/eurocrop_iacs_file_w_classification.shp,
         # #     region_id=region_id,
-        # #     col_translate_pth=rf"data\tables\{country_code}_column_name_translation.xlsx",
+        # #     col_translate_pth=rf"data\tables\column_name_translations\{country_code}_column_name_translation.xlsx",
         # #     out_pth=rf"data\tables\crop_names\{region_id}_EuroCrops_classification.csv")
 
         if "crop_names_pth" in run_dict[country_code]:

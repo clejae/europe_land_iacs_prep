@@ -12,7 +12,7 @@ import glob
 import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
-WD = dirname(dirname(abspath(__file__)))
+WD = dirname(dirname(dirname(abspath(__file__))))
 os.chdir(WD)
 
 in_dir = fr"data\vector\IACS\CZ"

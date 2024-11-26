@@ -51,12 +51,16 @@ def get_geodata_column_names(path, encoding="utf-8"):
 
     file_name, file_extension = os.path.splitext(path)
 
+    # if file_extension == ".geoparquet":
+    #
+    # else:
     driver_dict = {
         ".gdb": "OpenFileGDB",
         ".geojson": "GeoJSON",
         ".gpkg": "GPKG",
         ".shp": "ESRI Shapefile",
-        ".gml": "GML"
+        ".gml": "GML",
+        ".geoparquet": "Parquet"
     }
 
     driver = ogr.GetDriverByName(driver_dict[str.lower(file_extension)])
@@ -99,7 +103,7 @@ def get_table_column_names(path, encoding, sep=","):
     if "csv" in file_extension:
         df = pd.read_csv(path, nrows=3, encoding=encoding, sep=sep)
     if "xls" in file_extension:
-        df = pd.read_excel(path, nrows=3, encoding=encoding)
+        df = pd.read_excel(path, nrows=3)
 
     column_names = df.columns
     attr_lst = df.loc[0, :].values.tolist()
@@ -224,9 +228,11 @@ def main():
         # "CY/APPL": {"file_encoding": "utf-8"},
         # "CZ": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"},
         # "DE/BRB": {"file_encoding": "ISO-8859-1"},
-        "DE/NRW": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
+        # "DE/LSA": {"file_encoding": "utf-8", "ignore_files_descr": "other_files"},
+        # "DE/NRW": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
         # "DE/SAT": {"file_encoding": "utf-8", "ignore_files_descr": "Referenz"},
         # "DE/SAA": {"file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"}, "ignore_files_descr": "Antrag"},
+        # "DE/THU": {"file_encoding": "utf-8", "ignore_files_descr": "ZN"},
         # "DK": {"file_encoding": "ISO-8859-1"},
         # "EE": {"file_encoding": "utf-8"},
         # "EL": {"file_encoding": "utf-8", "ignore_files_descr": "stables"},
@@ -253,6 +259,7 @@ def main():
         # "IT/MAR": {"file_encoding": "utf-8"},
         # "IT/TOS": {"file_encoding": "utf-8"},
         # "LV": {"file_encoding": "utf-8"},
+        "LT": {"file_encoding": "utf-8"},
         # "NL": {"file_encoding": "utf-8"},
         # "PT/ALE": {"file_encoding": "utf-8"},
         # "PT/ALG": {"file_encoding": "utf-8"},

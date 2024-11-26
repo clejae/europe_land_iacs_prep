@@ -51,7 +51,8 @@ def find_best_matching_ec_crop_code_with_jaro(df_pth, crop_class_folder, out_pth
     df = pd.read_excel(df_pth)
 
     ## Make sure there are no duplicates in the table
-    df.drop(columns=["year"], inplace=True)
+    if "year" in df.columns:
+        df.drop(columns=["year"], inplace=True)
     df.drop_duplicates(inplace=True)
 
     ## crop translations to lower, because this might affect the jaro-winkler metric matching
@@ -223,7 +224,11 @@ def main():
         # "IE": {
         #     "region_id": "IE",
         #     "file_encoding": "utf-8"
-        # }
+        # },
+        "DE/THU": {
+            "region_id": "DE_THU",
+            "file_encoding": "utf-8"
+        }
     }
 
     ## Loop over country codes in dict for processing
@@ -241,16 +246,16 @@ def main():
 
     ## For matching with a specific df
     run_dict = {
-        "IT/MAR": {
-            "region_id": "IT_MAR",
-            "file_encoding": "utf-8",
-            "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
-        },
-        "IT/TOS": {
-            "region_id": "IT_TOS",
-            "file_encoding": "utf-8",
-            "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
-        },
+        # "IT/MAR": {
+        #     "region_id": "IT_MAR",
+        #     "file_encoding": "utf-8",
+        #     "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
+        # },
+        # "IT/TOS": {
+        #     "region_id": "IT_TOS",
+        #     "file_encoding": "utf-8",
+        #     "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
+        # },
     }
 
     ## Loop over country codes in dict for processing
