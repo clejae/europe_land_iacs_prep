@@ -20,7 +20,7 @@ The harmonization workflow is indicated with the letters a - d. We provide a dia
 8) __Script d1__ prepares information on the harmonized data and the classifications.
 9) __Script d3__ prepares the data for publication (e.g. removes information that cannot be shared).
 
-__We provide all column name translation tables and crop classification tables that we created in the respective folders.__ If you find errors, please do not hesitate to contact us.
+__We provide all column name translation tables and crop classification tables that we created in the [tables folder](tables) .__ If you find errors, please do not hesitate to contact us.
 
 ## Project setup for replication
 ```
