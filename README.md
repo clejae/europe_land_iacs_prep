@@ -23,15 +23,17 @@ The harmonization workflow is indicated with the letters a - d. We uploaded the 
 __We provide all column name translation tables and crop classification tables that we created in the respective folders.__ If you find errors, please do not hesitate to contact us.
 
 ## Project setup for replication
-├── data
-|    └── tables
-|          └── column_name_translations
-|          └── column_names
-|          └── crop classifications
-|          └── crop_names
-|          └── statistics
-|    └── vector
-|          └── IACS
-|          └── IACS_EU_Land
+```
+├── data 
+│    └── tables
+│    │     └── column_name_translations
+│    │     └── column_names
+│    │     └── crop classifications
+│    │     └── crop_names
+│    │     └── statistics
+│    └── vector
+│          └── IACS
+│          └── IACS_EU_Land
 ├──figures
 ├──scripts
+```
