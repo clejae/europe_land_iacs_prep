@@ -1,5 +1,5 @@
 # Europe-LAND - Harmonized IACS Inventory
-The [Harmonized IACS inventory of Europe-LAND](https://doi.org/10.5281/zenodo.14230621) is a harmonized collection of data from the Geospatial Aid (GSA) system of the Integrated Control and Administration System (IACS), which manages and controls agricultural subsidies in the European Union (EU). The GSA data are a unique data source with field-levels of land use information that are annually generated. The data carry information on crops grown per field, a unique identifier of the subsidy applicants that allows to aggregate fields to farms, information on organic cultivation and animal numbers per farm. The [Europe-LAND project](https://europe-land.eu/) is funded by the EU within Horizon Europa (Grant Agreement No. 101081307).
+The [Harmonized IACS inventory of Europe-LAND](https://doi.org/10.5281/zenodo.14230621) is a harmonized collection of data from the Geospatial Aid (GSA) system of the Integrated Control and Administration System (IACS), which manages and controls agricultural subsidies in the European Union (EU). The GSA data are a unique data source with field-levels of land use information that are annually generated. The data carry information on crops grown per field, a unique identifier of the subsidy applicants that allows to aggregate fields to farms, information on organic cultivation and animal numbers per farm. The [Europe-LAND project](https://europe-land.eu/) is funded by the EU within Horizon Europa (Grant Agreement No. 101081307).  __Disclaimer:__ If you use the harmonized data, please also cite the original sources of the data.
 
 This repository comes along with the inventory and contains all scripts that were written
 1) to obtain and preprocess the data and
@@ -9,7 +9,7 @@ The crop information were harmonized using the Hierarchical Crop and Agriculture
 
 ## Workflow
 All pre-processing scripts can be found in the "pre_processing" folder. These scripts are country specific and prepare the data for the workflow.
-The harmonization workflow is indicated with the letters a - d. We uploaded the project folder structure and example tables to exemplify the workflow. 
+The harmonization workflow is indicated with the letters a - d. We provide a diagramm of our the project structure below and tables we created for the harmonization to exemplify the workflow. 
 1) __Script a__ is a simple script to list all columns found in the vector data and provide an example of an attribute.
 2) *Manual work:* After that the user has to create a column name translation table (xlsx) that assigns all the original columns to the harmonized column names per year.
 3) These tables are needed for __script b1__ that lists all available crop code - crop name combinations found in the vector data. It then translates all crop names to English and German. If the EuroCrops project already provided a mapping table to their classes, the script matches the new table to their classification.
@@ -28,12 +28,12 @@ __We provide all column name translation tables and crop classification tables t
 │    └── tables
 │    │     └── column_name_translations
 │    │     └── column_names
-│    │     └── crop classifications
+│    │     └── crop_classifications
 │    │     └── crop_names
 │    │     └── statistics
 │    └── vector
 │          └── IACS
 │          └── IACS_EU_Land
-├──figures
-├──scripts
+├── figures
+├── scripts
 ```
