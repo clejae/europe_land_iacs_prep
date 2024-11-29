@@ -13,6 +13,7 @@ import time
 import pandas as pd
 import geopandas as gpd
 import glob
+from shapely.validation import make_valid
 
 import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
@@ -25,7 +26,6 @@ os.chdir(WD)
 def combine_information_from_wfs(year):
 
     print(year)
-
 
     if year < 2023:
 
@@ -83,6 +83,9 @@ def combine_information_from_wfs(year):
             remaining_entries['crop_number'] = 'C' + remaining_entries['crop_number'].astype(str)
 
             first_entries = first_entries[['OSA_ID', 'PAR_ID', 'ENT_ID', 'PUN_CUL', 'PUN_CUL_DESC', 'geometry']]
+            # first_entries['geometry'] = first_entries['geometry'].apply(make_valid)
+            first_entries['geometry'] = first_entries['geometry'].buffer(0)
+            first_entries['geometry'] = first_entries.normalize()
             remaining_entries = remaining_entries[['OSA_ID', 'PAR_ID', 'ENT_ID', 'PUN_CUL',  'PUN_CUL_DESC',
                                                    'crop_number']]
 
@@ -90,7 +93,9 @@ def combine_information_from_wfs(year):
             add_crops_lst.append(remaining_entries)
 
         parcels = pd.concat(parcels_lst)
+        parcels.drop_duplicates(inplace=True)
         parcels.index = range(1, len(parcels)+1)
+
         # parcels = parcels.loc[parcels["PUN_CUL"].notna()].copy()
         add_crops = pd.concat(add_crops_lst)
 
@@ -129,10 +134,16 @@ def combine_information_from_wfs(year):
             fields = pd.merge(cult[["OSA_ID", "PUN_CUL_COD", "PUN_CUL_DESC", "geometry"]],
                               ocup[["OSA_ID", "PAR_ID", "ENT_ID"]], "left", "OSA_ID")
 
+            # fields['geometry'] = fields['geometry'].apply(make_valid)
+            fields['geometry'] = fields['geometry'].buffer(0)
+            fields['geometry'] = fields.normalize()
+
             fields_lst.append(fields)
 
         fields_out = pd.concat(fields_lst)
+        fields_out.drop_duplicates(inplace=True)
         fields_out.index = range(1, len(fields_out) + 1)
+
 
         helper_functions.create_folder(rf"data\vector\IACS\PT\PT\{year}")
 

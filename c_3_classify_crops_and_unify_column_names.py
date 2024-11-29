@@ -69,10 +69,10 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
             iacs.crs = None
             iacs.set_crs(epsg=pre_transformation_crs, inplace=True)
 
-        # if not iacs.crs.is_projected:
-        #     iacs = iacs.to_crs(3857)
-
         if not "field_size" in iacs.columns:
+            ## Reproject only here, if the crs is geographic (if so, the area calculations will likely be wrong)
+            if not iacs.crs.is_projected:
+                iacs = iacs.to_crs(3857)
             iacs["field_size"] = iacs.geometry.area / 10000
         iacs["field_size"] = iacs["field_size"].astype(float)
 
@@ -222,77 +222,76 @@ def main():
     ## To turn off/on the harmonization of a specific country, just comment/uncomment the specific line
 
     run_dict = {
-        # "AT": {"region_id": "AT", "file_encoding": "utf-8", "organic_dict_year": {"2023": {"Y": 1, "N": 0}}, "ignore_files_descr": "sl_anonym"}, # with farm id
-        # "BE/FLA": {"region_id": "BE_FLA", "file_encoding": "utf-8", "file_year_encoding": {"2020": "ISO-8859-1"},
-        #            "organic_dict": {"J": 1, "N": 0}}, #"skip_years": list(range(2008, 2022))+[2024],
-        # "BE/WAL": {"region_id": "BE_WAL", "file_encoding": "ISO-8859-1"},
-        # "CY": {"region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "LPIS"},
-        # "CZ": {"region_id": "CZ", "file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"},
-        # "DE/BRB": {"region_id": "DE_BRB", "file_encoding": "ISO-8859-1"}, #, "skip_years": range(2005, 2023)
-        # "DE/LSA": {"region_id": "DE_LSA", "file_encoding": "utf-8", "ignore_files_descr": "other_files"},
-        # "DE/NRW": {"region_id": "DE_NRW", "file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
-        # "DE/SAA": {"region_id": "DE_SAA", "file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"},
-        #     "ignore_files_descr": "Antrag"},
-        # "DE/SAT": {"region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"}, #, "skip_years": list(range(2005, 2021))
-        # "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #, "skip_years": range(2009, 2024)
-        # "EE": {"region_id": "EE", "file_encoding": "utf-8"},
-        # "EL": {"region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
-        # "FI": {"region_id": "FI", "file_encoding": "ISO-8859-1"},
-        # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES", "skip_years":range(2022)},
-        # "IE": {"region_id": "IE", "file_encoding": "utf-8"},
-        # "HR": {"region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765, "skip_years": range(2023)},
-        # "HU": {"region_id": "HU", "file_encoding": "utf-8"},
-        # "IT/EMR": {"region_id": "IT_EMR", "file_encoding": "utf-8", #"skip_years": range(2016, 2021),
-        #            "organic_dict_year": {"2018": {0: 0, 1: 1}, "2019": {0: 0, 1: 1}, "2020": {0: 0, 1: 1},
-        #                                   "2021": {"1": 0, "2": 2, "3": 1, "4": 0}, "2022": {"1": 0, "2": 2, "3": 1, "4": 0},
-        #                                   "2023": {"1": 0, "2": 2, "3": 1, "4": 0}, "2024": {"1": 0, "2": 2, "3": 1, "4": 0}}},
-        # "IT/MAR": {"region_id": "IT_MAR", "file_encoding": "utf-8"},
-        # "IT/TOS": {"region_id": "IT_TOS", "file_encoding": "utf-8"},
-        # "LV": {"region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"},
-        # "LT": {"region_id": "LT", "file_encoding": "ISO-8859-1"},
-        # "NL": {"region_id": "NL", "file_encoding": "utf-8", "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}, "skip_years": [2024]}, #, "skip_years": range(2022, 2023)
-        # "PT/PT": {"region_id": "PT_PT", "file_encoding": "utf-8"},
-        # "PT/ALE": {"region_id": "PT_ALE", "file_encoding": "utf-8"},
-        # "PT/ALG": {"region_id": "PT_ALG", "file_encoding": "utf-8"},
-        # "PT/AML": {"region_id": "PT_AML", "file_encoding": "utf-8"},
-        # "PT/CET": {"region_id": "PT_CET", "file_encoding": "utf-8"},
-        # "PT/CEN": {"region_id": "PT_CEN", "file_encoding": "utf-8"},
-        # "PT/CES": {"region_id": "PT_CES", "file_encoding": "utf-8"},
-        # "PT/NOR": {"region_id": "PT_NOR", "file_encoding": "utf-8"},
-        # "PT/NON": {"region_id": "PT_NON", "file_encoding": "utf-8"},
-        # "PT/NOS": {"region_id": "PT_NOS", "file_encoding": "utf-8"},
-        # "RO": {"region_id": "RO", "file_encoding": "utf-8"},
-        "SE": {"region_id": "SE", "file_encoding": "ISO-8859-1", "ignore_files_descr": "NOAPPL",
-               "skip_years": range(2022, 2024)}, ## With applicant ID
-        # "SE/NOAPPL": {"region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
-        # "SI": {"region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2}}, #range(2005, 2023)
-        # "SK": {"region_id": "SK", "file_encoding": "utf-8", "skip_years": range(2024)}, #"skip_years": [2018, 2019, 2020, 2021, 2022],
+        "AT": {"region_id": "AT", "file_encoding": "utf-8", "organic_dict_year": {"2023": {"Y": 1, "N": 0}}, "ignore_files_descr": "sl_anonym"}, # with farm id
+        "BE/FLA": {"region_id": "BE_FLA", "file_encoding": "utf-8", "file_year_encoding": {"2020": "ISO-8859-1"},
+                   "organic_dict": {"J": 1, "N": 0}}, #"skip_years": list(range(2008, 2022))+[2024],
+        "BE/WAL": {"region_id": "BE_WAL", "file_encoding": "ISO-8859-1"},
+        "CY": {"region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "LPIS"},
+        "CZ": {"region_id": "CZ", "file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"},
+        "DE/BRB": {"region_id": "DE_BRB", "file_encoding": "ISO-8859-1"}, #, "skip_years": range(2005, 2023)
+        "DE/LSA": {"region_id": "DE_LSA", "file_encoding": "utf-8", "ignore_files_descr": "other_files"},
+        "DE/NRW": {"region_id": "DE_NRW", "file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
+        "DE/SAA": {"region_id": "DE_SAA", "file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"},
+            "ignore_files_descr": "Antrag"},
+        "DE/SAT": {"region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"}, #, "skip_years": list(range(2005, 2021))
+        "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #, "skip_years": range(2009, 2024)
+        "EE": {"region_id": "EE", "file_encoding": "utf-8"},
+        "EL": {"region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
+        "FI": {"region_id": "FI", "file_encoding": "ISO-8859-1"},
+        "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
+        "IE": {"region_id": "IE", "file_encoding": "utf-8"},
+        "HR": {"region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765},
+        "HU": {"region_id": "HU", "file_encoding": "utf-8"},
+        "IT/EMR": {"region_id": "IT_EMR", "file_encoding": "utf-8", #"skip_years": range(2016, 2021),
+                   "organic_dict_year": {"2018": {0: 0, 1: 1}, "2019": {0: 0, 1: 1}, "2020": {0: 0, 1: 1},
+                                          "2021": {"1": 0, "2": 2, "3": 1, "4": 0}, "2022": {"1": 0, "2": 2, "3": 1, "4": 0},
+                                          "2023": {"1": 0, "2": 2, "3": 1, "4": 0}, "2024": {"1": 0, "2": 2, "3": 1, "4": 0}}},
+        "IT/MAR": {"region_id": "IT_MAR", "file_encoding": "utf-8"},
+        "IT/TOS": {"region_id": "IT_TOS", "file_encoding": "utf-8"},
+        "LV": {"region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"},
+        "LT": {"region_id": "LT", "file_encoding": "ISO-8859-1"},
+        "NL": {"region_id": "NL", "file_encoding": "utf-8", "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}}, #, "skip_years": range(2022, 2023)
+        "PT/PT": {"region_id": "PT_PT", "file_encoding": "utf-8"},
+        "PT/ALE": {"region_id": "PT_ALE", "file_encoding": "utf-8"},
+        "PT/ALG": {"region_id": "PT_ALG", "file_encoding": "utf-8"},
+        "PT/AML": {"region_id": "PT_AML", "file_encoding": "utf-8"},
+        "PT/CET": {"region_id": "PT_CET", "file_encoding": "utf-8"},
+        "PT/CEN": {"region_id": "PT_CEN", "file_encoding": "utf-8"},
+        "PT/CES": {"region_id": "PT_CES", "file_encoding": "utf-8"},
+        "PT/NOR": {"region_id": "PT_NOR", "file_encoding": "utf-8"},
+        "PT/NON": {"region_id": "PT_NON", "file_encoding": "utf-8"},
+        "PT/NOS": {"region_id": "PT_NOS", "file_encoding": "utf-8"},
+        "RO": {"region_id": "RO", "file_encoding": "utf-8"},
+        "SE": {"region_id": "SE", "file_encoding": "ISO-8859-1", "ignore_files_descr": "NOAPPL"}, ## With applicant ID
+        "SE/NOAPPL": {"region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
+        "SI": {"region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2}}, #range(2005, 2023)
+        "SK": {"region_id": "SK", "file_encoding": "utf-8",}, #"skip_years": [2018, 2019, 2020, 2021, 2022],
     }
 
     # ## For france create a dictionary in a loop, because of the many subregions
-    # FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    # FR_districts = list(FR_districts["code"])
-    # # FR_districts = ["GRE"]
-    # for district in FR_districts:
-    #     run_dict[f"FR/{district}"] = {
-    #         "region_id": f"FR_{district}",
-    #         "file_encoding": "utf-8",
-    #         "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_vector.xlsx",
-    #         "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
-    #         "col_transl_descr_overwrite": "FR"
-    #         }
+    FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
+    FR_districts = list(FR_districts["code"])
+    # FR_districts = ["GRE"]
+    for district in FR_districts:
+        run_dict[f"FR/{district}"] = {
+            "region_id": f"FR_{district}",
+            "file_encoding": "utf-8",
+            "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_vector.xlsx",
+            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
+            "col_transl_descr_overwrite": "FR"
+            }
 
     ## For spain create a dictionary in a loop, because of the many subregions
-    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    # ES_districts = list(ES_districts["code"])
-    # for district in ES_districts:
-    #     run_dict[f"ES/{district}"] = {
-    #         "region_id": f"ES_{district}",
-    #         "file_encoding": "utf-8",
-    #         "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
-    #         "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
-    #         "col_transl_descr_overwrite": "ES"
-    #         }
+    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = list(ES_districts["code"])
+    for district in ES_districts:
+        run_dict[f"ES/{district}"] = {
+            "region_id": f"ES_{district}",
+            "file_encoding": "utf-8",
+            "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
+            "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+            "col_transl_descr_overwrite": "ES"
+            }
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -406,59 +405,59 @@ def main():
 
     ## Use  "col_translate_pth" and "crop_class_pth" to provide paths that deviate from the common naming pattern
     run_dict = {
-        # "EL": {
-        #     "region_id": "EL",
-        #     "file_encoding": "utf-8",
-        #     "ignore_files_descr": "additional_information"
-        # }
-        # "HU": {
-        #     "region_id": "HU",
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/PT": {
-        #     "region_id": "PT_PT",
-        #     "file_encoding": "utf-8"},
-        # "PT/ALE": {
-        #     "region_id": "PT_ALE",
-        #     "file_encoding": "utf-8"},
-        # "PT/ALG": {
-        #     "region_id": "PT_ALG",
-        #     "file_encoding": "utf-8"},
-        # "PT/AML": {
-        #     "region_id": "PT_AML",
-        #     "file_encoding": "utf-8"},
-        # "PT/CET": {
-        #     "region_id": "PT_CET",
-        #     "file_encoding": "utf-8"},
-        # "PT/CEN": {
-        #     "region_id": "PT_CEN",
-        #     "file_encoding": "utf-8"},
-        # "PT/CES": {
-        #     "region_id": "PT_CES",
-        #     "file_encoding": "utf-8"},
-        # "PT/NOR": {
-        #     "region_id": "PT_NOR",
-        #     "file_encoding": "utf-8"},
-        # "PT/NON": {
-        #     "region_id": "PT_NON",
-        #     "file_encoding": "utf-8"},
-        # "PT/NOS": {
-        #     "region_id": "PT_NOS",
-        #     "file_encoding": "utf-8"}
+        "EL": {
+            "region_id": "EL",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "additional_information"
+        },
+        "HU": {
+            "region_id": "HU",
+            "file_encoding": "utf-8"
+        },
+        "PT/PT": {
+            "region_id": "PT_PT",
+            "file_encoding": "utf-8"},
+        "PT/ALE": {
+            "region_id": "PT_ALE",
+            "file_encoding": "utf-8"},
+        "PT/ALG": {
+            "region_id": "PT_ALG",
+            "file_encoding": "utf-8"},
+        "PT/AML": {
+            "region_id": "PT_AML",
+            "file_encoding": "utf-8"},
+        "PT/CET": {
+            "region_id": "PT_CET",
+            "file_encoding": "utf-8"},
+        "PT/CEN": {
+            "region_id": "PT_CEN",
+            "file_encoding": "utf-8"},
+        "PT/CES": {
+            "region_id": "PT_CES",
+            "file_encoding": "utf-8"},
+        "PT/NOR": {
+            "region_id": "PT_NOR",
+            "file_encoding": "utf-8"},
+        "PT/NON": {
+            "region_id": "PT_NON",
+            "file_encoding": "utf-8"},
+        "PT/NOS": {
+            "region_id": "PT_NOS",
+            "file_encoding": "utf-8"}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
-    # FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    # FR_districts = list(FR_districts["code"])
-    # for district in FR_districts:
-    #     run_dict[f"FR/{district}"] = {
-    #         "region_id": f"FR_{district}",
-    #         "file_encoding": "utf-8",
-    #         "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_csv.xlsx",
-    #         "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
-    #         "col_transl_descr_overwrite": "FR",
-    #         "csv_sep": ";"
-    #         }
+    FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
+    FR_districts = list(FR_districts["code"])
+    for district in FR_districts:
+        run_dict[f"FR/{district}"] = {
+            "region_id": f"FR_{district}",
+            "file_encoding": "utf-8",
+            "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_csv.xlsx",
+            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
+            "col_transl_descr_overwrite": "FR",
+            "skip_years": [2007, 2008, 2009]
+            }
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -513,7 +512,7 @@ def main():
             ## First create out path with original region ID
             ## We have to fetch the region ID for safety reason again, as it might have been overwritten later on
             region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
-            csv_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\IACS-{region_id}-{year}.csv"
+            csv_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\GSA-{region_id}-{year}.csv"
 
             ## If an overwrite for the column translation is provided, it means that the columns in the
             ## column-name translation table do not use the original region ID but another one

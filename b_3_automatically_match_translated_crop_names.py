@@ -209,22 +209,22 @@ def main():
 
     ## 1. For matching with all already existing classifications
     run_dict = {
-        # "IT/EMR": {
-        #     "region_id": "IT_EMR",
-        #     "file_encoding": "utf-8"
-        # },
-        # "IT/MAR": {
-        #     "region_id": "IT_MAR",
-        #     "file_encoding": "utf-8"
-        # },
-        # "IT/TOS": {
-        #     "region_id": "IT_TOS",
-        #     "file_encoding": "utf-8"
-        # },
-        # "IE": {
-        #     "region_id": "IE",
-        #     "file_encoding": "utf-8"
-        # },
+        "IT/EMR": {
+            "region_id": "IT_EMR",
+            "file_encoding": "utf-8"
+        },
+        "IT/MAR": {
+            "region_id": "IT_MAR",
+            "file_encoding": "utf-8"
+        },
+        "IT/TOS": {
+            "region_id": "IT_TOS",
+            "file_encoding": "utf-8"
+        },
+        "IE": {
+            "region_id": "IE",
+            "file_encoding": "utf-8"
+        },
         "DE/THU": {
             "region_id": "DE_THU",
             "file_encoding": "utf-8"

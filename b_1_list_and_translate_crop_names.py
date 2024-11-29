@@ -356,260 +356,262 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
+    ## To turn off/on the processing of a specific country, just comment/uncomment the specific line
+
     run_dict = {
-        # "AT": {
-        #     "region_id": "AT",
-        #     "from_lang": "de",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "BE/FLA": {
-        #    "region_id": "BE_FLA",
-        #    "from_lang": "nl",
-        #    "eurocrops_pth": r"data\vector\EuroCrops\BE_FLA_2021\BE_VLG_2021_EC21.shp"
-        # },
-        # "BE/WAL": {
-        #    "region_id": "BE_WAL",
-        #    "from_lang": "fr",
-        #    "eurocrops_pth": False,
-        #     "file_encoding": "ISO-8859-1"
-        # },
-        # "BG": {
-        #     "region_id": "BG",
-        #     "from_lang": "bg",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "windows-1251"}
-        # "CY/APPL": {
-        #     "region_id": "CY_APPL",
-        #     "from_lang": "el",
-        #     "eurocrops_pth": False,
-        #     "skip_list_crop_names": True,
-        #     "file_encoding": "utf-8",
-        #     "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
-        # },
-        # "CZ": {
-        #     "region_id": "CZ",
-        #     "from_lang": "cs",
-        #     "file_encoding": "ISO-8859-1",
-        #     "eurocrops_pth": False,
-        #     "ignore_files_descr": "IACS_Czechia"},
-        # "DE/BRB": {
-        #     "region_id": "DE_BRB",
-        #     "from_lang": "de",
-        #     "file_encoding": "ISO-8859-1",
-        #     "eurocrops_pth": True},
-        # "DE/LSA": {
-        #     "region_id": "DE_LSA",
-        #     "from_lang": "de",
-        #     "file_encoding": "utf-8",
-        #     "eurocrops_pth": True,
-        #     "ignore_files_descr": "other_files"},
-        # "DE/NRW": {
-        #     "region_id": "DE_NRW",
-        #     "from_lang": "de",
-        #     "file_encoding": "ISO-8859-1",
-        #     "ignore_files_descr": "HIST",
-        #     "eurocrops_pth": True},
-        # "DE/SAT": {
-        #     "region_id": "DE_SAT",
-        #     "from_lang": "de",
-        #     "file_encoding": "utf-8",
-        #     "ignore_files_descr": "Referenz",
-        #     "eurocrops_pth": False},
-        # "DE/SAA": {
-        #     "region_id": "DE_SAA",
-        #     "from_lang": "de",
-        #     "file_encoding": "utf-8",
-        #     "file_year_encoding": {"2023": "windows-1252"},
-        #     "ignore_files_descr": "Antrag",
-        #     "eurocrops_pth": False},
+        "AT": {
+            "region_id": "AT",
+            "from_lang": "de",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "BE/FLA": {
+           "region_id": "BE_FLA",
+           "from_lang": "nl",
+           "eurocrops_pth": r"data\vector\EuroCrops\BE_FLA_2021\BE_VLG_2021_EC21.shp"
+        },
+        "BE/WAL": {
+           "region_id": "BE_WAL",
+           "from_lang": "fr",
+           "eurocrops_pth": False,
+            "file_encoding": "ISO-8859-1"
+        },
+        "BG": {
+            "region_id": "BG",
+            "from_lang": "bg",
+            "eurocrops_pth": False,
+            "file_encoding": "windows-1251"},
+        "CY/APPL": {
+            "region_id": "CY_APPL",
+            "from_lang": "el",
+            "eurocrops_pth": False,
+            "skip_list_crop_names": True,
+            "file_encoding": "utf-8",
+            "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
+        },
+        "CZ": {
+            "region_id": "CZ",
+            "from_lang": "cs",
+            "file_encoding": "ISO-8859-1",
+            "eurocrops_pth": False,
+            "ignore_files_descr": "IACS_Czechia"},
+        "DE/BRB": {
+            "region_id": "DE_BRB",
+            "from_lang": "de",
+            "file_encoding": "ISO-8859-1",
+            "eurocrops_pth": True},
+        "DE/LSA": {
+            "region_id": "DE_LSA",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "eurocrops_pth": True,
+            "ignore_files_descr": "other_files"},
+        "DE/NRW": {
+            "region_id": "DE_NRW",
+            "from_lang": "de",
+            "file_encoding": "ISO-8859-1",
+            "ignore_files_descr": "HIST",
+            "eurocrops_pth": True},
+        "DE/SAT": {
+            "region_id": "DE_SAT",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "Referenz",
+            "eurocrops_pth": False},
+        "DE/SAA": {
+            "region_id": "DE_SAA",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "file_year_encoding": {"2023": "windows-1252"},
+            "ignore_files_descr": "Antrag",
+            "eurocrops_pth": False},
         "DE/THU": {
             "region_id": "DE_THU",
             "from_lang": "de",
             "file_encoding": "utf-8",
             "ignore_files_descr": "ZN",
             "eurocrops_pth": False},
-        # "DK": {
-        #     "region_id": "DK",
-        #     "from_lang": "da",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "ISO-8859-1"
-        # },
-        # "EE": {
-        #     "region_id": "EE",
-        #     "from_lang": "et",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "EL": {
-        #     "region_id": "EL",
-        #     "from_lang": "el",
-        #     "eurocrops_pth": False,
-        #     "skip_list_crop_names": True,
-        #     "file_encoding": "utf-8",
-        #     "crop_names_pth": "data/tables/crop_names/EL_unique_crop_names.csv"
-        # },
-        # "ES": {
-        #    "region_id": "ES",
-        #    "from_lang": "es",
-        #    "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        #     }
-        # "FI": {
-        #     "region_id": "FI",
-        #     "from_lang": "fi",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "ISO-8859-1"
-        # },
-        # "FR/SUBREGIONS": {
-        #     "fr_special_function": get_french_values_from_csv,
-        #     "region_id": "FR_SUBREGIONS",
-        #     "from_lang": "fr",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8",
-        # },
-        # "FR/FR": {
-        #     "region_id": "FR_FR",
-        #     "from_lang": "fr",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8",
-        #     "ignore_files_descr": "ILOTS_ANONYMES"
-        # },
-        # "HR": {
-        #     "region_id": "HR",
-        #     "from_lang": "hr",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "HU": {
-        #     "region_id": "HU",
-        #     "from_lang": "hu",
-        #     "eurocrops_pth": False,
-        #     "skip_list_crop_names": True,
-        #     "file_encoding": "utf-8",
-        #     "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
-        # },
-        # "IE": {
-        #     "region_id": "IE",
-        #     "from_lang": "en",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "IT/EMR": {
-        #     "region_id": "IT_EMR",
-        #     "from_lang": "it",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "IT/MAR": {
-        #     "region_id": "IT_MAR",
-        #     "from_lang": "it",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "IT/TOS": {
-        #     "region_id": "IT_TOS",
-        #     "from_lang": "it",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "LV": {
-        #     "region_id": "LV",
-        #     "from_lang": "lv",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "NL": {
-        #     "region_id": "NL",
-        #     "from_lang": "nl",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/ALE": {
-        #     "region_id": "PT_ALE",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/ALG": {
-        #     "region_id": "PT_ALG",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/AML": {
-        #     "region_id": "PT_AML",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/CE": {
-        #     "region_id": "PT_CE",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/CEN": {
-        #     "region_id": "PT_CEN",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/CES": {
-        #     "region_id": "PT_CES",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/NO": {
-        #     "region_id": "PT_NO",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/NON": {
-        #     "region_id": "PT_NON",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/NOS": {
-        #     "region_id": "PT_NOS",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "PT/PT": {
-        #     "region_id": "PT_PT",
-        #     "from_lang": "pt",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8",
-        #     "pt_special_function": pt_combine_crop_codes_with_crop_names
-        # }
-        # "RO": {
-        #     "region_id": "RO",
-        #     "from_lang": "ro",
-        #     "eurocrops_pth": False,
-        #     "file_encoding": "utf-8"
-        # },
-        # "SE": {
-        #    "region_id": "SE",
-        #    "from_lang": "sv",
-        #    "eurocrops_pth": True,
-        #     "file_encoding": "ISO-8859-1"
-        # }
-        # "SI": {
-        #     "region_id": "SI",
-        #     "from_lang": "sl",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # },
-        # "SK": {
-        #     "region_id": "SK",
-        #     "from_lang": "sk",
-        #     "eurocrops_pth": True,
-        #     "file_encoding": "utf-8"
-        # }
+        "DK": {
+            "region_id": "DK",
+            "from_lang": "da",
+            "eurocrops_pth": True,
+            "file_encoding": "ISO-8859-1"
+        },
+        "EE": {
+            "region_id": "EE",
+            "from_lang": "et",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "EL": {
+            "region_id": "EL",
+            "from_lang": "el",
+            "eurocrops_pth": False,
+            "skip_list_crop_names": True,
+            "file_encoding": "utf-8",
+            "crop_names_pth": "data/tables/crop_names/EL_unique_crop_names.csv"
+        },
+        "ES": {
+           "region_id": "ES",
+           "from_lang": "es",
+           "eurocrops_pth": False,
+            "file_encoding": "utf-8"
+            },
+        "FI": {
+            "region_id": "FI",
+            "from_lang": "fi",
+            "eurocrops_pth": False,
+            "file_encoding": "ISO-8859-1"
+        },
+        "FR/SUBREGIONS": {
+            "fr_special_function": get_french_values_from_csv,
+            "region_id": "FR_SUBREGIONS",
+            "from_lang": "fr",
+            "eurocrops_pth": False,
+            "file_encoding": "utf-8",
+        },
+        "FR/FR": {
+            "region_id": "FR_FR",
+            "from_lang": "fr",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "ILOTS_ANONYMES"
+        },
+        "HR": {
+            "region_id": "HR",
+            "from_lang": "hr",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "HU": {
+            "region_id": "HU",
+            "from_lang": "hu",
+            "eurocrops_pth": False,
+            "skip_list_crop_names": True,
+            "file_encoding": "utf-8",
+            "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
+        },
+        "IE": {
+            "region_id": "IE",
+            "from_lang": "en",
+            "eurocrops_pth": False,
+            "file_encoding": "utf-8"
+        },
+        "IT/EMR": {
+            "region_id": "IT_EMR",
+            "from_lang": "it",
+            "eurocrops_pth": False,
+            "file_encoding": "utf-8"
+        },
+        "IT/MAR": {
+            "region_id": "IT_MAR",
+            "from_lang": "it",
+            "eurocrops_pth": False,
+            "file_encoding": "utf-8"
+        },
+        "IT/TOS": {
+            "region_id": "IT_TOS",
+            "from_lang": "it",
+            "eurocrops_pth": False,
+            "file_encoding": "utf-8"
+        },
+        "LV": {
+            "region_id": "LV",
+            "from_lang": "lv",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "NL": {
+            "region_id": "NL",
+            "from_lang": "nl",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/ALE": {
+            "region_id": "PT_ALE",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/ALG": {
+            "region_id": "PT_ALG",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/AML": {
+            "region_id": "PT_AML",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/CE": {
+            "region_id": "PT_CE",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/CEN": {
+            "region_id": "PT_CEN",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/CES": {
+            "region_id": "PT_CES",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/NO": {
+            "region_id": "PT_NO",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/NON": {
+            "region_id": "PT_NON",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/NOS": {
+            "region_id": "PT_NOS",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "PT/PT": {
+            "region_id": "PT_PT",
+            "from_lang": "pt",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8",
+            "pt_special_function": pt_combine_crop_codes_with_crop_names
+        },
+        "RO": {
+            "region_id": "RO",
+            "from_lang": "ro",
+            "eurocrops_pth": False,
+            "file_encoding": "utf-8"
+        },
+        "SE": {
+           "region_id": "SE",
+           "from_lang": "sv",
+           "eurocrops_pth": True,
+            "file_encoding": "ISO-8859-1"
+        },
+        "SI": {
+            "region_id": "SI",
+            "from_lang": "sl",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        },
+        "SK": {
+            "region_id": "SK",
+            "from_lang": "sk",
+            "eurocrops_pth": True,
+            "file_encoding": "utf-8"
+        }
     }
 
     ## Loop through tasks in run_dict

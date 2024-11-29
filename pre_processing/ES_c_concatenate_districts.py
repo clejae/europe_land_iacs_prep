@@ -8,6 +8,7 @@ import time
 import geopandas as gpd
 import pandas as pd
 import zipfile
+from shapely.validation import make_valid
 
 import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
@@ -25,16 +26,16 @@ def combine_subdistricts(in_dir, crop_names_pth, district, year, out_dir):
     # thus cod_producto has to be assigned to the linea_declaration
     # are there information on farms? exp_num @Phillip Metadata
 
-    unzip_list = glob.glob(fr"data\vector\IACS\ES_temp\{year}\{district}\*.zip")
-
-    for i, path in enumerate(unzip_list):
-        print(f"{i}/{len(unzip_list)} - UZ {path}")
-        ## Get folder
-        folder = rf"data\vector\IACS\ES_temp\{year}\{district}"
-
-        ## Unzip
-        with zipfile.ZipFile(path, 'r') as zip_ref:
-            zip_ref.extractall(folder)
+    # unzip_list = glob.glob(fr"data\vector\IACS\ES_temp\{year}\{district}\*.zip")
+    #
+    # for i, path in enumerate(unzip_list):
+    #     print(f"{i}/{len(unzip_list)} - UZ {path}")
+    #     ## Get folder
+    #     folder = rf"data\vector\IACS\ES_temp\{year}\{district}"
+    #
+    #     ## Unzip
+    #     with zipfile.ZipFile(path, 'r') as zip_ref:
+    #         zip_ref.extractall(folder)
 
     iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
 
@@ -53,27 +54,34 @@ def combine_subdistricts(in_dir, crop_names_pth, district, year, out_dir):
 
         fields = gpd.read_file(pth, layer="linea_declaracion")
         file = pd.merge(fields, crops, how="left", left_on="parc_producto", right_on="codigo")
+        file['geometry'] = file['geometry'].buffer(0)
+        file['geometry'] = file.normalize()
+        file.drop_duplicates(subset="geometry", inplace=True)
         file_list.append(file)
 
     print("Combining.")
     out_file = pd.concat(file_list)
+    out_file.drop_duplicates(inplace=True)
+    out_file.index = range(1, len(out_file)+1)
     out_folder = f"{out_dir}\{district[:3]}"
     helper_functions.create_folder(out_folder)
-    out_pth = f"{out_folder}\IACS_{district[:3]}_{year}.gpkg"
+    # out_pth = f"{out_folder}\IACS_{district[:3]}_{year}.gpkg"
+    out_pth = f"{out_folder}\IACS_{district[:3]}_{year}.geoparquet"
     print("Writing out to", out_pth)
-    out_file.to_file(out_pth, driver="GPKG")
-
+    # out_file.to_file(out_pth, driver="GPKG")
+    out_file.to_parquet(out_pth)
 
 def main():
     stime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
     os.chdir(WD)
 
-    for year in [2023]: # [2022]
+    for year in [2022, 2023]: # [2022]
         # districts = [x[0] for x in os.walk(fr"data\vector\IACS\ES_temp\{year}")]
         districts = glob.glob(f'data/vector/IACS/ES_temp/{year}/*')
         # districts = [districts[16]]
-        districts = [x for x in districts if "CIU" in x]
+        # districts = [x for x in districts if "CIU" in x]
+        # districts = ['data/vector/IACS/ES_temp/2023/HEC - HUESCA (22)']
 
         for district_dir in districts:
             district = os.path.basename(district_dir)

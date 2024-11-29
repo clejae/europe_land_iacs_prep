@@ -32,6 +32,8 @@ def main():
     ## Input for geodata harmonization (in some cases, e.g. France or Portugal,
     ## some csv file have also to be harmonized. See below)
 
+    ## To turn off/on the processing of a specific country, just comment/uncomment the specific line
+
     run_dict = {
         "BE/FLA": {"region_id": "BE_FLA"},
         "AT": {"region_id": "AT", "crop_class_pth": "AT_crop_classification_final_INSPIRE.xlsx"},
@@ -66,15 +68,15 @@ def main():
     }
 
     ## For spain create a dictionary in a loop, because of the many subregions
-    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    # ES_districts = list(ES_districts["code"])
-    # run_dict = {f"ES/{district}": {
-    #     "region_id": f"ES_{district}",
-    #     "file_encoding": "utf-8",
-    #     "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
-    #     "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
-    #     "col_transl_descr_overwrite": "ES"
-    # } for district in ES_districts}
+    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = list(ES_districts["code"])
+    run_dict = {f"ES/{district}": {
+        "region_id": f"ES_{district}",
+        "file_encoding": "utf-8",
+        "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
+        "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+        "col_transl_descr_overwrite": "ES"
+    } for district in ES_districts}
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
