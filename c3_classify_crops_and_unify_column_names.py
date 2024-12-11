@@ -14,6 +14,7 @@ import time
 import pandas as pd
 import geopandas as gpd
 import warnings
+import numpy as np
 
 import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
@@ -42,7 +43,7 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
         iacs = pd.read_csv(iacs_pth, sep=csv_sep)
 
     tr_df = pd.read_excel(col_translate_pth)
-    cl_df = pd.read_excel(crop_class_pth)
+    cl_df = pd.read_excel(crop_class_pth) #, dtype={"EC_hcat_c": int}
 
     ## Optional: Subset the columns that should be in the final file
     print("Unifying column names.")
@@ -85,27 +86,38 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
     print("Classifying crops.")
     if ("crop_name" in iacs.columns) & ("crop_name" in cl_df.columns):
         print("Classifying (i.e. merging) on crop name.")
+
         crop_codes_bool = False
         if ("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns):
             crop_codes = iacs["crop_code"].copy()
             ## Drop crop_code because otherwise it will occur twice with appendic _x and _y
             iacs.drop(columns="crop_code", inplace=True)
             crop_codes_bool = True
+
         ## As we are classifying on crop name, we drop duplicates that might have arisen because of different codes
         cl_df.drop_duplicates(subset=["crop_name"], inplace=True)
         if iacs["crop_name"].dtype != 'object':
-            iacs["crop_name"] = iacs["crop_name"].astype(int)
+            iacs["crop_name"] = iacs["crop_name"].astype(str)
+
+        ## remove any line breaks that could not be captured in the crop classification tables
+        cl_df['crop_name'] = cl_df['crop_name'].str.replace('\n', '')
+        cl_df['crop_name'] = cl_df['crop_name'].str.replace('\r', '')
+        iacs['crop_name'] = iacs['crop_name'].str.replace('\n', '')
+        iacs['crop_name'] = iacs['crop_name'].str.replace('\r', '')
         iacs = pd.merge(iacs, cl_df, how="left", on="crop_name")
+
         ## As we are merging on crop names, it is possible that codes from other years are assigned to the
         ## original crop code column (e.g. BRB 2005, crop nan -->710). To be correct, we assign the code back.
         if crop_codes_bool:
             iacs["crop_code"] = crop_codes
     elif ("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns):
         print("Classifying (i.e. merging) on crop code")
+
         if ("crop_name" in iacs.columns) & ("crop_name" in cl_df.columns):
             iacs.drop(columns="crop_name", inplace=True)
         if iacs["crop_code"].dtype != 'object':
             iacs["crop_code"] = iacs["crop_code"].astype(int)
+
         ## As we are classifying on crop codes, we drop duplicates that might have arised, because of different names
         cl_df.drop_duplicates(subset=["crop_code"], inplace=True)
         cl_df.dropna(subset="crop_code", inplace=True)
@@ -134,9 +146,13 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
     iacs = iacs[cols].copy()
 
     ## Classify entries with no crop as unkown
-    check = iacs.loc[iacs["crop_name"].isna()].copy()
+    check = iacs.loc[iacs["EC_hcat_n"].isna()].copy()
     iacs.loc[iacs["crop_name"].isna(), "EC_hcat_n"] = "not_known_and_other"
     iacs.loc[iacs["crop_name"].isna(), "EC_hcat_c"] = 3399000000
+    iacs.loc[iacs["EC_hcat_n"].isna(), "EC_hcat_n"] = "missing"
+    iacs.loc[iacs["EC_hcat_c"].isna(), "EC_hcat_c"] = 1000000000
+
+    iacs["EC_hcat_c"] = iacs["EC_hcat_c"].astype(np.int64)
 
     ## Reproject
     if ext in ['.gpkg', '.gdb', '.shp', '.geojson', '.geoparquet']:
@@ -148,15 +164,15 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
     helper_functions.create_folder(folder)
 
     ## Check if all crops were classified
-    # check = iacs.loc[iacs["EC_hcat_c"].isna()].copy()
     unique_crops = check["crop_name"].unique()
+    check.drop_duplicates(subset=["crop_code", "crop_name"], inplace=True)
+    check = check[["crop_code", "crop_name"]]
     root_new, ext_new = os.path.splitext(iacs_new_pth)
     if len(unique_crops) > 0:
         warnings.warn(f"{len(unique_crops)} crops were not classified into the EuroCrops classification.")
-        if ext_new in ['.gpkg', '.gdb', '.shp', '.geojson']:
-            check.to_file(iacs_new_pth[:-5] + "_misses.gpkg", encoding=file_encoding)
-        if ext_new in ['.csv']:
-            check.to_csv(iacs_new_pth[:-5] + "_misses.csv", index=False)
+        check.to_csv(os.path.splitext(iacs_new_pth)[0] + "_misses.csv", index=False)
+        # if ext_new in ['.gpkg', '.gdb', '.shp', '.geojson']:
+        #     check.to_file(os.path.splitext(iacs_new_pth)[0] + "_misses.gpkg", encoding=file_encoding)
 
     ## Write out
     print("Writing out.")
@@ -222,76 +238,77 @@ def main():
     ## To turn off/on the harmonization of a specific country, just comment/uncomment the specific line
 
     run_dict = {
-        "AT": {"region_id": "AT", "file_encoding": "utf-8", "organic_dict_year": {"2023": {"Y": 1, "N": 0}}, "ignore_files_descr": "sl_anonym"}, # with farm id
-        "BE/FLA": {"region_id": "BE_FLA", "file_encoding": "utf-8", "file_year_encoding": {"2020": "ISO-8859-1"},
-                   "organic_dict": {"J": 1, "N": 0}}, #"skip_years": list(range(2008, 2022))+[2024],
-        "BE/WAL": {"region_id": "BE_WAL", "file_encoding": "ISO-8859-1"},
+        # "AT": {"region_id": "AT", "file_encoding": "utf-8", "organic_dict_year": {"2023": {"Y": 1, "N": 0}}, "ignore_files_descr": "temp", "skip_years": [2015, 2019, 2020, 2021, 2022]},
+        # "BE/FLA": {"region_id": "BE_FLA", "file_encoding": "utf-8", "file_year_encoding": {"2020": "ISO-8859-1"},
+        #            "organic_dict": {"J": 1, "N": 0}}, #"skip_years": list(range(2008, 2022))+[2024],
+        # "BE/WAL": {"region_id": "BE_WAL", "file_encoding": "utf-8", "file_year_encoding":  {"2015": "windows-1252", "2016":
+        #     "windows-1252", "2017": "windows-1252"}}, #, 2018: "utf-8", 2019: "utf-8", 2020: "utf-8", 2021: "utf-8", 2022: "utf-8"
         "CY": {"region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "LPIS"},
-        "CZ": {"region_id": "CZ", "file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"},
-        "DE/BRB": {"region_id": "DE_BRB", "file_encoding": "ISO-8859-1"}, #, "skip_years": range(2005, 2023)
-        "DE/LSA": {"region_id": "DE_LSA", "file_encoding": "utf-8", "ignore_files_descr": "other_files"},
-        "DE/NRW": {"region_id": "DE_NRW", "file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
+        # "CZ": {"region_id": "CZ", "file_encoding": "utf-8", "ignore_files_descr": "IACS_Czechia"},
+        # "DE/BRB": {"region_id": "DE_BRB", "file_encoding": "ISO-8859-1", "skip_years": range(2005, 2023)}, #,
+        # "DE/LSA": {"region_id": "DE_LSA", "file_encoding": "utf-8", "ignore_files_descr": "other_files"},
+        # "DE/NRW": {"region_id": "DE_NRW", "file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
         "DE/SAA": {"region_id": "DE_SAA", "file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"},
             "ignore_files_descr": "Antrag"},
         "DE/SAT": {"region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"}, #, "skip_years": list(range(2005, 2021))
-        "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #, "skip_years": range(2009, 2024)
-        "EE": {"region_id": "EE", "file_encoding": "utf-8"},
+        # "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #,range(2009, 2024)
+        # "EE": {"region_id": "EE", "file_encoding": "utf-8"},
         "EL": {"region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
-        "FI": {"region_id": "FI", "file_encoding": "ISO-8859-1"},
-        "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
-        "IE": {"region_id": "IE", "file_encoding": "utf-8"},
-        "HR": {"region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765},
+        # "FI": {"region_id": "FI", "file_encoding": "utf-8"}, #, "skip_years": range(2009, 2023)
+        # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES", "skip_years": range(2009, 2022)},
+        # "IE": {"region_id": "IE", "file_encoding": "utf-8", "organic_dict": {"Y": 1, "N": 0}},
+        # "HR": {"region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765},
         "HU": {"region_id": "HU", "file_encoding": "utf-8"},
-        "IT/EMR": {"region_id": "IT_EMR", "file_encoding": "utf-8", #"skip_years": range(2016, 2021),
-                   "organic_dict_year": {"2018": {0: 0, 1: 1}, "2019": {0: 0, 1: 1}, "2020": {0: 0, 1: 1},
-                                          "2021": {"1": 0, "2": 2, "3": 1, "4": 0}, "2022": {"1": 0, "2": 2, "3": 1, "4": 0},
-                                          "2023": {"1": 0, "2": 2, "3": 1, "4": 0}, "2024": {"1": 0, "2": 2, "3": 1, "4": 0}}},
+        # "IT/EMR": {"region_id": "IT_EMR", "file_encoding": "utf-8", #"skip_years": range(2016, 2021),
+        #            "organic_dict_year": {"2018": {0: 0, 1: 1}, "2019": {0: 0, 1: 1}, "2020": {0: 0, 1: 1},
+        #                                   "2021": {"1": 0, "2": 2, "3": 1, "4": 0}, "2022": {"1": 0, "2": 2, "3": 1, "4": 0},
+        #                                   "2023": {"1": 0, "2": 2, "3": 1, "4": 0}, "2024": {"1": 0, "2": 2, "3": 1, "4": 0}}},
         "IT/MAR": {"region_id": "IT_MAR", "file_encoding": "utf-8"},
         "IT/TOS": {"region_id": "IT_TOS", "file_encoding": "utf-8"},
-        "LV": {"region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"},
-        "LT": {"region_id": "LT", "file_encoding": "ISO-8859-1"},
-        "NL": {"region_id": "NL", "file_encoding": "utf-8", "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}}, #, "skip_years": range(2022, 2023)
-        "PT/PT": {"region_id": "PT_PT", "file_encoding": "utf-8"},
-        "PT/ALE": {"region_id": "PT_ALE", "file_encoding": "utf-8"},
-        "PT/ALG": {"region_id": "PT_ALG", "file_encoding": "utf-8"},
-        "PT/AML": {"region_id": "PT_AML", "file_encoding": "utf-8"},
-        "PT/CET": {"region_id": "PT_CET", "file_encoding": "utf-8"},
-        "PT/CEN": {"region_id": "PT_CEN", "file_encoding": "utf-8"},
-        "PT/CES": {"region_id": "PT_CES", "file_encoding": "utf-8"},
-        "PT/NOR": {"region_id": "PT_NOR", "file_encoding": "utf-8"},
-        "PT/NON": {"region_id": "PT_NON", "file_encoding": "utf-8"},
-        "PT/NOS": {"region_id": "PT_NOS", "file_encoding": "utf-8"},
+        # "LT": {"region_id": "LT", "file_encoding": "ISO-8859-1"},
+        # "LV": {"region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"}, #, "skip_years": range(2019, 2024)
+        # "NL": {"region_id": "NL", "file_encoding": "utf-8", "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}}, #, "skip_years": range(2022, 2023)
+        # "PT/PT": {"region_id": "PT_PT", "file_encoding": "utf-8"},
+        # "PT/ALE": {"region_id": "PT_ALE", "file_encoding": "utf-8"},
+        # "PT/ALG": {"region_id": "PT_ALG", "file_encoding": "utf-8"},
+        # "PT/AML": {"region_id": "PT_AML", "file_encoding": "utf-8"},
+        # "PT/CET": {"region_id": "PT_CET", "file_encoding": "utf-8"},
+        # "PT/CEN": {"region_id": "PT_CEN", "file_encoding": "utf-8"},
+        # "PT/CES": {"region_id": "PT_CES", "file_encoding": "utf-8"},
+        # "PT/NOR": {"region_id": "PT_NOR", "file_encoding": "utf-8"},
+        # "PT/NON": {"region_id": "PT_NON", "file_encoding": "utf-8"},
+        # "PT/NOS": {"region_id": "PT_NOS", "file_encoding": "utf-8"},
         "RO": {"region_id": "RO", "file_encoding": "utf-8"},
-        "SE": {"region_id": "SE", "file_encoding": "ISO-8859-1", "ignore_files_descr": "NOAPPL"}, ## With applicant ID
-        "SE/NOAPPL": {"region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
-        "SI": {"region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2}}, #range(2005, 2023)
-        "SK": {"region_id": "SK", "file_encoding": "utf-8",}, #"skip_years": [2018, 2019, 2020, 2021, 2022],
+        # "SE": {"region_id": "SE", "file_encoding": "ISO-8859-1", "ignore_files_descr": "NOAPPL"}, ## With applicant ID
+        # "SE/NOAPPL": {"region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
+        # "SI": {"region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2}}, #range(2005, 2023)
+        # "SK": {"region_id": "SK", "file_encoding": "utf-8"}, #"skip_years": [2018, 2019, 2020, 2021, 2022],
     }
 
-    # ## For france create a dictionary in a loop, because of the many subregions
-    FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    FR_districts = list(FR_districts["code"])
-    # FR_districts = ["GRE"]
-    for district in FR_districts:
-        run_dict[f"FR/{district}"] = {
-            "region_id": f"FR_{district}",
-            "file_encoding": "utf-8",
-            "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_vector.xlsx",
-            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
-            "col_transl_descr_overwrite": "FR"
-            }
+    ## For france create a dictionary in a loop, because of the many subregions
+    # FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
+    # FR_districts = list(FR_districts["code"])
+    # for district in FR_districts:
+    #     run_dict[f"FR/{district}"] = {
+    #         "region_id": f"FR_{district}",
+    #         "file_encoding": "utf-8",
+    #         "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_vector.xlsx",
+    #         "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
+    #         "col_transl_descr_overwrite": "FR"
+    #         }
 
     ## For spain create a dictionary in a loop, because of the many subregions
-    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    ES_districts = list(ES_districts["code"])
-    for district in ES_districts:
-        run_dict[f"ES/{district}"] = {
-            "region_id": f"ES_{district}",
-            "file_encoding": "utf-8",
-            "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
-            "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
-            "col_transl_descr_overwrite": "ES"
-            }
+    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    # ES_districts = list(ES_districts["code"])
+    # ES_districts = ["JAE"]
+    # for district in ES_districts:
+    #     run_dict[f"ES/{district}"] = {
+    #         "region_id": f"ES_{district}",
+    #         "file_encoding": "utf-8",
+    #         "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
+    #         "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+    #         "col_transl_descr_overwrite": "ES"
+    #         }
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -405,59 +422,59 @@ def main():
 
     ## Use  "col_translate_pth" and "crop_class_pth" to provide paths that deviate from the common naming pattern
     run_dict = {
-        "EL": {
-            "region_id": "EL",
-            "file_encoding": "utf-8",
-            "ignore_files_descr": "additional_information"
-        },
-        "HU": {
-            "region_id": "HU",
-            "file_encoding": "utf-8"
-        },
-        "PT/PT": {
-            "region_id": "PT_PT",
-            "file_encoding": "utf-8"},
-        "PT/ALE": {
-            "region_id": "PT_ALE",
-            "file_encoding": "utf-8"},
-        "PT/ALG": {
-            "region_id": "PT_ALG",
-            "file_encoding": "utf-8"},
-        "PT/AML": {
-            "region_id": "PT_AML",
-            "file_encoding": "utf-8"},
-        "PT/CET": {
-            "region_id": "PT_CET",
-            "file_encoding": "utf-8"},
-        "PT/CEN": {
-            "region_id": "PT_CEN",
-            "file_encoding": "utf-8"},
-        "PT/CES": {
-            "region_id": "PT_CES",
-            "file_encoding": "utf-8"},
-        "PT/NOR": {
-            "region_id": "PT_NOR",
-            "file_encoding": "utf-8"},
-        "PT/NON": {
-            "region_id": "PT_NON",
-            "file_encoding": "utf-8"},
-        "PT/NOS": {
-            "region_id": "PT_NOS",
-            "file_encoding": "utf-8"}
+        # "EL": {
+        #     "region_id": "EL",
+        #     "file_encoding": "utf-8",
+        #     "ignore_files_descr": "additional_information"
+        # },
+        # "HU": {
+        #     "region_id": "HU",
+        #     "file_encoding": "utf-8"
+        # },
+        # "PT/PT": {
+        #     "region_id": "PT_PT",
+        #     "file_encoding": "utf-8"},
+        # "PT/ALE": {
+        #     "region_id": "PT_ALE",
+        #     "file_encoding": "utf-8"},
+        # "PT/ALG": {
+        #     "region_id": "PT_ALG",
+        #     "file_encoding": "utf-8"},
+        # "PT/AML": {
+        #     "region_id": "PT_AML",
+        #     "file_encoding": "utf-8"},
+        # "PT/CET": {
+        #     "region_id": "PT_CET",
+        #     "file_encoding": "utf-8"},
+        # "PT/CEN": {
+        #     "region_id": "PT_CEN",
+        #     "file_encoding": "utf-8"},
+        # "PT/CES": {
+        #     "region_id": "PT_CES",
+        #     "file_encoding": "utf-8"},
+        # "PT/NOR": {
+        #     "region_id": "PT_NOR",
+        #     "file_encoding": "utf-8"},
+        # "PT/NON": {
+        #     "region_id": "PT_NON",
+        #     "file_encoding": "utf-8"},
+        # "PT/NOS": {
+        #     "region_id": "PT_NOS",
+        #     "file_encoding": "utf-8"}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
-    FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    FR_districts = list(FR_districts["code"])
-    for district in FR_districts:
-        run_dict[f"FR/{district}"] = {
-            "region_id": f"FR_{district}",
-            "file_encoding": "utf-8",
-            "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_csv.xlsx",
-            "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
-            "col_transl_descr_overwrite": "FR",
-            "skip_years": [2007, 2008, 2009]
-            }
+    # FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
+    # FR_districts = list(FR_districts["code"])
+    # for district in FR_districts:
+    #     run_dict[f"FR/{district}"] = {
+    #         "region_id": f"FR_{district}",
+    #         "file_encoding": "utf-8",
+    #         "col_translate_pth": f"data/tables/column_name_translations/FR_SUBREGIONS_column_name_translation_csv.xlsx",
+    #         "crop_class_pth": "data/tables/crop_classifications/FR_SUBREGIONS_crop_classification_final.xlsx",
+    #         "col_transl_descr_overwrite": "FR",
+    #         "skip_years": [2007, 2008, 2009]
+    #         }
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:

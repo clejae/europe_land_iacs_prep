@@ -36,39 +36,47 @@ def main():
     run_dict = {
         # "AT": {str(year): only_crop_cols for year in range(2015, 2022)} |
         #       {str(year): crop_org_cols for year in range(2022, 2025)},
-        # "BE/FLA": {str(year): only_crop_cols for year in range(2008, 2022)} |
-        #       {str(year): crop_org_cols for year in range(2022, 2024)} |
-        #       {"2024": only_crop_cols},
-        "BE/FLA": {"everything": True},
-        "CZ": {"2023": crop_farm_cols},
-        "DE/BRB": {str(year): only_crop_cols for year in range(2010, 2025)},
-        "DE/LSA": {str(year): only_crop_cols for year in range(2023, 2025)},
-        "DE/NRW": {str(year): only_crop_cols for year in range(2019, 2025)},
-        "DK": {"everything": True},
-        "EE": {"everything": True},
-        "FI": {"everything": True},
-        "FR/FR": {"everything": True},
-        "IE": {"everything": True},
-        "HR": {"everything": True},
-        "LT": {"everything": True},
-        "NL": {str(year): only_crop_cols for year in range(2009, 2025)},
-        "PT/PT": {"everything": True},
-        # "SE": {str(year): only_crop_cols for year in range(2015, 2024)},
-        "SI": {str(year): only_crop_cols for year in range(2018, 2024)},
-        "Sk": {str(year): only_crop_cols for year in range(2018, 2025)}
+        ## "BE/FLA": {"everything": True}, # no correction needed 10.12.24
+        # "CZ": {"2023": crop_farm_cols},
+        # "DE/BRB": {str(year): only_crop_cols for year in range(2010, 2025)},
+        # "DE/LSA": {str(year): only_crop_cols for year in range(2023, 2025)},
+        ## "DE/NRW": {str(year): only_crop_cols for year in range(2019, 2025)}, # no correction needed 10.12.24
+        # "DK": {"everything": True},
+        # "EE": {"everything": True},
+        # "FI": {"everything": True},
+        # "FR/FR": {"everything": True},
+        # "IE": {"everything": True},
+        ## "HR": {"everything": True}, # no correction needed 10.12.24
+        # "LT": {"everything": True},
+        # "LV": {str(year): only_crop_cols for year in range(2023, 2025)},
+        # "NL": {str(year): only_crop_cols for year in range(2009, 2025)},
+        # "PT/PT": {"everything": True},
+        # "PT/ALE": {"everything": True},
+        # "PT/ALG": {"everything": True},
+        # "PT/AML": {"everything": True},
+        # "PT/CET": {"everything": True},
+        # "PT/CEN": {"everything": True},
+        # "PT/CES": {"everything": True},
+        # "PT/NOR": {"everything": True},
+        # "PT/NON": {"everything": True},
+        # "PT/NOS": {"everything": True},
+        "SE": {str(year): only_crop_cols for year in range(2015, 2024)}, # no correction needed 10.12.24
+        # "SI": {str(year): only_crop_cols for year in range(2018, 2024)},
+        # "SK": {str(year): only_crop_cols for year in range(2018, 2025)}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
-    FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    FR_districts = list(FR_districts["code"])
-    for district in FR_districts:
-        run_dict[f"FR/{district}"] = {"everything": True}
+    # FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
+    # FR_districts = list(FR_districts["code"])
+    # for district in FR_districts:
+    #     run_dict[f"FR/{district}"] = {"everything": True}
 
     ## For spain create a dictionary in a loop, because of the many subregions
-    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    # ES_districts = list(ES_districts["code"])
-    # for district in ES_districts:
-    #     run_dict[f"ES/{district}"] = {"everything": True},
+    ## This code snippet needs to be corrected. I did the copying manually!
+    ## ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ## ES_districts = list(ES_districts["code"])
+    ## for district in ES_districts:
+    ##     run_dict[f"ES/{district}"] = {"everything": True},
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
