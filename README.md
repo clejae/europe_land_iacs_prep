@@ -1,5 +1,5 @@
 # Europe-LAND - Harmonized IACS Inventory
-The [Harmonized IACS inventory of Europe-LAND](https://doi.org/10.5281/zenodo.14230621) is a harmonized collection of data from the Geospatial Aid (GSA) system of the Integrated Control and Administration System (IACS), which manages and controls agricultural subsidies in the European Union (EU). The GSA data are a unique data source with field-levels of land use information that are annually generated. The data carry information on crops grown per field, a unique identifier of the subsidy applicants that allows to aggregate fields to farms, information on organic cultivation and animal numbers per farm. The [Europe-LAND project](https://europe-land.eu/) is funded by the EU within Horizon Europa (Grant Agreement No. 101081307).  __Disclaimer:__ If you use the harmonized data, please also cite the original sources of the data.
+The [Harmonized IACS inventory of Europe-LAND](https://zenodo.org/records/14230621) is a harmonized collection of data from the Geospatial Aid (GSA) system of the Integrated Control and Administration System (IACS), which manages and controls agricultural subsidies in the European Union (EU). The GSA data are a unique data source with field-levels of land use information that are annually generated. The data carry information on crops grown per field, a unique identifier of the subsidy applicants that allows to aggregate fields to farms, information on organic cultivation and animal numbers per farm. The [Europe-LAND project](https://europe-land.eu/) is funded by the EU within Horizon Europa (Grant Agreement No. 101081307).  __Disclaimer:__ If you use the harmonized data, please also cite the original sources of the data.
 
 This repository comes along with the inventory and contains all scripts that were written
 1) to obtain and preprocess the data and
@@ -20,7 +20,7 @@ The harmonization workflow is indicated with the letters a - d. We provide a dia
 8) __Script d1__ prepares information on the harmonized data and the classifications.
 9) __Script d3__ prepares the data for publication (e.g. removes information that cannot be shared).
 
-__We provide all column name translation tables and crop classification tables that we created in the respective folders.__ If you find errors, please do not hesitate to contact us.
+__We provide all column name translation tables and crop classification tables that we created in the [tables folder](tables) .__ If you find errors, please do not hesitate to contact us.
 
 ## Project setup for replication
 ```
