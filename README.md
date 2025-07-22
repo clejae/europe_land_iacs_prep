@@ -33,7 +33,14 @@ __We provide all column name translation tables and crop classification tables t
 │    │     └── statistics
 │    └── vector
 │          └── IACS
+|              └── XX
+|                   └──XXX_YYYY.gpkg
+|                   └──... 
 │          └── IACS_EU_Land
 ├── figures
 ├── scripts
 ```
+Where `XX` is the country code and `YYYY` is the year.
+
+### Linux
+The Python environment suitable to execute the workflow can be created suing the `pythonEnv.sh` code. 
