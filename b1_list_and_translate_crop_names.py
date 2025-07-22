@@ -289,11 +289,12 @@ def get_french_values_from_csv(in_dir, out_pth):
     res_lst = []
 
     ## Open column translations
-    tr_df = pd.read_excel(r"data\tables\FR_SUBREGIONS_column_name_translation_csv.xlsx")
+    tr_df = pd.read_excel(os.path.join("data", "tables", "FR_SUBREGIONS_column_name_translation_csv.xlsx"))
     ## Loop over subregions
     for sr in ["ARA", "BRC", "BRE", "COR", "CVL" "GRE", "HDF", "IDF", "NOR", "NOU", "OCC", "PDL", "PRO"]:
 
-        csv_files = glob.glob(rf"{in_dir}\{sr}\**\*GROUPES-CULTURE*.csv")
+        # csv_files = glob.glob(rf"{in_dir}\{sr}\**\*GROUPES-CULTURE*.csv")
+        csv_files = glob.glob(os.path.join(in_dir, sr, "**", "*GROUPES-CULTURE*.csv"), recursive=True)
 
         ## Loop over files to derive crop names from all files
         for path in csv_files:
@@ -356,6 +357,10 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
+    # check whether the `crop_names` exists already in the file structure and if not create it
+    crop_names_path = os.path.join("data", "tables", "crop_names")
+    os.makedirs(crop_names_path, exist_ok=True)
+
     ## To turn off/on the processing of a specific country, just comment/uncomment the specific line
 
     run_dict = {
@@ -368,7 +373,7 @@ def main():
         "BE/FLA": {
            "region_id": "BE_FLA",
            "from_lang": "nl",
-           "eurocrops_pth": r"data\vector\EuroCrops\BE_FLA_2021\BE_VLG_2021_EC21.shp"
+           "eurocrops_pth":os.path.join("data", "vector", "EuroCrops", "BE_FLA_2021", "BE_VLG_2021_EC21.shp")
         },
         "BE/WAL": {
            "region_id": "BE_WAL",
@@ -387,7 +392,7 @@ def main():
             "eurocrops_pth": False,
             "skip_list_crop_names": True,
             "file_encoding": "utf-8",
-            "crop_names_pth": "data/tables/crop_names/CY_unique_crop_names.csv",
+            "crop_names_pth": os.path.join("data", "tables", "crop_names", "CY_unique_crop_names.csv"),
         },
         "CZ": {
             "region_id": "CZ",
@@ -449,7 +454,7 @@ def main():
             "eurocrops_pth": False,
             "skip_list_crop_names": True,
             "file_encoding": "utf-8",
-            "crop_names_pth": "data/tables/crop_names/EL_unique_crop_names.csv"
+            "crop_names_pth": os.path.join("data", "tables", "crop_names", "EL_unique_crop_names.csv")
         },
         "ES": {
            "region_id": "ES",
@@ -489,7 +494,7 @@ def main():
             "eurocrops_pth": False,
             "skip_list_crop_names": True,
             "file_encoding": "utf-8",
-            "crop_names_pth": "data/tables/crop_names/HU_unique_crop_names.csv"
+            "crop_names_pth": os.path.join("data", "tables", "crop_names", "HU_unique_crop_names.csv")
         },
         "IE": {
             "region_id": "IE",
@@ -644,14 +649,14 @@ def main():
             if "fr_special_function" in run_dict[country_code]:
                 # call the function
                 run_dict[country_code]["fr_special_function"](
-                    in_dir=fr"data\vector\IACS\FR",
-                    out_pth=rf"data\tables\crop_names\FR_SUBREGIONS_unique_crop_names.csv")
+                    in_dir = os.path.join("data", "vector", "IACS", "FR"),
+                    out_pth = os.path.join("data", "tables", "crop_names", "FR_SUBREGIONS_unique_crop_names.csv"))
             else:
                 list_crop_names_ogr(
-                    in_dir=fr"data\vector\IACS\{country_code}",
+                    in_dir = os.path.join("data", "vector", "IACS", country_code),
                     region_id=region_id,
-                    col_translate_pth=rf"data\tables\column_name_translations\{region_id}_column_name_translation.xlsx",
-                    out_pth=rf"data\tables\crop_names\{region_id}_unique_crop_names.csv",
+                    col_translate_pth = os.path.join("data", "tables", "column_name_translations", f"{region_id}_column_name_translation.xlsx"),
+                    out_pth = os.path.join("data", "tables", "crop_names", f"{region_id}_unique_crop_names.csv"),
                     encoding=encoding,
                     file_year_encoding=file_year_encoding,
                     ignore_files_descr=ignore_files_descr
@@ -660,8 +665,8 @@ def main():
             if "pt_special_function" in run_dict[country_code]:
                 # call the function
                 run_dict[country_code]["pt_special_function"](
-                    crop_codes_pth=r"data\tables\crop_names\PT_PT_unique_crop_names.csv",
-                    crop_names_pth=r"data\vector\IACS\PT\Crops.xlsx"
+                    crop_codes_pth = os.path.join("data", "tables", "crop_names", "PT_PT_unique_crop_names.csv"),
+                    crop_names_pth = os.path.join("data", "vector", "IACS", "PT", "Crops.xlsx")
                    )
 
         ## Debug mode, 2 files
@@ -679,20 +684,20 @@ def main():
         if "crop_names_pth" in run_dict[country_code]:
             crop_names_pth = run_dict[country_code]["crop_names_pth"]
         else:
-            crop_names_pth = rf"data\tables\crop_names\{region_id}_unique_crop_names.csv"
+            crop_names_pth = os.path.join("data", "tables", "crop_names", f"{region_id}_unique_crop_names.csv")
 
         if eurocrops_pth:
             match_crop_names_with_eurocrops_classification(
                 crop_names_pth=crop_names_pth,
-                eurocrops_cl_pth=rf"data\tables\crop_names\{region_id}_EuroCrops_classification.csv",
-                from_lang=run_dict[country_code]["from_lang"],
-                out_pth=rf"data\tables\crop_names\{region_id}_crop_names_w_EuroCrops_class.xlsx")
+                eurocrops_cl_pth = os.path.join("data", "tables", "crop_names", f"{region_id}_EuroCrops_classification.csv"),
+                from_lang = run_dict[country_code]["from_lang"],
+                out_pth = os.path.join("data", "tables", "crop_names", f"{region_id}_crop_names_w_EuroCrops_class.xlsx"))
         else:
             translate_crop_names(
                 crop_names_pth=crop_names_pth,
                 from_lang=run_dict[country_code]["from_lang"],
                 country_code=region_id,
-                out_pth=rf"data\tables\crop_names\{region_id}_crop_names_w_translation.xlsx")
+                out_pth = os.path.join("data", "tables", "crop_names", f"{region_id}_crop_names_w_translation.xlsx"))
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
