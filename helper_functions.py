@@ -1,13 +1,13 @@
 def list_geospatial_data_in_dir(dir):
 
     import glob
+    import os
 
     types = ('**/*.gpkg', '**/*.gdb', '**/*.shp', '**/*.geojson', '**/*.geoparquet',  '*.gpkg', '*.gdb', '*.shp',
              '*.geojson', '*.geoparquet')  # the tuple of file types
     files_grabbed = []
     for files in types:
-        files_grabbed.extend(glob.glob(rf"{dir}\{files}"))
-
+        files_grabbed.extend(glob.glob(os.path.join(dir, files)))
 
     return files_grabbed
 
@@ -18,7 +18,7 @@ def list_csv_files_in_dir(dir):
     types = ('**/*.csv', '*.csv')  # the tuple of file types
     files_grabbed = []
     for files in types:
-        files_grabbed.extend(glob.glob(rf"{dir}\{files}"))
+        files_grabbed.extend(glob.glob(os.path.join(dir, files)))
 
     return files_grabbed
 
@@ -30,7 +30,7 @@ def list_tables_files_in_dir(dir):
     types = ('**/*.csv', '*.csv', '**/*.xls', '*.xls', '**/*.xlsx', '*.xlsx')  # the tuple of file types
     files_grabbed = []
     for files in types:
-        files_grabbed.extend(glob.glob(rf"{dir}\{files}"))
+        files_grabbed.extend(glob.glob(os.path.join(dir, files)))
 
     return files_grabbed
 
