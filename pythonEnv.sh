@@ -1,7 +1,15 @@
 #!/bin/bash
 
+#+
+# :Description: 
+#
+# :AUTHOR: Katarzyna Ewa Lewinska
+# :DATE: 24 July 2025
+# :UPDATES: 
+#-
+
 # Name of the environment
-ENV_NAME="Europa-LAND"
+ENV_NAME="Europe-LAND"
 
 # Create the environment with Python 3.11
 conda create -y -n "$ENV_NAME" python=3.11
@@ -15,7 +23,7 @@ conda config --env --add channels conda-forge
 conda config --env --set channel_priority strict
 
 # Install packages
-conda install conda-forge gdal
+conda install conda-forge::gdal
 conda install libffi
 conda install anaconda pandas
 
@@ -24,8 +32,14 @@ conda install anaconda pandas
 # Skipping: conda install conda-forge::time
 
 conda install conda-forge chardet
-conda install conda-forge geopandas
+conda install conda-forge::geopandas
+# fiona may require reinstall
+# conda install conda-forge fiona
 conda install anaconda openpyxl
+conda install anaconda::pyarrow
+conda install anaconda::seaborn
 
 # Not available via conda channels. Install dirrectly with pip
 pip install deep-translator
+pip install jaro-winkler
+
