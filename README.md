@@ -43,4 +43,4 @@ __We provide all column name translation tables and crop classification tables t
 Where `XX` is the country code and `YYYY` is the year.
 
 ### Linux
-The Python environment suitable to execute the workflow can be created suing the `pythonEnv.sh` code. 
+The Python environment suitable to execute the workflow can be created using the `./pythonEnv.sh` code. Alternatively, a Docker image suitable to execute the codes can be build from   `./Dockerfile/Dockerfile` of be pulled with the following command `docker pull kelewinska/europe_land_iacs_prep:latest`
