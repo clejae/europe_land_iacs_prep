@@ -14,6 +14,7 @@ def list_geospatial_data_in_dir(dir):
 def list_csv_files_in_dir(dir):
 
     import glob
+    import os
 
     types = ('**/*.csv', '*.csv')  # the tuple of file types
     files_grabbed = []
@@ -26,6 +27,7 @@ def list_csv_files_in_dir(dir):
 def list_tables_files_in_dir(dir):
 
     import glob
+    import os
 
     types = ('**/*.csv', '*.csv', '**/*.xls', '*.xls', '**/*.xlsx', '*.xlsx')  # the tuple of file types
     files_grabbed = []
