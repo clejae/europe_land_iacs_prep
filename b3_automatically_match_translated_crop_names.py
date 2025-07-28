@@ -236,9 +236,13 @@ def main():
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
 
-        in_pth = f"{CROP_NAMES_FOLDER}/{region_id}_crop_names_w_translation.xlsx"
-        out_pth = f"{CROP_NAMES_FOLDER}/{region_id}_crop_names_w_translation_and_match.xlsx"
+        in_pth = os.path.join(CROP_NAMES_FOLDER, f"{region_id}_crop_names_w_translation.xlsx")
+        out_pth = os.path.join(CROP_NAMES_FOLDER, f"{region_id}_crop_names_w_translation_and_match.xlsx")
 
+        # check whether input file exists
+        if not os.path.isfile(in_pth):
+            raise FileNotFoundError(f"The file '{in_pth}' does not exist.")
+        
         find_best_matching_ec_crop_code_with_jaro(
             df_pth=in_pth,
             crop_class_folder=CROP_CLASSIFICATION_FOLDER,
