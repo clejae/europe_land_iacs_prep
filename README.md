@@ -11,12 +11,25 @@ The crop information were harmonized using the Hierarchical Crop and Agriculture
 All pre-processing scripts can be found in the "pre_processing" folder. These scripts are country specific and prepare the data for the workflow.
 The harmonization workflow is indicated with the letters a - d. We provide a diagramm of our the project structure below and tables we created for the harmonization to exemplify the workflow. 
 1) __Script a__ is a simple script to list all columns found in the vector data and provide an example of an attribute.
-2) *Manual work:* After that the user has to create a column name translation table (xlsx) that assigns all the original columns to the harmonized column names per year.
-3) These tables are needed for __script b1__ that lists all available crop code - crop name combinations found in the vector data. It then translates all crop names to English and German. If the EuroCrops project already provided a mapping table to their classes, the script matches the new table to their classification.
+```
+would be great if a meaning of each column would be explained
+```
+2) *Manual work:* After executing  __Script a__ the user has to create a column name translation table (xlsx) that assigns all the original columns to the harmonized column names per year. Before moving on, this file has to be present in `\data\tables\column_name_translations\`. The file naming convention and its internal structire has to follow the predefined standards. Please use one of the files distributed with the codes as a template. 
+```
+would be great if a meaning of each column would be explained. for someone unfamiliar with the workflow it is a guessing game 
+```
+3) These tables manualy generated in step 2 are needed for __script b1__ that lists all available crop code - crop name combinations found in the vector data. It then translates all crop names to English and German. If the EuroCrops project already provided a mapping table to their classes, the script matches the new table to their classification. The ouputs of this code are placed in `\data\tables\crop_names\`.
 4) __Script b2__ is optional. It matches a table of unclassified crops with all already created HCAT crop classifications. For that, we use a string matching algorithm with the Jaro-Winkler metric. The matching is perfomed on the translated crop names to English. However, __the user still has to verify the matches manually__, but the workload is drastically reduced, if there is no existing EuroCrops classification.
 5) *Manual work:* Then, the user has to manually fill the gaps that are still existent in the crop classification tables.
+```
+missing information: based on which input file, where the final table should be saved, templates and naming conventions to follow
+Preferably, with the meaning of each column
+```
+```
+step with the execution of script b3 is missing
+```
 6) __Scripts c1 and c2__ are optional. They can be used to explore the unmaintained and not_known_and_other HCAT classes and to verify our version of the HCAT with a new version of the HCAT.
-7) __Script c3__ uses the manually generated classification table and the column name translation tables to harmonize the crop codes and the column names.
+7) __Script c3__ uses the manually generated classification table in `\data\tables\crop_classifications\` and the column name translation tables in `\data\tables\column_names\` to harmonize the crop codes and the column names.
 8) __Script d1__ prepares information on the harmonized data and the classifications.
 9) __Script d3__ prepares the data for publication (e.g. removes information that cannot be shared).
 
