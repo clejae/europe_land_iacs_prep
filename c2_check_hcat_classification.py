@@ -20,8 +20,10 @@ import helper_functions
 WD = dirname(dirname(abspath(__file__)))
 os.chdir(WD)
 
-COL_NAMES_FOLDER = r"data\tables\column_names"
-CROP_CLASSIFICATION_FOLDER = r"data\tables\crop_classifications"
+
+
+COL_NAMES_FOLDER = os.path.join("data", "tables","column_names")
+CROP_CLASSIFICATION_FOLDER = os.path.join("data", "tables", "crop_classifications")
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def main():
@@ -80,8 +82,12 @@ def main():
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
-        hcat_correct_pth = r"data\tables\hcat_levels_v2\HCAT3_HCAT_mapping.csv"
-        hcat_errors_pth = r"data\tables\hcat_levels_v2\hcat_errors_by_kristoffer.xlsx"
+        hcat_correct_pth = os.path.join("data", "tables", "hcat_levels_v2", "HCAT3_HCAT_mapping.csv")
+        hcat_errors_pth = os.path.join("data", "tables", "hcat_levels_v2", "hcat_errors_by_kristoffer.xlsx")
+
+        # check whether the output dir exists and create it if not
+        print(os.path.dirname(hcat_correct_pth))
+        os.makedirs(os.path.dirname(hcat_correct_pth), exist_ok=True)
 
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")

@@ -83,19 +83,19 @@ def main():
     for country_code in run_dict:
         ## Derive input variables for processing
         region_id = country_code.replace(r"/", "_")
-        in_dir = fr"data\vector\IACS_EU_Land\{country_code}"
+        in_dir = os.path.join("data", "vector", "IACS_EU_Land", country_code)
         print(region_id)
 
         ## Check if everything can be shared. If so, then copy the files as they are.
         if "everything" in run_dict[country_code]:
             print("Everything can be shared.")
-            file_list = glob.glob(rf"{in_dir}\*")
+            file_list = glob.glob(os.path.join(in_dir, "*"))
             for from_pth in file_list:
                 print("Copying", from_pth)
                 file_name = os.path.basename(from_pth)
-                out_folder = fr"data\vector\IACS_public_database\{country_code}"
+                out_folder = os.path.join("data", "vector", "IACS_public_database", country_code)
                 helper_functions.create_folder(out_folder)
-                to_pth = fr"data\vector\IACS_public_database\{country_code}\{file_name}"
+                to_pth = os.path.join("data", "vector", "IACS_public_database", country_code, file_name)
                 shutil.copy(from_pth, to_pth)
             continue
 
@@ -107,26 +107,26 @@ def main():
             cols = run_dict[country_code][year] + ["geometry"]
 
             ## Open file and copy with relevant columns
-            in_pth = fr"data\vector\IACS_EU_Land\{country_code}\GSA-{region_id}-{year}.geoparquet"
+            in_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.geoparquet")
             gdf = gpd.read_parquet(in_pth)
             gdf_out = gdf[cols].copy()
 
             ## Copy to public database folder
             file_name = os.path.basename(in_pth)
-            out_pth = fr"data\vector\IACS_public_database\{country_code}\{file_name}"
-            out_folder = fr"data\vector\IACS_public_database\{country_code}"
+            out_folder = os.path.join("data", "vector", "IACS_public_database", country_code)
+            out_pth = os.path.join(out_folder, file_name)
             helper_functions.create_folder(out_folder)
             print(f"Writing to {out_pth}")
             gdf_out.to_parquet(out_pth)
 
             ## Check if there is also a supplementary table and copy that as well
-            csv_pth = fr"data\vector\IACS_EU_Land\{country_code}\GSA-{region_id}-{year}.csv"
+            csv_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.csv")
             if os.path.exists(csv_pth):
                 print("Supplementary table found. Copying.")
                 ## So far there are not countries with supplementary tables for which we cannot share everything
                 ## Therefore, we can simply copy them.
                 file_name = os.path.basename(csv_pth)
-                to_pth = fr"data\vector\IACS_public_database\{country_code}\{file_name}"
+                to_pth = os.path.join("data", "vector", "IACS_public_database", country_code, file_name)
                 shutil.copy(csv_pth, to_pth)
 
                 ## Once there are countries with supplementary tables, we need to make sure, that these tables also

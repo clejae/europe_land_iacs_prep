@@ -78,7 +78,7 @@ def main():
     for country_code in run_dict:
         ## Derive input variables for processing
         region_id = country_code.replace(r"/", "_")
-        in_dir = fr"data\vector\IACS_EU_Land\{country_code}"
+        in_dir = os.path.join("data", "vector", "IACS_EU_Land", country_code)
         print(region_id)
 
         ## Get years that should be skipped
@@ -87,7 +87,7 @@ def main():
         else:
             skip_years = []
 
-        file_list = glob.glob(rf"{in_dir}\*")
+        file_list = glob.glob(os.path.join(in_dir, "*"))
 
         df_lst = []
 
@@ -110,6 +110,8 @@ def main():
                 df = pd.read_csv(file_pth)
             elif ext == ".geoparquet":
                 df = gpd.read_parquet(file_pth)
+
+            print(f"Columns in {file_pth}: {df.columns.tolist()}") ## ADDED
 
             df_na = df.loc[df["EC_hcat_n"].isna()].copy()
             print(f"Number of rows with NA in EC_hcat_n: {len(df_na)}")
@@ -142,7 +144,7 @@ def main():
         if len(df_lst) > 0:
             df_out = pd.concat(df_lst)
             df_out.drop_duplicates(subset=["crop_code", "crop_name"], inplace=True)
-            out_pth = fr"data\vector\IACS_EU_Land\missed_crops_{region_id}.csv"
+            out_pth = os.path.join("data", "vector", "IACS_EU_Land", f"missed_crops_{region_id}.csv")
             df_out[["crop_code",  "crop_name"]].to_csv(out_pth, index=False)
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())

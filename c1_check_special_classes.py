@@ -21,8 +21,10 @@ import helper_functions
 WD = dirname(dirname(abspath(__file__)))
 os.chdir(WD)
 
-COL_NAMES_FOLDER = r"data\tables\column_names"
-CROP_CLASSIFICATION_FOLDER = r"data\tables\crop_classifications"
+COL_NAMES_FOLDER = os.path.join("data", "tables", "column_names")
+CROP_CLASSIFICATION_FOLDER = os.path.join("data", "tables", "crop_classifications")
+# check the existence of the outpu dir and create if needed 
+os.makedirs(os.path.join("data","tables","hcat_levels_v2","reclassification"), exist_ok=True)
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def main():
@@ -32,7 +34,7 @@ def main():
 
     ## Go through all classifications and get original codes and crops assigned to unmaintained and not_known_and_other
 
-    pth_lst = glob.glob(rf"{CROP_CLASSIFICATION_FOLDER}\*_final.xlsx")
+    pth_lst = glob.glob(os.path.join(CROP_CLASSIFICATION_FOLDER, "*_final.xlsx"))
     df_lst = [pd.read_excel(pth) for pth in pth_lst]
     abbr_lst = [os.path.basename(pth).split("_crop_")[0] for pth in pth_lst]
 
@@ -46,8 +48,8 @@ def main():
     df_out = pd.concat(df_lst)
     df_out = df_out.loc[df_out["EC_hcat_n"].isin(["unmaintained", "afforestation_reforestation", "not_known_and_other", "other_arable_crops"])]
     df_out.drop_duplicates(inplace=True)
-    df_out.to_csv(r"Q:\Europe-LAND\data\tables\hcat_levels_v2\reclassification\candidate_classes_for_reclassification.csv", index=False)
-
+    df_out.to_csv(os.path.join("data","tables","hcat_levels_v2","reclassification","candidate_classes_for_reclassification.csv"), index=False)
+   
     df1 = df_lst[0]
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())

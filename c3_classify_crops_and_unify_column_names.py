@@ -22,8 +22,8 @@ import helper_functions
 WD = dirname(dirname(abspath(__file__)))
 os.chdir(WD)
 
-COL_NAMES_FOLDER = r"data\tables\column_names"
-CROP_CLASSIFICATION_FOLDER = r"data\tables\crop_classifications"
+COL_NAMES_FOLDER = os.path.join("data", "tables", "column_names")
+CROP_CLASSIFICATION_FOLDER = os.path.join("data", "tables", "crop_classifications")
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth, crop_class_pth, region_id, year,
@@ -219,8 +219,9 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
     check.drop_duplicates(subset=["crop_code", "crop_name"], inplace=True)
     check = check[["crop_code", "crop_name"]]
     root_new, ext_new = os.path.splitext(iacs_new_pth)
+
     if len(unique_crops) > 0:
-        warnings.warn(f"{len(unique_crops)} crops were not classified into the EuroCrops classification.")
+        print(f"{len(unique_crops)} crops were not classified into the EuroCrops classification.")
         check.to_csv(os.path.splitext(iacs_new_pth)[0] + "_misses.csv", index=False)
         # if ext_new in ['.gpkg', '.gdb', '.shp', '.geojson']:
         #     check.to_file(os.path.splitext(iacs_new_pth)[0] + "_misses.gpkg", encoding=file_encoding)
@@ -365,8 +366,8 @@ def main():
     for country_code in run_dict:
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
-        col_translate_pth = f"data/tables/column_name_translations/{region_id}_column_name_translation.xlsx"
-        crop_class_pth = f"{CROP_CLASSIFICATION_FOLDER}/{region_id}_crop_classification_final.xlsx"
+        col_translate_pth = os.path.join("data", "tables", "column_name_translations", f"{region_id}_column_name_translation.xlsx")
+        crop_class_pth = os.path.join(CROP_CLASSIFICATION_FOLDER, f"{region_id}_crop_classification_final.xlsx")
 
         ## If the file naming of the columns translation and the crop classificaiton table deviate, then correct them
         if "col_translate_pth" in run_dict[country_code]:
@@ -392,7 +393,7 @@ def main():
             file_year_encoding = None
 
         ## Get list of all available files
-        in_dir = fr"data\vector\IACS\{country_code}"
+        in_dir = os.path.join("data", "vector", "IACS", country_code)
         iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
 
         ## Exclude files that should be skipped
@@ -436,7 +437,7 @@ def main():
             ## We have to fetch the region ID for safety reason again, as it might have been overwritten in
             region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
             # iacs_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\GSA-{region_id}-{year}.gpkg"
-            iacs_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\GSA-{region_id}-{year}.geoparquet"
+            iacs_new_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.geoparquet")
 
             ## If an overwrite for the column translation is provided, it means that the columns in the
             ## column name translation table do not use the original region ID but another one
@@ -486,6 +487,7 @@ def main():
     ## Input for csv harmonization, e.g. in France there are accompanying csv files that provide information on the
     ## crop share per field block for 2007-2014
 
+    ## Use  "col_translate_pth" and "crop_class_pth" to provide paths that deviate from the common naming pattern
     ## Use  "col_translate_pth" and "crop_class_pth" to provide paths that deviate from the common naming pattern
     run_dict = {
         # "EL": {
@@ -546,8 +548,8 @@ def main():
     for country_code in run_dict:
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
-        col_translate_pth = f"data/tables/column_name_translations/{region_id}_column_name_translation.xlsx"
-        crop_class_pth = f"{CROP_CLASSIFICATION_FOLDER}/{region_id}_crop_classification_final.xlsx"
+        col_translate_pth = os.path.join("data", "tables", "column_name_translations", f"{region_id}_column_name_translation.xlsx")
+        crop_class_pth = os.path.join(CROP_CLASSIFICATION_FOLDER, f"{region_id}_crop_classification_final.xlsx")
         file_encoding = run_dict[country_code]["file_encoding"]
 
         ## If there is an alternative csv separator, fetch it
@@ -575,7 +577,7 @@ def main():
             ignore_files_descr = None
 
         ## Get list of all available files
-        in_dir = fr"data\vector\IACS\{country_code}"
+        in_dir = os.path.join("data", "vector", "IACS", country_code)
         csv_files = helper_functions.list_csv_files_in_dir(in_dir)
 
         ## Exclude files that should be skipped
@@ -595,7 +597,7 @@ def main():
             ## First create out path with original region ID
             ## We have to fetch the region ID for safety reason again, as it might have been overwritten later on
             region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
-            csv_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\GSA-{region_id}-{year}.csv"
+            csv_new_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.csv")
 
             ## If an overwrite for the column translation is provided, it means that the columns in the
             ## column-name translation table do not use the original region ID but another one
@@ -627,7 +629,7 @@ def main():
     for country_code in run_dict:
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
-        col_translate_pth = f"data/tables/{region_id}_column_name_translation_animals.xlsx"
+        col_translate_pth = os.path.join("data", "tables", f"{region_id}_column_name_translation_animals.xlsx")
 
         ## Get years that should be skipped
         if "skip_years" in run_dict[country_code]:
@@ -642,7 +644,7 @@ def main():
             ignore_files_descr = None
 
         ## Get list of all available files
-        in_dir = fr"data\vector\IACS\{country_code}"
+        in_dir = os.path.join("data", "vector", "IACS", country_code)
         table_files = helper_functions.list_tables_files_in_dir(in_dir)
 
         ## Exclude files that should be skipped
@@ -663,7 +665,7 @@ def main():
             ## First create out path with original region ID
             ## We have to fetch the region ID for safety reason again, as it might have been overwritten later on
             region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
-            csv_new_pth = rf"data\vector\IACS_EU_Land\{country_code}\IACS_animals-{region_id}-{year}.csv"
+            csv_new_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"IACS_animals-{region_id}-{year}.csv")
 
             unify_column_names_in_animal_data(
                 iacs_animal_pth=table_pth,

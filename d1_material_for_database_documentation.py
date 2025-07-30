@@ -27,11 +27,11 @@ os.chdir(WD)
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def plot_number_original_crops_and_harmonized_crops(crop_class_folder, out_pth):
 
-    in_pths = glob.glob(fr"{crop_class_folder}\*final.xlsx")
+    in_pths = glob.glob(os.path.join(crop_class_folder, "*final.xlsx"))
 
     out_dict = {}
     for in_pth in in_pths:
-        region_id = os.path.basename(in_pth).split(r"\\")[-1].split("_crop_")[0]
+        region_id = os.path.basename(in_pth).split("_crop_")[0]
         df = pd.read_excel(in_pth)
 
         num_original_entries = len(df.drop_duplicates(subset=["crop_code", "crop_name"]))
@@ -42,8 +42,13 @@ def plot_number_original_crops_and_harmonized_crops(crop_class_folder, out_pth):
 
     out_df = pd.DataFrame.from_dict(out_dict, orient="index").reset_index()
     out_df.rename(columns={"index": "country"}, inplace=True)
-    out_df.to_excel(r"data\tables\statistics\crop_classifications\number_of_crop_entries.xlsx")
+    
+     # chech if the output dir structure exist and create it if des not
+    os.makedirs(os.path.join("data", "tables", "statistics"), exist_ok=True)
+    os.makedirs(os.path.join("data", "tables", "statistics", "crop_classifications"), exist_ok=True)
 
+    out_df.to_excel(os.path.join("data", "tables", "statistics", "crop_classifications", "number_of_crop_entries.xlsx"))
+    
     print("Plotting")
     plt.figure(figsize=(8, 6))
     sns.barplot(x='country', y='num_original_entries', data=out_df.sort_values(by="num_original_entries"), color="blue")
@@ -53,7 +58,9 @@ def plot_number_original_crops_and_harmonized_crops(crop_class_folder, out_pth):
     plt.xlabel("Country")
     plt.ylabel("Number entries")
     plt.tight_layout()
-    plt.savefig(r"figures\statistics_on_crop_classifications\num_original_crop_entries.png")  # Save plot to disk
+    # chech if the output dir structure exist and create it if des not
+    os.makedirs(os.path.join("figures", "statistics_on_crop_classifications"), exist_ok=True)
+    plt.savefig(os.path.join("figures", "statistics_on_crop_classifications", "num_original_crop_entries.png"))  # Save plot to disk
     plt.close()
 
     # Plot for `num2`
@@ -62,12 +69,12 @@ def plot_number_original_crops_and_harmonized_crops(crop_class_folder, out_pth):
     plt.title("Number of original crop entries")
     plt.xlabel("Country")
     plt.ylabel("Number entries")
-    plt.savefig(r"figures\statistics_on_crop_classifications\num_ec_crop_entries.png")  # Save plot to disk
+    plt.savefig(os.path.join("figures", "statistics_on_crop_classifications", "num_ec_crop_entries.png"))  # Save plot to disk
     plt.close()  # Close the figure
 
 def count_number_features_per_year(region_id, out_pth):
 
-    in_pths = glob.glob(rf"data\vector\IACS_EU_Land\{region_id}\*.geoparquet")
+    in_pths = glob.glob(os.path.join("data", "vector", "IACS_EU_Land", region_id, "*.geoparquet"))
 
     out_dict = {}
     for in_pth in in_pths:
@@ -146,8 +153,12 @@ def main():
                    "DK", "EE", "EL", "ES", "FI", "FR", "FR_SUBREGIONS", "IE", "IT_EMR", "IT_MAR", "IT_TOS", "HR", "HU",
                    "LT", "LU", "LV", "MT", "NL", "PL", "PT", "PT_ALE", "RO", "SE", "SI", "SK"]
 
+    # chech if the output dir structure exist and create it if des not
+    os.makedirs(os.path.join("data", "tables", "statistics"), exist_ok=True)
+    os.makedirs(os.path.join("data", "tables", "statistics", "crop_classifications"), exist_ok=True)
+
     plot_number_original_crops_and_harmonized_crops(
-        crop_class_folder=r"data\tables\crop_classifications",
+        crop_class_folder = os.path.join("data", "tables", "crop_classifications"),
         out_pth="")
 
     regions_ids = ["AT", "BE/FLA", "BE/WAL", "CY", "CZ", "DE/BRB", "DE/LSA", "DE/NRW", "DE/SAA", "DE/SAT",
@@ -160,14 +171,14 @@ def main():
     # # regions_ids = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
     # # regions_ids = list(regions_ids["code"])
     # # regions_ids = [f"FR/{n}" for n in regions_ids]
-    regions_ids_es = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    regions_ids_es = pd.read_csv(os.path.join("data", "vector", "IACS", "FI", "region_code.txt"))
     regions_ids_es = list(regions_ids_es["code"])
     regions_ids_es = [f"ES/{n}" for n in regions_ids_es]
     regions_ids += regions_ids_es
 
     for region_id in regions_ids:
         print(region_id)
-        out_pth = fr"data\tables\statistics\num_parcels\{region_id.replace(r'/', '_')}_count_num_parcels_per_year.xlsx"
+        out_pth = os.path.join("data", "tables", "statistics", "num_parcels", f"{region_id.replace('/', '_')}_count_num_parcels_per_year.xlsx")
         count_number_features_per_year(region_id, out_pth)
 
     ## Aggregate regions of France
@@ -180,11 +191,11 @@ def main():
     # summed_df.to_excel(fr"data\tables\statistics\num_parcels\FR_FR_count_num_parcels_per_year_05-14.xlsx")
 
     ## Aggregate provinces of Spain
-    regions_ids = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    regions_ids = pd.read_csv(os.path.join("data", "vector", "IACS", "FI", "region_code.txt"))
     regions_ids = list(regions_ids["code"])
     regions_ids = [f"ES_{n}" for n in regions_ids]
 
-    df_lst = [pd.read_excel(fr"data\tables\statistics\num_parcels\{region_id}_count_num_parcels_per_year.xlsx") for
+    df_lst = [pd.read_excel(os.path.join("data", "tables", "statistics", "num_parcels", f"{region_id}_count_num_parcels_per_year.xlsx")) for 
               region_id in regions_ids]
     df_new_lst = []
     for i, df in enumerate(df_lst):
@@ -218,9 +229,9 @@ def main():
             df_new_lst.append(df)
 
     summed_df = sum_dataframes(df_new_lst)
-    summed_df.to_excel(fr"data\tables\statistics\num_parcels\ES_ES_count_num_parcels_per_year_23-24.xlsx")
+    summed_df.to_excel(os.path.join("data", "tables", "statistics", "num_parcels", "ES_ES_count_num_parcels_per_year_23-24.xlsx"))
 
-    directory_path = r"data\vector\IACS_EU_Land"
+    directory_path = os.path.join("data", "vector", "IACS_EU_Land")
     count = count_geoparquet_files(directory_path)
     print(f"Number of .geoparquet files: {count}")
 
