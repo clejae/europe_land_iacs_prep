@@ -332,7 +332,7 @@ def main():
         # "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #,range(2009, 2024)
         # "EE": {"region_id": "EE", "file_encoding": "utf-8"},
         # "EL": {"region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
-        # "FI": {"region_id": "FI", "file_encoding": "utf-8"}, #, "skip_years": range(2009, 2023)
+        "FI": {"region_id": "FI", "file_encoding": "utf-8"}, #, "skip_years": range(2009, 2024)
         # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
         # "IE": {"region_id": "IE", "file_encoding": "utf-8", "organic_dict": {"Y": 1, "N": 0}},
         # "HR": {"region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765},
@@ -343,7 +343,7 @@ def main():
         #                                   "2023": {"1": 0, "2": 2, "3": 1, "4": 0}, "2024": {"1": 0, "2": 2, "3": 1, "4": 0}}},
         # "IT/MAR": {"region_id": "IT_MAR", "file_encoding": "utf-8"},
         # "IT/TOS": {"region_id": "IT_TOS", "file_encoding": "utf-8"},
-        # "LT": {"region_id": "LT", "file_encoding": "ISO-8859-1"},
+        # "LT": {"region_id": "LT", "file_encoding": "ISO-8859-1", "skip_years":[2024]},
         # "LV": {"region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"}, #, "skip_years": range(2019, 2024)
         # "NL": {"region_id": "NL", "file_encoding": "utf-8", "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}}, #, "skip_years": range(2022, 2023)
         # "PT/PT": {"region_id": "PT_PT", "file_encoding": "utf-8"},
@@ -376,17 +376,17 @@ def main():
     #         }
 
     ## For spain create a dictionary in a loop, because of the many subregions
-    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    ES_districts = list(ES_districts["code"])
-    # ES_districts = ["CDB"]
-    for district in ES_districts:
-        run_dict[f"ES/{district}"] = {
-            "region_id": f"ES_{district}",
-            "file_encoding": "utf-8",
-            "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
-            "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
-            "col_transl_descr_overwrite": "ES"
-            }
+    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    # ES_districts = list(ES_districts["code"])
+    # # ES_districts = ["CDB"]
+    # for district in ES_districts:
+    #     run_dict[f"ES/{district}"] = {
+    #         "region_id": f"ES_{district}",
+    #         "file_encoding": "utf-8",
+    #         "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
+    #         "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+    #         "col_transl_descr_overwrite": "ES"
+    #         }
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:

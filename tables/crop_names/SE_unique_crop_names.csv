@@ -1,0 +1,177 @@
+crop_code,crop_name
+56,"Alvarbete (Öland, Gotland)"
+87,Annan stödberättigande gröda (bara för ersättningarna inom ekologisk produktion)
+66,Anpassade skyddszoner
+52,Betesmark (ej åker)
+95,Betesmark och slåtteräng under restaurering
+6,Blandningar av baljväxter eller klöver till grovfoder/ensilage
+13,"Blandsäd (spannmåls-/baljväxtblandning), mer än 50% spannmål"
+12,Blandsäd (stråsädesblandningar)
+10,Bovete
+35,Bruna bönor
+43,Bönor övriga
+86,Ej stödberättigande gröda (bara för ersättningarna inom ekologisk produktion)
+63,Energigräs 
+48,Foderbetor
+72,Fruktodling
+61,Fäbodbete som ger rätt till gårdsstöd och kompensationsstöd
+55,Fäbodbete som inte ger rätt till gårdsstöd och kompensationsstöd
+90,Gräsfattiga marker
+58,Gräsfrövall (ettårig)
+59,Gräsfrövall (flerårig)
+80_161,Grönfoder Blandade grödor
+80_13,"Grönfoder Blandsäd (spannmåls-/baljväxtblandning), mer än 50% spannmål"
+80_12,Grönfoder Blandsäd (stråsädesblandningar)
+80_136,Grönfoder Fodermärgkål
+80_3,Grönfoder Havre
+80_1,Grönfoder Korn (höst)
+80_2,Grönfoder Korn (vår)
+80_9,Grönfoder Majs
+80_34,Grönfoder Proteingrödsblandningar (baljväxter/spannmål)
+80_20,Grönfoder Raps (höst)
+80_21,Grönfoder Raps (vår)
+80_8,Grönfoder Råg 
+80_7,Grönfoder Rågvete (höst)
+80_29,Grönfoder Rågvete (vår)
+80_4,Grönfoder Vete (höst)
+80_5,Grönfoder Vete (vår)
+80_138,Grönfoder Westerwoldiskt rajgräs
+80_100,Grönfoder Övrigt
+81,Gröngödsling
+74_103,Grönsaksodling (köksväxter) Annan sallat
+74_104,Grönsaksodling (köksväxter) Blandade grönsaker
+74_105,Grönsaksodling (köksväxter) Blomkål
+74_106,Grönsaksodling (köksväxter) Broccoli
+74_107,Grönsaksodling (köksväxter) Dill
+74_108,Grönsaksodling (köksväxter) Fänkål
+74_109,Grönsaksodling (köksväxter) Gräslök
+74_110,Grönsaksodling (köksväxter) Grönkål
+74_111,Grönsaksodling (köksväxter) Gullök
+74_112,Grönsaksodling (köksväxter) Gurka
+74_113,Grönsaksodling (köksväxter) Isbergssallat
+74_114,Grönsaksodling (köksväxter) Jordärtskocka
+74_115,Grönsaksodling (köksväxter) Kronärtskocka
+74_116,Grönsaksodling (köksväxter) Kryddväxter
+74_117,Grönsaksodling (köksväxter) Kål
+74_118,Grönsaksodling (köksväxter) Kålrot
+74_9,Grönsaksodling (köksväxter) Majs
+74_119,Grönsaksodling (köksväxter) Matlök
+74_120,Grönsaksodling (köksväxter) Morot
+74_121,Grönsaksodling (köksväxter) Palsternacka
+74_122,Grönsaksodling (köksväxter) Pepparrot 
+74_123,Grönsaksodling (köksväxter) Pumpa
+74_124,Grönsaksodling (köksväxter) Purjolök
+74_125,Grönsaksodling (köksväxter) Rabarber
+74_126,Grönsaksodling (köksväxter) Rotselleri
+74_160,Grönsaksodling (köksväxter) Rädisa
+74_127,Grönsaksodling (köksväxter) Rödbeta
+74_163,Grönsaksodling (köksväxter) Rödlök
+74_128,Grönsaksodling (köksväxter) Selleri
+74_129,Grönsaksodling (köksväxter) Senap
+74_159,Grönsaksodling (köksväxter) Sockerärt
+74_130,Grönsaksodling (köksväxter) Sparris
+74_131,Grönsaksodling (köksväxter) Spenat
+74_156,Grönsaksodling (köksväxter) Svartkål
+74_132,Grönsaksodling (köksväxter) Tomat
+74_133,Grönsaksodling (köksväxter) Vitkål
+74_134,Grönsaksodling (köksväxter) Vitlök
+74_135,Grönsaksodling (köksväxter) Zucchini
+74_100,Grönsaksodling (köksväxter) Övrigt
+42,Hampa
+3,Havre
+15,Hirs
+68,Hybridasp
+26,Högerukaraps
+70,Jordgubbsodling
+83,Julgransodling
+14,Kanariefrö
+37,Kikärter
+62,Klöverfrövall
+31,Konservärter
+1,Korn (höst)
+2,Korn (vår)
+79,Kryddväxter och utsäde grönsaker
+9,Majs
+45,Matpotatis
+89,Mosaikbetesmark
+40,Oljelin
+28,Oljerättika
+25,Oljeväxtförsök
+78,Plantskolor med odling av permanenta grödor
+67,Poppel
+34,Proteingrödsblandningar (baljväxter/spannmål)*
+20,Raps (höst)
+21,Raps (vår)
+22,Rybs (höst)
+23,Rybs (vår)
+8,Råg
+7,Rågvete (höst)
+29,Rågvete (vår)
+65,Salix
+54,Skogsbete 
+77,Skyddszon mot vattendrag
+50,Slåtter och betesvall på åkermark
+49,Slåtter och betesvall på åkermark med  en  vallgröda som ej är godkänd för miljöersättning och ersättningar för ekologisk produktion
+57_155,Slåttervall på åker (kontrakt med vallfodertork) Annat
+57_154,Slåttervall på åker (kontrakt med vallfodertork) Lusern
+53,Slåtteräng (ej åker) 
+47,Sockerbetor
+39,Sojabönor (foderväxt)
+38,Sojabönor (oljeväxt)
+24,Solros
+11,Spannmålsförsök
+41,Spånadslin
+16_13,"Stråsäd till grönfoder/ensilage Blandsäd (spannmåls-/baljväxtblandning), mer än 50% spannmål"
+16_12,Stråsäd till grönfoder/ensilage Blandsäd (stråsädesblandningar)
+16_3,Stråsäd till grönfoder/ensilage Havre
+16_1,Stråsäd till grönfoder/ensilage Korn (höst)
+16_2,Stråsäd till grönfoder/ensilage Korn (vår)
+16_8,Stråsäd till grönfoder/ensilage Råg 
+16_7,Stråsäd till grönfoder/ensilage Rågvete (höst)
+16_29,Stråsäd till grönfoder/ensilage Rågvete (vår)
+16_4,Stråsäd till grönfoder/ensilage Vete (höst)
+16_5,Stråsäd till grönfoder/ensilage Vete (vår)
+16_100,Stråsäd till grönfoder/ensilage Övrigt
+46,Stärkelsepotatis
+33,Sötlupiner
+60_101,Träda (räknas som en gröda i förgröningsstödet) Bevuxen
+60_153,Träda (räknas som en gröda i förgröningsstödet) Insådd för pollinatörer
+60_152,Träda (räknas som en gröda i förgröningsstödet) Insådd för vilt
+60_102,Träda (räknas som en gröda i förgröningsstödet) Svart
+85_141,Trädgårdsodling Aster
+85_142,Trädgårdsodling Blandade blommor
+85_143,Trädgårdsodling Blåklint
+85_144,Trädgårdsodling Dahlia
+85_100,Trädgårdsodling Fritextfält
+85_145,Trädgårdsodling Havtorn
+85_146,Trädgårdsodling Prydnadsväxter
+85_148,Trädgårdsodling Ros
+85_168,Trädgårdsodling Sedum (fetknoppsväxter)
+85_149,Trädgårdsodling Snittblommor
+85_150,Trädgårdsodling Svartkämpe
+85_151,Trädgårdsodling Tulpanlök
+85_166,Trädgårdsodling Vallmo
+4,Vete (höst)
+5,Vete (vår)
+36,Vicker
+27,Vitsenap
+82,Våtmark
+30,Ärter (ej konservärter)
+32,Åkerbönor
+71,Övrig bärodling
+88_161,Övrig odling på åkermark Blandade grödor
+88_164,Övrig odling på åkermark Cikoria
+88_139,Övrig odling på åkermark Gräsmatteodling
+88_140,Övrig odling på åkermark Humle
+88_162,Övrig odling på åkermark Nässla
+88_158,Övrig odling på åkermark Quinoa
+88_165,Övrig odling på åkermark Speltvete
+88_170,Övrig odling på åkermark Sötväppling
+88_157,Övrig odling på åkermark Tobak
+88_169,Övrig odling på åkermark Viltåker
+88_100,Övrig odling på åkermark Övrigt
+88_101,
+74_50,
+50_101,
+45_102,
+88_95,
