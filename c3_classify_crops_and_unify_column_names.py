@@ -27,10 +27,58 @@ CROP_CLASSIFICATION_FOLDER = r"data\tables\crop_classifications"
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth, crop_class_pth, region_id, year,
-                                      iacs_new_pth, csv_sep=",", pre_transformation_crs=None, organic_dict=None
-                                      ):
+                                      iacs_new_pth, csv_sep=",", pre_transformation_crs=None, organic_dict=None,
+                                      classify_on="automatic"):
+    """
+       Unify column names in vector data.
+
+       Parameters:
+       ----------
+       iacs_pth : str
+           Path to the IACS file.
+       file_encoding : str
+           Encoding of the IACS file.
+       col_translate_pth : str
+           Path to the column translation file.
+       crop_class_pth : str
+           Path to the crop classification file.
+       region_id : int or str
+           Identifier for the region.
+       year : int
+           Year of the data.
+       iacs_new_pth : str
+           Output path for the harmonized IACS file.
+       csv_sep : str, optional
+           Separator for CSV files (default is ",").
+       pre_transformation_crs : str or None, optional
+           Coordinate reference system (CRS) that the input data have (default is None).
+       organic_dict : dict or None, optional
+           Dictionary mapping organic classifications (default is None).
+       classify_on : str, optional
+           Specifies the column to classify on. Should be used with care and only if all crop codes have a unique
+            classification. Otherwise, missclassifications might occur.
+            Must be one of:
+           - "crop_code"
+           - "crop_name"
+           - "automatic"
+           Default is "automatic".
+
+       Raises:
+       ------
+       ValueError:
+           If `classify_on` is not one of "crop_code", "crop_name", or "automatic".
+
+       Returns:
+       -------
+       None
+       """
+
+    valid_options = ["crop_code", "crop_name", "automatic"]
+    if classify_on not in valid_options:
+        raise ValueError(f"Invalid value for classify_on: '{classify_on}'. Must be one of {valid_options}.")
+
     root, ext = os.path.splitext(iacs_pth)
-    print(f"Unifying column names, classifying crops, reprojecting and saving as {ext} (or csv if input is csv).")
+    print(f"Unifying column names, classifying crops, reprojecting and saving as Geoparquet (or csv if input is csv).")
 
     ## Open files
     print("Reading input.")
@@ -84,12 +132,12 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
     ## Merge on crop name if it is availalbe in IACS data
     ## Then it is also likely it is available in classification table but we check anyways
     print("Classifying crops.")
-    if ("crop_name" in iacs.columns) & ("crop_name" in cl_df.columns):
+    if (("crop_name" in iacs.columns) & ("crop_name" in cl_df.columns)) and (classify_on in ["crop_name", "automatic"]):
         print("Classifying (i.e. merging) on crop name.")
 
         crop_codes_bool = False
         if ("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns):
-            crop_codes = iacs["crop_code"].copy()
+            crop_codes = iacs[["field_id", "crop_code"]].copy()
             ## Drop crop_code because otherwise it will occur twice with appendic _x and _y
             iacs.drop(columns="crop_code", inplace=True)
             crop_codes_bool = True
@@ -109,8 +157,11 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
         ## As we are merging on crop names, it is possible that codes from other years are assigned to the
         ## original crop code column (e.g. BRB 2005, crop nan -->710). To be correct, we assign the code back.
         if crop_codes_bool:
-            iacs["crop_code"] = crop_codes
-    elif ("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns):
+            # iacs["crop_code"] = crop_codes
+            iacs.drop(columns="crop_code", inplace=True)
+            iacs = pd.merge(iacs, crop_codes, how="left", on="field_id")
+        ##
+    elif (("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns)) and (classify_on in ["crop_code", "automatic"]):
         print("Classifying (i.e. merging) on crop code")
 
         if ("crop_name" in iacs.columns) & ("crop_name" in cl_df.columns):
@@ -238,33 +289,33 @@ def main():
     ## To turn off/on the harmonization of a specific country, just comment/uncomment the specific line
 
     run_dict = {
-        # "AT": {"region_id": "AT", "file_encoding": "utf-8", "organic_dict_year": {"2023": {"Y": 1, "N": 0}}, "ignore_files_descr": "temp", "skip_years": [2015, 2019, 2020, 2021, 2022]},
+        # "AT": {"region_id": "AT", "file_encoding": "utf-8", "organic_dict_year": {"2023": {"Y": 1, "N": 0}}, "ignore_files_descr": "temp"},
         # "BE/FLA": {"region_id": "BE_FLA", "file_encoding": "utf-8", "file_year_encoding": {"2020": "ISO-8859-1"},
         #            "organic_dict": {"J": 1, "N": 0}}, #"skip_years": list(range(2008, 2022))+[2024],
         # "BE/WAL": {"region_id": "BE_WAL", "file_encoding": "utf-8", "file_year_encoding":  {"2015": "windows-1252", "2016":
         #     "windows-1252", "2017": "windows-1252"}}, #, 2018: "utf-8", 2019: "utf-8", 2020: "utf-8", 2021: "utf-8", 2022: "utf-8"
-        "CY": {"region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "LPIS"},
+        # "CY": {"region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "LPIS"},
         # "CZ": {"region_id": "CZ", "file_encoding": "utf-8", "ignore_files_descr": "IACS_Czechia"},
-        # "DE/BRB": {"region_id": "DE_BRB", "file_encoding": "ISO-8859-1", "skip_years": range(2005, 2023)}, #,
+        # "DE/BRB": {"region_id": "DE_BRB", "file_encoding": "ISO-8859-1"}, #,
         # "DE/LSA": {"region_id": "DE_LSA", "file_encoding": "utf-8", "ignore_files_descr": "other_files"},
         # "DE/NRW": {"region_id": "DE_NRW", "file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
-        "DE/SAA": {"region_id": "DE_SAA", "file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"},
-            "ignore_files_descr": "Antrag"},
-        "DE/SAT": {"region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"}, #, "skip_years": list(range(2005, 2021))
+        # "DE/SAA": {"region_id": "DE_SAA", "file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"},
+        #     "ignore_files_descr": "Antrag"},
+        # "DE/SAT": {"region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"}, #, "skip_years": list(range(2005, 2021))
         # "DK": {"region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #,range(2009, 2024)
         # "EE": {"region_id": "EE", "file_encoding": "utf-8"},
-        "EL": {"region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
+        # "EL": {"region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
         # "FI": {"region_id": "FI", "file_encoding": "utf-8"}, #, "skip_years": range(2009, 2023)
-        # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES", "skip_years": range(2009, 2022)},
+        # "FR/FR": {"region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
         # "IE": {"region_id": "IE", "file_encoding": "utf-8", "organic_dict": {"Y": 1, "N": 0}},
         # "HR": {"region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765},
-        "HU": {"region_id": "HU", "file_encoding": "utf-8"},
+        # "HU": {"region_id": "HU", "file_encoding": "utf-8"},
         # "IT/EMR": {"region_id": "IT_EMR", "file_encoding": "utf-8", #"skip_years": range(2016, 2021),
         #            "organic_dict_year": {"2018": {0: 0, 1: 1}, "2019": {0: 0, 1: 1}, "2020": {0: 0, 1: 1},
         #                                   "2021": {"1": 0, "2": 2, "3": 1, "4": 0}, "2022": {"1": 0, "2": 2, "3": 1, "4": 0},
         #                                   "2023": {"1": 0, "2": 2, "3": 1, "4": 0}, "2024": {"1": 0, "2": 2, "3": 1, "4": 0}}},
-        "IT/MAR": {"region_id": "IT_MAR", "file_encoding": "utf-8"},
-        "IT/TOS": {"region_id": "IT_TOS", "file_encoding": "utf-8"},
+        # "IT/MAR": {"region_id": "IT_MAR", "file_encoding": "utf-8"},
+        # "IT/TOS": {"region_id": "IT_TOS", "file_encoding": "utf-8"},
         # "LT": {"region_id": "LT", "file_encoding": "ISO-8859-1"},
         # "LV": {"region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"}, #, "skip_years": range(2019, 2024)
         # "NL": {"region_id": "NL", "file_encoding": "utf-8", "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}}, #, "skip_years": range(2022, 2023)
@@ -278,7 +329,7 @@ def main():
         # "PT/NOR": {"region_id": "PT_NOR", "file_encoding": "utf-8"},
         # "PT/NON": {"region_id": "PT_NON", "file_encoding": "utf-8"},
         # "PT/NOS": {"region_id": "PT_NOS", "file_encoding": "utf-8"},
-        "RO": {"region_id": "RO", "file_encoding": "utf-8"},
+        # "RO": {"region_id": "RO", "file_encoding": "utf-8"},
         # "SE": {"region_id": "SE", "file_encoding": "ISO-8859-1", "ignore_files_descr": "NOAPPL"}, ## With applicant ID
         # "SE/NOAPPL": {"region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
         # "SI": {"region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2}}, #range(2005, 2023)
@@ -298,17 +349,17 @@ def main():
     #         }
 
     ## For spain create a dictionary in a loop, because of the many subregions
-    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    # ES_districts = list(ES_districts["code"])
-    # ES_districts = ["JAE"]
-    # for district in ES_districts:
-    #     run_dict[f"ES/{district}"] = {
-    #         "region_id": f"ES_{district}",
-    #         "file_encoding": "utf-8",
-    #         "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
-    #         "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
-    #         "col_transl_descr_overwrite": "ES"
-    #         }
+    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = list(ES_districts["code"])
+    # ES_districts = ["CDB"]
+    for district in ES_districts:
+        run_dict[f"ES/{district}"] = {
+            "region_id": f"ES_{district}",
+            "file_encoding": "utf-8",
+            "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
+            "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+            "col_transl_descr_overwrite": "ES"
+            }
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -365,6 +416,11 @@ def main():
         else:
             organic_dict_year = None
 
+        if "classify_on_year_dict" in run_dict[country_code]:
+            classify_on_year_dict = run_dict[country_code]["classify_on_year_dict"]
+        else:
+            classify_on_year_dict = None
+
         ## Temporary, if you want to subset the list.
         # iacs_files = iacs_files[12:13]
 
@@ -403,6 +459,15 @@ def main():
                 else:
                     organic_dict = None
 
+            ## If the users wants to force the column that should be used for the classificatin, fetch it here
+            if classify_on_year_dict:
+                if year in classify_on_year_dict:
+                    classify_on = classify_on_year_dict[year]
+                else:
+                    classify_on = "automatic"
+            else:
+                classify_on = "automatic"
+
             unify_column_names_in_vector_data(
                 iacs_pth=iacs_pth,
                 file_encoding=file_encoding,
@@ -412,7 +477,8 @@ def main():
                 year=year,
                 iacs_new_pth=iacs_new_pth,
                 pre_transformation_crs=pre_transformation_crs,
-                organic_dict=organic_dict
+                organic_dict=organic_dict,
+                classify_on=classify_on
             )
 
     ####################################################################################################################
