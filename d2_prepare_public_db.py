@@ -36,6 +36,7 @@ def main():
     run_dict = {
         # "AT": {str(year): only_crop_cols for year in range(2015, 2022)} |
         #       {str(year): crop_org_cols for year in range(2022, 2025)},
+        "BG": {"everything": True},
         ## "BE/FLA": {"everything": True}, # no correction needed 10.12.24
         # "CZ": {"2023": crop_farm_cols},
         # "DE/BRB": {str(year): only_crop_cols for year in range(2010, 2025)},
@@ -60,7 +61,7 @@ def main():
         # "PT/NOR": {"everything": True},
         # "PT/NON": {"everything": True},
         # "PT/NOS": {"everything": True},
-        "SE": {str(year): only_crop_cols for year in range(2015, 2024)}, # no correction needed 10.12.24
+        # "SE": {str(year): only_crop_cols for year in range(2015, 2024)}, # no correction needed 10.12.24
         # "SI": {str(year): only_crop_cols for year in range(2018, 2024)},
         # "SK": {str(year): only_crop_cols for year in range(2018, 2025)}
     }
