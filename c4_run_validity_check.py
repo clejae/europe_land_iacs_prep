@@ -30,35 +30,36 @@ def main():
     os.chdir(WD)
 
     run_dict = {
-        ## "AT": {}, #[2015, 2019, 2020, 2021, 2022]
-        ## ## "BE/FLA": {},
-        #"BE/WAL": {},
-        #"CY": {},
-        ## "CZ": {},
-        ## "DE/BRB": {"skip_years": range(2010, 2023)},
-        ## ## "DE/LSA": {},
-        ## ## "DE/NRW": {},
-        #"DE/SAA": {},
-        #"DE/SAT": {},
-        ## "DK": {"skip_years": range(2005, 2024)},
-        ## ## "EE": {},
-        #"EL": {},
-        ## "FI": {},
-        ## "FR/FR": {"skip_years": range(2005, 2022)},
-        ## ## "IE": {},
-        ## ## "HR": {},
-        #"HU": {},
-        "IT/EMR": {},
-        #"IT/MAR": {},
-        #"IT/TOS": {},
-        ## "LT": {},
-        ## "LV": {},
-        ## "NL": {},
-        ## "PT/PT": {},
-        #"RO": {},
-        ## "SE": {},
-        ## "SI": {},
-        ## "Sk": {}
+        # "AT": {}, #[2015, 2019, 2020, 2021, 2022]
+        # "BE/FLA": {},
+        # "BE/WAL": {},
+        # "CY": {},
+        # "CZ": {},
+        # "DE/BRB": {},
+        # "DE/LSA": {},
+        # "DE/NRW": {},
+        # "DE/SAA": {},
+        # "DE/SAT": {},
+        # "DK": {},
+        # "EE": {},
+        # "EL": {},
+        # "FI": {},
+        # "FR/FR": {},
+        # "IE": {},
+        # "HR": {},
+        # "HU": {},
+        # "IE": {},
+        # "IT/EMR": {},
+        # "IT/MAR": {},
+        # "IT/TOS": {},
+        # "LT": {},
+        # "LV": {},
+        # "NL": {},
+        # "PT/PT": {},
+        # "RO": {},
+        # "SE": {},
+        # "SI": {},
+        # "SK": {}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
@@ -67,11 +68,11 @@ def main():
     # for district in FR_districts:
     #     run_dict[f"FR/{district}"] = {"everything": True}
     #
-    # ## For spain create a dictionary in a loop, because of the many subregions
-    # ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    # ES_districts = list(ES_districts["code"])
-    # for district in ES_districts:
-    #     run_dict[f"ES/{district}"] = {"everything": True},
+    ## For spain create a dictionary in a loop, because of the many subregions
+    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = list(ES_districts["code"])
+    for district in ES_districts:
+        run_dict[f"ES/{district}"] = {"everything": True},
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -100,6 +101,9 @@ def main():
             if "animals" in file_pth:
                 continue
 
+            if "misses.csv" in file_pth:
+                continue
+
             root, ext = os.path.splitext(file_pth)
 
             if ext == ".csv":
@@ -108,7 +112,7 @@ def main():
                 df = gpd.read_parquet(file_pth)
 
             df_na = df.loc[df["EC_hcat_n"].isna()].copy()
-            print(f"No. of rows with NA in EC_hcat_n: {len(df_na)}")
+            print(f"Number of rows with NA in EC_hcat_n: {len(df_na)}")
             if len(df_na) > 0:
                 cols = ["crop_code", "crop_name", "EC_trans_n", "EC_hcat_n", "EC_hcat_c"]
                 df_na.drop_duplicates(subset=cols, inplace=True)
@@ -116,6 +120,24 @@ def main():
                 df_lst.append(df_na)
             else:
                 print("No missed crops")
+
+            ## Check for duplicate crop code - crop name combinations in original data
+            ## we had a mistake in script c3 that caused that in some cases.
+            df_dupl = df.drop_duplicates(subset=["crop_code", "crop_name"]).copy()
+
+            ## Group by crop_code and count unique crop_name entries
+            duplicates = df_dupl.groupby('crop_code')['crop_name'].nunique().reset_index()
+
+            ## Filter for crop_codes with more than one unique crop_name
+            duplicate_codes = duplicates[duplicates['crop_name'] > 1]['crop_code'].copy()
+
+            ## Filter original DataFrame to include only those duplicate crop_codes
+            duplicate_entries_df = df_dupl[df_dupl['crop_code'].isin(duplicate_codes)].copy()
+            duplicate_entries_df.sort_values(by="crop_code", inplace=True)
+            out_pth = fr"data\vector\IACS_EU_Land\{country_code}\duplicate_code-name_combs_{region_id}_{year}.csv"
+            if not duplicate_entries_df.empty:
+                print("Duplicate original crops detected.")
+                duplicate_entries_df.to_csv(out_pth, index=False)
 
         if len(df_lst) > 0:
             df_out = pd.concat(df_lst)
