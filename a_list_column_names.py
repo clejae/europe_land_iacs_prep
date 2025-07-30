@@ -290,8 +290,8 @@ def main():
         else:
             ignore_files_descr = None
         list_column_names_of_iacs_data_in_dir(
-            in_dir=fr"data\vector\IACS\{country_code}",
-            out_pth=rf"data\tables\column_names\{country_code.replace('/','_')}_column_names.xlsx",
+            in_dir = os.path.join("data", "vector", "IACS", country_code),
+            out_pth=os.path.join("data", "tables", "column_names",f"{country_code.replace('/','_')}_column_names.xlsx"),
             ignore_files_descr=ignore_files_descr,
             file_year_encoding=file_year_encoding,
             encoding=encoding)
@@ -319,8 +319,8 @@ def main():
         else:
             sep = ","
         list_column_names_of_animal_data_in_dir(
-            in_dir=fr"data\vector\IACS\{country_code}",
-            out_pth=rf"data\tables\column_names\{country_code.replace('/','_')}_animal_table_column_names.xlsx",
+            in_dir=os.path.join("data", "vector", "IACS", country_code),
+            out_pth=os.path.join("data", "tables", "column_names",f"{country_code.replace('/','_')}_animal_table_column_names.xlsx"),
             ignore_files_descr=ignore_files_descr,
             encoding=encoding,
             sep=sep)

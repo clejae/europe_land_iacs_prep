@@ -23,9 +23,9 @@ os.chdir(WD)
 
 _MATCHES = Literal["crop_code", "crop_name"]
 
-COL_NAMES_FOLDER = r"data\tables\column_names"
-CROP_NAMES_FOLDER = r"data\tables\crop_names"
-CROP_CLASSIFICATION_FOLDER = r"data\tables\crop_classifications"
+COL_NAMES_FOLDER = os.path.join("data", "tables", "column_names")
+CROP_NAMES_FOLDER = os.path.join("data", "tables", "crop_names")
+CROP_CLASSIFICATION_FOLDER = os.path.join("data", "tables", "crop_classifications")
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 
@@ -60,7 +60,7 @@ def find_best_matching_ec_crop_code_with_jaro(df_pth, crop_class_folder, out_pth
     # df["crop_name_de"] = df["crop_name_de"].str.lower()
 
     ## Read existing crop classification, but not use EL because it has too many unuseful names in it
-    df_lst = glob.glob(f"{crop_class_folder}\*.xlsx")
+    df_lst = glob.glob(os.path.join(crop_class_folder, "*.xlsx"))
     df_lst = [pth for pth in df_lst if "EL_crop" not in pth]
     df_lst = [pd.read_excel(pth) for pth in df_lst]
 
@@ -236,9 +236,13 @@ def main():
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
 
-        in_pth = f"{CROP_NAMES_FOLDER}/{region_id}_crop_names_w_translation.xlsx"
-        out_pth = f"{CROP_NAMES_FOLDER}/{region_id}_crop_names_w_translation_and_match.xlsx"
+        in_pth = os.path.join(CROP_NAMES_FOLDER, f"{region_id}_crop_names_w_translation.xlsx")
+        out_pth = os.path.join(CROP_NAMES_FOLDER, f"{region_id}_crop_names_w_translation_and_match.xlsx")
 
+        # check whether input file exists
+        if not os.path.isfile(in_pth):
+            raise FileNotFoundError(f"The file '{in_pth}' does not exist.")
+        
         find_best_matching_ec_crop_code_with_jaro(
             df_pth=in_pth,
             crop_class_folder=CROP_CLASSIFICATION_FOLDER,
@@ -263,9 +267,9 @@ def main():
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"]  #country_code.replace(r"/", "_")
 
-        in_pth = f"{CROP_NAMES_FOLDER}/{region_id}_crop_names_w_translation.xlsx"
+        in_pth = os.path.join(CROP_NAMES_FOLDER, f"{region_id}_crop_names_w_translation.xlsx")
         match_df_pth = run_dict[country_code]["match_df_pth"]
-        out_pth = f"{CROP_NAMES_FOLDER}/{region_id}_crop_names_w_translation_and_match_specific.xlsx"
+        out_pth = os.path.join(CROP_NAMES_FOLDER, f"{region_id}_crop_names_w_translation_and_match_specific.xlsx")
 
         # match_crop_names_of_two_tables(df_pth1, df_pth2, out_pth, match_on: _MATCHES = "crop_code")
         match_crop_names_of_two_tables(
