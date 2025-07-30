@@ -1,9 +1,8 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
-
-# 1. Loop over files and classify the crops and unify the column names.
-# 2. Save a new version of the IACS data.
+# This script is optional and can be used to inspect the crops that were assigned to the unmaintained and not_known_and_other
+# class. In our experience, sometimes these classes are filled with uncertain cases that could be classified better.
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os

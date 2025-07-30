@@ -1,8 +1,8 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
-# 1. Loop over files and classify the crops and unify the column names.
-# 2. Save a new version of the IACS data.
+# This script is only needed internally to separate the data the Europe-LAND project can share from the data we are
+# not allowed to share.
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os

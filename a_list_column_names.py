@@ -1,9 +1,36 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
-# 1. Loop over available files and get column names with example attribute values
-# 2. Save in data frame so that column names can be assigned to "universal" column names.
-# Afterwards: Manually assign column names to "universal" column names.
+# This script takes the original IACS/GSA data and provides a table with column names and an example of the
+# content of the columns. The user has to put the original files in a folder named with the Member state code
+# of the Interinstitutional Style Guide of the EU (see link next line) in following place: data\vector\IACS\XX
+# https://style-guide.europa.eu/en/content/-/isg/topic?identifier=annex-a6-country-and-territory-codes
+# For example, Danish data would be stored here: data/vector/IACS/DK.
+# If you have sub-datasets for the country, e.g. for federal states in Germany, create a subfolder. Choose an abbreviation
+# of your liking. For example, for Thuringian data from Germany, the data would be stored here: data/vector/IACS/DE/THU
+# Each file should contain a number indicating the year of the data, best case 4 digits, but the last 2 also work.
+
+# After the script has run: Manually assign column names to "universal" column names in a column_name_translation table.
+# This table should be stored in
+# data\tables\column_name_translations\XX_column_name_translations.xlsx,
+# where XX stands for the country or country_subregion abbreviation (XX_XXX_). We used Excel-tables, because that was
+# easiest for handling the encoding mess of all the member states.
+
+# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
+# item is another dictionary. In this dictionary, you should include the following keys:
+#
+# "file_encoding" - Encoding of the original GSA file
+# "file_year_encoding" - [optional] use if specific years deviate from that encoding
+# "ignore_file_descr" - [optional] use if there are other geospatial datasets in your folder that are not GSA data
+#
+# For example: CZ": {"file_encoding": "ISO-8859-1", file_year_encoding": {"2015": "utf-8"}, "ignore_files_descr": "other data"}
+
+# To turn off/on the processing of a specific country, just comment/uncomment the specific line
+
+# There is a second run_dict for animal data at the bottom of the main function. This is work in progress.
+
+
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os

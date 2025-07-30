@@ -1,9 +1,16 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
-# 1. Loop over files and classify the crops and unify the column names.
-# 2. Save a new version of the IACS data.
+# This script is optional and can be used to validate the harmonization results, i.e. it checks whether there
+# are entries that were not yet classified and if there are crop codes that were assigned to different classes of the HCAT
 
+# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
+# item is another dictionary. In this dictionary, you can include the following keys:
+
+# "skip_years" - [optional] can be used to provide a list of years that should not be harmonized
+
+# To turn off/on the matching of a specific country, just comment/uncomment the specific line of the run_dict
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
 from os.path import dirname, abspath

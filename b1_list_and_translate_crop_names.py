@@ -1,10 +1,45 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
-# 1. Loop over available files and get unique crop names
-# 2. Get EuroCrops classification from shapefile that they provide
-# 3. Translate crop names to English and German. Match crop names with their classification.
-# Afterwards: Manually classify missing crop names to EuroCrops classification.
+# This script uses the column_translation_table of each country to identify the correct columns and to extract the unique
+# crop codes - crop names combinations for all years.
+# If there is already a EuroCrops (EC) classification table, it will be used to match the unique crop name - crop code
+# from the original file and classify them according to the EC classification. The EC classification table should
+# be stored in the folder "data\tables\crop_names" with the following name XX_EuroCrops_classification.csv,
+# where XX stands for the country abbreviation (for sub-datasets it should be XX_XXX_).
+# If no EC classification table is provided, then the original crop names will be translated to English and German.
+# The output will either be a table of the unique crop codes - crop names combinations classified into EC classific, or
+# a table with translations for the unique crop codes - crop names combinations. They will be automatically saved to:
+# data\tables\crop_names\XX_crop_names_w_EuroCrops_class.xlsx or
+# data\tables\crop_names\XX_XXX_crop_names_w_translation.xlsx
+# Both files should be used to manually classify missing crop names to EuroCrops classification. The final table should be
+# stored in data\tables\crop_classifications\XX_crop_classification_final.xlsx
+
+# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
+# item is another dictionary. In this dictionary, you should include the following keys:
+
+# "region_id" - basically the main key (XX), but for XX/XXX changed into XX_XXX
+# "from_lang" - input for GoogleTranslator function to indicate which language needs to be translated
+# "file_encoding" - Encoding of the original GSA file
+# "skip_list_crop_names" - [optional] use if the original GSA data do not contain crop names. Sometimes they come in separate tables
+# "crop_names_pth" - [optional] the path to the separate table with crop names (see line above).
+# "file_year_encoding" - [optional] use if specific years deviate from that encoding
+# "ignore_file_descr" - [optional] use if there are other geospatial datasets in your folder that are not GSA data
+
+# For example:
+# "CZ" : {
+#     "region_id": "DE_SAA",
+#     "from_lang": "de",
+#     "file_encoding": "utf-8",
+#     "file_year_encoding": {"2023": "windows-1252"},
+#     "ignore_files_descr": "Antrag",
+#     "eurocrops_pth": False,
+#     "skip_list_crop_names": True,
+#     "file_encoding": "utf-8",
+#     "crop_names_pth": os.path.join("data", "tables", "crop_names", "CY_unique_crop_names.csv")}
+
+# To turn off/on the processing of a specific country, just comment/uncomment the specific line of the run_dict
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
@@ -379,7 +414,7 @@ def main():
            "region_id": "BE_WAL",
            "from_lang": "fr",
            "eurocrops_pth": False,
-            "file_encoding": "ISO-8859-1"
+           "file_encoding": "ISO-8859-1"
         },
         "BG": {
             "region_id": "BG",

@@ -4,6 +4,8 @@ library(readxl)
 library(writexl)
 library(dplyr)
 
+# This script is only needed for the French data
+
 FR_df <- read_xlsx("Q:/Europe-LAND/data/tables/crop_names/FR_FR_crop_names_w_EuroCrops_class.xlsx")
 cultures <- read.csv2("Q:/Europe-LAND/data/vector/IACS/FR/REF_CULTURES_2021.csv")
 

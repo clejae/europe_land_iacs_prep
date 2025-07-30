@@ -1,9 +1,31 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
+# This script can be used to match translated crop names derived with script b1  with already
+# existing crop classifications va a string matching algorithm.
+# This means based on the similarity of the translated crop name with an already
+# classified crop, a HCAT class will be assigned to the crop. All existing classifications will be used as matching candiates.
+# The input table should be stored here: data\tables\crop_names\XX_XXX_crop_names_w_translation.xlsx
 
-# 1. Loop over files and classify the crops and unify the column names.
-# 2. Save a new version of the IACS data.
+# Alternatively to using all existing classifications, you can use a specific already existing classification table as
+# matching candidates. This is the second part of the main function.
+
+# The output will be stored in :
+# data\tables\crop_names\XX_crop_names_w_translation_and_match.xlsx"
+# The output should be checked manually, i.e. go over each entry an check based on the English translation name, if the
+# assigned HCAT class is correct. The final table should then be stored in:
+# data\tables\crop_classifications\XX_crop_classification_final.xlsx
+
+# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
+# item is another dictionary. In this dictionary, you should include the following keys:
+
+# "region_id" - basically the main key (XX), but for XX/XXX changed into XX_XXX
+# "file_encoding" - Encoding of the original GSA file
+# "file_year_encoding" - [optional] use if specific years deviate from that encoding
+# ""match_df_pth": [optional for second function] use to specify the classification that should be used solely.
+
+# To turn off/on the matching of a specific country, just comment/uncomment the specific line of the run_dict
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os

@@ -1,9 +1,35 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
+# This script will produce a harmonized version of the GSA data. For this, all the crop entries in the original GSA data
+# will be classified and all the column names will be harmonized from the original language to a column name in English.
 
-# 1. Loop over files and classify the crops and unify the column names.
-# 2. Save a new version of the IACS data.
+# The original GSA data should be stored in:
+# data\vector\IACS\XX\.
+# There should be a correct column name translation table in:
+# data\tables\column_name_translations\XX_column_name_translations.xlsx
+# There should be a correct crop classification table in:
+# data\tables\crop_classifications\XX_crop_classification_final.xlsx
+
+# The harmonized GSA data will be saved to as geoparquets:
+# data\vector\IACS_EU_Land\XX\.
+
+# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
+# item is another dictionary. In this dictionary, you should include the following keys:
+
+# "region_id" - basically the main key (XX), but for XX/XXX changed into XX_XXX
+# "file_encoding" - Encoding of the original GSA file
+# "file_year_encoding" - [optional] use if specific years deviate from that encoding
+# "organic_dict" - [optional] use if there is an organic column in the original GSA data and the information
+# is not already in the right form (0, 1 and 2 should indicate conventional, organic, and in transition)
+# "organic_dict_year" - [optional] use to specify for specific years how the information from the original organic column
+# should be mapped, e.g. "Y" should be 1, "N" should be 0
+# "skip_years" - [optional] can be used to provide a list of years that should not be harmonized
+# "ignore_file_descr" - [optional] use if there are other geospatial datasets in your folder that are not GSA data
+# "pre_transformation_crs" - [optional] provide an epsg code for input files that are not correctly defined in the files, e.g. in Croatia
+
+# To turn off/on the matching of a specific country, just comment/uncomment the specific line of the run_dict
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os

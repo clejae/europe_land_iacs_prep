@@ -1,10 +1,12 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
-# 1. Loop over available files and get unique crop names
-# 2. Get EuroCrops classification from shapefile that they provide
-# 3. Translate crop names to English and German. Match crop names with their classification.
-# Afterwards: Manually classify missing crop names to EuroCrops classification.
+# This script is optional and can be used to produce some summary plots and tables of the harmonized data.
+# It compares the number of input crop classes to the harmonized crop classes in a plot.
+# It summarizes the number of fields/parcels, the number of farms, the total area, the area of grassland and
+# not_known_and_other in a table
+
+# If you want to run this script for specific countries, you should change the list of region_ids below.
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os

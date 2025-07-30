@@ -1,9 +1,17 @@
-# Author:
-# github repository:
+# Author: Clemens Jaenicke
+# github repository: https://github.com/clejae/europe_land_iacs_prep
 
+# This script is optional and can be used to check an old version of the HCAT (prior to HCAT v3) with the HCAT3
+# version.
 
-# 1. Loop over files and classify the crops and unify the column names.
-# 2. Save a new version of the IACS data.
+# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
+# item is another dictionary. In this dictionary, you should include the following keys:
+
+# "region_id" - basically the main key (XX), but for XX/XXX changed into XX_XXX
+# "crop_class_pth" - [optional] can be used to point to a different version of the classification table that should be used as input
+
+# To turn off/on the processing of a specific country, just comment/uncomment the specific line of the run_dict
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
