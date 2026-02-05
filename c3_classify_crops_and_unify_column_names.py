@@ -470,8 +470,8 @@ def main():
         "SE": {"switch": "off", "region_id": "SE", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                "skip_years": range(224)}, ## With applicant ID
         "SE/NOAPPL": {"switch": "off", "region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
-        "SI": {"switch": "off", "region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2},
-               "skip_years": range(2024)},
+        "SI": {"switch": "on", "region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2},
+               "skip_years": range(2025), "file_year_encoding": {"2025": "cp1250"}},
         "SK": {"switch": "off", "region_id": "SK", "file_encoding": "utf-8", "ignore_files_descr":"no_crop",
                "skip_years": range(2025)},
     }
@@ -660,7 +660,7 @@ def main():
             "ignore_files_descr": "Original",
             "organic_dict": {1: 0, 2: 2, 3: 2, 4: 1, 5: 2}},
         "DE/BAV": {
-            "switch": "on",
+            "switch": "off",
             "region_id": "DE_BAV",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original"},

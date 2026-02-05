@@ -39,46 +39,40 @@ def get_translation_df(col_translate_pth):
 
 def check_uniqueness_of_field_ids_duplicates_and_non_geometries(iacs_pth, file_encoding, col_translate_pth, region_id, year, csv_sep=","):
     """
-       Unify column names in vector data.
+      Validates data integrity by checking for unique field IDs, removing invalid
+    geometries, and logging the results to a diagnostic file.
 
-       Parameters:
-       ----------
-       iacs_pth : str
-           Path to the IACS file.
-       file_encoding : str
-           Encoding of the IACS file.
-       col_translate_pth : str
-           Path to the column translation file.
-       crop_class_pth : str
-           Path to the crop classification file.
-       region_id : int or str
-           Identifier for the region.
-       year : int
-           Year of the data.
-       iacs_new_pth : str
-           Output path for the harmonized IACS file.
-       csv_sep : str, optional
-           Separator for CSV files (default is ",").
-       pre_transformation_crs : str or None, optional
-           Coordinate reference system (CRS) that the input data have (default is None).
-       organic_dict : dict or None, optional
-           Dictionary mapping organic classifications (default is None).
-       classify_on : str, optional
-           Specifies the column to classify on. Should be used with care and only if all crop codes have a unique
-            classification. Otherwise, missclassifications might occur.
-            Must be one of:
-           - "crop_code"
-           - "crop_name"
-           - "automatic"
-           Default is "automatic".
+    The function identifies the 'field_id' column based on a translation table,
+    cleans the spatial data, and appends a summary report to a text file.
 
-       Raises:
-       ------
-       ValueError:
-           If `classify_on` is not one of "crop_code", "crop_name", or "automatic".
+    Parameters:
+    ----------
+    iacs_pth : str
+        Path to the input IACS spatial file (e.g., .gpkg, .shp, .csv).
+    file_encoding : str
+        Character encoding used to read the input file.
+    col_translate_pth : str
+        Path to the CSV containing column mapping logic.
+    region_id : int or str
+        Identifier for the specific geographic region.
+    year : int or str
+        The data year, used to locate the correct column mapping.
+    csv_sep : str, optional
+        Separator to use if the input file is a CSV. Default is ",".
 
-       Returns:
-       -------
+    Process:
+    -------
+    1. Loads the spatial data and the column translation table.
+    2. Maps the region-specific ID column to a standardized 'field_id' name.
+    3. Removes records with missing geometries (non-geometries).
+    4. Removes records with duplicate geometric shapes.
+    5. Calculates row counts and uniqueness statistics.
+    6. Appends a detailed status report to
+       'data/vector/IACS/countries_with_non-unique_field_ids.txt'.
+
+    Returns:
+    -------
+    None
        None
        """
 
@@ -186,7 +180,7 @@ def main():
         "DE/SAT": {"switch": "off", "region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"}, #, "skip_years": list(range(2005, 2021))
         "DK": {"switch": "off", "region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #,range(2009, 2024)
         "EE": {"switch": "off", "region_id": "EE", "file_encoding": "utf-8"},
-        "EL": {"switch": "on", "region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
+        "EL": {"switch": "off", "region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
         "FI": {"switch": "off", "region_id": "FI", "file_encoding": "utf-8"}, #, "skip_years": range(2009, 2024)
         "FR/FR": {"switch": "off", "region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "prepared_data",
                   "skip_years":[2019, 2020, 2021,2022, 2023]},
@@ -217,7 +211,8 @@ def main():
         "RO": {"switch": "off", "region_id": "RO", "file_encoding": "utf-8"},
         "SE": {"switch": "off", "region_id": "SE", "file_encoding": "ISO-8859-1", "ignore_files_descr": "NOAPPL"}, ## With applicant ID
         "SE/NOAPPL": {"switch": "off", "region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
-        "SI": {"switch": "off", "region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2}}, #range(2005, 2023)
+        "SI": {"switch": "on", "region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2},
+               "skip_years": range(2005, 2025), "file_year_encoding": {"2025": "windows-1252"}}, #range(2005, 2023)
         "SK": {"switch": "off", "region_id": "SK", "file_encoding": "utf-8", "ignore_files_descr":"no_crop"}, #"skip_years": [2018, 2019, 2020, 2021, 2022],
     }
 

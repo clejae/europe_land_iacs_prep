@@ -35,47 +35,41 @@ def get_translation_df(col_translate_pth):
 
 def remove_duplicates_and_non_geometries_and_correct_unique_fid(iacs_pth, file_encoding, col_translate_pth, region_id, year, out_pth):
     """
-       Unify column names in vector data.
+       Cleans spatial data by removing geometry errors and ensuring every record
+        has a unique field identifier, then saves the result.
 
-       Parameters:
-       ----------
-       iacs_pth : str
-           Path to the IACS file.
-       file_encoding : str
-           Encoding of the IACS file.
-       col_translate_pth : str
-           Path to the column translation file.
-       crop_class_pth : str
-           Path to the crop classification file.
-       region_id : int or str
-           Identifier for the region.
-       year : int
-           Year of the data.
-       iacs_new_pth : str
-           Output path for the harmonized IACS file.
-       csv_sep : str, optional
-           Separator for CSV files (default is ",").
-       pre_transformation_crs : str or None, optional
-           Coordinate reference system (CRS) that the input data have (default is None).
-       organic_dict : dict or None, optional
-           Dictionary mapping organic classifications (default is None).
-       classify_on : str, optional
-           Specifies the column to classify on. Should be used with care and only if all crop codes have a unique
-            classification. Otherwise, missclassifications might occur.
-            Must be one of:
-           - "crop_code"
-           - "crop_name"
-           - "automatic"
-           Default is "automatic".
+        The function standardizes geometries (buffering and normalizing) and repairs
+        ID columns by either generating new unique IDs or appending counters to
+        existing duplicate IDs.
 
-       Raises:
-       ------
-       ValueError:
-           If `classify_on` is not one of "crop_code", "crop_name", or "automatic".
+        Parameters:
+        ----------
+        iacs_pth : str
+            Path to the input IACS spatial file.
+        file_encoding : str
+            Character encoding for reading and writing the file.
+        col_translate_pth : str
+            Path to the CSV containing column mapping logic.
+        region_id : int or str
+            Identifier for the specific geographic region.
+        year : int or str
+            The data year, used to locate the correct column mapping.
+        out_pth : str
+            Path where the cleaned spatial file will be saved.
 
-       Returns:
-       -------
-       None
+        Process:
+        -------
+        1. Loads spatial data and identifies the field ID column via translation table.
+        2. Drops records with missing geometries and identical geometric shapes.
+        3. Handles ID Uniqueness:
+           - If no ID exists: Creates a new unique ID based on geometry.
+           - If IDs are non-unique: Appends a cumulative count to force uniqueness.
+        4. Fixes geometries by applying a zero-buffer and normalization.
+        5. Exports the cleaned GeoDataFrame to the specified output path.
+
+        Returns:
+        -------
+        None
        """
 
     root, ext = os.path.splitext(iacs_pth)
@@ -169,7 +163,7 @@ def main():
         "DE/SAT": {"switch": "off", "region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"}, #, "skip_years": list(range(2005, 2021))
         "DK": {"switch": "off", "region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original"}, #,range(2009, 2024)
         "EE": {"switch": "off", "region_id": "EE", "file_encoding": "utf-8", "skip_years": range(0, 2024)},
-        "EL": {"switch": "on", "region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
+        "EL": {"switch": "off", "region_id": "EL", "file_encoding": "utf-8", "multiple_crop_entries_sep": ",", "ignore_files_descr": "stables"},
         "FI": {"switch": "off", "region_id": "FI", "file_encoding": "utf-8"}, #, "skip_years": range(2009, 2024)
         "FR/FR": {"switch": "off", "region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
         "IE": {"switch": "off", "region_id": "IE", "file_encoding": "utf-8", "organic_dict": {"Y": 1, "N": 0}},
