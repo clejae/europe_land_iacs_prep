@@ -78,7 +78,7 @@ We conducted a comprehensive verification of the national crop and land-use list
 
 ### LLM-Assisted Classification Process
 To cross-reference our internal data, we utilized ChatGPT as an independent classification validator:
-* **Context Initialization**: The model was first initialized with a specialized context prompt (`classification_scheme_prompt.txt`) to ensure it adhered strictly to the HCAT v3 taxonomy rules.
+* **Context Initialization**: The model was first initialized with a specialized context prompt __e2_classification_scheme_prompt.txt__ to ensure it adhered strictly to the HCAT v3 taxonomy rules.
 * **Batch Processing**: Crop data was copied from the crop_classification tables in batches of 50–80 rows into th ChatGPT chat, containing the `crop_code` and `crop_name`. Using more rows led to errors.
 * **Comparative Analysis**: We compared the existing `EC_hcat_n` classifications against the LLM-generated results. This allowed us to identify discrepancies and refine both the `EC_hcat_n` and `EC_hcat_c` (coding) columns where the LLM provided a more accurate or granular fit.
 
