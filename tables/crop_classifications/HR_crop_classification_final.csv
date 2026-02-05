@@ -1,0 +1,20 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+500,Mješovito korištenje zemljišta,Mixed land use,mixed_cropping,3301320000,1,HR
+900,Ostale vrste uporabe zemljišta,Other agricultural land,other_arable_land_crops,3301990000,0,HR
+200,Oranica,Arable land,arable_crops,3301000000,0,HR
+210,Staklenici na oranici,Greenhouses on Arable land,greenhouse_foil_film,3305000000,0,HR
+300,Trajni travnjak,Permanent lawn,pasture_meadow_grassland_grass,3302000000,0,HR
+310,Livada,Meadow,pasture_meadow_grassland_grass,3302000000,0,HR
+320,Pašnjak,Pasture,pasture_meadow_grassland_grass,3302000000,0,HR
+321,Krški pašnjak,Karstic pasture,pasture_meadow_grassland_grass,3302000000,0,HR
+410,Vinograd,Vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,HR
+411,Iskrčeni vinograd,Grubbed-up vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,HR
+421,Maslinik,Olive grove,olive_plantations,3303050000,0,HR
+422,Voćnjak,Orchard,orchards_fruits,3303010000,0,HR
+423,Agrumi (Citrusi),Citrus fruits,citrus_plantations,3303040000,0,HR
+424,Orašaste (lupinaste) vrste,Nut (peel) species,nuts,3303030000,0,HR
+430,Kulture kratke ophodnje,Short rotation coppice,short_rotation_coppice,3306090000,0,HR
+450,Rasadnik,Nursery,nurseries_nursery,3303070000,0,HR
+451,Matičnjak loznih podloga i plemki,Mother block of vines,vineyards_wine_vine_rebland_grapes,3303060000,0,HR
+490,Mješoviti višegodišnji nasadi,Mixed perennial crops,permanent_crops_perennial,3303000000,0,HR
+910,Privremeno neodržavana parcela,Temporary non-cultivated land,fallow_land_not_crop,3301110000,0,HR

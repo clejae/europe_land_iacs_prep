@@ -1,0 +1,30 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+,Ganyklos-pievos virð 5 m.,Pastures-meadows over 5m.,pasture_meadow_grassland_grass,3302000000,0,LT
+,Ganyklos-pievos virð 5m.,Pastures-meadows over 5m.,pasture_meadow_grassland_grass,3302000000,0,LT
+,Þieminiai javai,Winter cereals,winter_unspecified_cereals,3301011501,0,LT
+,Ganyklos-pievos iki 5 m.,Pastures-meadows up to 5m.,pasture_meadow_grassland_grass,3302000000,0,LT
+,Ganyklos-pievos iki 5m.,Pastures-meadows up to 5m.,pasture_meadow_grassland_grass,3302000000,0,LT
+,Vasariniai javai,Spring cereals,spring_unspecified_cereals,3301011502,0,LT
+,Kita ariama þemë,Other arable land,other_arable_land_crops,3301990000,0,LT
+,Rapsai,Rapeseed,rapeseed_rape,3301060400,0,LT
+,Darþovës,Vegetables,fresh_vegetables,3301070000,0,LT
+,Aviþos,Oats,oats,3301010500,0,LT
+,Pûdymas,Fallow,fallow_land_not_crop,3301110000,0,LT
+,Ankðtiniai javai,Grain legumes (pulses),legumes_dried_pulses_protein_crops,3301020000,0,LT
+,Daugiametës þolës,Perennial grasses,pasture_meadow_grassland_grass,3302000000,0,LT
+,Grikiai,Buckwheat,buckwheat,3301150200,0,LT
+,Sodai,Gardens,kitchen_gardens,3301120000,0,LT
+,Miðkai,Woods,tree_wood_forest,3306000000,0,LT
+,Kukurûzai,Corn,grain_maize_corn_popcorn,3301010600,0,LT
+,Uogynai,Berries,berries_berry_species,3303020000,0,LT
+,Wetlands (peatland use),Wetlands (peatland use),peat_turf,3307000000,0,LT
+,Kiti sodiniai,Other plantations,other_permanent_crops_plantations,3303990000,0,LT
+,Grioviai,Ditches,ditches,3310500000,0,LT
+,Cukriniai runkeliai,Sugar beet,sugar_beet,3301290700,0,LT
+,Aromatinai augalai,Aromatic plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,LT
+,Pluoðtinës kanapës,Fiber hemp,hemp_cannabis,3301061000,0,LT
+,Grybai,Mushrooms,mushrooms_energy_genetically_modified_crops,3304000000,0,LT
+,Linai,Linen,flax_linen,3301060701,0,LT
+,Kraðtovaizdþio elementai,Landscape elements,non_productive_landscape_elements,3310000000,0,LT
+,Neremiami plotai,Non-supported areas,not_known_and_other,3399000000,0,LT
+,Aromatiniai augalai,Aromatic plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,LT

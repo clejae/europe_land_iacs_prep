@@ -1,0 +1,262 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+,afforestation,afforestation,afforestation_reforestation,3306010000,0,PL
+,agrimony,agrimony,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,alfalfa,alfalfa,alfalfa_lucerne,3301090301,0,PL
+,amaranth,amaranth,amaranth,3301150100,0,PL
+,angelica,angelica,angelica,3301061204,0,PL
+,anise,anise,anise_aniseed,3301061205,0,PL
+,apple tree,apple tree,apples,3303010200,0,PL
+,apricot tree,apricot tree,apricots,3303010300,0,PL
+,arnica,arnica,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,artichoke,artichoke,artichoke,3301270000,0,PL
+,asparagus,asparagus,asparagus,3301200000,0,PL
+,barberry,barberry,shrubberries_shrubs,3303080000,0,PL
+,basil,basil,basil,3301061207,0,PL
+,bean,bean,beans,3301020100,0,PL
+,beet,beet,chard,3301310100,0,PL
+,birch,birch,birch,3306030000,0,PL
+,bird’s foot trefoil,bird’s foot trefoil,birdsfoot_trefoil,3301090306,0,PL
+,black cumin,black cumin,black_cumin,3301061208,0,PL
+,black salsify,black salsify,black_salsify,3301290900,0,PL
+,blackberry,blackberry,blackberry,3303020200,0,PL
+,blueberry,blueberry,blueberry,3303020400,0,PL
+,borage,borage,borage,3301061209,0,PL
+,boxthorn,boxthorn,shrubberries_shrubs,3303080000,0,PL
+,broad bean,broad bean,beans,3301020100,0,PL
+,broccoli,broccoli,broccoli,3301210202,0,PL
+,buckwheat,buckwheat,buckwheat,3301150200,0,PL
+,bugloss,bugloss,borage,3301061209,0,PL
+,burnet,burnet,shrubberries_shrubs,3303080000,0,PL
+,butterfly weed,butterfly weed,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,cabbage,cabbage,white_cabbage,3301210212,0,PL
+,camelina,camelina,camelina,3301061500,0,PL
+,carrot,carrot,carrots_daucus,3301290300,0,PL
+,carum,carum,caraway,3301061211,0,PL
+,catnip,catnip,catnip,3301061212,0,PL
+,cauliflower,cauliflower,cauliflower,3301210204,0,PL
+,celery,celery,celery,3301250000,0,PL
+,cereal mixture,cereal mixture,meslin,3301011100,7,PL
+,chamomile,chamomile,chamomile,3301061213,0,PL
+,chervil,chervil,chervil,3301061214,0,PL
+,chickpea,chickpea,chickpeas,3301020200,0,PL
+,chokeberry,chokeberry,aronia_chokeberries,3303020100,0,PL
+,colchicum,colchicum,flowers_ornamental_plants,3301080000,0,PL
+,coriander plant,coriander plant,coriander,3301061215,0,PL
+,cranberry,cranberry,cranberry,3303020500,0,PL
+,cucumber,cucumber,cucumber_pickle,3301140100,0,PL
+,currant,currant,currants,3303020600,0,PL
+,dandelion,dandelion,dandelions,3301081400,0,PL
+,dogwood,dogwood,dogwood_cornus,3306040000,0,PL
+,dragonhead,dragonhead,moldavian_dragonhead,3301061223,0,PL
+,echinacea,echinacea,echinacea_sun_hat,3301081500,0,PL
+,eggplant,eggplant,aubergine_eggplant,3301260000,0,PL
+,endive,endive,chicory_chicories,3301310200,0,PL
+,esparcette,esparcette,esparsette_onobrychis,3301020300,0,PL
+,evening primrose,evening primrose,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,fallow land,fallow land,fallow_land_not_crop,3301110000,0,PL
+,fennel,fennel,fennel,3301170000,0,PL
+,fenugreek,fenugreek,fenugreek,3301020400,0,PL
+,flax,flax,flax_linseed_oil,3301060702,0,PL
+,garlic,garlic,garlic,3301220200,0,PL
+,gentian,gentian,gentians,3301082000,0,PL
+,globe thistle,globe thistle,marian_thistles,3301061300,0,PL
+,goats rue,goats rue,galega,3301081900,0,PL
+,goatsbeard,goatsbeard,flowers_ornamental_plants,3301080000,0,PL
+,goldenrod,goldenrod,goldenrod,3301082200,0,PL
+,gooseberry,gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,PL
+,grasses,grasses,poaceae_grasses,3301090200,0,PL
+,grindelia,grindelia,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,hawthorn,hawthorn,crataegus_hawthorn,3303080300,0,PL
+,hemp,hemp,hemp_cannabis,3301061000,0,PL
+,hop,hop,hops,3301060200,0,PL
+,horehound,horehound,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,horseradish,horseradish,horseradish,3301210400,0,PL
+,horsetail,horsetail,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,hypericum,hypericum,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,hyssop,hyssop,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,iberis,iberis,flowers_ornamental_plants,3301080000,0,PL
+,Inula,Inula,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,jacobs ladder,jacobs ladder,flowers_ornamental_plants,3301080000,0,PL
+,Jerusalem artichoke,Jerusalem artichoke,topinambur_jerusalem_artichoke,3301180000,0,PL
+,kale,kale,kale,3301210208,0,PL
+,kiwi,kiwi,kiwi,3303010700,0,PL
+,kohlrabi,kohlrabi,kohlrabi,3301210209,0,PL
+,lavender,lavender,lavender_lavandula,3301061219,0,PL
+,leek,leek,leek,3301220300,0,PL
+,lentil,lentil,lentils,3301020500,0,PL
+,leonurus,leonurus,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,lepidium,lepidium,cress,3301210300,0,PL
+,lettuce,lettuce,salads_lettuce_leaf_vegetables,3301310000,0,PL
+,lilac,lilac,shrubberries_shrubs,3303080000,0,PL
+,lovage,lovage,lovage_maggiplant,3301061221,0,PL
+,lungwort,lungwort,flowers_ornamental_plants,3301080000,0,PL
+,lupin,lupin,sweet_lupins,3301020700,0,PL
+,mahonia,mahonia,shrubberries_shrubs,3303080000,0,PL
+,maize,maize,grain_maize_corn_popcorn,3301010600,0,PL
+,mallow,mallow,malva,3301082800,0,PL
+,marigold,marigold,calendula_marigold,3301061210,0,PL
+,marshmallow,marshmallow,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,melilot,melilot,melilot,3301090304,0,PL
+,melissa,melissa,lemon_balm_melissa,3301061220,0,PL
+,melon,melon,melon,3301140300,0,PL
+,milk thistle,milk thistle,marian_thistles,3301061300,0,PL
+,millet,millet,millet_sorghum,3301010900,0,PL
+,mini kiwi,mini kiwi,kiwi,3303010700,0,PL
+,mint,mint,mints_peppermint,3301061222,0,PL
+,monarda,monarda,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,mugwort,mugwort,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,mulberry,mulberry,orchards_fruits,3303010000,0,PL
+,mushroom,mushroom,mushrooms_energy_genetically_modified_crops,3304000000,0,PL
+,mustard,mustard,mustard,3301210100,0,PL
+,nasturtium,nasturtium,nasturtiums,3301061224,0,PL
+,nature areas,nature areas,unmaintained,3308000000,0,PL
+,nectarine,nectarine,nectarine,3303010900,0,PL
+,nettle,nettle,nettles,3301061225,0,PL
+,oats,oats,oats,3301010500,0,PL
+,onion,onion,onions,3301220400,0,PL
+,orchard,orchard,orchards_fruits,3303010000,0,PL
+,origanum,origanum,oregano,3301061226,0,PL
+,parsley,parsley,parsley,3301061227,0,PL
+,parsnip,parsnip,parsnips,3301290500,0,PL
+,peach tree,peach tree,peach,3303011100,0,PL
+,pepper,pepper,bell_pepper_paprika,3301300100,0,PL
+,permanent grassland,permanent grassland,pastures_meadows_with_trees,3302010000,0,PL
+,phacelia,phacelia,phacelia,3301061400,0,PL
+,plantain,plantain,orchards_fruits,3303010000,0,PL
+,plum tree,plum tree,plums,3303011300,0,PL
+,poppy,poppy,poppy,3301060600,0,PL
+,potato,potato,potatoes,3301030000,0,PL
+,pumpkin,pumpkin,pumpkin_squash_gourd,3301140400,0,PL
+,quince tree,quince tree,quinces,3303011500,0,PL
+,quizotia,quizotia,oilseed_crops,3301060800,0,PL
+,radish,radish,radish,3301290600,0,PL
+,raspberry,raspberry,raspberry_raspberries,3303021000,0,PL
+,reseda,reseda,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,rhubarb,rhubarb,rhubarb,3301230000,0,PL
+,robinia,robinia,short_rotation_coppice_robinia,3306090100,0,PL
+,rocket,rocket,rocket_arugula,3301310600,0,PL
+,roseroot,roseroot,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,rosinweed,rosinweed,other_flowers_ornamental_plants,3301089900,0,PL
+,rue,rue,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,runella,runella,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,ryegrass,ryegrass,lolium_ryegrass,3301090205,0,PL
+,safflower,safflower,safflower,3301083900,0,PL
+,sage,sage,sage_chia,3301190000,0,PL
+,savory,savory,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,scabious,scabious,flowers_ornamental_plants,3301080000,0,PL
+,schisandra,schisandra,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,sea buckthorn,sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,PL
+,securigera,securigera,flowers_ornamental_plants,3301080000,0,PL
+,sedum,sedum,legumes_harvested_green,3301090300,0,PL
+,serradella,serradella,serradella,3301084200,0,PL
+,serviceberry,serviceberry,amelanchier_serviceberry,3303010100,0,PL
+,short?rotation tree plantation,Short rotation tree plantation ,short_rotation_coppice,3306090000,0,PL
+,silvergrass,silvergrass,miscanthus_silvergrass,3301083000,0,PL
+,skullcap,skullcap,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,smartweed,smartweed,polygonum,3301061229,0,PL
+,sorbus,sorbus,rowan_rowanberries,3303021300,0,PL
+,sorghum,sorghum,millet_sorghum,3301010900,0,PL
+,sorrel,sorrel,sorrel,3301310700,0,PL
+,soy,soy,soy_soybeans,3301160000,0,PL
+,spinach,spinach,spinach,3301310800,0,PL
+,spring barley,spring barley,spring_barley,3301010402,0,PL
+,spring rapeseed,spring rapeseed,spring_rapeseed_rape,3301060402,0,PL
+,spring rye,spring rye,spring_rye,3301010302,0,PL
+,spring triticale,spring triticale,spring_triticale,3301010802,0,PL
+,spring wheat,spring wheat,spring_common_soft_wheat,3301010102,0,PL
+,strawberry,strawberry,strawberries,3301130000,0,PL
+,sunflower,sunflower,sunflower,3301060500,0,PL
+,sweet corn,sweet corn,grain_maize_corn_popcorn,3301010600,0,PL
+,sweet peas,sweet peas,peas,3301020600,0,PL
+,sweet potato,sweet potato,sweet_potatoes,3301040000,0,PL
+,tansy,tansy,industrial_nonfood_crops,3301060000,0,PL
+,thyme,thyme,thyme,3301061237,0,PL
+,tobacco,tobacco,tobacco,3301060100,0,PL
+,tomato,tomato,tomato,3301280000,0,PL
+,turnip,turnip,turnips,3301290800,0,PL
+,valerian,valerian,valerian,3301061238,0,PL
+,vetch,vetch,vetches,3301090305,0,PL
+,viburnum,viburnum,shrubberries_shrubs,3303080000,0,PL
+,violet,violet,violets_pansies,3301085100,0,PL
+,walnut,walnut,walnuts,3303030600,0,PL
+,watermelon,watermelon,watermelon,3301140500,0,PL
+,wild strawberry,wild strawberry,strawberries,3301130000,0,PL
+,willow,willow,willows_osiers,3306080000,0,PL
+,willowherb,willowherb,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,winter barley,winter barley,winter_barley,3301010401,0,PL
+,winter oats,winter oats,winter_oats,3301010501,0,PL
+,winter rapeseed,winter rapeseed,winter_rapeseed_rape,3301060401,0,PL
+,winter rye,winter rye,winter_rye,3301010301,0,PL
+,winter triticale,winter triticale,winter_triticale,3301010801,0,PL
+,winter wheat,winter wheat,winter_common_soft_wheat,3301010101,0,PL
+,yarrow,yarrow,yarrow,3301061239,0,PL
+,zucchini,zucchini,zucchini_courgette,3301140600,0,PL
+,cherry tree,cherry tree,cherry_cherries,3303010400,0,PL
+,hazel tree,hazel tree,hazelnuts_hazel,3303030200,0,PL
+,cereal mix,cereal mix,meslin,3301011100,7,PL
+,floriculture,floriculture,unspecified_flowers_ornamental_plants,3301089800,0,PL
+,pear tree,pear tree,pears,3303011200,0,PL
+,field peas,field peas,peas,3301020600,0,PL
+,peas,peas,peas,3301020600,0,PL
+,mixed cropping,mixed cropping,mixed_cropping,3301320000,1,PL
+,grasses on arable land,grasses on arable land,poaceae_grasses,3301090200,0,PL
+,grapevine,grapevine,vineyards_wine_vine_rebland_grapes,3303060000,0,PL
+,grasses on fallow land,grasses on fallow land,fallow_land_not_crop,3301110000,0,PL
+,tree nurseries,tree nurseries,nurseries_nursery,3303070000,0,PL
+,sweet cherry tree,sweet cherry tree,cherry_cherries,3303010400,0,PL
+,spring cereal mixture,spring cereal mixture,spring_meslin,3301011102,7,PL
+,chaenomeles,chaenomeles,chaenomeles_cathayensis,3303080200,0,PL
+,transitional grassland,transitional grassland,pastures_meadows_with_trees,3302010000,0,PL
+,grass mixture,grass mixture,poaceae_grasses,3301090200,3,PL
+,short-rotation tree plantation,short-rotation tree plantation,short_rotation_coppice,3306090000,0,PL
+,clover,clover,clover,3301090303,0,PL
+,fallow land with honey plants,fallow land with honey plants,fallow_land_not_crop,3301110000,0,PL
+,Chinese cabbage,Chinese cabbage,chinese_cabbage,3301210205,0,PL
+,sugar snap peas,sugar snap peas,peas,3301020600,0,PL
+,winter cereal mixture,winter cereal mixture,winter_meslin,3301011101,7,PL
+,honeyberry,honeyberry,berries_berry_species,3303020000,0,PL
+,legume-cereal mixture,legume-cereal mixture,cereal_legume_mix,3301091200,1,PL
+,elderberry,elderberry,elder_elderberry,3303080400,0,PL
+,rotational grazing land,rotational grazing land,pasture_meadow_grassland_grass,3302000000,0,PL
+,other non-subsidized crops,other non-subsidized crops,other_arable_land_crops,3301990000,0,PL
+,legume-grass mixture,legume-grass mixture,legume_grass_mix,3301090500,1,PL
+,herbs,herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,winter spelt,winter spelt,winter_spelt,3301011001,0,PL
+,linaria,linaria,flowers_ornamental_plants,3301080000,0,PL
+,legume mixture,legume mixture,legumes_harvested_green,3301090300,0,PL
+,shelling peas,shelling peas,peas,3301020600,0,PL
+,Brussels sprouts,Brussels sprouts,brussels_sprouts,3301210203,0,PL
+,poplar tree,poplar tree,populus,3306070000,0,PL
+,Tartary buckwheat,Tartary buckwheat,buckwheat,3301150200,0,PL
+,spring spelt,spring spelt,spring_spelt,3301011002,0,PL
+,honey plant cultivation,honey plant cultivation,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,leaf beet,leaf beet,chard,3301310100,0,PL
+,wheat,wheat,common_soft_wheat,3301010100,0,PL
+,winter agrimony,winter agrimony,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,rutabaga,rutabaga,swede_rutabaga,3301210500,0,PL
+,legume-mustard mixture,legume-mustard mixture,mixed_cropping,3301320000,1,PL
+,wild rose shrub,wild rose shrub,shrubberries_shrubs,3303080000,0,PL
+,energy willow plantation,energy willow plantation,short_rotation_coppice,3306090000,0,PL
+,biodiversity gardens,biodiversity gardens,other_arable_land_crops,3301990000,0,PL
+,fleawort,fleawort,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,common yew,common yew,tree_wood_forest,3306000000,0,PL
+,fodder cabbage,fodder cabbage,brassica_oleracea_cabbage,3301210200,0,PL
+,legume-sunflower mixture,legume-sunflower mixture,legumes_oilseed_crops_mix,3301321200,1,PL
+,eupatorium,eupatorium,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,patisson,patisson,pumpkin_squash_gourd,3301140400,0,PL
+,perko agrimony,perko agrimony,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,lingonberry,lingonberry,berries_berry_species,3303020000,0,PL
+,corn spurry,corn spurry,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,figworts,figworts,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,black radish,black radish,radish,3301290600,0,PL
+,apple rose shrub,apple rose shrub,shrubberries_shrubs,3303080000,0,PL
+,brachina,brachina,other_arable_land_crops,3301990000,0,PL
+,rugosa rose shrub,rugosa rose shrub,shrubberries_shrubs,3303080000,0,PL
+,licorice,licorice,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,wild perennial rye,wild perennial rye,elymus,3301090201,0,PL
+,timothy,timothy,timothy,3301090209,0,PL
+,ginseng,ginseng,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
+,saffron,saffron,saffron_crocus_sativus,3301061232,0,PL
+,five-flavor fruit,five-flavor fruit,berries_berry_species,3303020000,0,PL
+,cnicus,cnicus,marian_thistles,3301061300,0,PL
+,large cranberry,large cranberry,cranberry,3303020500,0,PL

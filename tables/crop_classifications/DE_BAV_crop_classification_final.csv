@@ -1,0 +1,321 @@
+,crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+2121,743,Zinnien,zinnias,zinnias,3301085200,0,DE_BAV
+2122,678,Schafgarben,Yarrows,yarrow,3301061239,0,DE_BAV
+2123,703,Färber-Waid,Woad,isatis_tinctoria_woad,3301082400,0,DE_BAV
+2124,115,Winterweizen,Winter wheat,winter_common_soft_wheat,3301010101,0,DE_BAV
+2125,156,Wintertriticale,Winter triticale,winter_triticale,3301010801,0,DE_BAV
+2126,121,Winterroggen,Winter rye,winter_rye,3301010301,0,DE_BAV
+2127,315,Winterrübsen,Winter rape (oil radish,winter_turnip_rape,3301210701,0,DE_BAV
+2128,311,Winterraps,Winter rape,winter_rapeseed_rape,3301060401,0,DE_BAV
+2129,142,Winterhafer,Winter oats,winter_oats,3301010501,0,DE_BAV
+2130,131,Wintergerste,Winter barley,winter_barley,3301010401,0,DE_BAV
+2131,913,Wildsamenvermehrung,Wild seed propagation,arable_land_seed_seedlings,3301100000,0,DE_BAV
+2132,619,Weißer Senf,White mustard,mustard,3301210100,0,DE_BAV
+2133,834,Walnüsse,Walnuts,walnuts,3303030600,0,DE_BAV
+2134,705,Virginischer Tabak,Virginian tobacco,tobacco,3301060100,0,DE_BAV
+2135,611,Gemüse-Kreuzblütler,Vegetables-Cruciferous,fresh_vegetables,3301070000,0,DE_BAV
+2136,610,beetweiser Anbau von Gemüse,vegetables,fresh_vegetables,3301070000,0,DE_BAV
+2137,613,Gemüsekohl,Vegetable cabbage,brassica_oleracea_cabbage,3301210200,0,DE_BAV
+2138,702,Rollrasen,turf,sod_turf,3301090207,0,DE_BAV
+2139,746,Tulpen,Tulips,tulips,3301084900,0,DE_BAV
+2140,865,Trüffel,truffle,truffle,3304040000,0,DE_BAV
+2141,604,Topinambur,Topinambur,topinambur_jerusalem_artichoke,3301180000,0,DE_BAV
+2142,622,Tomaten,tomatoes,tomato,3301280000,0,DE_BAV
+2143,739,Tagetes,Tagetes / marigold,tagetes,3301084700,0,DE_BAV
+2144,848,Tafeltrauben,Table grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_BAV
+2145,806,Rutenhirse/Switchgras,Switchgrass / switchgrass,switchgrass,3301090208,0,DE_BAV
+2146,605,Süßkartoffel,sweet potato,sweet_potatoes,3301040000,0,DE_BAV
+2147,221,Wicken,sweet peas,vetches,3301090305,0,DE_BAV
+2148,320,Sonnenblumen,sunflowers,sunflower,3301060500,0,DE_BAV
+2149,157,Sommertriticale,Summer triticale,spring_triticale,3301010802,0,DE_BAV
+2150,120,Sommer-Dinkel,Summer spelt,spring_spelt,3301011002,0,DE_BAV
+2151,122,Sommerroggen,Summer rye,spring_rye,3301010302,0,DE_BAV
+2152,316,Sommerrübsen,Summer rapeseed (rapeseed,spring_turnip_rape,3301210702,0,DE_BAV
+2153,312,Sommerraps,Summer rape,spring_rapeseed_rape,3301060402,0,DE_BAV
+2154,143,Sommerhafer,Summer oats,spring_oats,3301010502,0,DE_BAV
+2155,132,Sommergerste,Summer barley,spring_barley,3301010402,0,DE_BAV
+2156,603,Zuckerrüben,Sugar beet,sugar_beet,3301290700,0,DE_BAV
+2157,803,Sudangras,Sudan grass,millet_sorghum,3301010900,0,DE_BAV
+2158,707,Erdbeeren,Strawberries,strawberries,3301130000,0,DE_BAV
+2159,826,Steinobst,Stone fruit,orchards_fruits,3303010000,0,DE_BAV
+2160,601,Stärkekartoffeln,Starch potatoes and other potatoes,potatoes,3301030000,0,DE_BAV
+2161,116,Sommerweizen,Spring wheat,spring_common_soft_wheat,3301010102,0,DE_BAV
+2162,638,Spinat,spinach,spinach,3301310800,0,DE_BAV
+2163,114,Dinkel,Spelt,spelt,3301011000,0,DE_BAV
+2164,330,Sojabohnen,Soybeans,soy_soybeans,3301160000,0,DE_BAV
+2165,642,Ampfer,Sorrel,sorrel,3301310700,0,DE_BAV
+2166,756,Löwenmäulchen,Snapdragons,snapdragons,3301084500,0,DE_BAV
+2167,802,Silphium,Silphium (streaky Silphie,silphium_rosinweeds,3301084400,0,DE_BAV
+2168,411,Silomais,Silage corn,green_silo_maize,3301090400,0,DE_BAV
+2169,841,KUP lt. GAPDZV,Short rotation plantations/Short rotation coppice,short_rotation_coppice,3306090000,0,DE_BAV
+2170,665,Bohnenkräuter,Savory herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BAV
+2171,768,Wiesenknopf,salad burnet,burnet,3301080700,0,DE_BAV
+2172,662,Salbei,Sage,sage_chia,3301190000,0,DE_BAV
+2173,708,Färberdisteln,Safflower,safflower,3301083900,0,DE_BAV
+2174,661,Rosmarin,rosemary,rosemary,3301061230,0,DE_BAV
+2175,851,Rhabarber,rhubarb,rhubarb,3301230000,0,DE_BAV
+2176,854,Rohrglanzgras,Reed canary grass,poaceae_grasses,3301090200,0,DE_BAV
+2177,798,Ramtillkraut,Ramtill herb,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BAV
+2178,187,Quinoa,Quinoa,quinoa,3301150300,0,DE_BAV
+2179,602,Kartoffeln,potatoes,potatoes,3301030000,0,DE_BAV
+2180,706,Mohn,Poppy seeds,poppy,3301060600,0,DE_BAV
+2181,825,Kernobst,Pome fruit e.g. apples,orchards_fruits,3303010000,0,DE_BAV
+2182,821,Kern- und Steinobst,Pome and stone fruit,orchards_fruits,3303010000,0,DE_BAV
+2183,843,Bestockte Rebfläche,Planted vineyards,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_BAV
+2184,866,Pflanzenmischung mit Hanf,Plant mixture with hemp,hemp_cannabis,3301061000,4,DE_BAV
+2185,777,Phacelie,Phacelia (as main culture e.g. seed propagation),phacelia,3301061400,0,DE_BAV
+2186,240,Erbsen/Bohnen,Peas beans/Mixed peas / beans,legumes_dried_pulses_protein_crops,3301020000,3,DE_BAV
+2187,210,Erbsen,Peas,peas,3301020600,0,DE_BAV
+2188,453,Weiden,pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2189,643,Pastinaken,Parsnips,parsnips,3301290500,0,DE_BAV
+2190,742,Spreublumen,Paperflowers,flowers_ornamental_plants,3301080000,0,DE_BAV
+2191,829,Sonstige Obstanlagen,Other fruit orchards,orchards_fruits,3303010000,0,DE_BAV
+2192,720,Zierpflanzen,ornamental plants,flowers_ornamental_plants,3301080000,0,DE_BAV
+2193,822,Streuobst,Orchards as crop cultivation (without meadow use),orchards_fruits,3303010000,0,DE_BAV
+2194,838,Baumschulen,Nurseries,nurseries_nursery,3303070000,0,DE_BAV
+2195,709,Brennnesseln,Nettles,nettles,3301061225,0,DE_BAV
+2196,452,Mähweiden,Mowing pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2197,917,Mischkulturen,mixed crops,mixed_cropping,3301320000,1,DE_BAV
+2198,672,Minzen,Mints,mints_peppermint,3301061222,0,DE_BAV
+2199,181,Hirse,millet,millet_sorghum,3301010900,0,DE_BAV
+2200,682,Mariendisteln,Milk thistles,marian_thistles,3301061300,0,DE_BAV
+2201,631,Melone,Melon (watermelon),watermelon,3301140500,0,DE_BAV
+2202,674,Ringelblumen,marigolds,calendula_marigold,3301061210,0,DE_BAV
+2203,686,Malven,Mallows,malva,3301082800,0,DE_BAV
+2204,919,Saatmais (Saatgutvermehrung),Maize for seed (seed propagation),grain_maize_corn_popcorn,3301010600,0,DE_BAV
+2205,171,Mais,Maize,grain_maize_corn_popcorn,3301010600,0,DE_BAV
+2206,454,Hutungen,low-yield permanent grassland (grazing land),pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2207,458,Streuwiesen,Litter meadows,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2208,726,Lilien,Lilies,lilies,3301082500,0,DE_BAV
+2209,637,Lattich,Lettuce,salads_lettuce_leaf_vegetables,3301310000,0,DE_BAV
+2210,292,Linsen,lentils,lentils,3301020500,0,DE_BAV
+2211,222,Linsen,lentils,lentils,3301020500,0,DE_BAV
+2212,668,Lavendel,Lavender (real lavender,lavender_lavandula,3301061219,0,DE_BAV
+2213,636,Feldsalate,Lamb’s lettuces,lambs_lettuce_rapunzel,3301310500,0,DE_BAV
+2214,512,Iberischer Drachenkopf,Lallemantia iberica,oilseed_crops,3301060800,0,DE_BAV
+2215,681,Frauenmantel,Lady's mantle,alchemilla_ladys_mantle,3301061202,0,DE_BAV
+2216,701,Hanf,Industrial hemp/hemp,hemp_cannabis,3301061000,0,DE_BAV
+2217,740,Wucherblumen,Impatiens,flowers_ornamental_plants,3301080000,0,DE_BAV
+2218,805,Igniscum,Igniscum,igniscum_candy,3304020100,0,DE_BAV
+2219,646,Meerettich,Horseradish,horseradish,3301210400,0,DE_BAV
+2220,856,Hopfen,Hops,hops,3301060200,0,DE_BAV
+2221,753,Hibiskus,hibiscus,hibiscus,3301061218,0,DE_BAV
+2222,833,Haselnüsse,Hazelnuts,hazelnuts_hazel,3303030200,0,DE_BAV
+2223,451,Wiesen,grasslands,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2224,912,Grassamenvermehrung,Grass seed propagation,temporary_grass,3301090100,0,DE_BAV
+2225,183,Körnersorghum,Grain sorghum,millet_sorghum,3301010900,0,DE_BAV
+2226,171,Körnermais,Grain maize,cornflowers,3301081000,0,DE_BAV
+2227,745,Gladiolen,Gladioli,gladiolus_gladioli,3301082100,0,DE_BAV
+2228,629,Riesenkürbis,Giant pumpkin,pumpkin_squash_gourd,3301140400,0,DE_BAV
+2229,671,Enziane,gentian,gentians,3301082000,0,DE_BAV
+2230,618,Gartenrettiche,Garden radishes (white / red radishes,radish,3301290600,0,DE_BAV
+2231,630,Gartenkürbis,Garden pumpkin,pumpkin_squash_gourd,3301140400,0,DE_BAV
+2232,617,Gartenkresse,Garden cress,cress,3301210300,0,DE_BAV
+2233,635,Gartenbohne,Garden bean,beans,3301020100,0,DE_BAV
+2234,57,Feldrand / Pufferstreifen ÖVF DGL,Field edge / buffer strip EFA permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_BAV
+2235,58,Feldrand / Pufferstreifen ÖVF AL,Field edge / buffer strip EFA arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_BAV
+2236,220,Ackerbohne,field bean/broad bean,beans,3301020100,0,DE_BAV
+2237,648,Fenchel,Fennel,fennel,3301170000,0,DE_BAV
+2238,735,Strohblumen,Everlasting flowers,flowers_ornamental_plants,3301080000,0,DE_BAV
+2239,430,Esparsette,Esparsette,esparsette_onobrychis,3301020300,0,DE_BAV
+2240,188,Reis im Trockenanbau,dry-grown rice,rice,3301010700,0,DE_BAV
+2241,748,Feldrittersporne,Delphinium (larkspur),other_flowers_ornamental_plants,3301089900,0,DE_BAV
+2242,684,Löwenzahn,dandelion,dandelions,3301081400,0,DE_BAV
+2243,737,Margeriten,daisies,daisy_daisies,3301081300,0,DE_BAV
+2244,750,Dahlien,Dahlias,dahlia,3301081200,0,DE_BAV
+2245,655,Kreuzkümmel,cumin,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BAV
+2246,775,Kornblumen,Cornflowers,cornflowers,3301081000,0,DE_BAV
+2247,657,Koriander,coriander,coriander,3301061215,0,DE_BAV
+2248,422,Kleegras,Clover grass,clover_grass_mix,3301090501,0,DE_BAV
+2249,421,Klee,clover,clover,3301090303,0,DE_BAV
+2250,734,Chrysanthemen,Chrysanthemums,chrysanthemum,3301080900,0,DE_BAV
+2251,852,Chinaschilf/Miscanthus,Chinese reed / Miscanthus,miscanthus_silvergrass,3301083000,0,DE_BAV
+2252,644,Zichorien/Wegwarten,Chicories,chicory_chicories,3301310200,0,DE_BAV
+2253,645,Kichererbsen,Chickpeas,chickpeas,3301020200,0,DE_BAV
+2254,652,Kerbel,Chervil,chervil,3301061214,0,DE_BAV
+2255,677,Kamillen,Chamomiles,chamomile,3301061213,0,DE_BAV
+2256,641,Sellerie,Celery,celery,3301250000,0,DE_BAV
+2257,634,Möhre,Carrot,carrots_daucus,3301290300,0,DE_BAV
+2258,772,Nelken,Carnations (sweet carnation,carnation,3301080800,0,DE_BAV
+2259,654,Kümmel,Caraway seed/Caraway (real caraway),caraway,3301061211,0,DE_BAV
+2260,765,Kapuzinerkressen,Capuchin cresses,nasturtiums,3301061224,0,DE_BAV
+2261,628,Zuckermelone,cantaloupe,melon,3301140300,0,DE_BAV
+2262,704,Glanzgräser,Canary grass,canary_seed_canaryseed,3301011400,0,DE_BAV
+2263,393,Leindotter,Camelina,camelina,3301061500,0,DE_BAV
+2264,414,Kohl-/Steckrüben,Cabbage/swede,swede_rutabaga,3301210500,3,DE_BAV
+2265,182,Buchweizen,Buckwheat,buckwheat,3301150200,0,DE_BAV
+2266,614,Brauner Senf,brown mustard,mustard,3301210100,0,DE_BAV
+2267,663,Borretsch,borage,borage,3301061209,0,DE_BAV
+2268,647,Schwarzwurzeln,Black salsify,black_salsify,3301290900,0,DE_BAV
+2269,612,Schwarzer Senf,Black mustard,mustard,3301210100,0,DE_BAV
+2270,656,Schwarzkümmel,Black cumin,black_cumin,3301061208,0,DE_BAV
+2271,827,Beerenobst,Berries,berries_berry_species,3303020000,0,DE_BAV
+2272,660,Basilikum,basil,basil,3301061207,0,DE_BAV
+2273,747,Christophskräuter,Baneberry (actaea),actaea_baneberry_christopher_herbs,3301061201,0,DE_BAV
+2274,670,Melissen,Balm ,lemon_balm_melissa,3301061220,0,DE_BAV
+2275,623,Auberginen,aubergines,aubergine_eggplant,3301260000,0,DE_BAV
+2276,733,Astern,Asters,asters,3301080300,0,DE_BAV
+2277,860,Spargel,asparagus,asparagus,3301200000,0,DE_BAV
+2278,861,Artischocke,artichoke,artichoke,3301270000,0,DE_BAV
+2279,424,Ackergras,Arable grass,temporary_grass,3301090100,0,DE_BAV
+2280,685,Engelwurzen,Angelica,angelica,3301061204,0,DE_BAV
+2281,428,Wechselgrünland,Alternating grassland,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2282,423,Luzerne,alfalfa,alfalfa_lucerne,3301090301,0,DE_BAV
+2283,564,Aufforstung,Afforestation,afforestation_reforestation,3306010000,0,DE_BAV
+2284,871,(Wild)-pflanzenmischung,(Wild) plant mixture,environmental_protection,3311000000,7,DE_BAV
+2285,999,"Ackerkultur, in der Liste nicht aufgeführt",Arable crop not listed,other_arable_land_crops,3301990000,0,DE_BAV
+2286,591,AL aus der Erzeugung,Arable land taken out of production,fallow_land_not_crop,3301110000,0,DE_BAV
+2287,455,Almen u. Alpen,Alpine pastures and Alps,pasture_meadow_grassland_grass,3302000000,3,DE_BAV
+2288,186,Amarant,Amaranth,amaranth,3301150100,0,DE_BAV
+2289,651,Anethum,Anethum (dill),anethum_dill,3301061203,0,DE_BAV
+2290,687,Arnika,Arnica,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_BAV
+2291,673,Artemisia,Artemisia (wormwood),artemisia,3301061206,0,DE_BAV
+2292,61,Aufforstungsflächen,Afforestation areas,afforestation_reforestation,3306010000,0,DE_BAV
+2293,679,Baldriane,Valerians,valerian,3301061238,0,DE_BAV
+2294,650,Beet Kräuter/Heil-/Gewürz,Bed of herbs/medicinal/spice plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,3,DE_BAV
+2295,720,Beet Zierpflanzen,Bed of ornamental plants,flowers_ornamental_plants,330108000,0,DE_BAV
+2296,610,beetw. Gemüse ab 5 Kulturen,"Bed-grown vegetables, from 5 crops",fresh_vegetables,3301070000,3,DE_BAV
+2297,611,beetw. Gemüse bis 4 Kulturen,"Bed-grown vegetables, up to 4 crops",fresh_vegetables,3301070000,3,DE_BAV
+2298,650,beetw. Kräuter/Heil-/Gewürz ab 5 Kulturen,"Bed-grown herbs/medicinal/spice plants, from 5 crops",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,3,DE_BAV
+2299,690,beetw. Kräuter/Heil-/Gewürz bis 4 Kulturen,"Bed-grown herbs/medicinal/spice plants, up to 4 crops",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,3,DE_BAV
+2300,720,beetw. Zierpflanzen ab 5 Kulturen,"Bed-grown ornamental plants, from 5 crops",flowers_ornamental_plants,330108000,3,DE_BAV
+2301,718,beetw. Zierpflanzen bis 4 Kulturen,"Bed-grown ornamental plants, up to 4 crops",flowers_ornamental_plants,330108000,3,DE_BAV
+2302,583,Beihilfefähige NLF,Eligible non-agricultural area,not_known_and_other,3399000000,0,DE_BAV
+2303,930,Bewirtschaftete Teichflächen,Managed pond areas,wetlands,3310400000,0,DE_BAV
+2304,653,Bibernellen,Burnets,anise_aniseed,3301061205,0,DE_BAV
+2305,66,Br.m.Honigpflanzen (ÖVF) mehr,Fallow with honey plants (EFA) multiannual,fallow_land_not_crop,3301110000,0,DE_BAV
+2306,65,Br.m.Honipflanzen (ÖVF) ein,Fallow with honey plants (EFA) annual,fallow_land_not_crop,3301110000,0,DE_BAV
+2307,62,Brache,Fallow land,fallow_land_not_crop,3301110000,0,DE_BAV
+2308,560,Brache,Fallow land,fallow_land_not_crop,3301110000,0,DE_BAV
+2309,590,Brache einj.Blühm.,Fallow with annual flowering mixture,fallow_land_not_crop,3301110000,0,DE_BAV
+2310,918,Brache mehrj. Blühm.,Fallow with perennial flowering mixture,fallow_land_not_crop,3301110000,0,DE_BAV
+2311,918,Brache mehrj.Blühm.,Fallow with perennial flowering mixture,fallow_land_not_crop,3301110000,0,DE_BAV
+2312,590,Brache mit einj. Blühm.,Fallow with annual flowering mixture,fallow_land_not_crop,3301110000,0,DE_BAV
+2313,885,Brachestreifen (AUKM),Fallow strip (agri-environmental measure),fallow_land_not_crop,3301110000,0,DE_BAV
+2314,615,Brunnenkresse,Watercress,cress,3301210300,0,DE_BAV
+2315,189,Chia,Chia,sage_chia,3301190000,0,DE_BAV
+2316,983,Christbaumkulturen,Christmas tree plantations,christmas_trees,3306100000,0,DE_BAV
+2317,592,DG aus der Erzeugung,Permanent grassland taken out of production,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2318,722,Einjähr. Silberblatt,Annual honesty (lunaria),lunaria_honesty_silver,3301082700,0,DE_BAV
+2319,871,Energieblühmisch.,Energy flowering mixture,energy_crops,3304010000,7,DE_BAV
+2320,871,Energieblühmischungen ohne Hanf,Energy flowering mixtures without hemp,energy_crops,3304010000,7,DE_BAV
+2321,870,Energiepfl. Misch,Energy crop mixture,energy_crops,3304010000,7,DE_BAV
+2322,870,Energiepfl. Mischanbau,Energy crop mixed cultivation,energy_crops,3304010000,7,DE_BAV
+2323,796,Fetthenne,Stonecrop (sedum),stonecrop,3301084600,0,DE_BAV
+2324,586,Förderfähige Fläche (Paludi),Eligible area (paludiculture),paludiculture,3307010000,0,DE_BAV
+2325,413,Futterrübe,Fodder beet,mangelwurzel_fodder_beet,3301290400,0,DE_BAV
+2326,412,Gem. Silomais,Mixed silage maize,green_silo_maize,3301090400,0,DE_BAV
+2327,626,Gemüse-Kürbisgew.,Vegetable pumpkin species,cucurbits,3301140000,0,DE_BAV
+2328,621,Gemüse-Nachtsch.gew.,Vegetable nightshade species,fresh_vegetables,3301070000,0,DE_BAV
+2329,912,Grassamenverm.,Grass seed propagation,temporary_grass,3301090100,0,DE_BAV
+2330,941,Grünbrache ökol.,Green fallow (organic),fallow_land_not_crop,3301110000,0,DE_BAV
+2331,942,Gründüngung (nicht produktive Nutzung),Green manure (non-productive use),plants_harvested_green,3301090000,0,DE_BAV
+2332,942,Gründüngung im ökologischen Landbau,Green manure in organic farming,plants_harvested_green,3301090000,0,DE_BAV
+2333,719,Hopfenfechser,Hop cuttings,hops,3301060200,0,DE_BAV
+2334,666,Hyssopus,Hyssop,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BAV
+2335,680,Johanniskräuter,St. John’s wort,st_johns_wort,3301061234,0,DE_BAV
+2336,422,Kleegras (Gras überwiegt),Clover grass (grass dominates),clover_grass_mix,3301090501,1,DE_BAV
+2337,434,Kleegras (Leguminosen überwiegen),Clover grass (legumes dominate),clover_grass_mix,3301090501,1,DE_BAV
+2338,425,Klee-Luzerne-Gem.,Clover-lucerne mixture,legumes_harvested_green,3301090300,1,DE_BAV
+2339,921,Kleesamen,Clover seeds,clover,3301090303,0,DE_BAV
+2340,914,Kleinparz. auf Ackerland,Small plots on arable land,kitchen_gardens,3301120000,0,DE_BAV
+2341,728,Knorpelmöhren,Skirret (parsnip-like root),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BAV
+2342,764,Königskerzen,Mulleins,flowers_ornamental_plants,3301080000,0,DE_BAV
+2343,392,Krambe/ Meerkohl,Crambe/sea kale,brassicaceae_cruciferae,3301210000,3,DE_BAV
+2344,392,Krambe/Meerkohl,Crambe/sea kale,brassicaceae_cruciferae,3301210000,3,DE_BAV
+2345,650,Kräuter/Heil-/Gewürz,Herbs/medicinal/spice plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,3,DE_BAV
+2346,752,Krokusse,Crocuses,saffron_crocus_sativus,3301061232,0,DE_BAV
+2347,841,KUP,Short rotation coppice (SRC),short_rotation_coppice,330609000,0,DE_BAV
+2348,59,KUP,Short rotation coppice (SRC),short_rotation_coppice,330609000,0,DE_BAV
+2349,250,Leguminose/Getreide,Legume/cereal mixture,cereal_legume_mix,3301091200,1,DE_BAV
+2350,434,Leguminosen-Gras,Legume-grass mixture,legume_grass_mix,3301090500,1,DE_BAV
+2351,723,Levkoje,Stock (Matthiola),flowers_ornamental_plants,330108000,0,DE_BAV
+2352,658,Liebstöckel,Lovage,lovage_maggiplant,3301061221,0,DE_BAV
+2353,230,Lupine,Lupin,sweet_lupins,3301020700,0,DE_BAV
+2354,922,Luzernesamen,Lucerne seeds,alfalfa_lucerne,3301090301,0,DE_BAV
+2355,970,LW ans Amt wenden,Farmer should contact authority,not_known_and_other,3399000000,0,DE_BAV
+2356,999,LW ans Amt wenden,Farmer should contact authority,not_known_and_other,3399000000,0,DE_BAV
+2357,442,Mähweideneinsaat,Sown mowing pasture,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2358,639,Mangold/Rote Rübe,Chard/red beet,chard,3301310100,0,DE_BAV
+2359,640,Melde,Orache (Atriplex),other_salads_lettuce_leaf_vegetables,3301319900,0,DE_BAV
+2360,996,Miete/Dungpl.(Acker),Heap/manure site (arable land),not_known_and_other,3399000000,0,DE_BAV
+2361,994,Mieten/Dungpl. (DG),Heap/manure site (permanent grassland),not_known_and_other,3399000000,0,DE_BAV
+2362,852,Miscanthus,Miscanthus,miscanthus_silvergrass,330108300,0,DE_BAV
+2363,63,Miscanthus (ÖVF),Miscanthus (EFA),miscanthus_silvergrass,330108300,0,DE_BAV
+2364,917,Mischkulturen o. Mais,Mixed crops without maize,mixed_cropping,3301320000,0,DE_BAV
+2365,762,Nachtkerzen,Evening primroses,primrose,3301083500,0,DE_BAV
+2366,727,Narzissen,Daffodils,narcissus_daffodil,3301083300,0,DE_BAV
+2367,958,Naturschutzfl.(k. ldw. Verw.),Conservation area (no agricultural use),environmental_protection,3311000000,0,DE_BAV
+2368,999,Nchtbeihilfefähig,Not eligible for aid,not_known_and_other,3399000000,0,DE_BAV
+2369,940,Nicht bewirtschaftete Teichflächen,Unmanaged pond areas,wetlands,3310400000,0,DE_BAV
+2370,920,Nicht lw.Hausgarten,Non-agricultural home garden,kitchen_gardens,3301120000,0,DE_BAV
+2371,993,Nicht-LF aus DG,Non-agricultural area from grassland,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2372,841,Niederwald mit Kurzumtrieb (KUP),Coppice with short rotation (SRC),short_rotation_coppice,330609000,0,DE_BAV
+2373,763,Oenothera,Oenothera,primrose,3301083500,0,DE_BAV
+2374,341,Öllein/Faserflachs,Oil flax/fibre flax,flax_linseed_oil,330106070,0,DE_BAV
+2375,664,Oregano,Oregano,oregano,3301061226,0,DE_BAV
+2376,659,Petroselinum,Petroselinum (parsley),parsley,3301061227,0,DE_BAV
+2377,766,Pfingstrosen,Peonies,peony_peonies,330108340,0,DE_BAV
+2378,845,Rebschule,Vine nursery,vineyards_wine_vine_rebland_grapes,330306000,0,DE_BAV
+2379,853,Riesenweizengras,Giant wheatgrass,poaceae_grasses,3301090200,0,DE_BAV
+2380,751,Rodiola,Rhodiola,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BAV
+2381,413,Runkelrübe/Futterrübe,Mangel beet/fodder beet,mangelwurzel_fodder_beet,3301290400,0,DE_BAV
+2382,919,Saatmais,Seed maize,grain_maize_corn_popcorn,3301010600,0,DE_BAV
+2383,627,Salatgurke,Salad cucumber,cucumber_pickle,3301140100,0,DE_BAV
+2384,921,Samenvermehrung für Klee,Seed propagation for clover,clover,3301090303,0,DE_BAV
+2385,922,Samenvermehrung für Luzerne,Seed propagation for lucerne,alfalfa_lucerne,3301090301,0,DE_BAV
+2386,610,Sammelcode Gemüse,Collective code vegetables,fresh_vegetables,3301070000,0,DE_BAV
+2387,749,Scabiosen,Scabious,flowers_ornamental_plants,3301080000,0,DE_BAV
+2388,884,Schwarzbrache,Black fallow,fallow_land_not_crop,3301110000,0,DE_BAV
+2389,767,Schwertlilien,Irises,iris,330108230,0,DE_BAV
+2390,616,Senfrauke,Rocket mustard,rocket_arugula,3301310600,0,DE_BAV
+2391,804,Sida,Sida (Virginia mallow),sida_virginia_mallow,3304030000,0,DE_BAV
+2392,64,Silphie (ÖVF),Silphium (EFA),silphium_rosinweeds,3301084400,0,DE_BAV
+2393,145,So-Gemenge,Soy mixture,spring_meslin,330101110,1,DE_BAV
+2394,144,So-Gemenge (mit Weizen),Soy mixture (with wheat),spring_meslin,330101110,1,DE_BAV
+2395,145,So-Gemenge (ohne Weizen),Soy mixture (without wheat),spring_meslin,330101110,1,DE_BAV
+2396,144,So-Gemenge (Weizen),Soy mixture (wheat),spring_meslin,330101110,1,DE_BAV
+2397,119,Sommeremmer,Spring emmer,spring_emmer,330101120,0,DE_BAV
+2398,113,Sommerhartweizen,Spring durum wheat,spring_durum_hard_wheat,3301010202,0,DE_BAV
+2399,460,Sommerweide,Summer pasture,pasture_meadow_grassland_grass,330200000,0,DE_BAV
+2400,460,Sommerweide (Wanderschafe),Summer pasture (migratory sheep),pasture_meadow_grassland_grass,330200000,0,DE_BAV
+2401,675,Sonnenhut,Coneflower,echinacea_sun_hat,3301081500,0,DE_BAV
+2402,850,Sonst. Dauerkulturen,Other permanent crops,permanent_crops_perennial,3303000000,0,DE_BAV
+2403,429,Sonst. Futterpflanze,Other fodder crop,other_plants_harvested_green,330109990,0,DE_BAV
+2404,632,Sonst. Gemüse,Other vegetables,fresh_vegetables,3301070000,0,DE_BAV
+2405,990,Sonst. NLF,Other non-agricultural areas,not_known_and_other,3399000000,0,DE_BAV
+2406,850,Sonst.Dauerkulturen,Other permanent crops,permanent_crops_perennial,3303000000,0,DE_BAV
+2407,835,sonst.Schalenfrüchte,Other nuts,nuts,3303030000,0,DE_BAV
+2408,624,Spanischer Pfeffer,Chili pepper,capsicum,3301300000,0,DE_BAV
+2409,591,Still. Acker (glöZ),Set-aside arable land (GAEC),fallow_land_not_crop,3301110000,0,DE_BAV
+2410,545,Still. Acker FELEG,Set-aside arable land FELEG,fallow_land_not_crop,3301110000,0,DE_BAV
+2411,567,Still. Dauergrünland i.R. von AUM,Set-aside permanent grassland under agri-environmental measure,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2412,592,Still. Grünl. (glöZ),Set-aside grassland (GAEC),pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2413,546,Still. Grünl. FELEG,Set-aside grassland FELEG,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2414,567,Stillgel. Dauergrünl.,Set-aside permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2415,593,Stillgelegte Dauerkultur/Plantage,Set-aside permanent crop/plantation,fallow_land_not_crop,3301110000,0,DE_BAV
+2416,754,Strauchmalven,Shrub mallows,malva,3301082800,0,DE_BAV
+2417,822,Streuobst (ohne Ackernutzung),Orchard meadow (without arable use),orchards_fruits,3303010000,0,DE_BAV
+2418,481,Streuobst o.Grünl.-Nutz.,Orchard meadow without grassland use,orchards_fruits,3303010000,0,DE_BAV
+2419,725,Taglilien,Daylilies,lilies,3301082500,0,DE_BAV
+2420,930,Teich (bewirtsch.),Pond (managed),wetlands,3310400000,0,DE_BAV
+2421,940,Teich (unbewirtsch.),Pond (unmanaged),wetlands,3310400000,0,DE_BAV
+2422,669,Thymiane,Thymes,thyme,3301061237,0,DE_BAV
+2423,844,Unbesto.Rebfläche,Unplanted vineyard area,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_BAV
+2424,776,Veilchen,Violets,violets_pansies,330108510,0,DE_BAV
+2425,667,Verbenen,Verbenas,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BAV
+2426,770,Vergissmeinnicht,Forget-me-nots,flowers_ornamental_plants,3301080000,0,DE_BAV
+2427,54,Waldrandstreifen,Forest edge strip,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_BAV
+2428,676,Wegeriche,Plantains,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_BAV
+2429,443,Weideneinsaat,Sown pasture,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2430,441,Wieseneinsaat,Sown meadow,pasture_meadow_grassland_grass,3302000000,0,DE_BAV
+2431,126,Wi-Gemenge,Winter mixture,winter_meslin,3301011101,1,DE_BAV
+2432,125,Wi-Gemenge (mit Weizen),Winter mixture (with wheat),winter_meslin,3301011101,1,DE_BAV
+2433,126,Wi-Gemenge (ohne Weizen),Winter mixture (without wheat),winter_meslin,3301011101,1,DE_BAV
+2434,125,Wi-Gemenge (Weizen),Winter mixture (wheat),winter_meslin,3301011101,1,DE_BAV
+2435,690,Wildkräutersamen,Wild herb seeds,environmental_protection,3311000000,0,DE_BAV
+2436,114,Winterdinkel,Winter spelt,winter_spelt,3301011001,0,DE_BAV
+2437,118,Winteremmer,Winter emmer,winter_emmer,3301011201,0,DE_BAV
+2438,112,Winterhartweizen,Winter durum wheat,winter_durum_hard_wheat,3301010201,0,DE_BAV
+2439,769,Zieste,Hedgenettle,stachys_hedgenettle_chinese_artichoke,3301061235,0,DE_BAV
+2440,633,Zwiebel,Onion,alliums,3301220000,0,DE_BAV

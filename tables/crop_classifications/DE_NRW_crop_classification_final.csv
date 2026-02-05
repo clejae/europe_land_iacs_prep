@@ -1,0 +1,539 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+492,(Heide (DGL etabl. Praktiken),Heathland (permanent grassland established practices),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+1,1 Hecken oder Knicks (CC),1 hedges or hedgerows (CC),hedges,3310200000,0,DE_NRW
+10,10 Tümpel-Sölle-Moore-Dolinen und andere vergleichbare Feuchtgebiete (CC),"10 ponds, kettle holes, moors, sinkholes and other comparable wetlands (CC)",wetlands,3310400000,0,DE_NRW
+11,11 Trocken- oder Natursteinmauern oder Lesesteinwälle (CC),11 dry or natural stone walls or stone heaps (CC),stone_walls,3310600000,0,DE_NRW
+12,12 Fels- und Steinriegel sowie naturversteinte Flächen (CC),12 rock and stone ridges as well as naturally stony areas (CC),stone_walls,3310600000,0,DE_NRW
+13,13 Feldraine (CC),13 field margins (CC),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+16,16 Terrassen (CC),16 terraces (CC),non_productive_landscape_elements,3310000000,0,DE_NRW
+2,2 Baumreihen (CC),2 rows of trees (CC),tree_lines,3310300000,0,DE_NRW
+3,3 Feldgehölze (CC),3 field shrubs (CC),tree_lines,3310300000,0,DE_NRW
+4,4 Feuchtgebiete (CC),4 wetlands (CC),wetlands,3310400000,0,DE_NRW
+5,5 Einzelbäume (CC),5 individual trees (CC),tree_lines,3310300000,0,DE_NRW
+55,55 Ufervegetation,55 riparian vegetation,not_known_and_other,3399000000,0,DE_NRW
+220,"Acker-,Puff-,Pferdebohnen z.K.","Field, fava, horse beans for grain",beans,3301020100,3,DE_NRW
+220,Acker-/Puff-/Pferdebohne,Field / broad / horse bean,beans,3301020100,3,DE_NRW
+220,Ackerbohnen-/Dicke Bohne,field bean/broad bean,beans,3301020100,3,DE_NRW
+424,Ackergras,Arable grass,temporary_grass,3301090100,3,DE_NRW
+973,AF (Keine Betriebsprämie),AF (no farm payment),not_known_and_other,3399000000,0,DE_NRW
+591,AF aus Erzeugung genommen,AF taken out of production,fallow_land_not_crop,3301110000,0,DE_NRW
+773,Ageratum (Gew. Leberbalsam),Ageratum (weight liver balm),other_flowers_ornamental_plants,3301089900,0,DE_NRW
+81,Agroforstsystem (Streifen),agroforestry system (strips),agroforestry,3312000000,0,DE_NRW
+591,AL aus Erzeugung genommen,Arable land withdrawn from production,fallow_land_not_crop,3301110000,0,DE_NRW
+429,Alle and. Ackerfutterpflanzen,All other arable fodder crops,other_plants_harvested_green,3301099900,0,DE_NRW
+390,Alle anderen Ölfrüchte,All other oil crops,oilseed_crops,3301060800,0,DE_NRW
+459,Alle DGL-Nutzungen,All permanent grassland uses,pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+778,Alpendistel,Alpine thistle,marian_thistles,3301061300,0,DE_NRW
+186,Amarant (Amarant/Fuchsschwanz),Amaranth (Amarant/Foxtail),amaranth,3301150100,0,DE_NRW
+186,"Amarant, (Fuchsschwanz)","Amaranth, (Foxtail)",amaranth,3301150100,0,DE_NRW
+760,Amerikanisches Pampasgras,American pampas grass,switchgrass,3301090208,0,DE_NRW
+642,Ampfer (Wiesen-Sauerampfer),Sorrel (meadow sorrel),sorrel,3301310700,0,DE_NRW
+290,Andere Hülsenfrüchte zur K.,Other legumes for grain,legumes_dried_pulses_protein_crops,3301020000,0,DE_NRW
+790,Anemonen,Anemones,anemones_windflowers,3301080200,0,DE_NRW
+790,"Anemonen (Herbstanemone, Japanische Anemone)","Anemones (fall anemone, Japanese anemone)",anemones_windflowers,3301080200,0,DE_NRW
+651,"Anethum (Dill, Gurkenkraut)","Anethum (dill, cucumber herb)",anethum_dill,3301061203,0,DE_NRW
+673,"Artemisia (Wer., Estr., Beif.)",Artemisia (Wer. Estr. Beif.),artemisia,3301061206,0,DE_NRW
+861,Artischocke,artichoke,artichoke,3301270000,0,DE_NRW
+733,Astern (Sommeraster),asters (summer aster),asters,3301080300,0,DE_NRW
+623,Auberginen,aubergines,aubergine_eggplant,3301260000,0,DE_NRW
+956,Aufforstung,Afforestation,afforestation_reforestation,3306010000,0,DE_NRW
+564,Aufforstung Ländl. Raum,Afforestation rural area,afforestation_reforestation,3306010000,0,DE_NRW
+564,Aufforstung Ländl.Raum,Afforestation in rural areas,afforestation_reforestation,3306010000,0,DE_NRW
+556,Aufforstung nach Aufforst.prä.,Afforestation according to afforestation premium,afforestation_reforestation,3306010000,0,DE_NRW
+956,Aufforstung nach der Einkommensverlustprämie ab 2015,Afforestation under the income loss premium from 2015,afforestation_reforestation,3306010000,0,DE_NRW
+564,Aufgeforst. AF 1257/99 Art 31,Afforested AF 1257/99 Art 31,afforestation_reforestation,3306010000,0,DE_NRW
+568,Aufgeforst. DGL 1257/99 Art 31,Afforested permanent grassland 1257/99 Art 31,afforestation_reforestation,3306010000,0,DE_NRW
+557,Aufgeforst. DGL 1698/05 Art43,Afforested permanent grassland 1698/05 Art 43,afforestation_reforestation,3306010000,0,DE_NRW
+679,Baldriane (Echter Baldrian),Valerian (true valerian),valerian,3301061238,0,DE_NRW
+660,Basilikum,basil,basil,3301061207,0,DE_NRW
+2,Baumreihen,Rows of trees,tree_lines,3310300000,0,DE_NRW
+7,Baumreihen,Rows of trees,tree_lines,3310300000,0,DE_NRW
+2,Baumreihen (CC),Rows of trees (CC),tree_lines,3310300000,0,DE_NRW
+838,Baumschulen (ohne Beerenobst),Tree nurseries (excluding soft fruit),nurseries_nursery,3303070000,0,DE_NRW
+830,Baumschulen (ohne Vermehrung),Nurseries (without propagation),nurseries_nursery,3303070000,0,DE_NRW
+831,Baumschulen (Vermehr. Beeren),Nurseries (propagation berries),berries_berry_species,3303020000,0,DE_NRW
+827,Beerenobst,Berries,berries_berry_species,3303020000,0,DE_NRW
+817,Beerenobst,Berries,berries_berry_species,3303020000,0,DE_NRW
+839,Beerenobst zur Vermehrung,Berries for propagation (in tree nurseries),berries_berry_species,3303020000,0,DE_NRW
+650,beetweise Anbau Kräuter/Gewürz,bed-by-bed cultivation of herbs/spices,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+720,beetweise Anbau Zierpflanzen,bed-by-bed cultivation of ornamental plants,flowers_ornamental_plants,3301080000,0,DE_NRW
+610,beetweiser Anbau von Gemüse,vegetables,fresh_vegetables,3301070000,0,DE_NRW
+780,Begonien,begonias,begonias,3301080400,0,DE_NRW
+653,Bibernellen (Anis),Bibernels (aniseed),anise_aniseed,3301061205,0,DE_NRW
+14,Binnendünen,Inland dunes,not_known_and_other,3399000000,0,DE_NRW
+575,Blühfläche (AUM-Altmaßnahme),flowering area (old AUM (Agri-environmental measures) measure),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+575,Blühfläche (MSL),Flowering area (MSL),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+575,Blühfläche (MSL-Maßnahme),flowering area (MSL measure),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+575,Blühfläche (nur AUM),Flowering area (only AUM (Agri-environmental measures)),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+574,Blühstreifen (AUM-Altmaßnahme),flower strips (old AUM (Agri-environmental measures) measure),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+574,Blühstreifen (MSL),Flower strip (MSL),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+574,Blühstreifen (MSL-Maßnahme),flower strips (MSL measure),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+574,Blühstreifen (nur AUM),Flower strips (only AUM (Agri-environmental measures)),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+722,"Blumen, Zierpfl. (Freiland)","Flowers, ornamental plants (open field)",flowers_ornamental_plants,3301080000,0,DE_NRW
+732,"Blumen, Zierpfl. u. Glas","Flowers, ornamental plants and glasshouse",greenhouse_flowers,3305010800,0,DE_NRW
+426,"Bockshorn-, Schabzieger Klee",Fenugreek clover,fenugreek,3301020400,0,DE_NRW
+426,BockshornKlee,fenugreek,fenugreek,3301020400,0,DE_NRW
+426,"Bockshornklee, Schabzieger Klee","Fenugreek, blue fenugreek",fenugreek,3301020400,3,DE_NRW
+665,Bohnenkräuter,Savory herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+663,Borretsch,borage,borage,3301061209,0,DE_NRW
+590,Brache (Blühmischungen),Fallow (Flowering Mix),fallow_land_not_crop,3301110000,0,DE_NRW
+590,Brache (einj. Blühmisch.),fallow (annual flowering),fallow_land_not_crop,3301110000,0,DE_NRW
+560,Brache (im Rahmen VNS),fallow land (within the framework of VNS),fallow_land_not_crop,3301110000,0,DE_NRW
+594,Brache mit Honigpflanzen,Fallow with honey plants,fallow_land_not_crop,3301110000,0,DE_NRW
+594,Brache mit Honigpflanzen (einj.),Fallow with honey plants (annual),fallow_land_not_crop,3301110000,0,DE_NRW
+595,Brache mit Honigpflanzen (mehrj.),Fallow with honey plants (perennial),fallow_land_not_crop,3301110000,0,DE_NRW
+595,Brache mit Honigpflanzen mehrj,Fallow with honey plants multi-year,fallow_land_not_crop,3301110000,0,DE_NRW
+590,Brache mit jährlicher Einsaat von Blühmischungen,Fallow with annual sowing of flowering mixtures,fallow_land_not_crop,3301110000,0,DE_NRW
+599,Brachefläche Vertragsnaturs.,Fallow land of contract nature conservation,fallow_land_not_crop,3301110000,0,DE_NRW
+593,Brachefläche Vertragsnaturs.,Fallow land of contract nature conservation,fallow_land_not_crop,3301110000,0,DE_NRW
+599,Brachfläche Vertragsnaturs.,Fallow area under nature conservation contract,fallow_land_not_crop,3301110000,0,DE_NRW
+513,Braunellen,Brown allium,flowers_ornamental_plants,3301080000,0,DE_NRW
+614,Brauner Senf,brown mustard,mustard,3301210100,0,DE_NRW
+614,Brauner Senf (Sareptasenf),Brown mustard (Sareptasenf),mustard,3301210100,0,DE_NRW
+709,Brennnesseln (Große Brennn.),Nettles (large nettles),nettles,3301061225,0,DE_NRW
+182,Buchweizen,Buckwheat,buckwheat,3301150200,0,DE_NRW
+172,CCM,CCM,grain_maize_corn_popcorn,3301010600,0,DE_NRW
+896,Chinaschilf (Miscanthus),Chinese reed (Miscanthus),miscanthus_silvergrass,3301083000,0,DE_NRW
+852,Chinaschilf/Miscanthus,Chinese reed / Miscanthus,miscanthus_silvergrass,3301083000,0,DE_NRW
+747,Christophskräuter,Baneberry (actaea),actaea_baneberry_christopher_herbs,3301061201,0,DE_NRW
+784,"Christrose-/Schnee-/Weihnachtsrose, Korischer Nieswurz","Christmas rose, snow rose, Helleborus, Coriope",corsican_hellebore,3301081100,0,DE_NRW
+734,"Chrysantheme, Winteraster",Chrysanthemum winter aster,chrysanthemum,3301080900,0,DE_NRW
+750,Dahlien (Garten-Dahlie),Dahlias (garden dahlia),dahlia,3301081200,0,DE_NRW
+492,Dauergrünland unter etablierte lokale Praktiken (Heide),Permanent grassland under established local practices (heath),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+461,Dauergrünland(aus Ackerfutter),Permanent grassland (from arable fodder),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+593,Dauerkulturen aus der Erzeugung genommen,Permanent crops taken out of production,fallow_land_not_crop,3301110000,0,DE_NRW
+971,DGL (Keine Betriebsprämie),Permanent grassland (no farm payment),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+592,DGL aus Erzeugung genommen,Permanent grass land suspendet from production,pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+222,Dicke Bohne,Broad bean,beans,3301020100,0,DE_NRW
+593,DK aus der Erzeugung genommen,Permanent crops withdrawn from production,fallow_land_not_crop,3301110000,0,DE_NRW
+593,DK aus Erzeugung genommen,Permanent crops withdrawn from production,fallow_land_not_crop,3301110000,0,DE_NRW
+594,DK aus Erzeugung genommen,Permanent crops withdrawn from production,fallow_land_not_crop,3301110000,0,DE_NRW
+687,echte Arnika (Arnica montana),real arnica (Arnica montana),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_NRW
+736,Edelweiß (Alpen-Edelweiß),Edelweiss (Alpine Edelweiss),edelweiss,3301081600,0,DE_NRW
+722,Einjähriges Silberblatt,Annual silver leaf,lunaria_honesty_silver,3301082700,0,DE_NRW
+5,Einzelbäume,Individual trees,tree_lines,3310300000,0,DE_NRW
+5,Einzelbäume (CC),Individual trees (CC),tree_lines,3310300000,0,DE_NRW
+9,Einzelbäume oder -sträucher,Individual trees or shrubs,tree_lines,3310300000,0,DE_NRW
+685,Engelwurzen,Angelica,angelica,3301061204,0,DE_NRW
+671,Enziane,gentian,gentians,3301082000,0,DE_NRW
+210,Erbsen zur Körnergewinnung,Peas for grain production,peas,3301020600,0,DE_NRW
+240,Erbsen/Bohnen - Gemische,peas/beans - mixtures,legumes_dried_pulses_protein_crops,3301020000,3,DE_NRW
+707,Erdbeeren,Strawberries,strawberries,3301130000,0,DE_NRW
+723,Erdbeeren (Freiland),Strawberries (outdoor),strawberries,3301130000,0,DE_NRW
+576,Erosionsschutzstreifen (AUM),erosion protection strips (AUM (Agri-environmental measures)),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+429,Esparsette,Esparsette,esparsette_onobrychis,3301020300,0,DE_NRW
+431,Esparsette,Esparsette,esparsette_onobrychis,3301020300,0,DE_NRW
+492,etablierte lokale Praktiken,established local practices,pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+785,Eukalyptus,Eucalyptus,eucalyptus,3306050000,0,DE_NRW
+708,Färberdisteln,Safflower,safflower,3301083900,0,DE_NRW
+710,Färberkrapp (Rubia tinctorum),Common madder (Rubia tinctorum),rubia_tinctorum_common_madder,3301061231,0,DE_NRW
+703,Färber-Waid,Woad,isatis_tinctoria_woad,3301082400,0,DE_NRW
+342,Faserflachs,fiber flax,flax_linseed,3301060700,0,DE_NRW
+3,Feldgehölze,Field shrubs,tree_lines,3310300000,0,DE_NRW
+8,Feldgehölze,Field shrubs,tree_lines,3310300000,0,DE_NRW
+3,Feldgehölze (CC),Field shrubs (CC),tree_lines,3310300000,0,DE_NRW
+13,Feldraine,Field margins,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+13,Feldraine (CC),Field margins (CC),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+58,Feldrand ÖVF,Field edge EFA,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+748,Feldrittersporne,Delphinium (larkspur),other_flowers_ornamental_plants,3301089900,0,DE_NRW
+636,Feldsalate (auch Rapunzel),Lamb's lettuce (also Rapunzel),lambs_lettuce_rapunzel,3301310500,0,DE_NRW
+12,Fels- und Steinriegel sowie naturversteinte Flächen,Rock and stone ridges as well as naturally stony areas,stone_walls,3310600000,0,DE_NRW
+12,Fels- und Steinriegel sowie naturversteinte Flächen (CC),Rock and stone ridges as well as naturally stony areas (CC),stone_walls,3310600000,0,DE_NRW
+648,Fenchel (Gemüse/Körner),Fennel (vegetables / grains),fennel,3301170000,0,DE_NRW
+796,"Fetthenne, Mauerpfeffer",Stonecrop,stonecrop,3301084600,0,DE_NRW
+796,"Fetthenne, Mauerpfeffer (Sedum)",Stonecrop,stonecrop,3301084600,0,DE_NRW
+4,Feuchtgebiete,Wetlands,wetlands,3310400000,0,DE_NRW
+4,Feuchtgebiete (CC),Wetlands (CC),wetlands,3310400000,0,DE_NRW
+786,Fingerhut,Foxglove,flowers_ornamental_plants,3301080000,0,DE_NRW
+995,Forstflächen,Forest areas,tree_wood_forest,3306000000,0,DE_NRW
+681,Frauenmantel,Lady's mantle,alchemilla_ladys_mantle,3301061202,0,DE_NRW
+787,Fuchsien,Fuchsias,fuchsias,3301081800,0,DE_NRW
+210,Futtererbsen,field peas,peas,3301020600,0,DE_NRW
+412,Futterhackfr.,Fodder root crops,fodder_roots,3301050000,0,DE_NRW
+413,Futterrübe/Runkelrübe,Fodder beet / beetroot,mangelwurzel_fodder_beet,3301290400,0,DE_NRW
+683,Galega (Geißraute),Galega (goat's rue),galega,3301081900,0,DE_NRW
+723,Garten-/ Sommerlevkoje,Garden/summer bunk,flowers_ornamental_plants,3301080000,0,DE_NRW
+792,Gartenbausämerei (Obst/Gemüse),Horticultural seed production (fruit/vegetables),other_arable_land_crops,3301990000,0,DE_NRW
+791,Gartenbausämerei (Zierpfl.),Horticultural seed production (ornamental plants),other_arable_land_crops,3301990000,0,DE_NRW
+635,Gartenbohne,Garden bean,beans,3301020100,0,DE_NRW
+617,Gartenkresse,Garden cress,cress,3301210300,0,DE_NRW
+630,Gartenkürbis,Garden pumpkin,pumpkin_squash_gourd,3301140400,0,DE_NRW
+630,"Gartenkürbis (Zucchini, Zier.)","Garden squash (zucchini, ornamental)",pumpkin_squash_gourd,3301140400,0,DE_NRW
+757,Garten-Montbretie,Garden Montbretie,flowers_ornamental_plants,3301080000,0,DE_NRW
+517,Garten-Petunie,Garden Petunia,flowers_ornamental_plants,3301080000,0,DE_NRW
+618,Gartenrettiche,Garden radishes (white / red radishes,radish,3301290600,0,DE_NRW
+616,"Garten-Senkfrauke-, Rucola","garden rocket, arugula",rocket_arugula,3301310600,0,DE_NRW
+999,Gattung/Art (nicht in Liste),Genus / species (not in list),other_arable_land_crops,3301990000,0,DE_NRW
+240,Gemenge Erbsen / Bohnen,Mixture peas / beans,legumes_dried_pulses_protein_crops,3301020000,1,DE_NRW
+240,Gemenge Erbsen/Bohnen,Mixed peas / beans,legumes_dried_pulses_protein_crops,3301020000,1,DE_NRW
+150,Gemenge Getr./Leg.(mehr Getr.),Mixture of cereals/legumes (majoritarian cereals),cereal_legume_mix,3301091200,1,DE_NRW
+250,Gemenge Leg./ Getr.(mehr Leg.),Mixture of cereals/legumes (majoritarian legumes),cereal_legume_mix,3301091200,1,DE_NRW
+250,Gemenge Leguminosen / Getreide,Mixture of legumes / grain,cereal_legume_mix,3301091200,1,DE_NRW
+250,Gemenge Leguminosen /Getreide,Mixture legumes / cereals,cereal_legume_mix,3301091200,1,DE_NRW
+710,Gemüse (Freiland),Vegetables (outdoor),fresh_vegetables,3301070000,0,DE_NRW
+731,Gemüse und Pilze unter Glas,Vegetables and mushrooms under glass,greenhouse_vegetables,3305010900,0,DE_NRW
+211,Gemüseerbse,Garden peas,peas,3301020600,0,DE_NRW
+613,Gemüsekohl (auch Zierkohl),Vegetable cabbage (also ornamental cabbage),brassica_oleracea_cabbage,3301210200,0,DE_NRW
+620,Gemüserübe,Vegetable turnip,turnips,3301290800,0,DE_NRW
+649,Gemüserübsen,Vegetable turnip,turnips,3301290800,0,DE_NRW
+612,Gemüserübsen,Vegetable turnip,turnips,3301290800,0,DE_NRW
+788,Geranien,Geraniums,flowers_ornamental_plants,3301080000,0,DE_NRW
+190,Getreide (außer Mais),Cereals (except maize),other_cereals,3301019900,0,DE_NRW
+759,Gipskräuter (Schleierkraut),gypsophila (baby's breath),flowers_ornamental_plants,3301080000,0,DE_NRW
+745,Gladiolen (Gartengladiole),Gladioli (garden gladiolus),gladiolus_gladioli,3301082100,0,DE_NRW
+704,Glanzgräser,Canary grass,canary_seed_canaryseed,3301011400,0,DE_NRW
+782,Glockenblumen (Campanula),bellflowers (campanula),bluebells,3301080500,0,DE_NRW
+510,Goldrute,Goldenrod,goldenrod,3301082200,0,DE_NRW
+510,Goldrute (Solidago),Goldenrod (Solidago),goldenrod,3301082200,0,DE_NRW
+434,Gras-Leguminosen  (mehr Leg.),Grass legumes (more legumes),legume_grass_mix,3301090500,1,DE_NRW
+912,Grassamenvermehrung,Grass seed propagation,temporary_grass,3301090100,0,DE_NRW
+459,Grünland,Grassland (permanent grassland),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+459,Grünland (Dauergrünland),Grassland (permanent grassland),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+627,Gurken,cucumbers,cucumber_pickle,3301140100,0,DE_NRW
+758,Halskräuter (Blaues Halskraut),scabious (blue scabious),flowers_ornamental_plants,3301080000,0,DE_NRW
+701,Hanf,Industrial hemp/hemp,hemp_cannabis,3301061000,0,DE_NRW
+793,Hanf,Industrial hemp/hemp,hemp_cannabis,3301061000,0,DE_NRW
+833,Haselnüsse,Hazelnuts,hazelnuts_hazel,3303030200,0,DE_NRW
+824,Haselnüsse,Hazelnuts,hazelnuts_hazel,3303030200,0,DE_NRW
+920,Haus- und Nutzgarten,House and utility garden,kitchen_gardens,3301120000,0,DE_NRW
+514,Hauswurz,houseleek,flowers_ornamental_plants,3301080000,0,DE_NRW
+514,Hauswurz (Sempervivum),Houseleek (Sempervivum),flowers_ornamental_plants,3301080000,0,DE_NRW
+6,Hecken oder Knicks,Hedges or hedgerows,hedges,3310200000,0,DE_NRW
+1,Hecken oder Knicks,Hedges or hedgerows,hedges,3310200000,0,DE_NRW
+1,Hecken oder Knicks (CC),Hedges or hedgerows (CC),hedges,3310200000,0,DE_NRW
+970,Heide (Grünlandnutzung),Pasture (grassland use),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+862,Heidekraut,Heather,ericaceae_heather,3301061216,0,DE_NRW
+770,"Heil-, Duft- u. Gewürzpflanzen","Medicinal, aromatic and spice plants",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,3,DE_NRW
+753,Hibiskus,hibiscus,hibiscus,3301061218,0,DE_NRW
+907,Höhere Gewalt (Zuweisung),Force majeure (assignment),not_known_and_other,3399000000,0,DE_NRW
+427,"Hornklee, Hornschotenklee","horn clover, horn pod clover",clover,3301090303,0,DE_NRW
+799,Husarenknopf (Sanvitalia),Sanvitalia,sanvitalia_procumbens,3301084100,0,DE_NRW
+512,Iberischer Drachenkopf,Lallemantia iberica,oilseed_crops,3301060800,0,DE_NRW
+900,Intern - sonstige LF,Internal - other agricultural land,not_known_and_other,3399000000,0,DE_NRW
+901,Intern-nicht beantragterSchlag,Internal - field not applied for,not_known_and_other,3399000000,0,DE_NRW
+680,Johanniskräuter (Echtes J.),St. John's Herbs (Genuine J.),st_johns_wort,3301061234,0,DE_NRW
+677,Kamillen (Echte Kamille),Chamomiles (real chamomile),chamomile,3301061213,0,DE_NRW
+765,Kapuzinerkresse,Nasturtium,nasturtiums,3301061224,0,DE_NRW
+765,Kapuzinerkressen,Capuchin cresses,nasturtiums,3301061224,0,DE_NRW
+602,Kartoffeln,potatoes,potatoes,3301030000,0,DE_NRW
+619,Kartoffeln,potatoes,potatoes,3301030000,0,DE_NRW
+619,Kartoffeln (ohne Stärkekart.),Potatoes (without starch potatoes),potatoes,3301030000,0,DE_NRW
+652,Kerbel (auch Wiesenkerbel),Chervil (also meadow chervil),chervil,3301061214,0,DE_NRW
+811,Kern- u. Steinobst Ertragsanl.,Pome and stone fruit production plantation,orchards_fruits,3303010000,0,DE_NRW
+825,"Kernobst z.B. Äpfel, Birnen",Pome fruit e.g. apples,orchards_fruits,3303010000,0,DE_NRW
+825,"Kernobst z.B.Äpfel, Birnen","Pome fruit e.g. apples, pears",orchards_fruits,3303010000,0,DE_NRW
+825,"Kernobst z.B: Äpfel, Birnen","Pome fruit e.g.: apples, pears",orchards_fruits,3303010000,0,DE_NRW
+645,Kichererbsen,Chickpeas,chickpeas,3301020200,0,DE_NRW
+421,Klee,clover,clover,3301090303,0,DE_NRW
+426,Klee (nicht stickstoffb./ÖVF),Clover (not nitrogen-fixing / ÖVF),clover,3301090303,0,DE_NRW
+421,"Klee (stickstoffbindend, ÖVF)","Clover (nitrogen-fixing, ÖVF)",clover,3301090303,0,DE_NRW
+421,"Klee, gesamt","Clover, total",clover,3301090303,0,DE_NRW
+913,Klee-/Luzernesamenvermehrung,Clover/lucerne seed propagation,legumes_harvested_green,3301090300,0,DE_NRW
+422,Kleegras,Clover grass,clover_grass_mix,3301090501,1,DE_NRW
+425,Klee-Luzerne-Gemisch,Clover and alfalfa mixture,legumes_harvested_green,3301090300,3,DE_NRW
+432,Kleemischung,clover mixture,clover,3301090303,7,DE_NRW
+432,Kleemischung (o.Buchshornklee),Clover mixture (without box horn clover),clover,3301090303,7,DE_NRW
+432,Kleemischung (ohne Bockshornklee),Clover mixture (without fenugreek),clover,3301090303,0,DE_NRW
+728,Knorpelmöhren (Bischofskraut),Cartilage carrots (bishop's herb),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+516,Knöterich,Knotweed (Persicaria),polygonum,3301061229,0,DE_NRW
+516,Knöterich (Persicaria),Knotweed (Persicaria),polygonum,3301061229,0,DE_NRW
+519,Köcherblümchen,caddis flower,flowers_ornamental_plants,3301080000,0,DE_NRW
+519,Köcherblümchen (Cuphea),Quiverflower (Cuphea),flowers_ornamental_plants,3301080000,0,DE_NRW
+414,Kohl-/Steckrüben,Cabbage/swede,swede_rutabaga,3301210500,3,DE_NRW
+414,Kohl-/Steckrüben (Winter),Rutabaga (winter),swede_rutabaga,3301210500,0,DE_NRW
+414,"Kohlrübe, -/Steckrüben",turnips/rutabaga,swede_rutabaga,3301210500,3,DE_NRW
+414,Kohlsteckrüben,Cabbage swedes,swede_rutabaga,3301210500,0,DE_NRW
+66,Kond.-Brache (aktive Begrünung,Conditional fallow (active greening),fallow_land_not_crop,3301110000,0,DE_NRW
+62,Kond.-Brache (Selbstbegrünung),Conditional fallow (self-greening),fallow_land_not_crop,3301110000,0,DE_NRW
+764,Königskerzen (Großblütige K.),Mulleins (great mullein),flowers_ornamental_plants,3301080000,0,DE_NRW
+840,Korbweiden,Basket willows,willows_osiers,3306080000,0,DE_NRW
+845,Korbweiden,Basket willows,willows_osiers,3306080000,0,DE_NRW
+657,Koriander,coriander,coriander,3301061215,0,DE_NRW
+784,"Korischer Nieswurz, Rosen",Corsican hellebore,corsican_hellebore,3301081100,0,DE_NRW
+775,Kornblumen,Cornflowers,cornflowers,3301081000,0,DE_NRW
+171,Körnermais,Grain corn,grain_maize_corn_popcorn,3301010600,0,DE_NRW
+792,Kornrade,Corn cockle,flowers_ornamental_plants,3301080000,0,DE_NRW
+761,Kosmeen (Schmuckkörbchen),Cosmos (garden cosmos),flowers_ornamental_plants,3301080000,0,DE_NRW
+392,Krambe/ Echter Meerkohl,Crambe / sea kale,brassicaceae_cruciferae,3301210000,0,DE_NRW
+655,Kreuzkümmel,cumin,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+752,"Krokusse (Safran, Garten-K.)",Crocuses (saffron,saffron_crocus_sativus,3301061232,0,DE_NRW
+771,Küchenkräuter,culinary herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+654,Kümmel,Caraway seed/Caraway (real caraway),caraway,3301061211,0,DE_NRW
+654,Kümmel (Echter Kümmel),Caraway (common caraway),caraway,3301061211,0,DE_NRW
+563,Langj. o. 20 j. Stilll. AF,Long-term or over 20-year set-aside AF,fallow_land_not_crop,3301110000,0,DE_NRW
+563,Langj. o. 20 j. Stilll. AL,Long-term fallow (>20y) arable,fallow_land_not_crop,3301110000,0,DE_NRW
+567,Langj. o. 20 j. Stilll. DGL,Long-term or over 20-year set-aside DGL,fallow_land_not_crop,3301110000,0,DE_NRW
+567,Langj. o. 20 j.Stilll. DGL,Long-term fallow (>20y) permanent grassland,fallow_land_not_crop,3301110000,0,DE_NRW
+668,Lavendel,Lavender (real lavender,lavender_lavandula,3301061219,0,DE_NRW
+913,Leguminosensamenvermehrung,Legume seed propagation,legumes_harvested_green,3301090300,0,DE_NRW
+793,Leimkraut/Taubenkropf-Leimkraut,Campion/pigeon's eye,silene_catchfly,3301084300,0,DE_NRW
+341,"Lein (Flachs, Leinsamen)",Flax (flax linseed),flax_linseed,3301060700,0,DE_NRW
+341,"Lein, Flachs",Flax/Flax (flax linseed),flax_linseed,3301060700,0,DE_NRW
+393,Leindotter,Camelina,camelina,3301061500,0,DE_NRW
+658,Liebstöckel/Maggikraut,Lovage / Maggi herb,lovage_maggiplant,3301061221,0,DE_NRW
+726,Lilien (Türkenbund),Lilies (king lily,lilies,3301082500,0,DE_NRW
+222,Linsen,lentils,lentils,3301020500,0,DE_NRW
+292,Linsen (Speise-Linse),Lentils (food lentil),lentils,3301020500,0,DE_NRW
+756,Löwenmäulchen,Snapdragons,snapdragons,3301084500,0,DE_NRW
+684,Löwenzahn,dandelion,dandelions,3301081400,0,DE_NRW
+230,Lupinen,Lupins,sweet_lupins,3301020700,0,DE_NRW
+423,Luzerne,alfalfa,alfalfa_lucerne,3301090301,0,DE_NRW
+423,"Luzerne, Hopfenklee/Gelbklee, Bastardluzerne/Sandluzerne",alfalfa,legumes_harvested_green,3301090300,0,DE_NRW
+433,Luzerne-Gras,Alfalfa grass/Alfalfa-grass mixture,alfalfa_grass_mix,3301090509,1,DE_NRW
+433,Luzerne-Gras-Gemisch,Lucerne grass mixture,alfalfa_grass_mix,3301090509,1,DE_NRW
+171,Mais (ohne Silomais),corn (excluding silage corn),grain_maize_corn_popcorn,3301010600,0,DE_NRW
+171,Mais (ohne Zucker-/Silomais),Maize (without sugar / silage maize),grain_maize_corn_popcorn,3301010600,0,DE_NRW
+917,Mais-Mischkulturen (ohne Leg.),corn mixed crops (without legumes),grain_maize_corn_popcorn,3301010600,4,DE_NRW
+686,Malven (Wilde Malve),Mallow (Wild Mallow),malva,3301082800,0,DE_NRW
+639,"Mangold, Rote Beete/Rote Rübe","Swiss chard, beetroot",chard,3301310100,3,DE_NRW
+737,Margeriten,daisies,daisy_daisies,3301081300,0,DE_NRW
+682,Mariendisteln,Milk thistles,marian_thistles,3301061300,0,DE_NRW
+918,Mehrjährige Buntbrachen (AUM),Perennial fallows (AUM (Agri-environmental measures)),fallow_land_not_crop,3301110000,0,DE_NRW
+640,Melde (Garten-Melde),orach (garden orach),other_salads_lettuce_leaf_vegetables,3301319900,0,DE_NRW
+670,Melissen (Zitronenmelisse),Melissa (lemon balm),lemon_balm_melissa,3301061220,0,DE_NRW
+631,Melone,Melon (watermelon),watermelon,3301140500,0,DE_NRW
+631,Melone (Citrullus) (Wasserm.),Melon (Citrullus) (Waterm.),watermelon,3301140500,0,DE_NRW
+732,Milchstern (Kap-Milchstern),Milky Star (Cape Milky Star),milk_star,3301082900,0,DE_NRW
+672,"Minzen (Pfefferm., Grüne M.)",Mints (pepperm. Green m.),mints_peppermint,3301061222,0,DE_NRW
+175,Mischanbau Mais u Sonnenblumen,Mixed cropping maize and sunflowers,green_silo_maize,3301090400,1,DE_NRW
+51,Mischkulturen im Reihenanbau,Mixed crops in row cultivation,mixed_row_cropping,3301321300,2,DE_NRW
+51,Mischkulturen in Reihenanbau,Mixed crops in rows,mixed_row_cropping,3301321300,2,DE_NRW
+50,Mischkulturen Saatgutmischung,Mixed crops seed mix,mixed_cropping,3301320000,1,DE_NRW
+706,"Mohn (Schlafmohn, Backmohn)",Poppy seeds,poppy,3301060600,0,DE_NRW
+634,Möhre (auch Futtermöhre,Carrot (also fodder carrot,carrots_daucus,3301290300,0,DE_NRW
+634,Möhre (auch Futtermöhre),Carrot (also feeding carrot),carrots_daucus,3301290300,0,DE_NRW
+183,Mohren-/ Zuckerhirse,Pearl / sweet sorghum,millet_sorghum,3301010900,7,DE_NRW
+183,Mohren-/Zuckerhirse,Sorghum (grain sorghum),millet_sorghum,3301010900,0,DE_NRW
+183,Möhren-/Zuckerhirse,Sorghum bicolor,millet_sorghum,3301010900,0,DE_NRW
+515,Mühlenbeckia/Drahtsträucher,Muehlenbeckia / wire shrubs,wire_bush,3303080700,0,DE_NRW
+763,Nachtkerzen (Gewöhnliche N.),Evening primroses (common evening primrose),primrose,3301083500,0,DE_NRW
+727,Narzissen / Osterglocken,Daffodils / daffodils,narcissus_daffodil,3301083300,0,DE_NRW
+583,Naturschutz (1307/2013-32-2bi),Nature conservation (1307 / 2013-32-2bi),environmental_protection,3311000000,0,DE_NRW
+583,Naturschutz 73/09 Art 34 (2bi),Nature conservation 73/09 Art 34 (2bi),environmental_protection,3311000000,0,DE_NRW
+583,Naturschutzfläche(1307/2013-i),nature conservation area (1307/2013-i),environmental_protection,3311000000,0,DE_NRW
+772,"Nelken (Bartn., Land/Edel)",Carnations (Bard / noble carnation),carnation,3301080800,0,DE_NRW
+973,NFF AF (Keine Betriebsprämie),NFF AF (no farm payment),arable_crops,3301000000,0,DE_NRW
+971,NFF DGL (Keine Betriebsprämie),NFF DGL (no farm payment),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+972,NFF Grünland(Keine Betriebsp.),NFF grassland (no farm payment),pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+973,NFF: Ackernutzung,Non-eligible feature: arable use,arable_crops,3301000000,0,DE_NRW
+972,NFF: Dauergrünlandnutzung,Non-eligible feature: permanent grassland use,pasture_meadow_grassland_grass,3302000000,0,DE_NRW
+841,Niederwald mit Kurzumtrieb,Short rotation coppice,short_rotation_coppice,3306090000,0,DE_NRW
+848,Niederwald mit Kurzumtrieb,Short rotation coppice,short_rotation_coppice,3306090000,0,DE_NRW
+88,ÖR 1a Freiwillige Stilllegung,ÖR (Eco-regulations) 1a Voluntary Decommissioning,fallow_land_not_crop,3301110000,0,DE_NRW
+90,ÖR 1b Blühfläche auf AL,Ecological focus area flowering plot on arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+89,ÖR 1b Blühstreifen auf AL,Ecological focus area flowering strip on arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+92,ÖR 1c Blühfläche auf DK,Ecological focus area flowering plot on grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+93,ÖR 1d Altgrasstreifen DGL,ÖR (Eco-regulations) 1d Altgrasstreifen DGL,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+664,"Oregano (Majoran, Dost)",Oregano (marjoram dost),oregano,3301061226,0,DE_NRW
+56,ÖVF-Streifen AL,Ecological focus area strip (arable land),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+624,"Paprika, Chili, Peperoni","Peppers, chili, hot peppers",capsicum,3301300000,3,DE_NRW
+624,"Paprika, Chilli, Peperoni","Bell pepper, chili, hot pepper",capsicum,3301300000,0,DE_NRW
+643,Pastinaken,Parsnips,parsnips,3301290500,0,DE_NRW
+795,Pelargonien,Pelargoniums,flowers_ornamental_plants,3301080000,0,DE_NRW
+659,Petersilie,parsley/Petroselinum (parsley),parsley,3301061227,0,DE_NRW
+659,Petroselinum (Petersilie),Petroselinum (parsley),parsley,3301061227,0,DE_NRW
+766,Pfingstrosen (auch Strauch),Peonies (also shrub),peony_peonies,3301083400,0,DE_NRW
+866,Pflanzenmischung mit Hanf,Plant mixture with hemp,hemp_cannabis,3301061000,4,DE_NRW
+777,Phacelia,Phacelia,phacelia,3301061400,0,DE_NRW
+777,Phacelia (nur als Hauptkultur z.B. Saatgutvermehrung),Phacelia (only as main crop e.g. seed propagation),phacelia,3301061400,0,DE_NRW
+212,Platterbse,Flat pea,lathyrus_peavine,3301020800,0,DE_NRW
+518,Polygonium,Polygonium,polygonum,3301061229,0,DE_NRW
+518,Polygonum,Polygonum,polygonum,3301061229,0,DE_NRW
+771,Portulak,Purslane,purslane,3301240000,0,DE_NRW
+56,Pufferstreifen ÖVF AL,Buffer strip EFA arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+56,Pufferstreifen ÖVF AL (inkl. Feldrand ÖVF),Buffer strip ÖVF arable land (incl. field edge ÖVF),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+57,Pufferstreifen ÖVF DGL,Buffer strips ecological preferance zones permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+187,Quinoa,Quinoa,quinoa,3301150300,0,DE_NRW
+798,Ramtillkraut,Ramtill herb,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+915,Randstreifen (Acker/DK),edge strip (field/DK),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+311,Raps zur Körnergewinnung,Rape for grain production,winter_rapeseed_rape,3301060401,0,DE_NRW
+842,Rebland,Vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_NRW
+850,Rebland,Vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_NRW
+188,Reis im Trockenanbau,dry-grown rice,rice,3301010700,0,DE_NRW
+851,Rhabarber,rhubarb,rhubarb,3301230000,0,DE_NRW
+892,Rhabarber,rhubarb,rhubarb,3301230000,0,DE_NRW
+797,Rhizinus,Castor oil plant,ricinus_castor,3303080600,0,DE_NRW
+751,Rhodiola (Rosenwurz),Rhodiola (rose root),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_NRW
+629,Riesenkürbis,Giant pumpkin,pumpkin_squash_gourd,3301140400,0,DE_NRW
+629,Riesenkürbis (auch Hokkaido),Giant pumpkin (also Hokkaido),pumpkin_squash_gourd,3301140400,0,DE_NRW
+853,Riesenweizengras/Szarvasi-Gras,Giant wheat grass / Szarvasi grass,poaceae_grasses,3301090200,0,DE_NRW
+674,Ringelblumen,marigolds,calendula_marigold,3301061210,0,DE_NRW
+674,Ringelblumen (Garten-R.),Marigolds (garden r.),calendula_marigold,3301061210,0,DE_NRW
+181,Rispenhirse,Millet/Millet (Panicum),millet_sorghum,3301010900,0,DE_NRW
+181,Rispenhirse (Panicum),Panicle millet (Panicum),millet_sorghum,3301010900,0,DE_NRW
+748,Rittersporne,delphiniums,flowers_ornamental_plants,3301080000,0,DE_NRW
+854,Rohrglanzgras,Reed canary grass,poaceae_grasses,3301090200,0,DE_NRW
+702,Rollrasen,turf,sod_turf,3301090207,0,DE_NRW
+863,"Rosen (Baumschulen), Schnittrosen","Roses (nurseries), cut roses",roses,3301083700,0,DE_NRW
+863,"Rosen, Schnittrosen",Roses (nurseries),roses,3301083700,0,DE_NRW
+661,Rosmarin,rosemary,rosemary,3301061230,0,DE_NRW
+421,Rot-/Weiß-/Alexandriner-/Inkarnat-/Erd-/Schweden-/Persischer Klee,Red/white/Alexandrian/crimson/earth/Swedish/Persian clover,clover,3301090303,0,DE_NRW
+911,Rübensamenvermehrung,beet seed propagation,beetroot_beets,3301290200,0,DE_NRW
+738,Rudbeckien (Sonnenhut),Rudbeckia (coneflower),rudbeckia_coneflowers,3301083800,0,DE_NRW
+413,Runkelfutterrüben,Mangel fodder beets,mangelwurzel_fodder_beet,3301290400,0,DE_NRW
+806,Rutenhirse/Switchgras,Switchgrass / switchgrass,switchgrass,3301090208,0,DE_NRW
+637,"Salat (Garten, Lollo Rosso.)",Lettuce (garden,salads_lettuce_leaf_vegetables,3301310000,0,DE_NRW
+627,Salatgurke (auch Einlegegurke),Cucumber (also pickled cucumber),cucumber_pickle,3301140100,0,DE_NRW
+662,Salbei (auch Buntschopf),Sage,sage_chia,3301190000,0,DE_NRW
+749,"Scabiosen (Samt, Kugel)","Scabious (velvet, globe)",flowers_ornamental_plants,3301080000,0,DE_NRW
+678,Schafgarben (Gelbe Schafgarbe),Yarrow (yellow yarrow),yarrow,3301061239,0,DE_NRW
+783,Schildblume (Chelone),chelon (chelon),flowers_ornamental_plants,3301080000,0,DE_NRW
+574,Schonstreifen Blühstreifen,Conservation strip flower strip,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+575,Schonstreifen Selbstbegrünung,Conservation strip self-greening,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+576,Schutzstreifen Erosion,Protection strip erosion (only to be used for areas with AUM-BS 7.1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+576,SchutzstreifenErosion(nur AUM),Protective strip erosion (only AUM (Agri-environmental measures)),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+612,Schwarzer Senf,black mustard,mustard,3301210100,0,DE_NRW
+656,Schwarzkümmel,Black cumin,black_cumin,3301061208,0,DE_NRW
+647,Schwarzwurzeln,Black salsify,black_salsify,3301290900,0,DE_NRW
+730,Seidenpflanzen,silk plants,other_flowers_ornamental_plants,3301089900,0,DE_NRW
+730,Seidenpflanzen (Indianer-S.),Silk plants (Indian-S.),other_flowers_ornamental_plants,3301089900,0,DE_NRW
+641,Sellerie (Knoll/Bleich/Stang),Celery (tuber / pale / stick),celery,3301250000,0,DE_NRW
+616,"Senfrauke (Garten-S., Rucola)",Arugula,rocket_arugula,3301310600,0,DE_NRW
+430,Serradella,serradella,serradella,3301084200,0,DE_NRW
+432,Serradella,serradella,serradella,3301084200,0,DE_NRW
+804,Sida (Virginiamalve),Sida (Virginia Mallow),sida_virginia_mallow,3304030000,0,DE_NRW
+,Silberbrandschopf,Silver comb,silver_comb,3301061233,0,DE_NRW
+411,Silomais,Silage corn,green_silo_maize,3301090400,0,DE_NRW
+411,Silomais (als Hauptfutter),Silage maize (as staple feed),green_silo_maize,3301090400,0,DE_NRW
+802,"Silphium (Durchwachs., Becher)",Silphium (through-growth,silphium_rosinweeds,3301084400,0,DE_NRW
+897,So. Pflanzen energ. Verwertung,Other plants for energy use,energy_crops,3304010000,0,DE_NRW
+330,Sojabohnen,Soybeans,soy_soybeans,3301160000,0,DE_NRW
+120,Sommer-Dinkel,Summer spelt,spring_spelt,3301011002,0,DE_NRW
+113,Sommerdurum (Hartweizen),Summer durum wheat / durum,spring_durum_hard_wheat,3301010202,0,DE_NRW
+119,Sommer-Emmer/ -Einkorn,Summer emmer / single grain,spring_emmer,3301011202,3,DE_NRW
+132,Sommergerste,Summer barley,spring_barley,3301010402,0,DE_NRW
+143,Sommerhafer,Summer oats,spring_oats,3301010502,0,DE_NRW
+113,Sommerhartweizen/Durum,Spring durum wheat/durum,spring_durum_hard_wheat,3301010202,0,DE_NRW
+144,Sommermenggetreide,Summer mixed grain,spring_meslin,3301011102,7,DE_NRW
+312,Sommerraps,Summer rape,spring_rapeseed_rape,3301060402,0,DE_NRW
+122,Sommerroggen,Summer rye,spring_rye,3301010302,0,DE_NRW
+316,Sommerrübsen,Summer rapeseed (rapeseed,spring_turnip_rape,3301210702,0,DE_NRW
+316,Sommerrübsen (auch Rübsamen),Summer turnip rape (also rapeseed),spring_turnip_rape,3301210702,0,DE_NRW
+157,Sommertriticale,Summer triticale,spring_triticale,3301010802,0,DE_NRW
+116,Sommerweichweizen,summer wheat/Summer soft wheat,spring_common_soft_wheat,3301010102,0,DE_NRW
+320,Sonnenblumen,sunflowers,sunflower,3301060500,0,DE_NRW
+675,"Sonnenhut (Schmalbl., Purpur)",Sun hat (narrow purple),echinacea_sun_hat,3301081500,0,DE_NRW
+850,Sonstige Dauerkulturen,Other permanent crops,permanent_crops_perennial,3303000000,0,DE_NRW
+890,Sonstige Dauerkulturen,Other permanent crops,permanent_crops_perennial,3303000000,0,DE_NRW
+790,Sonstige Handelsgewächse,Other commercial crops,other_arable_land_crops,3301990000,0,DE_NRW
+829,Sonstige Obstanlagen,Other fruit orchards,orchards_fruits,3303010000,0,DE_NRW
+819,Sonstige Obstanlagen,Other fruit orchards,orchards_fruits,3303010000,0,DE_NRW
+993,sonstige vorüberg. Ackerbrache,Other temporary arable fallow,fallow_land_not_crop,3301110000,0,DE_NRW
+183,Sorghumhirse (Körnersorghum),Sorghum millet (grain sorghum),millet_sorghum,3301010900,0,DE_NRW
+860,Spargel,asparagus,asparagus,3301200000,0,DE_NRW
+715,Spargel,asparagus,asparagus,3301200000,0,DE_NRW
+860,Spartel,Spurry,asparagus,3301200000,0,DE_NRW
+638,Spinat,spinach,spinach,3301310800,0,DE_NRW
+641,Stärkekartoff. (Emslandstärke),Starch potatoes (Emslandstärke),potatoes,3301030000,0,DE_NRW
+643,Stärkekartoffeln (AVEBE/NL),Starch potatoes (AVEBE/NL),potatoes,3301030000,0,DE_NRW
+431,Steinklee,Sweet clover,melilot,3301090304,0,DE_NRW
+826,Steinobst,Stone fruit,orchards_fruits,3303010000,0,DE_NRW
+826,"Steinobst z.B. Kirsche, Pflaum","Stone fruits e.g. cherry, plum",orchards_fruits,3303010000,0,DE_NRW
+741,Strandflieder (Geflügelter S.),Sea lavender (Winged S.),flowers_ornamental_plants,3301080000,0,DE_NRW
+754,Strauch-/Bechermalven,Shrub / cup mallows,malva,3301082800,0,DE_NRW
+54,Streifen am Waldrand ÖVF,strip at the edge of the forest ÖVF (Ecological priority areas),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_NRW
+511,Streptocarpus/Drehfrucht,Streptocarpus/twist fruit,flowers_ornamental_plants,3301080000,0,DE_NRW
+480,Streuobst (Grünlandnutzung),orchards (grassland use),orchards_fruits,3303010000,8,DE_NRW
+822,Streuobst (ohne Wiesennutzung),Orchards as crop cultivation (without meadow use)/Orchards (without meadow use),orchards_fruits,3303010000,0,DE_NRW
+480,Streuobst mit DGL-Nutzung,Orchards with Permanent grassland use,orchards_fruits,3303010000,0,DE_NRW
+812,Streuobst ohne Grünlandnutzung,Meadow orchard without grassland use,orchards_fruits,3303010000,0,DE_NRW
+735,Strohblumen (Garten),Everlasting flowers (garden),flowers_ornamental_plants,3301080000,0,DE_NRW
+803,"Sudangras, Zuckerhirse",Sudan grass,millet_sorghum,3301010900,0,DE_NRW
+230,Süßlupinen zur Körnergewinnung,Sweet lupins for grain production,sweet_lupins,3301020700,0,DE_NRW
+739,Tagetes,Tagetes / marigold,tagetes,3301084700,0,DE_NRW
+793,Taubenkropf-/Leimkraut,Pigeon goiter / catchfly,silene_catchfly,3301084300,0,DE_NRW
+744,Taubnesseln (Weiße Taubnessel),deadnettles (white deadnettle),nettles,3301061225,0,DE_NRW
+16,Terrassen,Terraces,non_productive_landscape_elements,3310000000,0,DE_NRW
+16,Terrassen (CC),Terraces (CC),non_productive_landscape_elements,3310000000,0,DE_NRW
+669,Thymian (auch Gartenthymian),Thyme (also garden thyme),thyme,3301061237,0,DE_NRW
+622,Tomaten,tomatoes,tomato,3301280000,0,DE_NRW
+604,Topinambur,Topinambur,topinambur_jerusalem_artichoke,3301180000,0,DE_NRW
+630,Topinambur,Topinambur,topinambur_jerusalem_artichoke,3301180000,0,DE_NRW
+747,Trauben-Silberkerze,black cohosh,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+11,Trocken- oder Natursteinmauern oder Lesesteinwälle,Dry or natural stone walls or stone heaps,stone_walls,3310600000,0,DE_NRW
+11,Trocken- oder Natursteinmauern oder Lesesteinwälle (CC),Dry or natural stone walls or stone heaps (CC),stone_walls,3310600000,0,DE_NRW
+11,Trocken- und Natursteinmauern oder Lesesteinwälle,Dry and natural stone walls or stone heaps,stone_walls,3310600000,0,DE_NRW
+11,"Trocken- und Natursteinmauern, Lesesteinwälle","Dry and natural stone walls, stone heaps",stone_walls,3310600000,0,DE_NRW
+865,Trüffel,truffle,truffle,3304040000,0,DE_NRW
+746,Tulpen (Garten-Tulpe),Tulips (garden tulip),tulips,3301084900,0,DE_NRW
+10,Tümpel - Sölle - Moore - Dolinen und andere vergleichbare Feuchtgebiete,Ponds - kettle holes - moors - sinkholes and other comparable wetlands,wetlands,3310400000,0,DE_NRW
+10,Tümpel - Sölle - Moore - Dolinen und andere vergleichbare Feuchtgebiete (CC),Ponds - kettle holes - moors - sinkholes and other comparable wetlands (CC),wetlands,3310400000,0,DE_NRW
+10,"Tümpel, Sölle, Moore, Dolinen und andere vergleichbare Feuchtgebiete","Ponds, kettle holes, moors, sinkholes and other comparable wetlands",wetlands,3310400000,0,DE_NRW
+573,Uferrandstreifen,Riparian buffer strip,wetland_buffers,3310700000,0,DE_NRW
+573,Uferrandstreifenprogramm (AL),riparian strip program (arable),wetland_buffers,3310700000,0,DE_NRW
+573,Uferrandstreifenprogramm (AUM),riparian strip program (AUM (Agri-environmental measures)),wetland_buffers,3310700000,0,DE_NRW
+572,Uferrandstreifenprogramm (DGL),riparian strip program (permanent grassland),wetland_buffers,3310700000,0,DE_NRW
+573,Uferrandstrfprog. (AL nur AUM),Uferrandstrfprog. (arable only AUM (Agri-environmental measures)),wetland_buffers,3310700000,0,DE_NRW
+572,Uferrandstrfprog.(DGL nur AUM),Bank edge control program (permanent greenland only AUM (Agri-environmental measures)),wetland_buffers,3310700000,0,DE_NRW
+55,Ufervegetation,Riparian vegetation,wetland_buffers,3310700000,0,DE_NRW
+996,Unbefestigte Mieten AF,Unpaved heaps AF,not_known_and_other,3399000000,0,DE_NRW
+996,Unbefestigte Mieten AL,Unpaved storage heaps (arable),not_known_and_other,3399000000,0,DE_NRW
+994,Unbefestigte Mieten DGL,Unpaved storage heaps (grassland),not_known_and_other,3399000000,0,DE_NRW
+15,unbekanntes Landschaftselement (CC),Unknown landscape element (CC),non_productive_landscape_elements,3310000000,0,DE_NRW
+776,Veilchen und Stiefmütterchen,Violets and pansies,violets_pansies,3301085100,0,DE_NRW
+667,Verbenen (Echtes Eisenkraut),verbena (true verbena),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+770,Vergissmeinnicht (Wald-Verg.),Forget-Me-Not (Forest Forg.),flowers_ornamental_plants,3301080000,0,DE_NRW
+789,Veronica/Hebe/Ehrenpreis,"Veronica, Hebe, speedwell",flowers_ornamental_plants,3301080000,0,DE_NRW
+421,verschiedene Klee Sorten,different types of clover,clover,3301090303,0,DE_NRW
+914,Versuchsflächen (nur BP),Experimental plots (BP only),other_arable_land_crops,3301990000,0,DE_NRW
+914,Versuchsflächen (nur BP-fähig),Trial plots (eligible BP),other_arable_land_crops,3301990000,0,DE_NRW
+914,Versuchsflächen (nur DZ-fähig),Trial plots (eligible DZ),other_arable_land_crops,3301990000,0,DE_NRW
+924,Vertragsnaturs. ohne Direktzahlungen,Conservation contract without direct payments,environmental_protection,3311000000,0,DE_NRW
+924,Vertragsnaturs. ohne DZ,Contract nature conservation without direct payment,environmental_protection,3311000000,0,DE_NRW
+924,Vertragsnaturs. ohne landw. N.,Conservation contract without agricultural use,environmental_protection,3311000000,0,DE_NRW
+907,"vorübergehend nicht zur Verfügung stehende Fläche, gesamt","Area temporarily unavailable, total",not_known_and_other,3399000000,0,DE_NRW
+996,"Vorübergehende, unbefestigte Mieten, Stroh-, Futter- oder Dunglagerplätze auf AL","Temporary, unpaved heap, straw, feed or manure storage sites on arable land",not_known_and_other,3399000000,0,DE_NRW
+834,Walnüsse,Walnuts,walnuts,3303030600,0,DE_NRW
+825,Walnüsse,Walnuts,walnuts,3303030600,0,DE_NRW
+676,Wegeriche (Spitzwegerich),Plantain (ribwort),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_NRW
+983,Weihnachtsbäume,Christmas trees,christmas_trees,3306100000,0,DE_NRW
+846,Weihnachtsbäume,Christmas trees,christmas_trees,3306100000,0,DE_NRW
+619,Weißer Senf,White mustard,mustard,3301210100,0,DE_NRW
+619,"Weißer Senf, Gelber Senf",White mustard,mustard,3301210100,0,DE_NRW
+673,"Wermut-, Estragon-, Beifuß","wormwood, tarragon, mugwort",tarragon,3301061236,0,DE_NRW
+221,Wicken,sweet peas,vetches,3301090305,0,DE_NRW
+221,Wicken (Pannoni./Zottel/Saat),Vetches,vetches,3301090305,0,DE_NRW
+768,"Wiesenknopf (Kl. W., Pimpine.)",Burnet,burnet,3301080700,0,DE_NRW
+910,Wildacker auf lw. Fläche,Wild field on agricultural area,environmental_protection,3311000000,0,DE_NRW
+871,Wildpflanzenmischung,Wild plant mixture,environmental_protection,3311000000,0,DE_NRW
+871,Wildpflanzenmischung (AUM),wild plant mixture (AUM (Agri-environmental measures)),environmental_protection,3311000000,1,DE_NRW
+913,Wildsamenvermehrung,Wild seed propagation,arable_land_seed_seedlings,3301100000,0,DE_NRW
+114,Winter-Dinkel,Winter spelt,winter_spelt,3301011001,0,DE_NRW
+112,Winterdurum (Hartweizen),Winter hard wheat / durum,winter_durum_hard_wheat,3301010201,0,DE_NRW
+118,Winter-Emmer/ -Einkorn,Winter emmer/einkorn,winter_emmer,3301011201,3,DE_NRW
+131,Wintergerste,Winter barley,winter_barley,3301010401,0,DE_NRW
+142,Winterhafer,Winter oats,winter_oats,3301010501,0,DE_NRW
+112,Winterhartweizen/Durum,Hard winter wheat/durum,winter_durum_hard_wheat,3301010201,0,DE_NRW
+125,Wintermenggetreide,Winter mixed grain,winter_meslin,3301011101,7,DE_NRW
+311,Winterraps,Winter rape,winter_rapeseed_rape,3301060401,0,DE_NRW
+121,Winterroggen,Winter rye,winter_rye,3301010301,0,DE_NRW
+315,Winterrübsen,Winter rape (oil radish,winter_turnip_rape,3301210701,0,DE_NRW
+315,Winterrübsen (auch Rübsamen),Winter turnip rape (also rapeseed),winter_turnip_rape,3301210701,0,DE_NRW
+156,Wintertriticale,Winter triticale,winter_triticale,3301010801,0,DE_NRW
+115,Winterweichweizen,Winter soft wheat,winter_common_soft_wheat,3301010101,0,DE_NRW
+755,Wolfsmilch (Weißrand),Spurge (white-edged),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+740,Wucherblumen (Mutterkraut),speedwell (feverfew),flowers_ornamental_plants,3301080000,0,DE_NRW
+621,Zichorien zur Inulinproduktion,Chicory for inulin production,chicory_chicories,3301310200,0,DE_NRW
+644,Zichorien/Wegwarten,Chicories,chicory_chicories,3301310200,0,DE_NRW
+769,"Zieste (Deutscher, Knollen)",Hedgenettles (German Knollen),stachys_hedgenettle_chinese_artichoke,3301061235,0,DE_NRW
+743,Zinnien,zinnias,zinnias,3301085200,0,DE_NRW
+172,Zuckermais,Sweetcorn,grain_maize_corn_popcorn,3301010600,0,DE_NRW
+174,Zuckermais,Sweetcorn,grain_maize_corn_popcorn,3301010600,0,DE_NRW
+628,Zuckermelone,cantaloupe,melon,3301140300,0,DE_NRW
+628,Zuckermelone (cucumis melo),Sugar melon (cucumis melo),melon,3301140300,0,DE_NRW
+603,Zuckerrüben,Sugar beet,sugar_beet,3301290700,0,DE_NRW
+620,Zuckerrüben,Sugar beet,sugar_beet,3301290700,0,DE_NRW
+633,Zwiebeln/Lauch,Onions / leeks,alliums,3301220000,0,DE_NRW
+10,Tümpel-Sölle-Moore-Dolinen und andere vergleichbare Feuchtgebiete,,wetlands,3310400000,0,DE_NRW
+917,Mais-Mischkulturen,,green_silo_maize,3301090400,4,DE_NRW
+583,Naturschutzfläche (2021/2115),,environmental_protection,3311000000,0,DE_NRW
+610,beetweiser Anbau Gemüse ab 5 K,,fresh_vegetables,3301070000,0,DE_NRW
+720,beetweise Zierpflanzen ab 5 K.,,flowers_ornamental_plants,3301080000,0,DE_NRW
+718,beetweise Zierpflanzen bis 4 K,,flowers_ornamental_plants,3301080000,0,DE_NRW
+150,Gemenge Getr./Leg.(mehrG./o.M),,cereal_legume_mix,3301091200,0,DE_NRW
+250,Gemenge Leg./Getr.(mehrL./o.M),,cereal_legume_mix,3301091200,0,DE_NRW
+611,beetweiser Anbau Gemüse bis 4,,fresh_vegetables,3301070000,0,DE_NRW
+650,beetweise Kräuter/Gewürz ab 5,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+914,Versuchsflächen beihilfef. Kul,,other_arable_land_crops,3301990000,0,DE_NRW
+690,beetweise Küchenkräuter bis 4,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_NRW
+189,Chia,,sage_chia,3301190000,0,DE_NRW

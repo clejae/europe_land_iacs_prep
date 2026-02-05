@@ -1,0 +1,514 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+9534,(Knol)venkel,(Fennel) fennel,fennel,3301170000,0,BE_FLA
+8534,(Knol)venkel - industrie,Fennel (tuber) - industry,fennel,3301170000,0,BE_FLA
+9534,(Knol)venkel - vers,(tuber) fennel - fresh,fennel,3301170000,0,BE_FLA
+9564,(Vroege) wortel (consumptie),(Early) carrot (consumption),carrots_daucus,3301290300,0,BE_FLA
+901,Aardappelen (consumptie),Potatoes (consumption),potatoes,3301030000,0,BE_FLA
+907,Aardappelen (gecertificeerd pootgoed),Potatoes (certified seed potatoes),potatoes,3301030000,0,BE_FLA
+901,Aardappelen (geplande oogst vanaf 1/9),Potatoes (planned harvest after 1/9),late_season_potatoes,3301030200,0,BE_FLA
+904,Aardappelen (geplande oogst voor 1/9),Potatoes (planned harvest before 1/9),early_season_potatoes,3301030100,0,BE_FLA
+908,Aardappelen (hoevepootgoed),Potatoes (farm seed potatoes),potatoes,3301030000,0,BE_FLA
+901,Aardappelen (niet-vroege),Potatoes (non-early),potatoes,3301030000,0,BE_FLA
+902,Aardappelen (pootgoed),Potatoes (seed potatoes),potatoes,3301030000,0,BE_FLA
+905,"Aardappelen (primeur, rooi voor 20/6)",Potatoes (farm seed potatoes),potatoes,3301030000,0,BE_FLA
+904,"Aardappelen (vroege, rooi na 19/6)",Potatoes (non-early),late_season_potatoes,3301030200,0,BE_FLA
+9516,Aardbeien,strawberries,strawberries,3301130000,0,BE_FLA
+9724,Aardbeiplanten,strawberry plants,strawberries,3301130000,0,BE_FLA
+9514,Ajuinen,onions,onions,3301220400,0,BE_FLA
+9514,Ajuinen (niet vroege) - vers,Onions (not early) - fresh,onions,3301220400,0,BE_FLA
+8514,Ajuinen (niet-vroege) - industrie,Onions (non-early) - industry,onions,3301220400,0,BE_FLA
+8563,Ajuinen (vroege) - industrie,Onions (early) - industry,onions,3301220400,0,BE_FLA
+9563,Ajuinen (vroege) - vers,Onions (early) - fresh,onions,3301220400,0,BE_FLA
+630,Alexandrijnse klaver,Alexandrian clover,clover,3301090303,0,BE_FLA
+9557,Alternatieve slasoorten,Alternative lettuce varieties,salads_lettuce_leaf_vegetables,3301310000,0,BE_FLA
+16,Ander gebouw,Other building,not_known_and_other,3399000000,0,BE_FLA
+982,Andere,Others,not_known_and_other,3399000000,0,BE_FLA
+8557,Andere alternatieve slasoorten - industrie,Other alternative lettuce varieties - industry,salads_lettuce_leaf_vegetables,3301310000,0,BE_FLA
+9557,Andere alternatieve slasoorten - vers,Other alternative lettuce varieties - fresh,salads_lettuce_leaf_vegetables,3301310000,0,BE_FLA
+894,Andere bebossing,Other afforestation,afforestation_reforestation,3306010000,0,BE_FLA
+85,Andere bedekking,Other cover,not_known_and_other,3399000000,0,BE_FLA
+9723,Andere bessen,Other berries,berries_berry_species,3303020000,0,BE_FLA
+972,Andere eenjarige fruitteelten,Other annual fruit crops,orchards_fruits,3303010000,0,BE_FLA
+2,Andere gebouwen,Other building,not_known_and_other,3399000000,0,BE_FLA
+39,Andere granen (bv. Mengkoren),Other grains (e.g. mixed wheat),other_cereals,3301019900,0,BE_FLA
+951,Andere groenten,Other vegetables,fresh_vegetables,3301070000,0,BE_FLA
+951,Andere groenten ,Other vegetables,fresh_vegetables,3301070000,0,BE_FLA
+8559,Andere groenten - industrie,Other vegetables - industry,fresh_vegetables,3301070000,0,BE_FLA
+951,Andere groenten - vers,Other vegetables - fresh,fresh_vegetables,3301070000,0,BE_FLA
+872,Andere hennep dan vezelhennep,Hemp other than fiber hemp,hemp_cannabis,3301061000,0,BE_FLA
+872,Andere hennep dan vezelhennep (niet voor menselijke consumptie),Hemp other than fiber hemp (not for human consumption),hemp_cannabis,3301061000,0,BE_FLA
+632,Andere klavers,Other Clovers,clover,3301090303,0,BE_FLA
+8620,Andere kolen - industrie,Other cabbages – industry,brassica_oleracea_cabbage,3301210200,0,BE_FLA
+9620,Andere kolen - vers,Other cabbages - fresh,brassica_oleracea_cabbage,3301210200,0,BE_FLA
+956,Andere kruiden,Other herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+856,Andere kruiden -  industrie,Other herbs - industry,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+856,Andere kruiden -  industriële verwerking,Other spices - industrial processing,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+956,Andere kruiden - vers,Other herbs - fresh,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+9714,Andere meerjarige fruitteelten,Other perennial fruit crops,orchards_fruits,3303010000,0,BE_FLA
+858,Andere meerjarige kruiden - industrie,Other perennial herbs - industry,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+8581,Andere meerjarige kruiden - vers,Other perennial herbs - fresh,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+954,Andere niet-houtachtige sierplanten,Other non-woody ornamental plants,flowers_ornamental_plants,3301080000,0,BE_FLA
+647,Andere niet-vlinderbloemige groenbedekker,Other non-flowery green cover plants,plants_harvested_green,3301090000,0,BE_FLA
+647,Andere niet-vlinderbloemige groenbemester,Other non-leguminous green manure,plants_harvested_green,3301090000,0,BE_FLA
+44,Andere oliehoudende zaden,Other oilseeds,oilseed_crops,3301060800,0,BE_FLA
+954,Andere sierplanten,Other ornamental plants,flowers_ornamental_plants,3301080000,0,BE_FLA
+2,Andere stallen en gebouwen,Other stables and buildings,not_known_and_other,3399000000,0,BE_FLA
+648,Andere vlinderbloemige groenbedekker,Other leguminous green cover plants,legumes_harvested_green,3301090300,0,BE_FLA
+648,Andere vlinderbloemige groenbemester,Another leguminous green manure,legumes_harvested_green,3301090300,0,BE_FLA
+743,Andere voedergewassen,Other fodder crops,other_plants_harvested_green,3301099900,0,BE_FLA
+9537,Andijvie,Endive,endive,3301310300,0,BE_FLA
+8537,Andijvie - industrie,Endive - industry,endive,3301310300,0,BE_FLA
+9537,Andijvie - vers,Endive - fresh,endive,3301310300,0,BE_FLA
+9586,Artisjok - vers,Artichoke - fresh,artichoke,3301270000,0,BE_FLA
+8511,Asperge - industrie,Asparagus - industry,asparagus,3301200000,0,BE_FLA
+9511,Asperges,asparagus,asparagus,3301200000,0,BE_FLA
+8511,Asperges - industrie,Asparagus - industry,asparagus,3301200000,0,BE_FLA
+9511,Asperges - vers,Asparagus - fresh,asparagus,3301200000,0,BE_FLA
+9555,Aubergines,Eggplants,aubergine_eggplant,3301260000,0,BE_FLA
+9555,Aubergines - vers,Eggplants - fresh,aubergine_eggplant,3301260000,0,BE_FLA
+9570,Azalea,Azalea,azaleas,3303080100,0,BE_FLA
+864,Basilicum - industrie,Basil - industry,basil,3301061207,0,BE_FLA
+864,Basilicum - industriële verwerking,Basil - industrial processing,basil,3301061207,0,BE_FLA
+964,Basilicum - vers verbruik,Basil - fresh consumption,basil,3301061207,0,BE_FLA
+891,Bebossing,Afforestation,afforestation_reforestation,3306010000,0,BE_FLA
+883,Bebossing (korte omlooptijd),Afforestation (short rotation),short_rotation_coppice,3306090000,0,BE_FLA
+8910,Bebossing loofbomen-ecologisch,Afforestation deciduous trees-ecological,afforestation_reforestation,3306010000,0,BE_FLA
+8911,Bebossing loofbomen-economisch,Afforestation of deciduous trees-economical,afforestation_reforestation,3306010000,0,BE_FLA
+894,Bebossing met contract voor 2008,Afforestation with contract for 2008,afforestation_reforestation,3306010000,0,BE_FLA
+8912,Bebossing naaldbomen,Afforestation of conifers,afforestation_reforestation,3306010000,0,BE_FLA
+8913,Bebossing naaldbomen-economisch,Afforestation of conifers-economic,afforestation_reforestation,3306010000,0,BE_FLA
+892,Bebossing op blijvend grasland in 2003,Afforestation on permanent grassland in 2003,afforestation_reforestation,3306010000,0,BE_FLA
+8915,Bebossing populieren,Poplar afforestation,populus,3306070000,0,BE_FLA
+8914,Bebossing populieren-ecologisch,Afforestation poplar ecologically,populus,3306070000,0,BE_FLA
+9571,Begonia voor de knol,Begonia for the tuber,begonias,3301080400,0,BE_FLA
+9571,Begonia's voor de knol,Begonias for the tuber,begonias,3301080400,0,BE_FLA
+6,Begraasde niet-landbouwgrond,grazed non-agricultural land,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+6,Begraasde niet-landbouwgrond met gebruiksovereenkomst,grazed non-agricultural land,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+6,Begraasde niet-landbouwgrond met overeenkomst,grazed non-agricultural land,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+865,Bieslook - industrie,Chives - industry,chives,3301220100,0,BE_FLA
+865,Bieslook - industriële verwerking,Chives - industrial processing,chives,3301220100,0,BE_FLA
+965,Bieslook - vers verbruik,Chives - fresh consumption,chives,3301220100,0,BE_FLA
+17,Biologische niet-landbouwgrond,Organic non-agricultural land,not_known_and_other,3399000000,0,BE_FLA
+642,Bladrammenas,OIL RADISH,oil_fodder_radish,3301210600,0,BE_FLA
+656,Bladrammenas,OIL RADISH,oil_fodder_radish,3301210600,0,BE_FLA
+8539,Bladselder - industrie,Celery leaves - industry,leaf_celery,3301250200,0,BE_FLA
+9539,Bladselder - vers,Celery leaves - fresh,leaf_celery,3301250200,0,BE_FLA
+9999,Blanco gewascode,Blank crop code,not_known_and_other,3399000000,0,BE_FLA
+9722,Blauwe bessen,Blueberries,blueberry,3303020400,0,BE_FLA
+9551,Bleekselder,Celery,leaf_celery,3301250200,0,BE_FLA
+8551,Bleekselder - industrie,Celery - industry,leaf_celery,3301250200,0,BE_FLA
+9551,Bleekselder - vers,Celery - fresh,leaf_celery,3301250200,0,BE_FLA
+61,Blijvend grasland,Permanent grassland,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+9583,Bloeiende heesters,Flowering Shrubs,shrubberries_shrubs,3303080000,0,BE_FLA
+9574,"Bloeiende kamerplanten (kalancho�, ...)","Flowering houseplants (kalanchoe,...)",flowers_ornamental_plants,3301080000,0,BE_FLA
+9574,"Bloeiende kamerplanten (kalanchoë, ...)",Flowering houseplants (kalanchoe ...),flowers_ornamental_plants,3301080000,0,BE_FLA
+9574,"Bloeiende kamerplanten (kalanchoë, …)","Flowering houseplants (kalanchoe, …)",flowers_ornamental_plants,3301080000,0,BE_FLA
+9574,"Bloeiende kamerplanten (kalanchoë,...)","Flowering houseplants (kalanchoe,...)",flowers_ornamental_plants,3301080000,0,BE_FLA
+9572,Bloembollen en bloemknollen-andere dan begonia,Flower bulbs and corms other than begonia,flowers_ornamental_plants,3301080000,0,BE_FLA
+9572,Bloembollen en -knollen,Flower bulbs and tubers,flowers_ornamental_plants,3301080000,0,BE_FLA
+9572,"Bloembollen en -knollen, andere dan begonia","Flower bulbs and corms, other than begonia",flowers_ornamental_plants,3301080000,0,BE_FLA
+9831,Bloemenmengsel,Flower mixture,field_margins_buffer_strips_flowering_areas,3310100000,0,BE_FLA
+9832,Bloemenmengsel voor EAG Braak,Flower mixture for EAG Braak,field_margins_buffer_strips_flowering_areas,3310100000,0,BE_FLA
+9523,Bloemkool,Cauliflower,cauliflower,3301210204,0,BE_FLA
+8523,Bloemkool - industrie,Cauliflower - industry,cauliflower,3301210204,0,BE_FLA
+9523,Bloemkool - vers,Cauliflower - fresh,cauliflower,3301210204,0,BE_FLA
+37,Boekweit,Buckwheat,buckwheat,3301150200,0,BE_FLA
+9524,Boerenkool,Kale,kale,3301210208,0,BE_FLA
+8524,Boerenkool - industrie,Kale - industry,kale,3301210208,0,BE_FLA
+9524,Boerenkool - vers,Kale - fresh,kale,3301210208,0,BE_FLA
+895,Bomen in groep,Group trees,tree_lines,3310300000,0,BE_FLA
+10,Bomenrijen,Rows of trees,tree_lines,3310300000,0,BE_FLA
+9520,Boomkweek,Arboriculture,tree_wood_forest,3306000000,0,BE_FLA
+9604,Boomkweek - andere,Arboriculture - other,tree_wood_forest,3306000000,0,BE_FLA
+9560,Boomkweek - bos- en haagplanten,Tree cultivation - forest and hedge plants,tree_lines,3310300000,3,BE_FLA
+9560,Boomkweek - bosplanten,Arboriculture - forest plants,tree_wood_forest,3306000000,0,BE_FLA
+9602,Boomkweek - fruitkweek,Tree cultivation - fruit cultivation,orchards_fruits,3303010000,0,BE_FLA
+9602,Boomkweek - fruitplanten,Arboriculture - fruit plants,tree_wood_forest,3306000000,0,BE_FLA
+9603,Boomkweek - sierplanten,Arboriculture - ornamental plants,nurseries_nursery,3303070000,0,BE_FLA
+897,Bos,Forest,tree_wood_forest,3306000000,0,BE_FLA
+89,Braakliggend land met minimale activiteit met EAG,Derelict land with minimal activity with EAG,fallow_land_not_crop,3301110000,0,BE_FLA
+82,Braakliggend land met minimale activiteit zonder EAG,Derelict land with minimal activity without EAG,fallow_land_not_crop,3301110000,0,BE_FLA
+82,Braakliggend land met onderhoud,Derelict land with maintenance,fallow_land_not_crop,3301110000,0,BE_FLA
+81,Braakliggend land zonder minimale activiteit,Derelict land with no minimum activity,fallow_land_not_crop,3301110000,0,BE_FLA
+81,Braakliggend land zonder onderhoud,Derelict land without maintenance,fallow_land_not_crop,3301110000,0,BE_FLA
+9721,Braambessen,blackberries,blackberry,3303020200,0,BE_FLA
+8525,Broccoli - industrie,Broccoli - industry,broccoli,3301210202,0,BE_FLA
+9525,Broccoli - vers,Broccoli - fresh,broccoli,3301210202,0,BE_FLA
+9525,Brocolli,broccoli,broccoli,3301210202,0,BE_FLA
+9525,Brocolli - vers,Broccoli - fresh,broccoli,3301210202,0,BE_FLA
+323,Brouwgerst,brewing barley,barley,3301010400,0,BE_FLA
+8456,Butternut-pompoen - industrie,Butternut squash - industry,pumpkin_squash_gourd,3301140400,0,BE_FLA
+9456,Butternut-pompoen - vers,Butternut squash - fresh,pumpkin_squash_gourd,3301140400,0,BE_FLA
+8456,Butternutpompoenen - industrie,Butternut Squashes - Industry,pumpkin_squash_gourd,3301140400,0,BE_FLA
+9456,Butternutpompoenen - vers,Butternut Squashes - Fresh,pumpkin_squash_gourd,3301140400,0,BE_FLA
+9536,Champignons (loods),Mushrooms (shed),mushrooms_energy_genetically_modified_crops,3304000000,0,BE_FLA
+9526,Chinese kool,Chinese cabbage,chinese_cabbage,3301210205,0,BE_FLA
+8526,Chinese kool - industrie,Chinese cabbage - industry,chinese_cabbage,3301210205,0,BE_FLA
+9526,Chinese kool - vers,Chinese cabbage - fresh,chinese_cabbage,3301210205,0,BE_FLA
+9547,Chrysanten,Chrysanthemums,chrysanthemum,3301080900,0,BE_FLA
+9547,Chrysanten ,Chrysanthemums,chrysanthemum,3301080900,0,BE_FLA
+9811,Cichorei (inuline),Chicory (inulin),chicory_chicories,3301310200,0,BE_FLA
+9811,cichorei (inuline),chicory (inulin),chicory_chicories,3301310200,0,BE_FLA
+9812,Cichorei (koffiesurrogaat),Chicory (coffee substitute),chicory_chicories,3301310200,0,BE_FLA
+9812,cichorei (koffiesurrogaat),chicory (coffee substitute),chicory_chicories,3301310200,0,BE_FLA
+9541,Courgettes,Zucchini,zucchini_courgette,3301140600,0,BE_FLA
+8541,Courgettes - industrie,Zucchini - industry,zucchini_courgette,3301140600,0,BE_FLA
+9541,Courgettes - vers,Zucchini - fresh,zucchini_courgette,3301140600,0,BE_FLA
+48,Deder/huttentut,Deder/huttentut,camelina,3301061500,0,BE_FLA
+513,Drooggeoogste erwten (voor menselijke consumptie),Dry harvested peas (for human consumption),peas,3301020600,0,BE_FLA
+524,Drooggeoogste Phaseolus bonen (voor menselijke consumptie),Dry-harvested Phaseolus beans (for human consumption),beans,3301020100,0,BE_FLA
+523,Drooggeoogste Vicia bonen (voor menselijke consumptie),Dry-harvested Vicia beans (for human consumption),beans,3301020100,0,BE_FLA
+9715,Druiven,Grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,BE_FLA
+9715,Druiven (in serres),Grapes (in greenhouses),greenhouse_vine,3305011200,0,BE_FLA
+701,Eenjarige grasklaver,Annual grass clover,clover_grass_mix,3301090501,0,BE_FLA
+721,Eenjarige klaver,annual clover,clover,3301090303,0,BE_FLA
+731,Eenjarige luzerne,Annual Alfalfa,alfalfa_lucerne,3301090301,0,BE_FLA
+636,Engels raaigras,perennial ryegrass,lolium_ryegrass,3301090205,0,BE_FLA
+881,Engelwortel,Angelica root,angelica,3301061204,0,BE_FLA
+983,Engelwortel - industrie,Angelica - industry,angelica,3301061204,0,BE_FLA
+983,Engelwortel - industriële verwerking,Angelica root - industrial processing,angelica,3301061204,0,BE_FLA
+881,Engelwortel - vers,Angelica root - fresh,angelica,3301061204,0,BE_FLA
+931,Erwten (andere dan droog geoogst),Peas (other than dry-harvested),peas,3301020600,0,BE_FLA
+831,Erwten (andere dan droog geoogst) - industrie,Peas (other than dry harvested) - industry,peas,3301020600,0,BE_FLA
+931,Erwten (andere dan droog geoogst) - vers,Peas (other than dry harvested) - fresh,peas,3301020600,0,BE_FLA
+51,Erwten (droog geoogst),Peas (harvested dry),peas,3301020600,0,BE_FLA
+98,Faunamengsel,Fauna mixture,plants_harvested_green,3301090000,0,BE_FLA
+638,Festulolium,Festulolium,festulolium,3301090204,0,BE_FLA
+8412,Flageolets (voor de boon) - industrie,Flageolets (for the bean) - industry,beans,3301020100,0,BE_FLA
+9412,Flageolets (voor de boon) - vers,Flageolets (for the bean) - fresh,beans,3301020100,0,BE_FLA
+9717,Frambozen,raspberries,raspberry_raspberries,3303021000,0,BE_FLA
+972,Fruitteelten eenjarig,Annual fruit crops,orchards_fruits,3303010000,0,BE_FLA
+15,Gebouw i.k.v. verbreding,Building i.c.v. widening,not_known_and_other,3399000000,0,BE_FLA
+643,Gele mosterd,Yellow mustard,mustard,3301210100,0,BE_FLA
+957,Geneeskrachtige en aromatische planten en kruiden,Medicinal and aromatic plants and herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+383,Gierst,Millet,millet_sorghum,3301010900,0,BE_FLA
+38,"Gierst, sorghum, kanariezaad of harde tarwe","Millet, sorghum, canary seed or durum wheat",cereal,3301010000,3,BE_FLA
+47,Goudsbloem,Marigold,calendula_marigold,3301061210,0,BE_FLA
+657,Gras in onderzaai,Grass in undersowing,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+700,Grasklaver,grass clover,clover_grass_mix,3301090501,0,BE_FLA
+63,Graskruiden mengsel,herbal grasses mixture,plants_harvested_green,3301090000,7,BE_FLA
+60,Grasland,Grassland,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+660,Grasluzerne,Grass alfalfa,alfalfa_grass_mix,3301090509,1,BE_FLA
+9824,Grassen in natuurbeheer,Grasses in nature conservation,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+955,Graszoden,Grass Turf,sod_turf,3301090207,0,BE_FLA
+9573,"Groene kamerplanten (ficus, ...)",Green houseplants (ficus ...),flowers_ornamental_plants,3301080000,0,BE_FLA
+9573,"Groene kamerplanten (ficus, …)","Green houseplants (ficus, …)",flowers_ornamental_plants,3301080000,0,BE_FLA
+9573,"Groene kamerplanten (ficus,...)","Green houseplants (ficus,...)",flowers_ornamental_plants,3301080000,0,BE_FLA
+9548,Groene selder,Green celery,leaf_celery,3301250200,0,BE_FLA
+8548,Groene selder - industrie,Green celery - industry,leaf_celery,3301250200,0,BE_FLA
+9548,Groene selder - vers,Green celery - fresh,leaf_celery,3301250200,0,BE_FLA
+9559,Groentezaden,Vegetable seeds,fresh_vegetables,3301070000,0,BE_FLA
+9567,Groentezaden niet-vlinderbloemigen,Vegetable seeds non-legumes,fresh_vegetables,3301070000,0,BE_FLA
+34,Haver,Oats,oats,3301010500,0,BE_FLA
+9201,Hazelnoten,hazelnuts,hazelnuts_hazel,3303030200,0,BE_FLA
+9825,Heide in natuurbeheer,Heath in nature management,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+1,Hoofdgebouwen,Main buildings,not_known_and_other,3399000000,0,BE_FLA
+9822,Hop,Hop,hops,3301060200,0,BE_FLA
+4,Houtkanten en houtwallen <= 10 m breed,Wooded edges and wooded banks <= 10 m wide,tree_lines,3310300000,0,BE_FLA
+4,Houtkanten en houtwallen > 100 m²,Hedgerows and hedgerows > 100 m²,hedges,3310200000,0,BE_FLA
+637,Hybride raaigras,Hybrid ryegrass,lolium_ryegrass,3301090205,0,BE_FLA
+9544,Ijsbergsla,iceberg lettuce,iceberg,3301310400,0,BE_FLA
+8544,Ijsbergsla - industrie,Iceberg lettuce - industry,iceberg,3301310400,0,BE_FLA
+9544,Ijsbergsla - vers,Iceberg lettuce - fresh,iceberg,3301310400,0,BE_FLA
+634,Italiaans raaigras,Italian ryegrass,lolium_ryegrass,3301090205,0,BE_FLA
+650,Japanse haver,Japanese oats,oats,3301010500,0,BE_FLA
+34,Japanse haver,Japanese oats,oats,3301010500,0,BE_FLA
+9565,Jongplanten voor de sierteelt,Young plants for floriculture,flowers_ornamental_plants,3301080000,0,BE_FLA
+962,Kerstbomen,Christmas trees,christmas_trees,3306100000,0,BE_FLA
+962,Kerstbomen ,Christmas trees,christmas_trees,3306100000,0,BE_FLA
+960,Kervel,Chervil,chervil,3301061214,0,BE_FLA
+860,Kervel - industrie,Chervil - industry,chervil,3301061214,0,BE_FLA
+860,Kervel - industriële verwerking,Chervil - industrial processing,chervil,3301061214,0,BE_FLA
+960,Kervel - vers,Chervil - fresh,chervil,3301061214,0,BE_FLA
+933,Kikkererwten,Chickpeas,chickpeas,3301020200,0,BE_FLA
+9729,Kiwibes,kiwi berry,kiwi,3303010700,0,BE_FLA
+9543,Knolselder,celeriac,celeriac,3301250100,0,BE_FLA
+8543,Knolselder - industrie,Celeriac - industry,celeriac,3301250100,0,BE_FLA
+9543,Knolselder - vers,Celeriac - fresh,celeriac,3301250100,0,BE_FLA
+652,Komkommerkruid,Cucumber spice,borage,3301061209,0,BE_FLA
+9554,Komkommers,Cucumbers,cucumber_pickle,3301140100,0,BE_FLA
+8554,Komkommers - industrie,Cucumbers - industry,cucumber_pickle,3301140100,0,BE_FLA
+9554,Komkommers - vers,Cucumbers - fresh,cucumber_pickle,3301140100,0,BE_FLA
+9528,Koolraap,rutabaga,swede_rutabaga,3301210500,0,BE_FLA
+8528,Koolraap - industrie,rutabaga,swede_rutabaga,3301210500,0,BE_FLA
+9528,Koolraap - vers,rutabaga,swede_rutabaga,3301210500,0,BE_FLA
+9529,Koolrabi,Kohlrabi,kohlrabi,3301210209,0,BE_FLA
+8529,Koolrabi - industrie,Kohlrabi - industry,kohlrabi,3301210209,0,BE_FLA
+9529,Koolrabi - vers,Kohlrabi - fresh,kohlrabi,3301210209,0,BE_FLA
+202,Korrelmais,grain corn,grain_maize_corn_popcorn,3301010600,0,BE_FLA
+202,Korrelmaïs,grain corn,grain_maize_corn_popcorn,3301010600,0,BE_FLA
+8518,Kropsla - industrie,lettuce - industry,salads_lettuce_leaf_vegetables,3301310000,0,BE_FLA
+9518,Kropsla - vers,head lettuce - fresh,salads_lettuce_leaf_vegetables,3301310000,0,BE_FLA
+958,Kruiden,Spices,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+9581,Laanbomen,avenue trees,tree_lines,3310300000,0,BE_FLA
+934,Linzen,Lentils,lentils,3301020500,0,BE_FLA
+12,"Loods (bv. voor machines, opslag,?)",Shed (e.g. for machines storage),not_known_and_other,3399000000,0,BE_FLA
+12,"Loods (bv. voor machines, opslag,…)",Shed (e.g. for machines storage),not_known_and_other,3399000000,0,BE_FLA
+644,Lupinen,Lupins,sweet_lupins,3301020700,0,BE_FLA
+882,Mariadistel,Milk thistle,marian_thistles,3301061300,0,BE_FLA
+957,Medicinale kruiden,Medicinal herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+957,Medicinale kruiden ,Medicinal herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+974,"Meerjarige fruitteelten (andere dan appel, peer)",Other perennial fruit crops,orchards_fruits,3303010000,0,BE_FLA
+9710,Meerjarige fruitteelten (appel),Perennial fruit crops (apple),apples,3303010200,0,BE_FLA
+9712,Meerjarige fruitteelten (kers),Perennial fruit crops (cherry),cherry_cherries,3303010400,0,BE_FLA
+9711,Meerjarige fruitteelten (peer),Perennial fruit crops (pear),pears,3303011200,0,BE_FLA
+9728,Meerjarige fruitteelten (perzik),Perennial fruit crops (peach),peach,3303011100,0,BE_FLA
+9713,Meerjarige fruitteelten (pruim),Perennial fruit crops (plum),plums,3303011300,0,BE_FLA
+9726,"Meerjarige fruitteelten (zoete kers, hoogstam)",Perennial fruit crops (sweet cherry standard),cherry_cherries,3303010400,0,BE_FLA
+9725,"Meerjarige fruitteelten (zoete kers, laagstam)",Perennial fruit crops (sweet cherry,cherry_cherries,3303010400,0,BE_FLA
+9727,Meerjarige fruitteelten (zure kers),Perennial fruit crops (sour cherry),cherry_cherries,3303010400,0,BE_FLA
+9730,Meerjarige fruitteelten hoogstam (appel),Perennial fruit crops standard (apple),apples,3303010200,0,BE_FLA
+9731,Meerjarige fruitteelten hoogstam (peer),Perennial fruit crops standard (pear),pears,3303011200,0,BE_FLA
+702,Meerjarige grasklaver,Perennial grass clover,clover_grass_mix,3301090501,0,BE_FLA
+722,Meerjarige klaver,Perennial Clover,clover,3301090303,0,BE_FLA
+953,Meerjarige kruiden (meer dan 5 jaar),Perennial herbs (more than 5 years),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BE_FLA
+732,Meerjarige luzerne,Perennial alfalfa,alfalfa_lucerne,3301090301,0,BE_FLA
+9522,Meerjarige sierplanten,Perennial ornamental plants,flowers_ornamental_plants,3301080000,0,BE_FLA
+6492,"Mengsel groenbedekkers, > 50 % andere","Mixture of green cover plants, > 50 % other",plants_harvested_green,3301090000,5,BE_FLA
+6490,"Mengsel groenbedekkers, > 50 % grassen","Mixture of green cover plants, > 50 % grasses",plants_harvested_green,3301090000,7,BE_FLA
+6491,"Mengsel groenbedekkers, > 50 % vlinderbloemigen","Mixture of green cover plants, > 50 % legumes",legumes_harvested_green,3301090300,5,BE_FLA
+658,Mengsel met 1 of meer vlinderbloemige groenbedekkers,Mixture with 1 or more leguminous green cover plants,legumes_harvested_green,3301090300,5,BE_FLA
+749,Mengsel met 1 of meerdere vlinderbloemigen,Mixture with 1 or more leguminous green cover plants,legumes_harvested_green,3301090300,5,BE_FLA
+634,Mengsel met overwegend Japanse haver en vlinderbloemigen,Mixture with a predominance of Japanese oats and legumes,legume_grass_mix,3301090500,1,BE_FLA
+635,Mengsel met overwegend Japanse haver zonder vlinderbloemigen,Mixture with predominantly Japanese oats without legumes,legume_grass_mix,3301090500,1,BE_FLA
+745,Mengsel van gras en vlinderbloemigen (andere dan grasklaver of grasluzerne),Mixture of grass and leguminous plants (other than grass clover or grass alfalfa),legume_grass_mix,3301090500,7,BE_FLA
+745,Mengsel van gras en vlinderbloemigen (andere dan grasklaver),Mixture of grass and legumes (other than grass-clover),legume_grass_mix,3301090500,7,BE_FLA
+659,Mengsel van niet-vlinderbloemige groenbedekkers,Mixture of non-leguminous green cover plants,plants_harvested_green,3301090000,5,BE_FLA
+744,Mengsel van vlinderbloemigen,Mixture of legumes,legumes_dried_pulses_protein_crops,3301020000,0,BE_FLA
+542,Mengteelt  andere granen en vlinderbloemige (bv. erwten en gerst),Mixed cultivation of other cereals and leguminous plants (e.g. peas and barley),cereal_legume_mix,3301091200,1,BE_FLA
+391,Mengteelt andere wintergranen en winterteelt vlinderbloemige,Mixed cultivation of other winter cereals and winter cultivation of legumes,cereal_legume_mix,3301091200,1,BE_FLA
+396,Mengteelt maïs en vlinderbloemige teelt,Mixed cultivation of maize and leguminous crops,cereal_legume_mix,3301091200,1,BE_FLA
+541,Mengteelt wintertarwe of triticale en vlinderbloemige,Mixed cultivation of winter wheat or triticale and leguminous plants,cereal_legume_mix,3301091200,1,BE_FLA
+395,Mengteelt wintertarwe of triticale en winterteelt vlinderbloemige,Mixed cultivation of winter wheat or triticale and leguminous plants,cereal_legume_mix,3301091200,1,BE_FLA
+392,Mengteelt zomergranen en zomerteelt vlinderbloemige,Mixed cultivation of summer cereals and summer cultivation of legumes,cereal_legume_mix,3301091200,1,BE_FLA
+884,Miscanthus,miscanthus,miscanthus_silvergrass,3301083000,0,BE_FLA
+9828,Natuurlijk grasland met minimumactiviteit,Natural grassland with minimum activity,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+9828,Natuurlijk grasland met onderhoud,Natural grassland with maintenance,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+9829,Natuurlijk grasland zonder minimumactiviteit,Natural grassland with no minimum activity,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+9829,Natuurlijk grasland zonder onderhoud,Natural grassland without maintenance,pasture_meadow_grassland_grass,3302000000,0,BE_FLA
+100,Niet ingezaaid akkerland,Unseeded arable land,fallow_land_not_crop,3301110000,0,BE_FLA
+13,Niet nader omschreven gebouw,Building not specified,not_known_and_other,3399000000,0,BE_FLA
+999,Niet nader omschreven gewas - kleine landbouwer,Unspecified crop - small farmer,arable_crops,3301000000,0,BE_FLA
+7,Niet-begraasde natuurgrond,Non-grazed natural land,unmaintained,3308000000,0,BE_FLA
+53,Niet-bittere lupinen,Sweet Lupins,sweet_lupins,3301020700,0,BE_FLA
+9589,Niet-bloeiende heesters,Non-flowering shrubs,shrubberries_shrubs,3303080000,0,BE_FLA
+96,Niet-eetbare tuinbouwgewassen,Non-edible horticultural crops,industrial_nonfood_crops,3301060000,0,BE_FLA
+88,niet-landbouwkundig gebruik (bv. grondopslag),non-agricultural use (e.g. soil storage),not_known_and_other,3399000000,0,BE_FLA
+9202,Noten,Nuts,nuts,3303030000,0,BE_FLA
+45,Olievlas (geen vezelvlas),Oil flax (no fiber flax),flax_linseed_oil,3301060702,0,BE_FLA
+882,"Olifantegras, mariadistel",Milk thistle,marian_thistles,3301061300,0,BE_FLA
+9,Onverharde landingsbaan of veiligheidszones op vliegvelden,Unpaved runway or airport safety zones,not_known_and_other,3399000000,0,BE_FLA
+9714,Overige boomgaarden,Other orchards,orchards_fruits,3303010000,0,BE_FLA
+9714,Overige meerjarige fruitteelten,Other perennial fruit crops,orchards_fruits,3303010000,0,BE_FLA
+9553,Paprika,Bell pepper,bell_pepper_paprika,3301300100,0,BE_FLA
+8553,Paprika - industrie,Pepper - industry,bell_pepper_paprika,3301300100,0,BE_FLA
+9553,Paprika - vers,Bell pepper - fresh,bell_pepper_paprika,3301300100,0,BE_FLA
+8409,Pastinaak - industrie,Parsnip - industry,parsnips,3301290500,0,BE_FLA
+9409,Pastinaak - vers,Parsnip - fresh,parsnips,3301290500,0,BE_FLA
+9578,Perk- en balkonplanten,Bedding and balcony plants,flowers_ornamental_plants,3301080000,0,BE_FLA
+898,Permacultuur,permaculture,permanent_crops_perennial,3303000000,0,BE_FLA
+959,Peterselie,Parsley,parsley,3301061227,0,BE_FLA
+859,Peterselie - industrie,Parsley - industry,parsley,3301061227,0,BE_FLA
+859,Peterselie - industriële verwerking,Parsley - industrial processing,parsley,3301061227,0,BE_FLA
+959,Peterselie - vers,Parsley - fresh,parsley,3301061227,0,BE_FLA
+645,Phacelia,Phacelia,phacelia,3301061400,0,BE_FLA
+9569,Plantgoed en teeltmateriaal van niet-vlinderbloemige groenten,Planting material and propagating material of non-leguminous vegetables,fresh_vegetables,3301070000,0,BE_FLA
+9568,Plantgoed en teeltmateriaal van vlinderbloemige groenten,Planting material and propagating material of leguminous vegetables,fresh_vegetables,3301070000,0,BE_FLA
+9569,Plantgoed van niet-vlinderbloemige groenten,Planting material of non-leguminous vegetables,fresh_vegetables,3301070000,0,BE_FLA
+9569,Plantgoed van niet-vlinderbloemigen groenten,Planting material of non-legume vegetables,fresh_vegetables,3301070000,0,BE_FLA
+9568,Plantgoed van vlinderbloemige groenten,Planting material of leguminous vegetables,fresh_vegetables,3301070000,0,BE_FLA
+9568,Plantgoed van vlinderbloemigen groenten,Planting material of leguminous vegetables,fresh_vegetables,3301070000,0,BE_FLA
+3,Poelen (>100 m²),Pools (>100 m²),wetlands,3310400000,0,BE_FLA
+3,"Poelen < 0,1 ha",Pools < 0.1 ha,wetlands,3310400000,0,BE_FLA
+3,"Poelen <= 0,1 ha",Pools <= 0.1 ha,wetlands,3310400000,0,BE_FLA
+3,Poelen > 100 m²,Pools > 100 m²,wetlands,3310400000,0,BE_FLA
+9556,Pompoenen,Pumpkins,pumpkin_squash_gourd,3301140400,0,BE_FLA
+8556,Pompoenen - industrie,Pumpkins - industry,pumpkin_squash_gourd,3301140400,0,BE_FLA
+9556,Pompoenen - vers,Pumpkins - fresh,pumpkin_squash_gourd,3301140400,0,BE_FLA
+9547,Potchrysanten,pot chrysanthemums,chrysanthemum,3301080900,0,BE_FLA
+9538,Prei,Leek,leek,3301220300,0,BE_FLA
+8538,Prei - industrie,Leek - industry,leek,3301220300,0,BE_FLA
+9538,Prei - vers,Leek - fresh,leek,3301220300,0,BE_FLA
+382,Quinoa,Quinoa,quinoa,3301150300,0,BE_FLA
+9530,Raap,Turnip,turnips,3301290800,0,BE_FLA
+8530,Raap - industrie,Turnip - industry,turnips,3301290800,0,BE_FLA
+9530,Raap - vers,Turnip - fresh,turnips,3301290800,0,BE_FLA
+9517,Rabarber,Rhubarb,rhubarb,3301230000,0,BE_FLA
+8517,Rabarber - industrie,Rhubarb - industry,rhubarb,3301230000,0,BE_FLA
+9517,Rabarber - vers,Rhubarb - fresh,rhubarb,3301230000,0,BE_FLA
+9531,Radijs,Radish,radish,3301290600,0,BE_FLA
+8531,Radijs - industrie,Radish - industry,radish,3301290600,0,BE_FLA
+9531,Radijs - vers,Radish - fresh,radish,3301290600,0,BE_FLA
+9545,Raketsla,Rocket lettuce,rocket_arugula,3301310600,0,BE_FLA
+8545,Raketsla - industrie,Rocket lettuce - industry,rocket_arugula,3301310600,0,BE_FLA
+8545,Raketsla - Rucola - industrie,Rocket lettuce - Arugula - industry,rocket_arugula,3301310600,0,BE_FLA
+9545,Raketsla - Rucola - vers,Rocket salad - Arugula - fresh,rocket_arugula,3301310600,0,BE_FLA
+9545,Raketsla - vers,Rocket lettuce - fresh,rocket_arugula,3301310600,0,BE_FLA
+8550,Rammenas - industrie,Black radish - industry,radish,3301290600,0,BE_FLA
+9550,Rammenas - vers,Black radish - fresh,radish,3301290600,0,BE_FLA
+9718,Rode bessen,Redcurrant,redcurrant,3303021100,0,BE_FLA
+9532,Rode biet,Beetroot,beetroot_beets,3301290200,0,BE_FLA
+8532,Rode biet - industrie,Beetroot - industry,beetroot_beets,3301290200,0,BE_FLA
+9532,Rode biet - vers,Beetroot - fresh,beetroot_beets,3301290200,0,BE_FLA
+723,Rode klaver,red clover,clover,3301090303,0,BE_FLA
+9527,Rode kool,Red cabbage,red_cabbage,3301210210,0,BE_FLA
+8527,Rode kool - industrie,Red cabbage - industry,red_cabbage,3301210210,0,BE_FLA
+9527,Rode kool - vers,Red cabbage - fresh,red_cabbage,3301210210,0,BE_FLA
+899,Rotatieteelt van groentegewassen (vb pluktuin),Rotational cultivation of vegetable crops (e.g. picking garden),fresh_vegetables,3301070000,0,BE_FLA
+9582,Rozelaars,Roses,roses,3301083700,0,BE_FLA
+655,Sareptamosterd,Sarepto mustard,mustard,3301210100,0,BE_FLA
+9546,Savooikool,Savoy cabbage,savoy_cabbage,3301210211,0,BE_FLA
+8546,Savooikool - industrie,Savoy cabbage - industry,savoy_cabbage,3301210211,0,BE_FLA
+9546,Savooikool - vers,Savoy cabbage - fresh,savoy_cabbage,3301210211,0,BE_FLA
+9533,Schorseneer,Black salsify,black_salsify,3301290900,0,BE_FLA
+8533,Schorseneer - industrie,Black Salsify - industry,black_salsify,3301290900,0,BE_FLA
+9533,Schorseneer - vers,Black Salsify - fresh,black_salsify,3301290900,0,BE_FLA
+9539,Selder,Celery,leaf_celery,3301250200,0,BE_FLA
+9581,Sierbomen en -struiken,Ornamental trees and shrubs,tree_lines,3310300000,0,BE_FLA
+9521,Sierplanten in volle grond (containers en potten zijn uitgesloten) (minder dan vijf jaar) ,Ornamental plants in open ground (containers and pots are excluded) (less than five years),flowers_ornamental_plants,3301080000,0,BE_FLA
+954,Sierteelt,Floriculture,flowers_ornamental_plants,3301080000,0,BE_FLA
+201,Silomais,Silage maize,green_silo_maize,3301090400,0,BE_FLA
+201,Silomaïs,Silage maize,green_silo_maize,3301090400,0,BE_FLA
+9513,Sjalotten,Shallots,shallot,3301220600,0,BE_FLA
+8513,Sjalotten - industrie,Shallots - industry,shallot,3301220600,0,BE_FLA
+9513,Sjalotten - vers,Shallots - fresh,shallot,3301220600,0,BE_FLA
+9518,Sla,Lettuce,salads_lettuce_leaf_vegetables,3301310000,0,BE_FLA
+9577,Snijbloemen - andere dan rozen,Cut flowers - other than roses,flowers_ornamental_plants,3301080000,0,BE_FLA
+9576,Snijbloemen - rozen,Cut flowers - roses,roses,3301083700,0,BE_FLA
+9577,Snijbloemen andere dan rozen < 5 jaar,Cut flowers other than roses < 5 years,flowers_ornamental_plants,3301080000,0,BE_FLA
+9587,Snijbloemen andere dan rozen >= 5 jaar,Cut flowers other than roses >= 5 years,flowers_ornamental_plants,3301080000,0,BE_FLA
+8411,Snijbonen - industrie,String beans - industry,beans,3301020100,0,BE_FLA
+94,Snijbonen - vers,String beans - fresh,beans,3301020100,0,BE_FLA
+9575,Snijplanten,Cut plants,flowers_ornamental_plants,3301080000,0,BE_FLA
+9575,Snijplanten < 5 jaar,Cut plants < 5 years,flowers_ornamental_plants,3301080000,0,BE_FLA
+9585,Snijplanten >= 5 jaar,Cut plants >= 5 years,flowers_ornamental_plants,3301080000,0,BE_FLA
+639,Snijrogge,cutting rye,green_cut_rye,3301090600,0,BE_FLA
+653,Soedangras,Sudan grass,millet_sorghum,3301010900,0,BE_FLA
+43,Sojabonen,soybeans,soy_soybeans,3301160000,0,BE_FLA
+9590,Solitaire bomen,Solitary Trees,tree_lines,3310300000,0,BE_FLA
+381,Sorghum,Sorghum,millet_sorghum,3301010900,0,BE_FLA
+36,Spelt,Spelt,spelt,3301011000,0,BE_FLA
+9519,Spinazie,Spinach,spinach,3301310800,0,BE_FLA
+8519,Spinazie - industrie,Spinach - industry,spinach,3301310800,0,BE_FLA
+9519,Spinazie - vers,Spinach - fresh,spinach,3301310800,0,BE_FLA
+81,Spontane bedekking,Other cover,not_known_and_other,3399000000,0,BE_FLA
+9512,Spruitkolen,Brussels sprouts,brussels_sprouts,3301210203,0,BE_FLA
+9512,Spruitkolen - vers,Brussels sprouts - fresh,brussels_sprouts,3301210203,0,BE_FLA
+8512,Spruitkool - industrie,Brussels sprouts - industry,brussels_sprouts,3301210203,0,BE_FLA
+9512,Spruitkool - vers,Brussels sprouts - fresh,brussels_sprouts,3301210203,0,BE_FLA
+11,Stal,stable,not_known_and_other,3399000000,0,BE_FLA
+1,Stallen en gebouwen,Stables and buildings,not_known_and_other,3399000000,0,BE_FLA
+8411,Stambonen (bv. bruine bonen) - industrie,Regular beans (e.g. brown beans) - industry,beans,3301020100,0,BE_FLA
+94,Stambonen (bvb. bruine bonen),Regular beans (e.g. brown beans),beans,3301020100,0,BE_FLA
+94,Stambonen (bvb. bruine bonen) - vers,Regular beans (e.g. brown beans) - fresh,beans,3301020100,0,BE_FLA
+9410,Stamslabonen,Green beans,beans,3301020100,0,BE_FLA
+8410,Stamslabonen - industrie,Green beans - industry,beans,3301020100,0,BE_FLA
+9410,Stamslabonen - vers,Green beans - fresh,beans,3301020100,0,BE_FLA
+8410,Stamslabonen/sperziebonen - industrie,Standard green beans/green beans - industry,beans,3301020100,0,BE_FLA
+9410,Stamslabonen/sperziebonen - vers,Green beans/green beans - fresh,beans,3301020100,0,BE_FLA
+9719,Stekelbessen,gooseberries,gooseberry_gooseberries_cranberries,3303020700,0,BE_FLA
+91,Suikerbieten,sugar beets,sugar_beet,3301290700,0,BE_FLA
+9821,Tabak,Tobacco,tobacco,3301060100,0,BE_FLA
+646,Tagetes (Afrikaantje),Tagetes (marigold),tagetes,3301084700,0,BE_FLA
+99,Teelt niet vast te stellen,Cultivation cannot be determined,not_known_and_other,3399000000,0,BE_FLA
+602,Teeltmateriaal wijnstokken,Cultivation material vines,vineyards_wine_vine_rebland_grapes,3303060000,0,BE_FLA
+62,Tijdelijk grasland,Temporary grassland,temporary_grass,3301090100,0,BE_FLA
+9552,Tomaten,Tomatoes,tomato,3301280000,0,BE_FLA
+8552,Tomaten - industrie,Tomatoes - industry,tomato,3301280000,0,BE_FLA
+9552,Tomaten - vers,Tomatoes - fresh,tomato,3301280000,0,BE_FLA
+35,Triticale,Triticale,triticale,3301010800,0,BE_FLA
+932,Tuin- en veldbonen (andere dan droog geoogst),Broad and field beans (other than dry-harvested),beans,3301020100,0,BE_FLA
+832,Tuin- en veldbonen (andere dan droog geoogst) - industrie,Broad and field beans (other than dry-harvested) - industry,beans,3301020100,0,BE_FLA
+932,Tuin- en veldbonen (andere dan droog geoogst) - vers,Broad and field beans (other than dry-harvested) - fresh,beans,3301020100,0,BE_FLA
+52,Tuin- en veldbonen (droog geoogst),Broad and field beans (harvested dry),beans,3301020100,0,BE_FLA
+52,Tuin- en veldbonen (niet voor menselijke consumptie),Broad and field beans (not for human consumption),beans,3301020100,0,BE_FLA
+832,Tuin- en veldbonen (Vicia faba) - industrie,Broad and field beans (Vicia faba) - industry,beans,3301020100,0,BE_FLA
+932,Tuin- en veldbonen (Vicia faba) - vers,Broad beans (Vicia faba) - fresh,beans,3301020100,0,BE_FLA
+5,Tuin met hoogstam,Garden with standard,not_known_and_other,3399000000,0,BE_FLA
+52,Tuinbonen (niet voor menselijke consumptie),Broad beans (not for human consumption),beans,3301020100,0,BE_FLA
+9580,Vaste planten,Perennials,permanent_crops_perennial,3303000000,0,BE_FLA
+9542,Veldsla,Lamb's lettuce,lambs_lettuce_rapunzel,3301310500,0,BE_FLA
+8542,Veldsla - industrie,Lambs lettuce - industry,lambs_lettuce_rapunzel,3301310500,0,BE_FLA
+9542,Veldsla - vers,Lambs lettuce - fresh,lambs_lettuce_rapunzel,3301310500,0,BE_FLA
+922,Vezelhennep (bestemd voor vezelproductie),Fiber hemp (intended for fiber production),hemp_cannabis,3301061000,0,BE_FLA
+921,Vezelvlas (bestemd voor vezelproductie),Fiber flax (intended for fiber production),flax_linen,3301060701,0,BE_FLA
+71,Voederbieten,fodder beets,mangelwurzel_fodder_beet,3301290400,0,BE_FLA
+51,Voedererwten (niet voor menselijke consumptie),Field peas (not for human consumption),peas,3301020600,0,BE_FLA
+511,Voedererwten (winterteelt) - niet menselijke consumptie,Fodder peas (winter cultivation) - not for human consumption,peas,3301020600,0,BE_FLA
+512,Voedererwten (zomerteelt) - niet menselijke consumptie,Field peas (summer crop) - not for human consumption,peas,3301020600,0,BE_FLA
+741,Voederkool (bladkool),Feed cabbage (leafy cabbage),brassica_oleracea_cabbage,3301210200,0,BE_FLA
+746,Voederrapen,Fodder Turnips,turnips,3301290800,0,BE_FLA
+742,Voederwortelen,Fodder carrots,carrots_daucus,3301290300,0,BE_FLA
+8,Volkstuinpark,People garden park,not_known_and_other,3399000000,0,BE_FLA
+904,Vroege aardappelen,Early potatoes,early_season_potatoes,3301030100,0,BE_FLA
+9563,Vroege ajuinen,Early onions,onions,3301220400,0,BE_FLA
+9558,Vroege bladgroenten,Early leafy greens,fresh_vegetables,3301070000,0,BE_FLA
+8558,Vroege bladgroenten - industrie,Early leafy vegetables - industry,fresh_vegetables,3301070000,0,BE_FLA
+9558,Vroege bladgroenten - vers,Early leafy greens - fresh,fresh_vegetables,3301070000,0,BE_FLA
+9202,Walnoten,walnuts,walnuts,3303030600,0,BE_FLA
+9823,Weiland met bomen (> 100 bomen per ha),Meadow with trees (> 100 trees per ha),pastures_meadows_with_trees,3302010000,8,BE_FLA
+9823,Weiland met bomen (> 50 bomen per ha),Meadow with trees (> 50 trees per ha),pastures_meadows_with_trees,3302010000,8,BE_FLA
+9823,Weiland met niet-oogstbare bomen (> 100 bomen per ha),Pasture with non-harvestable trees (> 100 trees per ha),pastures_meadows_with_trees,3302010000,8,BE_FLA
+9823,Weiland met niet-oogstbare bomen (> 200 bomen per ha),Pasture with non-harvestable trees (> 200 trees per ha),pastures_meadows_with_trees,3302010000,8,BE_FLA
+9827,Weiland met oogstbare hoogstam bomen (> 100 bomen/ha),Pasture with harvestable standard trees (> 100 trees/ha),pastures_meadows_with_trees,3302010000,8,BE_FLA
+9827,Weiland met oogstbare hoogstam bomen (> 200 bomen/ha),Pasture with harvestable standard trees (> 200 trees/ha),pastures_meadows_with_trees,3302010000,8,BE_FLA
+635,Westerwolds raaigras,Westerwold ryegrass,lolium_ryegrass,3301090205,0,BE_FLA
+963,Wijmenaanplantingen,vine plantations,vineyards_wine_vine_rebland_grapes,3303060000,0,BE_FLA
+9716,Wijnstokken,Vines,vineyards_wine_vine_rebland_grapes,3303060000,0,BE_FLA
+747,Wikke,vetch,vetches,3301090305,0,BE_FLA
+633,Wikken,vetch,vetches,3301090305,0,BE_FLA
+9583,Winterbloeiende halfheesters,Winter-flowering semi-shrubs,shrubberries_shrubs,3303080000,0,BE_FLA
+321,Wintergerst,winter barley,winter_barley,3301010401,0,BE_FLA
+9584,Winterharde sierplanten,Hardy ornamental plants,flowers_ornamental_plants,3301080000,0,BE_FLA
+341,Winterhaver,winter oats,winter_oats,3301010501,0,BE_FLA
+4111,Winterkoolzaad,winter rapeseed,winter_rapeseed_rape,3301060401,0,BE_FLA
+4112,Winterraapzaad,winter rapeseed,winter_rapeseed_rape,3301060401,0,BE_FLA
+331,Winterrogge,winter rye,winter_rye,3301010301,0,BE_FLA
+311,Wintertarwe,winter wheat,winter_common_soft_wheat,3301010101,0,BE_FLA
+521,Winterveldbonen - niet menselijke consumptie,Winter field beans - not for human consumption,beans,3301020100,0,BE_FLA
+451,Wintervlas (olieproductie),Winter flax (fiber production and industrial applications),flax_linen,3301060701,0,BE_FLA
+923,Wintervlas (vezelproductie en industriële toepassingen),Winter flax (fiber production and industrial applications),flax_linen,3301060701,0,BE_FLA
+9515,Witloof,Chicory,chicory_chicories,3301310200,0,BE_FLA
+8515,Witloof (forcerie) - industrie,Chicory (force) - industry,chicory_chicories,3301310200,0,BE_FLA
+9515,Witloof (forcerie) - vers,Chicory (forcery) - fresh,chicory_chicories,3301310200,0,BE_FLA
+8561,Witloof (voor de wortel) - industrie,Chicory (for the root) - industry,chicory_chicories,3301310200,0,BE_FLA
+9561,Witloof (voor de wortel) - vers,Chicory (for the root) - fresh,chicory_chicories,3301310200,0,BE_FLA
+8515,Witloof (voor het loof) - industrie,Chicory (for the foliage) - industry,chicory_chicories,3301310200,0,BE_FLA
+9515,Witloof (voor het loof) - vers,Chicory (for the foliage) - fresh,chicory_chicories,3301310200,0,BE_FLA
+9561,Witloofwortel,Chicory root,chicory_chicories,3301310200,0,BE_FLA
+9561,Witloofwortelen,Chicory roots,chicory_chicories,3301310200,0,BE_FLA
+9540,Witte kool,White cabbage,white_cabbage,3301210212,0,BE_FLA
+8540,Witte kool - industrie,White cabbage - industry,white_cabbage,3301210212,0,BE_FLA
+9540,Witte kool - vers,White cabbage - fresh,white_cabbage,3301210212,0,BE_FLA
+631,Witte of rode klaver,White or red clover,clover,3301090303,0,BE_FLA
+14,Woonhuis,Residential building,not_known_and_other,3399000000,0,BE_FLA
+9535,Wortel (consumptie),Carrot (consumption),carrots_daucus,3301290300,0,BE_FLA
+8535,Wortel (niet-vroege) (consumptie) - industrie,Carrot (non-early) (consumption) - industry,carrots_daucus,3301290300,0,BE_FLA
+9535,Wortel (niet-vroege) (consumptie) - vers,Carrot (non-early) (consumption) - fresh,carrots_daucus,3301290300,0,BE_FLA
+8564,Wortel (vroege) (consumptie) - industrie,Carrot (early) (consumption) - industry,carrots_daucus,3301290300,0,BE_FLA
+9564,Wortel (vroege) (consumptie) - vers,Carrot (early) (consumption) - fresh,carrots_daucus,3301290300,0,BE_FLA
+863,Wortelpeterselie - industrie,Parsley root - industry,parsley,3301061227,0,BE_FLA
+863,Wortelpeterselie - industriële verwerking,Parsley root - industrial processing,parsley,3301061227,0,BE_FLA
+961,Wortelpeterselie - vers verbruik,Carrot parsley - fresh consumption,parsley,3301061227,0,BE_FLA
+603,Zaaizaad graangewassen,Seed cereals,other_cereals,3301019900,0,BE_FLA
+601,Zaaizaad grassen,Seed grasses,arable_land_seed_seedlings,3301100000,0,BE_FLA
+605,Zaaizaad groenten,Vegetable seed,fresh_vegetables,3301070000,0,BE_FLA
+604,Zaaizaad olie- en vezelhoudende planten,Seed oil and fiber plants,fibre_crops,3301061100,0,BE_FLA
+606,Zaaizaad voedergewassen,Seeds for fodder plants,arable_land_seed_seedlings,3301100000,0,BE_FLA
+6031,Zaaizaad wintertarwe of triticale,Winter wheat or triticale seed,cereal,3301010000,3,BE_FLA
+6041,Zaaizaad wintervlas,Sow seed winter flax,flax_linen,3301060701,0,BE_FLA
+9566,Zaden voor de sierteelt,Seeds for floriculture,flowers_ornamental_plants,3301080000,0,BE_FLA
+906,Zoete aardappel,Sweet potato,sweet_potatoes,3301040000,0,BE_FLA
+322,Zomergerst,summer barley,spring_barley,3301010402,0,BE_FLA
+342,Zomerhaver,summer oats,spring_oats,3301010502,0,BE_FLA
+640,Zomerhaver,summer oats,spring_oats,3301010502,0,BE_FLA
+4121,Zomerkoolzaad,Spring rapeseed,spring_rapeseed_rape,3301060402,0,BE_FLA
+4122,Zomerraapzaad,Spring rapeseed,spring_rapeseed_rape,3301060402,0,BE_FLA
+332,Zomerrogge,summer rye,spring_rye,3301010302,0,BE_FLA
+312,Zomertarwe,summer wheat,spring_common_soft_wheat,3301010102,0,BE_FLA
+522,Zomerveldbonen - niet menselijke consumptie,Summer field beans - not for human consumption,beans,3301020100,0,BE_FLA
+42,Zonnebloempitten,sunflower seeds,sunflower,3301060500,0,BE_FLA
+9720,Zwarte bessen,Blackcurrants,blackcurrant_cassis,3303020300,0,BE_FLA
+662,Mengsel van bladrammenas en gele mosterd,mixture of oil radish and yellow mustard ,brassicaceae_cruciferae,3301210000,7,BE_FLA
+886,Niet-subsidiabel korte omloophout,non-subsidiable short rotation coppice ,short_rotation_coppice,3306090000,0,BE_FLA
+,,,not_known_and_other,3399000000,0,BE_FLA

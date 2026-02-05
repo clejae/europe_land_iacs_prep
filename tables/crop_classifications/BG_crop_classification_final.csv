@@ -1,0 +1,229 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+224070,актинидия(киви),actinidia (kiwi),kiwi,3303010700,0,BG
+124010,анасон,Aniseed,anise_aniseed,3301061205,0,BG
+224050,арония,chokeberry,aronia_chokeberries,3303020100,0,BG
+144040,арпаджик,Arpadzik (onion sets / small onions),onions,3301220400,0,BG
+146020,аспержи,broad beans (for grain),asparagus,3301200000,0,BG
+223020,бадеми,almonds,almond,3303030100,0,BG
+112050,бакла за зърно,grain,beans,3301020100,0,BG
+141120,бамя,Okra,fresh_vegetables,3301070000,0,BG
+231050,блатно кокиче,marsh snowdrop (ornamental/flower),other_flowers_ornamental_plants,3301089900,0,BG
+224080,бодливо грозде,prickly grape,gooseberry_gooseberries_cranberries,3303020700,0,BG
+224090,боровинки,blueberries,blueberry,3303020400,0,BG
+124050,босилек,basil,basil,3301061207,0,BG
+142030,броколи,broccoli,broccoli,3301210202,0,BG
+131042,бурчак,grass pea (Lathyrus / similar pulse),lathyrus_peavine,3301020800,0,BG
+231070,бял риган,white oregano,oregano,3301061226,0,BG
+124060,бял трън,thistle,marian_thistles,3301061300,0,BG
+251210,Бяла върба,White willow,willows_osiers,3306080000,0,BG
+251120,Бяла топола,White poplar,populus,3306070000,0,BG
+251810,Бяла черница,White mulberry,other_permanent_crops_plantations,3303990000,0,BG
+124040,валериана,valerian,valerian,3301061238,0,BG
+112070,вигна,vigna (cowpea / similar),beans,3301020100,0,BG
+211000,Винени лозя,Wine vineyards,vineyards_wine_vine_rebland_grapes,3303060000,0,BG
+222050,вишни,Cherry,cherry_cherries,3303010400,0,BG
+142010,главесто зеле,head cabbage (white cabbage),white_cabbage,3301210212,0,BG
+112041,грах за зърно - зимен,grain peas - winter,peas,3301020600,0,BG
+112042,грах за зърно - пролетен,grain peas - spring,peas,3301020600,0,BG
+111014,двузърнест лимец,emmer (two-grain spelt),emmer,3301011200,0,BG
+164000,Декоративни храсти,Ornamental shrubs,shrubberries_shrubs,3303080000,0,BG
+212000,Десертни лозя,Dessert vineyards,vineyards_wine_vine_rebland_grapes,3303060000,0,BG
+132022,детелина,clover,clover,3301090303,0,BG
+141070,дини,watermelon,watermelon,3301140500,0,BG
+181012,домати - неотопляеми оранжерии,tomatoes - unheated greenhouses,greenhouse_tomatoes,3305010400,0,BG
+181011,домати - отопляеми оранжерии,tomatoes - heated greenhouses,greenhouse_tomatoes,3305010400,0,BG
+141013,домати на открито,outdoor tomatoes,tomato,3301280000,0,BG
+250000,ДРУГИ  ТРАЙНИ НАСАЖДЕНИЯ,Other permanent crops,other_permanent_crops_plantations,3303990000,0,BG
+165000,Други декоративни растения,Other ornamental plants,flowers_ornamental_plants,3301080000,0,BG
+185000,Други зеленчукови култури,Other vegetable crops,fresh_vegetables,3301070000,0,BG
+112030,други зърнено-бобови,other cereals and legumes,other_arable_land_crops,3301990000,0,BG
+111110,други зърнено-житни,other cereals,other_cereals,3301019900,0,BG
+121040,други индустриални култури,other industrial cultures,other_industrial_crops,3301069900,0,BG
+171050,други индустриални култури,other industrial cultures,other_industrial_crops,3301069900,0,BG
+143070,други кореноплодни култури,other root crops,root_vegetables,3301290000,0,BG
+222070,други костилкови овощни видове,Other bone fruit species,orchards_fruits,3303010000,0,BG
+142070,други листностъблени култури,Other leaflets crops,other_salads_lettuce_leaf_vegetables,3301319900,0,BG
+144050,други луковични зеленчукови култури,Other bulbous vegetable crops,onions,3301220400,0,BG
+122070,други маслодайни,other oilseeds,oilseed_crops,3301060800,0,BG
+124110,други медицински и ароматни култури,Other medical and aromatic crops,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BG
+231240,други многогодишни ароматни култури,Other perennial aromatic crops,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BG
+146030,други многогодишни зеленчукови култури,Other perennial vegetables,other_permanent_crops_plantations,3303990000,0,BG
+225000,Други овощни видове,Other fruit species,orchards_fruits,3303010000,0,BG
+141140,други плодови зеленчукови култури,other fruit and vegetable crops,other_arable_land_crops,3301990000,0,BG
+221050,други семкови овощни видове,other pome fruit species,orchards_fruits,3303010000,0,BG
+131070,други фуражни зеленчуци,other fodder vegetables,other_plants_harvested_green,3301099900,0,BG
+131080,други фуражни култури,other forage crops,other_plants_harvested_green,3301099900,0,BG
+224100,други ягодоплодни култури,other berry crops,berries_berry_species,3303020000,0,BG
+223060,други ядкови (черупкови) видове,other nuts (shell) species,nuts,3303030000,0,BG
+222060,дрян,cornelian cherry (dogwood fruit),dogwood_cornus,3306040000,0,BG
+251000,Дървесни култури с кратък цикъл на ротация,Woody crops with a short rotation cycle,short_rotation_coppice,3306090000,0,BG
+221030,дюли,quince,quinces,3303011500,0,BG
+131040,едногодишни зърнено-бобови,annual grain legumes,legumes_dried_pulses_protein_crops,3301020000,0,BG
+131030,едногодишни зърнено-житни,annual cereals,cereal,3301010000,0,BG
+131060,едногодишни фуражни зеленчуци,annual fodder vegetables,other_plants_harvested_green,3301099900,0,BG
+111013,еднозърнест лимец,einkorn,einkorn,3301011300,0,BG
+132024,еспарзета,sainfoin,onobrychis_sainfoins,3301061600,0,BG
+231080,ехинацея,echinacea,echinacea_sun_hat,3301081500,0,BG
+111061,ечемик-зимен,barley-winter,winter_barley,3301010401,0,BG
+111062,ечемик-пролетен,spring barley,spring_barley,3301010402,0,BG
+231090,жълт мак,yellow poppy,summer_poppy,3301060602,0,BG
+141130,захарна царевица,sugar corn,grain_maize_corn_popcorn,3301010600,0,BG
+171010,захарно цвекло,sugar beet,sugar_beet,3301290700,0,BG
+121030,захарно цвекло,sugar beet,sugar_beet,3301290700,0,BG
+132023,звездан,star clover (Astragalus),clover,3301090303,0,BG
+141100,зелен грах,green pea,peas,3301020600,0,BG
+141090,зелен фасул,green beans,beans,3301020100,0,BG
+141110,зелена бакла,green broad bean,beans,3301020100,0,BG
+174000,Зеленчуци,Vegetables,fresh_vegetables,3301070000,0,BG
+177000,Изкуствени ливади,artificial meadows,temporary_grass,3301090100,0,BG
+132020,изкуствени ливади-бобови,artificial meadows – legumes,legumes_harvested_green,3301090300,0,BG
+132010,изкуствени ливади-житни,artificial meadows – grasses,poaceae_grasses,3301090200,0,BG
+132030,изкуствени ливади-смесени насаждения,artificial meadows – mixed,other_plants_harvested_green,3301099900,0,BG
+251700,Източен чинар,Platanus orientalis,other_tree_wood_forest,3306990000,0,BG
+222030,кайсии/зарзали,Apricots/Zarzali,apricots,3303010300,0,BG
+150000,КАРТОФИ,Potatoes,potatoes,3301030000,0,BG
+150010,Картофи за семена,Seed potatoes,potatoes,3301030000,0,BG
+142020,карфиол,cauliflower,cauliflower,3301210204,0,BG
+224060,касис,blackcurrant,blackcurrant_cassis,3303020300,0,BG
+223040,кестени,chestnuts,sweet_chestnuts,3303030500,0,BG
+124030,кимион,cumin,black_cumin,3301061208,0,BG
+123030,коноп,hemp,hemp_cannabis,3301061000,0,BG
+142080,копър,dill,anethum_dill,3301061203,0,BG
+183000,Кореноплодни зеленчукови култури,Root vegetable crops,root_vegetables,3301290000,0,BG
+124020,кориандър,coriander,coriander,3301061215,0,BG
+141045,корнишони на открито,outdoor grunts,cucumber_pickle,3301140100,0,BG
+222000,Костилкови овощни видове,Stone fruits,orchards_fruits,3303010000,0,BG
+181042,краставици - неотопляеми оранжерии,cucumbers - unheated greenhouses,greenhouse_cucumbers,3305010200,0,BG
+181041,краставици - отопляеми оранжерии,cucumbers - heated greenhouses,greenhouse_cucumbers,3305010200,0,BG
+141043,краставици на открито,outdoor cucumbers,cucumber_pickle,3301140100,0,BG
+221020,круши,pears,pears,3303011200,0,BG
+224030,къпини,blackberries,blackberry,3303020200,0,BG
+231020,лавандула,lavender,lavender_lavandula,3301061219,0,BG
+124070,лайка,chamomile,chamomile,3301061213,0,BG
+123020,лен влакнодаен,flax fibre,flax_linen,3301060701,0,BG
+122060,лен маслодаен,linseed (oil flax),flax_linseed_oil,3301060702,0,BG
+251600,Леска,hazelnuts,hazelnuts_hazel,3303030200,0,BG
+223030,лешници,hazelnuts,hazelnuts_hazel,3303030200,0,BG
+112060,леща,Lentil,lentils,3301020500,0,BG
+315000,Ливади за косене,Mowing meadows,pasture_meadow_grassland_grass,3302000000,0,BG
+182000,Листностъблени зеленчукови култури,leafy vegetables,other_salads_lettuce_leaf_vegetables,3301319900,0,BG
+241000,Лозов посадъчен материал,Vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,BG
+210000,ЛОЗЯ,Vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,BG
+144010,лук,onion,onions,3301220400,0,BG
+184000,Луковични зеленчукови култури,Bulbous vegetable crops,alliums,3301220000,0,BG
+132025,лупина,lupine,sweet_lupins,3301020700,0,BG
+132021,люцерна,alfalfa,alfalfa_lucerne,3301090301,0,BG
+143020,магданоз,parsley,parsley,3301061227,0,BG
+224020,малини,Rasberry,raspberry_raspberries,3303021000,0,BG
+228021,малини-неотопляеми оранжерии,raspberries,raspberry_raspberries,3303021000,0,BG
+228020,малини-отопляеми оранжерии,Raspberry-heating greenhouses,greenhouse_berries,3305010600,0,BG
+142050,марули,lettuce,other_salads_lettuce_leaf_vegetables,3301319900,0,BG
+231010,маслодайна роза,oil-bearing rose,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,BG
+231130,маточина,lemon_balm,lemon_balm_melissa,3301061220,0,BG
+231140,мащерка,thyme,thyme,3301061237,0,BG
+231150,медицинска ружа,medical rose,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BG
+173000,Медицински и ароматни култури,Medical and aromatic crops,unspecified_aromatic_medicinal_culinary_plants_spices_herbs,3301061298,0,BG
+231000,Медицински и Ароматни култури,Medical and aromatic crops,unspecified_aromatic_medicinal_culinary_plants_spices_herbs,3301061298,0,BG
+111011,мека пшеница-зимна,soft wheat-winter,winter_common_soft_wheat,3301010101,0,BG
+111012,мека пшеница-пролетна,Soft wheat-spring,spring_common_soft_wheat,3301010102,0,BG
+231030,мента,mint,mints_peppermint,3301061222,0,BG
+230000,МНОГОГОДИШНИ МЕДИЦИНСКИ И АРОМАТНИ КУЛТУРИ,Perennial medical and aromatic crops,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,BG
+252000,Многогодишни тревни видове,perennial grasses,pasture_meadow_grassland_grass,3302000000,0,BG
+143010,моркови,Carrots,carrots_daucus,3301290300,0,BG
+221040,мушмули,medlar,medlar_loquat,3303010800,0,BG
+112020,нахут,chickpea,chickpeas,3301020200,0,BG
+111071,овес - зимен,oats - winter,winter_oats,3301010501,0,BG
+111072,овес - пролетен,oats - spring,spring_oats,3301010502,0,BG
+242000,Овощен посадъчен материал,fruit planting stock,nurseries_nursery,3303070000,0,BG
+220000,ОВОЩНИ ВИДОВЕ,fruit species (general),orchards_fruits,3303010000,0,BG
+223010,орехи,walnuts,walnuts,3303030600,0,BG
+111100,ориз,rice,rice,3301010700,0,BG
+123010,памук,cotton,cotton,3301060300,0,BG
+141030,патладжан,eggplant,aubergine_eggplant,3301260000,0,BG
+231180,пелин,wormwood (Artemisia),artemisia,3301061206,0,BG
+181032,пипер - неотопляеми оранжерии,Pepper - unheated greenhouses,greenhouse_bell_peppers,3305010500,0,BG
+181031,пипер - отопляеми оранжерии,Pepper - Heated greenhouses,greenhouse_bell_peppers,3305010500,0,BG
+141023,пипер на открито,outdoor pepper,bell_pepper_paprika,3301300100,0,BG
+190000,ПЛОЩИ С УГАРИ,fallow land,fallow_land_not_crop,3301110000,0,BG
+251500,Полски бряст,Mepore elm,other_tree_wood_forest,3306990000,0,BG
+314000,Постоянни или временни пасища за паша на животни (пасища и мери за паша),Permanent or temporary pastures for grazing of animals (pastures and measures for grazing),pasture_meadow_grassland_grass,3302000000,0,BG
+144030,праз,leek,leek,3301220300,0,BG
+222020,праскови/нектарини,peaches/nectarines,peach,3303011100,0,BG
+111080,просо,millet,millet_sorghum,3301010900,0,BG
+141080,пъпеши,melons,melon,3301140300,0,BG
+240000,РАЗСАДНИЦИ,Nurseries,nurseries_nursery,3303070000,0,BG
+244000,Разсадници за горски фиданки,Nurseries for forest saplings,other_tree_wood_forest,3306990000,0,BG
+243000,Разсадници за декоративни растения,Nurseries for ornamental plants,nurseries_nursery,3303070000,0,BG
+122031,рапица - зимна,rapeseed - winter,winter_rapeseed_rape,3301060401,0,BG
+122032,рапица - пролетна,rapeseed - spring,spring_rapeseed_rape,3301060402,0,BG
+124015,резене,fennel,fennel,3301170000,0,BG
+143050,репички,radish,radish,3301290600,0,BG
+131043,репко,Rapeseed,rapeseed_rape,3301060400,0,BG
+231200,розмарин,rosemary,rosemary,3301061230,0,BG
+111031,ръж - зимна,rye - winter,winter_rye,3301010301,0,BG
+111032,ръж - пролетна,rye - spring,spring_rye,3301010302,0,BG
+143060,ряпа,turnip,turnips,3301290800,0,BG
+163000,Саксийни култури,Pot plants,other_flowers_ornamental_plants,3301089900,0,BG
+142040,салата,lettuce,other_salads_lettuce_leaf_vegetables,3301319900,0,BG
+143040,салатно цвекло,beetroot_beets,beetroot_beets,3301290200,0,BG
+231210,салвия,sage_chia,sage_chia,3301190000,0,BG
+221000,Семкови овощни видове,pome fruit species,orchards_fruits,3303010000,0,BG
+131044,синап,mustard,mustard,3301210100,0,BG
+222010,сливи,plums,plums,3303011300,0,BG
+122010,слънчоглед,sunflower,sunflower,3301060500,0,BG
+131050,смесени едногодишни,mixed annual crops,other_arable_land_crops,3301990000,0,BG
+224095,смокини,figs,fig,3303010600,0,BG
+111090,сорго,sorghum,millet_sorghum,3301010900,0,BG
+122040,соя,soy,soy_soybeans,3301160000,0,BG
+142060,спанак,spinach,spinach,3301310800,0,BG
+111015,Спелта,spelt,spelt,3301011000,0,BG
+251400,Сребролистна липа,Silver Lime,other_tree_wood_forest,3306990000,0,BG
+122020,сусам,sesame,oilseed_crops,3301060800,0,BG
+111020,твърда пшеница,durum wheat,durum_hard_wheat,3301010200,0,BG
+141060,тикви,pumpkins,pumpkin_squash_gourd,3301140400,0,BG
+122080,Тикви за семки,Seed pumpkins,pumpkin_squash_gourd,3301140400,0,BG
+141050,тиквички,Zucchini,zucchini_courgette,3301140600,0,BG
+251100,ТОПОЛИ,populus,populus,3306070000,0,BG
+251130,Трепетлика,aspen,aspen,3306020000,0,BG
+111041,тритикале-зимно,Triticale-winter,winter_triticale,3301010801,0,BG
+111042,тритикале-пролетно,Triticale-spring,spring_triticale,3301010802,0,BG
+251220,Тритичинкова върба,Triticinic willow,willows_osiers,3306080000,0,BG
+121020,тютюн,tobacco,tobacco,3301060100,0,BG
+171040,тютюн,tobacco,tobacco,3301060100,0,BG
+112010,фасул полски,Polish beans,beans,3301020100,0,BG
+131041,фий,Vetches,vetches,3301090305,0,BG
+224040,френско грозде,currants,currants,3303020600,0,BG
+131020,фуражно цвекло,forage beet,mangelwurzel_fodder_beet,3301290400,0,BG
+171020,фуражно цвекло,forage beet,mangelwurzel_fodder_beet,3301290400,0,BG
+122050,фъстъци,peanuts,arachis,3301090302,0,BG
+231110,хизоп,hyssop,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,BG
+121010,хмел,hops,hops,3301060200,0,BG
+171030,хмел,hops,hops,3301060200,0,BG
+111050,царевица за зърно,grain corn,grain_maize_corn_popcorn,3301010600,0,BG
+131010,царевица за силаж,silage corn,green_silo_maize,3301090400,0,BG
+176000,Цветя,Flowers,unspecified_flowers_ornamental_plants,3301089800,0,BG
+186100,цветя,flowers,unspecified_flowers_ornamental_plants,3301089800,0,BG
+186000,Цветя и декоративни растения,Flowers and ornamental plants,unspecified_flowers_ornamental_plants,3301089800,0,BG
+162000,"Цветя,отглеждани за луковици",Flowers grown for bulbs,unspecified_flowers_ornamental_plants,3301089800,0,BG
+161000,"Цветя,отглеждани за рязан цвят",Flowers grown for cut color,unspecified_flowers_ornamental_plants,3301089800,0,BG
+143030,целина,Celery,celery,3301250000,0,BG
+222040,череши,cherry,cherry_cherries,3303010400,0,BG
+124100,черна мерудия,black marudia,black_cumin,3301061208,0,BG
+251110,Черна топола,Black poplar,populus,3306070000,0,BG
+251820,Черна черница,Black pine,tree_wood_forest,3306000000,0,BG
+251800,ЧЕРНИЦИ,mulberries (general),other_permanent_crops_plantations,3303990000,0,BG
+144020,чесън,garlic,garlic,3301220200,0,BG
+223050,шам-фъстъци,pistachio,pistachio,3303030400,0,BG
+231230,шипка,rosehip,rose_hip_rosehip,3303021200,0,BG
+221010,ябълки,apples,apples,3303010200,0,BG
+224010,ягоди,strawberries,strawberries,3301130000,0,BG
+228011,ягоди-неотопляеми оранжерии,strawberries-unauthorized greenhouses,greenhouse_strawberries,3305010100,0,BG
+228010,ягоди-отопляеми оранжерии,Strawberry-heated greenhouses,greenhouse_strawberries,3305010100,0,BG
+175000,Ягодоплодни,Berry,berries_berry_species,3303020000,0,BG
+223000,Ядкови(черупкови) видове,Nuts,nuts,3303030000,0,BG
+314000,Постоянни или временни пасища за паша на животни (пасища и ��ери за паша),Permanent or temporary pastures for grazing animals (pastures and meadows for grazing),pasture_meadow_grassland_grass,3302000000,0,BG
+314000,Постоянни или врем��нни пасища за паша на животни (пасища и мери за паша),Permanent or temporary pastures for grazing animals (pastures and meadows for grazing),pasture_meadow_grassland_grass,3302000000,0,BG
+314000,Постоянни или временни пасища за паша на животни (пасища �� мери за паша),Permanent or temporary pastures for grazing animals (pastures and meadows for grazing),pasture_meadow_grassland_grass,3302000000,0,BG
+314000,Постоянни или вре��енни пасища за паша на животни (пасища и мери за паша),Permanent or temporary pastures for grazing animals (pastures and meadows for grazing),pasture_meadow_grassland_grass,3302000000,0,BG
+224000,Ягодоплодни видове,Berry species,berries_berry_species,3303020000,0,BG
+315000,Лива��и за косене,Meadows for mowing,pasture_meadow_grassland_grass,3302000000,0,BG

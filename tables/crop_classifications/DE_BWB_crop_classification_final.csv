@@ -1,0 +1,248 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+961,A2-LPR Verpflichtung auf landw. Fläche,A2-LPR obligation on agricultural land. Area,environmental_protection,3311000000,0,DE_BWB
+220,Ackerbohnen/Puffbohnen/Pferdebohnen/Dicke Bohnen,Field bean / broad bean / horse bean / broad bean/Field / broad / horse bean,beans,3301020100.0,3,DE_BWB
+424,Ackergras,Arable grass,temporary_grass,3301090100.0,0,DE_BWB
+591,Ackerland aus der Erzeugung genommen,Arable land withdrawn from production,other_arable_land_crops,3301990000.0,0,DE_BWB
+915,Ackerrandstreifen,other flower strips or flower areas,field_margins_buffer_strips_flowering_areas,3310100000.0,0,DE_BWB
+190,Alle anderen Getreidearten,Cereals of a genus/species not included in the current list,other_cereals,3301019900.0,0,DE_BWB
+455,Almen und Alpen,Mountain pastures and alps,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+186,Amarant (Amarant/Fuchsschwanz),amaranth,amaranth,3301150100,0,DE_BWB
+642,Ampfer (Wiesen-Sauerampfer),Dock (meadow sorrel),sorrel,3301310700.0,0,DE_BWB
+48,andere Handelsgewächse,other commercial crops,other_arable_land_crops,3301990000.0,0,DE_BWB
+653,Anis,anise,anise_aniseed,3301061205.0,0,DE_BWB
+673,"Artemisia (Wermut, Estragon, Beifuß)","Artemisia (wormwood, tarragon, mugwort)",artemisia,3301061206.0,0,DE_BWB
+861,Artischocke,artichoke,artichoke,3301270000,0,DE_BWB
+623,Auberginen,eggplant,aubergine_eggplant,3301260000.0,0,DE_BWB
+584,aus ehemals DZ-fähiger Fläche durch Natura 2000-Auflagen entstandene nicht landw. Fläche,Non-agricultural areas created from previously DZ-capable areas due to Natura 2000 requirements. Area,environmental_protection,3311000000.0,0,DE_BWB
+585,aus ehemals DZ-fähiger Fläche durch WRRL-Auflagen entstandene nicht landwirtschaftliche Fläche,Non-agricultural area created from former DZ-capable area due to WFD requirements,environmental_protection,3311000000.0,0,DE_BWB
+660,Basilikum,basil,basil,3301061207.0,0,DE_BWB
+564,Basis-/Betriebsprämienfähige aufgeforstete Flächen nach Einkommensverlustprämie,Afforested areas eligible for basic/operating payments after income loss premium,afforestation_reforestation,3306010000.0,0,DE_BWB
+564,Basis-/Betriebsprämienfähige aufgeforstete Flächen nach Erstaufforstung-/Einkommensverlustprämie,Areas afforested according to VO 1257/1999 or VO (EG) No. 1698/2005 or VO 1305/2013/Afforestation in rural areas,afforestation_reforestation,3306010000.0,0,DE_BWB
+71,Baumreihe ÖVF (CC-LE),Tree row ÖVF (CC-LE),tree_lines,3310300000.0,0,DE_BWB
+838,"Baumschulen, nicht für Beerenobst",Nurseries/Tree nurseries (excluding soft fruit),nurseries_nursery,3303070000,0,DE_BWB
+827,"Beerenobst (z.B. Johannis-, Stachel-, Himbeeren)",Berries,berries_berry_species,3303020000,0,DE_BWB
+839,Beerenobst zur Vermehrung (in Baumschulen),Berries for propagation (in tree nurseries),berries_berry_species,3303020000.0,0,DE_BWB
+610,beetweiser Anbau von Gemüse (gärtnerischer Anbau),Growing vegetables in beds (horticultural cultivation),fresh_vegetables,3301070000.0,0,DE_BWB
+650,beetweiser Anbau von Küchenkräutern/Heil- und Gewürzpflanzen (gärtnerischer Anbau),Cultivation of culinary herbs/medicinal and spice plants in beds (horticultural cultivation),aromatic_medicinal_culinary_plants_spices_herbs,3301061200.0,0,DE_BWB
+843,Bestockte Rebfläche,Planted vineyards (underplanting),vineyards_wine_vine_rebland_grapes,3303060000,0,DE_BWB
+925,Biotope mit landwirtschaftlicher Nutzung - Dauergrünland/Flächen mit LPR-Extensivierungsvertrag,Biotopes with agricultural use,environmental_protection,3311000000.0,0,DE_BWB
+924,Biotope ohne landwirtschaftliche Nutzung (AUKM),Contract nature conservation without direct payment,environmental_protection,3311000000.0,0,DE_BWB
+575,Blühfläche,Flowering area (only to be used for areas with AUM-BS 1)/Flowering area (only AUM),field_margins_buffer_strips_flowering_areas,3310100000.0,0,DE_BWB
+575,Blühfläche (nur FAKT E8),Flowering area (only FAKT E8),field_margins_buffer_strips_flowering_areas,3310100000.0,0,DE_BWB
+426,"Bockshornklee, Schabziger Klee","Fenugreek, blue fenugreek",fenugreek,3301020400,0,DE_BWB
+65,Brache mit Honigpflanzen ÖVF,fallow land öVF honey plants (species rich in pollen and nectar),fallow_land_not_crop,3301110000.0,0,DE_BWB
+590,Brache mit jährlicher Neueinsaat von Blühmischungen (inkl. überjähriger FAKT-Blühmischungen),Fallow with annual sowing of flower mix,fallow_land_not_crop,3301110000.0,0,DE_BWB
+590,Brache mit jährlicher Neueinsaat von Blühmischungen (nur FAKT E7),Fallow land with annual reseeding of flowering mixtures (only FAKT E7),fallow_land_not_crop,3301110000.0,0,DE_BWB
+513,Braunellen,Braunellen,flowers_ornamental_plants,3301080000.0,0,DE_BWB
+709,Brennnesseln,Nettles (great nettle)/Nettles (large nettles),nettles,3301061225,0,DE_BWB
+615,Brunnenkresse,Watercress,cress,3301210300.0,0,DE_BWB
+182,Buchweizen,Buckwheat,buckwheat,3301150200,0,DE_BWB
+852,Chinaschilf (Miscanthus),Chinese reed / Miscanthus,miscanthus_silvergrass,3301083000,0,DE_BWB
+750,Dahlien (Garten-Dahlie),Dahlias (Garden Dahlia),dahlia,3301081200.0,0,DE_BWB
+592,Dauergrünland aus der Erzeugung genommen,Permanent grassland withdrawn from production within the meaning of Art. 4 para. 1 letter c) ii) Regulation 1307/2013/Permanent grass land suspendet from production,pasture_meadow_grassland_grass,3302000000.0,0,DE_BWB
+593,Dauerkultur aus der Erzeugung genommen,DK removed from production,permanent_crops_perennial,3303000000.0,0,DE_BWB
+651,"Dill, Gurkenkraut","Dill, cucumber herb",anethum_dill,3301061203.0,0,DE_BWB
+113,Durum/Sommerhartweizen,Summer durum wheat / durum,spring_durum_hard_wheat,3301010202,0,DE_BWB
+112,Durum/Winterhartweizen,Winter hard wheat / durum,winter_durum_hard_wheat,3301010201,0,DE_BWB
+594,Einjährige Brache mit Honigpflanzen nicht ÖVF,Honey plants used fallow land (species rich in pollen and nectar) -annual,fallow_land_not_crop,3301110000,0,DE_BWB
+210,Erbsen zur Körnergewinnung,Peas (fresh / table peas free range)/Peas for grain production,peas,3301020600,0,DE_BWB
+240,Erbsen/Bohnen - Gemenge,Peas beans/Mixed peas / beans,legumes_dried_pulses_protein_crops,3301020000,3,DE_BWB
+707,Erdbeeren,Strawberries,strawberries,3301130000,0,DE_BWB
+429,Esparsette,Esparsette,esparsette_onobrychis,3301020300,0,DE_BWB
+708,Färberdistel/Saflor,Safflower,safflower,3301083900,0,DE_BWB
+72,Feldgehölze ÖVF (CC-LE),Field groves ÖVF (CC-LE),tree_lines,3310300000.0,0,DE_BWB
+78,Feldraine ÖVF (CC-LE),Field margins ÖVF (CC-LE),field_margins_buffer_strips_flowering_areas,3310100000.0,0,DE_BWB
+58,Feldrand/Pufferstreifen ÖVF AL,Buffer strips ecological preference zones permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000.0,0,DE_BWB
+57,Feldrand/Pufferstreifen ÖVF GL,Buffer strips ecological preference zones permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000.0,0,DE_BWB
+636,Feldsalate einschl. Ackersalat und Rapunzel,Lamb's lettuce including field lettuce and rapeseed,lambs_lettuce_rapunzel,3301310500.0,0,DE_BWB
+77,Fels-und Steinriegel ÖVF (CC-LE),"Rock and stone bar, natural petrified area CC",stone_walls,3310600000.0,0,DE_BWB
+648,Fenchel (Gemüse-/Körnerfenchel),Fennel (vegetable/grain fennel),fennel,3301170000.0,0,DE_BWB
+796,"Fetthenne, Mauerpfeffer (Sedum)","Stonecrop, Stonecrop (Sedum)",stonecrop,3301084600.0,0,DE_BWB
+73,Feuchtgebiete ÖVF (CC-LE),Wetlands ÖVF (CC-LE),wetlands,3310400000.0,0,DE_BWB
+961,Flächen mit LPR-Pflegeverpflichtung auf landwirtschaftlicher Fläche (nur bei LPR-Code 209/309),Areas with LPR maintenance obligations on agricultural land (only for LPR code 209/309),environmental_protection,3311000000.0,0,DE_BWB
+413,Futterrüben (Runkelrüben),Fodder beet / beetroot,mangelwurzel_fodder_beet,3301290400,0,DE_BWB
+635,Gartenbohne,French bean,beans,3301020100.0,0,DE_BWB
+617,Gartenkresse,Garden cress,cress,3301210300.0,0,DE_BWB
+630,Gartenkürbis einschl.  Zucchini und Zierkürbis,Garden squash including zucchini and ornamental squash,pumpkin_squash_gourd,3301140400.0,3,DE_BWB
+618,"Gartenrettiche (Weiße/rote Rettiche, Ölrettich, Radieschen)","Garden radishes (white/red radishes, oil radishes, radishes)",radish,3301290600.0,0,DE_BWB
+250,Gemenge Leguminosen/Getreide,Mixture of legumes / grain,cereal_legume_mix,3301091200.0,1,DE_BWB
+610,Gemüse,vegetables,fresh_vegetables,3301070000,0,DE_BWB
+46,Gemüse in Substrat/ohne Bodenkontakt,Vegetables in substrate / without soil contact,fresh_vegetables,3301070000,0,DE_BWB
+211,"Gemüseerbse (Markerbse, Schalerbse, Zuckererbse)",Vegetable pea (marrow pea/Vegetable pea,peas,3301020600,0,DE_BWB
+613,Gemüsekohl,Vegetable cabbage,brassica_oleracea_cabbage,3301210200,0,DE_BWB
+620,"Gemüseraps (Raps, Steckrübe, Kohlrübe)","Vegetable rape (rapeseed, turnip, swede)",swede_rutabaga,3301210500.0,0,DE_BWB
+649,Gemüserübsen,Vegetable turnips,turnips,3301290800.0,0,DE_BWB
+745,Gladiolen (Gartengladiole),Gladiolus (garden gladiolus),gladiolus_gladioli,3301082100.0,0,DE_BWB
+434,Gras-Leguminosen Gemisch (Leguminose überwiegt),Grass-legume mixture (legume predominates),legume_grass_mix,3301090500.0,3,DE_BWB
+912,Grassamenvermehrung,Grass seed propagation,temporary_grass,3301090100.0,0,DE_BWB
+701,Hanf,hemp,hemp_cannabis,3301061000,0,DE_BWB
+833,Haselnüsse,Hazelnuts,hazelnuts_hazel,3303030200,0,DE_BWB
+70,"Hecken, Knicks ÖVF (CC-LE)",Hedges Or Knicks ÖVF (CC-LE),hedges,3310200000.0,0,DE_BWB
+30,"Hof-, Wege- und Gebäudeflächen","Courtyard, path and building areas",not_known_and_other,3399000000.0,0,DE_BWB
+856,Hopfen,Hops,hops,3301060200,0,DE_BWB
+859,"Hopfen, vorübergehend stillgelegt",Hops temporarily shut down (scaffolding still in place),hops,3301060200,0,DE_BWB
+427,"Hornklee, Hornschotenklee",bird's-foot trefoils,legumes_harvested_green,3301090300,0,DE_BWB
+454,Hutungen,low-yield permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+602,Kartoffeln (Speise),Potatoes (food),potatoes,3301030000,0,DE_BWB
+652,"Kerbel (Kerbel/echter Kerbel, Wiesenkerbel)","Chervil (chervil/true chervil, cow parsley)",chervil,3301061214.0,0,DE_BWB
+821,Kern- und Steinobst,Pome and stone fruit,orchards_fruits,3303010000,0,DE_BWB
+821,Kern- und Steinobst (Mischanbau),Pome and stone fruit (mixed cultivation),orchards_fruits,3303010000.0,0,DE_BWB
+825,"Kernobst z.B. Äpfel, Birnen","Pome fruit e.g. apples, pears",orchards_fruits,3303010000.0,0,DE_BWB
+645,Kichererbsen,Chickpeas,chickpeas,3301020200.0,0,DE_BWB
+422,"Kleegras, Luzerne-Gras-Gemenge",Clover grass,clover_grass_mix,3301090501.0,3,DE_BWB
+425,Klee-Luzerne-Gemisch,Clover and alfalfa mixture,legumes_harvested_green,3301090300.0,3,DE_BWB
+432,"Kleemischung aus NC 421, 427, 431 (stickstoffbindend)",Clover mixture from NC 421/Clover mixture (or box horn clover),clover,3301090303.0,7,DE_BWB
+184,Kolbenhirse,Millet,millet_sorghum,3301010900,0,DE_BWB
+40,Konditionalitäts-LE,Conditionality LE,non_productive_landscape_elements,3310000000,0,DE_BWB
+462,Koppelschafweiden,Paddock sheep pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+20,Koppelschafweiden,Paddock sheep pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+657,Koriander,coriander,coriander,3301061215.0,0,DE_BWB
+775,Kornblumen,Cornflowers,cornflowers,3301081000.0,0,DE_BWB
+171,Körnermais (CCM),Grain maize (CCM),cornflowers,3301081000.0,0,DE_BWB
+171,Körnermais/CCM,Grain Corn,grain_maize_corn_popcorn,3301010600,0,DE_BWB
+183,Körnersorghum,Sorghum,millet_sorghum,3301010900,0,DE_BWB
+650,Küchenkräuter/Heil-und Gewürzpflanzen,Kitchen herbs / medicinal and aromatic plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_BWB
+43,Kulturen in Substrat/ ohne Bodenkontakt,Cultures in substrate/without soil contact,other_arable_land_crops,3301990000.0,0,DE_BWB
+654,Kümmel (Echter Kümmel),Caraway (caraway),caraway,3301061211.0,0,DE_BWB
+841,KUP,Short rotation plantations/Short rotation coppice,short_rotation_coppice,3306090000.0,0,DE_BWB
+668,Lavendel,lavender,lavender_lavandula,3301061219.0,0,DE_BWB
+47,Leguminosenmischung (stickstoffbindend),Legumes mixture (nitrogen fixing),legumes_harvested_green,3301090300,0,DE_BWB
+393,Leindotter,Camelina,camelina,3301061500,0,DE_BWB
+658,Liebstöckel/Maggikraut,Lovage/Maggi herb,lovage_maggiplant,3301061221.0,0,DE_BWB
+222,Linsen (Speise-Linse),Lentils (food lentil),lentils,3301020500,0,DE_BWB
+292,Linsen (Speise-Linse),Lentils (food lentil),lentils,3301020500,0,DE_BWB
+684,Löwenzahn,Dandelion,dandelions,3301081400.0,0,DE_BWB
+927,LPR Verpflichtung auf nicht landw. Fläche,LPR commitment to non-agricultural Area,environmental_protection,3311000000,0,DE_BWB
+230,Lupinen,Lupins (sweet lupine/Lupins,sweet_lupins,3301020700,0,DE_BWB
+423,"Luzerne, Hopfenklee/Gelbklee, Bastardluzerne/Sandluzerne",alfalfa,legumes_harvested_green,3301090300.0,0,DE_BWB
+452,Mähweiden,Mowing pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+442,Mähweiden (Grünlandneueinsaat weniger als 5 Jahre zurückliegend),Mowing pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+172,Mais (Biogasanlage),Corn (biogas),green_silo_maize,3301090400.0,0,DE_BWB
+686,Malven (Wilde Malve),Mallow (Wild Mallow),malva,3301082800.0,0,DE_BWB
+639,"Mangold, Rote Beete/Rote Rübe","Swiss chard, beetroot/beetroot",chard,3301310100.0,3,DE_BWB
+737,Margeriten,Daisies,daisy_daisies,3301081300.0,0,DE_BWB
+682,Mariendisteln,Milk thistles,marian_thistles,3301061300.0,0,DE_BWB
+646,Meerrettich,horseradish,horseradish,3301210400.0,0,DE_BWB
+595,Mehrjährige Brache mit Honigpflanzen nicht ÖVF,Honey plants used fallow land (species rich in pollen and nectar) - perennial,fallow_land_not_crop,3301110000,0,DE_BWB
+66,Mehrjährige Brache mit Honigpflanzen ÖVF,fallow land öVF honey plants (species rich in pollen and nectar) -perennial,fallow_land_not_crop,3301110000,0,DE_BWB
+631,Melone,melon,watermelon,3301140500.0,0,DE_BWB
+672,"Minzen (Pfefferminze, Grüne Minze)","Mints (peppermint, spearmint)",mints_peppermint,3301061222.0,0,DE_BWB
+917,Mischkulturen,Mixed cultures,mixed_cropping,3301320000.0,1,DE_BWB
+51,Mischkulturen in Reihenanbau,Mixed crops in rows,mixed_row_cropping,3301321300.0,2,DE_BWB
+50,Mischkulturen mit Saatgutmischung,Mixed cultures with seed mix,mixed_cropping,3301320000.0,1,DE_BWB
+706,"Mohn (Schlafmohn, Backmohn)","Poppy (opium poppy, baking poppy)",poppy,3301060600.0,0,DE_BWB
+634,Möhre,carrot,carrots_daucus,3301290300.0,0,DE_BWB
+727,Narzissen / Osterglocken,Daffodils / daffodils,narcissus_daffodil,3301083300.0,0,DE_BWB
+772,"Nelken (Bartnelke, Land-/Edelnelke)","Cloves (bearded carnation, country/noble carnation)",carnation,3301080800.0,0,DE_BWB
+583,Nicht mehr landwirtschaftliche genutzte betriebsprämienfähige Fläche,Area eligible for farm subsidies but no longer in agricultural use,not_known_and_other,3399000000,0,DE_BWB
+841,Niederwald mit Kurzumtrieb (KUP lt. GAPDZV),Coppice forest with short rotation (KUP according to GAPDZV),short_rotation_coppice,3306090000.0,0,DE_BWB
+341,Öllein/Faserflachs,Flax/Flax (flax linseed),flax_linseed_oil,3301060702.0,0,DE_BWB
+664,"Oregano, Majoran","Oregano, marjoram",oregano,3301061226.0,0,DE_BWB
+643,Pastinaken,Parsnips,parsnips,3301290500.0,0,DE_BWB
+659,Petersilie,Parsley,parsley,3301061227.0,0,DE_BWB
+766,"Pfingstrosen/Päonien (Gemeine Pfingstrose, Strauch-Pfingstrose)","Peonies/Peonies (common peony, shrub peony)",peony_peonies,3301083400.0,0,DE_BWB
+866,Pflanzenmischung mit Hanf,Plant mixture with hemp,hemp_cannabis,3301061000,0,DE_BWB
+606,Pflanzkartoffeln,Plant potatoes,potatoes,3301030000,0,DE_BWB
+777,"Phacelia (als Hauptkultur, z.B. Saatgutvermehrung)",Phacelia (as main culture e.g. seed propagation)/Phacelia,phacelia,3301061400,0,DE_BWB
+980,Pilzbeet- und Gemüse in Gebäuden (nicht im Gewächshaus),Mushroom beds and vegetable plots indoors (not in greenhouses).,mushrooms_energy_genetically_modified_crops,3304000000,0,DE_BWB
+212,Platterbse,Flat pea,lathyrus_peavine,3301020800.0,0,DE_BWB
+187,Quinoa,Quinoa,quinoa,3301150300,0,DE_BWB
+845,Rebschulfläche,Vine nursery area,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_BWB
+851,Rhabarber,rhubarb,rhubarb,3301230000,0,DE_BWB
+629,Riesenkürbis,Giant pumpkin,pumpkin_squash_gourd,3301140400.0,0,DE_BWB
+853,Riesenweizengras/Szarvasi-Gras,Giant wheat grass / Szarvasi grass / deer grass/Giant wheat grass / Szarvasi grass,poaceae_grasses,3301090200,0,DE_BWB
+674,Ringelblumen (Garten-Ringelblume),Marigolds (Garden Marigold),calendula_marigold,3301061210.0,0,DE_BWB
+181,Rispenhirse,Millet/Millet (Panicum),millet_sorghum,3301010900,0,DE_BWB
+854,Rohrglanzgras,Reed grass,poaceae_grasses,3301090200,0,DE_BWB
+702,Rollrasen,rolled turf/Turf,sod_turf,3301090207,0,DE_BWB
+661,Rosmarin,rosemary,rosemary,3301061230.0,0,DE_BWB
+421,Rot-/Weiß-/Alexandriner-/Inkarnat-/Erd-/Schweden-/Perser Klee,different types of clover,clover,3301090303,0,DE_BWB
+919,Saatmais,Seed corn,grain_maize_corn_popcorn,3301010600,0,DE_BWB
+637,"Salat/Lattich, Lollo Rosso, Romana-Salat/Römischer Salat","Lettuce/Lettuce, Lollo Rosso, Romaine Lettuce/Roman Lettuce",salads_lettuce_leaf_vegetables,3301310000.0,0,DE_BWB
+627,Salatgurke,Cucumber,cucumber_pickle,3301140100.0,0,DE_BWB
+662,Salbei,sage,sage_chia,3301190000.0,0,DE_BWB
+678,Schafgarben (Gelbe Schafgarbe),Yarrows (Yellow Yarrow),yarrow,3301061239.0,0,DE_BWB
+647,Schwarzwurzeln,Salsify,black_salsify,3301290900.0,0,DE_BWB
+641,Sellerie,celery,celery,3301250000.0,0,DE_BWB
+616,"Senfrauke (Garten-Senfrauke, Rucola)","Mustard (Garden Mustard, Rocket)",rocket_arugula,3301310600.0,0,DE_BWB
+430,Seradella,serradella,serradella,3301084200,0,DE_BWB
+411,Silomais,Silage maize (as staple feed),green_silo_maize,3301090400,0,DE_BWB
+802,Silphium (Durchwachsene Silphie),Silphium (streaky Silphie/Silphium (through-growth,silphium_rosinweeds,3301084400,0,DE_BWB
+330,Sojabohnen,Soybeans,soy_soybeans,3301160000,0,DE_BWB
+120,Sommer-Dinkel,Summer spelt,spring_spelt,3301011002,0,DE_BWB
+119,Sommer-Emmer/ -Einkorn,Summer emmer / single grain/Summer emmer / Einkorn,spring_emmer,3301011202,0,DE_BWB
+132,Sommergerste,Summer barley,spring_barley,3301010402,0,DE_BWB
+143,Sommerhafer,Summer oats,spring_oats,3301010502,0,DE_BWB
+144,Sommermenggetreide,Summer mixed grain,spring_meslin,3301011102.0,7,DE_BWB
+312,Sommerraps,Summer rape,spring_rapeseed_rape,3301060402.0,0,DE_BWB
+122,Sommerroggen,Summer rye,spring_rye,3301010302,0,DE_BWB
+316,"Sommerrübsen (Rübsen, Rübsamen, Rübsaat)",Summer rapeseed (rapeseed/Summer turnip rape (also rapeseed),spring_turnip_rape,3301210702.0,0,DE_BWB
+460,Sommerschafweiden,Summer pastures for wandering sheep,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+157,Sommertriticale,Summer triticale,spring_triticale,3301010802,0,DE_BWB
+116,Sommerweichweizen,summer wheat/Summer soft wheat,spring_common_soft_wheat,3301010102,0,DE_BWB
+320,Sonnenblumen,sunflowers,sunflower,3301060500,0,DE_BWB
+850,Sonstige Dauerkulturen,Other permanent crops,permanent_crops_perennial,3303000000,0,DE_BWB
+801,Sonstige Energiepflanze (Acker),Energy crop of a genus/species not included in the current list,energy_crops,3304010000,0,DE_BWB
+290,Sonstige Hülsenfrüchte,Legume of a genus/species not included in the current list,legumes_dried_pulses_protein_crops,3301020000,0,DE_BWB
+829,"Sonstige Obstanlagen (z.B. Holunder, Sanddorn)",Other orchards e.g. elderberries/Other orchards,orchards_fruits,3303010000,0,DE_BWB
+390,Sonstige Ölfrüchte,Other Oil fruit,oilseed_crops,3301060800,0,DE_BWB
+835,sonstige Schalenfrüchte,other nuts,nuts,3303030000,0,DE_BWB
+624,"Spanischer Pfeffer einschl. Paprika, Chilli, Peperoni","Spanish pepper including paprika, chilli, hot peppers",capsicum,3301300000.0,0,DE_BWB
+860,Spargel,asparagus,aspargus,3301200000,0,DE_BWB
+638,Spinat,spinach,spinach,3301310800.0,0,DE_BWB
+601,Stärkekartoffeln,Starch potatoes,potatoes,3301030000,0,DE_BWB
+805,"Staudenknöterich, Igniscum",Knotweed,igniscum_candy,3304020100.0,0,DE_BWB
+431,Steinklee,Sweet clover,melilot,3301090304,0,DE_BWB
+826,"Steinobst z.B.: Kirschen, Pflaumen","Stone fruits e.g.: cherries, plums",orchards_fruits,3303010000.0,0,DE_BWB
+563,Stillgelegte Ackerflächen nach LPR,arable land set aside according LPR,fallow_land_not_crop,3301110000.0,0,DE_BWB
+567,Stillgelegte Dauergrünlandflächen nach LPR,Set-aside permanent grassland areas according to LPR,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+54,Streifen am Waldrand (ohne Produktion) ÖVF,Strip at the edge of the forest (Without production) ÖVF,field_margins_buffer_strips_flowering_areas,3310100000.0,0,DE_BWB
+481,Streuobst (ohne Wiesennutzung),Orchards without grassland use/Orchards without Permanent grassland use,orchards_fruits,3303010000,0,DE_BWB
+458,Streuwiesen,Scattered meadows,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+803,Sudangras,Sudan grass,poaceae_grasses,3301090200,0,DE_BWB
+605,Süßkartoffeln,sweet potato,sweet_potatoes,3301040000,0,DE_BWB
+705,Tabak,Virginian tobacco,tobacco,3301060100,0,DE_BWB
+848,Tafeltrauben,table grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_BWB
+669,Thymian,thyme,thyme,3301061237.0,0,DE_BWB
+622,Tomaten,Tomatoes,tomato,3301280000.0,0,DE_BWB
+604,Topinambur,Topinambur,topinambur_jerusalem_artichoke,3301180000,0,DE_BWB
+76,"Trockenmauer, Lesesteinwälle ÖVF (CC-LE)","Natural, stone or dry stone wall CC",not_known_and_other,3399000000,0,DE_BWB
+865,Trüffel,truffle,truffle,3304040000.0,0,DE_BWB
+746,Tulpen (Garten-Tulpe),Tulips (Garden Tulip),tulips,3301084900.0,0,DE_BWB
+75,"Tümpel, Sölle, Dolinen ÖVF (CC-LE)",Ponds sinkholes and doline CC,wetlands,3310400000.0,0,DE_BWB
+996,"Unbe. Mieten-, Stroh-, Futter- u. Dung. auf AL","Unbelievable Rent, straw, fodder and manure. on AL",not_known_and_other,3399000000.0,0,DE_BWB
+994,"Unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf DGL","Unpaved rental, straw, fodder and manure storage areas on DGL",not_known_and_other,3399000000.0,0,DE_BWB
+49,unbestockte Obstbaufläche,Flowering mixture for biogas,other_arable_land_crops,3301990000,0,DE_BWB
+844,Unbestockte Rebfläche,Unplanted vineyard (no underplanting),vineyards_wine_vine_rebland_grapes,3303060000,0,DE_BWB
+914,Versuchsflächen mit mehreren beihilfefähigen Kulturarten,Trial plots with several eligible crops/Trial areas (only direct payment possible),other_arable_land_crops,3301990000,0,DE_BWB
+804,Virginiamalve/Sida,Sida (Virginia Mallow),sida_virginia_mallow,3304030000,0,DE_BWB
+834,Walnüsse,Walnuts,walnuts,3303030600,0,DE_BWB
+676,Wegeriche (Spitzwegerich),Plantains (ribwort plantain),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299.0,0,DE_BWB
+453,Weiden,Pastures and alpine pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+443,Weiden (Grünlandneueinsaat weniger als 5 Jahre zurückliegend),pastures,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+619,"Weißer Senf, Gelber Senf","White mustard, yellow mustard",mustard,3301210100.0,0,DE_BWB
+221,"Wicken (Pannonische, Zottelwicke, Saatwicke)",Vetches,vetches,3301090305,0,DE_BWB
+451,Wiesen (einschl. Streuobstwiesen),grasslands,pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+441,Wiesen (Grünlandneueinsaat weniger als 5 Jahre zurückliegend),Meadows (grassland reseeding under AUKM),pasture_meadow_grassland_grass,3302000000,0,DE_BWB
+871,Wildpflanzenmischung zur Energieerzeugung (FAKT E14),Wild plant mixture for energy production (FACT E14),energy_crops,3304010000.0,0,DE_BWB
+913,Wildsamenvermehrung,Wild seed propagation,arable_land_seed_seedlings,3301100000.0,0,DE_BWB
+114,Winter-Dinkel,Winter spelt,winter_spelt,3301011001,0,DE_BWB
+112,Winterdurum (Hartweizen),Winter durum (durum wheat),winter_durum_hard_wheat,3301010201.0,0,DE_BWB
+118,Winter-Emmer/ -Einkorn,Winter emmer / single grain/Winter emmer / Einkorn,winter_emmer,3301011201,0,DE_BWB
+131,Wintergerste,Winter barley,winter_barley,3301010401,0,DE_BWB
+142,Winterhafer,Winter oats,winter_oats,3301010501,0,DE_BWB
+125,Wintermenggetreide,Winter mixed grain,winter_meslin,3301011101.0,0,DE_BWB
+311,Winterraps,Winter rape,winter_rapeseed_rape,3301060401,0,DE_BWB
+121,Winterroggen,Winter rye,winter_rye,3301010301,0,DE_BWB
+315,"Winterrübsen (Rübsen, Rübsamen, Rübsaat)",Winter rape (oil radish/Winter turnip rape (also rapeseed),winter_turnip_rape,3301210701.0,0,DE_BWB
+156,Wintertriticale,Winter triticale,winter_triticale,3301010801,0,DE_BWB
+115,Winterweichweizen,Winter soft wheat,winter_common_soft_wheat,3301010101,0,DE_BWB
+44,Wurzelzichorien,Root chicory,chicory_chicories,3301310200,0,DE_BWB
+644,"Zichorien/Wegwarten (Chicoree, Radiccio, kraus-/ganzblättrige Endivie)",Chicory / Wegwarten (chicory/Chicories,chicory_chicories,3301310200,0,DE_BWB
+720,Zierpflanzen,Ornamental plants (including flowers to pick yourself),flowers_ornamental_plants,3301080000.0,0,DE_BWB
+43,Zierpflanzen in Substrat/ohne Bodenkontakt,Ornamental plants in substrate / without soil contact,flowers_ornamental_plants,3301080000.0,0,DE_BWB
+10,Zuckermais,sweet corn,grain_maize_corn_popcorn,3301010600,0,DE_BWB
+174,Zuckermais,sweet corn,grain_maize_corn_popcorn,3301010600,0,DE_BWB
+628,Zuckermelone,,melon,3301140300.0,0,DE_BWB
+603,Zuckerrüben,Sugar beet,sugar_beet,3301290700,0,DE_BWB
+633,"Zwiebel einschl. Knoblauch, Schnittlauch und Bärlauch",,alliums,3301220000.0,0,DE_BWB

@@ -1,0 +1,711 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+528,[ble,Apples,apples,3303010200,0,DK
+215,[rtehelsæd,Peas wholecrop,peas,3301020600,0,DK
+30,[rter,Peas,peas,3301020600,0,DK
+424,[rter til konsum,Peas consumption,peas,3301020600,0,DK
+904,]bne arealer i skov,Open areas in forest,tree_wood_forest,3306000000,0,DK
+900,\vrige afgrøder,other crops,other_arable_land_crops,3301990000,0,DK
+500,0,0,not_known_and_other,3399000000,0,DK
+312,20-årig udtagning,20-year set aside,fallow_land_not_crop,3301110000,0,DK
+313,20-årig udtagning af agerjord med frivillig skovrejsning,20-year set-aside of arable land with voluntary afforestation,afforestation_reforestation,3306010000,0,DK
+313,20-årig udtagning me,20-year set-aside w… (truncated),afforestation_reforestation,3306010000,0,DK
+316,"20-årig Udtagning med fastholdelse, ej landbrugsareal","20-year Extraction with retention, not agricultural land",fallow_land_not_crop,3301110000,0,DK
+313,20-årig udtagning med skov,20-year sampling with forest,afforestation_reforestation,3306010000,0,DK
+314,20-årig udtagning med tilsagn om skovrejsning,20-year set aside with scheme of forest establiment from NST,afforestation_reforestation,3306010000,0,DK
+314,20-årig udtagning med tilsagn om skovrejsning fra NST,20-year extraction with commitment to afforestation from NST,afforestation_reforestation,3306010000,0,DK
+904,Åbne arealer i skov,Open areas in forest,tree_wood_forest,3306000000,0,DK
+528,Æbler,Apples,apples,3303010200,0,DK
+528,Æbler,Apples,apples,3303010200,0,DK
+215,Ærtehelsæd,Peas wholecrop,peas,3301020600,0,DK
+215,Ærtehelsæd,Peas wholecrop,peas,3301020600,0,DK
+30,Ærter,Peas,peas,3301020600,0,DK
+30,Ærter,Peas,peas,3301020600,0,DK
+424,"Ærter, konsum",Peas consumption,peas,3301020600,0,DK
+424,"Ærter, konsum",Peas consumption,peas,3301020600,0,DK
+906,Afmeldte arealer,Deregistered areas,not_known_and_other,3399000000,0,DK
+541,Agurk,Cucumber,cucumber_pickle,3301140100,0,DK
+541,Agurker,Cucumbers,cucumber_pickle,3301140100,0,DK
+114,Alm. rapgræsfrø,Rough bluegrass,poaceae_grasses,3301090200,0,DK
+905,Anden anvendelse på,Other use on,not_known_and_other,3399000000,0,DK
+905,Anden anvendelse på tilsagnsarealer,Other use on commitment areas,not_known_and_other,3399000000,0,DK
+36,Anden bælgsæd til modenhed,Second leguminous seed to maturity,legumes_dried_pulses_protein_crops,3301020000,0,DK
+50,Anden bredbladet afg,Other broadleaf crop,other_arable_land_crops,3301990000,0,DK
+50,Anden bredbladet afgrøde,Other broadleaf crop,other_arable_land_crops,3301990000,0,DK
+532,Anden buskfrugt,Other shrub fruit,shrubberries_shrubs,3303080000,0,DK
+532,Anden buskfrugt.,Other bush fruit.,shrubberries_shrubs,3303080000,0,DK
+181,Anden oliefrøart,Other oilseed species,oilseed_crops,3301060800,0,DK
+580,Anden skovdrift,Other forestry operations,tree_wood_forest,3306000000,0,DK
+531,Anden træfrugt,Other tree fruit,orchards_fruits,3303010000,0,DK
+669,Andet havefrø,Other garden seed,other_arable_land_crops,3301990000,0,DK
+126,Andet markfrø til udsæd,Other field seed for sowing,other_arable_land_crops,3301990000,0,DK
+508,Andre af slægten Vaccinium,Others of the genus Vaccinium,berries_berry_species,3303020000,0,DK
+800,Andre arealer i skovblokke,Other areas in forest blocks,tree_wood_forest,3306000000,0,DK
+543,Andre grøntsager,Other vegetables,fresh_vegetables,3301070000,0,DK
+162,"Andre industriafgr.,","Other industry departments,",other_industrial_crops,3301069900,0,DK
+162,"Andre industriafgr., herunder rodfrugter","Other industrial sectors, including root vegetables",other_industrial_crops,3301069900,0,DK
+162,Andre industriafgr./rodfr.,Other industrial degr./rootfr.,other_industrial_crops,3301069900,0,DK
+17,"Andre kornarter, eft",Other autumn-sown cereals,winter_unspecified_cereals,3301011501,0,DK
+17,"Andre kornarter, efterårssået","Other cereals, sown in autumn",winter_unspecified_cereals,3301011501,0,DK
+4,"Andre kornarter, vår","Other cereals, spring",other_cereals,3301019900,0,DK
+4,"Andre kornarter, vårsået","Other cereals, spring sown",other_cereals,3301019900,0,DK
+400,Asieagurker,pickles,cucumber_pickle,3301140100,0,DK
+400,Asier,pickles,cucumber_pickle,3301140100,0,DK
+401,Asparges,Asparagus,asparagus,3301200000,0,DK
+427,Babyleaves,Babyleaves,salads_lettuce_leaf_vegetables,3301310000,0,DK
+121,"Bælgplanter, frø",Ley legumes,legumes_dried_pulses_protein_crops,3301020000,0,DK
+54,Bælgsæd blanding,Legume mixture,legumes_dried_pulses_protein_crops,3301020000,1,DK
+36,"Bælgsæd, andre typer","Legumes, other types",legumes_dried_pulses_protein_crops,3301020000,0,DK
+36,"Bælgsæd, andre typer til modenhed","Legumes, other types to maturity",legumes_dried_pulses_protein_crops,3301020000,0,DK
+36,"Bælgsæd, andre typer til modenhed blanding",Legumes other types for maturity mixing,legumes_dried_pulses_protein_crops,3301020000,1,DK
+35,"Bælgsæd, flerårig","Legume, perennial",legumes_dried_pulses_protein_crops,3301020000,0,DK
+35,"Bælgsæd, flerårig blanding",Legumes perennial mixture,legumes_dried_pulses_protein_crops,3301020000,1,DK
+589,Bæredygtig skovdrift,Sustainable forestry,tree_wood_forest,3306000000,0,DK
+590,Bæredygtig skovdrift,Sustainable forestry,tree_wood_forest,3306000000,0,DK
+590,Bæredygtig skovdrift i Natura 2000-område,Sustainable forestry in Natura 2000 area,tree_wood_forest,3306000000,0,DK
+535,Bærmispel,Berry medlar fruit,orchards_fruits,3303010000,0,DK
+921,Bar jord,Bare soil,fallow_land_not_crop,3301110000,0,DK
+125,Bederoefrø,Beetroot seeds,beetroot_beets,3301290200,0,DK
+342,Bestøverbrak,Pollen fallow,fallow_land_not_crop,3301110000,0,DK
+519,Blåbær,Blueberry,blueberry,3303020400,0,DK
+656,"Bladbedefrø, rødbede","Beetroot seeds, beetroot",beetroot_beets,3301290200,0,DK
+656,"Bladbedefrø, rødbedefrø",Beetroot seeds beetroot seeds,beetroot_beets,3301290200,0,DK
+430,Bladpersille,Parsley,parsley,3301061227,0,DK
+402,Bladselleri,Celery leaves,leaf_celery,3301250200,0,DK
+539,Blandet frugt,Mixed fruit,orchards_fruits,3303010000,0,DK
+539,Blandet støtteberett,Mixed eligible fruit,orchards_fruits,3303010000,0,DK
+539,Blandet støtteberettiget frugt,Mixed eligible fruit,orchards_fruits,3303010000,0,DK
+17,Blanding af efterårssåede arter,Mixture of autumn sown species,winter_unspecified_cereals,3301011501,1,DK
+17,Blanding af efterårssåede kornarter,Mixture of autumn-sown cereals,winter_unspecified_cereals,3301011501,1,DK
+126,Blanding af markfrø til udsæd,Mixture of field seeds for sowing,other_arable_land_crops,3301990000,1,DK
+182,Blanding af oliearter,Mixture of oil species,oilseed_crops,3301060800,1,DK
+230,"Blanding af vårkorn, grønkorn",Mixture of spring cereals green grains,unspecified_cereals_cut_green,3301091100,1,DK
+4,Blanding af vårsåede arter,Mixture of spring-sown species,spring_unspecified_cereals,3301011502,1,DK
+4,Blanding af vårsåede kornarter,Mixture of spring-sown cereals,spring_unspecified_cereals,3301011502,1,DK
+235,"Blanding af vinterkorn, grønkorn",Mixture of winter grains green grains,unspecified_cereals_cut_green,3301091100,1,DK
+51,"Blanding bredbladet afgrøde, frø/kerne",Mixture of broad-leaved crops (seed/grain),other_arable_land_crops,3301990000,1,DK
+162,"Blanding, andre industriafgr.",Mixture other industrial crops,other_industrial_crops,3301069900,1,DK
+224,"Blandkorn, efterårss","Mixed grain, autumn",winter_unspecified_cereals,3301011501,0,DK
+224,"Blandkorn, efterårssået helsæd","Mixed grain, autumn-sown whole seed",winter_unspecified_cereals,3301011501,0,DK
+213,"Blandkorn, vårsået,","Mixed grain, spring sown,",spring_unspecified_cereals,3301011502,0,DK
+213,"Blandkorn, vårsået, helsæd",Mixed cereal spring sown wholecrop,spring_unspecified_cereals,3301011502,0,DK
+403,Blomkål,Cauliflower,cauliflower,3301210204,0,DK
+523,Blomme med undervæks,Plum with undergrowth,plums,3303011300,0,DK
+523,Blomme med undervækst af græs,Plum with undergrowth of grass,plums,3303011300,0,DK
+522,Blomme uden undervæk,"Plum, without undergrowth",plums,3303011300,0,DK
+522,Blomme uden undervækst af græs,Plum without undergrowth of grass,plums,3303011300,0,DK
+522,"Blomme, uden undervækst","Plum, without undergrowth",plums,3303011300,0,DK
+523,"Blomme, undervækst","Plum, undergrowth",plums,3303011300,0,DK
+324,Blomsterbrak,Fallow with flowers,fallow_land_not_crop,3301110000,4,DK
+668,Blomsterfrø,Flower seeds,flowers_ornamental_plants,3301080000,0,DK
+502,Blomsterløg,Flower bulbs,flowers_ornamental_plants,3301080000,0,DK
+53,Boghvede,Buckwheat,buckwheat,3301150200,0,DK
+426,"Bønner, andre","Beans, others",beans,3301020100,0,DK
+344,"Brak langs vandløb og søer, forårsslåning (alternativ til efterafgrøder)","Fallow land along streams and lakes, spring mowing (alternative to fallow crops)",fallow_land_not_crop,3301110000,0,DK
+348,"Brak langs vandløb og søer, forårsslåning (til målrettet kvælstofregulering)","Fallow land along streams and lakes, spring mowing (for targeted nitrogen regulation)",fallow_land_not_crop,3301110000,0,DK
+345,"Brak langs vandløb og søer, slåning (alternativ til efterafgrøder)","Fallow along streams and lakes,  mowing (alternative to cover crops)",fallow_land_not_crop,3301110000,0,DK
+345,"Brak langs vandløb og søer, sommerslåning (alternativ til efterafgrøder)","Fallow land along streams and lakes, summer mowing (alternative to fallow crops)",fallow_land_not_crop,3301110000,0,DK
+349,"Brak langs vandløb og søer, sommerslåning (til målrettet kvælstofregulering)","Fallow land along streams and lakes, summer mowing (for targeted nitrogen regulation)",fallow_land_not_crop,3301110000,0,DK
+338,"Brak, forårsslåning",Fallow spring mowing,fallow_land_not_crop,3301110000,0,DK
+347,"Brak, forårsslåning (til målrettet kvælstofregulering)","Fallow, spring mowing (for targeted nitrogen regulation)",fallow_land_not_crop,3301110000,0,DK
+310,"Brak, slåning","Fallow land, mowing",fallow_land_not_crop,3301110000,0,DK
+310,"Brak, sommerslåning",Fallow with summer mowing,fallow_land_not_crop,3301110000,0,DK
+346,"Brak, sommerslåning (til målrettet kvælstofregulering)","Fallow, summer mowing (for targeted nitrogen regulation)",fallow_land_not_crop,3301110000,0,DK
+320,Braklagte randzoner,Set-aside buffer strips,not_known_and_other,3399000000,0,DK
+404,Broccoli,Broccoli,broccoli,3301210202,0,DK
+517,Brombær,Blackberry,blackberry,3303020200,0,DK
+500,Buske og træer,Shrubs and trees,shrubberries_shrubs,3303080000,0,DK
+553,Centnergræskar,Giant pumpkin,pumpkin_squash_gourd,3301140400,0,DK
+650,Chrysanthemum Garlan,Chrysanthemum Garlan,chrysanthemum,3301080900,0,DK
+650,"Chrysanthemum Garland, frø",Chrysanthemum Garland seeds,chrysanthemum,3301080900,0,DK
+650,Chrysanthemum Garland.,Chrysanthemum Garland.,chrysanthemum,3301080900,0,DK
+161,Cikorierødder,Chicory roots,chicory_chicories,3301310200,0,DK
+564,Containerplads,Container area,not_known_and_other,3399000000,0,DK
+560,Containerplads 1 (fr,Container space 1 (fr,not_known_and_other,3399000000,0,DK
+560,Containerplads 1 (frugtbuske),Container space 1 (fruit bushes),not_known_and_other,3399000000,0,DK
+560,"Containerplads 1, frugtbuske","Container space 1, fruit bushes",not_known_and_other,3399000000,0,DK
+561,Containerplads 2 (en,Container space 2 (a,not_known_and_other,3399000000,0,DK
+561,Containerplads 2 (en-årige),Container space 2 (one-year-olds),not_known_and_other,3399000000,0,DK
+561,"Containerplads 2, en-årige","Container space 2, one-year-olds",not_known_and_other,3399000000,0,DK
+562,Containerplads 3 (st,Container space 3 (st,not_known_and_other,3399000000,0,DK
+562,Containerplads 3 (stauder og vedpl.),Container space 3 (perennials and firewood),not_known_and_other,3399000000,0,DK
+562,"Containerplads 3, stauder","Container space 3, perennials",not_known_and_other,3399000000,0,DK
+498,"Containerplads 4, vedplanter","Container space 4, trees",not_known_and_other,3399000000,0,DK
+405,"Courgette, squash",Courgette squash,zucchini_courgette,3301140600,0,DK
+651,Dildfrø,Dill seeds,anethum_dill,3301061203,0,DK
+651,Dildfrø.,Dill seeds.,anethum_dill,3301061203,0,DK
+326,"Ej landbrug, MSO, omlagt fra permanent græs",Environmental sensitive permanent grassland converted into non-agricultural area,pasture_meadow_grassland_grass,3302000000,0,DK
+594,El,Alder,other_tree_wood_forest,3306990000,0,DK
+596,Elefantgræs,Elephant grass,poaceae_grasses,3301090200,0,DK
+503,En- og to-årige plan,Annual and biennial plants,other_arable_land_crops,3301990000,0,DK
+503,En- og to-årige planter,Annual and biennial plants,other_arable_land_crops,3301990000,0,DK
+112,Engrapgræsfrø (markt,Kentucky bluegrass seed (ley type),poaceae_grasses,3301090200,0,DK
+112,Engrapgræsfrø (marktype),Kentucky bluegrass seed (ley type),poaceae_grasses,3301090200,0,DK
+113,Engrapsgræsfrø (plæn,Meadow grass seeds (lawn type),poaceae_grasses,3301090200,0,DK
+113,Engrapsgræsfrø (plænetype),Meadow grass seeds (lawn type),poaceae_grasses,3301090200,0,DK
+113,Engrapsgræsfrø (plæntype),Meadow grass seeds (lawn type),poaceae_grasses,3301090200,0,DK
+107,Engsvingelfrø,Meadow fescue seeds,festuca_fescue,3301090202,0,DK
+777,Ex-non-food brak,Ex-non-food fallow,fallow_land_not_crop,3301110000,0,DK
+35,Flerårig bælgsæd,Perennial leguminous seed,legumes_dried_pulses_protein_crops,3301020000,0,DK
+283,Fodergulerødder,Fodder carrots,carrots_daucus,3301290300,0,DK
+282,Fodermarvkål,Marrow stem kale,kale,3301210208,0,DK
+280,Fodersukkerroer,Sugar beet for fodder,sugar_beet,3301290700,0,DK
+200,Fragået mark,Abandoned field,fallow_land_not_crop,3301110000,0,DK
+202,"fragået mark, prod.skifte","left field, prod. change",fallow_land_not_crop,3301110000,0,DK
+267,Græs  under 50% kløv,Grass below 50% clover,clover_grass_mix,3301090501,0,DK
+267,"Græs  under 50% kløver, meget lavt udbytte","Grass under 50% clover, very low yield",clover_grass_mix,3301090501,0,DK
+267,"Græs  under 50% kløver/lucerne, meget lavt udbytte (omdrift)",Grass below 50% clover / alfalfa very low yield (rotation),clover_grass_mix,3301090501,0,DK
+266,Græs < 50% kløver ekstr. lavt udbytte,Grass < 50% clover extr. low yield,clover_grass_mix,3301090501,0,DK
+268,Græs < 50% kløver lavt udbytte,Grass < 50% clover low yield,clover_grass_mix,3301090501,0,DK
+267,Græs <50% kløver meget lavt udbytte,Grass <50% clover very low yield,clover_grass_mix,3301090501,0,DK
+306,"Græs i omdrift, uden udbetaling af økologi-tilskud",Grass in rotation without payment of organic subsidies,temporary_grass,3301090100,0,DK
+237,"Græs med kløver/lucerne, over 50 % bælgpl. (omdrift) efterårsudlagt i vinterkorn til grønkorn","Grass with clover/alfalfa, over 50% legumes. (rotation) autumn laid out in winter grain for green grain",legume_grass_mix,3301090500,1,DK
+260,"Græs med kløver/lucerne, under 50 % bælgpl. (omdrift)",Grass with clover / alfalfa less than 50% legumes rotation,legume_grass_mix,3301090500,1,DK
+236,"Græs med kløver/lucerne, under 50 % bælgpl. (omdrift) efterårsudlagt i vinterkorn til grønkorn","Grass with clover/alfalfa, less than 50% legumes. (rotation) autumn laid out in winter grain for green grain",legume_grass_mix,3301090500,1,DK
+284,Græs med vikke og an,"Grass with vetch and other leguminous plants, less than 50% legume.",legume_grass_mix,3301090500,1,DK
+284,"Græs med vikke og andre bælgplanter, under 50 % bælgpl.","Grass with vetch and other leguminous plants, less than 50% legume.",legume_grass_mix,3301090500,1,DK
+284,"Græs med vikke og andre bælgplanter, under 50 % bælgpl.
+","Grass with vetch and other leguminous plants, less than 50% legume.",legume_grass_mix,3301090500,1,DK
+,"Græs med vikke og andre bælgplanter, under 50%bælgpl.",Grass with vetches and other legumes less than 50% legumes,legume_grass_mix,3301090500,1,DK
+265,Græs og kl. græs slæt før vårsåede afg.,Grass and clover grass plain before spring sowing afg.,clover_grass_mix,3301090501,0,DK
+264,Græs og kl.græs uden norm,Grass and clover grass without the standard,clover_grass_mix,3301090501,0,DK
+264,Græs og kløvergræs u,Grass and clover grass without norm,clover_grass_mix,3301090501,1,DK
+264,Græs og kløvergræs uden norm,Grass and clover grass without norm,clover_grass_mix,3301090501,0,DK
+285,"Græs og kløvergræs uden norm, over 50 % kløver (omdrift)",Grass and clover grass without norm over 50% clover (rotation),clover_grass_mix,3301090501,1,DK
+264,"Græs og kløvergræs uden norm, under 50 % kløver (omdrift)",Grass and clover grass without norm below 50% clover (rotation),clover_grass_mix,3301090501,0,DK
+170,Græs til fabrik (omd,Grass for factory (rotation),temporary_grass,3301090100,0,DK
+170,Græs til fabrik (omdrift),Grass for factory (rotation),temporary_grass,3301090100,0,DK
+270,Græs til udegrise,Grass for outdoor pigs,temporary_grass,3301090100,0,DK
+270,"Græs til udegrise, omdrift",Grass for freerange pigs rotation,temporary_grass,3301090100,0,DK
+287,"Græs til udegrise, permanent",Grass for outdoor pigs permanent,pasture_meadow_grassland_grass,3302000000,0,DK
+270,Græs til udegrise.,Grass for outdoor pigs.,temporary_grass,3301090100,0,DK
+263,Græs uden kl. (omdrift),Grass without clover (rotational),temporary_grass,3301090100,0,DK
+263,Græs uden kløvergræs,Grass without clover (rotational),temporary_grass,3301090100,0,DK
+263,Græs uden kløvergræs (omdrift),Grass without clover (rotational),temporary_grass,3301090100,0,DK
+266,Græs under 50% kløve,Grass below 50% clover,clover_grass_mix,3301090501,0,DK
+268,Græs under 50% kløve,Grass below 50% clover,clover_grass_mix,3301090501,0,DK
+266,"Græs under 50% kløver, ekstremt lavt udbytte","Grass below 50% clover, extremely low yield",clover_grass_mix,3301090501,0,DK
+268,"Græs under 50% kløver, lavt udbytte","Grass under 50% clover, low yield",clover_grass_mix,3301090501,0,DK
+266,"Græs under 50% kløver/lucerne, ekstremt lavt udbytte (omdrift)",Grass below 50% clover / alfalfa extremely low yield (rotation),clover_grass_mix,3301090501,0,DK
+268,"Græs under 50% kløver/lucerne, lavt udbytte (omdrift)",Grass below 50% clover / alfalfa low yield (rotation),clover_grass_mix,3301090501,0,DK
+269,"Græs, rullegræs","Grass, turf",sod_turf,3301090207,0,DK
+269,"Græs, rullegræs (omd","Grass, turf (rotation)",sod_turf,3301090207,0,DK
+269,"Græs, rullegræs (omdrift)","Grass, turf (rotation)",sod_turf,3301090207,0,DK
+265,"Græs, slæt før vårså","Grass, plain before the spring-sown crop",temporary_grass,3301090100,0,DK
+265,"Græs, slæt før vårsået afgrøde","Grass, plain before the spring-sown crop",temporary_grass,3301090100,0,DK
+961,"Græs, udlæg/eftersl. eft.helsæd/tidl.frø","Grass, outlay/after eft.whole seed/old seed",pasture_meadow_grassland_grass,3302000000,0,DK
+962,"Græs, udlæg/eftersl. eft.korn/sildig frø","Grass, outlay/after eft. grain/herring seed",pasture_meadow_grassland_grass,3302000000,0,DK
+960,"Græs, udlæg/eftersl. efter grønkorn o.l","Grass, outlay/after after sorghum etc",pasture_meadow_grassland_grass,3302000000,0,DK
+170,Græs/kløvergr. til fabrik (omdrift),Grass/clover gr. to factory (circulation),temporary_grass,3301090100,0,DK
+511,Græskar,Pumpkin,pumpkin_squash_gourd,3301140400,0,DK
+511,Græskar.,Pumpkin.,pumpkin_squash_gourd,3301140400,0,DK
+121,Græsmarksbælgplanter,Grassland legumes,legumes_harvested_green,3301090300,0,DK
+406,Grønkål,Kale,kale,3301210208,0,DK
+657,Grønkålfrø,Green cabbage seeds,kale,3301210208,0,DK
+710,Grønkorn af hybridrug,Green grains of hybrid rye,green_cut_winter_rye,3301090601,0,DK
+701,Grønkorn af vårbyg,Green grain of spring barley,green_cut_spring_barley,3301090702,0,DK
+703,Grønkorn af vårhavre,Green grain of spring oats,green_cut_spring_oat,3301090802,0,DK
+702,Grønkorn af vårhvede,Green grain of spring wheat,green_cut_spring_wheat,3301090902,0,DK
+704,Grønkorn af vårrug,Green grain of spring rye,green_cut_spring_rye,3301090602,0,DK
+705,Grønkorn af vårtriticale,Green grains of spring triticale,green_cut_spring_triticale,3301091002,0,DK
+706,Grønkorn af vinterbyg,Green grain of winter barley,green_cut_winter_barley,3301090701,0,DK
+708,Grønkorn af vinterhavre,Green grains of winter oats,green_cut_winter_oat,3301090801,0,DK
+707,Grønkorn af vinterhvede,Green grain of winter wheat,green_cut_winter_wheat,3301090901,0,DK
+709,Grønkorn af vinterrug,Green grains of winter rye,green_cut_winter_rye,3301090601,0,DK
+711,Grønkorn af vintertriticale,Green grains of winter triticale,green_cut_winter_triticale,3301091001,0,DK
+702,Grønkron af vårhvede,Green crown of spring wheat,green_cut_spring_wheat,3301090902,0,DK
+450,"Grøntsager, andre","Vegetables, others",fresh_vegetables,3301070000,0,DK
+543,"Grøntsager, andre (drivhus)",Vegetables other (greenhouse),greenhouse_vegetables,3305010900,0,DK
+434,"Grøntsager, andre (friland)",Vegetables other (outdoor),fresh_vegetables,3301070000,0,DK
+450,"Grøntsager, blandinger",Vegetables mixtures,fresh_vegetables,3301070000,1,DK
+180,Gul sennep,White mustard,mustard,3301210100,0,DK
+407,Gulerod,Carrot,carrots_daucus,3301290300,0,DK
+658,Gulerødderfrø,Carrot seeds,carrots_daucus,3301290300,0,DK
+658,Gulerodsfrø,Carrot seeds,carrots_daucus,3301290300,0,DK
+42,Hamp,Hemp,hemp_cannabis,3301061000,0,DK
+527,Hassel,Hazel,hazelnuts_hazel,3303030200,0,DK
+527,Hassel (Corylus maxima),Hazel (Corylus maxima),hazelnuts_hazel,3303030200,0,DK
+490,"Hassel, træ (Corylus avellana)","Hazel, tree (Corylus avellana)",hazelnuts_hazel,3303030200,0,DK
+3,Havre,Oats,oats,3301010500,0,DK
+212,"Havre, helsæd","Oats, whole grain",oats,3301010500,0,DK
+665,Havrerodfrø,Oatmeal seeds,root_vegetables,3301290000,0,DK
+489,Havtorn,Sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,DK
+31,Hestebønner,horse beans,beans,3301020100,0,DK
+518,Hindbær,Raspberry,raspberry_raspberries,3303021000,0,DK
+507,"Hindbær, stiklingeopformering",Raspberries multiplication by cutting,raspberry_raspberries,3303021000,0,DK
+486,Hønsegård uden plantedække,Henyard with bare soil,not_known_and_other,3399000000,0,DK
+488,"Hønsegård, permanent græs",Henyard permanent grass,pasture_meadow_grassland_grass,3302000000,0,DK
+570,Humle,Hops,hops,3301060200,0,DK
+106,Hundegræsfrø,Dog grass seeds,temporary_grass,3301090100,0,DK
+115,"Hvenefrø, alm. og kr","Bentgrass seeds, plain. and creeping",poaceae_grasses,3301090200,0,DK
+115,"Hvenefrø, alm. og krybende","Bentgrass seeds, plain. and creeping",poaceae_grasses,3301090200,0,DK
+408,Hvidkål,White cabbage,white_cabbage,3301210212,0,DK
+534,Hyben,Rose hip,rose_hip_rosehip,3303021200,0,DK
+15,Hybridrug,Hybrid rye,winter_rye,3301010301,0,DK
+526,Hyld,Elder,elder_elderberry,3303080400,0,DK
+910,Ikke anmeldt mark,Not declared field,other_arable_land_crops,3301990000,0,DK
+997,Ikke kontrolleret afgrøde (kontrollørkode),Not controlled crop (inspector code),other_arable_land_crops,3301990000,0,DK
+361,Ikke støtteberettiget landbrugsareal,Farmland not warranted for subsidies,other_arable_land_crops,3301990000,0,DK
+921,Intern kode: Bar jord,Internal code: Bare soil,fallow_land_not_crop,3301110000,0,DK
+494,Japan kvæde,Japan quince,quinces,3303011500,0,DK
+513,Jordbær,Strawberry,strawberries,3301130000,0,DK
+429,"Jordskokker, konsum",Jerusalem artichokes comsumption,topinambur_jerusalem_artichoke,3301180000,0,DK
+584,Juletræer i fredsskov,Christmas trees in peace forest,christmas_trees,3306100000,0,DK
+583,Juletræer og pyntegr,Christmas trees and decorations,christmas_trees,3306100000,0,DK
+583,Juletræer og pyntegrønt,Christmas trees and greenery,christmas_trees,3306100000,0,DK
+584,Juletræer og pyntegrønt i fredskov,Christmas trees and decorative greenery in peace forest,christmas_trees,3306100000,0,DK
+583,Juletræer og pyntegrønt på landbrugsjord,Christmas trees and ornamental greenery on agricultural land,christmas_trees,3306100000,0,DK
+583,Juletræer/pyntegrønt,Christmas trees/greenery,christmas_trees,3306100000,0,DK
+584,Juletræer/pyntegrønt i fredskov,Christmas trees/decorative greenery in peace forest,christmas_trees,3306100000,0,DK
+659,Kålfrø (hvid- og rød,Cabbage seeds (white and red,brassica_oleracea_cabbage,3301210200,0,DK
+659,Kålfrø (hvid- og rødkål),Cabbage seeds (white and red cabbage),brassica_oleracea_cabbage,3301210200,0,DK
+659,Kålfrø (hvid- og rødkålfrø),Cabbage seeds (white and red cabbage seeds),brassica_oleracea_cabbage,3301210200,0,DK
+281,Kålroer,Swedes,swede_rutabaga,3301210500,0,DK
+653,Karsefrø,Cress seeds,cress,3301210300,0,DK
+653,Karsefrø.,Cress seeds,cress,3301210300,0,DK
+153,"Kartofler, andre",Potatoes others,potatoes,3301030000,0,DK
+156,"Kartofler, friteret/chips/pommes frites","Potatoes, fried/chips/French fries",potatoes,3301030000,0,DK
+150,"Kartofler, lægge-",Seed Potatoes (certified),potatoes,3301030000,0,DK
+149,"Kartofler, lægge- (certificerede)",Seed Potatoes (certified),potatoes,3301030000,0,DK
+150,"Kartofler, lægge- (egen opformering)",Seed potatoes (own propagation),potatoes,3301030000,0,DK
+155,"Kartofler, pulver/granules-","Potatoes, powder/granules",potatoes,3301030000,0,DK
+152,"Kartofler, spise","Potatoes, eat",potatoes,3301030000,0,DK
+152,"Kartofler, spise-",Potatoes consumption,potatoes,3301030000,0,DK
+152,"Kartofler, spise- (pakkeri, vejsalg)","Potatoes, edible (packing, road sales)",potatoes,3301030000,0,DK
+154,"Kartofler, spise- (proces, skrællet kogte)","Potatoes, edible (process, peeled cooked)",potatoes,3301030000,0,DK
+157,"Kartofler, spise- tidligt høstede med efterafgrøder","Potatoes, edible - early harvested with subsequent crops",early_season_potatoes,3301030100,0,DK
+151,"Kartofler, stivelses","Potatoes, starchy",potatoes,3301030000,0,DK
+151,"Kartofler, stivelses-",Potatoes starchy,potatoes,3301030000,0,DK
+538,Kastanje (ægte),Chestnut sweet,sweet_chestnuts,3303030500,0,DK
+27,Kikærter,Chickpeas,chickpeas,3301020200,0,DK
+409,Kinakål,Chinese cabbage,chinese_cabbage,3301210205,0,DK
+652,Kinesisk kålfrø,Chinese cabbage seeds,chinese_cabbage,3301210205,0,DK
+652,Kinesisk kålfrø.,Chinese cabbage seeds.,chinese_cabbage,3301210205,0,DK
+520,Kirsebær uden undervækst,Cherries without undergrowth,cherry_cherries,3303010400,0,DK
+521,Kirsebær undervækst,Cherry undergrowth,cherry_cherries,3303010400,0,DK
+261,Kl.græs >50% kl. (omdrift), clover grass over 50% clover(rotation),clover_grass_mix,3301090501,0,DK
+567,"Klima-lavbundsprojekt, national ordning ej Landbrugsstyrelsen","Climate lowland project,  national scheme not the Danish Agricultural Agency",environmental_protection,3311000000,0,DK
+566,"Klimaskovrejsning, national ordning ej Landbrugsstyrelsen","Climate forestry, national scheme not the National Board of Agriculture",tree_wood_forest,3306000000,0,DK
+277,Kløver til fabrik,Clover for factory,clover,3301090303,0,DK
+173,Kløver til slæt,Clover for mowing,clover,3301090303,0,DK
+173,Kløver til slæt.,Clover for the plain.,clover,3301090303,0,DK
+120,Kløverfrø,Clover seeds,clover,3301090303,0,DK
+174,Kløvergræs til fabri,Clover grass for factory,clover_grass_mix,3301090501,0,DK
+174,Kløvergræs til fabrik,Clover grass for factory,clover_grass_mix,3301090501,0,DK
+260,Kløvergræs under 50 pct. kløver (omdrift,Clover grass below 50 per cent. clover (rotation,clover_grass_mix,3301090501,1,DK
+261,"Kløvergræs, over 50%","Clover grass, over 50%",clover_grass_mix,3301090501,1,DK
+261,"Kløvergræs, over 50% kløver (omdrift)",Clover grass over 50% clover (rotation),clover_grass_mix,3301090501,1,DK
+963,"Kløvergræs, udlæg/eftersl.efter grønkorn","Clover grass, spread/follow-up after sorghum",clover_grass_mix,3301090501,0,DK
+964,"Kløvergræs, udlæg/efterslæt efter helsæd","Clover grass, outlay/backlog after whole seed",clover_grass_mix,3301090501,0,DK
+965,"Kløvergræs, udlæg/efterslæt efter korn","Clover grass, outlay/backlog after grain",clover_grass_mix,3301090501,0,DK
+260,"Kløvergræs, under 50","Clover grass, under 50",clover_grass_mix,3301090501,1,DK
+260,"Kløvergræs, under 50 % kløver (omdrift)","Clover grass, less than 50% clover (rotation)",clover_grass_mix,3301090501,1,DK
+410,Knoldselleri,Celeriac,celeriac,3301250100,0,DK
+122,Kommenfrø,Caraway seeds,caraway,3301061211,0,DK
+7,Korn + bælgsæd under,Grain + leguminous seed below,cereal_legume_mix,3301091200,1,DK
+7,Korn + bælgsæd under 50% bælgsæd,Cereals + legumes below 50% legumes,cereal_legume_mix,3301091200,1,DK
+18,Korn og bælgsæd (over 50 % bælgsæd),Cereals and pulses (over 50% pulses),cereal_legume_mix,3301091200,1,DK
+234,"Korn og bælgsæd, grø","Cereals and pulses, groats",cereal_legume_mix,3301091200,1,DK
+234,"Korn og bælgsæd, grønkorn, under 50% bælgsæd",Cereals and pulses green grains less than 50% pulses,cereal_legume_mix,3301091200,1,DK
+214,"Korn og bælgsæd, hel","Cereals and legumes, whole",cereal_legume_mix,3301091200,1,DK
+217,"Korn og bælgsæd, helsæd (over 50 % bælgsæd)","Cereals and legumes, whole grains (over 50% legumes)",cereal_legume_mix,3301091200,1,DK
+214,"Korn og bælgsæd, helsæd, under 50% bælgsæd",Cereals and legumes whole grains less than 50% legumes,cereal_legume_mix,3301091200,1,DK
+7,Korn/bælgsæd max. 50% bælgsæd,Grain/legume max. 50% leguminous seed,cereal_legume_mix,3301091200,1,DK
+234,"Korn/bælgsæd, grønkorn, max 50% bælgsæd","Cereal/legume seed, green grain, max 50% legume seed",cereal_legume_mix,3301091200,1,DK
+214,"Korn/bælgsæd, helsæd, max 50% bælgsæd","Grain/legume, whole grain, max 50% legume",cereal_legume_mix,3301091200,1,DK
+661,Kørvelfrø,Chervil seeds,chervil,3301061214,0,DK
+432,Krydderurter (undtagen persille og purløg),Herbs (excluding parsley and chives),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+433,"Krydderurter, andre","Herbs, others",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+432,"Krydderurter, støtte","Herbs, support",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+432,"Krydderurter, støtteberet.","Herbs, support beret.",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+432,"Krydderurter, støtteberettigede","Herbs, eligible",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+509,Kvæde,Quince,quinces,3303011500,0,DK
+150,Læggekartofler,Seed potatoes,potatoes,3301030000,0,DK
+591,Lavskov,Coppice forest,short_rotation_coppice,3306090000,0,DK
+591,Lavskov.,Lichen forest.,short_rotation_coppice,3306090000,0,DK
+26,Linser,Lentils,lentils,3301020500,0,DK
+411,Løg,Onion,onions,3301220400,0,DK
+172,Lucerne m/min 25% græs slet(+eget foder),Alfalfa m/min 25% grass completely (+ own feed),alfalfa_grass_mix,3301090509,1,DK
+171,Lucerne slæt + eget foder,Lucerne plain + own feed,alfalfa_lucerne,3301090301,0,DK
+273,Lucerne til fabrik,Lucerne to factory,alfalfa_lucerne,3301090301,0,DK
+262,"Lucerne, lucernegræs","Lucerne grass, alfalfa",alfalfa_grass_mix,3301090509,1,DK
+262,"Lucerne, lucernegræs >50% lucerne omdr.","Lucerne grass, 50% alfalfa (rotational)",alfalfa_grass_mix,3301090509,1,DK
+262,"Lucerne, lucernegræs, over 50% lucerne (omdrift)","Lucerne grass, 50% alfalfa (rotational)",alfalfa_grass_mix,3301090509,1,DK
+172,"Lucerne, over 25% gr","Lucerne grass, over 25% grass for slough incl. own feed",alfalfa_grass_mix,3301090509,1,DK
+172,"Lucerne, over 25% græs til slæt","Lucerne, over 25% grass for plain",alfalfa_grass_mix,3301090509,1,DK
+171,"Lucerne, slæt",Lucerne (cut),alfalfa_lucerne,3301090301,0,DK
+,"Lucernegræs, over 25 % græs til slæt inkl. egetfoder",Lucerne grass over 25% grass for mowing incl. own feed,alfalfa_grass_mix,3301090509,1,DK
+172,"Lucernegræs, over 25% græs til slæt inkl. eget foder","Lucerne grass, over 25% grass for slough incl. own feed",alfalfa_grass_mix,3301090509,1,DK
+262,"Lucernegræs, over 50% lucerne (omdrift)","Lucerne grass, 50% alfalfa (rotational)",alfalfa_lucerne,3301090301,0,DK
+499,Lukket system,Closed system,not_known_and_other,3399000000,0,DK
+549,Lukket system 1 (en-,Closed system 1 (en-,not_known_and_other,3399000000,0,DK
+549,Lukket system 1 (en-årige),Closed system 1 (one-year),not_known_and_other,3399000000,0,DK
+549,"Lukket system 1, en-årige","Closed system 1, one-year-old",not_known_and_other,3399000000,0,DK
+550,Lukket system 2 (sta,Closed system 2 (sta,not_known_and_other,3399000000,0,DK
+550,Lukket system 2 (stauder og vedpl.),Closed system 2 (perennials and wood),not_known_and_other,3399000000,0,DK
+550,"Lukket system 2, stauder","Closed system 2, perennials",not_known_and_other,3399000000,0,DK
+499,"Lukket system 3, vedplanter","Closed system 3, wood plants",not_known_and_other,3399000000,0,DK
+32,Lupin,Lupine,sweet_lupins,3301020700,0,DK
+903,Lysåbne arealer i sk,Light and open areas in wood,tree_wood_forest,3306000000,0,DK
+903,Lysåbne arealer i skov,Light and open areas in wood,tree_wood_forest,3306000000,0,DK
+903,"Lysåbne arealer, fredsskovspligtige","Light open areas, peace forest duty",tree_wood_forest,3306000000,0,DK
+662,Majroefrø,Turnip seeds,turnips,3301290800,0,DK
+5,Majs til modenhed,Maize for maturity,grain_maize_corn_popcorn,3301010600,0,DK
+19,Majs til modenhed med græsudlæg,Maize to maturity with grass cover,grain_maize_corn_popcorn,3301010600,0,DK
+216,Majshelsæd,Whole crop maize,grain_maize_corn_popcorn,3301010600,0,DK
+218,Majshelsæd med græsudlæg,Whole crop maize with grass cover,maize_with_undersowing,3301091900,1,DK
+552,Mandelgræskar,Garden pumpkin,pumpkin_squash_gourd,3301140400,0,DK
+334,"Markbræmme, på omdrift, forårsslåning","Field harrow, on rotation, spring mowing",pasture_meadow_grassland_grass,3302000000,0,DK
+328,"Markbræmme, på omdrift, med blomsterblanding","Field border, on rotation, with flower mix",field_margins_buffer_strips_flowering_areas,3310100000,1,DK
+327,"Markbræmme, på omdrift, slåning","Field border, rotational mowing",field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+327,"Markbræmme, på omdrift, sommerslåning","Field edge, on rotation, summer mowing",field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+126,"Markfrø til udsæd, a","Field seeds for sowing, other types",other_arable_land_crops,3301990000,0,DK
+126,"Markfrø til udsæd, andre typer","Field seeds for sowing, other types",other_arable_land_crops,3301990000,0,DK
+448,"Medicinpl., en- og t",Medicinal plants annual and biennial,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+448,"Medicinpl., en- og toårige",Medicinal plants annual and biennial,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+448,"Medicinpl., en- og toårige.",Medicinal plants annual and biennial,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+449,"Medicinpl., stauder","Medicinal plants, perennials and woody plants",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+449,"Medicinpl., stauder og vedplanter","Medicinal plants, perennials and woody plants",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+496,"Medicinpl., vedplanter","Medicinal plants, woody plants",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DK
+510,Melon,Melon,melon,3301140300,0,DK
+510,Melon.,Melon,melon,3301140300,0,DK
+604,MFO - El,MFO - El,tree_wood_forest,3306000000,0,DK
+605,MFO - Lavskov,MFO - Coppice forest,short_rotation_coppice,3306090000,0,DK
+602,MFO - Pil,MFO - Willow,willows_osiers,3306080000,0,DK
+603,MFO - Poppel,MFO - Poplar,populus,3306070000,0,DK
+603,MFO - Poppel (0-100 andre træer pr. ha),MFO - Poplar (0-100 other trees per hectare),populus,3306070000,0,DK
+606,MFO - Poppel (100-400 andre træer pr. ha),MFO - Poplar (100-400 other trees per hectare),populus,3306070000,0,DK
+319,MFO Vådområder eller lavbundsjorde med udtagning,MFO wetlands/lowlands with set-aside,wetlands,3310400000,0,DK
+343,MFO-bestøverbrak,MFO-fallow for melliferous plants,fallow_land_not_crop,3301110000,0,DK
+325,MFO-Blomsterbrak,MFO-fallow with flowers,fallow_land_not_crop,3301110000,4,DK
+328,MFO-bræmme med blomsterblanding,MFO-field margins with flower mix,field_margins_buffer_strips_flowering_areas,3310100000,1,DK
+334,"MFO-bræmme, forårsslåning",MFO field margin spring mowing,field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+329,"MFO-bræmme, miljøtilsagn",MFO-field margins with environmental scheme,field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+335,"MFO-bræmme, permanent græs, forårsslåning",MFO field margin permanent grass spring mowing,field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+337,"MFO-bræmme, permanent græs, miljøtilsagn","MFO field margin, permanent grass, environmental commitment",field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+336,"MFO-bræmme, permanent græs, sommerslåning",MFO field margin permanent grass summer mowing,field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+327,"MFO-bræmme, sommerslåning",MFO-field margins mowing/grazing,field_margins_buffer_strips_flowering_areas,3310100000,0,DK
+339,"MFO-brak, forårsslåning",MFO fallow spring mowing,fallow_land_not_crop,3301110000,0,DK
+308,"MFO-brak, sommerslåning",MFO-Fallow with summer mowing,fallow_land_not_crop,3301110000,0,DK
+319,"MFO-brak, Udtagning, ej landbrugsareal","MFO fallow, set-aside, not agricultural area",fallow_land_not_crop,3301110000,0,DK
+308,MFO-Slåningsbrak,MFO-Mowing fallow,fallow_land_not_crop,3301110000,0,DK
+323,MFO-udyrket areal ved vandboring,MFO-Uncultivated area next to water boreholes,wetland_buffers,3310700000,0,DK
+315,Miljøgræs brugt som udtagning,Environmental grass used as extraction,pasture_meadow_grassland_grass,3302000000,0,DK
+350,Miljøgræs med N-kvote,Environmental grass with N quota,pasture_meadow_grassland_grass,3302000000,0,DK
+315,Miljøgræs med udtagning,Environmental grass used as extraction,pasture_meadow_grassland_grass,3302000000,0,DK
+253,Miljøgræs MVJ-ordn. 1 (80 N),"Environmental grass (MVJ scheme 1, 80 N)",pasture_meadow_grassland_grass,3302000000,0,DK
+254,Miljøgræs MVJ-ordn. 2 (0 N),"Environmental grass (MVJ scheme 2, 0 N)",pasture_meadow_grassland_grass,3302000000,0,DK
+253,Miljøgræs MVJ-tilsag,"Environmental grass (MVJ scheme,)",pasture_meadow_grassland_grass,3302000000,0,DK
+254,Miljøgræs MVJ-tilsag,"Environmental grass (MVJ scheme, )",pasture_meadow_grassland_grass,3302000000,0,DK
+254,Miljøgræs MVJ-tilsagn (0 N),"Environmental grass (MVJ scheme, 0 N)",pasture_meadow_grassland_grass,3302000000,0,DK
+247,"Miljøgræs MVJ-tilsagn (0 N), omdrift","Environmental grass (MVJ scheme, 0 N, rotation)",temporary_grass,3301090100,0,DK
+254,"Miljøgræs MVJ-tilsagn (0 N), permanent","Environmental grass (MVJ scheme, 0 N, permanent)",pasture_meadow_grassland_grass,3302000000,0,DK
+253,Miljøgræs MVJ-tilsagn (80 N),"Environmental grass (MVJ scheme, 80 N)",pasture_meadow_grassland_grass,3302000000,0,DK
+253,"Miljøgræs MVJ-tilsagn (80 N), omdrift","Environmental grass (MVJ scheme, 80 N, temporary)",temporary_grass,3301090100,0,DK
+247,"Miljøtilsagn græs (0 N), omdrift","Environmental commitment grass (0 N), crop rotation",environmental_protection,3311000000,0,DK
+254,"Miljøtilsagn græs (0 N), permanent","Environmental commitment grass (0 N), permanent",environmental_protection,3311000000,0,DK
+318,"Miljøtilsagn, ej udtagning, ej landbrugsareal","Environmental commitment, no harvesting, no agricultural land",environmental_protection,3311000000,0,DK
+319,"Miljøtilsagn, udtagning, ej landbrugsareal","Environmental commitment, set-aside, non-agricultural land",environmental_protection,3311000000,0,DK
+321,"Miljøtiltag, ej land",Environmental measures not agricultural land,environmental_protection,3311000000,0,DK
+321,"Miljøtiltag, ej landbrugsarealer",Environmental measures not agricultural land,environmental_protection,3311000000,0,DK
+322,"Minivådområder, projekttilsagn",Mini-wetlands with project scheme,wetlands,3310400000,0,DK
+495,Morbær,Mulberry,berries_berry_species,3303020000,0,DK
+551,Moskusgræskar,Pumpkins,pumpkin_squash_gourd,3301140400,0,DK
+318,"MVJ ej udtagning, ej","MVJ not set-aside, not… (truncated)",environmental_protection,3311000000,0,DK
+318,"MVJ ej udtagning, ej landbrugsareal","MVJ not set-aside, not agricultural area",environmental_protection,3311000000,0,DK
+318,"MVJ ej udtagning, ej landbrugsjord","MVJ not set-aside, not agricultural land",environmental_protection,3311000000,0,DK
+319,"MVJ udtagning, ej la","MVJ set-aside, not agri… (truncated)",environmental_protection,3311000000,0,DK
+319,"MVJ udtagning, ej landbrugsjord","MVJ set-aside, not agricultural land",environmental_protection,3311000000,0,DK
+318,MVJ-ej udtagn. ej landbrugsjord,"MVJno set-aside, not agricultural land (truncated)",environmental_protection,3311000000,0,DK
+319,"MVJ-tilsagn, Udtagning, ej landbrugsareal","MVJ commitment, set-aside, not agricultural area",environmental_protection,3311000000,0,DK
+319,MVJ-udtagn. ej landbrugsjord,"MVJ set-aside, not agricultural land (truncated)",environmental_protection,3311000000,0,DK
+901,Naturarealer efter driftsloven,Natural areas according to the Operating Act,environmental_protection,3311000000,0,DK
+908,"Naturarealer, ansøgn","Natural areas, application",environmental_protection,3311000000,0,DK
+908,"Naturarealer, ansøgning om miljøtilsagn","Natural areas, application for environmental commitment",environmental_protection,3311000000,0,DK
+907,"Naturarealer, økologisk jordbrug",Nature areas organic farming,other_arable_land_crops,3301990000,0,DK
+902,Naturlignende arealer,Nature-like areas,environmental_protection,3311000000,0,DK
+581,Nyplantning i skov m,New planting in forest etc,afforestation_reforestation,3306010000,0,DK
+581,Nyplantning i skov med træhøjde under 3,New planting in forest with tree height below 3,afforestation_reforestation,3306010000,0,DK
+581,Nyplantning i skov med træhøjde under 3 m,Afforestation with treehight below 3 m,afforestation_reforestation,3306010000,0,DK
+586,Offentlig skovrejsni,Public forest tourism,afforestation_reforestation,3306010000,0,DK
+586,Offentlig skovrejsning,Public forest establisment,afforestation_reforestation,3306010000,0,DK
+920,Økologisk sommerbrak,Organic summer fallow,fallow_land_not_crop,3301110000,0,DK
+907,Økologiske naturarea,Ecological nature area,environmental_protection,3311000000,0,DK
+907,Økologiske naturarealer,Ecological natural areas,environmental_protection,3311000000,0,DK
+40,Oliehør,linseed,flax_linseed_oil,3301060702,0,DK
+655,"Olieræddike til frø, radisefrø",Oil radish for seed,oil_fodder_radish,3301210600,0,DK
+900,Øvrige afgrøder,Other crops,other_arable_land_crops,3301990000,0,DK
+529,Pærer,Pear,pears,3303011200,0,DK
+412,Pastinak,Parsnip,parsnips,3301290500,0,DK
+663,Pastinakfrø,Parsnip seeds,parsnips,3301290500,0,DK
+272,"Perm. græs fabrik, kløvergræs","Perm. grass factory, clover grass",pasture_meadow_grassland_grass,3302000000,0,DK
+259,"Perm. græs, fabrik, min. 6 t. udbytte","Perm. grass, factory, min. 6 t. yield",pasture_meadow_grassland_grass,3302000000,0,DK
+258,"Perm. græs, ø-støtte","Perm. grass, island support",pasture_meadow_grassland_grass,3302000000,0,DK
+276,Perm. græs/kløvergræs uden norm,Perm. grass/clover grass without norm,pasture_meadow_grassland_grass,3302000000,1,DK
+277,Perm. kløver til fabrik,Perm. clover to factory,clover,3301090303,0,DK
+274,Perm. lucerne min. 25% græs til fabrik,Permanent alfalfa 25% grass for factory,alfalfa_grass_mix,3301090509,1,DK
+273,Perm. lucerne til fabrik,Permanent alfalfa for factory,alfalfa_lucerne,3301090301,0,DK
+278,Perm.græs og lucernegræs >50% lucerne,Lucerne grass permanently alfalfa and 50% alfalfa,alfalfa_lucerne,3301090301,0,DK
+256,Perm.græs over 50 pct. kløver,"Permanent clover grass, more than 50% clover / alfalfa",clover,3301090303,1,DK
+251,Permanent græs lavt udbytte,"Permanent grasses, low yield",pasture_meadow_grassland_grass,3302000000,0,DK
+250,Permanent græs meget lavt udbytte,"Permanent grass, very low yield",pasture_meadow_grassland_grass,3302000000,0,DK
+252,Permanent græs normalt udbytte,"Permanent grass, normal yield",pasture_meadow_grassland_grass,3302000000,0,DK
+276,Permanent græs og kl,Permanent grass and clover grass,pasture_meadow_grassland_grass,3302000000,1,DK
+276,Permanent græs og kløver uden norm,Permanent grass and clover without norm,pasture_meadow_grassland_grass,3302000000,1,DK
+286,"Permanent græs og kløvergræs uden norm, over 50 % kløver",Permanent grass and clover grass without norm over 50% clover,clover_grass_mix,3301090501,1,DK
+276,"Permanent græs og kløvergræs uden norm, under 50 % kløver",Permanent grass and clover grass without norm below 50% clover,pasture_meadow_grassland_grass,3302000000,1,DK
+272,Permanent græs til f,Permanent grass for e.g,pasture_meadow_grassland_grass,3302000000,0,DK
+279,Permanent græs til f,Permanent grass for e.g,pasture_meadow_grassland_grass,3302000000,0,DK
+272,Permanent græs til fabrik,Permanent grass for factory,pasture_meadow_grassland_grass,3302000000,0,DK
+279,Permanent græs til fabrik,Permanent grass for factory,pasture_meadow_grassland_grass,3302000000,0,DK
+257,Permanent græs uden kløver,Permanent grass without clover,pasture_meadow_grassland_grass,3302000000,0,DK
+255,Permanent græs under 50. pct. kløver,"Permanent grass, less than 50% clover ",pasture_meadow_grassland_grass,3302000000,1,DK
+248,Permanent græs ved vandboring,Permanent grass by water borehole,pasture_meadow_grassland_grass,3302000000,0,DK
+259,"Permanent græs, fabr",Permanent grass factory over 6 tons,pasture_meadow_grassland_grass,3302000000,0,DK
+259,"Permanent græs, fabrik, over 6 tons",Permanent grass factory over 6 tons,pasture_meadow_grassland_grass,3302000000,0,DK
+251,"Permanent græs, lavt","Permanent grasses, low yield",pasture_meadow_grassland_grass,3302000000,0,DK
+251,"Permanent græs, lavt udbytte","Permanent grasses, low yield",pasture_meadow_grassland_grass,3302000000,0,DK
+250,"Permanent græs, mege","Permanent grass, very low yield",pasture_meadow_grassland_grass,3302000000,0,DK
+250,"Permanent græs, meget lavt udbytte","Permanent grass, very low yield",pasture_meadow_grassland_grass,3302000000,0,DK
+252,"Permanent græs, norm","Permanent grass, normal yield",pasture_meadow_grassland_grass,3302000000,0,DK
+252,"Permanent græs, normalt udbytte","Permanent grass, normal yield",pasture_meadow_grassland_grass,3302000000,0,DK
+258,"Permanent græs, ø-st","Perm. grass, island support",pasture_meadow_grassland_grass,3302000000,0,DK
+258,"Permanent græs, ø-støtte","Perm. grass, island support",pasture_meadow_grassland_grass,3302000000,0,DK
+256,"Permanent græs, over",Permanent clover grass over 50% clover / lucerne,pasture_meadow_grassland_grass,3302000000,0,DK
+256,"Permanent græs, over 50% kløver",Permanent clover grass over 50% clover / lucerne,pasture_meadow_grassland_grass,3302000000,0,DK
+257,"Permanent græs, uden",Permanent grass without clover,pasture_meadow_grassland_grass,3302000000,0,DK
+257,"Permanent græs, uden kløver",Permanent grass without clover,pasture_meadow_grassland_grass,3302000000,0,DK
+305,"Permanent græs, uden udbetaling af økologi-tilskud",Permanent grass without payment of ecological subsidies,pasture_meadow_grassland_grass,3302000000,0,DK
+255,"Permanent græs, unde","Permanent grass, less than 50% clover ",pasture_meadow_grassland_grass,3302000000,1,DK
+255,"Permanent græs, under 50% kløver","Permanent grass, less than 50% clover ",pasture_meadow_grassland_grass,3302000000,1,DK
+255,"Permanent græs, under 50% kløver/lucerne","Permanent grass, less than 50% clover /lucerne",pasture_meadow_grassland_grass,3302000000,0,DK
+277,Permanent kløver til,Perm. clover to factory,clover,3301090303,0,DK
+277,Permanent kløver til fabrik,Perm. clover to factory,clover,3301090303,0,DK
+279,Permanent kløvergræs til fabrik,Permanent clover grass for factory,clover_grass_mix,3301090501,0,DK
+,"Permanent kløvergræs, over 50 % kløver/lucerne",Permanent clover grass over 50% clover / alfalfa0,clover_grass_mix,3301090501,0,DK
+256,"Permanent kløvergræs, over 50% kløver/lucerne",Permanent clover grass over 50% clover / lucerne,pasture_meadow_grassland_grass,3302000000,0,DK
+278,Permanent lucerne og,Lucerne grass permanently ,pasture_meadow_grassland_grass,3302000000,0,DK
+278,Permanent lucerne og lucernegræs over 50% lucerne,Lucerne grass permanently alfalfa and 50% alfalfa,pasture_meadow_grassland_grass,3302000000,0,DK
+,Permanent lucerne og lucernegræs over 50% lucerne0,Permanent alfalfa and alfalfa grass over 50% alfalfa,alfalfa_lucerne,3301090301,0,DK
+274,Permanent lucerne ov,Permanent alfalfa grass over 25% grass for factory,alfalfa_grass_mix,3301090509,1,DK
+274,"Permanent lucerne over 25% græs, til fabrik",Permanent alfalfa grass over 25% grass for factory,alfalfa_grass_mix,3301090509,1,DK
+273,Permanent lucerne ti,Permanent alfalfa for factory,alfalfa_lucerne,3301090301,0,DK
+273,Permanent lucerne til fabrik,Permanent alfalfa for factory,alfalfa_lucerne,3301090301,0,DK
+274,"Permanent lucernegræs over 25% græs, til fabrik",Permanent alfalfa grass over 25% grass for factory,alfalfa_grass_mix,3301090509,1,DK
+,"Permanent lucernegræs over 25% græs, til fabrik0",Permanent alfalfa grass over 25% grass for factory,alfalfa_lucerne,3301090301,0,DK
+275,Permanent rullegræs,Permanent rolling grass,pasture_meadow_grassland_grass,3302000000,0,DK
+660,Persillefrø,Parsley seeds,parsley,3301061227,0,DK
+592,Pil,Willow,willows_osiers,3306080000,0,DK
+547,Planteskolekulturer,Nursery cultivation perennials,nurseries_nursery,3303070000,0,DK
+547,Planteskolekulturer (stauder og vedpl.),Nursery cultivation perennials,nurseries_nursery,3303070000,0,DK
+547,Planteskolekulturer (stauder/vedpl.),Nursery cultivation perennials,nurseries_nursery,3303070000,0,DK
+547,"Planteskolekulturer, stauder",Nursery cultivation perennials,nurseries_nursery,3303070000,0,DK
+497,"Planteskolekulturer, vedplanter, til videresalg",Nursery cultivation arboreal plants for sale,nurseries_nursery,3303070000,0,DK
+968,Pligtige efterafgrøder,Obligatory follow-on crops,other_arable_land_crops,3301990000,0,DK
+593,Poppel,Poplar,populus,3306070000,0,DK
+593,Poppel,Poplar,populus,3306070000,0,DK
+593,Poppel (0-100 andre træer pr. ha),Poplar (0-100 other trees per hectare),populus,3306070000,0,DK
+593,Poppel (0-100 andre træer pr. ha),Poplar (0-100 other trees per hectare),populus,3306070000,0,DK
+599,Poppel (100-400 andre træer pr. ha),Poplar (100-400 other trees per ha),populus,3306070000,0,DK
+415,Porre,Leek,leek,3301220300,0,DK
+545,Potteplanter,Houseplants,flowers_ornamental_plants,3301080000,0,DK
+431,Purløg,Chives,chives,3301220100,0,DK
+666,Purløgfrø,Chive seeds,chives,3301220100,0,DK
+666,Purløgsfrø,Chives seeds,chives,3301220100,0,DK
+582,"Pyntegrønt, økologis","Greenery, organic farming",unspecified_flowers_ornamental_plants,3301089800,0,DK
+582,"Pyntegrønt, økologisk","Greenery, organic farming",unspecified_flowers_ornamental_plants,3301089800,0,DK
+582,"Pyntegrønt, økologisk jordbrug","Greenery, organic farming",unspecified_flowers_ornamental_plants,3301089800,0,DK
+52,Quinoa,Quinoa,quinoa,3301150300,0,DK
+512,Rabarber,Rhubarb,rhubarb,3301230000,0,DK
+655,Radisefrø (inklusiv olieræddikefrø),Radish seeds (including oil radish seeds),oil_fodder_radish,3301210600,0,DK
+655,Radisfrø.,Radish seeds.,radish,3301290600,0,DK
+655,Radissefrø,Radish seeds,radish,3301290600,0,DK
+655,Radissefrø (inklusiv olieræddikefrø),Radish seeds (including oil radish seeds),radish,3301290600,0,DK
+104,Rajgr.frø ital. 1. år efterslæt,"Italian ryegrass seed, 1st year regrowth",lolium_ryegrass,3301090205,0,DK
+117,Rajgræs efterårsudl. hybrid,Ryegrass autumn undersown hybrid,lolium_ryegrass,3301090205,0,DK
+117,"Rajgræs, efterårsudl","Ryegrass seed, autumn-sown",lolium_ryegrass,3301090205,0,DK
+117,"Rajgræs, efterårsudl. hybrid",Ryegrass autumn undersown hybrid,lolium_ryegrass,3301090205,0,DK
+116,"Rajgræs, hybrid",Ryegrass hybrid,lolium_ryegrass,3301090205,0,DK
+101,"Rajgræsfrø, alm.",Common ryegrass seed,lolium_ryegrass,3301090205,0,DK
+102,"Rajgræsfrø, alm. 1.","Common ryegrass seed, 1st year",lolium_ryegrass,3301090205,0,DK
+102,"Rajgræsfrø, alm. 1. år, efterårsudlagt","Common ryegrass seed, 1st year autumn-sown",lolium_ryegrass,3301090205,0,DK
+103,"Rajgræsfrø, ital.",Italian ryegrass seed,lolium_ryegrass,3301090205,0,DK
+104,"Rajgræsfrø, ital. 1.","Italian ryegrass seed, 1st year",lolium_ryegrass,3301090205,0,DK
+104,"Rajgræsfrø, ital. 1. år efterårsudlagt","Italian ryegrass seed, 1st year autumn-sown",lolium_ryegrass,3301090205,0,DK
+109,Rajsvingel,Rice fescue seeds,festuca_fescue,3301090202,0,DK
+109,Rajsvingelfrø,Rice fescue seeds,festuca_fescue,3301090202,0,DK
+118,"Rajsvingelfrø, efter","Rice fescue seeds, autumn laid out",poaceae_grasses,3301090200,0,DK
+118,"Rajsvingelfrø, efterårsudlagt","Rice fescue seeds, autumn laid out",poaceae_grasses,3301090200,0,DK
+341,Randzoneordning  med udtagning,Marginal zone scheme with withdrawal,wetland_buffers,3310700000,0,DK
+340,Randzoneordning uden udtagning,Marginal zone scheme without withdrawal,wetland_buffers,3310700000,0,DK
+340,Randzoneordningen,The marginal zone scheme,wetland_buffers,3310700000,0,DK
+341,Randzoneordningen 2,The marginal zone scheme 2,wetland_buffers,3310700000,0,DK
+114,"Rapgræsfrø, alm.",Rough bluegrass,poaceae_grasses,3301090200,0,DK
+271,Rekreative formål,Recreative purpose,not_known_and_other,3399000000,0,DK
+271,"Rekreative formål, arealer til",Recreative purpose,not_known_and_other,3399000000,0,DK
+515,Ribs,Red currant,redcurrant,3303021100,0,DK
+505,"Ribs, stiklingeopformering",Blackcurrant multiplication by cutting,blackcurrant_cassis,3303020300,0,DK
+417,Rødbede,Beetroot,beetroot_beets,3301290200,0,DK
+418,Rødkål,Red cabbage,red_cabbage,3301210210,0,DK
+413,Rodpersille,Parsley root,parsley,3301061227,0,DK
+108,Rødsvingelfrø,Red fescue seeds,festuca_fescue,3301090202,0,DK
+160,Roer til fabrik,Turnips to factory,turnips,3301290800,0,DK
+533,Rønnebær,Rowanberries,rowan_rowanberries,3303021300,0,DK
+597,Rørgræs,Reed canary grass,temporary_grass,3301090100,0,DK
+416,Rosenkål,Brussel sprouts,brussels_sprouts,3301210203,0,DK
+654,Rucolafrø,Rocket Arugula seeds,rocket_arugula,3301310600,0,DK
+269,"Rullegræs, omdrift.","Grass, turf (rotation)",sod_turf,3301090207,0,DK
+275,"Rullegræs, perm. græs",Permanent rolling grass,pasture_meadow_grassland_grass,3302000000,0,DK
+23,Rybs,Turnip rape,turnip_rape,3301210700,0,DK
+420,Salat,Salad,salads_lettuce_leaf_vegetables,3301310000,0,DK
+542,Salat,Lettuce,salads_lettuce_leaf_vegetables,3301310000,0,DK
+542,Salat (drivhus),Lettuce (greenhouse),greenhouse_salads,3305011400,0,DK
+420,Salat (friland),Salad (outdoor),salads_lettuce_leaf_vegetables,3301310000,0,DK
+420,"Salat, (friland)",Salad (outdoor),salads_lettuce_leaf_vegetables,3301310000,0,DK
+201,Sammenlagt mark,Merged field,not_known_and_other,3399000000,0,DK
+421,Savoykål,Savoy cabbage,savoy_cabbage,3301210211,0,DK
+421,"Savoykål, spidskål",Savoy cabbage oxheart cabbag,savoy_cabbage,3301210211,0,DK
+216,Silomajs,Silo maize,green_silo_maize,3301090400,0,DK
+218,Silomajs med græsudlæg,Silage maize with grass cover,maize_with_undersowing,3301091900,1,DK
+664,Skorzonerrod/skorzonerrodfrø,Scorzonera root / scorzonera root seeds,black_salsify,3301290900,0,DK
+664,Skorzonerrodfrø,scorzonera root seeds,black_salsify,3301290900,0,DK
+664,Skorzonerrodfrø.,scorzonera root seeds,black_salsify,3301290900,0,DK
+801,Skov i IKKE skovblok,Forest in NOT forest block,tree_wood_forest,3306000000,0,DK
+577,Skov med biodiversitetsformål,Forest for biodiversity purposes,tree_wood_forest,3306000000,0,DK
+581,Skovdrift med fjernelse af ved,Forestry with firewood removal,tree_wood_forest,3306000000,0,DK
+580,"Skovdrift, alm.",Forestry common,tree_wood_forest,3306000000,0,DK
+487,Skovlandbrug,Agroforestry,agroforestry,3312000000,0,DK
+483,Skovlandbrug med græs i omdrift,Forestry with grass in rotation,tree_wood_forest,3306000000,0,DK
+484,Skovlandbrug med omdriftsafgrøder,Forestry with rotational crops,tree_wood_forest,3306000000,0,DK
+482,Skovlandbrug med permanent græs,Forestry with permanent grass,tree_wood_forest,3306000000,0,DK
+485,Skovlandbrug med permanente afgrøder,Forestry with permanent crops,tree_wood_forest,3306000000,0,DK
+487,"Skovlandbrug, ikke støtteberettiget","Forestry, not eligible for support",tree_wood_forest,3306000000,0,DK
+586,"Skovrejsn. på tidl. landbr. 2, forpagtet","Forest trip. in former landbr. 2, leased",afforestation_reforestation,3306010000,0,DK
+578,Skovrejsning ? forbedring af vandmiljø og grundvandsbeskyttelse,Reforestation? improvement of the water environment and groundwater protection,afforestation_reforestation,3306010000,0,DK
+578,Skovrejsning (privat) - forbedring af vandmiljø og grundvandsbeskyttelse,Afforestation (private) - improvement of the water environment and groundwater protection,afforestation_reforestation,3306010000,0,DK
+575,Skovrejsning (privat) - kulstofbinding og grundvandsbeskyttelse,Afforestation (private) - carbon sequestration and groundwater protection,afforestation_reforestation,3306010000,0,DK
+,Skovrejsning (privat) – forbedring af vandmiljø og grundvandsbeskyttelse,Afforestation (private) - improvement of aquatic environment and groundwater protection,afforestation_reforestation,3306010000,0,DK
+578,Skovrejsning (privat) ? forbedring af vandmiljø og grundvandsbeskyttelse,Afforestation (private) ? improvement of the water environment and groundwater protection,afforestation_reforestation,3306010000,0,DK
+575,Skovrejsning (privat) ? kulstofbinding og grundvandsbeskyttelse,Afforestation (private) ? carbon sequestration and groundwater protection,afforestation_reforestation,3306010000,0,DK
+576,skovrejsning (statslig) - forbedring af vandmiljø og grundvandsbeskyttelse,afforestation (state) - improvement of the water environment and groundwater protection,afforestation_reforestation,3306010000,0,DK
+576,Skovrejsning (statslig) - forbedring af vandmiljø og grundvandsbeskyttelse,Afforestation (state) - improvement of water environment and groundwater protection,afforestation_reforestation,3306010000,0,DK
+,skovrejsning (statslig) - forbedring af vandmiljøog grundvandsbeskyttelse,Afforestation - the improvement of aquatic environment and groundwater protection,afforestation_reforestation,3306010000,0,DK
+585,Skovrejsning i proje,Reforestation in the project,afforestation_reforestation,3306010000,0,DK
+585,"Skovrejsning i projektområde, som ikke er omfattet af tilsagn",Forest establisment in project areas not included by a scheme,afforestation_reforestation,3306010000,0,DK
+311,Skovrejsning på tidl,Reforestation in the past,afforestation_reforestation,3306010000,0,DK
+587,Skovrejsning på tidl,Reforestation in the past,afforestation_reforestation,3306010000,0,DK
+311,Skovrejsning på tidl. landbrugsjord 1,Forest establisment on formerly farmland 1,afforestation_reforestation,3306010000,0,DK
+587,Skovrejsning på tidl. landbrugsjord 3,Forest establisment on former farmland 3,afforestation_reforestation,3306010000,0,DK
+565,"Skovrejsning, direktivimplementerende uden tilsagn ved Landbrugsstyrelsen","Reforestation, implementing the directive without a commitment from the Danish Agency for Agriculture",afforestation_reforestation,3306010000,0,DK
+310,Slåningsbrak,Mowing fallow,fallow_land_not_crop,3301110000,0,DK
+995,Slettet mark,Deleted field,not_known_and_other,3399000000,0,DK
+548,Småplanter (en-årige,Seedlings annuals,arable_land_seed_seedlings,3301100000,0,DK
+548,Småplanter (en-årige),Seedlings annuals,arable_land_seed_seedlings,3301100000,0,DK
+548,"Småplanter, en-årige",Seedlings annuals,arable_land_seed_seedlings,3301100000,0,DK
+544,Snitblomster / snitgrønt,Cut flowers and foliage,flowers_ornamental_plants,3301080000,0,DK
+544,Snitblomster og snit,Cut flowers and foliage,flowers_ornamental_plants,3301080000,0,DK
+544,Snitblomster og snitgrønt,Cut flowers and foliage,flowers_ornamental_plants,3301080000,0,DK
+525,Sødkirsebær med unde,Sweet cherry with undergrowth of grass,cherry_cherries,3303010400,0,DK
+525,Sødkirsebær med undervækst af græs,Sweet cherry with undergrowth of grass,cherry_cherries,3303010400,0,DK
+524,Sødkirsebær uden und,Sweet cherry without undergrowth of grass,cherry_cherries,3303010400,0,DK
+524,Sødkirsebær uden undervækst af græs,Sweet cherry without undergrowth of grass,cherry_cherries,3303010400,0,DK
+32,Sødlupin,Sweet lupine,sweet_lupins,3301020700,0,DK
+25,Sojabønner,Soybeans,soy_soybeans,3301160000,0,DK
+514,Solbær,Blackcurrant,blackcurrant_cassis,3303020300,0,DK
+504,"Solbær, stiklingeopf",Blackcurrant multiplication by cutting,blackcurrant_cassis,3303020300,0,DK
+504,"Solbær, stiklingeopformering",Blackcurrant multiplication by cutting,blackcurrant_cassis,3303020300,0,DK
+440,Solhat,Coneflower,rudbeckia_coneflowers,3301083800,0,DK
+24,Solsikke,Sunflower,sunflower,3301060500,0,DK
+58,Sorghum,Sorghum,millet_sorghum,3301010900,0,DK
+598,Sorrel,Sorrel,sorrel,3301310700,0,DK
+428,Spidskål,Pointed cabbage,brassica_oleracea_cabbage,3301210200,0,DK
+422,Spinat,Spinach,spinach,3301310800,0,DK
+124,Spinatfrø,Spinach seeds,spinach,3301310800,0,DK
+41,Spindhør,flax,flax_linseed_oil,3301060702,0,DK
+536,Spisedruer,Food grape,vineyards_wine_vine_rebland_grapes,3303060000,0,DK
+152,Spisekartofler,Eating potatoes,potatoes,3301030000,0,DK
+588,Statslig skovrejsnin,State afforestation,afforestation_reforestation,3306010000,0,DK
+588,Statslig skovrejsning,State afforestation,afforestation_reforestation,3306010000,0,DK
+501,Stauder,Perennial,permanent_crops_perennial,3303000000,0,DK
+516,Stikkelsbær,Gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,DK
+506,"Stikkelsbær, stiklingeopformering",Gooseberries multiplication by cutting,gooseberry_gooseberries_cranberries,3303020700,0,DK
+110,Stivbladet svingelfrø,Stiff-leaved fennel seed,fennel,3301170000,0,DK
+151,Stivelseskartofler,Starch potatoes,potatoes,3301030000,0,DK
+491,Storfrugtet tranebær,Large-fruited cranberry,cranberry,3303020500,0,DK
+111,Strandsvingelfrø,Fenugreek seeds,festuca_fescue,3301090202,0,DK
+160,Sukerroer til fabrik,Sugar beet for factory,sugar_beet,3301290700,0,DK
+423,Sukkermajs,Sweet corn,grain_maize_corn_popcorn,3301010600,0,DK
+425,Sukkermajs med græsudlæg,Sweetcorn with grass cover,maize_with_undersowing,3301091900,1,DK
+160,Sukkerroer til fabrik,Sugar beet for factory,sugar_beet,3301290700,0,DK
+493,Surbær,Black chokeberry,aronia_chokeberries,3303020100,0,DK
+521,Surkirsebær med unde,Sour cherry with undergrowth of grass,cherry_cherries,3303010400,0,DK
+521,Surkirsebær med undervækst af græs,Sour cherry with undergrowth of grass,cherry_cherries,3303010400,0,DK
+520,Surkirsebær uden und,Sour cherry without undergrowth of grass,cherry_cherries,3303010400,0,DK
+520,Surkirsebær uden undervækst af græs,Sour cherry without undergrowth of grass,cherry_cherries,3303010400,0,DK
+563,Svampe,Mushrooms,other_mushrooms_energy_crops_genetically_modified_crops,3304990000,0,DK
+563,"Svampe, champignon",Mushrooms champignon,other_mushrooms_energy_crops_genetically_modified_crops,3304990000,0,DK
+110,"Svingelfrø, bakke- (tidl. Stivbladet)","Fenugreek seeds, tray (formerly Stivbladet)",festuca_fescue,3301090202,0,DK
+110,"Svingelfrø, stivblad","Fenugreek seeds, stiff leaf",festuca_fescue,3301090202,0,DK
+110,"Svingelfrø, stivbladet",Hard fescue seeds,festuca_fescue,3301090202,0,DK
+111,"Svingelfrø, strand-",Tall fescue seeds,festuca_fescue,3301090202,0,DK
+579,"Tagetes, sygdomssane","Tagetes, disease-healing plant",tagetes,3301084700,0,DK
+579,"Tagetes, sygdomssanerende plante","Tagetes, disease-healing plant",tagetes,3301084700,0,DK
+667,Timianfrø,Thyme seeds,thyme,3301061237,0,DK
+105,Timothefrø,Timothy seeds,timothy,3301090209,0,DK
+540,Tomat,Tomato,tomato,3301280000,0,DK
+540,Tomater,Tomatoes,tomato,3301280000,0,DK
+509,Trækvæde,Quince,quinces,3303011500,0,DK
+16,Triticale,Triticale,triticale,3301010800,0,DK
+508,"Tyttebær, tranebær o","Cranberries, cranberries etc",cranberry,3303020500,0,DK
+249,Udnyttet græs ved va,Utilized grass for water drilling,pasture_meadow_grassland_grass,3302000000,0,DK
+249,Udnyttet græs ved vandboring,Utilized grass for water drilling,pasture_meadow_grassland_grass,3302000000,0,DK
+316,"Udtagning med fastholdelse, ej landbrugsareal","Extraction with retention, not agricultural land",not_known_and_other,3399000000,0,DK
+310,Udyrkede landbrugsar,Uncultivated agricultural land,fallow_land_not_crop,3301110000,0,DK
+310,Udyrkede landbrugsarealer,Uncultivated agricultural land,fallow_land_not_crop,3301110000,0,DK
+309,Udyrket areal ved va,Uncultivated area next to water boreholes,wetland_buffers,3310700000,0,DK
+309,Udyrket areal ved vandboring,Uncultivated area next to water boreholes,wetland_buffers,3310700000,0,DK
+310,Udyrket mark,Uncultivated field,fallow_land_not_crop,3301110000,0,DK
+999,Ugyldig afgrødekode,Invalid crop code,not_known_and_other,3399000000,0,DK
+998,Ukendt afgrøde,Unknown crop,not_known_and_other,3399000000,0,DK
+317,Vådområder brugt som udtagning,Wetlands used for extraction,wetlands,3310400000,0,DK
+316,Vådområder eller lavbundsjorde med udtagning,Wetlands or low-lying soils with extraction,wetlands,3310400000,0,DK
+317,Vådområder med udtag,Wetlands with removal,wetlands,3310400000,0,DK
+317,Vådområder med udtagning,Wetlands with removal,wetlands,3310400000,0,DK
+123,Valmuefrø,Poppy seeds,poppy,3301060600,0,DK
+537,Valnød (almindelig),Walnut common,walnuts,3303030600,0,DK
+1,Vårbyg,Spring barley,spring_barley,3301010402,0,DK
+70,"Vårbyg, efterårssået","Spring barley, autumn sown",winter_barley,3301010401,0,DK
+210,"Vårbyg, helsæd",Spring barley wholecrop,spring_barley,3301010402,0,DK
+3,VårHavre,Spring oats,spring_oats,3301010502,0,DK
+3,Vårhavre,Spring oats,spring_oats,3301010502,0,DK
+72,"Vårhavre, efterårssået","Spring oats, autumn sown",winter_oats,3301010501,0,DK
+212,"Vårhavre, helsæd",Spring oats wholecrop,spring_oats,3301010502,0,DK
+2,Vårhvede,Spring wheat,spring_common_soft_wheat,3301010102,0,DK
+6,"Vårhvede, brødhvede",Spring wheat bread wheat,spring_common_soft_wheat,3301010102,0,DK
+71,"Vårhvede, efterårssået","Spring wheat, autumn sown",winter_common_soft_wheat,3301010101,0,DK
+211,"Vårhvede, helsæd",Spring wheat wholecrop,spring_common_soft_wheat,3301010102,0,DK
+230,"Vårkorn, grønkorn","Spring grain, green grain",unspecified_cereals_cut_green,3301091100,0,DK
+21,Vårraps,Spring rape,spring_rapeseed_rape,3301060402,0,DK
+55,Vårrug,Spring rye,spring_rye,3301010302,0,DK
+8,Vårspelt,Spring spelt,spring_spelt,3301011002,0,DK
+56,Vårtriticale,Spring triticale,spring_triticale,3301010802,0,DK
+360,Vildtafgrøder,Wild fruits,orchards_fruits,3303010000,0,DK
+530,Vindrue,Grape,vineyards_wine_vine_rebland_grapes,3303060000,0,DK
+530,Vindruer,Grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,DK
+10,Vinterbyg,Winter barley,winter_barley,3301010401,0,DK
+220,"Vinterbyg, helsæd",Winter barley wholecrop,winter_barley,3301010401,0,DK
+57,Vinterhavre,Winter oats,winter_oats,3301010501,0,DK
+11,Vinterhvede,Winter wheat,winter_common_soft_wheat,3301010101,0,DK
+13,"Vinterhvede, brødhv.",Winter wheat bread wheat,winter_common_soft_wheat,3301010101,0,DK
+13,"Vinterhvede, brødhve",Winter wheat bread wheat,winter_common_soft_wheat,3301010101,0,DK
+13,"Vinterhvede, brødhvede",Winter wheat bread wheat,winter_common_soft_wheat,3301010101,0,DK
+221,"Vinterhvede, helsæd",Winter wheat wholecrop,winter_common_soft_wheat,3301010101,0,DK
+15,Vinterhybridrug,Winter hybrid rye,winter_rye,3301010301,0,DK
+235,"Vinterkorn, grønkorn","Winter grains, green grains",unspecified_cereals_cut_green,3301091100,0,DK
+22,Vinterraps,Winter rape,winter_rapeseed_rape,3301060401,0,DK
+14,Vinterrug,Winter rye,winter_rye,3301010301,0,DK
+222,"Vinterrug, helsæd",Winter rye wholecrop,winter_rye,3301010301,0,DK
+9,Vinterspelt,Winter spelt,winter_spelt,3301011001,0,DK
+223,"Vintertertriticale,","Winter triticale, whole crop",winter_triticale,3301010801,0,DK
+223,"Vintertertriticale, helsæd","Winter triticale, whole crop",winter_triticale,3301010801,0,DK
+16,Vintertriticale,Winter triticale,winter_triticale,3301010801,0,DK
+223,"Vintertriticale, helsæd","Winter triticale, whole crop",winter_triticale,3301010801,0,DK

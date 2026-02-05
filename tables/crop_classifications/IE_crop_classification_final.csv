@@ -1,0 +1,223 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+,100% Destocked Area,100% Destocked Area,not_known_and_other,3399000000,0,IE
+,Access Road / Roadways,Access Road / Roadways,not_known_and_other,3399000000,0,IE
+,Agroforestry (<400 trees per hectare),Agroforestry (<400 trees per hectare),agroforestry,3312000000,0,IE
+,Alfalfa,Alfalfa,alfalfa_lucerne,3301090301,0,IE
+,Apples,Apples,apples,3303010200,0,IE
+,Arable Habitat,Arable Habitat,arable_crops,3301000000,0,IE
+,Arable Silage,Arable Silage,plants_harvested_green,3301090000,0,IE
+,Arable Silage (Grass),Arable Silage (Grass),plants_harvested_green,3301090000,0,IE
+,Arable Silage (No Grass),Arable Silage (No Grass),arable_crops,3301000000,0,IE
+,Artichoke,Artichoke,artichoke,3301270000,0,IE
+,Asparagus,Asparagus,asparagus,3301200000,0,IE
+,Aubergines,Aubergines,aubergine_eggplant,3301260000,0,IE
+,Baby Leaf Spinach,Baby Leaf Spinach,spinach,3301310800,0,IE
+,Barley - Spring,Barley - Spring,spring_barley,3301010402,0,IE
+,Barley - Winter,Barley - Winter,winter_barley,3301010401,0,IE
+,Basil,Basil,basil,3301061207,0,IE
+,Beans - Spring,Beans - Spring,beans,3301020100,0,IE
+,Beans - Winter,Beans - Winter,beans,3301020100,0,IE
+,Beetroot,Beetroot,beetroot_beets,3301290200,0,IE
+,Blackberries,Blackberries,blackberry,3303020200,0,IE
+,Blackcurrants,Blackcurrants,blackcurrant_cassis,3303020300,0,IE
+,Blueberries,Blueberries,blueberry,3303020400,0,IE
+,Bog,Bog,peat_turf,3307000000,0,IE
+,Borage,Borage,borage,3301061209,0,IE
+,Broccoli - Spring,Broccoli - Spring,broccoli,3301210202,0,IE
+,Broccoli - Winter,Broccoli - Winter,broccoli,3301210202,0,IE
+,Brussel sprouts,Brussel sprouts,brussels_sprouts,3301210203,0,IE
+,Building,Building,not_known_and_other,3399000000,0,IE
+,Cabbage - Spring,Cabbage - Spring,brassica_oleracea_cabbage,3301210200,0,IE
+,Cabbage - Winter,Cabbage - Winter,brassica_oleracea_cabbage,3301210200,0,IE
+,Calabrese,Calabrese,brassica_oleracea_cabbage,3301210200,0,IE
+,Camelina,Camelina,camelina,3301061500,0,IE
+,Carrots,Carrots,carrots_daucus,3301290300,0,IE
+,Cauliflowers - Spring,Cauliflowers - Spring,cauliflower,3301210204,0,IE
+,Cauliflowers - Winter,Cauliflowers - Winter,cauliflower,3301210204,0,IE
+,Celeriac,Celeriac,celeriac,3301250100,0,IE
+,Celery - Spring,Celery - Spring,leaf_celery,3301250200,0,IE
+,Celery - Winter,Celery - Winter,leaf_celery,3301250200,0,IE
+,Cherries,Cherries,cherry_cherries,3303010400,0,IE
+,Chives,Chives,chives,3301220100,0,IE
+,Christmas Trees,Christmas Trees,christmas_trees,3306100000,0,IE
+,Clover,Clover,clover,3301090303,0,IE
+,Combicrop,Combicrop (a blend of spring cereal and peas),cereal_legume_mix,3301091200,1,IE
+,Copse,Copse,tree_wood_forest,3306000000,0,IE
+,Coriander,Coriander,coriander,3301061215,0,IE
+,Courgettes,Courgettes,zucchini_courgette,3301140600,0,IE
+,Cranberries,Cranberries,cranberry,3303020500,0,IE
+,Cucumbers,Cucumbers,cucumber_pickle,3301140100,0,IE
+,Daffodils,Daffodils,narcissus_daffodil,3301083300,0,IE
+,Designated Habitat,Designated Habitat,environmental_protection,3311000000,0,IE
+,Dill,Dill,anethum_dill,3301061203,0,IE
+,Environmental Management Of Arable Fallow,Environmental Management Of Arable Fallow,fallow_land_not_crop,3301110000,0,IE
+,Environmental Mgt. of Fallow Land,Environmental Mgt. of Fallow Land,fallow_land_not_crop,3301110000,0,IE
+,Extensively Grazed Pasture,Extensively Grazed Pasture,pasture_meadow_grassland_grass,3302000000,0,IE
+,Fallow,Fallow,fallow_land_not_crop,3301110000,0,IE
+,Fallow - Greening,Fallow - Greening,fallow_land_not_crop,3301110000,0,IE
+,Farm Road,Farm Road,not_known_and_other,3399000000,0,IE
+,Farmyard,Farmyard,not_known_and_other,3399000000,0,IE
+,Fennel,Fennel,fennel,3301170000,0,IE
+,Flax,Flax,flax_linen,3301060701,0,IE
+,Fodder Beet,Fodder Beet,mangelwurzel_fodder_beet,3301290400,0,IE
+,Foliage,Foliage,other_tree_wood_forest,3306990000,0,IE
+,Forage Rape,Forage Rape,rapeseed_rape,3301060400,0,IE
+,Forestry,Forestry,tree_wood_forest,3306000000,0,IE
+,Forestry 2009,Forestry 2009,tree_wood_forest,3306000000,0,IE
+,Forestry 2010,Forestry 2010,tree_wood_forest,3306000000,0,IE
+,Forestry 2011,Forestry 2011,tree_wood_forest,3306000000,0,IE
+,Forestry 2012,Forestry 2012,tree_wood_forest,3306000000,0,IE
+,Forestry 2013,Forestry 2013,tree_wood_forest,3306000000,0,IE
+,Forestry 2014,Forestry 2014,tree_wood_forest,3306000000,0,IE
+,Forestry 2015,Forestry 2015,tree_wood_forest,3306000000,0,IE
+,Forestry 2016,Forestry 2016,tree_wood_forest,3306000000,0,IE
+,Forestry 2017,Forestry 2017,tree_wood_forest,3306000000,0,IE
+,Forestry 2018,Forestry 2018,tree_wood_forest,3306000000,0,IE
+,Forestry 2019,Forestry 2019,tree_wood_forest,3306000000,0,IE
+,Forestry 2020,Forestry 2020,tree_wood_forest,3306000000,0,IE
+,Forestry 2021,Forestry 2021,tree_wood_forest,3306000000,0,IE
+,Forestry 2022,Forestry 2022,tree_wood_forest,3306000000,0,IE
+,Forestry 2023,Forestry 2023,tree_wood_forest,3306000000,0,IE
+,Forestry ESB Corridor,Forestry ESB Corridor,tree_wood_forest,3306000000,0,IE
+,Forestry ESB Corridor Eligible,Forestry ESB Corridor Eligible,tree_wood_forest,3306000000,0,IE
+,Forestry Pre-2009,Forestry Pre-2009,tree_wood_forest,3306000000,0,IE
+,Forestry ESB Corridor Ineligible,Forestry ESB Corridor Ineligible,tree_wood_forest,3306000000,0,IE
+,Forestry Eligible,Forestry Eligible,tree_wood_forest,3306000000,0,IE
+,Forestry Ineligible,Forestry Ineligible,tree_wood_forest,3306000000,0,IE
+,Forestry Setaside,Forestry Setaside,tree_wood_forest,3306000000,0,IE
+,Former REPS 3 New Habitat,Former REPS 3 New Habitat,environmental_protection,3311000000,0,IE
+,Former REPS 4 New Habitat,Former REPS 4 New Habitat,environmental_protection,3311000000,0,IE
+,Gardens,Gardens,kitchen_gardens,3301120000,0,IE
+,Garlic,Garlic,garlic,3301220200,0,IE
+,Glasshouse,Glasshouse,greenhouse_foil_film,3305000000,0,IE
+,Grass Year 1 (MSS Eco-Scheme),Grass Year 1 (MSS [multi-species sward] Eco-Scheme),temporary_grass,3301090100,1,IE
+,Grass Year 1 (MSS Measure),Grass Year 1 (MSS [multi-species sward] Measure),temporary_grass,3301090100,1,IE
+,Gooseberries,Gooseberries,gooseberry_gooseberries_cranberries,3303020700,0,IE
+,Grapes,Grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,IE
+,Grass Seed,Grass Seed,temporary_grass,3301090100,0,IE
+,Grass Silage,Grass Silage,temporary_grass,3301090100,0,IE
+,Grass Year 1,Grass Year 1,temporary_grass,3301090100,0,IE
+,Grass Year 1 (MSS),Grass Year 1 (MSS [multi-species sward]),temporary_grass,3301090100,1,IE
+,Grass Year 2,Grass Year 2,temporary_grass,3301090100,0,IE
+,Grass Year 2 (MSS),Grass Year 2 (MSS [multi-species sward]),temporary_grass,3301090100,1,IE
+,Grass Year 3,Grass Year 3,temporary_grass,3301090100,0,IE
+,Grass Year 3 (MSS),Grass Year 3 (MSS [multi-species sward]),temporary_grass,3301090100,1,IE
+,Grass Year 4,Grass Year 4,temporary_grass,3301090100,0,IE
+,Grass Year 4 (MSS),Grass Year 4 (MSS [multi-species sward]),temporary_grass,3301090100,1,IE
+,Grass Year 5,Grass Year 5,temporary_grass,3301090100,0,IE
+,Grass Year 5 (MSS),Grass Year 5 (MSS [multi-species sward]),temporary_grass,3301090100,1,IE
+,Grassmeal,Grassmeal,temporary_grass,3301090100,0,IE
+,Habitat,Habitat,environmental_protection,3311000000,0,IE
+,Hemp,Hemp,hemp_cannabis,3301061000,0,IE
+,Hemp for Food Use,Hemp for Food Use,hemp_cannabis,3301061000,0,IE
+,Hemp for Industrial Use,Hemp for Industrial Use,hemp_cannabis,3301061000,0,IE
+,Hops,Hops,hops,3301060200,0,IE
+,Inactive,Inactive,fallow_land_not_crop,3301110000,0,IE
+,Invalid Crop,Invalid Crop,not_known_and_other,3399000000,0,IE
+,Kale,Kale,kale,3301210208,0,IE
+,Lake / Waterway / Pond,Lake / Waterway / Pond,wetlands,3310400000,0,IE
+,Leeks - Spring,Leeks - Spring,leek,3301220300,0,IE
+,Leeks - Winter,Leeks - Winter,leek,3301220300,0,IE
+,Lettuce,Lettuce,salads_lettuce_leaf_vegetables,3301310000,0,IE
+,Lilies,Lilies,lilies,3301082500,0,IE
+,Linnet Habitat,Linnet Habitat,environmental_protection,3311000000,0,IE
+,Linseed,Linseed,flax_linseed,3301060700,0,IE
+,Loganberries,Loganberries,berries_berry_species,3303020000,0,IE
+,Low Input Grassland,Low Input Grassland,pasture_meadow_grassland_grass,3302000000,0,IE
+,Low Input Peat Grassland,Low Input Peat Grassland,pasture_meadow_grassland_grass,3302000000,0,IE
+,Low Input Permanent Pasture,Low Input Permanent Pasture,pasture_meadow_grassland_grass,3302000000,0,IE
+,Lucerne,Lucerne,alfalfa_lucerne,3301090301,0,IE
+,Lupins,Lupins,sweet_lupins,3301020700,0,IE
+,Maize,Maize,grain_maize_corn_popcorn,3301010600,0,IE
+,Management of Environmental Fallow (horticulture),Management of Environmental Fallow (horticulture),fallow_land_not_crop,3301110000,0,IE
+,Management of intensive grassland next to a watercourse,Management of intensive grassland next to a watercourse,pasture_meadow_grassland_grass,3302000000,0,IE
+,Marrows,Marrows,pumpkin_squash_gourd,3301140400,0,IE
+,Millet,Millet,millet_sorghum,3301010900,0,IE
+,Mint,Mint,mints_peppermint,3301061222,0,IE
+,Miscanthus Sinensis,Miscanthus Sinensis,miscanthus_silvergrass,3301083000,0,IE
+,Mixed Cropping,Mixed Cropping,mixed_cropping,3301320000,1,IE
+,Mixed Grazing,Mixed Grazing,pasture_meadow_grassland_grass,3302000000,0,IE
+,Mustard,Mustard,mustard,3301210100,0,IE
+,Nursery,Nursery,nurseries_nursery,3303070000,0,IE
+,Quarry,Quarry,not_known_and_other,3399000000,0,IE
+,Oats - Spring,Oats - Spring,spring_oats,3301010502,0,IE
+,Oats - Winter,Oats - Winter,winter_oats,3301010501,0,IE
+,Oilseed Rape - Spring,Oilseed Rape - Spring,spring_rapeseed_rape,3301060402,0,IE
+,Oilseed Rape - Winter,Oilseed Rape - Winter,winter_rapeseed_rape,3301060401,0,IE
+,Onions,Onions,onions,3301220400,0,IE
+,Orchard,Orchard,orchards_fruits,3303010000,0,IE
+,Other cut flower / bulb crops,Other cut flower / bulb crops,flowers_ornamental_plants,3301080000,0,IE
+,Pak Choi,Pak Choi,bok_choy_pak_choi,3301210201,0,IE
+,Parsley,Parsley,parsley,3301061227,0,IE
+,Parsnips,Parsnips,parsnips,3301290500,0,IE
+,Pears,Pears,pears,3303011200,0,IE
+,Peas,Peas,peas,3301020600,0,IE
+,Peppers,Peppers,bell_pepper_paprika,3301300100,0,IE
+,Permanent Pasture,Permanent Pasture,pasture_meadow_grassland_grass,3302000000,0,IE
+,Permanent Pasture (MSS Eco-Scheme 2023),Permanent Pasture (MSS [multi-species sward] Eco-Scheme 2023),pasture_meadow_grassland_grass,3302000000,0,IE
+,Permanent Pasture (MSS),Permanent Pasture (MSS [multi-species sward]),pasture_meadow_grassland_grass,3302000000,0,IE
+,Permanent Pasture (MSS Measure),Permanent Pasture (MSS [multi-species sward] Measure),pasture_meadow_grassland_grass,3302000000,0,IE
+,Perpetual Spinach,Perpetual Spinach,spinach,3301310800,0,IE
+,Planted Buffer Zone,Planted Buffer Zone,field_margins_buffer_strips_flowering_areas,3310100000,0,IE
+,Plums,Plums,plums,3303011300,0,IE
+,Potatoes - Early,Potatoes - Early,early_season_potatoes,3301030100,0,IE
+,Potatoes - Maincrop,Potatoes - Maincrop,potatoes,3301030000,0,IE
+,Potatoes - Seed,Potatoes - Seed,potatoes,3301030000,0,IE
+,Protein/Cereal Mix 50/50,Protein/Cereal Mix 50/50,cereal_legume_mix,3301091200,1,IE
+,Pumpkins,Pumpkins,pumpkin_squash_gourd,3301140400,0,IE
+,Quinoa,Quinoa,quinoa,3301150300,0,IE
+,Radish,Radish,radish,3301290600,0,IE
+,Raspberries,Raspberries,raspberry_raspberries,3303021000,0,IE
+,Recreational Area,Recreational Area,not_known_and_other,3399000000,0,IE
+,Red Clover,Red Clover,clover,3301090303,0,IE
+,Redcurrants,Redcurrants,redcurrant,3303021100,0,IE
+,Reed Canary Grass,Reed Canary Grass,canary_seed_canaryseed,3301011400,0,IE
+,Rhubarb,Rhubarb,rhubarb,3301230000,0,IE
+,Riparian Buffer Zone - Arable,Riparian Buffer Zone - Arable,wetland_buffers,3310700000,0,IE
+,Riparian Buffer Zone - Grassland,Riparian Buffer Zone - Grassland,wetland_buffers,3310700000,0,IE
+,Riparian Zone,Riparian Zone,wetland_buffers,3310700000,0,IE
+,Rocket,Rocket,rocket_arugula,3301310600,0,IE
+,Rocky Outcrop,Rocky Outcrop,stone_walls,3310600000,0,IE
+,Rosemary,Rosemary,rosemary,3301061230,0,IE
+,Rough Grazing,Rough Grazing,pasture_meadow_grassland_grass,3302000000,0,IE
+,Rye,Rye,rye,3301010300,0,IE
+,Sage,Sage,sage_chia,3301190000,0,IE
+,Scallions,Scallions,scallion,3301220500,0,IE
+,Scrub,Scrub,tree_wood_forest,3306000000,0,IE
+,Shallot,Shallot,shallot,3301220600,0,IE
+,Short Rotation Coppice,Short Rotation Coppice,short_rotation_coppice,3306090000,0,IE
+,Soya Bean,Soya Bean,soy_soybeans,3301160000,0,IE
+,Species Rich Grassland,Species Rich Grassland,pasture_meadow_grassland_grass,3302000000,0,IE
+,Squash,Squash,pumpkin_squash_gourd,3301140400,0,IE
+,Strawberries,Strawberries,strawberries,3301130000,0,IE
+,Sugar Beet,Sugar Beet,sugar_beet,3301290700,0,IE
+,Sunflower,Sunflower,sunflower,3301060500,0,IE
+,Swede,Swede,swede_rutabaga,3301210500,0,IE
+,Sweetcorn,Sweetcorn,grain_maize_corn_popcorn,3301010600,0,IE
+,Thyme,Thyme,thyme,3301061237,0,IE
+,Tobacco,Tobacco,tobacco,3301060100,0,IE
+,Tomatoes,Tomatoes,tomato,3301280000,0,IE
+,Trad. Sustainable Grazing,Trad. Sustainable Grazing,pasture_meadow_grassland_grass,3302000000,0,IE
+,Traditional Hay Meadow,Traditional Hay Meadow,pasture_meadow_grassland_grass,3302000000,0,IE
+,Tree belts for ammonia capture from farmyards,Tree belts for ammonia capture from farmyards,tree_lines,3310300000,0,IE
+,Triticale - Spring,Triticale - Spring,spring_triticale,3301010802,0,IE
+,Triticale - Winter,Triticale - Winter,winter_triticale,3301010801,0,IE
+,Tulips,Tulips,tulips,3301084900,0,IE
+,Turnips,Turnips,turnips,3301290800,0,IE
+,Unknown,Unknown,not_known_and_other,3399000000,0,IE
+,Vetch,Vetch,vetches,3301090305,0,IE
+,Wheat - Spring,Wheat - Spring,spring_common_soft_wheat,3301010102,0,IE
+,Wheat - Winter,Wheat - Winter,winter_common_soft_wheat,3301010101,0,IE
+,Whitecurrants,Whitecurrants,currants,3303020600,0,IE
+,Wild Bird Cover,Wild Bird Cover,environmental_protection,3311000000,0,IE
+,Willow,Willow,willows_osiers,3306080000,0,IE
+,Winter Bird Food Plot,Winter Bird Food Plot,environmental_protection,3311000000,0,IE
+,Woodland,Woodland,tree_wood_forest,3306000000,0,IE
+,100% Protein,100% Protein,legumes_dried_pulses_protein_crops,3301020000,0,IE
+,Forestry 2024,Forestry 2024,tree_wood_forest,3306000000,0,IE
+,Grass Year 2 (MSS Eco-Scheme),Grass Year 2 (MSS [multi-species sward] Eco-Scheme),temporary_grass,3301090100,0,IE
+,Grass Year 2 (MSS Measure),Grass Year 2 (MSS [multi-species sward] Measure),temporary_grass,3301090100,0,IE
+,Mixed Cropping (Horticulture),Mixed Cropping (Horticulture),mixed_cropping,3301320000,1,IE
+,Native Tree Area,Native Tree Area,tree_wood_forest,3306000000,0,IE
+,Permanent Pasture (MSS Eco-Scheme 2024),Permanent Pasture (MSS [multi-species sward] Eco-Scheme 2024),pasture_meadow_grassland_grass,3302000000,0,IE
+,Red Clover Silage (RCS Measure),Red Clover Silage (RCS Measure),clover,3301090303,0,IE

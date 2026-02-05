@@ -1,0 +1,169 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+62,ΑΒΟΚΑΝΤΟ,AVOCADO,avocado,3303100000,0,CY
+26,ΑΓΓΟΥΡΑΚΙΑ,CUCUMBER,cucumber_pickle,3301140100,0,CY
+34,ΑΓΚΙΝΑΡΕΣ,artichokes,artichoke,3301270000,0,CY
+75,ΑΓΡΑΝΑΠΑΥΣΗ,FALLOW,fallow_land_not_crop,3301110000,0,CY
+170,ΑΓΡΩΣΤΩΔΗ Ή ΑΛΛΑ ΠΟΩΔΗ ΚΤΗΝΟΤΡΟΦΙΚΑ ΦΥΤΑ,Grasses or other herbaceous forage crops,other_plants_harvested_green,3301099900,0,CY
+99,ΑΔΙΕΥΚΡΙΝΙΣΤΟ,UNSPECIFIED,not_known_and_other,3399000000,0,CY
+172,ΑΘΑΝΑΤΑ,immortelle (Helichrysum),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+71,ΑΜΠΕΛΙΑ ΕΠΙΤΡΑΠΕΖΙΑ,TABLE VINE,vineyards_wine_vine_rebland_grapes,3303060000,0,CY
+70,ΑΜΠΕΛΙΑ ΟΙΝΟΠΟΙΗΣΙΜΑ,WINE-MAKING VINEYARDS,vineyards_wine_vine_rebland_grapes,3303060000,0,CY
+173,ΑΜΠΕΛΙΑ ΠΑΡΑΔΟΣΙΑΚΑ,TRADITIONAL VINEYARDS,vineyards_wine_vine_rebland_grapes,3303060000,0,CY
+349,ΑΜΠΕΛΩΝΕΣ ΠΑΛΑΙΟΙ - ΝΤΟΠΙΟ ΜΑΥΡΟ / ΞΥΝΙΣΤΕΡΙ,OLD VINEYARDS - LOCAL BLACK / XYNISTERI,vineyards_wine_vine_rebland_grapes,3303060000,0,CY
+43,ΑΜΥΓΔΑΛΙΕΣ,almond,almond,3303030100,0,CY
+174,ΑΝΗΘΟΣ,DILL,anethum_dill,3301061203,0,CY
+110,ΑΝΘΗ - ΔΙΑΦΟΡΑ,FLOWER - DIFFERENT,flowers_ornamental_plants,3301080000,0,CY
+5,ΑΡΑΒΟΣΙΤΟΣ,MAIZE,grain_maize_corn_popcorn,3301010600,0,CY
+353,ΑΡΑΒΟΣΙΤΟΣ ΒΡΩΣΙΜΟΣ,MAIZE EDIBLE,grain_maize_corn_popcorn,3301010600,0,CY
+352,ΑΡΑΒΟΣΙΤΟΣ ΚΤΗΝΟΤΡΟΦΙΚΟΣ,FEED MAIZE,grain_maize_corn_popcorn,3301010600,0,CY
+500,ΑΡΟΤΡΑΙΑ ΚΑΛΛΙΕΡΓΕΙΑ,ARABLE FARMING,arable_crops,3301000000,0,CY
+355,ΑΡΩΜΑΤΙΚΑ - ΦΑΡΜΑΚΕΥΤΙΚΑ ΦΥΤΑ - ΜΟΝΟΕΤΗ,AROMATIC - MEDICINAL PLANTS,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+354,ΑΡΩΜΑΤΙΚΑ - ΦΑΡΜΑΚΕΥΤΙΚΑ ΦΥΤΑ - ΠΟΛΥΕΤΗ,AROMATIC - MEDICINAL PLANTS PERENNIAL,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+355,ΑΡΩΜΑΤΙΚΑ - ΦΑΡΜΑΚΕΥΤΙΚΑ ΦΥΤΑ ΜΟΝΟΕΤΗ,AROMATIC - MEDICINAL PLANTS,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+354,ΑΡΩΜΑΤΙΚΑ - ΦΑΡΜΑΚΕΥΤΙΚΑ ΦΥΤΑ ΠΟΛΥΕΤΗ,AROMATIC - MEDICINAL PLANTS PERENNIAL,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+175,ΒΑΜΒΑΚΙ,COTTON,cotton,3301060300,0,CY
+176,ΒΑΣΙΛΙΚΟΣ,BASIL,basil,3301061207,0,CY
+251,ΒΙΚΟΣ,VETCH,vetches,3301090305,0,CY
+150,ΒΙΚΟΣ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,vetch for green manure,vetches,3301090305,0,CY
+178,ΓΑΡΥΦΑΛΛΑ,CARNATIONS,carnation,3301080800,0,CY
+179,ΓΛΥΚΟΠΑΤΑΤΑ,SWEET POTATO,sweet_potatoes,3301040000,0,CY
+180,ΓΛΥΚΟΡΙΖΑ,LICORICE,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+181,ΓΛΥΣΤΡΙΔΑ,COMMON PURSLANE,purslane,3301240000,0,CY
+182,ΓΟΓΓΥΛΙΑ,turnips,turnips,3301290800,0,CY
+183,ΓΥΨΟΦΙΛΟ,GYPSOPHILA / ANNUAL BABY'S-BREATH,flowers_ornamental_plants,3301080000,0,CY
+505,ΔΑΣΙΚΑ ΔΕΝΤΡΑ,FOREST TREES,tree_wood_forest,3306000000,0,CY
+89,ΔΑΣΙΚΑ ΦΥΤΙΚΑ ΕΙΔΗ,FOREST PLANT SPECIES,tree_wood_forest,3306000000,0,CY
+122,ΔΑΣΩΜΕΝΗ ΕΚΤΑΣΗ ΣΑΑ / ΠΑΑ,WOODED AREA SAA / PAA,tree_wood_forest,3306000000,0,CY
+98,ΔΕΝ ΑΙΤΟΥΜΑΙ ΕΠΙΔΟΤΗΣΗΣ,I AM NOT ASKING FOR A SUBSIDITY,not_known_and_other,3399000000,0,CY
+184,ΔΕΝΤΡΑ ΠΑΡΑΔΟΣΙΑΚΑ,TRADITIONAL TREES,tree_wood_forest,3306000000,0,CY
+357,ΔΙΑΣΠΑΡΤΑ ΔΕΝΤΡΑ,SCATTERED TREES,tree_lines,3310300000,0,CY
+110,ΔΙΑΦΟΡΑ ΑΝΘΗ,DIFFERENT FLOWERS,flowers_ornamental_plants,3301080000,0,CY
+111,ΔΙΑΦΟΡΑ ΛΑΧΑΝΙΚΑ,VARIOUS VEGETABLES,fresh_vegetables,3301070000,0,CY
+201,ΕΙΔΗ LATHYRUS,LATHYRUS SPECIES,lathyrus_peavine,3301020800,0,CY
+177,ΕΙΔΗ VICIA,vetch species (Vicia spp.),vetches,3301090305,0,CY
+185,ΕΛΑΙΟΚΡΑΜΒΗ,Canola,rapeseed_rape,3301060400,0,CY
+42,ΕΛΙΕΣ,OLIVES,olive_plantations,3303050000,0,CY
+68,ΕΣΠΕΡΙΔΟΕΙΔΗ,Citrus fruits,citrus_plantations,3303040000,0,CY
+132,ΖΑΧΑΡΟΚΑΛΑΜΟ,SUGAR CANE,sugar_cane,3301061700,0,CY
+186,ΖΕΡΠΕΡΑ,Gerbera,flowers_ornamental_plants,3301080000,0,CY
+187,ΗΛΙΑΝΘΟΣ,SUNFLOWER,sunflower,3301060500,0,CY
+74,ΘΕΡΜΟΚΗΠΙΑΚΕΣ ΚΑΛΛΙΕΡΓΕΙΕΣ,GREENHOUSE CROPS,greenhouse_foil_film,3305000000,0,CY
+188,ΚΑΛΕΝΤΟΥΛΑ,CALENDULA,calendula_marigold,3301061210,0,CY
+164,ΚΑΝΝΑΒΗ ΒΙΟΜΗΧΑΝΙΚΗ,HEMP INDUSTRIAL,hemp_cannabis,3301061000,0,CY
+16,ΚΑΠΝΟΣ,TOBACCO,tobacco,3301060100,0,CY
+189,ΚΑΡΟΤΟ,CARROT,carrots_daucus,3301290300,0,CY
+31,ΚΑΡΠΟΥΖΙΑ,WATERMELONS,watermelon,3301140500,0,CY
+46,ΚΑΡΥΔΙΕΣ,WALNUTS,walnuts,3303030600,0,CY
+100,ΚΕΝΟ,VACUUM,not_known_and_other,3399000000,0,CY
+359,ΚΕΧΡΙ,MILLET,millet_sorghum,3301010900,0,CY
+190,ΚΕΧΡΙ (ΙΑΠΩΝΙΚΟ),MILLET (JAPANESE),millet_sorghum,3301010900,0,CY
+193,ΚΕΧΡΙ (ΙΤΑΛΙΚΟ),MILLET (ITALIAN),millet_sorghum,3301010900,0,CY
+191,ΚΕΧΡΙ (ΚΟΙΝΟ),MILLET (PUBLIC),millet_sorghum,3301010900,0,CY
+192,ΚΕΧΡΙ (ΜΑΡΓΑΡΙΤΩΔΕΣ),MILLET (PEARLS),millet_sorghum,3301010900,0,CY
+270,ΚΙΝΕΖΙΚΟ ΛΑΧΑΝΟ,CHINESE CABBAGE,chinese_cabbage,3301210205,0,CY
+194,ΚΟΛΙΑΝΔΡΟΣ,CORIANDER,coriander,3301061215,0,CY
+195,ΚΟΛΟΚΑΣΙ,TARO ROOT,root_vegetables,3301290000,0,CY
+196,ΚΟΛΟΚΥΘΑ,PUMPKIN,pumpkin_squash_gourd,3301140400,0,CY
+197,ΚΟΛΟΚΥΘΙ,PUMPKIN,pumpkin_squash_gourd,3301140400,0,CY
+198,ΚΟΛΟΚΥΘΙΕΣ,PUMPKINS,pumpkin_squash_gourd,3301140400,0,CY
+360,ΚΟΛΟΚΥΘΟΕΙΔΗ,PUMPKINS,pumpkin_squash_gourd,3301140400,0,CY
+9,ΚΟΥΚΙΑ,BROAD BEANS,beans,3301020100,0,CY
+9,ΚΟΥΚΙΑ ΒΡΩΣΙΜΑ,BROAD BEANES,beans,3301020100,0,CY
+152,ΚΟΥΚΙΑ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,BROAD BEAN,beans,3301020100,0,CY
+276,ΚΟΥΚΙΑ ΚΤΗΝΟΤΡΟΦΙΚΑ,FODDER BEANS,beans,3301020100,0,CY
+202,ΚΡΑΜΒΟΕΙΔΗ,CRUICIFERS / CABBAGE / BROCCOLI / CAULIFLOWER,brassicaceae_cruciferae,3301210000,0,CY
+199,ΚΡΕΑΤΟΚΟΛΟΚΟ (ΖΑΜΠΟΥΡΑ),CUCUZZI SQUASH,pumpkin_squash_gourd,3301140400,0,CY
+200,ΚΡΕΜΜΥΔΟΕΙΔΗ,ONIONS,onions,3301220400,0,CY
+3,ΚΡΙΘΑΡΙ,BARLEY,barley,3301010400,0,CY
+277,ΛΑΘΟΥΡΙ,VETCH,vetches,3301090305,0,CY
+279,ΛΑΧΑΝΟ,CABBAGE,brassica_oleracea_cabbage,3301210200,0,CY
+203,ΛΙΘΟΣΠΑΣΤΟ,Lithospasto / Chanca Piedra,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+204,ΛΙΛΙΟΥΜ,lilies (Lilium spp.),lilies,3301082500,0,CY
+205,ΛΙΝΑΡΙ,FLAX,flax_linen,3301060701,0,CY
+13,ΛΟΛΙΟ,LOLIUM / RYEGRASS,lolium_ryegrass,3301090205,0,CY
+17,ΛΟΥΒΑΝΑ,SWEET PEA,flowers_ornamental_plants,3301080000,0,CY
+158,ΛΟΥΒΑΝΑ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,SWEET PEA USED AS GREEN MANURE,peas,3301020600,0,CY
+36,ΛΟΥΒΙΑ,BLACK-EYED PEA / COWPEA,beans,3301020100,0,CY
+162,ΛΟΥΒΙΑ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,BEAN FOR CHLORINE LUBRICATION,beans,3301020100,0,CY
+206,ΛΟΥΠΙΝΟ,LUPIN,sweet_lupins,3301020700,0,CY
+207,ΛΥΣΙΑΝΘΟΣ,LYSIANTHUS/PRAIRIE GENTIAN/BLUBELL GENTIAN,gentians,3301082000,0,CY
+208,ΜΑΪΝΤΑΝΟΣ,PARSLEY,parsley,3301061227,0,CY
+209,ΜΑΡΑΘΟΣ,FENNEL,fennel,3301170000,0,CY
+210,ΜΑΡΟΥΛΙΑ,LETTUCE,salads_lettuce_leaf_vegetables,3301310000,0,CY
+29,ΜΕΛΙΤΖΑΝΕΣ,EGGPLANTS,aubergine_eggplant,3301260000,0,CY
+61,ΜΕΣΠΗΛΙΕΣ,Loquat,medlar_loquat,3303010800,0,CY
+107,ΜΗ ΕΠΙΛΕΞΙΜΟ ΚΑΤΑ ΤΗΝ ΤΡΕΧΟΥΣΑ ΠΕΡΙΟΔΟ,NOT ELIGIBLE DURING THE CURRENT PERIOD,not_known_and_other,3399000000,0,CY
+15,ΜΗΔΙΚΗ,ALFALFA,alfalfa_lucerne,3301090301,0,CY
+237,ΜΙΓΜΑ - ΠΟΛΥΚΑΛΛΙΕΡΓΕΙΑ,MIXTURE - MULTICULTURE,mixed_cropping,3301320000,1,CY
+211,ΜΙΓΜΑ ΒΙΚΟΣ - ΚΡΙΘΑΡΙ,VETCH - BARLEY MIXTURE,cereal_legume_mix,3301091200,1,CY
+212,ΜΙΓΜΑ ΒΙΚΟΣ - ΣΙΤΑΡΙ,VETCH - WHEAT MIXTURE,cereal_legume_mix,3301091200,1,CY
+213,ΜΙΓΜΑ ΒΙΚΟΣ - ΤΡΙΤΙΚΑΛΕ,VETCH - WHEAT MIXTURE,cereal_legume_mix,3301091200,1,CY
+214,ΜΙΓΜΑ ΜΠΙΖΕΛΙ - ΣΙΤΑΡΙ,MIXTURE OF PEAS - WHEAT,cereal_legume_mix,3301091200,1,CY
+215,ΜΙΓΜΑ ΜΠΙΖΕΛΙ - ΤΡΙΤΙΚΑΛΕ,MIXTURE OF PEAS - WHEAT,cereal_legume_mix,3301091200,1,CY
+216,ΜΙΓΜΑ ΣΙΤΑΡΙ - ΤΡΙΤΙΚΑΛΕ,WHEAT - TRITICALE MIXTURE,meslin,3301011100,7,CY
+368,ΜΙΚΡΑ ΟΠΩΡΟΦΟΡΑ (ΥΠΕΡΤΡΟΦΕΣ),SMALL FRUIT TREES (HYPERTROPHIES),orchards_fruits,3303010000,0,CY
+361,ΜΙΚΤΕΣ ΚΑΛΛΙΕΡΓΕΙΕΣ,MIXED CROPS,mixed_cropping,3301320000,1,CY
+238,ΜΟΝΙΜΕΣ ΔΕΝΤΡΩΔΕΙΣ ΚΑΛΛΙΕΡΓΕΙΕΣ,PERMANENT TREE CROPS,permanent_crops_perennial,3303000000,0,CY
+239,ΜΟΝΙΜΕΣ ΘΑΜΝΩΔΕΙΣ ΚΑΛΛΙΕΡΓΕΙΕΣ,PERMANENT BUSH CROP,shrubberries_shrubs,3303080000,0,CY
+600,ΜΟΝΙΜΗ ΚΑΛΛΙΕΡΓΕΙΑ,PERMANENT CULTIVATION,permanent_crops_perennial,3303000000,0,CY
+76,ΜΟΝΙΜΟΙ ΒΟΣΚΟΤΟΠΟΙ,PERMANENT PASTURES,pasture_meadow_grassland_grass,3302000000,0,CY
+218,ΜΠΑΜΙΑ,OKRA,fresh_vegetables,3301070000,0,CY
+69,ΜΠΑΝΑΝΕΣ,BANANAS,other_permanent_crops_plantations,3303990000,0,CY
+219,ΜΠΙΖΕΛΙΑ,PEAS,peas,3301020600,0,CY
+219,ΜΠΙΖΕΛΙΑ ΒΡΩΣΙΜΑ,EDIBLE PEAS,peas,3301020600,0,CY
+151,ΜΠΙΖΕΛΙΑ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,peas for green manure,peas,3301020600,0,CY
+8,ΜΠΙΖΕΛΙΑ ΚΤΗΝΟΤΡΟΦΙΚΑ,PEAS FOR ANIMAL FEED,peas,3301020600,0,CY
+220,ΝΕΡΟΚΟΛΟΚΥΘΙΑ,CALABASH/BOTTLE GOURD,pumpkin_squash_gourd,3301140400,0,CY
+315,ΟΛΥΡΑ (ΣΙΤΟΣ DINKEL),OLYRA (DINKEL WHEAT),spelt,3301011000,0,CY
+65,ΠΑΠΟΥΤΣΟΣΥΚΑ,Opuntia,other_permanent_crops_plantations,3303990000,0,CY
+40,ΠΑΤΑΤΕΣ,POTATOES,potatoes,3301030000,0,CY
+362,ΠΑΤΑΤΕΣ ΧΕΙΜΕΡΙΝΕΣ,WINTER POTATOES,late_season_potatoes,3301030200,0,CY
+32,ΠΕΠΟΝΙΑ,MELONS,melon,3301140300,0,CY
+155,ΠΕΡΒΟΛΙ,orchard,orchards_fruits,3303010000,0,CY
+155,ΠΕΡΒΟΛΙ - ΔΕΝΔΡΩΔΕΙΣ,orchard (trees),orchards_fruits,3303010000,0,CY
+30,ΠΙΠΕΡΙΑ,PEPPERS,bell_pepper_paprika,3301300100,0,CY
+47,ΠΙΣΤΑΚΙΕΣ,PISTACHIO,pistachio,3303030400,0,CY
+221,ΡΑΔΙΚΙΑ,chicory,chicory_chicories,3301310200,0,CY
+222,ΡΑΠΑΝΑΚΙΑ,RADISHES,radish,3301290600,0,CY
+159,ΡΕΒΙΘΙ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,CHICK PEAS FOR FERTILIZER,chickpeas,3301020200,0,CY
+18,ΡΕΒΙΘΙΑ,CHICKPEAS,chickpeas,3301020200,0,CY
+159,ΡΕΒΙΘΙΑ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,CHICK PEAS FOR FERTILIZER,chickpeas,3301020200,0,CY
+21,ΡΟΒΙ ΓΙΑ ΣΠΟΡΟ,vetches,vetches,3301090305,0,CY
+223,ΡΟΚΑ,ROCKET,rocket_arugula,3301310600,0,CY
+224,ΣΕΛΙΝΟ,CELERY,celery,3301250000,0,CY
+225,ΣΙΚΑΛΗ,RYE,rye,3301010300,0,CY
+23,ΣΙΣΑΜΙ,SESAME,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+226,ΣΙΤΑΡΙ (ΟΧΙ ΣΚΛΗΡΟ),WHEAT (NOT DURUM),common_soft_wheat,3301010100,0,CY
+1,ΣΙΤΑΡΙ ΣΚΛΗΡΟ,DURUM WHEAT,durum_hard_wheat,3301010200,0,CY
+4,ΣΙΦΩΝΑΡΙ,COMMON OAT,oats,3301010500,0,CY
+1,ΣΚΛΗΡΟ ΣΙΤΑΡΙ,DURUM WHEAT,durum_hard_wheat,3301010200,0,CY
+227,ΣΟΓΙΑ,SOY,soy_soybeans,3301160000,0,CY
+6,ΣΟΡΓΟ,Sorghum,millet_sorghum,3301010900,0,CY
+228,ΣΠΑΝΑΧΙ,Spinach,spinach,3301310800,0,CY
+166,ΣΤΕΒΙΑ,STEVIA,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CY
+56,ΣΥΚΙΕΣ,FIGS,fig,3303010600,0,CY
+356,ΣΧΟΙΝΟΠΡΑΣΣΟ,chives,chives,3301220100,0,CY
+229,ΤΕΥΤΛΑ,BEETS,beetroot_beets,3301290200,0,CY
+25,ΤΟΜΑΤΕΣ,TOMATOES,tomato,3301280000,0,CY
+236,ΤΡΙΑΝΤΑΦΥΛΛΙΑ ΑΓΡΟΥ,WILD ROSES,roses,3301083700,0,CY
+230,ΤΡΙΤΙΚΑΛΕ,TRITICALE,triticale,3301010800,0,CY
+231,ΤΡΙΦΥΛΛΙ,TREFOIL,birdsfoot_trefoil,3301090306,0,CY
+232,ΤΡΙΦΥΛΛΙ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,CLOVER FOR FLOWER LUBRICATION,clover,3301090303,0,CY
+363,ΤΡΟΠΙΚΑ ΚΑΙ ΥΠΟΤΡΟΠΙΚΑ ΦΥΤΑ,TROPICAL AND SUBTROPICAL PLANTS,other_arable_land_crops,3301990000,0,CY
+12,ΦΑΒΕΤΤΑ,Favétta,other_dry_pulses,3301029900,0,CY
+156,ΦΑΒΕΤΤΑ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,INDIAN PEA USED AS GREEN MANURE,vetches,3301090305,0,CY
+333,ΦΑΚΕΛΩΤΗ,LACY PHACELIA/BLUE TANSY/PURPLE TANSY,plants_harvested_green,3301090000,0,CY
+19,ΦΑΚΕΣ,LENTLES,lentils,3301020500,0,CY
+160,ΦΑΚΕΣ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,LENTILS USED AS GREEN MANURE,lentils,3301020500,0,CY
+35,ΦΑΣΟΛΙΑ,BEANS,beans,3301020100,0,CY
+161,ΦΑΣΟΛΙΑ ΓΙΑ ΧΛΩΡΗ ΛΙΠΑΝΣΗ,BEANS FOR PLANT FERTILIZER,beans,3301020100,0,CY
+22,ΦΙΣΤΙΚΙΑ,pistachios,pistachio,3303030400,0,CY
+63,ΦΟΙΝΙΚΙΕΣ,PHOENICIA,other_permanent_crops_plantations,3303990000,0,CY
+44,ΦΟΥΝΤΟΥΚΙΕΣ,HAZELNUTS,hazelnuts_hazel,3303030200,0,CY
+41,ΦΡΑΟΥΛΕΣ,STRAWBERRIES,strawberries,3301130000,0,CY
+233,ΦΥΛΛΟΒΟΛΑ - ΟΠΩΡΟΦΟΡΑ,DECIDUOUS FRUIT TREES,orchards_fruits,3303010000,0,CY
+234,ΧΑΜΟΜΗΛΙ,CHAMOMILE,chamomile,3301061213,0,CY
+67,ΧΑΡΟΥΠΙΕΣ,CAROBS,carob,3303110100,0,CY
+344,ΧΕΙΜΕΡΙΝΕΣ ΠΑΤΑΤΕΣ,WINTER POTATOES,late_season_potatoes,3301030200,0,CY
+235,ΧΡΥΣΑΝΘΕΜΑ,CHRYSANTHEMA,chrysanthemum,3301080900,0,CY
+171,ΨΥΧΑΝΘΗ - ΑΓΡΩΣΤΩΔΗ Ή ΑΛΛΑ ΠΟΩΔΗ ΚΤΗΝΟΤΡΟΦΙΚΑ ΦΥΤΑ,PSYCHANTHI - AGRICULTURAL OR OTHER HERBAL FORAGE PLANTS,legumes_harvested_green,3301090300,0,CY
