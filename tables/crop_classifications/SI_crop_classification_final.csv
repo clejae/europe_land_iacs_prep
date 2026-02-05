@@ -241,3 +241,5 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 835,kamut (ozimni),kamut (winter),winter_unspecified_cereals,3301011501,0,SI
 835,pšenica horasan (ozimna),khorasan wheat (winter),winter_unspecified_cereals,3301011501,0,SI
 63,praha za namen zagotavljanja DKOP 7 in DKOP 8,Set aside for the purpose of ensuring GAEC 7 and GAEC 8. ,fallow_land_not_crop,3301110000,0,SI
+29,ukorenišče hmelja,rootstock of hop seedlings,hops,3301060200,0,SI
+64,cvetoči pas na varovalnem pasu,flowering strip on buffer strip,field_margins_buffer_strips_flowering_areas,3310100000,0,SI
