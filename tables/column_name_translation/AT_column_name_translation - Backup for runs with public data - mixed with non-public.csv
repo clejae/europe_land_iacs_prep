@@ -1,0 +1,14 @@
+column_name,column_description,prelim,AT_2015,AT_2016,AT_2017,AT_2018,AT_2019,AT_2020,AT_2021,AT_2022,AT_2023,AT_2024,AT_2025
+field_id,Unique identifier for each field in country or state,1,fid,fid,fid,fid,fid,fid,fid,fid,fid,fid,fid
+farm_id,Unique identifier for each farm in country,1,hbnr,,,,hbnr,hbnr,hbnr,hbnr,,,
+crop_code,"The original, country-specific crop code",1,snart_code,SNAR_CODE,SNAR_CODE,SNAR_CODE,snart_code,snart_code,snart_code,snart_code,SNAR_CODE,SNAR_CODE,SNAR_CODE
+crop_name,"The original, country-specific crop name",1,snart,SNAR_BEZEICHNUNG,SNAR_BEZEICHNUNG,SNAR_BEZEICHNUNG,snart,snart,snart,snart,SNAR_BEZEICHNUNG,SNAR_BEZEICHNUNG,SNAR_BEZEICHNUNG
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,organic,,,,organic,organic,organic,organic,KZ_BIO_OEPUL_JN,KZ_BIO_OEPUL_JN,
+field_size,Size of field in hectar,1,sl_flaeche,SL_FLAECHE_BRUTTO_HA,SL_FLAECHE_BRUTTO_HA,SL_FLAECHE_BRUTTO_HA,sl_flaeche,sl_flaeche,sl_flaeche,sl_flaeche,SL_FLAECHE_BRUTTO_HA,SL_FLAECHE_BRUTTO_HA,SL_FLAECHE_BRUTTO_HA
+intercrop_code,"The original, country-specific intercrop code",0,,,,,,,,,,,
+intercrop_name,"The original, country-specific intercrop name",0,,,,,,,,,,,

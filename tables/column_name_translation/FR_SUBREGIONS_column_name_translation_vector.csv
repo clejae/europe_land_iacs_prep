@@ -1,0 +1,15 @@
+column_name,column_description,prelim,FR_2007,FR_2008,FR_2009,FR_2010,FR_2011,FR_2012,FR_2013,FR_2014
+field_id,Unique identifier for each field in country or state,1,NUM_ILOT,NUM_ILOT,NUM_ILOT,NUM_ILOT,NUM_ILOT,NUM_ILOT,NUM_ILOT,NUM_ILOT
+farm_id,Unique identifier for each applicant in country,0,,,,,,,,
+crop_code,"The original, country-specific crop code",1,CODE_CULTU,CODE_CULTU,CODE_CULTU,CODE_CULTU,CODE_CULTU,CODE_CULTU,CODE_CULTU,CODE_CULTU
+crop_name,"The original, country-specific crop name",1,NOM_CULTU,NOM_CULTU,NOM_CULTU,NOM_CULTU,NOM_CULTU,NOM_CULTU,NOM_CULTU,NOM_CULTU
+EC_trans_n,The original crop name translated into English,1,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",0,,,,,,,,
+field_size,Size of field in hectar,1,,,,SURF_GRAPH,SURF_GRAPH,SURF_GRAPH,SURF_GRAPH,SURF_GRAPH
+crop_area,Area of crop reported in crop columns  in hectar,1,,,,SURF_CULTU,SURF_CULTU,SURF_CULTU,SURF_CULTU,SURF_CULTU
+intercrop_code,"The original, country-specific intercrop code",0,,,,,,,,
+intercrop_name,"The original, country-specific intercrop name",0,,,,,,,,
