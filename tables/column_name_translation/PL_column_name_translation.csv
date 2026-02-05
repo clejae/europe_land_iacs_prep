@@ -1,0 +1,14 @@
+column_name,column_description,prelim,PL_2024
+field_id,Unique identifier for each field in country or state,1,id_dz_rol
+farm_id,Unique identifier for each farm in country,1,eps
+crop_code,"The original, country-specific crop code",1,
+crop_name,"The original, country-specific crop name",1,crop
+EC_trans_n,The original crop name translated into English,1,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,
+EC_NUTS3,NUTS3 code for region,0,
+info_organic,Information and organic cultivation,0,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,
+field_size,Size of field in hectar,1,area_ha
+intercrop_code,"The original, country-specific intercrop code",0,
+intercrop_name,"The original, country-specific intercrop name",0,

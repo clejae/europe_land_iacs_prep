@@ -1,0 +1,562 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+195,ABETE,FIR TREE,tree_wood_forest,3306000000,0,IT
+973,ACACIA SALIGNA,ACACIA,tree_wood_forest,3306000000,0,IT
+321,ACCA SELLOWIANA O FEJIOIA SELLOWIANA,Feijoa sellowiana,feijoa,3303010500,0,IT
+178,ACERO,Maple,other_tree_wood_forest,3306990000,0,IT
+467,ACHILLEA,YARROW,yarrow,3301061239,0,IT
+831,ACTINIDIA (KIWI),Golden kiwifruit,kiwi,3303010700,0,IT
+160,AGAPANTO,Lily of the Nile,flowers_ornamental_plants,3301080000,0,IT
+113,AGLIO,GARLIC,garlic,3301220200,0,IT
+A10,AGLIONE,GARLIC,garlic,3301220200,0,IT
+114,AGRETTO,Agretti (Salsola soda),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+351,AGROSTIDE  GIGANTEA E BIANCA,Agrostis gigantea,poaceae_grasses,3301090200,0,IT
+353,AGROSTIDE  TENUE,common bent,poaceae_grasses,3301090200,0,IT
+350,AGROSTIDE CANINA,velvet bent,poaceae_grasses,3301090200,0,IT
+430,AGRUMI,Citrus fruits,citrus_plantations,3303040000,0,IT
+783,ALBERI IN FILARE,Group trees,tree_wood_forest,3306000000,0,IT
+793,ALBERI ISOLATI,ISOLATED TREES,tree_wood_forest,3306000000,0,IT
+2101,Albicocco,Apricot,apricots,3303010300,0,IT
+671,ALBICOCCO,Apricot,apricots,3303010300,0,IT
+971,ALCHECHENGI,Chinese lantern,berries_berry_species,3303020000,0,IT
+485,ALLORO,Bay laurel,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+456,ALOE,ALOE VERA,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+164,ALSTROEMERIA,Alstroemeria,flowers_ornamental_plants,3301080000,0,IT
+286,ALTEA,Marshmallow plant,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+287,AMAMELIDE,witch hazel,shrubberries_shrubs,3303080000,0,IT
+496,AMARANTO,AMARANTH,amaranth,3301150100,0,IT
+050,ANEMONE,Anemone,anemones_windflowers,3301080200,0,IT
+221,ANETO,DILL,anethum_dill,3301061203,0,IT
+221,ANETO ,DILL,anethum_dill,3301061203,0,IT
+288,ANGELICA,Angelica,angelica,3301061204,0,IT
+289,ANICE COMUNE,common anise,anise_aniseed,3301061205,0,IT
+289,ANICE COMUNE  ,common anise,anise_aniseed,3301061205,0,IT
+A13,ANICE STELLATO,star anise,anise_aniseed,3301061205,0,IT
+630,ARACHIDE,PEANUT,arachis,3301090302,0,IT
+007,ARALIA,spikenard,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+201,ARANCIO,ORANGE,citrus_plantations,3303040000,0,IT
+655,ARBORETO CONSOCIABILE (CON COLTIVAZIONI ERBACEE),mixed arboretum (with herbaceous crops),tree_wood_forest,3306000000,7,IT
+655,ARBORETO CONSOCIABILE (CON COLTIVAZIONI ERBACEE),mixed arboretum (with herbaceous crops),tree_wood_forest,3306000000,7,IT
+500,ARBORICOLTURA,Arboriculture,tree_wood_forest,3306000000,0,IT
+500,ARBORICOLTURA ,Arboriculture,tree_wood_forest,3306000000,0,IT
+A05,AREA A SEMINATIVO DEDICATA ALL'ELICICOLTURA,Arable land,not_known_and_other,3399000000,0,IT
+291,ARNICA,arnica,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+292,ARONIA NERA,black chokeberry,aronia_chokeberries,3303020100,0,IT
+349,MARRUBIO O ROBBIO,common horehound,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+653,ARUNDO DONAX,Giant reed,poaceae_grasses,3301090200,0,IT
+902,ASPARAGO,asparagus,asparagus,3301200000,0,IT
+008,ASPIDISTRA,aspidistra,flowers_ornamental_plants,3301080000,0,IT
+393,PARTENIO,Feverfew,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+1001,Avena,Oats,oats,3301010500,0,IT
+533,AVENA,Oats,oats,3301010500,0,IT
+261,AVENA  ALTISSIMA,false oat-grass,poaceae_grasses,3301090200,0,IT
+261,AVENA ALTISSIMA,false oat-grass,poaceae_grasses,3301090200,0,IT
+405,AVOCADO,AVOCADO,avocado,3303100000,0,IT
+969,AZZERUOLO,Crataegus azarolus,crataegus_hawthorn,3303080300,0,IT
+180,BAGOLARO,European nettle tree,tree_wood_forest,3306000000,0,IT
+417,VERBENA OFFICINALE,VERBENA,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+418,VERGA D'ORO (SOLIDAGO VIRGA AUREA L.),European goldenrod,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+695,BANANO DEL NORD,banana,orchards_fruits,3303010000,0,IT
+240,BARBABIETOLA,BEET,beetroot_beets,3301290200,0,IT
+240,BARBABIETOLA - RAPA ROSSA/BIETOLA DA COSTA,Beetroot - industry,beetroot_beets,3301290200,0,IT
+297,BARDANA,BURDOCK,arctium_burdock,3301290100,0,IT
+903,BASILICO,BASIL,basil,3301061207,0,IT
+294,BASILICO SANTO,BASIL,basil,3301061207,0,IT
+295,ARTEMISIA,Mugworts,artemisia,3301061206,0,IT
+432,BERGAMOTTO,bergamot,citrus_plantations,3303040000,0,IT
+298,BETULLA,Birch,birch,3306030000,0,IT
+304,BIANCOSPINO,HAWTHORN,crataegus_hawthorn,3303080300,0,IT
+304,BIANCOSPINO,HAWTHORN,crataegus_hawthorn,3303080300,0,IT
+024,"BIETOLA (Compresa  la CHELTENHAM BEET, BARBABIETOLA ROSSA/BIETOLA DA COSTA)",BEET,beetroot_beets,3301290200,0,IT
+024,"BIETOLA (COMPRESA  LA CHELTENHAM BEET, BARBABIETOLA ROSSA/BIETOLA DA COSTA)",BEET,beetroot_beets,3301290200,0,IT
+305,BIRICOCCOLO SUSINCOCCO,purple apricot,apricots,3303010300,0,IT
+305,BIRICOCCOLO SUSINCOCCO   ,purple apricot,apricots,3303010300,0,IT
+306,BORRAGINE,Borage,borage,3301061209,0,IT
+1095,Bosco,Forest,tree_wood_forest,3306000000,0,IT
+650,BOSCO,BOSKETTS,tree_wood_forest,3306000000,0,IT
+972,BRASSICA CARINATA  (CAVOLO ABISSINO),BRASSICA CARINATA,brassicaceae_cruciferae,3301210000,0,IT
+117,BROCCOLETTO DI RAPA,Broccoli rabe,broccoli,3301210202,0,IT
+117,BROCCOLETTO O CIME DI RAPA,Broccoli rabe,broccoli,3301210202,0,IT
+117,"BROCCOLETTO O CIME DI RAPA
+",Broccoli rabe,broccoli,3301210202,0,IT
+558,BUDDLEJA,Butterfly bush,flowers_ornamental_plants,3301080000,0,IT
+688,CACO MELA,Persimmon (variety),orchards_fruits,3303010000,0,IT
+066,CALENDULA,CALENDULA,calendula_marigold,3301061210,0,IT
+013,CALLA,Calla lily,flowers_ornamental_plants,3301080000,0,IT
+524,CAMELIA,Camelina,camelina,3301061500,0,IT
+998,CAMELINA o DORELLA  COLTIVATA,CAMELINE or CULTIVATED DORELLA,camelina,3301061500,0,IT
+998,"CAMELINA o DORELLA  COLTIVATA
+",Camelina,camelina,3301061500,0,IT
+324,CAMOMILLA,CHAMOMILE,chamomile,3301061213,0,IT
+325,CAMOMILLA ROMANA,Roman chamomile,chamomile,3301061213,0,IT
+326,CAMOMILLA ROMANA,Roman chamomile,chamomile,3301061213,0,IT
+056,CANAPA,HEMP,hemp_cannabis,3301061000,0,IT
+056,CANAPA  ,HEMP,hemp_cannabis,3301061000,0,IT
+112,CANNA CINESE (MISCANTHUS SINENSIS),chinese reed (miscanthus),miscanthus_silvergrass,3301083000,0,IT
+296,ASSENZIO,artemisia,artemisia,3301061206,0,IT
+968,CAPPERO,CAPER,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+909,CARCIOFO,artichoke,artichoke,3301270000,0,IT
+910,CARDI,artichoke thistle,marian_thistles,3301061300,0,IT
+543,CARDIACA,Motherwort,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+326,CARDO MARIANO ,MILK THISTLE,marian_thistles,3301061300,0,IT
+326,"CARDO MARIANO 
+",Milk thistle,marian_thistles,3301061300,0,IT
+027,CAROTA,Carrot,carrots_daucus,3301290300,0,IT
+181,CARPINO,hornbeam,tree_wood_forest,3306000000,0,IT
+738,CARPINO NERO,Blackthorn,berries_berry_species,3303020000,0,IT
+491,CARRUBO,Carob,carob,3303110100,0,IT
+536,BEGONIA,Begonia for the tuber,begonias,3301080400,0,IT
+262,CARVI - CUMINO DEI PRATI,Caraway,caraway,3301061211,0,IT
+492,CASTAGNO,CHESTNUT,sweet_chestnuts,3303030500,0,IT
+505,CAVE DA PIETRA,STONE QUARRIES,not_known_and_other,3399000000,0,IT
+118,CAVOLFIORE,Cauliflower,cauliflower,3301210204,0,IT
+028,CAVOLO,CABBAGE,brassica_oleracea_cabbage,3301210200,0,IT
+970,CAVOLO BROCCOLO,broccoli,broccoli,3301210202,0,IT
+270,CAVOLO CINESE,Chinese cabbage,chinese_cabbage,3301210205,0,IT
+A12,CAVOLO NERO,Italian kale,brassica_oleracea_cabbage,3301210200,0,IT
+954,CAVOLO RAPA,Kohlrabi,kohlrabi,3301210209,0,IT
+475,"MIRTILLI ROSSI, MIRTILLI NERI ED ALTRI FRUTTI DEL GENERE ""VACCINIUM""","CRANBERRIES, BLACKBERRIES AND OTHER FRUITS OF THE VACCINIUM GENUS",berries_berry_species,3303020000,0,IT
+1102,Cece,Chickpea,chickpeas,3301020200,0,IT
+544,CECE,Chickpea,chickpeas,3301020200,0,IT
+060,CEDRO,Cedar,citrus_plantations,3303040000,0,IT
+483,CENTELLA,Pennywort,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+593,CERRO,Turkey oak,oak,3306060000,0,IT
+917,CETRIOLO,Cucumber,cucumber_pickle,3301140100,0,IT
+545,CHENOPODIUM QUINOA,Quinoa,quinoa,3301150300,0,IT
+029,CICERCHIA,Grass pea,lathyrus_peavine,3301020800,0,IT
+534,CICLAMINO,cyclamen,flowers_ornamental_plants,3301080000,0,IT
+919,CICORIA,Chicory,chicory_chicories,3301310200,0,IT
+2103,Ciliegio,Cherry,cherry_cherries,3303010400,0,IT
+672,CILIEGIO,Cherry,cherry_cherries,3303010400,0,IT
+468,"CILIEGIO ACIDO (MARASCA,VISCIOLA,AMARENA)",Sour cherry,cherry_cherries,3303010400,0,IT
+921,CIPOLLA ANCHE DI TIPO LUNGO (ECHALION),"Onions, leg and plant (incl. shallots)",onions,3301220400,0,IT
+921,CIPOLLA ANCHE DI TIPO LUNGO (echalion),"Onions, leg and plant (incl. shallots)",onions,3301220400,0,IT
+475,"MIRTILLI ROSSI, MIRTILLI NERI ED ALTRI FRUTTI DEL GENERE VACCINIUM","CRANBERRIES, BLACKBERRIES AND OTHER FRUITS OF THE VACCINIUM GENUS",berries_berry_species,3303020000,0,IT
+466,UVA URSINA,bearberry,berries_berry_species,3303020000,0,IT
+541,MIZUNA O BRASSICA RAPA,Japanese mustard greens or brassica rapa,brassicaceae_cruciferae,3301210000,3,IT
+199,CIPRESSO,cypress,tree_wood_forest,3306000000,0,IT
+541,MIZUNA O BRASSICA RAPA,Japanese mustard greens or brassica rapa,brassicaceae_cruciferae,3301210000,3,IT
+675,SCAGLIOLA,Canary grass ,canary_seed_canaryseed,3301011400,0,IT
+924,COCOMERO,Watermelon,watermelon,3301140500,0,IT
+022,CODA DI VOLPE,meadow foxtail,poaceae_grasses,3301090200,0,IT
+081,GAROFANO,carnation,carnation,3301080800,0,IT
+009,FARRO,"EMMER, Spelt, OR EINKORN (SUMMER)",cereal,3301010000,3,IT
+651,COLTIVAZIONI ARBOREE SPECIALIZZATE,specialized tree crops,tree_wood_forest,3306000000,0,IT
+003,COLZA,Rapeseed,rapeseed_rape,3301060400,0,IT
+171,CORBEZZOLO,strawberry tree,orchards_fruits,3303010000,0,IT
+226,CORIANDOLO,CORIANDER,coriander,3301061215,0,IT
+661,COTOGNO,Quince,quinces,3303011500,0,IT
+662,COTONE,COTTON,cotton,3301060300,0,IT
+617,CRAMBE,CRUICIFERS / CABBAGE / BROCCOLI / CAULIFLOWER,brassicaceae_cruciferae,3301210000,0,IT
+484,CRESCIONE DEI GIARDINI O CRESCIONE INGLESE,Garden cress,cress,3301210300,0,IT
+080,CRISANTEMO,Chrysanthemums,chrysanthemum,3301080900,0,IT
+293,CUMINO - CUMINO ROMANO,Cumin,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+197,DOUGLASIA,Douglas fir,caraway,3301061211,0,IT
+458,ECHINACEA ANGUSTIFOLIA,Narrow-leaved coneflower,echinacea_sun_hat,3301081500,0,IT
+458,ECHINACEA ANGUSTIFOLIA,Narrow-leaved coneflower,echinacea_sun_hat,3301081500,0,IT
+457,ECHINACEA PALLIDA,Pale coneflower,echinacea_sun_hat,3301081500,0,IT
+457,ECHINACEA PALLIDA,Pale coneflower,echinacea_sun_hat,3301081500,0,IT
+488,ECHINACEA PURPUREA,Purple coneflower,echinacea_sun_hat,3301081500,0,IT
+488,ECHINACEA PURPUREA,Purple coneflower,echinacea_sun_hat,3301081500,0,IT
+328,ELICRISO,Helichrysum,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+329,ENULA,Inula,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+330,EQUISETO,horsetail,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+942,ERBA CIPOLLINA,chives,chives,3301220100,0,IT
+1014,Farro,"EMMER, Spelt, OR EINKORN (SUMMER)",cereal,3301010000,3,IT
+562,ERBA MEDICA,ALFALFA,alfalfa_lucerne,3301090301,0,IT
+357,ERBA MEDICA  (SP. MEDICAGO SATIVA L. (VARIETA')),ALFALFA,alfalfa_lucerne,3301090301,0,IT
+1464,ERBAIO,Forage crops,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+800,ERBAIO,HERBAL,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+546,ERISMO,Hedge Mustard,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+331,ESCOLZIA,poppy,poppy,3301060600,0,IT
+668,EUCALIPTO,EUCALYPTUS,eucalyptus,3306050000,0,IT
+674,EVODIA O EUODIA OALBERO DELLE API O ALBERO DEL MIELE,bee tree ,tree_wood_forest,3306000000,0,IT
+7001,Fabbricati,Buildings,not_known_and_other,3399000000,0,IT
+332,FACELIA,FACELIA,phacelia,3301061400,0,IT
+303,FAGGIO,Beech tree,other_tree_wood_forest,3306990000,0,IT
+121,FAGIOLINO,Green bean,beans,3301020100,0,IT
+122,FAGIOLO,Bean,beans,3301020100,0,IT
+453,FAGIOLO DALL'OCCHIO,Bean,beans,3301020100,0,IT
+217,FAGIOLO D'EGITTO,Bean,beans,3301020100,0,IT
+454,FAGIOLO DI LIMA,Bean,beans,3301020100,0,IT
+265,FAGIOLO DI SPAGNA,Runner bean,beans,3301020100,0,IT
+192,FARNIA,English oak,oak,3306060000,0,IT
+717,GRANO DEL MIRACOLO,Miracle wheat,cereal,3301010000,0,IT
+062,PEPERONCINO PEPERETTA,Chili pepper,chili_pepper,3301300200,0,IT
+792,FASCE TAMPONE NON RIPARIALI,non-riparian buffer strips,field_margins_buffer_strips_flowering_areas,3310100000,0,IT
+791,FASCE TAMPONE RIPARIALI,riparian buffer strips,wetland_buffers,3310700000,0,IT
+1482,Fava,Bean,beans,3301020100,0,IT
+A16,FAVA (FAVA GROSSA),BEANS; BROAD BEAN,beans,3301020100,0,IT
+A17,FAVA (FAVETTA),Bean,beans,3301020100,0,IT
+575,"FAVE, FAVINO  E FAVETTE",Bean,beans,3301020100,0,IT
+575,"FAVE, FAVINO E FAVETTE",Broad beans and field beans,beans,3301020100,0,IT
+A15,FAVINO,BEAN,beans,3301020100,0,IT
+359,FESTUCA  (SP. FESTUCA ARUNDINACEA SCHREB.),FESTUCA (SP. FESTUCA ARUNDINACEA SCHREB.),festuca_fescue,3301090202,0,IT
+360,FESTUCA  (SP. FESTUCA OVINA L.),festuca,festuca_fescue,3301090202,0,IT
+361,FESTUCA  (SP. FESTUCA PRATENSIS HUDS.),FESTUCA (SP. FESTUCA PRATENSIS HUDS.),festuca_fescue,3301090202,0,IT
+362,FESTUCA  (SP. FESTUCA RUBRA L.),festuca,festuca_fescue,3301090202,0,IT
+363,FESTUCA  (SP. FESTULOLIUM),festuca,festuca_fescue,3301090202,0,IT
+362,FESTUCA (SP. FESTUCA RUBRA L.),festuca,festuca_fescue,3301090202,0,IT
+263,FESTUCA INDURITA,hardened festuca,festuca_fescue,3301090202,0,IT
+010,FETTUCCIA D'ACQUA,Water ribbon (aquatic plant),wetland_buffers,3310700000,0,IT
+472,FICO,Fig,fig,3303010600,0,IT
+032,ERBA MAZZOLINA,Cat grass,cocksfoot_catgrass,3301090203,0,IT
+099,MARGHERITA,Oxeye daisy,daisy_daisies,3301081300,0,IT
+337,GALEGA O CAPRAGGINE,goat's-rue,galega,3301081900,0,IT
+862,FIENO GRECO,Fenugreek,fenugreek,3301020400,0,IT
+862,"FIENO GRECO
+",Fenugreek,fenugreek,3301020400,0,IT
+334,"FILIPENDULA,ULMARIA",Meadowsweet,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+926,FINOCCHIO,FENNEL,fennel,3301170000,0,IT
+335,FIORDALISO,Cornflower blue,cornflowers,3301081000,0,IT
+734,FIORI EDULI,edible flowers,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+365,FLEOLO (CODA DI TOPO) (SP. PHLEUM PRATENSE L.),Timothy (grass),timothy,3301090209,0,IT
+786,FOSSATI E CANALI,ditches and canals,ditches,3310500000,0,IT
+927,FRAGOLA,Strawberry,strawberries,3301130000,0,IT
+967,FRASSINO,Ash,other_tree_wood_forest,3306990000,0,IT
+309,FRASSINO OSSIFILLO O MERIDIONALE,narrow-leaved ash,other_tree_wood_forest,3306990000,0,IT
+1002,Frumento duro,DURUM WHEAT,durum_hard_wheat,3301010200,0,IT
+338,GIAGGIOLO (IRIS) PALLIDA,Sweet Iris,iris,3301082300,0,IT
+1003,Frumento tenero,SOFT WHEAT,common_soft_wheat,3301010100,0,IT
+490,FRUTTA A GUSCIO,Nuts,nuts,3303030000,0,IT
+679,FRUTTETI FAMILIARI,family orchards,orchards_fruits,3303010000,0,IT
+447,FUNGHI,Mushrooms,mushrooms_energy_genetically_modified_crops,3304000000,0,IT
+150,LATYRUS spp  (TARTUFO DI PRATO),latyrus spp (meadow truffle),lathyrus_peavine,3301020800,0,IT
+581,GINESTRINO,Bird's-foot trefoil,birdsfoot_trefoil,3301090306,0,IT
+1148,Hedysarum coronarium L. (Sulla),Spanish sainfoin,onobrychis_sainfoins,3301061600,0,IT
+535,GERANIO,Geranium,flowers_ornamental_plants,3301080000,0,IT
+017,GERBERA,Gerbera,flowers_ornamental_plants,3301080000,0,IT
+961,MELISSA,Melissa (lemon balm),lemon_balm_melissa,3301061220,0,IT
+340,GIAGGIOLO O GIGLIO  BIANCO  IRIS FIORENTINA,white lily or iris florentine,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,3,IT
+317,GINEPRO,JUNIPER,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+961,MELISSA,Melissa (lemon balm),lemon_balm_melissa,3301061220,0,IT
+016,LENTICCHIE,Lentils,lentils,3301020500,0,IT
+310,GINKGO BILOBA,GINKGO,ginko,3303090000,0,IT
+005,GIRASOLE,Sunflower,sunflower,3301060500,0,IT
+1904,Girasole,Sunflower,sunflower,3301060500,0,IT
+228,GIUGGIOLO,Jujube,orchards_fruits,3303010000,0,IT
+037,GLADIOLO,Gladiolus dried flowers,gladiolus_gladioli,3301082100,0,IT
+092,LILIUM,Lily,lilies,3301082500,0,IT
+002,GRANO (FRUMENTO) DURO,DURUM WHEAT,durum_hard_wheat,3301010200,0,IT
+587,GRANO (FRUMENTO) TENERO,SOFT WHEAT,common_soft_wheat,3301010100,0,IT
+476,NESPOLO,MEDLAR,medlar_loquat,3303010800,0,IT
+597,GRANO SARACENO,BUCKWHEAT,buckwheat,3301150200,0,IT
+346,GRANO TURANICUM O FRUMENTO ORIENTALE O GRANO KHORASAN,turanicum wheat or oriental wheat or khorasan wheat,cereal,3301010000,3,IT
+001,GRANTURCO (MAIS),Corn,grain_maize_corn_popcorn,3301010600,0,IT
+342,GRINDELIA,grindelia,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+578,FRUMENTO SEGALATO,Meslin,meslin,3301011100,7,IT
+343,GUALDO,dyer's woad,isatis_tinctoria_woad,3301082400,0,IT
+A06,MISCUGLI DI COLTURE,crops mixtures,mixed_cropping,3301320000,1,IT
+162,INDIVIA O SCAROLA,Endive,endive,3301310300,0,IT
+162,INDIVIA o SCAROLA,Endive,endive,3301310300,0,IT
+344,IPERICO,St. John's wort,st_johns_wort,3301061234,0,IT
+312,IPPOCASTANO O CASTAGNO D'INDIA,HORSE CHESTNUT,sweet_chestnuts,3303030500,0,IT
+345,ISSOPO,Hyssop,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+345,ISSOPO ,Hyssop,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+473,LAMPONE,Raspberry,raspberry_raspberries,3303021000,0,IT
+127,LATTUGA LATTUGHINO,LETTUCE,salads_lettuce_leaf_vegetables,3301310000,0,IT
+722,MISCUGLIO DI AZOTOFISSATRICI,mixture of nitrogen fixing agents,mixed_cropping,3301320000,1,IT
+445,LAVANDA,LAVENDER,lavender_lavandula,3301061219,0,IT
+311,LECCIO,HOLM OAK,oak,3306060000,0,IT
+607,LEGUMINOSE DA GRANELLA,grain legumes,legumes_dried_pulses_protein_crops,3301020000,0,IT
+685,COLTIVAZIONI ARBOREE PROMISCUE (PIU' SPECIE ARBOREE),MIXED CROPS OF PRATE SPECIES,mixed_permanent_plantations,3303130000,8,IT
+506,ROCCIA,Rock,stone_walls,3310600000,0,IT
+435,LIMETTE,LIME,citrus_plantations,3303040000,0,IT
+204,LIMONE,LEMON,citrus_plantations,3303040000,0,IT
+055,LINO,linen,flax_linen,3301060701,0,IT
+322,LIPPIA CITRIODORA O CEDRINA O LIMONCINA (ALOYSIA CITRODORA),Lemon Beebrush,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+216,LIQUIRIZIA,LICORICE,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+047,LOIETTO,ryegrass (sp. lolium,lolium_ryegrass,3301090205,0,IT
+369,LOIETTO  (SP. LOLIUM X BOUCHEANUM KUNT.),ryegrass (sp. lolium,lolium_ryegrass,3301090205,0,IT
+046,LOIETTO LOGLIO,Ryegrass hybrid,lolium_ryegrass,3301090205,0,IT
+047,LOIETTO LOGLIO PERENNE/LOIETTO INGLESE,Ryegrass 5 years or less,lolium_ryegrass,3301090205,0,IT
+471,LOTO (KAKI),Persimmon,orchards_fruits,3303010000,0,IT
+471,LOTO (KAKI)  (compreso il caco mela),Persimmon,orchards_fruits,3303010000,0,IT
+471,LOTO (KAKI) (COMPRESO IL CACO MELA),Persimmon,orchards_fruits,3303010000,0,IT
+719,LUFFA,luffa,pumpkin_squash_gourd,3301140400,0,IT
+612,LUPINELLA,common sainfoin,onobrychis_sainfoins,3301061600,0,IT
+615,LUPINO,Lupine,sweet_lupins,3301020700,0,IT
+051,LUPOLINA,hop clover,clover,3301090303,0,IT
+076,LUPPOLO,HOP,hops,3301060200,0,IT
+213,LYCIUM BARBARUM (GOJI),Goji strawberry,strawberries,3301130000,0,IT
+784,"MACERI, STAGNI E LAGHETTI",Ponds and wetlands,wetlands,3310400000,0,IT
+422,BAMBU,bamboo,other_permanent_crops_plantations,3303990000,0,IT
+1005,Mais,Corn,grain_maize_corn_popcorn,3301010600,0,IT
+348,MALVA,Mallow,malva,3301082800,0,IT
+203,MANDARANCIO (CLEMENTINO),MANDARIN,citrus_plantations,3303040000,0,IT
+202,MANDARINO,MANDARIN,citrus_plantations,3303040000,0,IT
+493,MANDORLO,ALMOND TREES,almond,3303030100,0,IT
+A19,MANGO,MANGO,orchards_fruits,3303010000,0,IT
+660,MANUFATTI,artifacts,non_productive_landscape_elements,3310000000,0,IT
+424,BAMBU GIGANTE,bamboo,other_permanent_crops_plantations,3303990000,0,IT
+789,MARGINI (BORDI) DEI CAMPI,margins (edges) of fields,field_margins_buffer_strips_flowering_areas,3310100000,0,IT
+789,"MARGINI (BORDI) DEI CAMPI
+",margins (edges) of fields,field_margins_buffer_strips_flowering_areas,3310100000,0,IT
+789,MARGINI DEI CAMPI,edges of the fields,field_margins_buffer_strips_flowering_areas,3310100000,0,IT
+386,MARGINI DEI CAMPI SEMINABILI,margins of seedable fields,field_margins_buffer_strips_flowering_areas,3310100000,0,IT
+407,FICODINDIA,Prickly pear,other_permanent_crops_plantations,3303990000,0,IT
+1167,Medicago sativa L. (Erba medica),ALFALFA,alfalfa_lucerne,3301090301,0,IT
+129,MELANZANA,EGGPLANT,aubergine_eggplant,3301260000,0,IT
+622,MELILOTO,Yellow sweet clover,melilot,3301090304,0,IT
+407,FICODINDIA O FICO D'INDIA,Prickly pear,other_permanent_crops_plantations,3303990000,0,IT
+407,FICODINDIA o FICO D'INDIA ,Prickly pear,other_permanent_crops_plantations,3303990000,0,IT
+044,MELO,Apple tree,apples,3303010200,0,IT
+2201,Melo,Apple tree,apples,3303010200,0,IT
+408,MELOGRANO,POMEGRANATE,pomegranate,3303011400,0,IT
+130,MELONE,Melon,melon,3301140300,0,IT
+962,MENTA,MINT,mints_peppermint,3301061222,0,IT
+279,MENTA DOLCE,MINT,mints_peppermint,3301061222,0,IT
+280,MENTA PIPERITA,Peppermint,mints_peppermint,3301061222,0,IT
+245,MENTUCCIA,Lesser Calamint,mints_peppermint,3301061222,0,IT
+624,MIGLIO,MILLET,millet_sorghum,3301010900,0,IT
+040,MIMOSA,mimosa,flowers_ornamental_plants,3301080000,0,IT
+177,GELSO,Mulberry,other_permanent_crops_plantations,3303990000,0,IT
+103,PASCOLO ARBORATO - CESPUGLIATO TARA 20%,Treed Pasture - Bushland  20%,pastures_meadows_with_trees,3302010000,8,IT
+318,MIRTO,myrtle,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+1172,PASCOLO ARBORATO - CESPUGLIATO TARA 20%,PASTURE WITH WOODS - BUSHED TARA 20%,pastures_meadows_with_trees,3302010000,8,IT
+054,PASCOLO ARBORATO - TARA 50%,Pasture with trees,pastures_meadows_with_trees,3302010000,8,IT
+1173,PASCOLO ARBORATO - TARA 50%,PASTURE WITH WOOD - 50% TARE,pastures_meadows_with_trees,3302010000,8,IT
+747,PECAN,pecan,pecan,3303030300,0,IT
+474,MORE,Blackberry,blackberry,3303020200,0,IT
+787,MURETTI TRADIZIONALI,traditional walls,stone_walls,3310600000,0,IT
+498,NASTURZIO,Nasturtium,nasturtiums,3301061224,0,IT
+091,NAVONI RUTABAGA,Rutabaga,swede_rutabaga,3301210500,0,IT
+497,PISTACCHIO,PISTACHIO,pistachio,3303030400,0,IT
+760,NIGELLA DAMASCENA,Love-in-a-Mist,flowers_ornamental_plants,3301080000,0,IT
+494,NOCCIOLO,Hazelnut,hazelnuts_hazel,3303030200,0,IT
+3080,Noce,walnuts,walnuts,3303030600,0,IT
+495,NOCE,walnuts,walnuts,3303030600,0,IT
+469,OKRA o OCRA o GOMBO,OKRA,fresh_vegetables,3301070000,0,IT
+2402,Oliva da trasformazione,OLIVE TREES,olive_plantations,3303050000,0,IT
+316,OLIVELLO O OLIVELLO SPINOSO,Sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,IT
+316,OLIVELLO O OLIVELLO SPINOSO ,Sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,IT
+420,OLIVO,OLIVE TREES,olive_plantations,3303050000,0,IT
+183,OLMO,ELM,tree_wood_forest,3306000000,0,IT
+1170,Onobrichis viciifolia Scop. (Lupinella),common sainfoin,onobrychis_sainfoins,3301061600,0,IT
+179,ONTANO,alder,tree_wood_forest,3306000000,0,IT
+018,ORCHIDEA,Orchid,flowers_ornamental_plants,3301080000,0,IT
+963,ORIGANO,OREGANO,oregano,3301061226,0,IT
+023,ORTENSIA,HYDRANGEA,flowers_ornamental_plants,3301080000,0,IT
+629,ORTI FAMILIARI,family gardens,kitchen_gardens,3301120000,0,IT
+392,ORTICA,Nettle,nettles,3301061225,0,IT
+131,ORTIVE A PIENO CAMPO,open field vegetables,fresh_vegetables,3301070000,0,IT
+1007,Orzo,BARLEY,barley,3301010400,0,IT
+870,ORZO,BARLEY,barley,3301010400,0,IT
+053,PANICO,switchgrass,poaceae_grasses,3301090200,0,IT
+101,PAPAVERO,Poppy,poppy,3301060600,0,IT
+733,PAPAYA,PAPAYA,orchards_fruits,3303010000,0,IT
+508,PORTULACA o PORCELLANA COMUNE,Purslane,purslane,3301240000,0,IT
+508,PORTULACA O PORCELLANA COMUNE,Purslane,purslane,3301240000,0,IT
+539,CARTAMO,safflower,safflower,3301083900,0,IT
+A11,CAVOLO VERZA,SAVOY CABBAGE,savoy_cabbage,3301210211,0,IT
+219,CIPOLLETTA  CIPOLLA D'INVERNO,Welsh onion,scallion,3301220500,0,IT
+218,PASCOLO CON PRATICHE TRADIZIONALI,Pastures,pasture_meadow_grassland_grass,3302000000,0,IT
+218,PASCOLO CON PRATICHE TRADIZIONALI ,GRAZING WITH TRADITIONAL PRACTICES ,pasture_meadow_grassland_grass,3302000000,0,IT
+218,PASCOLO CON PRATICHE TRADIZIONALI - TARA 70%,Pastures,pasture_meadow_grassland_grass,3302000000,0,IT
+218,"PASCOLO CON PRATICHE TRADIZIONALI 
+",Pastures,pasture_meadow_grassland_grass,3302000000,0,IT
+218,PASCOLO CON PRATICHE TRADIZIONALI TARA 50%,GRAZING WITH TRADITIONAL PRACTICES TARA 50%,pasture_meadow_grassland_grass,3302000000,0,IT
+065,PASCOLO POLIFITA,Mixed pasture,pasture_meadow_grassland_grass,3302000000,4,IT
+063,PASCOLO POLIFITA CON ROCCIA AFFIORANTE TARA 20%,Mixed pasture rocky 20%,pasture_meadow_grassland_grass,3302000000,4,IT
+1905,PASCOLO POLIFITA CON ROCCIA AFFIORANTE TARA 20%,Mixed pasture rocky 20%,pasture_meadow_grassland_grass,3302000000,4,IT
+064,PASCOLO POLIFITA CON ROCCIA AFFIORANTE TARA 50%,Mixed pasture rocky 50%,pasture_meadow_grassland_grass,3302000000,4,IT
+1906,PASCOLO POLIFITA CON ROCCIA AFFIORANTE TARA 50%,Mixed pasture rocky 50%,pasture_meadow_grassland_grass,3302000000,4,IT
+394,PASSIFLORA,passion fruit,orchards_fruits,3303010000,0,IT
+394,PASSIFLORA (MARACUJA o FRUTTO DELLA PASSIONE),PASSION FRUIT ,orchards_fruits,3303010000,0,IT
+395,PASTINACA,Parsnip,parsnips,3301290500,0,IT
+710,PATATA,POTATO,potatoes,3301030000,0,IT
+089,PATATA AMERICANA (BATATA),POTATO,potatoes,3301030000,0,IT
+188,PAULOWNIA TOMENTOSA,Empress tree,tree_wood_forest,3306000000,0,IT
+219,CIPOLLETTA  CIPOLLA D'INVERNO O BUNCHING ONION,Welsh onion or bunching onion,scallion,3301220500,3,IT
+031,PEONIA,Peony propagation,peony_peonies,3301083400,0,IT
+219,CIPOLLETTA  CIPOLLA D'INVERNO O BUNCHING ONION ,Welsh onion or bunching onion,scallion,3301220500,3,IT
+932,PEPERONE,Pepper,bell_pepper_paprika,3301300100,0,IT
+189,PERO,pear,pears,3303011200,0,IT
+2202,Pero,pear,pears,3303011200,0,IT
+2107,Pesco,Peach,peach,3303011100,0,IT
+801,PESCO,Peach,peach,3303011100,0,IT
+804,PESCO NETTARINA,Nectarine,nectarine,3303010900,0,IT
+033,PHILODENDRO,PHILODENDRON,flowers_ornamental_plants,3301080000,0,IT
+396,PIANTAGGINE LANCEOLATA O LINGUA DI CANE,Ribwort Plantain,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+397,PIANTAGGINE MAGGIORE O LINGUA D'OCA,Broadleaf plantain,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+507,PIANTE AROMATICHE E MEDICINALI E SPEZIE,Aromatic and medicinal plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+646,PIANTE ORNAMENTALI,ORNAMENTAL PLANTS,flowers_ornamental_plants,3301080000,0,IT
+399,PILOSELLA,Pilosella,flowers_ornamental_plants,3301080000,0,IT
+208,PINO,Pine,tree_wood_forest,3306000000,0,IT
+826,PINO DOMESTICO,pine,tree_wood_forest,3306000000,0,IT
+198,PINO MARITTIMO,Maritime pine,tree_wood_forest,3306000000,0,IT
+463,PINO MUGO,pine,tree_wood_forest,3306000000,0,IT
+428,PINO NERO,black pine,tree_wood_forest,3306000000,0,IT
+069,PIOPPO,Poplar,populus,3306070000,0,IT
+300,PIOPPO BIANCO,White poplar,populus,3306070000,0,IT
+301,PIOPPO NERO,Black poplar,populus,3306070000,0,IT
+302,PIOPPO TREMULO,Other poplar,populus,3306070000,0,IT
+020,PISELLO,Peas,peas,3301020600,0,IT
+464,GLICINE,Wisteria,shrubberries_shrubs,3303080000,0,IT
+042,PITTOSPORO,Cheesewood,flowers_ornamental_plants,3301080000,0,IT
+191,PLATANO,platane,tree_wood_forest,3306000000,0,IT
+375,POA  (SP. POA PRATENSIS L.),Kentucky bluegrass,poaceae_grasses,3301090200,0,IT
+374,POA (SP. POA NEMORALIS L. ),Wood bluegrass,poaceae_grasses,3301090200,0,IT
+446,POA ANNUA,poa annual,poaceae_grasses,3301090200,0,IT
+120,POINSETTIA (STELLA DI NATALE),Poinsettia,poaceae_grasses,3301090200,0,IT
+656,POMODORINO,cherry tomato,tomato,3301280000,0,IT
+1308,Pomodoro,Tomato,tomato,3301280000,0,IT
+134,POMODORO,Tomato,tomato,3301280000,0,IT
+135,PORRO,Leek,leek,3301220300,0,IT
+499,PRUGNOLO,Blackthorn,shrubberries_shrubs,3303080000,0,IT
+320,CISTO BIANCO,WHITE CISTUS,shrubberries_shrubs,3303080000,0,IT
+460,PRATI ARIDI - FORMAZIONI ERBOSE CON ORCHIDEE,Dry grasslands with orchids,pasture_meadow_grassland_grass,3302000000,0,IT
+391,PRATI PERMANENTI NATURALI CON VINCOLI AMBIENTALI,Permanent grass and clover without norm,pasture_meadow_grassland_grass,3302000000,0,IT
+380,PRATI PERMANENTI NATURALI CON VINCOLI AMBIENTALI - TARA 20%,NATURAL PERMANENT MEADOWS WITH ENVIRONMENTAL CONSTRAINTS - 20% TARA,pasture_meadow_grassland_grass,3302000000,0,IT
+382,PRATI PERMANENTI NATURALI CON VINCOLI AMBIENTALI - TARA 50%,NATURAL PERMANENT MEADOWS WITH ENVIRONMENTAL CONSTRAINTS - 50% TARA,pasture_meadow_grassland_grass,3302000000,0,IT
+739,CISTO DI CRETA (CISTO ROSSO),Pink rock-rose,shrubberries_shrubs,3303080000,0,IT
+899,PRATO PASCOLO,Pasture,pasture_meadow_grassland_grass,3302000000,0,IT
+336,PRATO POLIFITA,multiphyta meadow,pasture_meadow_grassland_grass,3302000000,0,IT
+933,PREZZEMOLO,Parsley,parsley,3301061227,0,IT
+525,PRIMULA,Primrose,primrose,3301083500,0,IT
+950,PRUGNE,PLUMS,plums,3303011300,0,IT
+039,GINESTRA,Genisteae ,shrubberries_shrubs,3303080000,0,IT
+398,PSILLO O PLANTAGO OVATA,Psyllium plantain,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+744,QUERCIA DI DALECHAMPS,dalechamps oak,oak,3306060000,0,IT
+743,QUERCIA SPINOSA,spinous oak,oak,3306060000,0,IT
+879,RABARBARO,Rhubarb,rhubarb,3301230000,0,IT
+935,RADICCHIO,Radish,radish,3301290600,0,IT
+429,RAFANO,Horseradish,horseradish,3301210400,0,IT
+153,RANUNCOLO,buttercup,flowers_ornamental_plants,3301080000,0,IT
+936,RAVANELLO,Radish,radish,3301290600,0,IT
+058,RAVIZZONE,turnip rape,turnip_rape,3301210700,0,IT
+462,RESEDA O GUADERELLA O LUTEOLA,Dyer's weed,rubia_tinctorum_common_madder,3301061231,0,IT
+480,RIBES BIANCO,White currant,currants,3303020600,0,IT
+480,RIBES BIANCO (UVA SPINA),Gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,IT
+480,RIBES BIANCO (UVA SPINA),Gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,IT
+480,"RIBES BIANCO (UVA SPINA)
+",Gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,IT
+477,RIBES NERO,BLACKBERRY,blackberry,3303020200,0,IT
+481,RIBES ROSSO,Red currant,redcurrant,3303021100,0,IT
+842,RICINO,castor bean,oilseed_crops,3301060800,0,IT
+019,RISONE,RICE,rice,3301010700,0,IT
+455,ROBBIA DEI TINTORI,Common madder (Rubia tinctorum),rubia_tinctorum_common_madder,3301061231,0,IT
+209,PRATO IN ROTOLO (TAPPETO ERBOSO),ROLL LAWN (TURF),sod_turf,3301090207,0,IT
+487,CANNA DA ZUCCHERO,SUGAR CANE,sugar_cane,3301061700,0,IT
+726,ROMICE o LAPAZIO,Dock,fibre_crops,3301061100,0,IT
+035,ROSA,Roses,roses,3301083700,0,IT
+411,ROSA CANINA,Rosehips,rose_hip_rosehip,3303021200,0,IT
+965,ROSMARINO,Rosemary,rosemary,3301061230,0,IT
+412,ROVEJA PISELLO SELVATICO,wild pea,peas,3301020600,0,IT
+313,ROVERE,OAK,oak,3306060000,0,IT
+193,ROVERELLA,downy oak,oak,3306060000,0,IT
+167,RUCOLA,ROCKET,rocket_arugula,3301310600,0,IT
+319,RUSCO  PUNGITOPO,Butcher's-broom,shrubberries_shrubs,3303080000,0,IT
+043,RUSCUS,Butcher’s broom,shrubberries_shrubs,3303080000,0,IT
+667,SALICE,willows,willows_osiers,3306080000,0,IT
+966,SALVIA,SAGE,sage_chia,3301190000,0,IT
+315,SAMBUCO,ELDER,elder_elderberry,3303080400,0,IT
+413,SANTOREGGIA MONTANA,Winter savory,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+413,SANTOREGGIA MONTANA ,Winter savory,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+785,GRUPPI DI ALBERI E BOSCHETTI,Group of trees,tree_wood_forest,3306000000,0,IT
+680,SCALOGNO,Shallots,shallot,3301220600,0,IT
+414,SCORZONERA,Scorzonera,black_salsify,3301290900,0,IT
+145,SEDANO,Celery,celery,3301250000,0,IT
+956,SEDANO RAPA,celeriac,celeriac,3301250100,0,IT
+684,SEGALA,RYE,rye,3301010300,0,IT
+666,SEMINATIVI,Arable land,arable_crops,3301000000,0,IT
+077,SENAPE,MUSTARD,mustard,3301210100,0,IT
+436,SENAPE BRUNA,Brown mustard,mustard,3301210100,0,IT
+438,SENAPE NERA,Black mustard,mustard,3301210100,0,IT
+557,SERRE,GREENHOUSE CROPS,greenhouse_foil_film,3305000000,0,IT
+149,SESAMO,sesame,oilseed_crops,3301060800,0,IT
+788,SIEPI E FASCE ALBERATE,hedges and tree-lined bands,hedges,3310200000,0,IT
+692,SILENE o SIRENE o STRIGOLI,catchflies or syrngia or Bladder campion,flowers_ornamental_plants,3301080000,3,IT
+736,SILFIO (PIANTA DI COPPO)  Silphium perfoliatum,Cup plant,silphium_rosinweeds,3301084400,0,IT
+736,SILFIO (PIANTA DI COPPO)  Silphium perfoliatum,Cup plant,silphium_rosinweeds,3301084400,0,IT
+736,"SILFIO (PIANTA DI COPPO)  Silphium perfoliatum",Cup plant,silphium_rosinweeds,3301084400,0,IT
+004,SOIA,Soy,soy_soybeans,3301160000,0,IT
+176,SORBO,Rowanberries,rowan_rowanberries,3303021300,0,IT
+1012,Sorgo,SORGHUM,millet_sorghum,3301010900,0,IT
+693,SORGO,SORGHUM,millet_sorghum,3301010900,0,IT
+045,SPELTA,spelt,spelt,3301011000,0,IT
+939,SPINACIO,Spinach,spinach,3301310800,0,IT
+732,SPIRULINA,spirulina,not_known_and_other,3399000000,0,IT
+155,STATICE,Sea lavenders,flowers_ornamental_plants,3301080000,0,IT
+011,STEVIA REBAUDIANA,candyleaf,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+314,SUGHERA QUERCIA DA SUGHERO,CORK OAK,oak,3306060000,0,IT
+314,SUGHERA QUERCIA DA SUGHERO,CORK OAK,oak,3306060000,0,IT
+840,SULLA,Sulla coronaria,legumes_harvested_green,3301090300,0,IT
+214,SUPERFICI AGRICOLE RITIRATE DALLA PRODUZIONE,Agricultural area temporarily not exploited,fallow_land_not_crop,3301110000,0,IT
+2109,SUSINO,Plum,plums,3303011300,0,IT
+673,SUSINO,Plum,plums,3303011300,0,IT
+025,TABACCO,Tobacco,tobacco,3301060100,0,IT
+1305,Tabacco,Tobacco,tobacco,3301060100,0,IT
+689,TAGETE o GAROFANO INDIANO,Marigold,flowers_ornamental_plants,3301080000,0,IT
+415,TARASSACO,dandelion,dandelions,3301081400,0,IT
+415,TARASSACO ,dandelion,dandelions,3301081400,0,IT
+2706,Tare,Tare,not_known_and_other,3399000000,0,IT
+501,TARTUFO,truffle,truffle,3304040000,0,IT
+150,TARTUFO DI PRATO,truffle,truffle,3304040000,0,IT
+682,TEF o TEFF,Teff,teff,3301010904,0,IT
+790,TERRAZZAMENTI,Terraces,non_productive_landscape_elements,3310000000,0,IT
+1700,Terreni ritirati dalla produzione,Land withdrawn from production,fallow_land_not_crop,3301110000,0,IT
+194,TIGLIO,lime tree,tree_wood_forest,3306000000,0,IT
+746,TIGLIO NOSTRANO,lime tree,tree_wood_forest,3306000000,0,IT
+951,TIMO,Thyme,thyme,3301061237,0,IT
+083,TOPINAMBUR,Jerusalem artichoke,topinambur_jerusalem_artichoke,3301180000,0,IT
+1451,Trifoglio,CLOVER,clover,3301090303,0,IT
+152,TRIFOGLIO,CLOVER,clover,3301090303,0,IT
+381,TRIFOGLIO  (SP. TRIFOLIUM HYBRIDUM L.),Alsike clover,clover,3301090303,0,IT
+384,TRIFOGLIO  (SP. TRIFOLIUM PRATENSE L.),Red clover,clover,3301090303,0,IT
+379,TRIFOGLIO (SP. TRIFOLIUM ALEXANDRINUM L.),Egyptian clover,clover,3301090303,0,IT
+383,TRIFOGLIO (SP. TRIFOLIUM INCARNATUM L.),Crimson clover,clover,3301090303,0,IT
+385,TRIFOGLIO (SP. TRIFOLIUM REPENS L.),White clover,clover,3301090303,0,IT
+388,TRIFOGLIO (SP. TRIFOLIUM RESUPINATUM L.),Persian clover,clover,3301090303,0,IT
+676,TRIFOGLIO (SP. TRIFOLIUM SQUARROSUM L.),Squarrose clover,clover,3301090303,0,IT
+093,TRITICALE,Triticale,triticale,3301010800,0,IT
+1013,Triticale,Triticale,triticale,3301010800,0,IT
+244,TRITORDEUM,Tritordeum,other_cereals,3301019900,0,IT
+A94,TULIPANO,tulips,tulips,3301084900,0,IT
+156,USO NON AGRICOLO - ALTRO,Non-agricultural use,not_known_and_other,3399000000,0,IT
+770,USO NON AGRICOLO - AREE NON COLTIVABILI,Non-agricultural use,not_known_and_other,3399000000,0,IT
+157,USO NON AGRICOLO - FABBRICATI,Non-agricultural use,not_known_and_other,3399000000,0,IT
+780,USO NON AGRICOLO - TARE,Non-agricultural use,not_known_and_other,3399000000,0,IT
+780,USO NON AGRICOLO - TARE ,Non-agricultural use,not_known_and_other,3399000000,0,IT
+669,ROBINIA,ROBINIA,tree_wood_forest,3306000000,0,IT
+416,VALERIANA,Valerian,valerian,3301061238,0,IT
+079,VECCE,vetch,vetches,3301090305,0,IT
+389,VECCIA SATIVA,Common vetch,vetches,3301090305,0,IT
+390,VECCIA VILLOSA,Hairy fescue,festuca_fescue,3301090202,0,IT
+964,MAGGIORANA,MARJORAM,unspecified_aromatic_medicinal_culinary_plants_spices_herbs,3301061298,0,IT
+619,COLTIVAZIONI ARBOREE PERMANENTI SOGGETTE A DIVIETO DI FERTILIZZAZIONE E DI TRATTAMENTO FITOSANITARIO  LUNGO I CORSI D?ACQUA,PERMANENT TREE CROPS,permanent_crops_perennial,3303000000,0,IT
+048,VIBURNO,Viburnum,shrubberries_shrubs,3303080000,0,IT
+088,VIGNA CINESE,cowpea,beans,3301020100,0,IT
+419,VIOLA TRICOLOR,wild pansy,flowers_ornamental_plants,3301080000,0,IT
+479,VISCIOLE,Sour Cherry,cherry_cherries,3303010400,0,IT
+2302,VITE,Grapevines,vineyards_wine_vine_rebland_grapes,3303060000,0,IT
+410,VITE,Grapevines,vineyards_wine_vine_rebland_grapes,3303060000,0,IT
+556,VIVAI - ALTRI,Nursery,nurseries_nursery,3303070000,0,IT
+A09,"VIVAI DI ALBERI E ARBUSTI PER GIARDINI,PARCHI, STRADE E SCARPATE (COME PIANTE PER SIEPI,ROSAI,ALTRI ARBUSTI ORNAMENTALI CONIFERE ORNAMENTALI)COMPRESI ","NURSERY OF TREE AND SHRUBS FOR GARDENS, PARKS, ROADS, AND SLOPEDS (SUCH AS HEDGE PLANTS, ROSEBUSHES, OTHER ORNAMENTAL SHRUBS, ORNAMENTAL CONIFERS), INCLUDING RELATED ROOTSTOCKS AND SEEDLINGS",nurseries_nursery,3303070000,0,IT
+A09,"VIVAI DI ALBERI E ARBUSTI PER GIARDINI,PARCHI, STRADE E SCARPATE (COME PIANTE PER SIEPI,ROSAI,ALTRI ARBUSTI ORNAMENTALI CONIFERE ORNAMENTALI)COMPRESI I RELATIVI PORTAINNESTI E PIANTICELLE","NURSERY OF TREE AND SHRUBS FOR GARDENS, PARKS, ROADS, AND SLOPEDS (SUCH AS HEDGE PLANTS, ROSEBUSHES, OTHER ORNAMENTAL SHRUBS, ORNAMENTAL CONIFERS), INCLUDING RELATED ROOTSTOCKS AND SEEDLINGS",nurseries_nursery,3303070000,0,IT
+A09,"VIVAI DI ALBERI E ARBUSTI PER GIARDINI,PARCHI, STRADE E SCARPATE (COME PIANTE PER SIEPI,ROSAI,ALTRI ARBUSTI ORNAMENTALI CONIFERE ORNAMENTALI)COMPRESI I RELATIVI PORTAINNESTI E PIANTICELLE
+","NURSERY OF TREE AND SHRUBS FOR GARDENS, PARKS, ROADS, AND SLOPEDS (SUCH AS HEDGE PLANTS, ROSEBUSHES, OTHER ORNAMENTAL SHRUBS, ORNAMENTAL CONIFERS), INCLUDING RELATED ROOTSTOCKS AND SEEDLINGS",nurseries_nursery,3303070000,0,IT
+1098,VIVAI FLORICOLI,floral nursery,flowers_ornamental_plants,3301080000,0,IT
+551,VIVAI FLORICOLI,floral nursery,flowers_ornamental_plants,3301080000,0,IT
+551,VIVAI FLORICOLI /ORNAMENTALI,floral nursery,flowers_ornamental_plants,3301080000,0,IT
+551,VIVAI FLORICOLI/ORNAMENTALI,floral nursery,flowers_ornamental_plants,3301080000,0,IT
+555,VIVAI FORESTALI,floral nursery,flowers_ornamental_plants,3301080000,0,IT
+555,VIVAI FORESTALI,floral nursery,flowers_ornamental_plants,3301080000,0,IT
+555,VIVAI FORESTALI COMMERCIALI COMPRESI ALBERI DI NATALE ESCLUSI VIVAI FORESTALI SITUATI IN FORESTA E DESTINATI AL FABBISOGNO DELL'AZIENDA,COMMERCIAL FORESTRY NURSERY INCLUDING CHRISTMAS TREES EXCLUDING FORESTRY NURSERY SITUATED IN THE FOREST AND INTENDED FOR THE COMPANY'S NEEDS,christmas_trees,3306100000,0,IT
+555,VIVAI FORESTALI COMMERCIALI COMPRESI ALBERI DI NATALE ESCLUSI VIVAI FORESTALI SITUATI IN FORESTA E DESTINATI AL FABBISOGNO DELL'AZIENDA ,COMMERCIAL FORESTRY NURSERY INCLUDING CHRISTMAS TREES EXCLUDING FORESTRY NURSERY SITUATED IN THE FOREST AND INTENDED FOR THE COMPANY'S NEEDS,christmas_trees,3306100000,0,IT
+552,VIVAI FRUTTICOLI,Nursery,nurseries_nursery,3303070000,0,IT
+552,VIVAI FRUTTICOLI COMPRESE LE PIANTE DA BACCHE,Fruit and berry nursery,nurseries_nursery,3303070000,0,IT
+554,VIVAI OLIVICOLI,olive growing nursery,olive_plantations,3303050000,0,IT
+503,VIVAI ORTICOLI,Nursery,nurseries_nursery,3303070000,0,IT
+503,VIVAI ORTICOLI,Nursery,nurseries_nursery,3303070000,0,IT
+553,VIVAI VITICOLI,vine-growing nursery,vineyards_wine_vine_rebland_grapes,3303060000,0,IT
+553,VIVAI VITICOLI E VITI MADRI DI PORTAINNESTI,vine-growing nursery,vineyards_wine_vine_rebland_grapes,3303060000,0,IT
+1098,Vivaio specie ornamentali,Ornamental species nursery,flowers_ornamental_plants,3301080000,0,IT
+A04,YACON (patata yacon o carota dolce),Yacon,root_vegetables,3301290000,0,IT
+A04,"YACON (patata yacon o carota dolce)
+",Yacon,root_vegetables,3301290000,0,IT
+515,YUCCA (ALBERO DI GIOSUE'),Yucca,flowers_ornamental_plants,3301080000,0,IT
+952,ZAFFERANO,SAFFRON,saffron_crocus_sativus,3301061232,0,IT
+421,ZENZERO,ginger,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,IT
+940,ZUCCA,PUMPKIN,pumpkin_squash_gourd,3301140400,0,IT
+715,ZUCCA LAGENARIA,Bottle gourd,pumpkin_squash_gourd,3301140400,0,IT
+941,ZUCCHINO,COURGETTE,zucchini_courgette,3301140600,0,IT

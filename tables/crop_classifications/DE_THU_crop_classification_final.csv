@@ -1,0 +1,505 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+790888,(Beta-)Rübensamenvermehrung,(Beta) beet seed propagation,beetroot_beets,3301290200,0,DE_THU
+790888,(Beta-)Rübensamenvermehrung,(Beta) beet seed propagation,beetroot_beets,3301290200,0,DE_THU
+220000,"Acker-, Puff- u. Pferdebohnen","Field, fava and horse beans",beans,3301020100,3,DE_THU
+220000,Ackerbohne (Puffbohne/Pferdebohne/Dicke Bohne),Field bean (fava bean/horse bean/broad bean),beans,3301020100,3,DE_THU
+220000,Ackerbohne/Puffbohne/Pferdebohne/Dicke Bohne,Field bean / broad bean / horse bean / broad bean/Field / broad / horse bean,beans,3301020100,3,DE_THU
+418370,"Ackergras (z. B. Knaulgras, Wiesenschweidel, Bastardweidel-, Deutsches Weidelgras) -Nutzung GoG max. 5 Jahre","Arable grass (e.g. orchard grass, meadow fescue, hybrid ryegrass, perennial ryegrass) - use GoG max. 5 years",temporary_grass,3301090100,0,DE_THU
+418370,"Ackergras (z. B. Knaulgras, Wiesenschweidel, Bastardweidel-, Deutsches Weidelgras) -Nutzung max. 5 Jahre","Arable grass (e.g. orchard grass, meadow fescue, hybrid ryegrass, perennial ryegrass) - use max. 5 years",temporary_grass,3301090100,0,DE_THU
+500010,Ackerland aus der Erzeugung genommen,Arable land withdrawn from production (self-greening)/arable land taken from generation,fallow_land_not_crop,3301110000,0,DE_THU
+500010,Ackerland aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO 1307/2013-Brache,Arable land taken out of production pursuant to Art. 4 para. 1 lit. c) ii) Reg. 1307/2013 - fallow,fallow_land_not_crop,3301110000,0,DE_THU
+500010,Ackerland aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO 1307/2013-Brache (ohne ÖVF/KULAP nach 5 Jahren DGL),Arable land taken out of production pursuant to Art. 4 para. 1 lit. c) ii) Reg. 1307/2013 - fallow (without EFA/AECM after 5 years of permanent grassland),fallow_land_not_crop,3301110000,0,DE_THU
+510011,Agroforststreifen an Ackerland,Agroforestry strip on arable land,agroforestry,3312000000,0,DE_THU
+418250,Alexandrinerklee,Berseem clover,clover,3301090303,0,DE_THU
+990000,Alle anderen Flächen (keine LF),All other areas (non-agricultural land),not_known_and_other,3399000000,0,DE_THU
+412999,alle anderen Futterhackfrüchte,All other fodder root crops,fodder_roots,3301050000,0,DE_THU
+690999,alle anderen Hackfrüchte (ohne Futterhackfr.),all other root crops (excluding fodder),root_vegetables,3301290000,0,DE_THU
+610190,alle anderen Kartoffeln,All other potatoes,potatoes,3301030000,0,DE_THU
+940208,alle anderen Pappeln,All other poplars,populus,3306070000,0,DE_THU
+940203,alle anderen Weiden,All other willows,willows_osiers,3306080000,0,DE_THU
+418240,alle Arten Steinklee,All species of sweet clover,clover,3301090303,0,DE_THU
+510075,Altgrasstreifen und -flächen,Old grass strips and areas,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+190840,Amarant-Quinoa (Reismelde),Amaranth-quinoa (goosefoot),quinoa,3301150300,0,DE_THU
+710009,Andere Gemüsearten (Sammelcode),Other vegetable species (collective code),fresh_vegetables,3301070000,0,DE_THU
+418760,andere Mischkulturen ohne Leguminosen als Saatgutmischung (z. B. Gerstgras),Other mixed crops without legumes as seed mixture (e.g. barley grass),mixed_cropping,3301320000,1,DE_THU
+770004,Andorn,Horehound,flowers_ornamental_plants,3301080000,0,DE_THU
+770760,"Anethum (Dill, Gurkenkraut)","Anethum (dill, cucumber herb)",anethum_dill,3301061203,0,DE_THU
+770100,Angelika,Angelica,angelica,3301061204,0,DE_THU
+770100,"Arznei-Engelwurz, Echter Engelwurz, Angelika","Medicinal angelica, true angelica, angelica",angelica,3301061204,0,DE_THU
+500010,aus der Produktion genommenes AL,Arable land taken out of production,fallow_land_not_crop,3301110000,0,DE_THU
+500020,aus der Produktion genommenes GL,Grassland taken out of production,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+770010,Baldrian,Valerian,valerian,3301061238,0,DE_THU
+770010,Baldriane (Echter Baldrian),Valerian (true valerian),valerian,3301061238,0,DE_THU
+418360,Bastard-Luzerne,Hybrid lucerne,alfalfa_lucerne,3301090301,0,DE_THU
+418390,Bastardweidelgras-Nutzung max. 5 Jahre,Hybrid ryegrass - use max. 5 years,temporary_grass,3301090100,0,DE_THU
+950500,Bäume WUM,Trees WUM,tree_wood_forest,3306000000,0,DE_THU
+960020,Baumreihe,Row of trees,tree_lines,3310300000,0,DE_THU
+BR,Baumreihen,Rows of trees,tree_lines,3310300000,0,DE_THU
+960020,Baumreihen,Rows of trees,tree_lines,3310300000,0,DE_THU
+830000,Baumschulen,Nurseries,nurseries_nursery,3303070000,0,DE_THU
+830000,"Baumschulen, nicht für Beerenobst",Nurseries/Tree nurseries (excluding soft fruit),nurseries_nursery,3303070000,0,DE_THU
+811700,"Beerenobst, z.B. Johannis-, Stachel-, Himbeeren u. Holunder","Berry fruit, e.g. currant, gooseberry, raspberry and elderberry",berries_berry_species,3303020000,0,DE_THU
+710010,beetweiser Anbau von Gemüse,vegetables,fresh_vegetables,3301070000,0,DE_THU
+770002,beetweiser Anbau von Küchenkräutern/Heil-und Gewürzpflanzen,Bedwise cultivation of culinary/herbal and spice plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_THU
+730009,beetweiser Anbau von Zierpflanzen,Bedwise cultivation of ornamental plants,flowers_ornamental_plants,3301080000,0,DE_THU
+916102,begrünte Randstreifen von untergeordneter Bedeutung,Greened marginal strips of minor importance,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+418780,begrünter Randstreifen von untergeordneter Bedeutung auf AL,Greened marginal strip of minor importance on arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+850510,Bestockte Rebfläche,Planted vineyards,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_THU
+930000,Bewirtschaftete Gewässer/Teichflächen,Managed water bodies/pond areas,wetlands,3310400000,0,DE_THU
+230020,"Blaue Lupine, Schmalblättrige Lupine","Blue lupin, narrow-leaved lupin",sweet_lupins,3301020700,0,DE_THU
+510063,Blühflächen einjährig auf Ackerland (ÖR1a + ÖR1b),Flowering areas annual on arable land (ÖR1a + ÖR1b),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+510064,Blühflächen mehrjährig auf Ackerland (ÖR1a + ÖR1b),Flowering areas perennial on arable land (ÖR1a + ÖR1b),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+500060,Blühstreifen,Flower strip,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+510061,Blühstreifen einjährig auf Ackerland (ÖR1a + ÖR1b),Annual flower strip on arable land (ÖR1a + ÖR1b),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+510071,Blühstreifen einjährig auf Dauerkulturen,Annual flower strip on permanent crops,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+510062,Blühstreifen mehrjährig auf Ackerland (ÖR1a + ÖR1b),Perennial flower strip on arable land (ÖR1a + ÖR1b),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+500070,Blühstreifen mit einmaliger Ansaat,Flower strip with single sowing,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+500060,Blühstreifen/Blühflächen mit jährlicher Nachsaat,Flower strips/flowering areas with annual resowing,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+717120,Blumenkohl,Cauliflower,brassica_oleracea_cabbage,3301210200,0,DE_THU
+418330,"Bockshornklee, Schabziger Klee","Fenugreek, Schabzig clover",fenugreek,3301020400,0,DE_THU
+710030,Bohnen,Beans,beans,3301020100,0,DE_THU
+770150,Borretsch,borage,borage,3301061209,0,DE_THU
+940440,Brache als Bejagungsschneise,Fallow as game lane,fallow_land_not_crop,3301110000,0,DE_THU
+940600,Brache mit Einsaat von einjährigen Blühmischungen,Fallow with annual sowing of flower mix,fallow_land_not_crop,3301110000,0,DE_THU
+940600,Brache mit Neueinsaaat von einjährigen Blühmischungen,Fallow with new sowing of annual flowering mixtures,fallow_land_not_crop,3301110000,0,DE_THU
+940400,Brachen ohne Erzeugung  (breiter 20 m),Fallow without production (wider than 20 m),fallow_land_not_crop,3301110000,0,DE_THU
+940400,Brachen ohne Erzeugung  (breiter 20 m) - ohne ÖVF/KULAP nach 5 Jahren DGL,Fallow without production (wider than 20 m) - without EFA/AECM after 5 years of permanent grassland,fallow_land_not_crop,3301110000,0,DE_THU
+715530,Brauner Senf (Brauner Senf/Sareptasenf),Brown mustard (brown mustard/sarepta mustard),mustard,3301210100,0,DE_THU
+715530,"Brauner Senf (Brauner Senf/Sareptasenf), einschließlich Vermehrung Senfsaaten","Brown mustard (brown mustard/Sarepta mustard), including seed propagation",mustard,3301210100,0,DE_THU
+770003,Brennnessel,Nettle,nettles,3301061225,0,DE_THU
+710060,Brokkoli,Broccoli,broccoli,3301210202,0,DE_THU
+190820,Buchweizen,Buckwheat,buckwheat,3301150200,0,DE_THU
+190821,Buchweizen - Ganzpflanze,Buckwheat - whole plant,buckwheat,3301150200,0,DE_THU
+190820,Buchweizen - Körner,Buckwheat - grain,buckwheat,3301150200,0,DE_THU
+455000,Calluna Vulgaris - Heideflächen (Dauergrünland unter etablierten lokalen Praktiken mit Heidekrautdominanz),Calluna vulgaris - heath areas (permanent grassland under established local practices with heather dominance),pasture_meadow_grassland_grass,3302000000,0,DE_THU
+770221,Chia (Gattung: Salbei),Chia (genus: sage),sage_chia,3301190000,0,DE_THU
+710080,Chinakohl,Chinese cabbage,turnips,3301290800,0,DE_THU
+172000,Corn-Cob-Mix,Corn Cob Mix,green_silo_maize,3301090400,0,DE_THU
+390920,Crambe,Crambe,brassicaceae_cruciferae,3301210000,0,DE_THU
+500020,Dauergrünland aus der Erzeugung genommen,Permanent grassland withdrawn from production within the meaning of Art. 4 para. 1 letter c) ii) Regulation 1307/2013/Permanent grass land suspendet from production,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+500020,Dauergrünland aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO 1307/2013,Permanent grassland removed from production iSd. Art. 4 Paragraph 1 Letter c) ii) Regulation 1307/2013,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+455000,Dauergrünland unter etablierten lokalen Praktiken (Heideflächen-Calluna Vulgaris/Heidekraut),Permanent grassland under established local practices (heath areas - Calluna vulgaris/heather),pasture_meadow_grassland_grass,3302000000,0,DE_THU
+453000,Dauerweiden,Permanent pastures,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+418410,Deutsches Weidelgras-Nutzung max. 5 Jahre,Perennial ryegrass - use max. 5 years,temporary_grass,3301090100,0,DE_THU
+770760,Dill,Dill,anethum_dill,3301061203,0,DE_THU
+190140,Dinkel - Körner,Spelt - grain,winter_spelt,3301011001,0,DE_THU
+500550,Durchwachsene Silphie,Perennial silphium,silphium_rosinweeds,3301084400,0,DE_THU
+418400,Einjähriges und Welsches Weidelgras,Annual and Italian ryegrass,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+418400,Einjähriges und Welsches Weidelgras-Nutzung GoG max. 5 Jahre,Annual and Italian ryegrass - use GoG max. 5 years,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+960050,Einzelbäume,Individual trees,tree_lines,3310300000,0,DE_THU
+EB,Einzelbäume 20 qm,Individual trees 20 m²,tree_lines,3310300000,0,DE_THU
+960050,Einzelbäume 20 qm,Individual trees 20 m²,tree_lines,3310300000,0,DE_THU
+500500,Energiepflanzen (Sammelcode),Energy crops (collective code),energy_crops,3304010000,0,DE_THU
+210000,Erbsen (ohne Frischerbsen),Peas (excluding fresh peas),peas,3301020600,0,DE_THU
+210000,"Erbsen Trockenerbsen als Druschfrucht (Erbse, Gemüse-Erbse, Markerbse, Schalerbse, Zuckererbse)","Peas, dry peas as harvested crop (pea, vegetable pea, marrowfat pea, field pea, sugar pea)",peas,3301020600,0,DE_THU
+210000,"Erbsen, Gemüse-Erbse, Markerbse, Schalerbse, Zuckererbse","Peas, vegetable pea, marrowfat pea, field pea, sugar pea",peas,3301020600,0,DE_THU
+210002,"Erbsen, Markerbse, Schalerbse, Zuckererbse","Peas, marrowfat pea, field pea, sugar pea",peas,3301020600,0,DE_THU
+210000,"Erbsen, Trockenerbsen als Druschfrucht (Erbse, Gemüse-Erbse, Markerbse, Schalerbse, Zuckererbse)","Peas, dry peas as harvested crop (pea, vegetable pea, marrowfat pea, field pea, sugar pea)",peas,3301020600,0,DE_THU
+720230,Erdbeeren,Strawberries,strawberries,3301130000,0,DE_THU
+950000,Erstaufforstung,Initial afforestation,afforestation_reforestation,3306010000,0,DE_THU
+950010,Erstaufforstung  (betriebprämienfähig),Initial afforestation (eligible for farm payment),afforestation_reforestation,3306010000,0,DE_THU
+418710,Esparsette,Esparsette,esparsette_onobrychis,3301020300,0,DE_THU
+418710,Esparsette alle Arten,Sainfoin all species,esparsette_onobrychis,3301020300,0,DE_THU
+720250,Färberdisteln,Safflower,safflower,3301083900,0,DE_THU
+790010,Färberwaid,Woad (Isatis tinctoria),isatis_tinctoria_woad,3301082400,0,DE_THU
+FH,Feldgehölze,Field shrubs,tree_lines,3310300000,0,DE_THU
+960030,Feldgehölze,Field shrubs,tree_lines,3310300000,0,DE_THU
+FR,Feldraine,Field margins,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+960060,Feldraine,Field margins,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520050,Feldrand bis 20 m,Field edge up to 20 m,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520050,Feldrand bis 20 m / Pufferstreifen  AL,Field edge up to 20 m / buffer strip arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520040,Feldrand bis 20 m/ Pufferstreifen  DGL,Field edge up to 20 m / buffer strip permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520050,Feldrand bis 20 m/Pufferstreifen  AL,Field edge up to 20 m/buffer strip arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520050,Feldrand/Pufferstreifen  AL,Field edge/buffer strip arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+710100,Feldsalat,Lamb's lettuce,lambs_lettuce_rapunzel,3301310500,0,DE_THU
+710100,Feldsalate (Feldsalat/Ackersalat/ Rapunzel),Lamb's lettuce (corn salad/field lettuce/rapunzel),lambs_lettuce_rapunzel,3301310500,0,DE_THU
+FS,Fels- und Steinriegel,Rock and stone ridges,stone_walls,3310600000,0,DE_THU
+960080,Fels- und Steinriegel,Rock and stone ridges,stone_walls,3310600000,0,DE_THU
+710120,"Fenchel (Gemüsefenchel,/Körnerfenchel)",Fennel (vegetable fennel/grain fennel),fennel,3301170000,0,DE_THU
+710120,Fenchel (Gemüsefenchel/ Körnerfenchel),Fennel (vegetable fennel / seed fennel),fennel,3301170000,0,DE_THU
+710121,Fenchel (Körnerfenchel) mit Untersaat,Fennel (seed fennel) with undersowing,mixed_cropping,3301320000,1,DE_THU
+FG,Feuchtgebiete und Tümpel,Wetlands and ponds,wetlands,3310400000,0,DE_THU
+960040,Feuchtgebiete und Tümpel,Wetlands and ponds,wetlands,3310400000,0,DE_THU
+910100,Fläche an Wasserspeichern (innerhalb LF),Area at water reservoirs (within agricultural land),wetlands,3310400000,0,DE_THU
+710710,Frisch-/Speiseerbsen,Fresh/table peas,peas,3301020600,0,DE_THU
+412000,Futterrübe/Runkelrübe,Fodder beet / beetroot,mangelwurzel_fodder_beet,3301290400,0,DE_THU
+720999,Gartenbausämereien,Horticultural seeds,other_arable_land_crops,3301990000,0,DE_THU
+710030,Gartenbohne/Buschbohne,Garden bean/bush bean,beans,3301020100,0,DE_THU
+715510,Gartenkresse,Garden cress,cress,3301210300,0,DE_THU
+710180,"Gartenrettiche (z. B. Weiße/rote Rettiche, Radieschen)","Garden radishes (e.g. white/red radishes, radish)",radish,3301290600,0,DE_THU
+418230,"Gelbklee, Hopfenklee","Yellow clover, hop clover",clover,3301090303,0,DE_THU
+250000,Gemenge Erbsen/Getreide,Mixture peas/cereals,cereal_legume_mix,3301091200,1,DE_THU
+418770,Gemenge Getreide/Leguminose (Getreide überwiegt),Mixture cereals/legumes,cereal_legume_mix,3301091200,1,DE_THU
+420999,Gemenge von als ÖVF zugelassenen kleinkörnigen Leguminosen als stickstoffbindende Pflanzen,Mixture of ÖVF-approved small-seeded legumes as nitrogen-fixing plants,mixed_cropping,3301320000,1,DE_THU
+420999,"Gemenge von als ÖVF zugelassenen kleinkörnigen Leguminosen als stickstoffbindende Pflanzen auch zusammen mit Nichtleguminosen, sofern die kleinkörnigen Leguminosen im Feldbestand dominieren","Mixture of EFA-approved small-seeded legumes as nitrogen-fixing plants, also with non-legumes, provided small-seeded legumes dominate in the field stand",cereal_legume_mix,3301091200,1,DE_THU
+200999,Gemenge von zugelassenen Arten großkorniger Leguminosen als stickstoffbindende Pflanzen (Erbsen/Bohnen),Mixture of approved species of large-seeded legumes as nitrogen-fixing plants (peas/beans),legumes_dried_pulses_protein_crops,3301020000,0,DE_THU
+710000,Gemüse (Sammelcode),Vegetables (collective code),fresh_vegetables,3301070000,0,DE_THU
+730000,Gemüse unter Glas und Plaste,Vegetables under glass and plastic,greenhouse_vegetables,3305010900,0,DE_THU
+730310,Gemüse unter Glas und Plaste,Vegetables under glass and plastic,greenhouse_vegetables,3305010900,0,DE_THU
+210000,Gemüse-Erbse,Vegetable pea,peas,3301020600,0,DE_THU
+210000,"Gemüse-Erbse, Markerbse, Schalerbse, Zuckererbse","Vegetable pea, marrowfat pea, field pea, sugar pea",peas,3301020600,0,DE_THU
+210005,"Gemüse-Erbse, Markerbse, Schalerbse, Zuckererbse mit Untersaat","Vegetable pea, marrowfat pea, field pea, sugar pea with undersowing",pea_grass_mix,3301090506,1,DE_THU
+717120,"Gemüsekohl (Kopfkohl, Wirsing, Rot-/Weißkohl, Spitzkohl, Grünkohl, Kohlrabi, Blumenkohl, Romanesco, Brokkoli, Rosenkohl, Zierkohl)","Vegetable cabbage (head, savoy, red/white, pointed, kale, kohlrabi, cauliflower, romanesco, broccoli, Brussels sprouts, ornamental cabbage)",brassica_oleracea_cabbage,3301210200,0,DE_THU
+710080,"Gemüserübsen (Stoppelrübe, Weiße Rübe, Mairübe, Chinakohl, Pak-Choi, Teltower Rübchen, Stielmus, Herbstrübe, Pak-Choi)","Vegetable turnips (stubble turnip, white turnip, spring turnip, Chinese cabbage, pak choi, Teltow turnip, leaf mustard, autumn turnip, pak choi)",turnips,3301290800,0,DE_THU
+710080,"Gemüserübsen z. B. Stoppel-, Teltower-, Weiße Rübe, Mairübe, Chinakohl, Pak-Choi, Stielmus, Herbstrübe","Vegetable turnips e.g. stubble, Teltow, white turnip, spring turnip, Chinese cabbage, pak choi, leaf mustard, autumn turnip",turnips,3301290800,0,DE_THU
+418730,Gerstgras als Mischaussaat,Barley grass as mixed sowing,green_cut_barley,3301090700,0,DE_THU
+770300,Goldrute,Goldenrod,goldenrod,3301082200,0,DE_THU
+418240,Gras (außer Weidelgras u. Bastarde) -  Nutzung max. 5 Jahre,Grass (except ryegrass and hybrids) - use max. 5 years,temporary_grass,3301090100,0,DE_THU
+418999,Gräser (Sammelcode)-Nutzung max. 5 Jahre,Grasses (collective code) - use max. 5 years,temporary_grass,3301090100,0,DE_THU
+418999,Gräser betonte Saatgutmischung -Nutzung GoG max. 5 Jahre,Grass-dominated seed mixture - use GoG max. 5 years,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+418999,Gräser betonte Saatgutmischung -Nutzung max. 5 Jahre,Grass-dominated seed mixture - use max. 5 years,temporary_grass,3301090100,0,DE_THU
+790999,Grassamenvermehrung,Grass seed propagation,temporary_grass,3301090100,0,DE_THU
+940205,Graupappel einschließlich Kreuzungen mit anderen Arten dieser Gattung,Grey poplar including hybrids with other species of this genus,populus,3306070000,0,DE_THU
+940205,Graupappel einschließlich Kreuzungen mit anderen Arten dieser Gattung als ÖVF,Grey poplar including hybrids with other species of this genus as EFA,populus,3306070000,0,DE_THU
+500050,Grünbrache 1-jährig,Green fallow 1-year,fallow_land_not_crop,3301110000,0,DE_THU
+500051,Grünbrache 2-jährig,Green fallow 2-year,fallow_land_not_crop,3301110000,0,DE_THU
+500050,Grünbrache im ökologischen Landbau,Green fallow in organic farming,fallow_land_not_crop,3301110000,0,DE_THU
+710110,"Gurke (Salatgurke, Einlegegurke)",Cucumber (cucumber/Cucumber (also pickled cucumber),cucumber_pickle,3301140100,0,DE_THU
+710110,Gurken,cucumbers,cucumber_pickle,3301140100,0,DE_THU
+190401,Hafer - Ganzpflanze,Oat - whole plant,oats,3301010500,0,DE_THU
+190400,Hafer - Körner,Oat - grain,oats,3301010500,0,DE_THU
+418735,Hafergras als Mischaussaat,Oat grass as mixed sowing,oats,3301010500,0,DE_THU
+720000,Handelsgewächse (Sammelcode),Commercial crops (collective code),other_arable_land_crops,3301990000,0,DE_THU
+793000,Hanf,Industrial hemp/hemp,hemp_cannabis,3301061000,0,DE_THU
+190130,Hartweizen,Durum wheat,winter_durum_hard_wheat,3301010201,0,DE_THU
+HK,Hecke,Hedge,hedges,3310200000,0,DE_THU
+960010,Hecke,Hedge,hedges,3310200000,0,DE_THU
+960010,Hecken,Hedges,hedges,3310200000,0,DE_THU
+970010,Höhere Gewalt auf Ackerland,Force majeure on arable land,not_known_and_other,3399000000,0,DE_THU
+970020,Höhere Gewalt auf Grünland,Force majeure on grassland,not_known_and_other,3399000000,0,DE_THU
+970099,Höhere Gewalt auf HG,Force majeure on HG,not_known_and_other,3399000000,0,DE_THU
+940700,Honigpflanzen genutzte brachliegende Flächen (pollen- und nektarreiche Arten) - einjährig,Fallow land used with honey plants (pollen- and nectar-rich species) - annual,fallow_land_not_crop,3301110000,0,DE_THU
+940710,Honigpflanzen genutzte brachliegende Flächen (pollen- und nektarreiche Arten) - mehrjährig,Fallow land used with honey plants (pollen- and nectar-rich species) - perennial,fallow_land_not_crop,3301110000,0,DE_THU
+750000,Hopfen,Hops,hops,3301060200,0,DE_THU
+753000,Hopfen vorübergehend stillgelegt,Hops temporarily set aside,fallow_land_not_crop,3301110000,0,DE_THU
+210100,Hülsenfrüchte (Sammelcode),Legumes (collective code),legumes_dried_pulses_protein_crops,3301020000,0,DE_THU
+350001,Iberischer Drachenkopf,Lallemantia iberica,oilseed_crops,3301060800,0,DE_THU
+990020,Infrastrukturmaßnahmen,Infrastructure measures,not_known_and_other,3399000000,0,DE_THU
+418270,Inkarnatklee,Crimson clover,clover,3301090303,0,DE_THU
+770090,Johanniskraut,St John’s wort,st_johns_wort,3301061234,0,DE_THU
+770090,Johanniskräuter (Echtes Johanniskraut),St John’s wort herbs (St John’s wort),st_johns_wort,3301061234,0,DE_THU
+770040,Kamille,Chamomile,chamomile,3301061213,0,DE_THU
+770040,Kamillen (Echte Kamille),Chamomiles (real chamomile),chamomile,3301061213,0,DE_THU
+730800,Kapuzienerkresse,Nasturtium,nasturtiums,3301061224,0,DE_THU
+610110,Kartoffeln,potatoes,potatoes,3301030000,0,DE_THU
+610113,Kartoffeln mit Untersaat,Potatoes with undersowing,potatoes_with_undersowing,3301321500,1,DE_THU
+811300,Kern- und Steinobst,Pome and stone fruit,orchards_fruits,3303010000,0,DE_THU
+811100,Kernobst,Pome fruit e.g. apples,orchards_fruits,3303010000,0,DE_THU
+811100,"Kernobst z.B. Äpfel, Birnen",Pome fruit e.g. apples,orchards_fruits,3303010000,0,DE_THU
+418280,"Klee (Rot-, Weiß-, Alexandriner-, Inkarnat-, Erd-, Schweden-, Persischer Klee), einschließlich Vermehrung","Clover (red, white, berseem, crimson, subterranean, Swedish, Persian clover), including seed production",clover,3301090303,0,DE_THU
+418210,Klee /Kleegras   Nutzung max. 5 Jahre,Clover / clover grass use max. 5 years,legumes_harvested_green,3301090300,1,DE_THU
+418210,Klee- Luzerne-Gemisch,Clover-lucerne mixture,legumes_harvested_green,3301090300,1,DE_THU
+790777,Klee- oder Luzernesamenvermehrung,Clover or alfalfa seed propagation,legumes_harvested_green,3301090300,0,DE_THU
+418200,Kleegras - Nutzung GoG max. 5 Jahre,Clover grass - use GoG max. 5 years,clover_grass_mix,3301090501,1,DE_THU
+418200,"Kleegras - Nutzung GoG max. 5 Jahre (ÖVF-fähig, wenn Klee im Feldbestand dominiert)",Clover grass - use GoG max. 5 years (ÖVF-eligible if clover dominates in the field stand),clover_grass_mix,3301090501,1,DE_THU
+418200,"Kleegras - Nutzung max. 5 Jahre (ÖVF-fähig, wenn Klee im Feldbestand dominiert)",Clover grass - use max. 5 years (ÖVF-eligible if clover dominates in the field stand),clover_grass_mix,3301090501,1,DE_THU
+418200,Kleegras bzw. Luzernegras - Nutzung max. 5 Jahre,Clover grass or lucerne grass - use max. 5 years,clover_grass_mix,3301090501,1,DE_THU
+418370,Knaulgras-Nutzung max. 5 Jahre,Orchard grass - use max. 5 years,temporary_grass,3301090100,0,DE_THU
+710120,Knollenfenchel (auch Körnerfenchel),Bulb fennel (also seed fennel),fennel,3301170000,0,DE_THU
+710130,Kohlrabi,Kohlrabi,kohlrabi,3301210209,0,DE_THU
+710010,Kopfkohl,Head cabbage,brassica_oleracea_cabbage,3301210200,0,DE_THU
+940202,Korbweide einschließlich Kreuzungen mit anderen Arten dieser Gattung,Basket willow including hybrids with other species of this genus,willows_osiers,3306080000,0,DE_THU
+940202,Korbweide einschließlich Kreuzungen mit anderen Arten dieser Gattung als ÖVF,Basket willow including hybrids with other species of this genus as ÖVF,willows_osiers,3306080000,0,DE_THU
+845000,Korbweiden,Basket willows,willows_osiers,3306080000,0,DE_THU
+770110,Koriander,coriander,coriander,3301061215,0,DE_THU
+770070,Koriander,coriander,coriander,3301061215,0,DE_THU
+730700,Kornblumen,Cornflowers,cornflowers,3301081000,0,DE_THU
+171000,Körnermais,Grain corn,grain_maize_corn_popcorn,3301010600,0,DE_THU
+171009,Körnermais mit Bejagungsschneisen,Grain maize with game lanes,grain_maize_corn_popcorn,3301010600,0,DE_THU
+171000,Körnermais oder CCM-Mais,Grain maize or CCM maize,grain_maize_corn_popcorn,3301010600,0,DE_THU
+171003,Körnermais oder CCM-Mais mit Untersaat,Grain maize or CCM maize with undersowing,maize_with_undersowing,3301091900,1,DE_THU
+390910,Körnersenf,Mustard for grain,mustard,3301210100,0,DE_THU
+190831,Körnersorghum - Ganzpflanze,Grain sorghum - whole plant,millet_sorghum,3301010900,0,DE_THU
+190830,"Körnersorghum, ausgenommen Hybrid-K","Grain sorghum, excluding Hybrid-K",millet_sorghum,3301010900,0,DE_THU
+770001,Küchenkräuter/Heil-und Gewürzpflanzen (Sammelcode),Culinary herbs/medicinal and spice plants (collective code),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_THU
+890922,Kultur von Speisepilzen im Freiland,Cultivation of edible mushrooms in the open field,truffle,3304040000,0,DE_THU
+770060,Kümmel,Caraway seed/Caraway (real caraway),caraway,3301061211,0,DE_THU
+710700,"Lattich (Garten-Salat/Lattich, Lollo Rosso, Romana-Salat/Römischer Salat)","Lettuce (Garden Lettuce/Lettuce, Lollo Rosso, Romaine Lettuce/Roman Lettuce)",salads_lettuce_leaf_vegetables,3301310000,0,DE_THU
+770006,Lavendel,Lavender (real lavender,lavender_lavandula,3301061219,0,DE_THU
+420000,Legume Grünfutterpflanzen (Sammelcode),Legume green fodder crops (collective code),legumes_harvested_green,3301090300,0,DE_THU
+341000,"Lein, Flachs",Flax/Flax (flax linseed),flax_linseed,3301060700,0,DE_THU
+350000,Leindotter,Camelina,camelina,3301061500,0,DE_THU
+960070,Lesesteinwälle,Stone heaps,stone_walls,3310600000,0,DE_THU
+NT,"Lesesteinwälle,Trocken-und Natursteinmauern","Stone heaps, dry and natural stone walls",stone_walls,3310600000,0,DE_THU
+960070,"Lesesteinwälle,Trocken-und Natursteinmauern","Stone heaps, dry and natural stone walls",stone_walls,3310600000,0,DE_THU
+790444,Lichtnelkenvermehrung,Campion seed propagation,arable_land_seed_seedlings,3301100000,0,DE_THU
+290250,Linsen,lentils,lentils,3301020500,0,DE_THU
+290250,Linsen (alle Arten),Lentils (all species),lentils,3301020500,0,DE_THU
+230010,"Lupinen (Süßlupine, weiße, gelbe, blaue/schmalblättrige, Anden-Lupine)","Lupins (sweet, white, yellow, blue/narrow-leaved, Andean lupin)",sweet_lupins,3301020700,0,DE_THU
+230010,"Lupinen (Weiße, Gelbe, Blaue)","Lupins (white, yellow, blue)",sweet_lupins,3301020700,0,DE_THU
+418350,Luzerne,Alfalfa,alfalfa_lucerne,3301090301,0,DE_THU
+418350,"Luzerne, Hopfen- und Gelbklee, Bastardluzerne, einschließlich Vermehrung","Lucerne, hop clover and yellow clover, hybrid lucerne, including seed production",legumes_harvested_green,3301090300,0,DE_THU
+418350,"Luzerne, Hopfen- und Gelbklee, Bastardluzerne/Sandluzerne, einschließlich Vermehrung","Lucerne, hop clover and yellow clover, hybrid lucerne/sand lucerne, including seed production",legumes_harvested_green,3301090300,0,DE_THU
+418230,Luzerne/Luzernegras   Nutzung max. 5 Jahre,Lucerne / lucerne grass use max. 5 years,alfalfa_grass_mix,3301090509,1,DE_THU
+418360,Luzernegras - Nutzung GoG max. 5 Jahre,Lucerne grass - use GoG max. 5 years,alfalfa_lucerne,3301090301,0,DE_THU
+418360,"Luzernegras - Nutzung GoG max. 5 Jahre (ÖVF-fähig, wenn Luzerne im Feldbestand dominiert)",Lucerne grass - use GoG max. 5 years (ÖVF-eligible if lucerne dominates in the field stand),alfalfa_lucerne,3301090301,0,DE_THU
+418360,"Luzernegras - Nutzung max. 5 Jahre (ÖVF-fähig, wenn Luzerne im Feldbestand dominiert)",Lucerne grass - use max. 5 years (ÖVF-eligible if lucerne dominates in the field stand),alfalfa_grass_mix,3301090509,1,DE_THU
+452000,Mähweiden,Mowing pastures,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+730040,Malven (alle Arten),Mallows (all species),malva,3301082800,0,DE_THU
+710210,"Mangold, Rote Rübe/Rote Beete","Chard, beetroot",chard,3301310100,3,DE_THU
+770080,Mariendistel,Milk thistle,marian_thistles,3301061300,0,DE_THU
+416000,Markstammkohl,Marrowstem kale,brassica_oleracea_cabbage,3301210200,0,DE_THU
+500070,mehrjährige Blühstreifen,Perennial flower strips,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+770020,Melisse,Lemon balm,lemon_balm_melissa,3301061220,0,DE_THU
+770020,Melissen (Zitronenmelisse),Melissa (lemon balm),lemon_balm_melissa,3301061220,0,DE_THU
+770050,"Minzen (Pfefferminze, Grüne Minze)",Mints (peppermint,mints_peppermint,3301061222,0,DE_THU
+500510,Miscanthus,Miscanthus,miscanthus_silvergrass,3301083000,0,DE_THU
+500511,Miscanthus-ÖVF-fähig,Miscanthus - ÖVF-eligible,miscanthus_silvergrass,3301083000,0,DE_THU
+420999,"Mischkultur von kleinkörnigen Leguminosen auch zusammen mit Nichtleguminosen, sofern die kleinkörnigen Leguminosen im Feldbestand dominieren","Mixed cropping of small-seeded legumes also together with non-legumes, provided the small-seeded legumes dominate in the field stand",legume_grass_mix,3301090500,1,DE_THU
+418800,Mischkulturen in Reihenanbau - (z. B. Zwiebeln u. Möhren in getrennte Reihen),Mixed crops in row cultivation - (e.g. onions and carrots in separate rows),mixed_row_cropping,3301321300,1,DE_THU
+418750,Mischkulturen mit großkörnigen Leguminosen als Saatgutmischung z. B. Hafer/Erbsengemenge,Mixed crops with large-seeded legumes as seed mixture e.g. oat/pea mixture,cereal_legume_mix,3301091200,1,DE_THU
+418750,"Mischkulturen mit großkörnigen Leguminosen als Saatgutmischung z. B. Hafer/Erbsengemenge (ÖVF-fähig, wenn großkörnige Leguminose im Feldbestand dominiert und Partner Stützfrucht ist)",Mixed crops with large-seeded legumes as seed mixture e.g. oat/pea mixture (ÖVF-eligible if large-seeded legume dominates in the field stand and partner is support crop),cereal_legume_mix,3301091200,1,DE_THU
+418750,Mischkulturen mit großkörnigen Leguminosen als Saatgutmischung z. B. Hafer/Erbsengemenge sofern Leguminosen dominieren,Mixed crops with large-seeded legumes as seed mixture e.g. oat/pea mixture provided legumes dominate,cereal_legume_mix,3301091200,1,DE_THU
+418750,Mischkulturen mit Leguminosen als Saatgutmischung-keine Grünfutterpflanzen (z.B. Hafer/Erbsengemenge),Mixed crops with legumes as seed mixture - no green fodder crops (e.g. oat/pea mixture),cereal_legume_mix,3301091200,1,DE_THU
+418760,Mischkulturen ohne Leguminosen,Mixed crops without legumes,mixed_cropping,3301320000,1,DE_THU
+418760,"Mischkulturen ohne Leguminosen z. B. Gerstgras, Hafergras","Mixed crops without legumes e.g. barley grass, oat grass",mixed_cropping,3301320000,1,DE_THU
+720260,Mohn,Poppy seeds,poppy,3301060600,0,DE_THU
+710050,Möhre (Karotte),Carrot,carrots_daucus,3301290300,0,DE_THU
+710050,"Möhre (Möhre/Karotte, Futtermöhre)",Carrot (carrot / carrot/Carrot (also feeding carrot),carrots_daucus,3301290300,0,DE_THU
+710050,Möhren,Carrots,carrots_daucus,3301290300,0,DE_THU
+190830,Mohren- /Zuckerhirse (ohne Sudangras),Pearl / sweet sorghum (without Sudan grass),millet_sorghum,3301010900,0,DE_THU
+730900,"Mutterkraut, Wucherblumen","Feverfew, chrysanthemums",flowers_ornamental_plants,3301080000,0,DE_THU
+500000,nach Art. 22 bis 24 der VO (EG) Nr. 1257/99 stillgelegte Ackerfläche,Arable land set aside under Art. 22 to 24 of Reg. (EC) No. 1257/99,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+950010,nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013 aufgeforstete Flächen (2008 beihilfefähig),Areas afforested under Reg. 1257/1999 or Reg. (EC) No. 1698/2005 or Reg. 1305/2013 (eligible in 2008),afforestation_reforestation,3306010000,0,DE_THU
+981000,Naturschutzflächen (betriebprämienfähig),Nature conservation areas (eligible for farm payment),environmental_protection,3311000000,0,DE_THU
+970002,nicht definierte Kulturart als Untersaat,Undefined crop type as undersowing,other_arable_land_crops,3301990000,0,DE_THU
+970000,"nicht definierte Kulturart, Gattung/Art ist anzugeben","Crop type not defined, genus/species must be specified",other_arable_land_crops,3301990000,0,DE_THU
+981010,"Nicht landwirtschaftliche, aber nach §11 (1) Nr.3 Bst. a) aa oder cc) der GAPDZV beihilfefähige Fläche (Maßnahmen aus Natura2000)",Non-agricultural but eligible area under §11 (1) no. 3 letter a) aa or cc) of the GAPDZV (measures from Natura 2000),environmental_protection,3311000000,0,DE_THU
+981000,"Nicht landwirtschaftliche, aber nach §11 (1) Nr.3 Bst.a der GAPDZV beihilfefähige Fläche (Naturschutzflächen, die 2008 beihilfefähig waren)",Non-agricultural but eligible area under §11 (1) no. 3 letter a of the GAPDZV (nature conservation areas that were eligible in 2008),environmental_protection,3311000000,0,DE_THU
+981010,"Nicht landwirtschaftliche, aber nach Art. 32(2b (i)) der VO (EG) Nr. 1307/2013 beihilfefähige Fläche (Maßnahmen aus Natura2000)",Non-agricultural but eligible area under Art. 32(2b (i)) of Reg. (EC) No. 1307/2013 (measures from Natura 2000),environmental_protection,3311000000,0,DE_THU
+981000,"Nicht landwirtschaftliche, aber nach Art. 32(2b (i)) der VO (EG) Nr. 1307/2013 beihilfefähige Fläche (Naturschutzflächen, die 2008 beihilfefähig waren)",Non-agricultural but eligible area under Art. 32(2b (i)) of Reg. (EC) No. 1307/2013 (nature conservation areas that were eligible in 2008),environmental_protection,3311000000,0,DE_THU
+981000,"Nicht landwirtschaftliche, aber nach Art. 32(2b (i)) der VO (EG) Nr. 1307/2013 beihilfefähige Fläche (Naturschutzflächen, die 2008 noch beihilfefähig waren)","Non-agricultural area, but eligible for aid in accordance with Article 32(2b (i)) of Regulation (EC) No. 1307/2013 (nature conservation areas that were still eligible for aid in 2008)",environmental_protection,3311000000,0,DE_THU
+990010,Offenlandhaltung,Open-land grazing,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+341000,Öllein,Oil flax,flax_linseed_oil,3301060702,0,DE_THU
+710190,Ölrettich,Oil radish,radish,3301290600,0,DE_THU
+310000,Ölsaaten (Sammelcode),Oilseeds (collective code),oilseed_crops,3301060800,0,DE_THU
+510060,ÖR1a-Brachen - aus der Produktion genommen (Selbst- bzw. aktive Begrünung),ÖR1a fallow - taken out of production (spontaneous or active greening),fallow_land_not_crop,3301110000,0,DE_THU
+500520,Pappeln,poplars,populus,3306070000,0,DE_THU
+418300,Persischer Klee,Persian clover,clover,3301090303,0,DE_THU
+710150,Petersilie,parsley/Petroselinum (parsley),parsley,3301061227,0,DE_THU
+770050,Pfefferminze,Peppermint,mints_peppermint,3301061222,0,DE_THU
+730500,"Pfingstrosen, Peonien","Peonies, paeonies",peony_peonies,3301083400,0,DE_THU
+793003,Pflanzenmischung mit Hanf,Plant mixture with hemp,hemp_cannabis,3301061000,4,DE_THU
+811400,Pflaume,Plum,plums,3303011300,0,DE_THU
+418720,Phacelia,Phacelia,phacelia,3301061400,0,DE_THU
+418720,Phacelia (geht nicht in die HFF-Berechnung ein),Phacelia (does not enter into the HFF calculation),phacelia,3301061400,0,DE_THU
+770750,Pharmaweide,Pharmaceutical willow,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+710160,Porree,Leek,alliums,3301220000,0,DE_THU
+981011,"Projektflächen (Blühflächen statt Winterraps - keine ÖVF, kein KULAP)","Project areas (flowering areas instead of winter oilseed rape - no ÖVF, no KULAP)",field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520030,Pufferstreifen  AL,Buffer strip arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520040,Pufferstreifen  DGL,Buffer strip permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+520040,Pufferstreifen  GL,Buffer strip grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+190840,Quinoa (Reismelde),Quinoa (goosefoot),quinoa,3301150300,0,DE_THU
+710170,Radieschen,Radish,radish,3301290600,0,DE_THU
+710180,Rettich,Radish,radish,3301290600,0,DE_THU
+890920,Rhabarber,rhubarb,rhubarb,3301230000,0,DE_THU
+770250,Ringelblumen (Garten-Ringelblume),Marigolds (garden marigold),calendula_marigold,3301061210,0,DE_THU
+190600,Rispenhirse,Millet/Millet (Panicum),millet_sorghum,3301010900,0,DE_THU
+190600,"Rispenhirse, Rutenhirse","Proso millet, switchgrass",millet_sorghum,3301010900,0,DE_THU
+710200,Rosenkohl,Brussels sprouts,brassica_oleracea_cabbage,3301210200,0,DE_THU
+710210,Rote Beete,Beetroot,chard,3301310100,3,DE_THU
+710220,Rote Beete/Rote Rübe,Beetroot/red beet,chard,3301310100,3,DE_THU
+418280,Rotklee,Red clover,clover,3301090303,0,DE_THU
+412100,Runkelrüben,Mangel beets,mangelwurzel_fodder_beet,3301290400,0,DE_THU
+418200,"Saatgutmischungen mit Leguminosen als Mischungspartner Grünfutterpflanzen (Klee- /Luzernegras,)-Nutzung max. 5 Jahre",Seed mixtures with legumes as mixture partner green fodder crops (clover / lucerne grass) - use max. 5 years,alfalfa_grass_mix,3301090509,1,DE_THU
+290920,Saatwicke,Common vetch,vetches,3301090305,0,DE_THU
+710220,Salate,Lettuce,salads_lettuce_leaf_vegetables,3301310000,0,DE_THU
+710110,"Salatgurke (Gurke, Salatgurke, Einlegegurke)","Cucumber (cucumber, cucumber, pickle)",cucumber_pickle,3301140100,0,DE_THU
+770220,Salbei,Sage,sage_chia,3301190000,0,DE_THU
+770220,"Salbei, Ysop","Sage, hyssop",sage_chia,3301190000,0,DE_THU
+811300,Sauerkirsche,Sour cherry,cherry_cherries,3303010400,0,DE_THU
+770230,Schafgarbe,Yarrow,yarrow,3301061239,0,DE_THU
+770230,Schafgarben (Gelbe Schafgarbe),Yarrow (yellow yarrow),yarrow,3301061239,0,DE_THU
+820100,Schalenfrüchte,Nuts,nuts,3303030000,0,DE_THU
+820100,"Schalenfrüchte (Walnuss, Haselnuss)","Nuts (walnut, hazelnut)",nuts,3303030000,0,DE_THU
+710250,Schnittlauch,Chives,alliums,3301220000,0,DE_THU
+510010,Schonstreifen,Conservation strip,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+910110,Schutzpflanzungen und Hecken (die keine LE sind),Protective plantings and hedges (not landscape elements),hedges,3310200000,0,DE_THU
+940500,Schwarzbrache,Bare fallow,fallow_land_not_crop,3301110000,0,DE_THU
+940212,Schwarzerle,Black alder,tree_wood_forest,3306000000,0,DE_THU
+940212,Schwarzerle als ÖVF,Black alder as ÖVF,tree_wood_forest,3306000000,0,DE_THU
+770070,Schwarzkümmel alle Arten,Black cumin all species,black_cumin,3301061208,0,DE_THU
+940206,Schwarzpappel einschließlich Kreuzungen mit anderen Arten dieser Gattung,Black poplar including hybrids with other species of this genus,populus,3306070000,0,DE_THU
+940206,Schwarzpappel einschließlich Kreuzungen mit anderen Arten dieser Gattung als ÖVF,Black poplar including hybrids with other species of this genus as ÖVF,populus,3306070000,0,DE_THU
+710230,Sellerie,Celery,celery,3301250000,0,DE_THU
+710230,"Sellerie (Knollen-Sellerie, Bleich-Sellerie, Stangen-Sellerie)","Celery (tuber celery, white celery, stalk celery)",celery,3301250000,0,DE_THU
+715560,"Senfrauke (Garten-Senfrauke, Rucola)","Mustard (Garden Mustard, Rocket)",rocket_arugula,3301310600,0,DE_THU
+790666,Senfvermehrung,Mustard seed propagation,mustard,3301210100,0,DE_THU
+940204,Silberpappel einschließlich Kreuzungen mit anderen Arten dieser Gattung,Silver poplar including hybrids with other species of this genus,populus,3306070000,0,DE_THU
+940204,Silberpappel einschließlich Kreuzungen mit anderen Arten dieser Gattung als ÖVF,Silver poplar including hybrids with other species of this genus as ÖVF,populus,3306070000,0,DE_THU
+411000,Silomais,Silage corn,green_silo_maize,3301090400,0,DE_THU
+411009,Silomais mit Bejagungsschneisen,Silage maize with game lanes,grain_maize_corn_popcorn,3301010600,0,DE_THU
+411003,Silomais mit Untersaat,Silage maize with undersowing,maize_with_undersowing,3301091900,1,DE_THU
+411010,Silomais/Grünmais (für Biogas),Silage maize/green maize (for biogas),green_silo_maize,3301090400,0,DE_THU
+411000,Silomais/Grünmais (für Hauptfutter),Silage maize/green maize (for main feed),green_silo_maize,3301090400,0,DE_THU
+500550,Silphium (Durchwachsene Silphie),Silphium (perennial silphium),silphium_rosinweeds,3301084400,0,DE_THU
+500551,Silphium (Durchwachsene Silphie)-ÖVF-fähig,Silphium (perennial silphium) - ÖVF-eligible,silphium_rosinweeds,3301084400,0,DE_THU
+330000,Sojabohnen,Soybeans,soy_soybeans,3301160000,0,DE_THU
+220001,Sommer-Ackerbohne/Puffbohne/Pferdebohne/Dicke Bohne,Spring field bean/fava bean/horse bean/broad bean,beans,3301020100,0,DE_THU
+220003,Sommer-Ackerbohne/Puffbohne/Pferdebohne/Dicke Bohne mit Untersaat,Spring field bean/fava bean/horse bean/broad bean with undersowing,bean_grass_mix,3301090503,1,DE_THU
+190150,Sommer-Dinkel,Summer spelt,spring_spelt,3301011002,0,DE_THU
+190750,Sommer-Emmer/ -Einkorn,Summer emmer / single grain,spring_emmer,3301011202,3,DE_THU
+190753,Sommer-Emmer/ -Einkorn mit Untersaat,Spring emmer/einkorn with undersowing,spring_emmer,3301011202,0,DE_THU
+210003,"Sommer-Futtererbse (Felderbse, Peluschke) mit Untersaat","Spring fodder pea (field pea, peluschke) with undersowing",pea_grass_mix,3301090506,1,DE_THU
+210004,"Sommer-Futtererbse (Felderbse, Peluscke)","Spring fodder pea (field pea, peluscke)",peas,3301020600,0,DE_THU
+190320,Sommergerste,Summer barley,spring_barley,3301010402,0,DE_THU
+190321,Sommergerste - Ganzpflanze,Spring barley - whole plant,spring_barley,3301010402,0,DE_THU
+190320,Sommergerste - Körner,Spring barley - grain,spring_barley,3301010402,0,DE_THU
+190323,Sommergerste mit Untersaat,Spring barley with undersowing,spring_barley_with_undersowing,3301320402,1,DE_THU
+190410,Sommerhafer,Summer oats,spring_oats,3301010502,0,DE_THU
+190413,Sommerhafer mit Untersaat,Spring oat with undersowing,spring_oats_with_undersowing,3301320502,1,DE_THU
+190131,Sommerhartweizen/Durum,Spring durum wheat/durum,spring_durum_hard_wheat,3301010202,0,DE_THU
+190133,Sommerhartweizen/Durum mit Untersaat,Spring durum wheat with undersowing,spring_common_soft_wheat_with_undersowing,3301320202,1,DE_THU
+190450,Sommermenggetreide,Summer mixed grain,spring_meslin,3301011102,7,DE_THU
+190451,Sommermenggetreide - Ganzpflanze,Spring mixed cereals - whole plant,spring_meslin,3301011102,0,DE_THU
+190450,Sommermenggetreide - Körner,Spring mixed cereals - grain,spring_meslin,3301011102,7,DE_THU
+190453,Sommermenggetreide mit Untersaat,Spring mixed cereals with undersowing,meslin_with_undersowing,3301091700,1,DE_THU
+312140,Sommerraps,Summer rape,spring_rapeseed_rape,3301060402,0,DE_THU
+312140,Sommerraps (00),Spring rapeseed (00),spring_rapeseed_rape,3301060402,0,DE_THU
+190220,Sommerroggen,Summer rye,spring_rye,3301010302,0,DE_THU
+190220,Sommerroggen - Körner,Spring rye - grain,spring_rye,3301010302,0,DE_THU
+190223,Sommerroggen mit Untersaat,Spring rye with undersowing,spring_rye_with_undersowing,3301320601,1,DE_THU
+190223,"Sommerroggen mit Untersaat, Sommer-Waldstaudenroggen mit Untersaat","Spring rye with undersowing, spring forest rye with undersowing",spring_rye_with_undersowing,3301320601,1,DE_THU
+190220,"Sommerroggen, Sommer-Waldstaudenroggen",Summer rye,spring_rye,3301010302,0,DE_THU
+312160,"Sommerrübsen  (Rübsen, Rübsamen, Rübsaat)",Summer rapeseed (rapeseed,spring_turnip_rape,3301210702,0,DE_THU
+190560,Sommertriticale,Summer triticale,spring_triticale,3301010802,0,DE_THU
+190563,Sommertriticale mit Untersaat,Spring triticale with undersowing,spring_triticale_with_undersowing,3301320702,1,DE_THU
+111160,Sommerweichweizen,summer wheat/Summer soft wheat,spring_common_soft_wheat,3301010102,0,DE_THU
+111163,Sommerweichweizen mit Untersaat,Spring soft wheat with undersowing,spring_common_soft_wheat_with_undersowing,3301320202,1,DE_THU
+111161,Sommerweizen - Ganzpflanze,Spring wheat - whole plant,spring_common_soft_wheat,3301010102,0,DE_THU
+111160,Sommerweizen - Körner,Spring wheat - grain,spring_common_soft_wheat,3301010102,0,DE_THU
+320000,Sonnenblumen,sunflowers,sunflower,3301060500,0,DE_THU
+320003,Sonnenblumen mit Untersaat,Sunflowers with undersowing,legumes_oilseed_crops_mix,3301321200,1,DE_THU
+710999,sonst. Feldgemüse,Other field vegetables,fresh_vegetables,3301070000,0,DE_THU
+811140,sonst. Obstanlagen in Vollanbau,other orchards in full cultivation,orchards_fruits,3303010000,0,DE_THU
+811140,"sonst. Obstanlagen in Vollanbau (ohne Äpfel, Birnen, Pfirsiche)",otherwise. Fully cultivated orchards (without apples,orchards_fruits,3303010000,0,DE_THU
+790999,"sonst.Handelsgewächse (Vermehrung von Gras, Klee,Luzerne usw.","Other commercial crops (propagation of grass, clover, lucerne, etc.)",other_arable_land_crops,3301990000,0,DE_THU
+910999,sonstige Ackerflächen (alle anderen nicht genannten Ackerflächen),Other arable land (all other unlisted arable areas),other_arable_land_crops,3301990000,0,DE_THU
+940218,"Sonstige Baumarten (alle anderen Weiden, Pappeln, Birken, Erlen, Robinien,Roteichen) - Baumart in Bemerkung angeben","Other tree species (all other willows, poplars, birches, alders, robinia, red oaks) - tree species to be indicated in remark",tree_wood_forest,3306000000,0,DE_THU
+500599,sonstige Dauerkulturen,other permanent crops,permanent_crops_perennial,3303000000,0,DE_THU
+890999,Sonstige Dauerkulturen (Art ist anzugeben),Other permanent crops (species to be specified),permanent_crops_perennial,3303000000,0,DE_THU
+418990,sonstige einjährige Ackerfutterfläche,Other annual arable fodder area,other_arable_land_crops,3301990000,0,DE_THU
+AB0200,sonstige Flächen zur Beweidung (z.B.Militär),Other areas for grazing (e.g. military),pasture_meadow_grassland_grass,3302000000,0,DE_THU
+190999,sonstige Getreidearten - Körner,Other cereals - grain,cereal,3301010000,0,DE_THU
+190990,sonstige Getreidearten -Ganzpflanze,Other cereals - whole plant,cereal,3301010000,0,DE_THU
+459999,sonstige Grünlandflächen,Other grassland areas,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+770999,"sonstige Heil-, Gewürz- und Duftpflanzen","Other medicinal, spice and aromatic plants",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_THU
+290999,sonstige Körnerleguminosen,Other grain legumes,legumes_dried_pulses_protein_crops,3301020000,0,DE_THU
+890999,sonstige mehrjährige Sonderkulturen,Other perennial special crops,permanent_crops_perennial,3303000000,0,DE_THU
+418760,Sonstige Mischkulturen Ackerfutter,Other mixed crops arable fodder,mixed_cropping,3301320000,1,DE_THU
+390999,sonstige Ölsaaten,Other oilseeds,oilseed_crops,3301060800,0,DE_THU
+500590,sonstige Pflanzen für energetische Verwertung,Other plants for energy use,energy_crops,3304010000,0,DE_THU
+790444,"Sonstige Vermehrungskulturen z. B. Grassamen, Lichtnelken, Wildkräuter","Other propagation crops e.g. grass seed, campions, wild herbs",not_known_and_other,3399000000,0,DE_THU
+190830,Sorghumhirse,Sorghum,millet_sorghum,3301010900,0,DE_THU
+717150,Spargel,asparagus,asparagus,3301200000,0,DE_THU
+610110,Speisekartoffeln,table potatoes,potatoes,3301030000,0,DE_THU
+710240,Spinat,spinach,spinach,3301310800,0,DE_THU
+770030,Spitzwegerich,Plantain,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_THU
+716000,"Steckrübe, Kohlrübe","Turnip, swede",swede_rutabaga,3301210500,0,DE_THU
+418240,Steinklee,Sweet clover,melilot,3301090304,0,DE_THU
+418240,Steinklee alle Arten,Sweet clover all species,melilot,3301090304,0,DE_THU
+811200,"Steinobst, z. B. Kirschen, Pflaumen","Stone fruit e.g. cherries, plums",orchards_fruits,3303010000,0,DE_THU
+500000,Stilllegungsfläche für Naturschutzzwecke (KULAP),Set-aside area for nature conservation purposes (KULAP),environmental_protection,3311000000,0,DE_THU
+811700,Strauchbeerenobst,Bush berries,berries_berry_species,3303020000,0,DE_THU
+520010,Streifen am Waldrand (ohne Produktion),Strip at forest edge (without production),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_THU
+454000,Streuobstfläche mit Grünlandnutzung,Orchards with grassland use/Orchards with Permanent grassland use,orchards_fruits,3303010000,8,DE_THU
+454000,Streuobstwiesen,Orchard meadows,orchards_fruits,3303010000,8,DE_THU
+500540,Sudangras,Sudan grass,millet_sorghum,3301010900,0,DE_THU
+811200,Süßkirsche,Sweet cherry,cherry_cherries,3303010400,0,DE_THU
+230000,Süßlupinen,Sweet lupins,sweet_lupins,3301020700,0,DE_THU
+500560,Szarvasigras,Szarvasi grass,poaceae_grasses,3301090200,0,DE_THU
+500560,"Szarvasigras, Riesenweizengras, Hirschgras","Szarvasi grass, giant wheatgrass, deer grass",poaceae_grasses,3301090200,0,DE_THU
+760000,Tabak,Tobacco,tobacco,3301060100,0,DE_THU
+856000,Tafeltrauben,Table grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_THU
+730020,Tagetes (alle Arten),Tagetes (all species),tagetes,3301084700,0,DE_THU
+730030,Taubnesseln (alle Arten),Dead nettles (all species),nettles,3301061225,0,DE_THU
+930000,Teich-/Gewässerflächen,Pond/water body areas,wetlands,3310400000,0,DE_THU
+TR,Terassen je lfd. m 2 qm,Terraces per running meter 2 m²,non_productive_landscape_elements,3310000000,0,DE_THU
+960085,Terassen je lfd. m 2 qm,Terraces per running meter 2 m²,non_productive_landscape_elements,3310000000,0,DE_THU
+770260,Thymian,thyme/Thyme (also garden thyme),thyme,3301061237,0,DE_THU
+770260,"Thymiane (Thymian, Gartenthymian, Echter Thymian)","Thymes (thyme, garden thyme, real thyme)",thyme,3301061237,0,DE_THU
+770370,Tollkirsche,Deadly nightshade,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_THU
+717130,Tomaten,Tomatoes,tomato,3301280000,0,DE_THU
+190552,Triticale - Ganzpflanze (für Biogas),Triticale - whole plant (for biogas),green_cut_triticale,3301091000,0,DE_THU
+190551,Triticale - Ganzpflanze (für Futterzwecke),Triticale - whole plant (for feed purposes),triticale,3301010800,0,DE_THU
+190550,Triticale - Körner,Triticale - grain,triticale,3301010800,0,DE_THU
+500535,übrige Energieholzarten,Other energy wood species,short_rotation_coppice,3306090000,0,DE_THU
+AB0300,übrige Flächen für Naturschutz,Other areas for nature conservation,environmental_protection,3311000000,0,DE_THU
+520020,Ufervegetation,Riparian vegetation,wetland_buffers,3310700000,0,DE_THU
+930200,"Unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf AL","Unpaved storage (straw, feed, manure) on arable land",not_known_and_other,3399000000,0,DE_THU
+930100,"Unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf DGL","Unpaved storage (straw, feed, manure) on permanent grassland",not_known_and_other,3399000000,0,DE_THU
+710021,Vermehrung von Gemüse,Propagation of vegetables,other_arable_land_crops,3301990000,0,DE_THU
+770021,Vermehrung von Küchenkräutern/Heil- Duft- und Gewürzpflanzen,"Propagation of culinary herbs/medicinal, aromatic and spice plants",aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_THU
+730021,Vermehrung von Zierpflanzen,Propagation of ornamental plants,flowers_ornamental_plants,3301080000,0,DE_THU
+930400,"Versuchsparzellen, Versuchsflächen mit mehreren beihilfefähigen Kulturarten","Test plots, experimental areas with several eligible crop types",other_arable_land_crops,3301990000,0,DE_THU
+930400,"Versuchsparzellen, Versuchsflächen mit mehreren beihilfefähigen Kulturarten unterhalb der Mindestparzellengröße 0,10 ha","Test plots, experimental areas with several eligible crop types below the minimum plot size 0.10 ha",other_arable_land_crops,3301990000,0,DE_THU
+760000,Virginischer Tabak,Virginian tobacco,tobacco,3301060100,0,DE_THU
+950500,Waldumweltmaßnahmen (WUM),Forest environment measures (WUM),tree_wood_forest,3306000000,0,DE_THU
+428000,Wechselgrünland,Alternating grassland,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+428000,Wechselgrünland - Nutzung GoG max. 5 Jahre,Alternating grassland - use GoG max. 5 years,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+770030,Wegeriche (Spitzwegerich),Plantain (ribwort),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_THU
+418700,Weidelgras u. Bastarde -  Nutzung max. 5 Jahre,Ryegrass and hybrids - use max. 5 years,temporary_grass,3301090100,0,DE_THU
+453000,Weiden,pastures,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+500530,Weiden,pastures,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+846000,Weihnachtsbäume,Christmas trees,christmas_trees,3306100000,0,DE_THU
+846000,Weihnachtsbäume außerhalb Wald,Christmas trees outside forest,christmas_trees,3306100000,0,DE_THU
+230010,Weiße Lupine,White lupin,sweet_lupins,3301020700,0,DE_THU
+715520,Weißer Senf,White mustard,mustard,3301210100,0,DE_THU
+715520,"Weißer Senf, Gelber Senf, einschließlich Vermehrung Senfsaaten","White mustard, yellow mustard, including mustard seed propagation",mustard,3301210100,0,DE_THU
+418290,Weißklee,White clover,clover,3301090303,0,DE_THU
+290910,Wicken,sweet peas,vetches,3301090305,0,DE_THU
+290910,"Wicken (Zottel-, Saat-, Pannonische Wicken)","Vetches (tufted, common, Hungarian vetch)",vetches,3301090305,0,DE_THU
+451000,Wiesen,grasslands,pasture_meadow_grassland_grass,3302000000,0,DE_THU
+418380,"Wiesenschweidel, Festulolium-Nutzung max. 5 Jahre","Meadow fescue, festulolium - use max. 5 years",temporary_grass,3301090100,0,DE_THU
+930300,"Wildäsungsfläche, Wildacker","Wildlife feeding area, game field",environmental_protection,3311000000,0,DE_THU
+790555,Wildkräutervermehrung,Wild herb seed propagation,arable_land_seed_seedlings,3301100000,0,DE_THU
+220010,Winter-Ackerbohne,Winter field bean,beans,3301020100,0,DE_THU
+220013,Winter-Ackerbohne mit Untersaat,Winter field bean with undersowing,bean_grass_mix,3301090503,1,DE_THU
+190140,Winter-Dinkel,Winter spelt,winter_spelt,3301011001,0,DE_THU
+190143,Winter-Dinkel mit Untersaat,Winter spelt with undersowing,winter_spelt_with_undersowing,3301320801,1,DE_THU
+190700,Winter-Emmer/ -Einkorn,Winter emmer/einkorn,winter_emmer,3301011201,3,DE_THU
+190703,Winter-Emmer/ -Einkorn mit Untersaat,Winter emmer / einkorn with undersowing,emmer_with_undersowing,3301321400,1,DE_THU
+313180,Wintererucaraps,Winter eruca rape,oilseed_crops,3301060800,0,DE_THU
+210011,Winter-Futtererbse,Winter fodder pea,not_known_and_other,3399000000,0,DE_THU
+210013,Winter-Futtererbse mit Untersaat,Winter fodder pea with undersowing,pea_grass_mix,3301090506,1,DE_THU
+190310,Wintergerste,Winter barley,winter_barley,3301010401,0,DE_THU
+190312,Wintergerste - Ganzpflanze (für Biogas),Winter barley - whole plant (for biogas),green_cut_winter_barley,3301090701,0,DE_THU
+190311,Wintergerste - Ganzpflanze (für Futterzwecke),Winter barley - whole plant (for feed purposes),winter_barley,3301010401,0,DE_THU
+190310,Wintergerste - Körner,Winter barley - grain,winter_barley,3301010401,0,DE_THU
+190313,Wintergerste mit Untersaat,Winter barley with undersowing,winter_barley_with_undersowing,3301320401,1,DE_THU
+190400,Winterhafer,Winter oats,winter_oats,3301010501,0,DE_THU
+190403,Winterhafer mit Untersaat,Winter oat with undersowing,winter_oats_with_undersowing,3301320501,1,DE_THU
+190130,Winterhartweizen/Durum,Hard winter wheat/durum,winter_durum_hard_wheat,3301010201,0,DE_THU
+190132,Winterhartweizen/Durum mit Untersaat,Winter durum wheat with undersowing,winter_durum_hard_wheat_with_undersowing,3301320301,1,DE_THU
+190250,Wintermenggetreide,Winter mixed grain,winter_meslin,3301011101,7,DE_THU
+190251,Wintermenggetreide - Ganzpflanze,Winter mixed cereals - whole plant,winter_meslin,3301011101,0,DE_THU
+190250,Wintermenggetreide - Körner,Winter mixed cereals - grain,winter_meslin,3301011101,7,DE_THU
+190253,Wintermenggetreide mit Untersaat,Winter mixed cereals with undersowing,meslin_with_undersowing,3301091700,1,DE_THU
+311000,Winterraps,Winter rape,winter_rapeseed_rape,3301060401,0,DE_THU
+311000,Winterraps (00),Winter rapeseed (00),winter_rapeseed_rape,3301060401,0,DE_THU
+311003,Winterraps mit Untersaat,Winter oilseed rape with undersowing,winter_rapeseed_with_undersowing,3301321001,1,DE_THU
+190210,Winterroggen,Winter rye,winter_rye,3301010301,0,DE_THU
+190212,Winterroggen - Ganzpflanze (für Biogas),Winter rye - whole plant (for biogas),green_cut_winter_rye,3301090601,0,DE_THU
+190211,Winterroggen - Ganzpflanze (für Futterzwecke),Winter rye - whole plant (for feed purposes),winter_rye,3301010301,0,DE_THU
+190210,Winterroggen - Körner,Winter rye - grain,winter_rye,3301010301,0,DE_THU
+190213,Winterroggen mit Untersaat,Winter rye with undersowing,winter_rye_with_undersowing,3301320602,1,DE_THU
+190213,"Winterroggen mit Untersaat, Winter-Waldstaudenroggen mit Untersaat","Winter rye with undersowing, winter forest rye with undersowing",winter_rye_with_undersowing,3301320602,1,DE_THU
+190210,"Winterroggen, Winter-Waldstaudenroggen",Winter rye,winter_rye,3301010301,0,DE_THU
+312150,"Winterrübsen (Rübsen, Rübsamen, Rübsaat)",Winter turnip (oil radish/Winter turnip rape (also rapeseed),winter_turnip_rape,3301210701,0,DE_THU
+190550,Wintertriticale,Winter triticale,winter_triticale,3301010801,0,DE_THU
+190553,Wintertriticale mit Untersaat,Winter triticale with undersowing,winter_triticale_with_undersowing,3301320701,1,DE_THU
+111150,Winterweichweizen,Winter soft wheat,winter_common_soft_wheat,3301010101,0,DE_THU
+111153,Winterweichweizen mit Untersaat,Winter soft wheat with undersowing,winter_common_soft_wheat_with_undersowing,3301320201,1,DE_THU
+111151,Winterweizen - Ganzpflanze,Winter wheat - whole plant,winter_common_soft_wheat,3301010101,0,DE_THU
+111150,Winterweizen - Körner,Winter wheat - grain,winter_common_soft_wheat,3301010101,0,DE_THU
+730100,Zierpflanzen (Sammelcode),Ornamental plants (collective code),flowers_ornamental_plants,3301080000,0,DE_THU
+720220,Zierpflanzen Freiland,Ornamental plants outdoors,flowers_ornamental_plants,3301080000,0,DE_THU
+730321,Zierpflanzen unter Glas und Plaste,Ornamental plants under glass and plastic,flowers_ornamental_plants,3301080000,0,DE_THU
+730320,zierpflanzen unter Glas und Plaste,Ornamental plants under glass and plastic,greenhouse_flowers,3305010800,0,DE_THU
+940207,Zitterpappel einschließlich Kreuzungen mit anderen Arten dieser Gattung als ÖVF,Aspen including hybrids with other species of this genus as ÖVF,populus,3306070000,0,DE_THU
+290910,Zottelwicke,Hairy vetch,vetches,3301090305,0,DE_THU
+710290,Zucchini,Zucchini,pumpkin_squash_gourd,3301140400,0,DE_THU
+620000,Zuckerrüben,Sugar beet,sugar_beet,3301290700,0,DE_THU
+710040,"Zwiebel (Speise-Zwiebel, Schalotte, Lauch, Knoblauch, Schnittlauch, Winterheckenzwiebel, Bärlauch)","Onion (table onion, shallot, leek, garlic, chives, Welsh onion, wild garlic)",alliums,3301220000,0,DE_THU
+710040,"Zwiebel (Speise-Zwiebel, Schalotte, Lauch, Knoblauch, Schnittlauch, Winterheckzwiebel, Bärlauch)","Onion (table onion, shallot, leek, garlic, chives, Welsh onion, wild garlic)",alliums,3301220000,0,DE_THU
+710040,Zwiebeln,Onions,alliums,3301220000,0,DE_THU

@@ -1,0 +1,13 @@
+column_name,column_description,prelim,CZ_2015,CZ_2016,CZ_2017,CZ_2018,CZ_2019,CZ_2020,CZ_2021,CZ_2022,CZ_2023,CZ_2024,CZ_2025
+field_id,Unique identifier for each field in country or state,1,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB,NKOD_DPB
+farm_id,Unique identifier for each farm in country,1,ID_UZ,ID_UZ,ID_UZ,ID_UZ,ID_UZ,ID_UZ,ID_UZ,ID_UZ,ID_UZ,ID_UZ,ID_UZ
+crop_code,"The original, country-specific crop code",1,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID,PLODINA_ID
+crop_name,"The original, country-specific crop name",1,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV,PLODINA_NAZEV
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,EKO,EKO,EKO,EKO,EKO,EKO,EKO,EKO,EKO,EKO,EKO
+field_size,Size of field in hectar,1,VYMERA,VYMERA,VYMERA,VYMERA,VYMERA,VYMERA,VYMERA,VYMERA,VYMERA,VYMERA,VYMERA
+crop_area,,1,VYM_OP_PP_DP,VYM_OP_PP_DP,VYM_OP_PP_DP,VYM_OP_PP_DP,VYM_OP_PP_DP,VYM_OP_PP_DP,VYM_OP_PP_DP,VYM_OP_PP_DP,DEKL_VYM,DEKL_VYM,DEKL_VYM

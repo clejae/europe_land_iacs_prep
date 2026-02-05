@@ -1,0 +1,14 @@
+column_name,column_description,prelim,EE_2008,EE_2009,EE_2010,EE_2011,EE_2012,EE_2013,EE_2014,EE_2015,EE_2016,EE_2017,EE_2018,EE_2019,EE_2020,EE_2021,EE_2022,EE_2023,EE_2024
+field_id,Unique identifier for each field in country or state,1,pollu_id,pollu_id,pollu_id,pollu_id,uni_id,uni_id,uni_id,uni_id,uni_id,uni_id,pollu_id,pollu_id,pollu_id,pollu_id,pollu_id,pollu_id,pollu_id
+farm_id,Unique identifier for each farm in country,1,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi,taotleja_nimi
+crop_code,"The original, country-specific crop code",1,,,,,,,,,,,,,,,,,
+crop_name,"The original, country-specific crop name",1,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur,taotletud_kultuur
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",0,,,,,,,,,,,,,,,,,
+field_size,Size of field in hectar,1,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha,pindala_ha
+intercrop_code,"The original, country-specific intercrop code",0,,,,,,,,,,,,,,,,,
+intercrop_name,"The original, country-specific intercrop name",0,,,,,,,,,,,,,,,,,

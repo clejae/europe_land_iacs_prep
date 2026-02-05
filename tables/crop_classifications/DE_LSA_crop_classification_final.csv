@@ -1,0 +1,729 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+915, Ackerrandstreifen/Blühflächen,Field margins/flower strips,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+720, beetweiser Anbau Zierpflanzen,Row cultivation of ornamental plants,flowers_ornamental_plants,3301080000,0,DE_LSA
+972, Grünland (nicht DZ fähig),Run for livestock keeping (not DZ capable),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+841, KUP GAPDZV,Short rotation plantations,short_rotation_coppice,3306090000,0,DE_LSA
+112, Winterdurum (Hartweizen),Winter hard wheat / durum,winter_durum_hard_wheat,3301010201,0,DE_LSA
+156, Wintertriticale,Winter triticale,winter_triticale,3301010801,0,DE_LSA
+555,20-jährig hier Stilllegung,,fallow_land_not_crop,3301110000,0,DE_LSA
+555,20-jährige Flächenstilllegung,,fallow_land_not_crop,3301110000,0,DE_LSA
+998,"Abbau-, Öd-, Un-, Geringstland, Sukzessionsflächen – dauerhaft aus der Erzeugung genommen","Extracted/fallow/poor land, succession areas – permanently removed from production",fallow_land_not_crop,3301110000,0,DE_LSA
+998,"Abbau-,Öd-,Un-,Geringstl.",Extracted/fallow/poor land,fallow_land_not_crop,3301110000,0,DE_LSA
+220,"Acker-, Puff-, Pferde- und Dicke Bohne",Field bean / broad bean / horse bean / broad bean,beans,3301020100,0,DE_LSA
+220,Ackerbohne/Puffbohne/Pferdebohne/Dicke Bohne,Field bean / broad bean / horse bean / broad bean,beans,3301020100,0,DE_LSA
+424,Ackergras,Arable grass,temporary_grass,3301090100,0,DE_LSA
+999,"Ackerkultur einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Arable crop of a genus/species not listed,other_arable_land_crops,3301990000,0,DE_LSA
+591,Ackerland aus der Erzeugung genommen,Arable land withdrawn from production (self-greening),fallow_land_not_crop,3301110000,0,DE_LSA
+591,Ackerland aus der Erzeugung genommen ,Arable land withdrawn from production (self-greening),fallow_land_not_crop,3301110000,0,DE_LSA
+590,Ackerland aus der Erzeugung genommen (gezielte Ansaat von Blühmischungen),Fallow with annual sowing of flower mix,fallow_land_not_crop,3301110000,0,DE_LSA
+591,Ackerland aus der Erzeugung genommen (Selbstbegrünung),Arable land withdrawn from production (self-greening),fallow_land_not_crop,3301110000,0,DE_LSA
+591,Ackerland aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO (EU) Nr. 1307/2013,Arable land withdrawn from production (self-greening),fallow_land_not_crop,3301110000,0,DE_LSA
+591,Ackerland aus Erzeugung,Arable land withdrawn from production (self-greening),fallow_land_not_crop,3301110000,0,DE_LSA
+915,Ackerrandstreifen und Blühflächen,Field margins and flower strips,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+84,Agri-PV-Anlage,Agri-PV system,agrivoltaics,3309000000,0,DE_LSA
+83,Agroforstreifen ohne ÖR,Agroforestry strip without ÖR (ECO REGULATION),agroforestry,3312000000,0,DE_LSA
+81,Agroforstsystem (§4(2) (Nr.1: Streifen) GAPDZV),agroforestry system (§4(2) (no.1: strips) GAPDZV),agroforestry,3312000000,0,DE_LSA
+82,Agroforstsystem (§4(2) (Nr.2: verstreut) GAPDZV),Agroforestry system (§4(2) (Nr.2: scattered) GAPDZV),agroforestry,3312000000,0,DE_LSA
+990,Alle anderen Flächen (keine LF),All other areas (no agricultural land),not_known_and_other,3399000000,0,DE_LSA
+633,Allium/Lauch,Allium / leek (onion,alliums,3301220000,0,DE_LSA
+633,"Allium/Lauch (Speise-Zwiebel, Schalotte, Lauch, Knoblauch, Schnittlauch, Winterheckenzwiebel, Bärlauch)",Allium / leek (onion,alliums,3301220000,0,DE_LSA
+778,Alpendistel,alpine thistle ,marian_thistles,3301061300,0,DE_LSA
+778,Alpendistel ,alpine thistle ,marian_thistles,3301061300,0,DE_LSA
+779,Amacrinum,amacrinum,flowers_ornamental_plants,3301080000,0,DE_LSA
+186,"Amarant, Fuchsschwanz","Amaranth, foxtail",amaranth,3301150100,0,DE_LSA
+642,Ampfer,Sorrel,sorrel,3301310700,0,DE_LSA
+642,Ampfer (Wiesen-Sauerampfer),Sorrel (meadow sorrel),sorrel,3301310700,0,DE_LSA
+632,Andere Gemüsearten,Other vegetables,fresh_vegetables,3301070000,0,DE_LSA
+632,"Andere Gemüsearten (einschl. Zucker-, Futter-/Runkelrüben)",Other vegetables,fresh_vegetables,3301070000,0,DE_LSA
+790,"Anemonen (Herbstanemone, Japanische Anemone)","Anemones (fall anemone, Japanese anemone)",anemones_windflowers,3301080200,0,DE_LSA
+651,"Anethum (Dill, Gurkenkraut)",Dill,anethum_dill,3301061203,0,DE_LSA
+653,Anis,anise,anise_aniseed,3301061205,0,DE_LSA
+836,Äpfel in Vollanbau,Apples in full cultivation,apples,3303010200,0,DE_LSA
+836,Äpfel in Vollanbau ,Apples in full cultivation,apples,3303010200,0,DE_LSA
+861,Artischocke,artichoke,artichoke,3301270000,0,DE_LSA
+733,Astern,Asters,asters,3301080300,0,DE_LSA
+733,Astern (Sommeraster),asters (summer aster),asters,3301080300,0,DE_LSA
+623,Auberginen,aubergines,aubergine_eggplant,3301260000,0,DE_LSA
+564,Aufgeforstete Flächen auf Ackerland oder Dauergrünland mit Antrag auf Erstaufforstung,Areas afforested according to VO 1257/1999 or VO (EG) No. 1698/2005 or VO 1305/2013,afforestation_reforestation,3306010000,0,DE_LSA
+972,Auslauf zur Nutztierhaltung (nicht DZ fähig),Run for livestock keeping (not DZ capable),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+679,Baldrian,Valerian,valerian,3301061238,0,DE_LSA
+679,Baldrian (Echter Baldrian),Valerian (real valerian),valerian,3301061238,0,DE_LSA
+679,Baldriane (Echter Baldrian),Valerian,valerian,3301061238,0,DE_LSA
+660,Basilikum,basil,basil,3301061207,0,DE_LSA
+71,Baumreihe >50m Kondi,Tree row >50m condi,tree_lines,3310300000,0,DE_LSA
+B,Baumreihen,Tree rows,tree_lines,3310300000,0,DE_LSA
+838,Baumschulen,Nurseries,nurseries_nursery,3303070000,0,DE_LSA
+838,"Baumschulen, nicht für Beerenobst",Nurseries,nurseries_nursery,3303070000,0,DE_LSA
+827,Beerenobst,Berries,berries_berry_species,3303020000,0,DE_LSA
+839,Beerenobst zur Vermehrung,Berries for propagation (in tree nurseries),berries_berry_species,3303020000,0,DE_LSA
+839,Beerenobst zur Vermehrung (in Baumschulen),Berries for propagation (in tree nurseries),berries_berry_species,3303020000,0,DE_LSA
+827,"Beerenobst, z.B. Johannis-, Stachel-, Himbeeren",Berries,berries_berry_species,3303020000,0,DE_LSA
+827,"Beerenobst, z.B., Heidelbeeren, Johannisbeeren, Stachelbeeren, Himbeeren",Berries,berries_berry_species,3303020000,0,DE_LSA
+827,"Beerenobst, z.B., Johannis-, Stachel-, Himbeeren",Berries,berries_berry_species,3303020000,0,DE_LSA
+650,beetw. Anbau Küchenkr./Heil-/Gewürzpfl.,Row cultivation of herbs/spices,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+610,beetweiser Anbau von Gemüse,Row cultivation of vegetables,fresh_vegetables,3301070000,0,DE_LSA
+650,beetweiser Anbau von Küchenkräuter/Heil-und Gewürzpflanzen,Row cultivation of herbs/spices,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+650,beetweiser Anbau von Küchenkräuter/Heil-und Gewürzpflanzen ,Row cultivation of kitchen herbs/medicinal/spices,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+720,beetweiser Anbau Zierpflanzen,Row cultivation of ornamental plants,flowers_ornamental_plants,3301080000,0,DE_LSA
+780,Begonien,begonias,begonias,3301080400,0,DE_LSA
+843,Bestockte Rebfläche,Planted vineyards,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_LSA
+464,beweid. Magerrasen,Grazed dry grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+465,beweid. mont. Wiesen,Grazed montane meadows,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+463,beweid. Moorheiden,Grazed bog heaths,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+462,beweid. Sandheiden,Grazed sandy heaths,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+464,Beweidete Magerrasen,Grazed dry grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+465,Beweidete montane Wiesen,Grazed montane meadows,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+463,Beweidete Moorheiden,Grazed bog heaths,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+462,Beweidete Sandheiden,Grazed sandy heaths,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+925,Biotope mit landwirtschaftl. Nutzung,Biotopes with agricultural use,environmental_protection,3311000000,0,DE_LSA
+925,Biotope mit landwirtschaftlicher Nutzung,Biotopes with agricultural use,environmental_protection,3311000000,0,DE_LSA
+823,Birnen (Ertragsanlagen),Pears (crop plants),pears,3303011200,0,DE_LSA
+728,Bischofskraut,bishopswort,flowers_ornamental_plants,3301080000,0,DE_LSA
+575,Blühfläche (AUKM) einjährig,Flowering area (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+575,Blühfläche (AUKM-Maßnahme),Flowering area (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+575,Blühfläche (AUKM-Maßnahme) einjährig,Flowering area (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+575,Blühfläche (nur für Flächen mit AUM-BS 1 zu verwenden),Flowering area (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+575,Blühfläche einjährig (MSL-Maßnahme),Flowering area (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+574,Blühstreifen (AUKM) einjährig,Flower strips (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+574,Blühstreifen (AUKM-Maßnahme),Flower strips (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+574,Blühstreifen (AUKM-Maßnahme) einjährig,Flower strips (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+574,Blühstreifen (nur für Flächen mit AUM-BS 1 zu verwenden),Flower strips (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+574,Blühstreifen einjährig (MSL-Maßnahme),Flower strips (only to be used for areas with AUM-BS 1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+915,Blühstreifen/Blühflächen,Field margins/flower strips,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+426,"Bockshorn-, Schabziger Klee","Fenugreek, schabziger clover",fenugreek,3301020400,3,DE_LSA
+426,"Bockshornklee, Schabzieger Klee","Fenugreek, schabziger clover",fenugreek,3301020400,3,DE_LSA
+426,"Bockshornklee, Schabziger Klee","Fenugreek, schabziger clover",fenugreek,3301020400,3,DE_LSA
+665,Bohnenkraut,Savory,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+663,Borretsch,borage,borage,3301061209,0,DE_LSA
+560,Brache AUKM-VNS-Maßnahme,fallow AUKM (Agri-environmental and climate measures)-VNS measure,fallow_land_not_crop,3301110000,0,DE_LSA
+560,Brache im Rahmen einer AUKM VNS-Maßnahme,Fallow land as part of an AUKM (Agri-environmental and climate measures) SSF measure,fallow_land_not_crop,3301110000,0,DE_LSA
+590,Brache mit Blühmischung,Fallow with annual sowing of flower mix,fallow_land_not_crop,3301110000,0,DE_LSA
+590,Brache mit Einsaat von einjährigen Blühmischungen,Fallow with annual sowing of flower mix,fallow_land_not_crop,3301110000,0,DE_LSA
+590,Brache mit jährlicher Einsaat von Blühmischungen,Fallow with annual sowing of flower mix,fallow_land_not_crop,3301110000,0,DE_LSA
+513,Braunellen,Brown allium,flowers_ornamental_plants,3301080000,0,DE_LSA
+614,Brauner Senf (Brauner Senf/Sareptasenf),Brown mustard/Sarepta mustard,mustard,3301210100,0,DE_LSA
+614,Brauner Senf/Sareptasenf,Brown mustard/Sarepta mustard,mustard,3301210100,0,DE_LSA
+614,Brauner Senf/Sareptasenf ,Brown mustard/Sarepta mustard,mustard,3301210100,0,DE_LSA
+709,Brennnesseln,Nettles,nettles,3301061225,0,DE_LSA
+709,Brennnesseln (Große Brennnessel),Nettles (great nettle),nettles,3301061225,0,DE_LSA
+182,Buchweizen,Buckwheat,buckwheat,3301150200,0,DE_LSA
+781,Calla/Drachenwurz,calla/dragon root,flowers_ornamental_plants,3301080000,0,DE_LSA
+852,Chinaschilf/Miscanthus,Chinese reed / Miscanthus,miscanthus_silvergrass,3301083000,0,DE_LSA
+784,"Christrose-/Schnee-/Weihnachtsrose, Korischer Nieswurz","Christmas rose, snow rose, Helleborus, Coriope",corsican_hellebore,3301081100,0,DE_LSA
+734,Chrysanthemen,Chrysanthemums,chrysanthemum,3301080900,0,DE_LSA
+734,"Chrysanthemen (Garten-Chrysantheme, Winteraster)","chrysanthemums (garden chrysanthemum, winter aster)",chrysanthemum,3301080900,0,DE_LSA
+750,Dahlie,Dahlias,dahlia,3301081200,0,DE_LSA
+750,Dahlien,Dahlias,dahlia,3301081200,0,DE_LSA
+750,Dahlien ,Dahlias,dahlia,3301081200,0,DE_LSA
+750,Dahlien (Garten-Dahlie),Dahlias,dahlia,3301081200,0,DE_LSA
+960,Dämme und Deiche,Dams and dikes,non_productive_landscape_elements,3310000000,0,DE_LSA
+592,Dauergrünl.aus Erzeugung,Permanent grassland withdrawn from production within the meaning of Art. 4 para. 1 letter c) ii) Regulation 1307/2013,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+592,Dauergrünland aus der Erzeugung genommen,Permanent grassland withdrawn from production within the meaning of Art. 4 para. 1 letter c) ii) Regulation 1307/2013,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+592,Dauergrünland aus der Erzeugung genommen ,Permanent grassland withdrawn from production within the meaning of Art. 4 para. 1 letter c) ii) Regulation 1307/2013,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+592,Dauergrünland aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO (EU) Nr. 1307/2013,Permanent grassland withdrawn from production within the meaning of Art. 4 para. 1 letter c) ii) Regulation 1307/2013,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+493,"Dauergrünland nach Praktiken (LR-Typ FFH, Arten VS-RL (§7 (7) GAPDZV))","Permanent grassland according to practices (LR type FFH, species VS-RL (§7 (7) GAPDZV))",pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+492,Dauergrünland unter etablierten lokalen Praktiken (z.B. Heide),Permanent grassland under established local practices (e.g. heather),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+441,Dauergrünlandneueinsaat als Ersatz für genehmigten Dauergrünlandumbruch,Grassland reseeding AUKM (Agri-environmental and climate measures),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+855,"Dauerkultur einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Permanent culture of a genus/species that is not included in the current list,permanent_crops_perennial,3303000000,0,DE_LSA
+593,Dauerkulturen aus der Erzeugung genommen,Permanent crops taken out of production,fallow_land_not_crop,3301110000,0,DE_LSA
+593,Dauerkulturen aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO 1307/2013,Permanent crops taken out of production,fallow_land_not_crop,3301110000,0,DE_LSA
+492,Dauerweiden unter etablierten lokalen Praktiken (Z.B. Heide),Permanent grassland under established local practices (e.g. heather),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+492,Dauerweiden unter etablierten lokalen Praktiken (z.B. Heide),Permanent grassland under established local practices (e.g. heather),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+493,"DGL etabl. lok. Praktiken ( (LR-Typ FFH, Arten VS-RL)","permanent grassland established local practices ( (LR-Typ FFH, species VS-RL)",pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+444,DGL Neueinsaat als Ersatz für genehmigten DGL Umbruch,permanent grassland reseeding as a replacement for approved DGL ploughing up,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+444,DGL Neueinsaat als Ersatz für genehmigten DGL Umbruch (29.11.2016),permanent grassland reseeding as a replacement for approved DGL ploughing up,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+492,DGL unter etablierten lokalen Praktiken,Permanent grassland under established local practices (e.g. heather),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+444,DGL-Neueinsaat als Ersatz,Permanent grassland reseeding as replacement,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+651,"Dill, Gurkenkraut",Dill,anethum_dill,3301061203,0,DE_LSA
+687,echte Arnika,True arnica,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_LSA
+687,echte Arnika (Arnica montana),real arnica (Arnica montana),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_LSA
+615,Echte Brunnenkresse,watercress,cress,3301210300,0,DE_LSA
+680,Echtes Johanniskraut/Hyperikum,Real St. Johns wort / hypericum,st_johns_wort,3301061234,0,DE_LSA
+736,Edelweiß,edelweiss ,edelweiss,3301081600,0,DE_LSA
+736,Edelweiß ,edelweiss ,edelweiss,3301081600,0,DE_LSA
+594,einjährige Honigpflanzen (AL aus der Erzeugung genommen),Perennial fallow with honey plants,fallow_land_not_crop,3301110000,0,DE_LSA
+722,Einjähriges Silberblatt,Annual silver leaf,lunaria_honesty_silver,3301082700,0,DE_LSA
+E,Einzelbäume,Individual trees,tree_lines,3310300000,0,DE_LSA
+74,Einzelbäume Kondi,single trees condi,tree_lines,3310300000,0,DE_LSA
+801,"Energiepflanze einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Energy plant of a genus/species that is not included in the current list,energy_crops,3304010000,0,DE_LSA
+685,"Engelwurzen (Arznei-Engelwurz, Echter Engelwurz)","Angelica (medicinal angelica, garden angelica)",angelica,3301061204,0,DE_LSA
+671,Enzian,gentian,gentians,3301082000,0,DE_LSA
+671,Enziane,gentian,gentians,3301082000,0,DE_LSA
+210,Erbsen (Frisch- / Speiseerbsen Freiland),Peas (fresh / table peas free range),peas,3301020600,0,DE_LSA
+210,"Erbsen (Mark-/Schal-/Zucker-/Futtererbse,Peluschke)",Peas (fresh / table peas free range),peas,3301020600,0,DE_LSA
+210,"Erbsen (Markerbse, Schalerbse, Zuckererbse, Futtererbse, Peluschke)",Peas (fresh / table peas free range),peas,3301020600,0,DE_LSA
+210,Erbsen zur Körnergewinnung,Peas (fresh / table peas free range),peas,3301020600,0,DE_LSA
+240,Erbsen/Bohnen,Peas beans,legumes_dried_pulses_protein_crops,3301020000,3,DE_LSA
+240,Erbsen/Bohnen ,Peas beans,legumes_dried_pulses_protein_crops,3301020000,3,DE_LSA
+707,Erdbeeren,Strawberries,strawberries,3301130000,0,DE_LSA
+564,Erstaufforstung mit EAP,Areas afforested according to VO 1257/1999 or VO (EG) No. 1698/2005 or VO 1305/2013,afforestation_reforestation,3306010000,0,DE_LSA
+563,Erstaufforstungsflächen  auf Ackerflächen nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013,Initial afforestation,afforestation_reforestation,3306010000,,DE_LSA
+567,Erstaufforstungsflächen auf Dauergrünlandflächen nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013,according to Art. 22 to 24 of Regulation (EC) No. 1257/99 or Regulation 2021/2115 set-aside permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+785,Eukalyptus,Eucalyptus,eucalyptus,3306050000,0,DE_LSA
+708,Färberdisteln,Safflower,safflower,3301083900,0,DE_LSA
+710,Färberkrapp,Common madder,rubia_tinctorum_common_madder,3301061231,0,DE_LSA
+710,Färberkrapp (Rubia tinctorum),Madder (Rubia tinctorum),rubia_tinctorum_common_madder,3301061231,0,DE_LSA
+703,Färber-Waid,Woad,isatis_tinctoria_woad,3301082400,0,DE_LSA
+C,Feldgehölze,Field shrubs,tree_lines,3310300000,0,DE_LSA
+72,Feldgehölze 50-2.000 m² Kondi,"Field shrubs 50-2,000 m² condi",shrubberries_shrubs,3303080000,0,DE_LSA
+H,Feldraine,Field margins,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+78,Feldraine Kondi,field margins condi,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+636,Feldsalat/Ackersalat/ Rapunzel,Lamb's lettuce / field lettuce / Rapunzel,lambs_lettuce_rapunzel,3301310500,0,DE_LSA
+636,Feldsalate,Lamb’s lettuces,lambs_lettuce_rapunzel,3301310500,0,DE_LSA
+636,Feldsalate (Feldsalat/Ackersalat/ Rapunzel),Lamb's lettuce / field lettuce / Rapunzel,lambs_lettuce_rapunzel,3301310500,0,DE_LSA
+J,Fels - und Steinriegel,rock and stone bars,stone_walls,3310600000,0,DE_LSA
+77,"Fels- und Steinriegel, naturversteinte Fläche Kondi","rock and stone bars, naturally stony area condi",stone_walls,3310600000,0,DE_LSA
+648,Fenchel,Fennel,fennel,3301170000,0,DE_LSA
+648,"Fenchel (Gemüsefenchel, Körnerfenchel)",Fennel (vegetable fennel,fennel,3301170000,0,DE_LSA
+648,"Fenchel (Gemüsefenchel,/Körnerfenchel)",Fennel,fennel,3301170000,0,DE_LSA
+796,"Fetthenne, Mauerpfeffer",Stonecrop,stonecrop,3301084600,0,DE_LSA
+796,"Fetthenne, Mauerpfeffer (Sedum)",Stonecrop,stonecrop,3301084600,0,DE_LSA
+D,Feuchtgebiete,wetlands,wetlands,3310400000,0,DE_LSA
+73,Feuchtgebiete < 2.000 m² Kondi,"wetlands < 2,000 m² condi",wetlands,3310400000,0,DE_LSA
+786,Fingerhut,Foxglove,flowers_ornamental_plants,3301080000,0,DE_LSA
+995,Forstfl. (Waldbodenfäche),Forest areas (forest floor areas),tree_wood_forest,3306000000,0,DE_LSA
+995,Forstflächen (Waldbodenflächen),Forest areas (forest floor areas),tree_wood_forest,3306000000,0,DE_LSA
+681,Frauenmantel,Lady's mantle,alchemilla_ladys_mantle,3301061202,0,DE_LSA
+787,Fuchsien,Fuchsias,fuchsias,3301081800,0,DE_LSA
+429,"Futterpflanze einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Forage plant of a genus/species that is not included in the current list,other_plants_harvested_green,3301099900,0,DE_LSA
+430,"Futterpflanze einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist (Stickstoffbindende Pflanze ÖVF)",Forage plant of a genus/species that is not included in the current list,other_plants_harvested_green,3301099900,0,DE_LSA
+413,Futterrübe/Runkelrübe,Fodder beet / beetroot,mangelwurzel_fodder_beet,3301290400,0,DE_LSA
+723,Garten-/ Sommerlevkoje,Garden/summer lecoy,flowers_ornamental_plants,3301080000,0,DE_LSA
+723,Garten-/Sommerlevkoje,Garden/summer lecoy,flowers_ornamental_plants,3301080000,0,DE_LSA
+635,Gartenbohne,Garden bean,beans,3301020100,0,DE_LSA
+635,"Gartenbohne (Gartenbohne/Buschbohne/Stangenbohne, Feuerbohne/Prunkbohne)",Garden bean (French bean / French bean / runner bean,beans,3301020100,0,DE_LSA
+617,Gartenkresse,garden cress,cress,3301210300,0,DE_LSA
+630,Gartenkürbis,Garden pumpkin,pumpkin_squash_gourd,3301140400,0,DE_LSA
+630,"Gartenkürbis (Gartenkürbis,  Zucchini, Spaghettikürbis, Zierkürbis)",Garden pumpkin,pumpkin_squash_gourd,3301140400,0,DE_LSA
+630,"Gartenkürbis (Gartenkürbis, Steirischer Kürbis, Zucchini, Spaghettikürbis, Zierkürbis)","Garden pumpkin (pumpkin, Styrian, zucchini, spaghetti, ornamental)",pumpkin_squash_gourd,3301140400,0,DE_LSA
+517,Garten-Petunie,Garden Petunia,flowers_ornamental_plants,3301080000,0,DE_LSA
+618,Gartenrettiche,Garden radishes (white / red radishes,radish,3301290600,0,DE_LSA
+618,"Gartenrettiche (Weiße/rote Rettiche, schwarzer Winterrettich, Ölrettich, Radieschen)","Garden radishes (white/red, black winter radish, oil radish, radish)",radish,3301290600,0,DE_LSA
+616,"Garten-Senfrauke, Rucola",Arugla,rocket_arugula,3301310600,0,DE_LSA
+683,Geißraute,Goat's rue,galega,3301081900,0,DE_LSA
+774,Gelber Leberbalsam (Lonas),yellow liverwort (lonas),flowers_ornamental_plants,3301080000,0,DE_LSA
+467,gemäht. mont. Wiesen,Mown montane meadows,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+466,Gemähte Magerrasen,Mowed grasslands,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+466,gemähte Magerrasen,Mowed grasslands,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+467,Gemähte montane Wiesen,Mown montane meadows,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+150,Gemenge Getreide/Leguminose,mixture of cereal/legume mixture,cereal_legume_mix,3301091200,1,DE_LSA
+150,Gemenge Getreide/Leguminose (Getreide überwiegt),mixture of grain/legumes (more grain),cereal_legume_mix,3301091200,1,DE_LSA
+250,Gemenge Leguminose/Getreide (Leguminiose überwiegt),Mixture of legumes / grain,cereal_legume_mix,3301091200,1,DE_LSA
+250,Gemenge Leguminose/Getreide (Leguminose überwiegt),Mixture of legumes / grain,cereal_legume_mix,3301091200,1,DE_LSA
+250,Gemenge Leguminosen / Getreide,Mixture of legumes / grain,cereal_legume_mix,3301091200,1,DE_LSA
+250,Gemenge Leguminosen/Getreide,Mixture of legumes / grain,cereal_legume_mix,3301091200,1,DE_LSA
+250,Gemenge Leguminosen/Getreide (Leg überwiegt),Mixture of legumes / grain,cereal_legume_mix,3301091200,1,DE_LSA
+610,Gemüse,Row cultivation of vegetables,fresh_vegetables,3301070000,0,DE_LSA
+211,Gemüseerbse,Garden peas,peas,3301020600,0,DE_LSA
+211,"Gemüseerbse (Markerbse, Schalerbse, Zuckerebse)",Garden peas,peas,3301020600,0,DE_LSA
+211,"Gemüseerbse (Markerbse, Schalerbse, Zuckerebse) (14.01.2016)",Garden peas,peas,3301020600,0,DE_LSA
+211,"Gemüseerbse (Markerbse, Schalerbse, Zuckererbse)",Garden peas,peas,3301020600,0,DE_LSA
+211,"Gemüseerbse (Markerbse, Schalerbse, Zuckererbse) ",Garden peas (fresh),peas,3301020600,0,DE_LSA
+211,"Gemüseerbse (Markterbse, Schalerbse, Zuckererbse)",Garden peas,peas,3301020600,0,DE_LSA
+211,Gemüseerbsen,Garden peas,peas,3301020600,0,DE_LSA
+613,Gemüsekohl ,Vegetable cabbage,brassica_oleracea_cabbage,3301210200,0,DE_LSA
+613,"Gemüsekohl (Kopfkohl, Wirsing, Rot-/Weißkohl, Spitzkohl, Grünkohl, Kohlrabi, Markstammkohl, Blumenkohl, Romanesco, Brokkoli, Rosenkohl, Zierkohl)",Vegetable cabbage (varieties),brassica_oleracea_cabbage,3301210200,0,DE_LSA
+613,"Gemüsekohl (Wirsing, Rot-/Weißkohl, Spitzkohl, Grünkohl, Kohlrabi, Markstammkohl, Blumenkohl, Romanesco, Brokkoli, Rosenkohl, Zierkohl)",Vegetable cabbage,brassica_oleracea_cabbage,3301210200,0,DE_LSA
+611,Gemüse-Kreuzblütler,Cruciferous vegetables,fresh_vegetables,3301070000,0,DE_LSA
+611,"Gemüse-Kreuzblütler (einschl. Raps, Rübsen, Kohl-/Steckrübe)",Cruciferous vegetables,fresh_vegetables,3301070000,0,DE_LSA
+626,Gemüse-Kürbisgewächse,Vegetable pumpkin species,cucurbits,3301140000,0,DE_LSA
+621,Gemüse-Nachtschattengewächse,Vegetable nightshade species,fresh_vegetables,3301070000,0,DE_LSA
+649,Gemüserübsen,Vegetable turnip,turnips,3301290800,0,DE_LSA
+649,"Gemüserübsen (Stoppelrübe, Weiße Rübe, Bayerische Rübe, Mairübe, Chinakohl, Pak-Choi, Teltower Rübchen, Stielmus, Herbstrübe)","Vegetable turnip (swede, white turnip, pak choi, etc.)",turnips,3301290800,0,DE_LSA
+788,Geranien,Geraniums,flowers_ornamental_plants,3301080000,0,DE_LSA
+190,"Getreide einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Cereals of a genus/species that are not included in the current list,other_cereals,3301019900,0,DE_LSA
+928,Gewässer- und Erosionsschutzstreifen,Water protection/riparian strips AUKM (Agri-environmental and climate measures),wetland_buffers,3310700000,0,DE_LSA
+577,Gewässerschutzstreifen AUM-FM,Water protection/riparian strips AUKM (Agri-environmental and climate measures),wetland_buffers,3310700000,0,DE_LSA
+773,Gewöhnlicher Leberbalsam (Ageratum),common liverwort (ageratum),flowers_ornamental_plants,3301080000,0,DE_LSA
+759,Gipskräuter (Schleierkraut),gypsophila (baby's breath),flowers_ornamental_plants,3301080000,0,DE_LSA
+745,Gladiole,Gladioli,gladiolus_gladioli,3301082100,0,DE_LSA
+745,Gladiolen,Gladioli,gladiolus_gladioli,3301082100,0,DE_LSA
+745,Gladiolen (Gartengladiole),Gladioli,gladiolus_gladioli,3301082100,0,DE_LSA
+441,GL-Neueinsaat AUKM,Grassland reseeding AUKM (Agri-environmental and climate measures),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+782,Glockenblumen (Campanula),bellflowers (campanula),bluebells,3301080500,0,DE_LSA
+66,GLÖZ8 nicht produktive Fläche (aktive Begrünung),GLÖZ (good agricultural and ecological condition)8 non-productive area (active green cover),fallow_land_not_crop,3301110000,0,DE_LSA
+62,GLÖZ8 nicht produktive Fläche (Selbstbegrünung),GLÖZ (good agricultural and ecological condition)8 non-productive area (self-seeding),fallow_land_not_crop,3301110000,0,DE_LSA
+721,Goldlack,Wallflower,flowers_ornamental_plants,3301080000,0,DE_LSA
+510,Goldrute,Goldenrod,goldenrod,3301082200,0,DE_LSA
+510,Goldrute (Solidago) ,Goldenrod (Solidago) ,goldenrod,3301082200,0,DE_LSA
+434,Gras-Leguminosen Gemisch (Leg. überw.),Grass-legume mixture (legumes predominant),legume_grass_mix,3301090500,3,DE_LSA
+434,Gras-Leguminosen Gemisch (Leguminosen überwiegt),grass-legume mixture (more legumes),legume_grass_mix,3301090500,3,DE_LSA
+912,Grassamenvermehrung,Grass seed propagation,temporary_grass,3301090100,0,DE_LSA
+912,Grassamenvermehrung ,Grass seed propagation,temporary_grass,3301090100,0,DE_LSA
+941,Gründüngung im Hauptfruchtanbau,Green manure in main crop cultivation,plants_harvested_green,3301090000,0,DE_LSA
+972,Grünland (nicht DZ fähig),Run for livestock keeping (not DZ capable),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+972,Grünland (nicht DZ fähig) z.B. Auslaufflächen zur Nutztierhaltung,Run for livestock keeping (not DZ capable),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+627,Gurke,Cucumber,cucumber_pickle,3301140100,0,DE_LSA
+627,"Gurke (Salatgurke, Einlegegurke)",Cucumber (cucumber,cucumber_pickle,3301140100,0,DE_LSA
+758,Halskräuter (Blaues Halskraut),scabious (blue scabious),flowers_ornamental_plants,3301080000,0,DE_LSA
+701,Hanf,Industrial hemp,hemp_cannabis,3301061000,0,DE_LSA
+833,Haselnüsse,Hazelnuts,hazelnuts_hazel,3303030200,0,DE_LSA
+729,Hasenohren (rundblättriges Hasenohr),hare's-ear (round-leaved hare's-ear),flowers_ornamental_plants,3301080000,0,DE_LSA
+920,Haus- und Nutzgärten,House and kitchen gardens,kitchen_gardens,3301120000,0,DE_LSA
+514,Hauswurz,houseleek,flowers_ornamental_plants,3301080000,0,DE_LSA
+514,Hauswurz (Sempervivum),Houseleek (Sempervivum),flowers_ornamental_plants,3301080000,0,DE_LSA
+A,Hecken / Knicks,hedges,hedges,3310200000,0,DE_LSA
+70,Hecken oder Knicks >10m Kondi,Hedgerows or bends >10m condi,hedges,3310200000,0,DE_LSA
+581,Heckenpflanzung Erosionsschutz,hedges erosion protection,hedges,3310200000,0,DE_LSA
+586,Heckenpflanzung Erosionsschutz,hedges erosion protection,hedges,3310200000,0,DE_LSA
+586,Heckenpflanzung Erosionsschutz nur für Flächen mit AUM-BS 8 zu verwenden,hedges erosion protection,hedges,3310200000,0,DE_LSA
+582,Heckenpflanzung Vogelschutz,hedges bird protection,hedges,3310200000,0,DE_LSA
+587,Heckenpflanzung Vogelschutz,hedges bird protection,hedges,3310200000,0,DE_LSA
+587,Heckenpflanzung Vogelschutz nur für Flächen mit AUM-BS 9 zu verwenden,hedges bird protection,hedges,3310200000,0,DE_LSA
+862,Heidekraut,Heather,ericaceae_heather,3301061216,0,DE_LSA
+753,Hibiskus (Chinesischer Roseneibisch),hibiscus (Chinese rose hibiscus),hibiscus,3301061218,0,DE_LSA
+594,Honigpflanzen genutzte bachliegende Flächen (pollen- und nektarreiche Arten) -einjährig,Fallow land used with honey plants (pollen- and nectar-rich species) - annual,fallow_land_not_crop,3301110000,0,DE_LSA
+595,Honigpflanzen genutzte bachliegende Flächen (pollen- und nektarreiche Arten) -mehrjährig,Fallow land used with honey plants (pollen- and nectar-rich species) - perennial,fallow_land_not_crop,3301110000,0,DE_LSA
+427,"Hornklee, Hornschotenklee",Horn clover,clover,3301090303,0,DE_LSA
+290,"Hülsenfrucht einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Legume of a genus/species not included in the current list,legumes_dried_pulses_protein_crops,3301020000,0,DE_LSA
+799,Husarenknopf (Sanvitalia),Sanvitalia,sanvitalia_procumbens,3301084100,0,DE_LSA
+454,Hutungen,low-yield permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+731,Hyazinthe (Garten-Hyazinthe),hyacinth (garden hyacinth),flowers_ornamental_plants,3301080000,0,DE_LSA
+512,Iberischer Drachenkopf,Iberian dragon's head,oilseed_crops,3301060800,0,DE_LSA
+805,Igniscum,Knotweed,igniscum_candy,3304020100,0,DE_LSA
+680,Johanniskraut,St John’s wort,st_johns_wort,3301061234,0,DE_LSA
+677,Kamillen,Chamomiles,chamomile,3301061213,0,DE_LSA
+677,Kamillen (Echte Kamille),Chamomiles (real chamomile),chamomile,3301061213,0,DE_LSA
+704,"Kanariensaat, Echtes Glanzgras","Canary seed, smooth meadow grass",canary_seed_canaryseed,3301011400,0,DE_LSA
+704,Kanariensaat/Echtes Glanzgras,Canary seed/glossy doggrass,canary_seed_canaryseed,3301011400,0,DE_LSA
+765,Kapuzinerkresse,Nasturtium,nasturtiums,3301061224,0,DE_LSA
+765,Kapuzinerkresse ,nasturtium ,nasturtiums,3301061224,0,DE_LSA
+765,Kapuzinerkressen (Große Kapuzinerkresse),Nasturtium,nasturtiums,3301061224,0,DE_LSA
+602,Kartoffeln (Speise),Potatoes (food),potatoes,3301030000,0,DE_LSA
+652,Kerbel,Chervil,chervil,3301061214,0,DE_LSA
+652,Kerbel ( echter Kerbel),Chervil,chervil,3301061214,0,DE_LSA
+652,Kerbel (echter Kerbel),Chervil,chervil,3301061214,0,DE_LSA
+652,"Kerbel (Kerbel/echter Kerbel, Wiesenkerbel)",Chervil (real chervil),chervil,3301061214,0,DE_LSA
+821,Kern- und Steinobst,Pome and stone fruit,orchards_fruits,3303010000,0,DE_LSA
+825,Kernobst,Pome fruit e.g. apples,orchards_fruits,3303010000,0,DE_LSA
+825,"Kernobst z.B. Äpfel, Birnen",Pome fruit e.g. apples,orchards_fruits,3303010000,0,DE_LSA
+645,Kichererbsen,Chickpeas,chickpeas,3301020200,0,DE_LSA
+831,Kirschen (Ertragsanlagen),Cherries (crop plants),cherry_cherries,3303010400,0,DE_LSA
+421,Klee,Clover,clover,3301090303,0,DE_LSA
+426,Klee ( nicht ÖVF),"Fenugreek, schabziger clover",fenugreek,3301020400,3,DE_LSA
+421,Klee (stickstoffbindende Pflanze ÖVF),Clover,clover,3301090303,0,DE_LSA
+422,Kleegras,Clover grass,clover_grass_mix,3301090501,0,DE_LSA
+425,Klee-Luzerne-Gemisch,Clover-lucerne mixture,legumes_harvested_green,3301090300,3,DE_LSA
+432,"Kleemischung aus NC 421, 427, 431 (stickstoffbindend)","Clover mixture from NC 421, 427, 431 (N-fixing)",clover,3301090303,0,DE_LSA
+432,"Kleemischung NC 421, 427, 431","Clover mixture NC 421, 427, 431",clover,3301090303,0,DE_LSA
+791,Knollenbegonien,Tuberous begonias,begonias,3301080400,0,DE_LSA
+516,Knöterich,Knotweed (Persicaria),polygonum,3301061229,0,DE_LSA
+516,Knöterich (Persicaria),Knotweed (Persicaria),polygonum,3301061229,0,DE_LSA
+519,Köcherblümchen (Cuphea),Quiverflower (Cuphea),flowers_ornamental_plants,3301080000,0,DE_LSA
+414,Kohl-/Steckrübe,rutabaga,swede_rutabaga,3301210500,0,DE_LSA
+414,Kohl-/Steckrüben,rutabaga,swede_rutabaga,3301210500,0,DE_LSA
+414,"Kohlrübe, Steckrübe",rutabaga,swede_rutabaga,3301210500,0,DE_LSA
+184,Kolbenhirse,Millet,millet_sorghum,3301010900,0,DE_LSA
+764,Königskerze,Mullein,flowers_ornamental_plants,3301080000,0,DE_LSA
+764,Königskerzen (Großblütige Königskerze),mullein (common mullein),flowers_ornamental_plants,3301080000,0,DE_LSA
+840,Korbweiden,Basket willow,willows_osiers,3306080000,0,DE_LSA
+657,Koriander,coriander,coriander,3301061215,0,DE_LSA
+775,Kornblumen,Cornflowers,cornflowers,3301081000,0,DE_LSA
+171,Körnermais einschl. CCM / Mais,Maize,grain_maize_corn_popcorn,3301010600,0,DE_LSA
+792,Kornrade,Corn cockle,flowers_ornamental_plants,3301080000,0,DE_LSA
+761,Kosmeen (Gemeines Schmuckkörbchen),cosmos (common cosmos),flowers_ornamental_plants,3301080000,0,DE_LSA
+655,Kreuzkümmel ,cumin,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+752,"Krokusse (Safran, Garten-Krokus)","crocuses (saffron, garden crocus)",saffron_crocus_sativus,3301061232,0,DE_LSA
+650,Küchenkräuter/Heil-und Gewürzpflanzen,Row cultivation of herbs/spices,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+724,Kugelamarant (Echter Kugelamarant),(common globe amaranth),flowers_ornamental_plants,3301080000,0,DE_LSA
+654,Kümmel,Caraway seed,caraway,3301061211,0,DE_LSA
+654,Kümmel ,Caraway seed,caraway,3301061211,0,DE_LSA
+654,Kümmel (Echter Kümmel),Caraway seed,caraway,3301061211,0,DE_LSA
+841,KUP lt. GAPDZV,Short rotation plantations,short_rotation_coppice,3306090000,0,DE_LSA
+841,Kurzumtriebsplantagen,Short rotation plantations,short_rotation_coppice,3306090000,0,DE_LSA
+841,Kurzumtriebsplantagen unter 20 Jahre,Short rotation plantations,short_rotation_coppice,3306090000,0,DE_LSA
+841,Kurzumtriebsplantagen unter 20 Jahre lt. Direktzahlungendurchführungsverordnung,Short rotation plantations,short_rotation_coppice,3306090000,0,DE_LSA
+637,Lattich,Lettuce,salads_lettuce_leaf_vegetables,3301310000,0,DE_LSA
+637,"Lattich (Garten-Salat/Lattich, Lollo Rosso, Romana- Salat/Römischer Salat)",Lettuce,salads_lettuce_leaf_vegetables,3301310000,0,DE_LSA
+637,"Lattich (Garten-Salat/Lattich, Lollo Rosso, Romana-Salat/Römischer Salat)","Lettuce (garden, Lollo Rosso, romaine)",salads_lettuce_leaf_vegetables,3301310000,0,DE_LSA
+633,"Lauch (Speise-Zwiebel, Schalotte, Lauch, Knoblauch, Schnittlauch, Winterheckenzwiebel, Bärlauch)","Onion/leek (onion, shallot, leek, garlic, chives, bunching onion, wild garlic)",alliums,3301220000,0,DE_LSA
+668,Lavendel,Lavender (real lavender,lavender_lavandula,3301061219,0,DE_LSA
+668,"Lavendel (Echter Lavendel, Speik-Lavendel, Hybrid-Lavendel)",Lavender (real lavender,lavender_lavandula,3301061219,0,DE_LSA
+793,Leimkraut,campion,silene_catchfly,3301084300,0,DE_LSA
+793,Leimkraut/Taubenkropf-Leimkraut,Campion/pigeon's eye,silene_catchfly,3301084300,0,DE_LSA
+341,"Lein (Gemeiner Lein, Flachs)","Flax, linseed",flax_linseed,3301060700,0,DE_LSA
+341,"Lein, Flachs","Flax, linseed",flax_linseed,3301060700,0,DE_LSA
+341,"Lein, Flachs ","Flax, linseed",flax_linseed,3301060700,0,DE_LSA
+393,Leindotter,Camelina,camelina,3301061500,0,DE_LSA
+658,Liebstöckel/Maggikraut,Lovage / Maggi herb,lovage_maggiplant,3301061221,0,DE_LSA
+726,Lilien,Lilies,lilies,3301082500,0,DE_LSA
+726,Lilien (Türkenbund),Lilies (king lily,lilies,3301082500,0,DE_LSA
+222,Linsen,lentils,lentils,3301020500,0,DE_LSA
+292,Linsen (Speise-Linse),lentils,lentils,3301020500,0,DE_LSA
+756,Löwenmäulchen (Großes Löwenmaul),snapdragon (large snapdragon),snapdragons,3301084500,0,DE_LSA
+684,Löwenzahn,dandelion,dandelions,3301081400,0,DE_LSA
+230,"Lupinen (Süß-, Anden-, weiße, blaue, gelbe) ",Lupins (sweet lupine,sweet_lupins,3301020700,0,DE_LSA
+230,"Lupinen (Süßlupine, weiße Lupine, blaue/schmalblättrige Lupine, gelbe Lupine, Anden-Lupine)",Lupins (sweet lupine,sweet_lupins,3301020700,0,DE_LSA
+423,Luzerne,Lucerne & clover,legumes_harvested_green,3301090300,3,DE_LSA
+423,Luzerne & Klee,Lucerne & clover,legumes_harvested_green,3301090300,3,DE_LSA
+423,"Luzerne, Hopfenklee/Gelbklee, Bastardluzerne/Sandluzerne","Lucerne, hop clover/yellow clover, bastard lucerne/sand lucerne",legumes_harvested_green,3301090300,3,DE_LSA
+433,Luzerne-Gras,Lucerne-grass,alfalfa_grass_mix,3301090509,1,DE_LSA
+452,Mähweiden,Mowing pastures,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+442,Mähweiden (Grünlandneueinsaat im Rahmen von AUKM),Mown pastures (grassland reseeding within the framework of AUKM (Agri-environmental and climate measures)),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+442,Mähweiden Neueinsaat AUKM,Mowing pastures new seeding AUKM (Agri-environmental and climate measures),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+171,Mais,Maize,grain_maize_corn_popcorn,3301010600,0,DE_LSA
+172,Mais (Biogas),Maize,grain_maize_corn_popcorn,3301010600,0,DE_LSA
+171,Mais (ohne Silomais NC 411),Grain maize including CCM / maize,grain_maize_corn_popcorn,3301010600,0,DE_LSA
+177,Mais mit Blüh- und/oder Bejagungsschneisen,Maize with hunting corridor,grain_maize_corn_popcorn,3301010600,5,DE_LSA
+686,Malven,Mallows,malva,3301082800,0,DE_LSA
+686,Malven (Wilde Malve),Mallow (Wild Mallow),malva,3301082800,0,DE_LSA
+639,"Mangold, Rote Beete/Rote Rübe","Chard, beetroot",chard,3301310100,1,DE_LSA
+737,Margeriten,daisies,daisy_daisies,3301081300,0,DE_LSA
+682,Mariendisteln,Milk thistles,marian_thistles,3301061300,0,DE_LSA
+646,Meerettich,horseradish,horseradish,3301210400,0,DE_LSA
+392,Meerkohl/Krambe,Crambe (sea kale),brassicaceae_cruciferae,3301210000,0,DE_LSA
+918,Mehrj. Blühstreifen/-flächen,Perennial flower strips or flower areas (only to be used for areas with AUM-BS 2),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+918,Mehrjährige Blühstreifen oder Blühflächen (nur für Flächen mit AUM-BS 2 zu verwenden),Perennial flower strips or flower areas (only to be used for areas with AUM-BS 2),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+918,Mehrjährige Blühstreifen und Blühflächen,Perennial flower strips or flower areas (only to be used for areas with AUM-BS 2),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+918,Mehrjährige Blühstreifen/Blühflächen,Perennial flower strips or flower areas (only to be used for areas with AUM-BS 2),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+595,mehrjährige Honigpflanzen (AL aus der Erzeugung genommen),Fallow land used with honey plants (pollen- and nectar-rich species) - perennial,fallow_land_not_crop,3301110000,0,DE_LSA
+640,Melde (Garten-Melde),orach (garden orach),other_salads_lettuce_leaf_vegetables,3301319900,0,DE_LSA
+670,Melisse (Zitronenmelisse),Balm (lemon balm),lemon_balm_melissa,3301061220,0,DE_LSA
+670,Melissen,Balm ,lemon_balm_melissa,3301061220,0,DE_LSA
+670,Melissen (Zitronenmelisse),Balm (lemon balm),lemon_balm_melissa,3301061220,0,DE_LSA
+631,Melone,Melon (watermelon),watermelon,3301140500,0,DE_LSA
+631,Melone  (Wassermelone),Melon (watermelon),watermelon,3301140500,0,DE_LSA
+631,Melone (Wassermelone),Melon (watermelon),watermelon,3301140500,0,DE_LSA
+732,Milchstern ,star of Bethlehem ,milk_star,3301082900,0,DE_LSA
+63,Mindestbodenbedeckung durch Mehrjährigkeit,Minimum ground cover through perennials,fallow_land_not_crop,3301110000,0,DE_LSA
+672,Minzen,Mints,mints_peppermint,3301061222,0,DE_LSA
+672,"Minzen (Pfefferminze, Grüne Minze)",Mints (peppermint,mints_peppermint,3301061222,0,DE_LSA
+917,Mischkulturen,Mixed cultures,mixed_cropping,3301320000,1,DE_LSA
+917,Mischkulturen (auch Mais mit Mischpartn.),Mixed cultures (including corn with mixed partners),mixed_cropping,3301320000,1,DE_LSA
+51,Mischkulturen in Reihenanbau,Mixed cultures,mixed_cropping,3301320000,1,DE_LSA
+50,Mischkulturen mit Saatgutmischung,Mixed cultures,mixed_cropping,3301320000,1,DE_LSA
+706,Mohn,Poppy seeds,poppy,3301060600,0,DE_LSA
+706,"Mohn (Schlafmohn, Backmohn)",Poppy seeds,poppy,3301060600,0,DE_LSA
+634,Möhre,Carrot,carrots_daucus,3301290300,0,DE_LSA
+634,"Möhre (Möhre/Karotte, Futtermöhre)",Carrot (carrot / carrot,carrots_daucus,3301290300,0,DE_LSA
+183,Mohren-/Zuckerhirse,Sorghum (grain sorghum),millet_sorghum,3301010900,0,DE_LSA
+183,Mohren-/Zuckerhirse (ohne Sudangras NC 803),Sorghum/sugar millet (excl. sudangrass NC 803),millet_sorghum,3301010900,0,DE_LSA
+757,Montbretien ,montbretia ,flowers_ornamental_plants,3301080000,0,DE_LSA
+515,Mühlenbeckia/Drahtsträucher,Muehlenbeckia / wire shrubs,wire_bush,3303080700,0,DE_LSA
+567,nach Art. 22 bis 24 der VO (EG) Nr. 1257/99 oder VO 2021/2115 stillgelegte Dauergrünlandfläche,according to Art. 22 to 24 of Regulation (EC) No. 1257/99 or Regulation 2021/2115 set-aside permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+563,nach Art. 22 bis 24 der VO (EG) Nr. 1257/99 stillgelegte Ackerfläche,according to Art. 22 to 24 of Regulation (EC) No. 1257/99 or Regulation 2021/2115 set-aside permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+564,nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013 aufgeforstete Flächen,Areas afforested according to VO 1257/1999 or VO (EG) No. 1698/2005 or VO 1305/2013,afforestation_reforestation,3306010000,0,DE_LSA
+762,Nachtkerzen (Diptam),evening primrose (gas plant),primrose,3301083500,0,DE_LSA
+763,Nachtkerzen (Oenothera),evening primrose (Oenothera),primrose,3301083500,0,DE_LSA
+727,Narzissen / Osterglocken,Daffodils / daffodils,narcissus_daffodil,3301083300,0,DE_LSA
+727,Narzissen/ Osterglocken,Daffodils / daffodils,narcissus_daffodil,3301083300,0,DE_LSA
+727,Narzissen/Osterglocken,Daffodils / daffodils,narcissus_daffodil,3301083300,0,DE_LSA
+76,"Natur-, Stein- oder Trockenmauer Kondi","natural, stone or dry stone wall condi",stone_walls,3310600000,0,DE_LSA
+491,"Natürliche Flächen, auf denen eine Mindesttätigkeit gesondert nachgewiesen werden muss (vgl. Art. 4 Abs. 1 Bst. C iii der VO (EU) Nr. 1307/2013)","Permanent grassland according to practices (LR type FFH, species VS-RL (§7 (7) GAPDZV))",pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+493,"Natürliche Flächen, auf denen eine Mindesttätigkeit gesondert nachgewiesen werden muss (vgl. Art. 4 Abs. 1 Bst. C iii der VO (EU) Nr. 1307/2013)","Permanent grassland according to practices (LR type FFH, species VS-RL (§7 (7) GAPDZV))",pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+772,Nelken,Carnations (sweet carnation,carnation,3301080800,0,DE_LSA
+772,"Nelken (Bartnelke, Land-/Edelnelke)",Carnations (sweet carnation,carnation,3301080800,0,DE_LSA
+999,nicht aufgeführte Ackerkulturen,Not listed arable crops,other_arable_land_crops,3301990000,0,DE_LSA
+584,Nicht landw. aber beihilfefähig (Natura2000),Not agricultural but eligible for subsidies (Natura2000),environmental_protection,3311000000,0,DE_LSA
+991,nicht landwirt. Fläche in der Verfügungsgewalt BGÜ,Non-agricultural land under applicant’s control (BGÜ),not_known_and_other,3399000000,0,DE_LSA
+991,"nicht landwirt. Flächen in der Verfügungsgewalt des Antragstellers, die  gemäß § 15 Absatz 1 des Direktzahlungen-Durchführungsgesetzes als umweltsensibles Dauergrünland bestimmt worden sind",Non-agricultural land under applicant’s control (BGÜ),not_known_and_other,3399000000,0,DE_LSA
+991,"Nicht landwirt. Flächen in der Verfügungsgewalt des Antragstellers, die  gemäß GAPKondV als umweltsensibles Dauergrünland bestimmt worden sind",Non-agricultural land under applicant’s control designated as environmentally sensitive permanent grassland,environmental_protection,3311000000,0,DE_LSA
+991,"Nicht landwirt. Flächen in der Verfügungsgewalt des Antragstellers, die gemäß § 15 Absatz 1 des Direktzahlungen- Durchführungsgesetzes als umweltsensibles Dauergrünland bestimmt worden sind",Non-agricultural land under applicant’s control (BGÜ),not_known_and_other,3399000000,0,DE_LSA
+992,Nicht landwirt. Flächen in folge Genehmigung DGL Umwandlung,Non-agricultural land after permanent grassland conversion approval,not_known_and_other,3399000000,0,DE_LSA
+992,Nicht landwirt. Flächen in Folge Genehmigung DGL Umwandlung,Non-agricultural land after permanent grassland conversion approval,not_known_and_other,3399000000,0,DE_LSA
+992,Nicht landwirt. Flächen in folge Genehmigung DGL Umwandlung ,Non-agricultural land after permanent grassland conversion approval,not_known_and_other,3399000000,0,DE_LSA
+992,Nicht landwirt. wg. DGL Umwandlung,Non-agricultural due to grassland conversion,not_known_and_other,3399000000,0,DE_LSA
+564,"Nicht landwirtschaftliche, aber §11 (1) Nr.3 Bst. c) der GAPDZV förderfähige Fläche (Aufforstungsverpflichtung nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013 oder VO 2021/2115 oder bei Eingehung damit in Einklang stehender öffentlich fin",Areas afforested according to VO 1257/1999 or VO (EG) No. 1698/2005 or VO 1305/2013,afforestation_reforestation,3306010000,0,DE_LSA
+564,"Nicht landwirtschaftliche, aber §11 (1) Nr.3 Bst. c) der GAPDZV förderfähige Fläche (Aufforstungsverpflichtung nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013 oder VO 2021/2115 oder bei Eingehung damit in Einklang stehender öffentlich finanzierter Maßnahme aufgeforstete Fläche)",Areas afforested according to VO 1257/1999 or VO (EG) No. 1698/2005 or VO 1305/2013,afforestation_reforestation,3306010000,0,DE_LSA
+584,"Nicht landwirtschaftliche, aber nach §11 (1) Nr.3 Bst. a) aa) oder cc) der GAPDZV förderfähige Fläche (Infolge Anwendung Natura2000)","Non-agricultural area, but eligible for funding under §11 (1) No. 3 a) aa) or cc) of the GAPDZV (as a result of Natura2000 application)",environmental_protection,3311000000,0,DE_LSA
+586,"Nicht landwirtschaftliche, aber nach §11 (1) Nr.3 Bst. b) der GAPDZV förderfähige Fläche (In Folge einer Maßnahme, die Paludikulturen zur Erzeugung von nicht in Anhang I AEUV aufgeführten Erzeugnissen erlaubt)",,environmental_protection,3311000000,0,DE_LSA
+583,"Nicht landwirtschaftliche, aber nach §11 (1) Nr.3 Bst. d der GAPDZV förderfähige Fläche (Stilllegungsverpflichtung nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013 oder VO 2021/2115)",,environmental_protection,3311000000,0,DE_LSA
+583,"Nicht landwirtschaftliche, aber nach Art. 32(2b (i)) der VO  (EG) Nr. 1307/2013 beihilfefähige Fläche (Naturschutzflächen, die 2008 noch beihilfefähig waren)",,environmental_protection,3311000000,0,DE_LSA
+583,"Nicht landwirtschaftliche, aber nach Art. 32(2b (i)) der VO  (EU) Nr. 1307/2013 beihilfefähige Fläche (Naturschutzflächen, die 2008 noch beihilfefähig waren)",,environmental_protection,3311000000,0,DE_LSA
+701,Nutzhanf,Industrial hemp,hemp_cannabis,3301061000,0,DE_LSA
+824,Obstanlagen in Vollanbau,otherwise. Fully cultivated orchards (without apples,orchards_fruits,3303010000,0,DE_LSA
+390,"Ölfrucht einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Oil fruit of a genus/species not included in the current list,oilseed_crops,3301060800,0,DE_LSA
+88,ÖR 1a ohne Produktion (Selbst-/Begrünung),ÖR (ECO REGULATION) 1a without production (self-seeding/greening),fallow_land_not_crop,3301110000,0,DE_LSA
+93,ÖR 1d Altgrasstreifen / -flächen,ÖR (ECO REGULATION) 1d Old grass strips/areas,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+94,ÖR 3 Agroforststreifen,ÖR (ECO REGULATION) 3 Agroforestry strip,agroforestry,3312000000,0,DE_LSA
+95,ÖR 5 regionale Kennarten im DGL,ÖR (ECO REGULATION) 5 Regional characteristic species in permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+96,ÖR 6 PSM Verzicht,ÖR (ECO REGULATION) 6 PSM waiver,environmental_protection,3311000000,0,DE_LSA
+97,ÖR 7 Natura 2000,ÖR (ECO REGULATION) 7 Natura 2000,environmental_protection,3311000000,0,DE_LSA
+794,Orchideen,Orchids,flowers_ornamental_plants,3301080000,0,DE_LSA
+664,Oregano & Majoran,Oregano & marjoram,oregano,3301061226,0,DE_LSA
+664,"Oregano (Echter Majoran, Oregano/Dost/Wilder Majoran)","Oregano (true marjoram, oregano, wild marjoram)",oregano,3301061226,0,DE_LSA
+664,"Oregano, Echter Majoran, Dost, Wilder Majoran",Oregano & marjoram,oregano,3301061226,0,DE_LSA
+760,Pampasgräser (Amerikanisches Pampasgras),pampas grass (American pampas grass),miscanthus_silvergrass,3301083000,0,DE_LSA
+624,"Paprika, Chilli, Peperoni","Bell pepper, chili, hot pepper",capsicum,3301300000,0,DE_LSA
+643,Pastinaken,Parsnips,parsnips,3301290500,0,DE_LSA
+795,Pelargonien,Pelargoniums,flowers_ornamental_plants,3301080000,0,DE_LSA
+659,Petersilie,parsley,parsley,3301061227,0,DE_LSA
+659,Petroselinum (Petersilie),parsley,parsley,3301061227,0,DE_LSA
+766,Pfingstrose/Päonie,Peonies / Peonies (Common Peony,peony_peonies,3301083400,0,DE_LSA
+766,"Pfingstrosen/Päonien (Gemeine Pfingstrose, Strauch- Pfingstrose)",Peonies / Peonies (Common Peony,peony_peonies,3301083400,0,DE_LSA
+766,"Pfingstrosen/Päonien (Gemeine Pfingstrose, Strauch-Pfingstrose)",Peonies / Peonies (Common Peony,peony_peonies,3301083400,0,DE_LSA
+830,Pfirsiche in Vollanbau,Peaches in full cultivation,peach,3303011100,0,DE_LSA
+866,Pflanzenmischung mit Hanf,Plant mixture with hemp,hemp_cannabis,3301061000,4,DE_LSA
+606,Pflanzkartoffel,Seed potatoes,potatoes,3301030000,0,DE_LSA
+606,Pflanzkartoffeln,Seed potatoes,potatoes,3301030000,0,DE_LSA
+832,Pflaumen (Ertragsanlagen),Plums (crop plants),plums,3303011300,0,DE_LSA
+777,Phacelia (als Hauptkultur z.B. Saatgutvermehrung),Phacelia (as main culture e.g. seed propagation),phacelia,3301061400,0,DE_LSA
+777,Phacelie,Phacelia (as main culture e.g. seed propagation),phacelia,3301061400,0,DE_LSA
+777,Phacelie (als Hauptkultur z.B. Saatgutvermehrung),Phacelia (as main culture e.g. seed propagation),phacelia,3301061400,0,DE_LSA
+980,Pilzbeet- und Gemüsefl. in Gebäud.(nicht Gewächsh.),Mushroom and vegetable patches in buildings (not greenhouses),mushrooms_energy_genetically_modified_crops,3304000000,0,DE_LSA
+980,Pilzbeet- und Gemüseflächen in Gebäuden (nicht im Gewächshaus),Mushroom beds and vegetable plots in buildings (not in greenhouses),mushrooms_energy_genetically_modified_crops,3304000000,0,DE_LSA
+981,Pilze unter Glas,Mushrooms under glass,greenhouse_mushrooms,3305011300,0,DE_LSA
+212,Platterbse,Flat pea (lathyrus),lathyrus_peavine,3301020800,0,DE_LSA
+518,Polygonum,Polygonum,polygonum,3301061229,0,DE_LSA
+771,Portulak,Purslane,purslane,3301240000,0,DE_LSA
+187,Quinoa,Quinoa,quinoa,3301150300,0,DE_LSA
+798,Ramtillkraut,Ramtill herb,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+842,Rebland,Vineyards,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_LSA
+845,Rebschulfläche,Vineyard area,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_LSA
+851,Rhabarber,rhubarb,rhubarb,3301230000,0,DE_LSA
+797,Rhizinus,Castor oil plant,ricinus_castor,3303080600,0,DE_LSA
+864,Rhododendron,rhododendron,rhododendron,3301083600,0,DE_LSA
+629,Riesenkürbis,Giant pumpkin,pumpkin_squash_gourd,3301140400,0,DE_LSA
+629,"Riesenkürbis (Riesenkürbis, Hokkaidokürbis)",Giant Pumpkin (Giant Pumpkin,pumpkin_squash_gourd,3301140400,0,DE_LSA
+629,"Riesenkürbis, Hokkaidokürbis",Giant pumpkin,pumpkin_squash_gourd,3301140400,0,DE_LSA
+853,Riesenweizengras/Szarvasi-Gras,Giant wheat grass / Szarvasi grass / deer grass,poaceae_grasses,3301090200,0,DE_LSA
+853,"Riesenweizengras/Szarvasi-Gras, Hirschgras",Giant wheat grass / Szarvasi grass / deer grass,poaceae_grasses,3301090200,0,DE_LSA
+853,Riesenweizengras/Szarvasi-Gras/Hirschgras,Giant wheat grass / Szarvasi grass / deer grass,poaceae_grasses,3301090200,0,DE_LSA
+674,Ringelblume,Marigold,calendula_marigold,3301061210,0,DE_LSA
+674,Ringelblumen,Marigold,calendula_marigold,3301061210,0,DE_LSA
+674,Ringelblumen (Garten-Ringelblume),Marigolds (garden marigold),calendula_marigold,3301061210,0,DE_LSA
+181,Rispenhirse,Millet,millet_sorghum,3301010900,0,DE_LSA
+181,Rispenhirse (Panicum),Millet,millet_sorghum,3301010900,0,DE_LSA
+181,"Rispenhirse, Rutenhirse",Millet,millet_sorghum,3301010900,0,DE_LSA
+181,Rispenhirse/Rutenhirse,Millet,millet_sorghum,3301010900,0,DE_LSA
+748,Rittersporn,larkspur,flowers_ornamental_plants,3301080000,0,DE_LSA
+854,Rohrglanzgras,Reed grass,poaceae_grasses,3301090200,0,DE_LSA
+702,Rollrasen,Turf rolls & vegetation mats,sod_turf,3301090207,0,DE_LSA
+702,Rollrasen & Vegetationsmatten,Turf rolls & vegetation mats,sod_turf,3301090207,0,DE_LSA
+702,"Rollrasen, Vegetationsmappen für Dachbegrünung","Turf rolls, vegetation mats for roof greening",sod_turf,3301090207,0,DE_LSA
+702,Rollrasen; Vegetationsmatten für Dachbegrünung,Turf rolls & vegetation mats,sod_turf,3301090207,0,DE_LSA
+863,"Rosen (Baumschulen), Schnittrosen",Roses (nurseries),roses,3301083700,0,DE_LSA
+863,"Rosen, Schnittrosen",Roses (nurseries),roses,3301083700,0,DE_LSA
+751,Rosenwurz,rose root,flowers_ornamental_plants,3301080000,0,DE_LSA
+661,Rosmarin,rosemary,rosemary,3301061230,0,DE_LSA
+421,Rot-/Weiß-/Alexandriner-/Inkarnat-/Erd-/Schweden-/Persischer Klee,Red/white/Alexandrian/crimson/earth/Swedish/Persian clover,clover,3301090303,0,DE_LSA
+738,Rudbeckien (Schwarzäugige Rudbeckie/Sonnenhut),"rudbeckias (black-eyed rudbeckia/sun hat, bright sun hat, slit-leaved sun hat)",rudbeckia_coneflowers,3301083800,0,DE_LSA
+738,"Rudbeckien (Schwarzäugige Rudbeckie/Sonnenhut, Leuchtender Sonnenhut, Schlitzblättriger Sonnenhut)","rudbeckias (black-eyed rudbeckia/sun hat, bright sun hat, slit-leaved sun hat)",rudbeckia_coneflowers,3301083800,0,DE_LSA
+806,Rutenhirse/Switchgras,Switchgrass / switchgrass,switchgrass,3301090208,0,DE_LSA
+919,Saatmais (Saatgutvermehrung),Maize for seed (seed propagation),grain_maize_corn_popcorn,3301010600,0,DE_LSA
+662,Salbei,Sage,sage_chia,3301190000,0,DE_LSA
+662,"Salbei (Küchen-/Heilsalbei, Buntschopf-Salbei)","sage (kitchen/medicinal sage, variegated sage)",sage_chia,3301190000,0,DE_LSA
+828,Sanddorn,Sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,DE_LSA
+928,Saum- und Bandstrukturen,,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+928,Saum- und Brandstrukturen (Gewässer- und Erosionsschutzstreifen),,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+678,Schafgarben,Yarrows,yarrow,3301061239,0,DE_LSA
+678,Schafgarben (Gelbe Schafgarbe),Yarrow (yellow yarrow),yarrow,3301061239,0,DE_LSA
+783,Schildblume (Chelone),chelon (chelon),flowers_ornamental_plants,3301080000,0,DE_LSA
+886,Schonfläche unterjährig,Set-aside area for less than one year,fallow_land_not_crop,3301110000,0,DE_LSA
+887,Schonfläche zweijährig,Set-aside area for two years,fallow_land_not_crop,3301110000,0,DE_LSA
+576,Schutzstreifen Erosion,Protection strip erosion (only to be used for areas with AUM-BS 7.1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+576,Schutzstreifen Erosion (nur für Flächen mit AUM-BS 7.1 zu verwenden),Protection strip erosion (only to be used for areas with AUM-BS 7.1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+576,Schutzstreifen Erosion AUM-FM,Protection strip erosion (only to be used for areas with AUM-BS 7.1),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+884,Schwarzbrache (ganzjährig schwarz bzw. offen),Fallow land (black and open all year round),fallow_land_not_crop,3301110000,0,DE_LSA
+612,Schwarzer Senf,black mustard,mustard,3301210100,0,DE_LSA
+656,Schwarzkümmel,Black cumin,black_cumin,3301061208,0,DE_LSA
+656,"Schwarzkümmel (Echter Schwarzkümmel, Jungfer im Grünen)",Black cumin (real black cumin,black_cumin,3301061208,0,DE_LSA
+647,Schwarzwurzeln,Black salsify,black_salsify,3301290900,0,DE_LSA
+767,Schwertlilien (Deutsche Schwertlilie),iris (German iris),iris,3301082300,0,DE_LSA
+730,Seidenpflanzen (Indianer-Seidenpflanze),milkweed (Indian silk plant),flowers_ornamental_plants,3301080000,0,DE_LSA
+641,Sellerie,Celery,celery,3301250000,0,DE_LSA
+641,"Sellerie (Knollensellerie, Bleichsellerie, Stangensellerie)",Celery,celery,3301250000,0,DE_LSA
+641,"Sellerie (Knollen-Sellerie, Bleich-Sellerie, Stangen-Sellerie)","Celery (root, leaf, stalk)",celery,3301250000,0,DE_LSA
+616,"Senfrauke (Garten-Senfrauke, Rucola)",Arugla,rocket_arugula,3301310600,0,DE_LSA
+430,Serradella,Serradella,serradella,3301084200,0,DE_LSA
+804,Sida (Virginiamalve),Sida (Virginia Mallow),sida_virginia_mallow,3304030000,0,DE_LSA
+411,Silomais,Silage maize,green_silo_maize,3301090400,0,DE_LSA
+411,Silomais (als Hauptfutter),Silage maize (as main fodder),green_silo_maize,3301090400,0,DE_LSA
+802,Silphium,Silphium (streaky Silphie,silphium_rosinweeds,3301084400,0,DE_LSA
+802,"Silphium (Durchwachsene Silphie, Becherpflanze)",Silphium (streaky Silphie,silphium_rosinweeds,3301084400,0,DE_LSA
+749,Skabiose,Scabious,flowers_ornamental_plants,3301080000,0,DE_LSA
+749,Skabiosen,scabious,flowers_ornamental_plants,3301080000,0,DE_LSA
+330,Sojabohnen,Soybeans,soy_soybeans,3301160000,0,DE_LSA
+330,Sojabohnen ,Soybeans,soy_soybeans,3301160000,0,DE_LSA
+120,Sommer-Dinkel,Summer spelt,spring_spelt,3301011002,0,DE_LSA
+113,Sommerdurum  (Hartweizen),Summer durum wheat / durum,spring_durum_hard_wheat,3301010202,0,DE_LSA
+119,Sommeremmer/ -einkorn,Summer emmer / single grain,spring_emmer,3301011202,3,DE_LSA
+119,Sommer-Emmer/ -Einkorn,Summer emmer / single grain,spring_emmer,3301011202,3,DE_LSA
+119,Sommer-Emmer/ -einkorn,Summer emmer / single grain,spring_emmer,3301011202,3,DE_LSA
+119,Sommer-Emmer/-Einkorn,Summer emmer / single grain,spring_emmer,3301011202,3,DE_LSA
+132,Sommergerste,Summer barley,spring_barley,3301010402,0,DE_LSA
+143,Sommerhafer,Summer oats,spring_oats,3301010502,0,DE_LSA
+113,Sommerhartweizen/Durum,Summer durum wheat / durum,spring_durum_hard_wheat,3301010202,0,DE_LSA
+144,Sommermenggetreide,Spring meslin,spring_meslin,3301011102,7,DE_LSA
+144,Sommermenggetreide ,Spring meslin,spring_meslin,3301011102,7,DE_LSA
+145,Sommermenggetreide ohne Weizen,Spring meslin without wheat,spring_meslin,3301011102,7,DE_LSA
+312,Sommerraps,Spring rapeseed,spring_rapeseed_rape,3301060402,0,DE_LSA
+312,Sommerraps ,Spring rapeseed,spring_rapeseed_rape,3301060402,0,DE_LSA
+122,Sommerroggen,Summer rye,spring_rye,3301010302,0,DE_LSA
+122,"Sommerroggen, Sommer-Waldstaudenroggen",Summer rye,spring_rye,3301010302,0,DE_LSA
+316,Sommerrübsen,Summer rapeseed (rapeseed,spring_turnip_rape,3301210702,0,DE_LSA
+316,"Sommerrübsen  (Rübsen, Rübsamen, Rübsaat)",Summer rapeseed (rapeseed,spring_turnip_rape,3301210702,0,DE_LSA
+316,"Sommerrübsen (Rübsen, Rübsamen, Rübsaat)",Summer rapeseed (rapeseed,spring_turnip_rape,3301210702,0,DE_LSA
+157,Sommertriticale,Summer triticale,spring_triticale,3301010802,0,DE_LSA
+116,Sommerweichweizen,summer wheat,spring_common_soft_wheat,3301010102,0,DE_LSA
+116,Sommerweichweizen ,summer wheat,spring_common_soft_wheat,3301010102,0,DE_LSA
+320,Sonnenblumen,sunflowers,sunflower,3301060500,0,DE_LSA
+320,Sonnenblumen ,sunflowers,sunflower,3301060500,0,DE_LSA
+675,"Sonnenhut (Schmalblättriger Sonnenhut, Purpur-Sonnenhut)","Echinacea (purple coneflower, narrow-leaved coneflower)",echinacea_sun_hat,3301081500,0,DE_LSA
+824,"sonst. Obstanlagen in Vollanbau (ohne Äpfel, Birnen, Pfirsiche)",otherwise. Fully cultivated orchards (without apples,orchards_fruits,3303010000,0,DE_LSA
+837,sonst. Steinobst,otherwise stone fruit (without cherries,orchards_fruits,3303010000,0,DE_LSA
+837,"sonst. Steinobst (ohne Kirschen, Pflaumen)",otherwise stone fruit (without cherries,orchards_fruits,3303010000,0,DE_LSA
+915,Sonstige Ackerrandstreifen und Blühflächen,Field margins/flower strips,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+997,Sonstige Infrastrukturmaßnahme,Other infrastructure measures,not_known_and_other,3399000000,0,DE_LSA
+982,Sonstige KUP,Other short rotation plantations ,short_rotation_coppice,3306090000,0,DE_LSA
+982,Sonstige Kurzumtriebsplantagen (Umtriebszeit über 20 Jahre),Other short rotation plantations ,short_rotation_coppice,3306090000,0,DE_LSA
+829,Sonstige Obstanlagen,Other orchards e.g. elderberries,orchards_fruits,3303010000,0,DE_LSA
+829,"Sonstige Obstanlagen z.B. Holunder, Aronia, Maulbeeren",Other orchards e.g. elderberries,orchards_fruits,3303010000,0,DE_LSA
+829,"Sonstige Obstanlagen z.B. Holunder, Sanddorn",Other orchards e.g. elderberries,orchards_fruits,3303010000,0,DE_LSA
+835,sonstige Schalenfrüchte,other nuts,nuts,3303030000,0,DE_LSA
+183,Sorghumhirse (Körnersorghum),Sorghum (grain sorghum),millet_sorghum,3301010900,0,DE_LSA
+624,"Spanischer Pfeffer (Paprika, Chilli, Peperoni)","Bell pepper, chili, hot pepper",capsicum,3301300000,0,DE_LSA
+860,Spargel,asparagus,asparagus,3301200000,0,DE_LSA
+602,Speisekartoffeln,Potatoes (food),potatoes,3301030000,0,DE_LSA
+638,Spinat,spinach,spinach,3301310800,0,DE_LSA
+742,Spreublumen,Paperflowers,flowers_ornamental_plants,3301080000,0,DE_LSA
+742,Spreublumen (Einjährige Papierblume),Paperflower (annual),flowers_ornamental_plants,3301080000,0,DE_LSA
+601,Stärkekartoffeln,Starch potatoes,potatoes,3301030000,0,DE_LSA
+601,Stärkekartoffeln ,Starch potatoes,potatoes,3301030000,0,DE_LSA
+601,Stärkekartoffeln und andere Kartoffeln,Starch potatoes,potatoes,3301030000,0,DE_LSA
+805,"Staudenknöterich, Igniscum",Knotweed,igniscum_candy,3304020100,0,DE_LSA
+620,Steck-/Kohlrübe,"Swede, rutabaga",swede_rutabaga,3301210500,0,DE_LSA
+620,"Steckrübe, Kohlrübe","Swede, rutabaga",swede_rutabaga,3301210500,0,DE_LSA
+620,"Steckrübe, Kohlrübe (Gemüseanbau)","Swede, rutabaga (vegetable)",swede_rutabaga,3301210500,0,DE_LSA
+847,Steillagenweinbau,Steep slope viticulture,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_LSA
+431,Steinklee,Melilot,melilot,3301090304,0,DE_LSA
+826,Steinobst,Stone fruit,orchards_fruits,3303010000,0,DE_LSA
+826,"Steinobst, z. B. Kirschen, Pflaumen",Stone fruit,orchards_fruits,3303010000,0,DE_LSA
+826,"Steinobst, z.B. Kirschen, Pflaumen",Stone fruit,orchards_fruits,3303010000,0,DE_LSA
+559,Stillegung Natursch. GL,Set-aside nature conservation grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+555,"Stillgelegte Fläche gem. FLAMA, 20-jährige hier: Ökologische Stilllegung ab 1999",Fallow land,fallow_land_not_crop,3301110000,0,DE_LSA
+567,stillgelegtes DGL,Set-aside permanent grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+559,Stilllegung für Naturschutz und Landschaftspflege (5-Jahresprogramm) (auf GL),Set-aside for nature conservation and landscape management (5-year program) (on GL),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+741,Strandflieder,Sea lavender,flowers_ornamental_plants,3301080000,0,DE_LSA
+741,Strandflieder (Geflügelter Strandflieder),Sea lavender (statice),flowers_ornamental_plants,3301080000,0,DE_LSA
+754,Strauch-/Bechermalven (Bechermalve),mallow (mallow),malva,3301082800,0,DE_LSA
+511,Streptocarpus/Drehfrucht,Streptocarpus/twist fruit,flowers_ornamental_plants,3301080000,0,DE_LSA
+822,Streuobst,Orchards as crop cultivation (without meadow use),orchards_fruits,3303010000,0,DE_LSA
+822,Streuobst (ohne Wiesennutzung),Orchards as crop cultivation (without meadow use),orchards_fruits,3303010000,0,DE_LSA
+822,Streuobst als Ertragsanbau (ohne Wiesennutzung),Orchards as crop cultivation (without meadow use),orchards_fruits,3303010000,0,DE_LSA
+480,Streuobst mit Grünlandnutzung,Orchards with grassland use,orchards_fruits,3303010000,8,DE_LSA
+481,Streuobst ohne Grünlandnutzung,Meadow orchard without grassland use,orchards_fruits,3303010000,0,DE_LSA
+480,Streuobstfläche mit Grünlandnutzung,Orchards with grassland use,orchards_fruits,3303010000,8,DE_LSA
+481,Streuobstfläche ohne Grünlandnutzung,Orchard area without grassland use,orchards_fruits,3303010000,0,DE_LSA
+735,Strohblumen,Everlasting flowers,flowers_ornamental_plants,3301080000,0,DE_LSA
+735,Strohblumen ,Everlasting flowers,flowers_ornamental_plants,3301080000,0,DE_LSA
+803,Sudangras,Sudan grass,millet_sorghum,3301010900,0,DE_LSA
+880,Sukzessionsstreifen (auf AL),Succession strip (on arable land),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_LSA
+881,Sukzessionsstreifen (auf DGL),Succession strip (hedge target),hedges,3310200000,0,DE_LSA
+880,Sukzessionsstreifen (mit dem Ziel einer Kondi-LE Hecke),Succession strip (with the aim of a conditional LE hedge),hedges,3310200000,0,DE_LSA
+881,Sukzessionsstreifen (mit dem Ziel einer Kondi-LE Hecke),Succession strip (with the aim of a conditional LE hedge),hedges,3310200000,0,DE_LSA
+605,Süßkartoffel,sweet potato,sweet_potatoes,3301040000,0,DE_LSA
+848,Tafeltrauben,Table grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_LSA
+739,Tagetes,Tagetes / marigold,tagetes,3301084700,0,DE_LSA
+739,"Tagetes (Aufrechte Studentenblume, Tagetes patula, Tagetes Tenuifolia)",Tagetes / marigold,tagetes,3301084700,0,DE_LSA
+739,"Tagetes, Studentenblume",Tagetes / marigold,tagetes,3301084700,0,DE_LSA
+739,Tagetes/Studentenblume,Tagetes / marigold,tagetes,3301084700,0,DE_LSA
+725,Taglilien,daylilies (edible daylily),lilies,3301082500,0,DE_LSA
+725,Taglilien (Essbare Taglilie),daylilies (edible daylily),lilies,3301082500,0,DE_LSA
+744,Taubnesseln (Weiße Taubnessel),deadnettles (white deadnettle),nettles,3301061225,0,DE_LSA
+997,"Tauschflächen als Platzhalter (nur 0,00 ha)",Other infrastructure measures,not_known_and_other,3399000000,0,DE_LSA
+669,Thymian,thyme,thyme,3301061237,0,DE_LSA
+622,Tomaten,tomatoes,tomato,3301280000,0,DE_LSA
+604,Topinambur,Topinambur,topinambur_jerusalem_artichoke,3301180000,0,DE_LSA
+747,Trauben-Silberkerze,black cohosh,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+I,Trocken - und Natursteinmauern / Lesesteinwälle,"Natural stone or dry stone walls, reading stone walls",stone_walls,3310600000,0,DE_LSA
+865,Trüffel,truffle,truffle,3304040000,0,DE_LSA
+746,Tulpe,Tulips,tulips,3301084900,0,DE_LSA
+746,Tulpen,Tulips,tulips,3301084900,0,DE_LSA
+746,Tulpen ,Tulips,tulips,3301084900,0,DE_LSA
+746,Tulpen (Garten-Tulpe),Tulips,tulips,3301084900,0,DE_LSA
+75,Tümpel Sölle und Doline Kondi,ponds kettle holes and sinkholes condi,wetlands,3310400000,0,DE_LSA
+573,Uferrandstreifenprogramm,Riparian fringe program,wetland_buffers,3310700000,0,DE_LSA
+55,Ufervegetation,,wetland_buffers,3310700000,0,DE_LSA
+55,Ufervegetation ÖVF,,wetland_buffers,3310700000,0,DE_LSA
+996,unbef.Mieten.auf AL,Temporary heaps on arable land,not_known_and_other,3399000000,0,DE_LSA
+994,unbef.Mieten.auf DGL,Temporary heaps on grassland,not_known_and_other,3399000000,0,DE_LSA
+996,"Unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf AL",Temporary heaps on arable land,not_known_and_other,3399000000,0,DE_LSA
+994,"Unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf DGL",Temporary heaps on grassland,not_known_and_other,3399000000,0,DE_LSA
+844,Unbestockte Rebfläche,Unstocked vineyard area,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_LSA
+846,Unterlagsrebfläche,Vineyard area,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_LSA
+61,Untersaat,Undersown crop,other_plants_harvested_green,3301099900,0,DE_LSA
+776,"Veilchen (Hornveilchen, Gartenstiefmütterchen, Wildes Stiefmütterchen)","violets (horned violet, garden pansy, wild pansy)",violets_pansies,3301085100,0,DE_LSA
+776,"Veilchen (Horn-Veilchen, Garten-Stiefmütterchen, Wildes Stiefmütterchen)","violets (horned violet, garden pansy, wild pansy)",violets_pansies,3301085100,0,DE_LSA
+667,Verbenen (Echtes Eisenkraut),verbena (true verbena),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+770,Vergissmeinnicht (Wald-Vergissmeinnicht),forget-me-not (forest forget-me-not),flowers_ornamental_plants,3301080000,0,DE_LSA
+789,Veronica/Hebe/Ehrenpreis,"Veronica, Hebe, speedwell",flowers_ornamental_plants,3301080000,0,DE_LSA
+914,Versuchsfl. mehrere beihilfef. Kulturarten,Trial plots with several eligible crops,other_arable_land_crops,3301990000,0,DE_LSA
+914,Versuchsflächen mit mehreren beihilfefähigen Kulturarten,Trial plots with several eligible crops,other_arable_land_crops,3301990000,0,DE_LSA
+804,Virginiamalve,Sida (Virginia Mallow),sida_virginia_mallow,3304030000,0,DE_LSA
+705,Virginischer Tabak,Virginian tobacco,tobacco,3301060100,0,DE_LSA
+996,"Vorübergehende, unbefestigte Mieten, Stroh-, Futter oder Dunglagerplätze auf AL","Temporary unpaved heaps, straw/fodder/manure storage on arable land",not_known_and_other,3399000000,0,DE_LSA
+994,"Vorübergehende, unbefestigte Mieten, Stroh-, Futter- oder Dunglagerplätze auf DGL","Temporary unpaved heaps, straw/fodder/manure storage on grassland",not_known_and_other,3399000000,0,DE_LSA
+996,"Vorübergehende, unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf AL",Temporary heaps on arable land,not_known_and_other,3399000000,0,DE_LSA
+994,"Vorübergehende, unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf DGL",Temporary heaps on grassland,not_known_and_other,3399000000,0,DE_LSA
+834,Walnüsse,Walnuts,walnuts,3303030600,0,DE_LSA
+428,Wechselgrünland,Alternating grassland,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+676,Wegerich,Plantain,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_LSA
+676,Wegerich (Spitzwegerich),Plantain (ribwort),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_LSA
+443,Weiden (Grünlandneueinsaat im Rahmen von AUKM),Pastures (grassland reseeding within the framework of AUKM (Agri-environmental and climate measures)),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+443,Weiden Neueinsaat AUKM,Pastures new seeding AUKM (Agri-environmental and climate measures),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+453,Weiden und Almen,Pastures and alpine pastures,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+983,Weihnachtsbäume,Christmas trees,christmas_trees,3306100000,0,DE_LSA
+619,Weißer & Gelber Senf,White mustard,mustard,3301210100,0,DE_LSA
+619,Weißer Senf,White mustard,mustard,3301210100,0,DE_LSA
+619,"Weißer Senf, Gelber Senf",White mustard,mustard,3301210100,0,DE_LSA
+673,"Wermut, Estragon, Beifuß","Wormwood, tarragon, mugwort",tarragon,3301061236,0,DE_LSA
+221,Wicke,Vetches,vetches,3301090305,0,DE_LSA
+221,"Wicken (Pannonische Wicke, Zottelwicke, Saatwicke)",Vetches,vetches,3301090305,0,DE_LSA
+221,"Wicken (Pannonische, Zottelwicke, Saatwicke)",Vetches,vetches,3301090305,0,DE_LSA
+451,Wiesen,grasslands,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+441,Wiesen (Grünlandneueinsaat im Rahmen von AUKM),Meadows (grassland reseeding as part of AUKM (Agri-environmental and climate measures)),pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+768,Wiesenknopf,salad burnet,burnet,3301080700,0,DE_LSA
+768,"Wiesenknopf (Kleiner Wiesenknopf, Pimpinelle)",salad burnet (pimpinella),burnet,3301080700,0,DE_LSA
+910,Wildäsungsfläche,Wild Field for game,pasture_meadow_grassland_grass,3302000000,0,DE_LSA
+871,Wildpflanzenmischung zur Energieerzeugung,Wild plant mixture for energy production,energy_crops,3304010000,0,DE_LSA
+913,Wildsamenvermehrung,Wild seed propagation,arable_land_seed_seedlings,3301100000,0,DE_LSA
+114,Winterdinkel,Winter spelt,winter_spelt,3301011001,0,DE_LSA
+114,Winter-Dinkel,Winter spelt,winter_spelt,3301011001,0,DE_LSA
+114,Winter-Dinkel ,Winter spelt,winter_spelt,3301011001,0,DE_LSA
+112,Winterdurum (Hartweizen),Winter hard wheat / durum,winter_durum_hard_wheat,3301010201,0,DE_LSA
+118,Winteremmer/ -einkorn,Winter emmer / single grain,winter_emmer,3301011201,3,DE_LSA
+118,Winter-Emmer/ -Einkorn,Winter emmer / single grain,winter_emmer,3301011201,3,DE_LSA
+118,Winter-Emmer/ -einkorn,Winter emmer / single grain,winter_emmer,3301011201,3,DE_LSA
+118,Winter-Emmer/-Einkorn,Winter emmer / single grain,winter_emmer,3301011201,3,DE_LSA
+131,Wintergerste,Winter barley,winter_barley,3301010401,0,DE_LSA
+142,Winterhafer,Winter oats,winter_oats,3301010501,0,DE_LSA
+882,Winterhartes Gemenge Getreide/Leg. (Getreide überw.),Winter-hardy mixture Cereals/Legumes (Cereals predominant),cereal_legume_mix,3301091200,1,DE_LSA
+882,Winterhartes Gemenge Getreide/Leguminose (Getreide überwiegt),Winter-hardy cereal/leguminous mixture (cereals predominating),cereal_legume_mix,3301091200,1,DE_LSA
+883,Winterhartes Leguminosengemenge,Winter-hardy leguminous mixture,legumes_harvested_green,3301090300,7,DE_LSA
+112,Winterhartweizen/Durum,Winter hard wheat / durum,winter_durum_hard_wheat,3301010201,0,DE_LSA
+632,Winterlauch,Winter leek,leek,3301220300,0,DE_LSA
+632,"Winterlauch (Zwiebeln, Winterheckenzwiebeln)",Winter leek,leek,3301220300,0,DE_LSA
+125,Wintermenggetreide,Winter meslin,winter_meslin,3301011101,7,DE_LSA
+126,Wintermenggetreide ohne Weizen,Winter meslin without wheat,winter_meslin,3301011101,7,DE_LSA
+311,Winterraps,Winter rapeseed,winter_rapeseed_rape,3301060401,0,DE_LSA
+311,Winterraps ,Winter rapeseed,winter_rapeseed_rape,3301060401,0,DE_LSA
+121,Winterroggen,Winter rye,winter_rye,3301010301,0,DE_LSA
+121,"Winterroggen, Winter-Waldstaudenroggen",Winter rye,winter_rye,3301010301,0,DE_LSA
+315,Winterrübsen,Winter rape (oil radish,winter_turnip_rape,3301210701,0,DE_LSA
+315,"Winterrübsen (Ölrettich, Rübsen, Rübsamen, Rübsaat)",Winter rape (oil radish,winter_turnip_rape,3301210701,0,DE_LSA
+315,"Winterrübsen (Rübsen, Rübsamen, Rübsaat)",Winter rape (oil radish,winter_turnip_rape,3301210701,0,DE_LSA
+156,Wintertriticale,Winter triticale,winter_triticale,3301010801,0,DE_LSA
+115,Winterweichweizen,Winter soft wheat,winter_common_soft_wheat,3301010101,0,DE_LSA
+755,Wolfsmilch ,milkweed ,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+740,Wucherblumen,Impatiens,flowers_ornamental_plants,3301080000,0,DE_LSA
+740,Wucherblumen (Mutterkraut),speedwell (feverfew),flowers_ornamental_plants,3301080000,0,DE_LSA
+666,Ysop/Eisenkraut,hyssop/verbena,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_LSA
+644,Zichorien/Wegwarten,Chicories,chicory_chicories,3301310200,0,DE_LSA
+644,"Zichorien/Wegwarten (Chicorée, Radicchio, krausblättrige Endivie, ganzblättrige Endivie, Zichorie)","Chicories (chicory, radicchio, endives, succory)",chicory_chicories,3301310200,0,DE_LSA
+644,"Zichorien/Wegwarten (Chicoree, Radiccio, krausblättrige Endivie, ganzblättrige Endivie, Zichorie)",Chicories,chicory_chicories,3301310200,0,DE_LSA
+720,Zierpflanzen,Row cultivation of ornamental plants,flowers_ornamental_plants,3301080000,0,DE_LSA
+720,Zierpflanzen (einschl. Blumen zum Selberpflücken),Row cultivation of ornamental plants,flowers_ornamental_plants,3301080000,0,DE_LSA
+769,"Zieste (Deutscher Ziest, Knollen-Ziest)",Hedgenettles (German Knollen),stachys_hedgenettle_chinese_artichoke,3301061235,0,DE_LSA
+743,Zinnien,zinnias,zinnias,3301085200,0,DE_LSA
+628,Zuckermelone ,sugar melon ,melon,3301140300,0,DE_LSA
+603,Zuckerrüben,Sugar beet,sugar_beet,3301290700,0,DE_LSA
+60,Zwischenfrucht / Gründecke,Catch crop / green cover,other_plants_harvested_green,3301099900,0,DE_LSA
+65,Zwischenfrucht mit Hanfanteil,Catch crop with hemp content,other_plants_harvested_green,3301099900,7,DE_LSA
+48,,,not_known_and_other,3399000000,0,DE_LSA
+49,,,not_known_and_other,3399000000,0,DE_LSA
+973,,,not_known_and_other,3399000000,0,DE_LSA
+974,,,not_known_and_other,3399000000,0,DE_LSA
+9999,,,not_known_and_other,3399000000,0,DE_LSA
+,,,not_known_and_other,3399000000,0,DE_LSA
+991,"nicht landwirt. Flächen in der Verfügungsgewalt des Antragstellers, die gemäß § 15 Absatz 1 des Direktzahlungen- Durchführungsgesetzes als umweltsensibles Dauergrünland bestimmt worden sind",Non-agricultural land under the control of the applicant that has been designated as environmentally sensitive permanent grassland in accordance with Section 15(1) of the Direct Payments Implementation Act.,pasture_meadow_grassland_grass,3302000000,0,DE_LSA

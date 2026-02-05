@@ -1,0 +1,14 @@
+column_name,column_description,prelim,DK_2008,DK_2009,DK_2010,DK_2011,DK_2012,DK_2013,DK_2014,DK_2015,DK_2016,DK_2017,DK_2018,DK_2019,DK_2020,DK_2021,DK_2022,DK_2023,DK_2024,DK_2025
+field_id,Unique identifier for each field in country or state,1,,,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id
+farm_id,Unique identifier for each farm in country,1,Ansoeger,Ansoeger,Ansoeger,Ansoeger,KUNDE_LB,KUNDE_LB,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr,Journalnr
+crop_code,"The original, country-specific crop code",1,,,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode,Afgkode
+crop_name,"The original, country-specific crop name",1,,,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede,Afgroede
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,,,,,,,,,,,OML,OML,OML,OML,OML,OML,OML,
+field_size,Size of field in hectar,1,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal,IMK_areal
+intercrop_code,"The original, country-specific intercrop code",0,,,,,,,,,,,,,,,,,,
+intercrop_name,"The original, country-specific intercrop name",0,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,14 @@
+column_name,column_description,prelim,DE_BRB_2005,DE_BRB_2006,DE_BRB_2007,DE_BRB_2008,DE_BRB_2009,DE_BRB_2010,DE_BRB_2011,DE_BRB_2012,DE_BRB_2013,DE_BRB_2014,DE_BRB_2015,DE_BRB_2016,DE_BRB_2017,DE_BRB_2018,DE_BRB_2019,DE_BRB_2020,DE_BRB_2021,DE_BRB_2022,DE_BRB_2023,DE_BRB_2024,DE_BRB_2025
+field_id,Unique identifier for each field in country or state,1,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id,unique_id
+farm_id,Unique identifier for each farm in country,1,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BNR_ZD,BTNR,BTNR,BTNR,BTNR,,,
+crop_code,"The original, country-specific crop code",1,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,K_ART,CODE,CODE,CODE,CODE,CODE,CODE,code
+crop_name,"The original, country-specific crop name",1,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,K_ART_K,CODE_BEZ,CODE_BEZ,CODE_BEZ,CODE_BEZ,CODE_BEZ,CODE_BEZ,code_bez
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,,,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,Oeko,organic
+field_size,Size of field in hectar,1,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,Area_H,GROESSE,GROESSE,GROESSE,GROESSE,GROESSE,GROESSE,groesse
+intercrop_code,"The original, country-specific intercrop code",0,,,,,,,,,,,,,,,,,,,,,
+intercrop_name,"The original, country-specific intercrop name",0,,,,,,,,,,,,,,,,,,,,,

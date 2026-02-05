@@ -1,0 +1,12 @@
+column_name,column_description,prelim,BE_FLA_2008,BE_FLA_2009,BE_FLA_2010,BE_FLA_2011,BE_FLA_2012,BE_FLA_2013,BE_FLA_2014,BE_FLA_2015,BE_FLA_2016,BE_FLA_2017,BE_FLA_2018,BE_FLA_2019,BE_FLA_2020,BE_FLA_2021,BE_FLA_2022,BE_FLA_2023,BE_FLA_2024,BE_FLA_2025
+field_id,Unique identifier for each field in country or state,1,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id,new_id
+farm_id,Unique identifier for each farm in country,0,,,,,,,,,,,,,,,,,,
+crop_code,"The original, country-specific crop code",1,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H,GWSCOD_H
+crop_name,"The original, country-specific crop name",1,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H,GWSNAM_H
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,,,,,,,,,,,,,,,BIOCERT,BIOCERT,,
+field_size,Size of field in hectar,1,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP,GRAF_OPP

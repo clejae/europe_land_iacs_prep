@@ -1,0 +1,245 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+208,lucerna,alfalfa,alfalfa_lucerne,3301090301,0,SI
+512,podsevek lucerne,undersown alfalfa,alfalfa_lucerne,3301090301,4,SI
+633,mandelj,almond,almond,3303030100,0,SI
+37,amarant,amaranth,amaranth,3301150100,0,SI
+682,šmarna hrušica,juneberry (serviceberry),amelanchier_serviceberry,3303010100,0,SI
+611,jablana,apple tree,apples,3303010200,0,SI
+624,marelica,apricot,apricots,3303010300,0,SI
+510,mešanica za ozelenitev ornih površin prek zime ,mixture for greening arable land over winter,arable_crops,3301000000,7,SI
+403,različna trajna zelišča,various perennial herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,SI
+404,njivska zelišča,field herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,SI
+404,enoletna njivska zelišča,annual field herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,SI
+404,enoletna in dvoletna njivska zelišča,annual and biennial field herbs,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,7,SI
+657,aronija,aronia (chokeberry),aronia_chokeberries,3303020100,0,SI
+733,artičoka,artichoke,artichoke,3301270000,0,SI
+703,šparglji,asparagus,asparagus,3301200000,0,SI
+17,krmni bob,fodder bean,beans,3301020100,0,SI
+45,bob,broad beans,beans,3301020100,0,SI
+395,"bob od 0,1 ha",broad bean from 0.1 ha,beans,3301020100,0,SI
+397,"fižol od 0,1 ha",bean from 0.1 ha,beans,3301020100,0,SI
+511,podsevek krmni bob,undersown fodder bean,beans,3301020100,4,SI
+658,murva,mulberry,berries_berry_species,3303020000,0,SI
+654,robida,blackberry,blackberry,3303020200,0,SI
+656,črni ribez,black currant,blackcurrant_cassis,3303020300,0,SI
+652,ameriška borovnica,blueberry,blueberry,3303020400,0,SI
+4,ajda,buckwheat,buckwheat,3301150200,0,SI
+57,ajda - medonosna praha,buckwheat - honey fallow,buckwheat,3301150200,0,SI
+36,riček,false flax (camelina),camelina,3301061500,0,SI
+107,krmno korenje,fodder carrot,carrots_daucus,3301290300,0,SI
+625,češnja,cherry,cherry_cherries,3303010400,0,SI
+626,višnja,sour cherry,cherry_cherries,3303010400,0,SI
+399,"čičerika od 0,1 ha",chickpea from 0.1 ha,chickpeas,3301020200,0,SI
+47,radič,radicchio,chicory_chicories,3301310200,0,SI
+106,krmni radič,fodder chicory,chicory_chicories,3301310200,0,SI
+671,limonovec,lemon tree,citrus_plantations,3303040000,0,SI
+671,limonovec,lemon tree,citrus_plantations,3303040000,0,SI
+672,grenivka,grapefruit,citrus_plantations,3303040000,0,SI
+673,pomarančevec,orange tree,citrus_plantations,3303040000,0,SI
+674,mandarinovec,mandarin tree,citrus_plantations,3303040000,0,SI
+207,detelja,clover,clover,3301090303,0,SI
+220,aleksandrijska detelja,berseem clover,clover,3301090303,0,SI
+221,perzijska detelja,persian clover,clover,3301090303,0,SI
+222,inkarnatka,crimson clover,clover,3301090303,0,SI
+503,podsevek detelje,undersown clover,clover,3301090303,4,SI
+504,podsevek inkarnatke,undersown crimson clover,clover,3301090303,4,SI
+515,podsevek aleksandrijska detelja,undersown berseem clover,clover,3301090303,4,SI
+516,"podsevek perzijska detelja
+",undersown persian clover,clover,3301090303,4,SI
+203,travnodeteljne mešanice,grass-clover mixtures,clover_grass_mix,3301090501,1,SI
+206,deteljnotravne mešanice,clover-grass mixtures,clover_grass_mix,3301090501,1,SI
+502,podsevek deteljnotravnih mešanic,undersown clover-grass mixture,clover_grass_mix,3301090501,4,SI
+681,ameriška brusnica,cranberry,cranberry,3303020500,0,SI
+675,dren,cornelian cherry,dogwood_cornus,3306040000,0,SI
+22,krompir (zgodnji),potato (early),early_season_potatoes,3301030100,0,SI
+22,krompir - zgodnji,potato (early),early_season_potatoes,3301030100,0,SI
+738,ameriški slamnik,echinacea,echinacea_sun_hat,3301081500,0,SI
+646,bezeg,elderberry,elder_elderberry,3303080400,0,SI
+500,podsevek navadne nokote,undersown sainfoin,onobrychis_sainfoins,3301061600,4,SI
+26,praha,fallow,fallow_land_not_crop,3301110000,0,SI
+32,bar,bare soil,fallow_land_not_crop,3301110000,0,SI
+60,praha brez posevka (prazna površina),fallow without crop (bare land),fallow_land_not_crop,3301110000,0,SI
+61,praha s posevkom brez kmetijske proizvodnje,fallow with cover crop (no production),fallow_land_not_crop,3301110000,0,SI
+619,feioja,feijoa,feijoa,3303010500,0,SI
+619,feijoa,feijoa,feijoa,3303010500,0,SI
+647,smokva (figa),fig,fig,3303010600,0,SI
+28,lan,flax,flax_linen,3301060701,0,SI
+59,lan - medonosna praha,flax - honey fallow,flax_linseed,3301060700,0,SI
+735,okrasne rastline,ornamental plants,flowers_ornamental_plants,3301080000,0,SI
+400,"zelenjadnice in zelišča pod 0,1 ha (kombinacija kratkoročne in dolgoročne prisotnosti)",vegetables and herbs under 0.1 ha (short- and long-term presence),fresh_vegetables,3301070000,3,SI
+401,"sadike zelenjadnic, zelišč in dišavnic","seedlings of vegetables, herbs and spices",fresh_vegetables,3301070000,3,SI
+402,zelenjadnice,vegetables,fresh_vegetables,3301070000,0,SI
+409,"mešane zelenjadnice pod 0,1 ha",mixed vegetables under 0.1 ha,fresh_vegetables,3301070000,7,SI
+676,kosmulja,gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,SI
+5,koruza za zrnje,maize for grain,grain_maize_corn_popcorn,3301010600,0,SI
+49,sladka koruza,sweet corn,grain_maize_corn_popcorn,3301010600,0,SI
+6,koruza za silažo,maize for silage,green_silo_maize,3301090400,0,SI
+115,abesinska gizotija,niger seed,guizotia_abyssinica_nyger,3301060900,0,SI
+632,leska,hazelnut,hazelnuts_hazel,3303030200,0,SI
+27,konoplja,hemp,hemp_cannabis,3301061000,0,SI
+649,rakitovec,sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,SI
+678,sibirska borovnica,haskap (siberian blueberry),honeysuckle,3303080500,0,SI
+678,užitno modro kosteničje,edible honeysuckle,honeysuckle,3303080500,0,SI
+29,ukorenišče hmeljnih sadik,rootstock of hop seedlings,hops,3301060200,0,SI
+29,ukorenišče hmeljnih sadik,rootstock of hop seedlings,hops,3301060200,0,SI
+900,hmelj,hops,hops,3301060200,0,SI
+660,črni ribez x kosmulja,black currant x gooseberry (jostaberry),jostaberry,3303020900,0,SI
+105,krmni ohrovt,fodder kale,kale,3301210208,0,SI
+642,kivi,kiwi,kiwi,3303010700,0,SI
+46,motovilec,lamb’s lettuce,lambs_lettuce_rapunzel,3301310500,0,SI
+20,krompir (pozni),potato (late),late_season_potatoes,3301030200,0,SI
+20,krompir - pozni,potato (late),late_season_potatoes,3301030200,0,SI
+737,sivka,lavender,lavender_lavandula,3301061219,0,SI
+707,matičnjak,Root-stock nursery,lemon_balm_melissa,3301061220,0,SI
+398,"leča od 0,1 ha",lentil from 0.1 ha,lentils,3301020500,0,SI
+117,westerwoldska ljuljka,westerwolds ryegrass,lolium_ryegrass,3301090205,0,SI
+118,mnogocvetna ljulka,italian ryegrass,lolium_ryegrass,3301090205,0,SI
+101,krmna pesa,fodder beet,mangelwurzel_fodder_beet,3301290400,0,SI
+616,nešplja,medlar,medlar_loquat,3303010800,0,SI
+627,japonska nešplja,loquat,medlar_loquat,3303010800,0,SI
+40,lubenice,watermelons,watermelon,3301140500,0,SI
+41,melone oziroma dinje,melons,melon,3301140300,0,SI
+10,proso,millet,millet_sorghum,3301010900,0,SI
+24,sirek,sorghum,millet_sorghum,3301010900,0,SI
+109,krmni sirek,fodder sorghum,millet_sorghum,3301010900,0,SI
+116,sudanska trava,sudan grass,millet_sorghum,3301010900,0,SI
+722,miskant,miscanthus,miscanthus_silvergrass,3301083000,0,SI
+405,"mešana raba (zelenjadnice, poljščine, dišavnice, zdravilna zelišča)","mixed use (vegetables, arable crops, spices, medicinal herbs)",mixed_cropping,3301320000,3,SI
+405,"mešana raba (zelenjadnice, poljščine, dišavnice in zdravilna zelišča)","mixed use (vegetables, arable crops, spices and medicinal herbs)",mixed_cropping,3301320000,3,SI
+405,"mešana raba pod 0,1 ha (zelenjadnice, poljščine, dišavnice in zelišča)","mixed use under 0.1 ha (vegetables, arable crops, spices and herbs)",mixed_cropping,3301320000,3,SI
+410,mešani posevki v ekološkem kmetovanju,mixed crops in organic farming,mixed_cropping,3301320000,3,SI
+506,mešanica rastlin - naknadni posevek,plant mixture - catch crop,mixed_cropping,3301320000,3,SI
+34,rjava indijska gorčica,brown mustard,mustard,3301210100,0,SI
+34,rjava indijska gorčica,brown mustard,mustard,3301210100,0,SI
+54,bela gorjušica - medonosna praha,white mustard - honey fallow,mustard,3301210100,0,SI
+111,bela gorjušica,white mustard,mustard,3301210100,0,SI
+622,nektarina,nectarine,nectarine,3303010900,0,SI
+0,ni v uporabi,not in use,not_known_and_other,3399000000,0,SI
+52,mešanica medonosnih rastlin,mixture of honey plants,field_margins_buffer_strips_flowering_areas,3310100000,7,SI
+52,mešanica medovitih rastlin,mixture of nectar plants,field_margins_buffer_strips_flowering_areas,3310100000,7,SI
+53,mešanica medonosnih rastlin z drugimi kmetijskimi rastlinami,mixture of honey plants with other crops,field_margins_buffer_strips_flowering_areas,3310100000,7,SI
+333,tehnično ali drugo sredstvo,technical or other use,not_known_and_other,3399000000,0,SI
+444,pridelava ni v tleh,soilless cultivation,not_known_and_other,3399000000,0,SI
+508,medovit posevek 1 (15.8.-15.10.),nectar crop 1 (15 Aug – 15 Oct),field_margins_buffer_strips_flowering_areas,3310100000,0,SI
+509,medovit posevek 2 (1.9.-30.10.),nectar crop 2 (1 Sep – 30 Oct),field_margins_buffer_strips_flowering_areas,3310100000,0,SI
+555,brez zahtevka,no claim,not_known_and_other,3399000000,0,SI
+777,površina v odstopu,area given up,fallow_land_not_crop,3301110000,0,SI
+778,nekmetijska površina,non-agricultural area,not_known_and_other,3399000000,0,SI
+901,krajinska značilnost,landscape feature,non_productive_landscape_elements,3310000000,0,SI
+901,krajinska značilnost,landscape feature,non_productive_landscape_elements,3310000000,0,SI
+702,drevesnice,nurseries,nurseries_nursery,3303070000,0,SI
+704,trsnice,vine nurseries,nurseries_nursery,3303070000,0,SI
+698,oreh in kostanj,walnut and chestnut,nuts,3303030000,7,SI
+800,oljka,olive tree,olive_plantations,3303050000,0,SI
+223,navadna nokota,common sainfoin,onobrychis_sainfoins,3301061600,0,SI
+618,žižula,jujube,orchards_fruits,3303010000,0,SI
+643,kaki,persimmon,orchards_fruits,3303010000,0,SI
+699,mešane sadne vrste,mixed fruit species,orchards_fruits,3303010000,7,SI
+114,druge rastline za krmo na njivah,other fodder crops on arable land,other_plants_harvested_green,3301099900,0,SI
+114,mešane rastline za krmo na njivah,mixed fodder crops on arable land,other_plants_harvested_green,3301099900,7,SI
+710,mešane rastline za rejo polžev,mixed plants for snail farming,other_arable_land_crops,3301990000,7,SI
+705,"mešane trajne rastline pod 0,1 ha",mixed perennial plants under 0.1 ha,other_permanent_crops_plantations,3303990000,3,SI
+677,skorš,service tree,other_tree_wood_forest,3306990000,0,SI
+719,murva za gojenje sviloprejk,mulberry for silkworm farming,other_tree_wood_forest,3306990000,0,SI
+204,trajno travinje,permanent grassland,pasture_meadow_grassland_grass,3302000000,0,SI
+648,asimina,pawpaw,pawpaw,3303011000,0,SI
+621,breskev,peach,peach,3303011100,0,SI
+612,hruška,pear tree,pears,3303011200,0,SI
+614,nashi,nashi pear,pears,3303011200,0,SI
+33,krmni grah (jari),fodder pea (spring),peas,3301020600,0,SI
+44,grah,peas,peas,3301020600,0,SI
+396,"grah od 0,1 ha",pea from 0.1 ha,peas,3301020600,0,SI
+501,podsevek krmnega graha,undersown fodder pea,peas,3301020600,4,SI
+833,krmni grah (ozimni),fodder pea (winter),peas,3301020600,0,SI
+634,pekan oreh,pecan,pecan,3303030300,0,SI
+56,facelija - medonosna praha,phacelia - honey fallow,phacelia,3301061400,0,SI
+219,facelija,phacelia,phacelia,3301061400,0,SI
+635,pistacija,pistachio,pistachio,3303030400,0,SI
+62,zeleni pokrov,green cover,plants_harvested_green,3301090000,0,SI
+129,"druge mešanice z rastlinami, ki vežejo dušik",other mixtures with nitrogen-fixing plants,plants_harvested_green,3301090000,7,SI
+129,"mešanice z rastlinami, ki vežejo dušik",mixtures with nitrogen-fixing plants,plants_harvested_green,3301090000,7,SI
+506,mešanica za naknadni posevek 1 (15.8. - 15.10.),catch crop mixture 1 (15 Aug – 15 Oct),plants_harvested_green,3301090000,7,SI
+507,mešanica za naknadni posevek 2 (1.9. - 30.10.),catch crop mixture 2 (1 Sep – 30 Oct),plants_harvested_green,3301090000,7,SI
+623,sliva/češplja,plum,plums,3303011300,0,SI
+615,granatno jabolko,pomegranate,pomegranate,3303011400,0,SI
+20,krompir,potatoes,potatoes,3301030000,0,SI
+13,oljna buča,oil pumpkin,pumpkin_squash_gourd,3301140400,0,SI
+42,navadna buča,pumpkin,pumpkin_squash_gourd,3301140400,0,SI
+613,kutina,quince,quinces,3303011500,0,SI
+23,kvinoja,quinoa,quinoa,3301150300,0,SI
+39,meliorativna redkev,tillage radish,oil_fodder_radish,3301210600,0,SI
+55,oljna redkev - medonosna praha,oil radish - honey fallow,oil_fodder_radish,3301210600,0,SI
+113,oljna redkev,oil radish,oil_fodder_radish,3301210600,0,SI
+103,oljna repica,oilseed rape,rapeseed_rape,3301060400,0,SI
+653,malina,raspberry,raspberry_raspberries,3303021000,0,SI
+655,rdeči ribez,red currant,redcurrant,3303021100,0,SI
+734,rabarbara,rhubarb,rhubarb,3301230000,0,SI
+48,rukola,arugula (rocket),rocket_arugula,3301310600,0,SI
+680,šipek,Dog rose,roses,3301083700,0,SI
+736,vrtnice,roses,roses,3301083700,0,SI
+43,črni koren,black salsify,black_salsify,3301290900,0,SI
+720,"hitro rastoči panjevec (vrba, topol)","fast-growing coppice (willow, poplar)",short_rotation_coppice,3306090000,0,SI
+721,drugi hitro rastoči panjevci,other fast-growing coppice,short_rotation_coppice,3306090000,0,SI
+659,goji jagoda,goji berry,shrubberries_shrubs,3303080000,0,SI
+202,travna ruša (travni tepih),turf grass (sod),sod_turf,3301090207,0,SI
+30,soja,soybeans,soy_soybeans,3301160000,0,SI
+513,podsevek soje,undersown soybean,soy_soybeans,3301160000,4,SI
+9,ječmen (jari),barley (spring),spring_barley,3301010402,0,SI
+1,pšenica (jara),wheat (spring),spring_common_soft_wheat,3301010102,0,SI
+25,trda pšenica (jara),durum wheat (spring),spring_durum_hard_wheat,3301010202,0,SI
+11,mešanice žit (jara),cereal mixtures (spring),spring_meslin,3301011102,7,SI
+21,soržica (jara),sorghum (spring),spring_millet_sorghum,3301010902,0,SI
+8,oves (jari),oats (spring),spring_oats,3301010502,0,SI
+14,oljna ogrščica (jara),oilseed rape (spring),spring_rapeseed_rape,3301060402,0,SI
+104,krmna repica (jara),fodder rape (spring),spring_rapeseed_rape,3301060402,0,SI
+112,krmna ogrščica (jara),fodder rape (spring),spring_rapeseed_rape,3301060402,0,SI
+2,rž (jara),rye (spring),spring_rye,3301010302,0,SI
+3,pira (jara),spelt (spring),spring_spelt,3301011002,0,SI
+7,tritikala (jara),triticale (spring),spring_triticale,3301010802,0,SI
+35,kamut (jari),kamut (spring),spring_unspecified_cereals,3301011502,0,SI
+35,pšenica horasan (jara),khorasan wheat (spring),spring_unspecified_cereals,3301011502,0,SI
+651,jagoda,strawberry,strawberries,3301130000,0,SI
+19,sladkorna pesa,sugar beet,sugar_beet,3301290700,0,SI
+31,vrtni mak (jari),garden poppy (spring),summer_poppy,3301060602,0,SI
+12,sončnice,sunflowers,sunflower,3301060500,0,SI
+58,sončnice - medonosna praha,sunflowers - honey fallow,sunflower,3301060500,0,SI
+108,podzemna koleraba,swede (rutabaga),swede_rutabaga,3301210500,0,SI
+644,kostanj,chestnut,sweet_chestnuts,3303030500,0,SI
+210,volčji bob,lupins,sweet_lupins,3301020700,0,SI
+514,podsevek volčji bob,undersown lupin,bitter_lupins,3301092100,4,SI
+662,robida x malina,blackberry x raspberry (tayberry),tayberry,3303021400,0,SI
+200,trave za pridelavo semena,grasses for seed production,temporary_grass,3301090100,0,SI
+201,trave,grasses,temporary_grass,3301090100,0,SI
+505,trava - podsevek,grass - undersown,temporary_grass,3301090100,4,SI
+505,podsevek trave,undersown grass,temporary_grass,3301090100,4,SI
+723,tobakovec,tree tobacco,tobacco,3301060100,0,SI
+38,repa,turnip,turnips,3301290800,0,SI
+38,"repa, ki ni namenjena prehrani ljudi",turnip not intended for human consumption,turnips,3301290800,0,SI
+102,krmna repa,fodder turnip,turnips,3301290800,0,SI
+679,brusnica (evropska ali gozdna),lingonberry,berries_berry_species,3303020000,0,SI
+110,grašica (jara),vetch (spring),vetches,3301090305,0,SI
+211,grahor,vetch,vetches,3301090305,0,SI
+810,grašica (ozimna),vetch (winter),vetches,3301090305,0,SI
+100,vinska trta,grapevine,vineyards_wine_vine_rebland_grapes,3303060000,0,SI
+661,namizno grozdje,table grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,SI
+701,"drevesnice in trsnice, kjer pridelava ni v tleh",nurseries and vine nurseries with soilless cultivation,vineyards_wine_vine_rebland_grapes,3303060000,3,SI
+706,"trta za drugo rabo, ki ni vino ali namizno grozdje",grapevine for other use (not wine or table grapes),vineyards_wine_vine_rebland_grapes,3303060000,0,SI
+631,oreh,walnut,walnuts,3303030600,0,SI
+809,ječmen (ozimni),barley (winter),winter_barley,3301010401,0,SI
+801,pšenica (ozimna),wheat (winter),winter_common_soft_wheat,3301010101,0,SI
+825,trda pšenica (ozimna),durum wheat (winter),winter_durum_hard_wheat,3301010201,0,SI
+821,soržica (ozimna),sorghum (winter),winter_millet_sorghum,3301010901,0,SI
+808,oves (ozimni),oats (winter),winter_oats,3301010501,0,SI
+831,vrtni mak (ozimni),garden poppy (winter),winter_poppy,3301060601,0,SI
+804,krmna repica (ozimna),fodder rape (winter),winter_rapeseed_rape,3301060401,0,SI
+812,krmna ogrščica (ozimna),fodder rape (winter),winter_rapeseed_rape,3301060401,0,SI
+814,oljna ogrščica (ozimna),oilseed rape (winter),winter_rapeseed_rape,3301060401,0,SI
+802,rž (ozimna),rye (winter),winter_rye,3301010301,0,SI
+803,pira (ozimna),spelt (winter),winter_spelt,3301011001,0,SI
+807,tritikala (ozimna),triticale (winter),winter_triticale,3301010801,0,SI
+811,mešanice žit (ozimna),cereal mixtures (winter),winter_unspecified_cereals,3301011501,7,SI
+835,kamut (ozimni),kamut (winter),winter_unspecified_cereals,3301011501,0,SI
+835,pšenica horasan (ozimna),khorasan wheat (winter),winter_unspecified_cereals,3301011501,0,SI
+63,praha za namen zagotavljanja DKOP 7 in DKOP 8,Set aside for the purpose of ensuring GAEC 7 and GAEC 8. ,fallow_land_not_crop,3301110000,0,SI
+29,ukorenišče hmelja,rootstock of hop seedlings,hops,3301060200,0,SI
+64,cvetoči pas na varovalnem pasu,flowering strip on buffer strip,field_margins_buffer_strips_flowering_areas,3310100000,0,SI

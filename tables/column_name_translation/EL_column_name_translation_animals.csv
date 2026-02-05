@@ -1,0 +1,6 @@
+column_name,column_description,prelim,EL_STAB_2022,EL_STAB_2023
+farm_id,Unique identifier for each farm in country,1,applicant_id,applicant_id
+cattle,Number of cattle that the farm to which the field belongs has,1,,
+sheep,Number of poultry that the farm to which the field belongs has,1,,
+hogs,Number of sheep that the farm to which the field belongs has,1,,
+poultry,Number of horses that the farm to which the field belongs has,1,,

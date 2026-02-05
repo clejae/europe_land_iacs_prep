@@ -1,0 +1,13 @@
+column_name,column_description,prelim,DE_MWP_2014,DE_MWP_2015,DE_MWP_2016,DE_MWP_2017,DE_MWP_2018,DE_MWP_2019,DE_MWP_2020,DE_MWP_2021,DE_MWP_2022,DE_MWP_2023
+field_id,Unique identifier for each field in country or state,1,uni_id_new,uni_id_new,uni_id,uni_id,uni_id,uni_id,uni_id,uni_id,uni_id,uni_id
+farm_id,Unique identifier for each farm in country,1,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id
+crop_code,"The original, country-specific crop code",1,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg
+crop_name,"The original, country-specific crop name",1,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko
+field_size,Size of field in hectar,1,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom
+crop_area,,1,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg

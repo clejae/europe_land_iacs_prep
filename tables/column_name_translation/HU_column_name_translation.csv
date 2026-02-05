@@ -1,0 +1,12 @@
+column_name,column_description,prelim,HU_2016,HU_2017,HU_2018,HU_2019,HU_2020,HU_2021,HU_2022,HU_2023,HU_2024
+field_id,Unique identifier for each field in country or state,1,blosz,blosz,blosz,blosz,blosz,blosz,blosz,blosz,blosz
+farm_id,Unique identifier for each farm in country,0,,,,,,,,,
+crop_code,"The original, country-specific crop code",1,crop_code,crop_code,crop_code,crop_code,crop_code,crop_code,crop_code,crop_code,crop_code
+crop_name,"The original, country-specific crop name",1,,,,,,,,,
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",0,,,,,,,,,
+field_size,Size of field in hectar,1,,,,,,,,,

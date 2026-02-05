@@ -1,0 +1,12 @@
+column_name,column_description,prelim,DE_BWB_2022,DE_BWB_2023,DE_BWB_2024
+field_id,Unique identifier for each field in country or state,1,geo_id,geo_id,geo_id
+farm_id,Unique identifier for each farm in country,1,,,
+crop_code,"The original, country-specific crop code",1,NC,nc,nc
+crop_name,"The original, country-specific crop name",1,Bezeichnung,nc_bezeichnung,nc_bezeichnung
+EC_trans_n,The original crop name translated into English,1,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,
+EC_NUTS3,NUTS3 code for region,0,,,
+info_organic,Information and organic cultivation,0,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,oeko,oeko,oeko
+field_size,Size of field in hectar,1,,,

@@ -1,0 +1,483 @@
+,crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+4983,911,(Beta-)Rübensamenvermehrung,(Beta) beet seed propagation,beetroot_beets,3301290200,0,DE_SAA
+4984,220,Ackerbohne/Puffbohne/Pferdebohne/Dicke Bohne,Field bean / broad bean / horse bean / broad bean/Field / broad / horse bean,beans,3301020100,3,DE_SAA
+4985,424,Ackergras,Arable grass,temporary_grass,3301090100,0,DE_SAA
+4986,999,"Ackerkultur einer Gattung/Art, die in der aktuellen Liste nicht enthalten ist",Arable crop of a genus/species that is not included in the current list,other_arable_land_crops,3301990000,0,DE_SAA
+4987,591,Ackerland aus der Erzeugung genommen,Arable land withdrawn from production (self-greening)/arable land taken from generation,fallow_land_not_crop,3301110000,0,DE_SAA
+4988,591,Ackerland aus der Erzeugung genommen (1x im Jahr mulchen),Arable land removed from production (mulch once a year),fallow_land_not_crop,3301110000,0,DE_SAA
+4989,915,"Ackerrandstreifen und Blühflächen (keine ÖVF, keine AUKM)","Field margins and flowering areas (no EFA, no AUKM)",field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+4990,915,Ackerrandstreifen und Blühflächen (keine ÖVF; keine AUKM),Field edge strips and flowering areas (no EFA; no AUKM),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+4991,990,Alle anderen Flächen (keine LF),All other areas (non-agricultural land),not_known_and_other,3399000000,0,DE_SAA
+4992,990,alle anderen Flächen (keine LF),All other areas (non-agricultural land),not_known_and_other,3399000000,0,DE_SAA
+4993,690,alle anderen Hackfrüchte (ohne Futterhackfr.),all other root crops (excluding fodder),root_vegetables,3301290000,0,DE_SAA
+4994,790,alle anderen Handelsgewächse,all other commercial crops,other_arable_land_crops,3301990000,0,DE_SAA
+4995,633,"Allium/Lauch (Speise-Zwiebel, Schalotte, Lauch, Knoblauch,","Allium/leek (onion, shallot, leek, garlic,",alliums,3301220000,0,DE_SAA
+4996,633,"Allium/Lauch (Speise-Zwiebel, Schalotte, Lauch, Knoblauch, Schnittlauch, Winterheckenzwiebel, Bärlauch","Allium/Leek (onions, shallots, leeks, garlic, chives, winter onions, wild garlic",alliums,3301220000,0,DE_SAA
+4997,186,Amarant (Amarant/ Fuchsschwanz),Amaranth (Amarant/ Foxtail),amaranth,3301150100,0,DE_SAA
+4998,651,"Anethum (Dill, Gurkenkraut)","Anethum (dill, cucumber herb)",anethum_dill,3301061203,0,DE_SAA
+4999,61,Aufforstungsflächen ÖVF,Afforestation areas EFA,afforestation_reforestation,3306010000,0,DE_SAA
+5000,71,Baumreihen (vgl.002 ),Rows of trees (see 002),tree_lines,3310300000,0,DE_SAA
+5001,830,Baumschulen,Nurseries,nurseries_nursery,3303070000,0,DE_SAA
+5002,838,"Baumschulen, nicht für Beerenobst",Nurseries/Tree nurseries (excluding soft fruit),nurseries_nursery,3303070000,0,DE_SAA
+5003,839,Beerenobst zur Vermehrung (in Baumschulen),Berry fruit for propagation (in nurseries),berries_berry_species,3303020000,0,DE_SAA
+5004,827,"Beerenobst, z.B. Johannis-, Stachel-, Himbeeren","Berry fruit e.g. currants, gooseberries",berries_berry_species,3303020000,0,DE_SAA
+5005,817,"Beerenobst, z.B. Johannis-, Stachel-, Himbeeren","Berry fruit e.g. currants, gooseberries",berries_berry_species,3303020000,0,DE_SAA
+5006,843,Bestockte Rebfläche,Planted vineyards,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_SAA
+5007,930,Bewirtschaftete Gewässer/Teichflächen,Managed water bodies/pond areas,wetlands,3310400000,0,DE_SAA
+5008,575,Blühfläche (AUKM),Flowering area (AUKM),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5009,590,Brache mit Einsaat von einjährigen Blühmischungen,Fallow with annual sowing of flower mix,fallow_land_not_crop,3301110000,0,DE_SAA
+5010,62,Brachen ohne Erzeugung  ÖVF,Fallow land without production EFA,fallow_land_not_crop,3301110000,0,DE_SAA
+5011,62,Brachen ohne Erzeugung ÖVF,Fallow land without public transport production,fallow_land_not_crop,3301110000,0,DE_SAA
+5012,65,brachliegende Flächen öVF Honigpflanzen (pollen- und nektarreiche Arten) -einjährig,fallow areas EFA honey plants (pollen and nectar rich species) - annual,fallow_land_not_crop,3301110000,0,DE_SAA
+5013,66,brachliegende Flächen öVF Honigpflanzen (pollen- und nektarreiche Arten) -mehrjährig,fallow areas EFA honey plants (species rich in pollen and nectar) - perennial,fallow_land_not_crop,3301110000,0,DE_SAA
+5014,614,Brauner Senf (Brauner Senf/Sareptasenf),Brown mustard (brown mustard/sarepta mustard),mustard,3301210100,0,DE_SAA
+5015,182,Buchweizen,Buckwheat,buckwheat,3301150200,0,DE_SAA
+5016,896,Chinaschilf (Miscanthus),Chinese reed (Miscanthus),miscanthus_silvergrass,3301083000,0,DE_SAA
+5017,852,Chinaschilf/Miscanthus,Chinese reed / Miscanthus,miscanthus_silvergrass,3301083000,0,DE_SAA
+5018,852,Chinaschilf/Miscanthus KEIN ÖVF,Miscanthus/Miscanthus NO EFA,miscanthus_silvergrass,3301083000,0,DE_SAA
+5019,441,Code unbekannt,Code unknown,not_known_and_other,3399000000,0,DE_SAA
+5020,777,Code unbekannt,Code unknown,not_known_and_other,3399000000,0,DE_SAA
+5021,843,Code unbekannt,Code unknown,not_known_and_other,3399000000,0,DE_SAA
+5022,443,Code unbekannt,Code unknown,not_known_and_other,3399000000,0,DE_SAA
+5023,73,Code unbekannt,Code unknown,not_known_and_other,3399000000,0,DE_SAA
+5024,75,Code unbekannt,Code unknown,not_known_and_other,3399000000,0,DE_SAA
+5025,750,Dahlien (Garten-Dahlie),Dahlias (garden dahlia),dahlia,3301081200,0,DE_SAA
+5026,592,Dauergrünland aus der Erzeugung genommen,Permanent grassland withdrawn from production within the meaning of Art. 4 para. 1 letter c) ii) Regulation 1307/2013/Permanent grass land suspendet from production,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5027,592,Dauergrünland aus der Erzeugung genommen (1x im Jahr mulchen),Permanent grassland removed from production (mulch once a year),pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5028,855,"Dauerkultur einer Gattung/Art, die in der aktuellen Liste nicht",Permanent culture of a genus/species that is not in the current list,permanent_crops_perennial,3303000000,0,DE_SAA
+5029,855,"Dauerkultur einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist (sonstige Dauerkultur)",Permanent culture of a genus/species that is not included in the current list (other permanent culture),permanent_crops_perennial,3303000000,0,DE_SAA
+5030,444,DGL Neueinsaat als Ersatz für genehmigten DGL Umbruch,permanent grassland new sowing as a replacement for approved permanent grassland plowing,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5031,114,Dinkel,Spelt,spelt,3301011000,0,DE_SAA
+5032,64,Durchwachsene Silphie ÖVF,Mixed Silphie EFA,silphium_rosinweeds,3301084400,0,DE_SAA
+5033,722,Einjähriges Silberblatt,Annual silver leaf,lunaria_honesty_silver,3301082700,0,DE_SAA
+5034,801,"Energiepflanze einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Energy plant of a genus/species that is not included in the current list,energy_crops,3304010000,0,DE_SAA
+5035,210,"Erbsen (Erbse, Markerbse, Schalerbse, Zuckererbse)","Peas (peas, marsh peas, shell peas, sugar peas)",peas,3301020600,0,DE_SAA
+5036,240,Erbsen/Bohnen,Peas beans/Mixed peas / beans,legumes_dried_pulses_protein_crops,3301020000,3,DE_SAA
+5037,240,Erbsen/Bohnen (Nicht ÖVF),Peas/beans (not EFA),legumes_dried_pulses_protein_crops,3301020000,3,DE_SAA
+5038,707,Erdbeeren,Strawberries,strawberries,3301130000,0,DE_SAA
+5039,429,Esparsette,Esparsette,esparsette_onobrychis,3301020300,0,DE_SAA
+5040,479,Extensive Bewirtschaftung naturschutzfachlich wertvollen,extensive management of ecologically valuable land,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5041,478,Extensive Bewirtschaftung naturschutzfachlich wertvollen,extensive management of ecologically valuable land,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5042,478,Extensive Bewirtschaftung naturschutzfachlich wertvollen Dauergrünlands (AUKM),extensive management of valuable permanent grassland (AUKM),pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5043,479,Extensive Bewirtschaftung naturschutzfachlich wertvollen Dauergrünlands mit Streuobst (AUKM),Extensive management of permanent grassland with orchards that are valuable in terms of nature conservation (AUKM),pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5044,0,fehlende Codeangabe,missing code information,miscanthus_silvergrass,3301083000,0,DE_SAA
+5045,58,Feldrand ÖVF,Field edge EFA,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5046,58,Feldrand/ Pufferstreifen ÖVF AL,Field edge/buffer strip EFA arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5047,57,Feldrand/ Pufferstreifen ÖVF DGL,Field edge/buffer strip EFA permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5048,636,Feldsalate (Feldsalat/Ackersalat/ Rapunzel),Lamb's lettuce (corn salad/field lettuce/rapunzel),lambs_lettuce_rapunzel,3301310500,0,DE_SAA
+5049,995,Forstflächen (Waldbodenflächen),Forest areas (forest floor areas),tree_wood_forest,3306000000,0,DE_SAA
+5050,412,Futterhackfrüchte,Fodder root crops,fodder_roots,3301050000,0,DE_SAA
+5051,413,Futterrübe/Runkelrübe,Fodder beet / beetroot,mangelwurzel_fodder_beet,3301290400,0,DE_SAA
+5052,723,Garten-/ Sommerlevkoje,Garden/summer bunk,flowers_ornamental_plants,3301080000,0,DE_SAA
+5053,792,Gartenbausämereien,Horticultural seeds,other_arable_land_crops,3301990000,0,DE_SAA
+5054,635,"Gartenbohne (Gartenbohne/Buschbohne/Stangenbohne,","Common bean (common bean/bush bean/pole bean,",beans,3301020100,0,DE_SAA
+5055,630,"Gartenkürbis (cucurbita pepo) (Gartenkürbis, Steirischer Kürbis,","Garden pumpkin (cucurbita pepo) (garden pumpkin, Styrian pumpkin,",pumpkin_squash_gourd,3301140400,0,DE_SAA
+5056,630,"Gartenkürbis (cucurbita pepo) (Gartenkürbis, Steirischer Kürbis, Zucchini, Spaghettikürbis, Zierkürbis","Pumpkin (cucurbita pepo) (Garden pumpkin, Styrian pumpkin, zucchini, spaghetti pumpkin, ornamental pumpkin",pumpkin_squash_gourd,3301140400,0,DE_SAA
+5057,618,"Gartenrettiche (Weiße/rote Rettiche, schwarzer Winterrettich,","Garden radishes (white/red radishes, black winter radishes,",radish,3301290600,0,DE_SAA
+5058,618,"Gartenrettiche (Weiße/rote Rettiche, schwarzer Winterrettich, Ölrettich, Radieschen)","Garden radishes (white/red radishes, black winter radishes, oil radishes, radishes)",radish,3301290600,0,DE_SAA
+5059,250,Gemenge Erbsen / Getreide,Mixture of peas/cereals,cereal_legume_mix,3301091200,1,DE_SAA
+5060,250,Gemenge Leguminosen/Getreide,Mixture of legumes/cereals,cereal_legume_mix,3301091200,1,DE_SAA
+5061,610,Gemüse,Vegetables,fresh_vegetables,3301070000,0,DE_SAA
+5062,710,Gemüse (Freiland),Vegetables (outdoor),fresh_vegetables,3301070000,0,DE_SAA
+5063,613,"Gemüsekohl (Kopfkohl, Wirsing, Rot-/Weißkohl, Spitzkohl,","Vegetable cabbage (head cabbage, savoy cabbage, red/white cabbage, pointed cabbage,",brassica_oleracea_cabbage,3301210200,0,DE_SAA
+5064,613,"Gemüsekohl (Kopfkohl, Wirsing, Rot-/Weißkohl, Spitzkohl, Grünkohl, Kohlrabi, Markstammkohl, Blumenkohl","Vegetable cabbage (head cabbage, savoy cabbage, red/white cabbage, pointed cabbage, kale, kohlrabi, marrow stem cabbage, cauliflower",brassica_oleracea_cabbage,3301210200,0,DE_SAA
+5065,612,"Gemüserübsen (Stoppelrübe, Weiße Rübe, Bayerische Rübe, Mairübe, Chinakohl, Pak-Choi, Teltower Rübch","Vegetable turnips (stubble turnip, white turnip, Bavarian turnip, May turnip, Chinese cabbage, pak choi, Teltower turnip",turnips,3301290800,0,DE_SAA
+5066,612,"Gemüserübsen (Stoppelrübe, Weiße Rübe, Bayerische Rübe, Mairübe, Chinakohl, Pak-Choi, Teltower Rübchen","Vegetable turnips (stubble turnip, white turnip, Bavarian turnip, May turnip, Chinese cabbage, pak choi, Teltower turnip",turnips,3301290800,0,DE_SAA
+5067,190,"Getreide einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Cereals of a genus/species not included in the current list,other_cereals,3301019900,0,DE_SAA
+5068,175,"Getreide zur Ganzpflanzenernte, z.B. Silomais für Biogas","Grain for whole plant harvesting, e.g. silage maize for biogas",cereal,3301010000,0,DE_SAA
+5069,745,Gladiolen (Gartengladiole),Gladioli (garden gladiolus),gladiolus_gladioli,3301082100,0,DE_SAA
+5070,912,Grassamenvermehrung,Grass seed propagation,temporary_grass,3301090100,0,DE_SAA
+5071,941,Gründüngung im Hauptfruchtanbau,Green manure in main crop cultivation,plants_harvested_green,3301090000,0,DE_SAA
+5072,140,Hafer,Oats,oats,3301010500,0,DE_SAA
+5073,701,Hanf,Industrial hemp/hemp,hemp_cannabis,3301061000,0,DE_SAA
+5074,793,Hanf (AL),hemp (arable land),hemp_cannabis,3301061000,0,DE_SAA
+5075,920,Haus- und Nutzgärten,House and kitchen gardens,kitchen_gardens,3301120000,0,DE_SAA
+5076,457,Heuverkauf/Grünland für Energie,Hay sales/grassland for energy,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5077,991,"Hof- und Gebäudeflächen, private Wegeflächen","Courtyard and building areas, private path areas",not_known_and_other,3399000000,0,DE_SAA
+5078,594,Honigpflanzen genutzte brachliegende Flächen (pollen- u. nektarreiche Arten) -einjährig,Fallow areas used for honey plants (species rich in pollen and nectar) - annual,fallow_land_not_crop,3301110000,0,DE_SAA
+5079,595,Honigpflanzen genutzte brachliegende Flächen (pollen- u. nektarreiche Arten) -mehrjährig,Fallow areas used for honey plants (species rich in pollen and nectar) - perennial,fallow_land_not_crop,3301110000,0,DE_SAA
+5080,290,"Hülsenfrucht einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Legume of a genus/species not included in the current list,legumes_dried_pulses_protein_crops,3301020000,0,DE_SAA
+5081,454,Hutungen,low-yield permanent grassland (grazing land),pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5082,731,Hyazinthe (Garten-Hyazinthe),hyacinth (garden hyacinth),flowers_ornamental_plants,3301080000,0,DE_SAA
+5083,765,Kapuzinerkresse,Nasturtium,nasturtiums,3301061224,0,DE_SAA
+5084,602,Kartoffeln,potatoes,potatoes,3301030000,0,DE_SAA
+5085,570,kein Code,no code,not_known_and_other,3399000000,0,DE_SAA
+5086,441,kein Code,no code,not_known_and_other,3399000000,0,DE_SAA
+5087,459,kein Code,no code,not_known_and_other,3399000000,0,DE_SAA
+5088,441,keinCode,no code,not_known_and_other,3399000000,0,DE_SAA
+5089,843,keinCode,no code,not_known_and_other,3399000000,0,DE_SAA
+5090,459,keinCode,no code,not_known_and_other,3399000000,0,DE_SAA
+5091,570,keinCode,no code,not_known_and_other,3399000000,0,DE_SAA
+5092,443,keinCode,no code,not_known_and_other,3399000000,0,DE_SAA
+5093,980,keinCode,no code,not_known_and_other,3399000000,0,DE_SAA
+5094,821,Kern- und Steinobst,Pome and stone fruit,orchards_fruits,3303010000,0,DE_SAA
+5095,825,"Kernobst z.B. Äpfel, Birnen",Pome fruit e.g. apples,orchards_fruits,3303010000,0,DE_SAA
+5096,815,"Kernobst, z.B. Äpfel, Birnen","Pome fruit, e.g. apples, pears",orchards_fruits,3303010000,0,DE_SAA
+5097,421,Klee,clover,clover,3301090303,0,DE_SAA
+5098,426,"Klee (nicht stickstoffbindend, nicht ÖVF, z.B. Bockshornklee)","Clover (not nitrogen-binding, not EFA, e.g. fenugreek)",clover,3301090303,0,DE_SAA
+5099,913,Klee- oder Luzernesamenvermehrung,Clover or alfalfa seed propagation,legumes_harvested_green,3301090300,0,DE_SAA
+5100,422,Kleegras,Clover grass,clover_grass_mix,3301090501,1,DE_SAA
+5101,425,Klee-Luzerne-Gemisch,Clover and alfalfa mixture,legumes_harvested_green,3301090300,3,DE_SAA
+5102,432,"Kleemischung aus NC 421, 427, 431 (n-bindend)","Clover mixture of NC 421, 427, 431 (n-bonding)",clover,3301090303,0,DE_SAA
+5103,171,Körnermais,Grain corn,grain_maize_corn_popcorn,3301010600,0,DE_SAA
+5104,171,Körnermais (Mais ohne Silomais),Grain corn (corn without silage corn),grain_maize_corn_popcorn,3301010600,0,DE_SAA
+5105,650,Küchenkräuter/Heil-und Gewürzpflanzen,Culinary herbs/medicinal and spice plants,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_SAA
+5106,999,"Kultur einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt",Culture of a genus/species not listed in the current list,not_known_and_other,3399000000,0,DE_SAA
+5107,841,KUP lt. Direktzahlungendurchführungsverordnung,Short rotation coppice according to Direct Payments Implementation Ordinance,short_rotation_coppice,3306090000,0,DE_SAA
+5108,841,KUP lt. Direktzahlungendurchführungsverordnung (keine ÖVF),Short rotation coppice  according to the Direct Payments Implementation Regulation (no EFA),short_rotation_coppice,3306090000,0,DE_SAA
+5109,59,KuP ÖVF,Short rotation coppice EFA,short_rotation_coppice,3306090000,0,DE_SAA
+5110,637,"Lattich (Garten-Salat/Lattich, Lollo Rosso, Romana-","Lettuce (Garden Lettuce/Lettuce, Lollo Rosso, Romaine",salads_lettuce_leaf_vegetables,3301310000,0,DE_SAA
+5111,637,"Lattich (Garten-Salat/Lattich, Lollo Rosso, Romana-Salat/Römischer Salat)","Lettuce (Garden Lettuce/Lettuce, Lollo Rosso, Romaine Lettuce/Roman Lettuce)",salads_lettuce_leaf_vegetables,3301310000,0,DE_SAA
+5112,60,Leguminosen ÖVF,Legumes EFA,legumes_harvested_green,3301090300,0,DE_SAA
+5113,341,"Lein (Gemeiner Lein, Flachs)",Flax (common flax),flax_linseed,3301060700,0,DE_SAA
+5114,393,Leindotter,Camelina,camelina,3301061500,0,DE_SAA
+5115,292,Linsen,lentils,lentils,3301020500,0,DE_SAA
+5116,292,Linsen (Speise-Linse),Lentils (food lentil),lentils,3301020500,0,DE_SAA
+5117,684,Löwenzahn,dandelion,dandelions,3301081400,0,DE_SAA
+5118,230,"Lupinen (Süßlupine, weiße Lupine, blaue/schmalblättrige Lupine,","Lupins (sweet lupine, white lupine, blue/narrow-leaved lupine,",sweet_lupins,3301020700,0,DE_SAA
+5119,230,"Lupinen (Süßlupine, weiße Lupine, blaue/schmalblättrige Lupine, gelbe Lupine, Anden-Lupine)","Lupins (sweet lupine, white lupine, blue/narrow-leaved lupine, yellow lupine, Andean lupine)",sweet_lupins,3301020700,0,DE_SAA
+5120,423,Luzerne,alfalfa,alfalfa_lucerne,3301090301,0,DE_SAA
+5121,433,Luzerne-Gras,Alfalfa grass/Alfalfa-grass mixture,alfalfa_grass_mix,3301090509,1,DE_SAA
+5122,452,Mähweiden,Mowing pastures,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5123,442,Mähweiden (Grünlandneueinsaat im Rahmen von AUKM),Mown pastures (grassland reseeding within the framework of AUKM (Agri-environmental and climate measures)),pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5124,686,Malven (Wilde Malve),Mallow (Wild Mallow),malva,3301082800,0,DE_SAA
+5125,639,"Mangold, Rote Beete/Rote Rübe","Swiss chard, beetroot",chard,3301310100,3,DE_SAA
+5126,682,Mariendisteln,Milk thistles,marian_thistles,3301061300,0,DE_SAA
+5127,631,Melone (Citrullus) (Wassermelone),Melon (Citrullus) (Watermelon),watermelon,3301140500,0,DE_SAA
+5128,63,Miscanthus  ÖVF,Miscanthus EFA,miscanthus_silvergrass,3301083000,0,DE_SAA
+5129,51,Mischkulturen in Reihenanbau,Mixed crops in rows,mixed_row_cropping,3301321300,2,DE_SAA
+5130,50,Mischkulturen mit Saatgutmischung,Mixed crops with seed mixture,mixed_cropping,3301320000,1,DE_SAA
+5131,706,"Mohn (Schlafmohn, Backmohn)",Poppy seeds,poppy,3301060600,0,DE_SAA
+5132,634,"Möhre (Möhre/Karotte, Futtermöhre)",Carrot (carrot / carrot/Carrot (also feeding carrot),carrots_daucus,3301290300,0,DE_SAA
+5133,757,Montbretien (Garten-Montbretie),Montbretien (Garden Montbretia),flowers_ornamental_plants,3301080000,0,DE_SAA
+5134,564,nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013 aufgeforstete Flächen,afforested areas according to VO 1257/1999 or VO (EC) No. 1698/2005 or VO 1305/2013,afforestation_reforestation,3306010000,0,DE_SAA
+5135,762,Nachtkerzen (Diptam),evening primrose (gas plant),primrose,3301083500,0,DE_SAA
+5136,727,Narzissen / Osterglocken,Daffodils / daffodils,narcissus_daffodil,3301083300,0,DE_SAA
+5137,992,Nicht landwirt. Flächen in folge Genehmigung DGL Umwandlung,Non-agricultural areas due to authorized grassland conversion,not_known_and_other,3399000000,0,DE_SAA
+5138,992,Nicht landwirtschaftliche Flächen infolge Genehmigung Dauergrünland-Umwandlung,Non-agricultural areas as a result of approval for permanent grassland conversion,not_known_and_other,3399000000,0,DE_SAA
+5139,583,"Nicht landwirtschaftliche, aber nach Art. 32(2b (i)) der VO (EG) Nr. 1307/2013 beihilfefähige Fläche","Non-agricultural area, but eligible for aid under Article 32(2b (i)) of Regulation (EC) No. 1307/2013",environmental_protection,3311000000,0,DE_SAA
+5140,390,"Ölfrucht einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Oil fruit of a genus/species not included in the current list,oilseed_crops,3301060800,0,DE_SAA
+5141,643,Pastinaken,Parsnips,parsnips,3301290500,0,DE_SAA
+5142,659,Petroselinum (Petersilie),Petroselinum (parsley),parsley,3301061227,0,DE_SAA
+5143,342,"Pflanzen zur Fasergewinnung (z.B. Faserflachs, Kenaf)","Plants for fiber production (e.g. fiber flax, kenaf)",fibre_crops,3301061100,0,DE_SAA
+5144,777,Phacelia  als Hauptkultur,Phacelia as the main crop,phacelia,3301061400,0,DE_SAA
+5145,212,Platterbse,Flat pea,lathyrus_peavine,3301020800,0,DE_SAA
+5146,56,Pufferstreifen ÖVF AL,Buffer strip EFA arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5147,57,Pufferstreifen ÖVF DGL,Buffer strips ecological preferance zones permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5148,187,Quinoa,Quinoa,quinoa,3301150300,0,DE_SAA
+5149,850,Rebland,Vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_SAA
+5150,842,Rebland,Vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_SAA
+5151,851,Rhabarber,rhubarb,rhubarb,3301230000,0,DE_SAA
+5152,629,"Riesenkürbis (Riesenkürbis, Hokkaidokürbis)",Giant Pumpkin (Giant Pumpkin/Giant pumpkin (also Hokkaido),pumpkin_squash_gourd,3301140400,0,DE_SAA
+5153,629,"Riesenkürbis (Risenkürbis, Hokkaidokürbis)","Giant pumpkin (Rise pumpkin, Hokkaido pumpkin)",pumpkin_squash_gourd,3301140400,0,DE_SAA
+5154,853,Riesenweizengras/Szarvasi-Gras,Giant wheat grass / Szarvasi grass,poaceae_grasses,3301090200,0,DE_SAA
+5155,181,Rispenhirse (Panicum),Panicle millet (Panicum),millet_sorghum,3301010900,0,DE_SAA
+5156,627,"Salatgurke (Gurke, Salatgurke, Einlegegurke)","Cucumber (cucumber, cucumber, pickle)",cucumber_pickle,3301140100,0,DE_SAA
+5157,928,Saum- und Bandstrukturen,Hem and band structures,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5158,656,"Schwarzkümmel (Echter Schwarzkümmel, Jungfer im Grünen)",Black cumin (real black cumin,black_cumin,3301061208,0,DE_SAA
+5159,641,"Sellerie (Knollen-Sellerie, Bleich-Sellerie, Stangen-Sellerie)","Celery (tuber celery, white celery, stalk celery)",celery,3301250000,0,DE_SAA
+5160,430,Serradella,serradella,serradella,3301084200,0,DE_SAA
+5161,804,Sida (Virginiamalve),Sida (Virginia Mallow),sida_virginia_mallow,3304030000,0,DE_SAA
+5162,411,Silomais (als Hauptfutter),Silage maize (as staple feed),green_silo_maize,3301090400,0,DE_SAA
+5163,802,"Silphium (Durchwachsene Silphie, Becherpflanze)",Silphium (streaky Silphie/Silphium (through-growth,silphium_rosinweeds,3301084400,0,DE_SAA
+5164,330,Sojabohnen,Soybeans,soy_soybeans,3301160000,0,DE_SAA
+5165,120,Sommer-Dinkel,Summer spelt,spring_spelt,3301011002,0,DE_SAA
+5166,119,Sommer-Emmer/ -Einkorn,Summer emmer / single grain,spring_emmer,3301011202,3,DE_SAA
+5167,132,Sommergerste,Summer barley,spring_barley,3301010402,0,DE_SAA
+5168,143,Sommerhafer,Summer oats,spring_oats,3301010502,0,DE_SAA
+5169,113,Sommerhartweizen/Durum,Spring durum wheat/durum,spring_durum_hard_wheat,3301010202,0,DE_SAA
+5170,144,Sommermenggetreide,Summer mixed grain,spring_meslin,3301011102,7,DE_SAA
+5171,145,Sommermenggetreide ohne Weizen,Spring meslin without wheat,spring_meslin,3301011102,7,DE_SAA
+5172,312,Sommerraps,Summer rape,spring_rapeseed_rape,3301060402,0,DE_SAA
+5173,122,Sommerroggen,Summer rye,spring_rye,3301010302,0,DE_SAA
+5174,316,"Sommerrübsen (Rübsen, Rübsamen, Rübsaat)","Summer turnips (turnips, turnip seeds, turnip seeds)",spring_turnip_rape,3301210702,0,DE_SAA
+5175,157,Sommertriticale,Summer triticale,spring_triticale,3301010802,0,DE_SAA
+5176,116,Sommerweichweizen,summer wheat/Summer soft wheat,spring_common_soft_wheat,3301010102,0,DE_SAA
+5177,320,Sonnenblumen,sunflowers,sunflower,3301060500,0,DE_SAA
+5178,814,sonst. Obstanlagen in Vollanbau,other orchards in full cultivation,orchards_fruits,3303010000,0,DE_SAA
+5179,837,"sonst. Steinobst (ohne Kirschen, Pflaumen)",otherwise stone fruit (without cherries,orchards_fruits,3303010000,0,DE_SAA
+5180,890,sonstige Dauerkulturen,other permanent crops,permanent_crops_perennial,3303000000,0,DE_SAA
+5181,982,Sonstige KUP,Other short rotation plantations,short_rotation_coppice,3306090000,0,DE_SAA
+5182,819,sonstige Obstanlagen,other orchards,orchards_fruits,3303010000,0,DE_SAA
+5183,829,"Sonstige Obstanlagen z.B. Holunder, Aronia, Maulbeeren",Other orchards e.g. elderberries,orchards_fruits,3303010000,0,DE_SAA
+5184,829,"Sonstige Obstanlagen z.B. Holunder, Sanddorn","Other fruit plants e.g. elderberry, sea buckthorn",orchards_fruits,3303010000,0,DE_SAA
+5185,897,Sonstige Pflanzen für energetische Verwertung(ab 2012),other plants for energy use (since 2012),energy_crops,3304010000,0,DE_SAA
+5186,835,sonstige Schalenfrüchte,other nuts,nuts,3303030000,0,DE_SAA
+5187,183,Sorghumhirse (Körnersorghum),Sorghum millet (grain sorghum),millet_sorghum,3301010900,0,DE_SAA
+5188,993,"Sozial-, Schwarzbrache/Brachflächen","Social, brownfield/fallow land",fallow_land_not_crop,3301110000,0,DE_SAA
+5189,860,Spargel,asparagus,asparagus,3301200000,0,DE_SAA
+5190,715,Spargel (Freiland),Asparagus (outdoor),asparagus,3301200000,0,DE_SAA
+5191,601,Stärkekartoffeln,Starch potatoes and other potatoes,potatoes,3301030000,0,DE_SAA
+5192,620,"Steckrübe, Kohlrübe","Turnip, swede",swede_rutabaga,3301210500,0,DE_SAA
+5193,826,"Steinobst, z. B. Kirschen, Pflaumen","Stone fruit e.g. cherries, plums",orchards_fruits,3303010000,0,DE_SAA
+5194,816,"Steinobst, z. B. Kirschen, Pflaumen","Stone fruit e.g. cherries, plums",orchards_fruits,3303010000,0,DE_SAA
+5195,545,Stilllegung nach FELEG/GAL/ALG,Decommissioning according to FELEG/GAUarable landG,fallow_land_not_crop,3301110000,0,DE_SAA
+5196,54,Streifen am Waldrand (ohne Produktion) ÖVF,Strip at the edge of the forest (without production) EFA,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5197,822,Streuobst ohne Wiesennutzung (keine AUKM),Orchard fruit without meadow use (no AUKM),orchards_fruits,3303010000,0,DE_SAA
+5198,812,Streuobstfläche (OHNE Wiesennutzung),Orchard area (WITHOUT meadow use),orchards_fruits,3303010000,0,DE_SAA
+5199,480,Streuobstfläche mit Grünlandnutzung,Orchards with grassland use/Orchards with Permanent grassland use,orchards_fruits,3303010000,8,DE_SAA
+5200,480,Streuobstfläche mit Grünlandnutzung (keine AUKM),Orchard area with grassland use (no AUKM),orchards_fruits,3303010000,8,DE_SAA
+5201,481,Streuobstfläche ohne Grünlandnutzung,Orchard area without grassland use,orchards_fruits,3303010000,0,DE_SAA
+5202,803,Sudangras,Sudan grass,millet_sorghum,3301010900,0,DE_SAA
+5203,848,Tafeltrauben,Table grapes,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_SAA
+5204,622,Tomaten,tomatoes,tomato,3301280000,0,DE_SAA
+5205,604,Topinambur,Topinambur,topinambur_jerusalem_artichoke,3301180000,0,DE_SAA
+5206,155,Triticale,Triticale,triticale,3301010800,0,DE_SAA
+5207,75,"Tümpel, Sölle, Dolinen und sonst. Feuchtgebiete (vgl.007 )","Pools, pits, sinkholes and other wetlands (see 007)",wetlands,3310400000,0,DE_SAA
+5208,55,Ufervegetation ÖVF,Riparian vegetation EFA,wetland_buffers,3310700000,0,DE_SAA
+5209,996,"Unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf AL","Unpaved storage (straw, feed, manure) on arable land",not_known_and_other,3399000000,0,DE_SAA
+5210,994,"Unbefestigte Mieten-, Stroh-, Futter und Dunglagerplätze auf DGL","Unpaved storage (straw, feed, manure) on permanent grassland",not_known_and_other,3399000000,0,DE_SAA
+5211,846,Unterlagsrebfläche,Vineyard area,vineyards_wine_vine_rebland_grapes,3303060000,0,DE_SAA
+5212,776,"Veilchen (Horn-Veilchen, Garten-Stiefmütterchen, Wildes","Violets (horn violets, garden pansies, wild",violets_pansies,3301085100,0,DE_SAA
+5213,770,Vergissmeinnicht (Wald-Vergissmeinnicht),forget-me-not (forest forget-me-not),flowers_ornamental_plants,3301080000,0,DE_SAA
+5214,994,"vorübergehend unbefestigte Mieten-, Stroh-, Futter oder Dunglagerplätze auf DGL","Temporarily unpaved heap, straw, fodder or manure storage areas on permanent grassland",not_known_and_other,3399000000,0,DE_SAA
+5215,996,"vorübergehende, unbefestigte Mieten-, Stroh-, Futter oder Dunglagerplätze auf AL","temporary, unpaved heap, straw, fodder or manure storage areas on arable land",not_known_and_other,3399000000,0,DE_SAA
+5216,834,Walnüsse,Walnuts,walnuts,3303030600,0,DE_SAA
+5217,443,Weiden (Grünlandneueinsaat im Rahmen von AUKM),Pastures (grassland reseeding within the framework of AUKM (Agri-environmental and climate measures)),pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5218,453,Weiden und Almen,Pastures and alpine pastures,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5219,983,Weihnachtsbäume,Christmas trees,christmas_trees,3306100000,0,DE_SAA
+5220,619,Weißer Senf,White mustard,mustard,3301210100,0,DE_SAA
+5221,619,"Weißer Senf, Gelber Senf",White mustard,mustard,3301210100,0,DE_SAA
+5222,291,Wicken (auch Saatwicken),Vetches (also seed vetches),vetches,3301090305,0,DE_SAA
+5223,221,"Wicken (Pannonische, Zottelwicke, Saatwicke)","Vetches (Pannonian, shaggy vetch, seed vetch)",vetches,3301090305,0,DE_SAA
+5224,451,Wiesen,grasslands,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5225,441,Wiesen (Grünlandneueinsaat im Rahmen von AUKM),Meadows (grassland reseeding under AUKM (Agri-environmental and climate measures)),pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5226,910,Wildäsungsfläche,Game grazing area,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5227,118,Winter-Emmer/ -Einkorn,Winter emmer/einkorn,winter_emmer,3301011201,3,DE_SAA
+5228,131,Wintergerste,Winter barley,winter_barley,3301010401,0,DE_SAA
+5229,142,Winterhafer,Winter oats,winter_oats,3301010501,0,DE_SAA
+5230,112,Winterhartweizen/Durum,Hard winter wheat/durum,winter_durum_hard_wheat,3301010201,0,DE_SAA
+5231,125,Wintermenggetreide,Winter mixed grain,winter_meslin,3301011101,7,DE_SAA
+5232,311,Winterraps,Winter rape,winter_rapeseed_rape,3301060401,0,DE_SAA
+5233,121,Winterroggen,Winter rye,winter_rye,3301010301,0,DE_SAA
+5234,315,"Winterrübsen (Rübsen, Rübsamen, Rübsaat)",Winter turnip (oil radish/Winter turnip rape (also rapeseed),winter_turnip_rape,3301210701,0,DE_SAA
+5235,156,Wintertriticale,Winter triticale,winter_triticale,3301010801,0,DE_SAA
+5236,115,Winterweichweizen,Winter soft wheat,winter_common_soft_wheat,3301010101,0,DE_SAA
+5237,755,Wolfsmilch,Spurge,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_SAA
+5238,755,Wolfsmilch (Weißrand-Wolfsmilch),Spurge (white-rimmed spurge),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_SAA
+5239,740,Wucherblumen (Mutterkraut),speedwell (feverfew),flowers_ornamental_plants,3301080000,0,DE_SAA
+5240,644,"Zichorien/Wegwarten (Chicoree, Radiccio, krausblättrige Endivie,","Chicory / chicory (chicory, radicchio, curly-leaved endive,",chicory_chicories,3301310200,0,DE_SAA
+5241,720,Zierpflanzen,ornamental plants,flowers_ornamental_plants,3301080000,0,DE_SAA
+5242,628,Zuckermelone (cucumis melo),Sugar melon (cucumis melo),melon,3301140300,0,DE_SAA
+5243,603,Zuckerrüben,Sugar beet,sugar_beet,3301290700,0,DE_SAA
+5244,999,"Ackerkultur einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Arable crops of a genus/species that are not included in the current list,other_arable_land_crops,3301990000,0,DE_SAA
+5245,591,Ackerland aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO 1307/2013,Arable land removed from production iSd. Art. 4 Paragraph 1 Letter c) ii) Regulation 1307/2013,fallow_land_not_crop,3301110000,0,DE_SAA
+5246,915,Ackerrandstreifen und Blühflächen,Field margins and flower strips,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5247,633,Allium/Lauch,Allium / leek (onion,alliums,3301220000,0,DE_SAA
+5248,186,"Amarant, Fuchsschwanz",amaranth,amaranth,3301150100,0,DE_SAA
+5249,610,beetweiser Anbau von Gemüse,vegetables,fresh_vegetables,3301070000,0,DE_SAA
+5250,720,beetweiser Anbau Zierpflanzen,Ornamental plants (including flowers to pick yourself),flowers_ornamental_plants,3301080000,0,DE_SAA
+5251,575,Blühfläche (AUKM-Maßnahme),Flowering area (AUKM (Agri-environmental and climate measures) measure),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5252,575,Blühfläche (MSL-Maßnahme),flowering area (MSL measure),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5253,426,"Bockshornklee, Schabziger Klee","Fenugreek, Schabzig clover",fenugreek,3301020400,0,DE_SAA
+5254,663,Borretsch,borage,borage,3301061209,0,DE_SAA
+5255,614,Brauner Senf/Sareptasenf,Brown mustard/sarepta mustard,mustard,3301210100,0,DE_SAA
+5256,592,Dauergrünland aus der Erzeugung genommen iSd. Art. 4 Abs. 1 Buchst. c) ii) VO 1307/2013,Permanent grassland removed from production iSd. Art. 4 Paragraph 1 Letter c) ii) Regulation 1307/2013,pasture_meadow_grassland_grass,3302000000,0,DE_SAA
+5257,593,Dauerkulturen aus der Erzeugung genommen,Permanent crops taken out of production,fallow_land_not_crop,3301110000,0,DE_SAA
+5258,651,"Dill, Gurkenkraut",Dill/Anethum (dill,anethum_dill,3301061203,0,DE_SAA
+5259,210,"Erbsen (Markerbse, Schalerbse, Zuckererbse, Futtererbse, Peluschke)","Peas (marrow peas, shell peas, sugar peas, field peas, peas)",peas,3301020600,0,DE_SAA
+5260,708,Färberdisteln,Safflower,safflower,3301083900,0,DE_SAA
+5261,9,Feldraine,Field margins,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5262,58,Feldrand / Pufferstreifen ÖVF AL,Field edge / buffer strip EFA arable land,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5263,57,Feldrand / Pufferstreifen ÖVF DGL,Field edge / buffer strip EFA permanent grassland,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5264,429,"Futterpflanze einer Gattung/Art, die in der aktuellen Liste nicht aufgeführt ist",Forage plant of a genus/species that is not included in the current list,other_plants_harvested_green,3301099900,0,DE_SAA
+5265,723,Garten-/Sommerlevkoje,Garden/summer lecoy,flowers_ornamental_plants,3301080000,0,DE_SAA
+5266,630,Gartenkürbis,Garden pumpkin,pumpkin_squash_gourd,3301140400,0,DE_SAA
+5267,630,"Gartenkürbis (Gartenkürbis, Steirischer Kürbis, Zucchini, Spaghettikürbis, Zierkürbis)","Garden pumpkin (pumpkin, Styrian, zucchini, spaghetti, ornamental)",pumpkin_squash_gourd,3301140400,0,DE_SAA
+5268,618,Gartenrettiche,Garden radishes (white / red radishes,radish,3301290600,0,DE_SAA
+5269,250,Gemenge Leguminose/Getreide (Leguminose überwiegt),Mixture of legumes / grain,cereal_legume_mix,3301091200,1,DE_SAA
+5270,613,"Gemüsekohl (Kopfkohl, Wirsing, Rot-/Weißkohl, Spitzkohl, Grünkohl, Kohlrabi, Markstammkohl, Blumenkohl, Romanesco, Brokkoli, Rosenkohl, Zierkohl)","Vegetable cabbage (head cabbage, savoy cabbage, red/white cabbage, pointed cabbage, kale, kohlrabi, marrow stem cabbage, cauliflower, Romanesco, broccoli, Brussels sprouts, ornamental cabbage)",brassica_oleracea_cabbage,3301210200,0,DE_SAA
+5271,745,Gladiolen,Gladioli,gladiolus_gladioli,3301082100,0,DE_SAA
+5272,434,Gras-Leguminosen Gemisch (Leguminosen überwiegt),Grass-legume mixture,legume_grass_mix,3301090500,1,DE_SAA
+5273,602,Kartoffeln (Speise),Potatoes (food)/potatoes,potatoes,3301030000,0,DE_SAA
+5274,645,Kichererbsen,Chickpeas,chickpeas,3301020200,0,DE_SAA
+5275,432,"Kleemischung aus NC 421, 427, 431 (stickstoffbindend)",Clover mixture from NC 421/Clover mixture (or box horn clover),clover,3301090303,7,DE_SAA
+5276,841,KUP lt. GAPDZV,Short rotation plantations/Short rotation coppice,short_rotation_coppice,3306090000,0,DE_SAA
+5277,633,"Lauch (Speise-Zwiebel, Schalotte, Lauch, Knoblauch, Schnittlauch, Winterheckenzwiebel, Bärlauch)","Onion/leek (onion, shallot, leek, garlic, chives, bunching onion, wild garlic)",alliums,3301220000,0,DE_SAA
+5278,341,"Lein, Flachs",Flax/Flax (flax linseed),flax_linseed,3301060700,0,DE_SAA
+5279,222,Linsen,lentils,lentils,3301020500,0,DE_SAA
+5280,230,Lupinen,Lupins,sweet_lupins,3301020700,0,DE_SAA
+5281,423,"Luzerne, Hopfenklee/Gelbklee, Bastardluzerne/Sandluzerne",alfalfa,legumes_harvested_green,3301090300,0,DE_SAA
+5282,171,Mais (ohne Silomais NC 411),Corn without silage maize,grain_maize_corn_popcorn,3301010600,0,DE_SAA
+5283,918,Mehrjährige Blühstreifen und Blühflächen,Perennial flower strips or flower areas (only to be used for areas with AUM-BS 2),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5284,631,Melone  (Wassermelone),Melon (watermelon),watermelon,3301140500,0,DE_SAA
+5285,672,"Minzen (Pfefferminze, Grüne Minze)",Mints (peppermint,mints_peppermint,3301061222,0,DE_SAA
+5286,917,Mischkulturen,mixed crops,mixed_cropping,3301320000,1,DE_SAA
+5287,183,Mohren-/Zuckerhirse (ohne Sudangras NC 803),Sorghum,millet_sorghum,3301010900,0,DE_SAA
+5288,763,Nachtkerzen (Oenothera),evening primroses,primrose,3301083500,0,DE_SAA
+5289,583,"Nicht landwirtschaftliche, aber nach Art. 32(2b (i)) der VO (EG) Nr. 1307/2013 beihilfefähige Fläche (Naturschutzflächen, die 2008 noch beihilfefähig waren)","Non-agricultural area, but eligible for aid in accordance with Article 32(2b (i)) of Regulation (EC) No. 1307/2013 (nature conservation areas that were still eligible for aid in 2008)",environmental_protection,3311000000,0,DE_SAA
+5290,659,Petersilie,parsley/Petroselinum (parsley),parsley,3301061227,0,DE_SAA
+5291,777,Phacelia (als Hauptkultur z.B. Saatgutvermehrung),Phacelia (as main culture e.g. seed propagation)/Phacelia,phacelia,3301061400,0,DE_SAA
+5292,853,Riesenweizengras/Szarvasi-Gras/Hirschgras,Giant wheat grass / Szarvasi grass / deer grass/Giant wheat grass / Szarvasi grass,poaceae_grasses,3301090200,0,DE_SAA
+5293,181,Rispenhirse,Millet/Millet (Panicum),millet_sorghum,3301010900,0,DE_SAA
+5294,120,Roggen,rye,rye,3301010300,0,DE_SAA
+5295,661,Rosmarin,rosemary,rosemary,3301061230,0,DE_SAA
+5296,421,Rot-/Weiß-/Alexandriner-/Inkarnat-/Erd-/Schweden-/Persischer Klee,Red/white/Alexandrian/crimson/earth/Swedish/Persian clover,clover,3301090303,0,DE_SAA
+5297,113,Sommerdurum  (Hartweizen),Summer durum wheat / durum,spring_durum_hard_wheat,3301010202,0,DE_SAA
+5298,119,Sommer-Emmer/-Einkorn,Summer emmer / single grain/Summer emmer / Einkorn,spring_emmer,3301011202,3,DE_SAA
+5299,122,"Sommerroggen, Sommer-Waldstaudenroggen",Summer rye,spring_rye,3301010302,0,DE_SAA
+5300,431,Steinklee,Sweet clover,melilot,3301090304,0,DE_SAA
+5301,822,Streuobst (ohne Wiesennutzung),Orchards as crop cultivation (without meadow use)/Orchards (without meadow use),orchards_fruits,3303010000,0,DE_SAA
+5302,804,Virginiamalve,Sida (Virginia Mallow),sida_virginia_mallow,3304030000,0,DE_SAA
+5303,996,"Vorübergehende, unbefestigte Mieten, Stroh-, Futter oder Dunglagerplätze auf AL","Temporary unpaved heaps, straw/fodder/manure storage on arable land",not_known_and_other,3399000000,0,DE_SAA
+5304,994,"Vorübergehende, unbefestigte Mieten, Stroh-, Futter- oder Dunglagerplätze auf DGL","Temporary unpaved heaps, straw/fodder/manure storage on grassland",not_known_and_other,3399000000,0,DE_SAA
+5305,676,Wegeriche (Spitzwegerich),Plantain (ribwort),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,DE_SAA
+5306,221,"Wicken (Pannonische Wicke, Zottelwicke, Saatwicke)","Vetches (Pannonian, shaggy vetch, seed vetch)",vetches,3301090305,0,DE_SAA
+5307,768,"Wiesenknopf (Kleiner Wiesenknopf, Pimpinelle)",salad burnet (pimpinella),burnet,3301080700,0,DE_SAA
+5308,871,Wildpflanzenmischung zur Energieerzeugung,Wild plant mixture for energy production,environmental_protection,3311000000,0,DE_SAA
+5309,114,Winter-Dinkel,Winter spelt,winter_spelt,3301011001,0,DE_SAA
+5310,112,Winterdurum (Hartweizen),Winter hard wheat / durum,winter_durum_hard_wheat,3301010201,0,DE_SAA
+5311,118,Winter-Emmer/-Einkorn,Winter emmer / single grain/Winter emmer / Einkorn,winter_emmer,3301011201,3,DE_SAA
+5312,126,Wintermenggetreide ohne Weizen,Winter meslin without wheat,winter_meslin,3301011101,7,DE_SAA
+5313,121,"Winterroggen, Winter-Waldstaudenroggen",Winter rye,winter_rye,3301010301,0,DE_SAA
+5314,628,Zuckermelone,cantaloupe,melon,3301140300,0,DE_SAA
+5315,992,"Abbau-, Öd-, Un-, Geringstland","Degraded, wasteland, uncultivated, marginal land",fallow_land_not_crop,3301110000,0,DE_SAA
+5316,915,Ackerrandstreifen und Blühflächen (keine ÖVF  keine AUKM),Field margins and flowering areas (no EFA no AECM),field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5317,918,Artenreiche Kulturlandschaft (AUKM),Species-rich cultivated landscape (AECM),fallow_land_not_crop,3301110000,0,DE_SAA
+5318,564,"aufgeforstete Flächen (VO1257/1999, 1698/2005, 1305/2013)","Afforested areas (Reg. 1257/1999, 1698/2005, 1305/2013)",afforestation_reforestation,3306010000,0,DE_SAA
+5319,6,Baumreihen,Rows of trees,tree_lines,3310300000,0,DE_SAA
+5320,426,"Bockshornklee, Schabzigerklee","Fenugreek, blue fenugreek",fenugreek,3301020400,3,DE_SAA
+5321,590,Brache mit  Einsaat von einjährigen Blühmischungen,Fallow with sowing of annual flowering mixtures,fallow_land_not_crop,3301110000,0,DE_SAA
+5322,750,Dahlien,Dahlias,dahlia,3301081200,0,DE_SAA
+5323,11,Einzelbäume als Naturdenkmal,Individual trees as natural monument,tree_lines,3310300000,0,DE_SAA
+5324,12,Feldgehölze,Field shrubs,tree_lines,3310300000,0,DE_SAA
+5325,15,Feldrain,Field margin,field_margins_buffer_strips_flowering_areas,3310100000,0,DE_SAA
+5326,14,"Fels- und Steinriegel, naturversteinte Flächen","Rock and stone ridges, naturally stony areas",stone_walls,3310600000,0,DE_SAA
+5327,7,"Feuchtgebiete, Biotope","Wetlands, biotopes",wetlands,3310400000,0,DE_SAA
+5328,613,Gemüsekohl,Vegetable cabbage,brassica_oleracea_cabbage,3301210200,0,DE_SAA
+5329,2,Hecken oder Knicks,Hedges or hedgerows,hedges,3310200000,0,DE_SAA
+5330,8,"Hecken,...........","Hedges,...........",hedges,3310200000,0,DE_SAA
+5331,594,Honigpflanzen genutzte brachliegende Flächen (pollen- und nektarreiche Arten) -einjährig,Fallow land used with honey plants (pollen- and nectar-rich species) - annual,fallow_land_not_crop,3301110000,0,DE_SAA
+5332,595,Honigpflanzen genutzte brachliegende Flächen (pollen- und nektarreiche Arten) -mehrjährig,Fallow land used with honey plants (pollen- and nectar-rich species) - perennial,fallow_land_not_crop,3301110000,0,DE_SAA
+5333,999,"Kultur einer Gattung/Art, nicht in Liste",Crop of a genus/species not in list,other_arable_land_crops,3301990000,0,DE_SAA
+5334,757,Montbretien,Montbretia,flowers_ornamental_plants,3301080000,0,DE_SAA
+5335,583,"N. LNF, n. Art. 32(2b(i)) der VO(EG) Nr.1307/2013 beihilfef. Fl.","N. LNF, under Art. 32(2b(i)) of Reg (EC) No.1307/2013 eligible area",environmental_protection,3311000000,0,DE_SAA
+5336,585,"Nicht landwirtschaftliche, aber nach (11 (1) Nr.3 Bst. a) bb) der GAPDZV förderfähige Fläche (Infolge Anwendung der Wasserrahmenrichtlinie)",Non-agricultural but eligible area under 11 (1) no. 3 letter a) bb) of the GAPDZV (as a result of application of the Water Framework Directive),environmental_protection,3311000000,0,DE_SAA
+5337,583,"Nicht landwirtschaftliche, aber nach §11 (1) Nr.3 Bst. d der GAPDZV förderfähige Fläche (Stilllegungsverpflichtung nach VO 1257/1999 oder VO (EG) Nr. 1698/2005 oder VO 1305/2013 oder VO 2021/2115)",Non-agricultural but eligible area under §11 (1) no. 3 letter d of the GAPDZV (set-aside obligation under Reg. 1257/1999 or Reg. (EC) No. 1698/2005 or Reg. 1305/2013 or Reg. 2021/2115),environmental_protection,3311000000,0,DE_SAA
+5338,625,Schwarze Tollkirsche,Deadly nightshade,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,DE_SAA
+5339,10,Trocken- u. Natursteinmauern sowie Lesesteinwälle,Dry and natural stone walls as well as stone heaps,stone_walls,3310600000,0,DE_SAA
+5340,13,"Tümpel, Sölle, Dolinen und sonst. Feuchtgebiete","Ponds, kettle holes, sinkholes and other wetlands",wetlands,3310400000,0,DE_SAA
+5341,451,,,not_known_and_other,3399000000,0,DE_SAA
+5342,453,,,not_known_and_other,3399000000,0,DE_SAA
+5343,452,,,not_known_and_other,3399000000,0,DE_SAA
+5344,422,,,not_known_and_other,3399000000,0,DE_SAA
+5345,941,,,not_known_and_other,3399000000,0,DE_SAA
+5346,121,,,not_known_and_other,3399000000,0,DE_SAA
+5347,311,,,not_known_and_other,3399000000,0,DE_SAA
+5348,411,,,not_known_and_other,3399000000,0,DE_SAA
+5349,575,,,not_known_and_other,3399000000,0,DE_SAA
+5350,115,,,not_known_and_other,3399000000,0,DE_SAA
+5351,156,,,not_known_and_other,3399000000,0,DE_SAA
+5352,424,,,not_known_and_other,3399000000,0,DE_SAA
+5353,143,,,not_known_and_other,3399000000,0,DE_SAA
+5354,592,,,not_known_and_other,3399000000,0,DE_SAA
+5355,157,,,not_known_and_other,3399000000,0,DE_SAA
+5356,132,,,not_known_and_other,3399000000,0,DE_SAA
+5357,910,,,not_known_and_other,3399000000,0,DE_SAA
+5358,131,,,not_known_and_other,3399000000,0,DE_SAA
+5359,116,,,not_known_and_other,3399000000,0,DE_SAA
+5360,112,,,not_known_and_other,3399000000,0,DE_SAA
+5361,602,,,not_known_and_other,3399000000,0,DE_SAA
+5362,454,,,not_known_and_other,3399000000,0,DE_SAA
+5363,423,,,not_known_and_other,3399000000,0,DE_SAA
+5364,590,,,not_known_and_other,3399000000,0,DE_SAA
+5365,444,,,not_known_and_other,3399000000,0,DE_SAA
+5366,591,,,not_known_and_other,3399000000,0,DE_SAA
+5367,114,,,not_known_and_other,3399000000,0,DE_SAA
+5368,915,,,not_known_and_other,3399000000,0,DE_SAA
+5369,142,,,not_known_and_other,3399000000,0,DE_SAA
+5370,619,,,not_known_and_other,3399000000,0,DE_SAA
+5371,240,,,not_known_and_other,3399000000,0,DE_SAA
+5372,421,,,not_known_and_other,3399000000,0,DE_SAA
+5373,480,,,not_known_and_other,3399000000,0,DE_SAA
+5374,315,,,not_known_and_other,3399000000,0,DE_SAA
+5375,320,,,not_known_and_other,3399000000,0,DE_SAA
+5376,171,,,not_known_and_other,3399000000,0,DE_SAA
+5377,144,,,not_known_and_other,3399000000,0,DE_SAA
+5378,145,,,not_known_and_other,3399000000,0,DE_SAA
+5379,125,,,not_known_and_other,3399000000,0,DE_SAA
+5380,610,,,not_known_and_other,3399000000,0,DE_SAA
+5381,633,,,not_known_and_other,3399000000,0,DE_SAA
+5382,413,,,not_known_and_other,3399000000,0,DE_SAA
+5383,684,,,not_known_and_other,3399000000,0,DE_SAA
+5384,330,,,not_known_and_other,3399000000,0,DE_SAA
+5385,630,,,not_known_and_other,3399000000,0,DE_SAA
+5386,842,,,not_known_and_other,3399000000,0,DE_SAA
+5387,433,,,not_known_and_other,3399000000,0,DE_SAA
+5388,637,,,not_known_and_other,3399000000,0,DE_SAA
+5389,853,,,not_known_and_other,3399000000,0,DE_SAA
+5390,629,,,not_known_and_other,3399000000,0,DE_SAA
+5391,860,,,not_known_and_other,3399000000,0,DE_SAA
+5392,210,,,not_known_and_other,3399000000,0,DE_SAA
+5393,983,,,not_known_and_other,3399000000,0,DE_SAA
+5394,55,,,not_known_and_other,3399000000,0,DE_SAA
+5395,825,,,not_known_and_other,3399000000,0,DE_SAA
+5396,182,,,not_known_and_other,3399000000,0,DE_SAA
+5397,656,,,not_known_and_other,3399000000,0,DE_SAA
+5398,701,,,not_known_and_other,3399000000,0,DE_SAA
+5399,341,,,not_known_and_other,3399000000,0,DE_SAA
+5400,682,,,not_known_and_other,3399000000,0,DE_SAA
+5401,920,,,not_known_and_other,3399000000,0,DE_SAA
+5402,594,,,not_known_and_other,3399000000,0,DE_SAA
+5403,996,,,not_known_and_other,3399000000,0,DE_SAA
+5404,250,,,not_known_and_other,3399000000,0,DE_SAA
+5405,425,,,not_known_and_other,3399000000,0,DE_SAA
+5406,851,,,not_known_and_other,3399000000,0,DE_SAA
+5407,613,,,not_known_and_other,3399000000,0,DE_SAA
+5408,802,,,not_known_and_other,3399000000,0,DE_SAA
+5409,442,,,not_known_and_other,3399000000,0,DE_SAA
+5410,994,,,not_known_and_other,3399000000,0,DE_SAA
+5411,706,,,not_known_and_other,3399000000,0,DE_SAA
+5412,822,,,not_known_and_other,3399000000,0,DE_SAA
+5413,995,,,not_known_and_other,3399000000,0,DE_SAA
+5414,745,,,not_known_and_other,3399000000,0,DE_SAA
+5415,707,,,not_known_and_other,3399000000,0,DE_SAA
+5416,441,,,not_known_and_other,3399000000,0,DE_SAA
+5417,595,,,not_known_and_other,3399000000,0,DE_SAA
+5418,58,,,not_known_and_other,3399000000,0,DE_SAA
+5419,852,,,not_known_and_other,3399000000,0,DE_SAA
+5420,614,,,not_known_and_other,3399000000,0,DE_SAA
+5421,804,,,not_known_and_other,3399000000,0,DE_SAA
+5422,740,,,not_known_and_other,3399000000,0,DE_SAA
+5423,220,,,not_known_and_other,3399000000,0,DE_SAA
+5424,230,,,not_known_and_other,3399000000,0,DE_SAA
+5425,183,,,not_known_and_other,3399000000,0,DE_SAA
+5426,826,,,not_known_and_other,3399000000,0,DE_SAA
+5427,620,,,not_known_and_other,3399000000,0,DE_SAA
+5428,928,,,not_known_and_other,3399000000,0,DE_SAA
+5429,604,,,not_known_and_other,3399000000,0,DE_SAA
+5430,122,,,not_known_and_other,3399000000,0,DE_SAA
+5431,393,,,not_known_and_other,3399000000,0,DE_SAA
+5432,829,,,not_known_and_other,3399000000,0,DE_SAA
+5433,583,,,not_known_and_other,3399000000,0,DE_SAA
+5434,911,,,not_known_and_other,3399000000,0,DE_SAA
+5435,848,,,not_known_and_other,3399000000,0,DE_SAA
+5436,113,,,not_known_and_other,3399000000,0,DE_SAA
+5437,999,,,not_known_and_other,3399000000,0,DE_SAA
+5438,618,,,not_known_and_other,3399000000,0,DE_SAA
+5439,659,,,not_known_and_other,3399000000,0,DE_SAA
+5440,650,,,not_known_and_other,3399000000,0,DE_SAA
+5441,777,,,not_known_and_other,3399000000,0,DE_SAA
+5442,54,,,not_known_and_other,3399000000,0,DE_SAA
+5443,720,,,not_known_and_other,3399000000,0,DE_SAA
+5444,838,,,not_known_and_other,3399000000,0,DE_SAA
+5445,631,,,not_known_and_other,3399000000,0,DE_SAA
+5446,834,,,not_known_and_other,3399000000,0,DE_SAA
+5447,634,,,not_known_and_other,3399000000,0,DE_SAA
+5448,622,,,not_known_and_other,3399000000,0,DE_SAA
+5449,312,,,not_known_and_other,3399000000,0,DE_SAA
+5450,762,,,not_known_and_other,3399000000,0,DE_SAA
+5451,186,,,not_known_and_other,3399000000,0,DE_SAA
+5452,841,,,not_known_and_other,3399000000,0,DE_SAA
+5453,827,,,not_known_and_other,3399000000,0,DE_SAA
+5454,443,,,not_known_and_other,3399000000,0,DE_SAA
+5455,982,,,not_known_and_other,3399000000,0,DE_SAA
+5456,992,,,not_known_and_other,3399000000,0,DE_SAA
+5457,51,,,not_known_and_other,3399000000,0,DE_SAA
+5458,639,,,not_known_and_other,3399000000,0,DE_SAA
+5459,432,,,not_known_and_other,3399000000,0,DE_SAA
+5460,837,,,not_known_and_other,3399000000,0,DE_SAA
+5461,755,,,not_known_and_other,3399000000,0,DE_SAA
+5462,912,,,not_known_and_other,3399000000,0,DE_SAA
+5463,57,,,not_known_and_other,3399000000,0,DE_SAA
+5464,429,,,not_known_and_other,3399000000,0,DE_SAA

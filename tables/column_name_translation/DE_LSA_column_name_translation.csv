@@ -1,0 +1,10 @@
+column_name,column_description,prelim,DE_LSA_2015,DE_LSA_2016,DE_LSA_2017,DE_LSA_2018,DE_LSA_2019,DE_LSA_2020,DE_LSA_2021,DE_LSA_2022,DE_LSA_2023,DE_LSA_2024,DE_LSA_2025
+field_id,Unique identifier for each field in country or state,1,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id,field_id
+farm_id,Unique identifier for each farm in country,1,REG_NR,REG_NR,REGISTRIER,REGISTRIER,REGISTRIER,REGISTRIER,REG_NR,REG_NR,REG_NR,,
+crop_code,"The original, country-specific crop code",1,Code,Code,Code,Code,Code,Code,Code,Code,Code,Code,Code
+crop_name,"The original, country-specific crop name",1,Kulturart,Kulturart,Kulturart,Kulturart,Kulturart,Kulturart,Kulturart,Kulturart,Kulturart,Kulturart,Kulturart
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,organic,organic,organic,organic,organic,organic,organic,organic,organic,,
+field_size,Size of field in hectar,1,,,,,,,,,,,

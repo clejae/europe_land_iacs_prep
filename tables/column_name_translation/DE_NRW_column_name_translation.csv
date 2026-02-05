@@ -1,0 +1,13 @@
+column_name,column_description,prelim,DE_NRW_2010,DE_NRW_2011,DE_NRW_2012,DE_NRW_2013,DE_NRW_2014,DE_NRW_2015,DE_NRW_2016,DE_NRW_2017,DE_NRW_2018,DE_NRW_2019,DE_NRW_2020,DE_NRW_2021,DE_NRW_2022,DE_NRW_2023,DE_NRW_2024,DE_NRW_2025
+field_id,Unique identifier for each field in country or state,1,uni_id_new,uni_id_new,uni_id_new,uni_id_new,uni_id_new,uni_id_new,uni_id,uni_id,uni_id,uni_id,uni_id,uni_id,uni_id,uni_id,field_id,field_id
+farm_id,Unique identifier for each farm in country,1,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,betr_id,,
+crop_code,"The original, country-specific crop code",1,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,nutz_le_code_meldg,CODE,CODE
+crop_name,"The original, country-specific crop name",1,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,nutz_le_text_meldg,CODE_TXT,CODE_TXT
+EC_trans_n,The original crop name translated into English,1,,,,,,,,,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,oeko,,ORGANICFAR
+field_size,Size of field in hectar,1,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,fl_ha_geom,AREA_HA,AREA_HA
+crop_area,,1,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,fl_ha_meldg,,,,,,,,,,

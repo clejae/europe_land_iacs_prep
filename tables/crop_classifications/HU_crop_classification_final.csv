@@ -1,0 +1,487 @@
+crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
+abe01,Abesszin (etiópiai) mustár,Abyssinian (Ethiopian) mustard,mustard,3301210100,0,HU
+agf02,Angyalgyökér,Angelica,angelica,3301061204,0,HU
+agf03,Kamilla,Chamomile,chamomile,3301061213,0,HU
+agf05,Digitalis,Digitalis,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf07,Izsóp,Hyssop,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf08,Jázmin,Jasmine,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf09,Levendula,Lavender,lavender_lavandula,3301061219,0,HU
+agf10,Majoranna,Marjoram,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf11,Menta,Mint,mints_peppermint,3301061222,0,HU
+agf12,Meténg,Periwinkle,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf13,Psyllium,Psyllium,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf14,Sáfrány,Saffron,saffron_crocus_sativus,3301061232,0,HU
+agf15,Körömvirág,Calendula,calendula_marigold,3301061210,0,HU
+agf17,Macskagyökérfű,Valeriana,valerian,3301061238,0,HU
+agf18,Tárkony,Tarragon,tarragon,3301061236,0,HU
+agf19,Fűszerkömény,Caraway,caraway,3301061211,0,HU
+agf20,Citromfű,Lemon balm (Melissa),lemon_balm_melissa,3301061220,0,HU
+agf21,Bazsalikom,Basil,basil,3301061207,0,HU
+agf22,Rozmaring,Rosemary,rosemary,3301061230,0,HU
+agf23,Lestyán,Lovage,lovage_maggiplant,3301061221,0,HU
+agf24,Szöszös ökörfarkkóró,Orange mullein,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf25,Anyarozs,Ergot,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf26,Kapor,Dill,anethum_dill,3301061203,0,HU
+agf28,Ánizs,Anise,anise_aniseed,3301061205,0,HU
+agf29,Borsikafű,Savory,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf30,Koriander,Coriander,coriander,3301061215,0,HU
+agf31,Máriatövis,Milk thistle,marian_thistles,3301061300,0,HU
+agf32,Kerti kakukkfű,Garden thyme,thyme,3301061237,0,HU
+agf33,Sáfrányos szeklice,Safflower,saffron_crocus_sativus,3301061232,0,HU
+agf35,Orvosi zsálya,Medicinal sage,sage_chia,3301190000,0,HU
+agf36,Kerti ruta,Rue,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf39,Bíbor kasvirág (Echinacea),Echinacea,echinacea_sun_hat,3301081500,0,HU
+agf40,Cickafark,Yarrow,yarrow,3301061239,0,HU
+agf41,Oregánó (szurokfű),Oregano,oregano,3301061226,0,HU
+agf47,Gyermekláncfű,Dandelion,dandelions,3301081400,0,HU
+agf48,Jázminpakóca (stevia),Candyleaf,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf49,Hibrid levendula (lavandin),Hybrid lavender (lavandin),lavender_lavandula,3301061219,0,HU
+agf50,Fehér üröm,White wormwood,artemisia,3301061206,0,HU
+agf52,Nagy csalán,Big nettle,nettles,3301061225,0,HU
+agf53,Orbáncfű,St. John's wort,st_johns_wort,3301061234,0,HU
+agf54,Vasfű (Verbena),Verbena,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf56,Orvosi pemetefű,White horehound,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf57,Évelő borsfű (borsikafű),Perennial pepperwort (pepperwort),other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf58,Orvosi ziliz (fehérmályva),Mallow (white mallow),malva,3301082800,0,HU
+agf59,Muskotály zsálya,Nutmeg sage,sage_chia,3301190000,0,HU
+agf61,Kis télizöld meténg,Vinca minor,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf62,Borsmenta,Peppermint,mints_peppermint,3301061222,0,HU
+agf65,Terjőke kígyószisz,Viper's-bugloss,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,0,HU
+agf66,Ligeti zsálya,Woodland sage,sage_chia,3301190000,0,HU
+ak044,Akácos,Acacia,other_tree_wood_forest,3306990000,0,HU
+ak045,Nemes nyáras-akácos,Noble summer-acacia tree,other_tree_wood_forest,3306990000,0,HU
+ak046,Hazai nyáras-akácos,Domestic summer acacia,other_tree_wood_forest,3306990000,0,HU
+ak047,Egyéb lomb elegyes-akácos,Other foliage is mixed-acacia,other_tree_wood_forest,3306990000,7,HU
+ak048,Fenyő elegyes-akácos,Mixed pine-acacia,other_tree_wood_forest,3306990000,7,HU
+all01,Állandó legelő (legeltetett),Permanent pasture (grazed),pastures_meadows_with_trees,3302010000,0,HU
+all02,Állandó legelő (kaszált),Permanent pasture (mown),pastures_meadows_with_trees,3302010000,0,HU
+bu001,Bükkös,Beech tree,other_tree_wood_forest,3306990000,0,HU
+bu002,Kocsánytalan tölgyes-bükkös,Sessile oak-beech,oak,3306060000,0,HU
+bu003,Gyertyános-kocsánytalan tölgyes-bükkös,Querco petreae-Carpinetum,oak,3306060000,0,HU
+bu004,Gyertyános-bükkös,Fagio medio-europaeum,other_tree_wood_forest,3306990000,0,HU
+bu005,Kőrises-bükkös,Ash-beech,other_tree_wood_forest,3306990000,0,HU
+bu006,Egyéb lomb elegyes-bükkös,Other broadleaf mixed–beech forest,other_tree_wood_forest,3306990000,7,HU
+bu007,Fenyő elegyes-bükkös,Conifer mixed–beech forest,other_tree_wood_forest,3306990000,7,HU
+bu008,Gyertyános-kocsánytalan tölgyes,Candlestick-stemless oak,oak,3306060000,0,HU
+bu009,Bükkös-gyertyános-kocsánytalan tölgyes,Beech-candle-stemless oak,oak,3306060000,0,HU
+bu010,Cseres-gyertyános-kocsánytalan tölgyes,Black-candle-stemless oak,oak,3306060000,0,HU
+bu011,Egyéb lomb elegyes-gyertyános-kocsánytalan tölgyes,Other foliage is mixed-candle-stalkless oak,oak,3306060000,7,HU
+bu012,Fenyő elegyes-gyertyános-kocsánytalan tölgyes,Mixed pine-candle-stemless oak,oak,3306060000,7,HU
+bu013,Gyertyános-kocsányos tölgyes,Candle-stalked oak,oak,3306060000,0,HU
+bu014,Cseres-gyertyános-kocsányos tölgyes,Black-candy-stalked oak,oak,3306060000,0,HU
+bu015,Egyéb lomb elegyes-gyertyános-kocsányos tölgyes,Other foliage is mixed-candle-stalked oak,oak,3306060000,7,HU
+bu016,Fenyő elegyes -gyertyános-kocsányos tölgyes,Mixed pine - candelabrum - pedunculate oak,oak,3306060000,7,HU
+bu017,Kocsánytalan tölgyes,Stemless oak,oak,3306060000,0,HU
+bu018,Cseres-kocsánytalan tölgyes,Alternate-stemless oak,oak,3306060000,0,HU
+bu019,Hársas-kocsánytalan tölgyes,Lichen-stemless oak,oak,3306060000,0,HU
+bu021,Cseres-erdeifenyves-kocsánytalan tölgyes,Black-wood pine-stemless oak,oak,3306060000,0,HU
+bu022,Erdeifenyves-kocsánytalan tölgyes,Scots pine-stemless oak,oak,3306060000,0,HU
+bu023,Egyéb lomb elegyes-kocsánytalan tölgyes,Other foliage is mixed-stemless oak,oak,3306060000,7,HU
+bu024,Egyéb fenyő elegyes-kocsánytalan tölgyes,Other mixed pine-stemless oak,oak,3306060000,7,HU
+bu025,Kocsányos tölgyes,Pedunculate oak,oak,3306060000,0,HU
+bu026,Cseres-kocsányos tölgyes,Alternate-stemmed oak,oak,3306060000,0,HU
+bu027,Hazai nyáras-kocsányos tölgyes,Domestic summer-stalked oak,oak,3306060000,0,HU
+bu028,Mézgás égeres-kocsányos tölgyes,Gummy alder-stalked oak,oak,3306060000,0,HU
+bu029,Kőrises-kocsányos tölgyes,Ash-stemmed oak,oak,3306060000,0,HU
+bu030,Egyéb lomb elegyes-kocsányos tölgyes,Other foliage is mixed-stalked oak,oak,3306060000,7,HU
+bu031,Fenyő elegyes-kocsányos tölgyes,Mixed pine-stalked oak,oak,3306060000,7,HU
+bu040,Virágos kőrises-molyhos tölgyes,Floral ash-fluffy oak,oak,3306060000,0,HU
+bu042,Cseres-molyhos tölgyes,Changeable and fluffy oak,oak,3306060000,7,HU
+bur01,Burgonya,Potato,potatoes,3301030000,0,HU
+csa01,Császárfa ültetvény ,Imperial tree plantation,other_tree_wood_forest,3306990000,0,HU
+cuk01,Cukorrépa,Sugar beet,sugar_beet,3301290700,0,HU
+dbu01,Dohány- Burley,Tobacco- Burley,tobacco,3301060100,0,HU
+dvi02,Dohány- Virginia,Tobacco- Virginia,tobacco,3301060100,0,HU
+ebm01,Amerikai bársonymályva,American velvet mallow,sida_virginia_mallow,3304030000,0,HU
+efu01,Energiafű,Energy grass,energy_crops,3304010000,0,HU
+egy01,Egyéb termelt növény,Other cultivated plant,other_arable_land_crops,3301990000,0,HU
+ek032,Cseres,Turkey oak,oak,3306060000,0,HU
+ek033,Kocsánytalan tölgyes-cseres,Stemless oak-cherry,oak,3306060000,0,HU
+ek034,Kocsányos tölgyes-cseres,Pedunculate oak-cherry,oak,3306060000,0,HU
+ek035,Molyhos tölgyes-cseres,Fluffy oak-cherry,oak,3306060000,0,HU
+ek036,Egyéb lomb elegyes-cseres,Other foliage is mixed and alternate,other_tree_wood_forest,3306990000,7,HU
+ek037,Erdeifenyves-cseres,Scots pine-cherry,other_tree_wood_forest,3306990000,0,HU
+ek038,Feketefenyves-cseres,Black pine-cherry,other_tree_wood_forest,3306990000,0,HU
+ek039,Egyéb fenyő elegyes-cseres,Other pine mixed-exchange,other_tree_wood_forest,3306990000,7,HU
+ek049,Gyertyános,Candlestick,other_tree_wood_forest,3306990000,0,HU
+ek050,Elegyes-gyertyános,Mixed hornbeam stand,other_tree_wood_forest,3306990000,7,HU
+ek051,Juharos,Maple,other_tree_wood_forest,3306990000,0,HU
+ek052,Elegyes-juharos,Mixed-maple,other_tree_wood_forest,3306990000,7,HU
+ek053,Kőrises,Ash,other_tree_wood_forest,3306990000,0,HU
+ek054,Tölgyes-kőrises,Oaky-ashy,other_tree_wood_forest,3306990000,0,HU
+ek055,Egyéb elegyes-kőrises,Other mixed-ash,other_tree_wood_forest,3306990000,7,HU
+ek056,Vörös tölgyes,Red oak,oak,3306060000,0,HU
+ek057,Fekete diós,Black walnut,walnuts,3303030600,0,HU
+ek058,Egyéb kemény lombos,Other hardwoods,other_tree_wood_forest,3306990000,0,HU
+ek077,Hársas,Linden (lime) stand,other_tree_wood_forest,3306990000,0,HU
+ek078,Elegyes-hársas,Mixed linden (lime),other_tree_wood_forest,3306990000,7,HU
+el066,Hazai nyáras,Native poplar stand,populus,3306070000,0,HU
+el067,Nemes nyáras-hazai nyáras,Hybrid poplar–native poplar,populus,3306070000,0,HU
+el068,Akácos-hazai nyáras,Black locust–native poplar,populus,3306070000,0,HU
+el069,Kocsányos tölgyes-hazai nyáras,Pedunculate oak–native poplar,oak,3306060000,0,HU
+el070,Egyéb lomb elegyes-hazai nyáras,Other broadleaf mixed–native poplar,other_tree_wood_forest,3306990000,7,HU
+el071,Borókás-hazai nyáras,Juniper–native poplar,populus,3306070000,0,HU
+el072,Fenyő elegyes-hazai nyáras,Conifer mixed–native poplar,other_tree_wood_forest,3306990000,7,HU
+el073,Füzes,Willow stand,willows_osiers,3306080000,0,HU
+el074,Elegyes-füzes,Mixed willow,willows_osiers,3306080000,7,HU
+el075,Mézgás égeres,Gummy alder,other_tree_wood_forest,3306990000,0,HU
+el076,Elegyes-mézgás égeres,Mixed-gummy alder,other_tree_wood_forest,3306990000,7,HU
+el077,Hársas,Linden (lime) stand,other_tree_wood_forest,3306990000,0,HU
+el078,Elegyes-hársas,Mixed linden (lime),other_tree_wood_forest,3306990000,7,HU
+el079,Nyíres,Birch,birch,3306030000,0,HU
+el080,Elegyes-nyíres,Mixed-birch,birch,3306030000,7,HU
+el081,Egyéb lágy lombos,Other soft foliage,other_tree_wood_forest,3306990000,0,HU
+emi01,Energia Miscanthus,Energy Miscanthus,miscanthus_silvergrass,3301083000,0,HU
+ene02,energiaakác,energy acacia,energy_crops,3304010000,0,HU
+ene06,egyéb rövid vágásfordulójú sarjerdő,Other short-rotation coppice,short_rotation_coppice,3306090000,0,HU
+ene11,Fehér nyár,White poplar,populus,3306070000,0,HU
+ene12,Fekete nyár,Black poplar,populus,3306070000,0,HU
+ene13,Szürke nyár,Grey poplar,populus,3306070000,0,HU
+ene14,Rezgő nyár,Aspen (trembling poplar),aspen,3306020000,0,HU
+ene15,Egyéb nyár,Other poplar,populus,3306070000,0,HU
+ene16,Fehér fűz,White willow,willows_osiers,3306080000,0,HU
+ene17,Kosárfonó fűz,Basket weaving willow,willows_osiers,3306080000,0,HU
+ene18,Egyéb fűz,Other willow,willows_osiers,3306080000,0,HU
+ene19,Mézgás éger,Gummy alder,other_tree_wood_forest,3306990000,0,HU
+ene23,Egyéb kőris,Other ash,other_tree_wood_forest,3306990000,0,HU
+ene25,Egyéb juhar,Other maple,other_tree_wood_forest,3306990000,0,HU
+ene26,Olasznád,Giant reed (Arundo donax),poaceae_grasses,3301090200,0,HU
+fat01,Gyümölcsfaiskola,Fruit nursery,nurseries_nursery,3303070000,0,HU
+fat02,Szőlőoltvány-iskola,Grapevine nursery,nurseries_nursery,3303070000,0,HU
+fat03,"Dísznövény-, és erdészeti faiskola",Ornamental plant and forestry nursery,nurseries_nursery,3303070000,7,HU
+fat04,Karácsonyfa ültetvény,Christmas tree plantation,christmas_trees,3306100000,0,HU
+fat05,Fenyőfa-faiskola,Pine tree nursery,nurseries_nursery,3303070000,0,HU
+fat06,Gyepiskola (gyepszőnyeg),Turf school (turf carpet),sod_turf,3301090207,0,HU
+fcs01,Facsoport,Group of trees,tree_wood_forest,3306000000,0,HU
+fe082,Erdeifenyves,Scots pine,other_tree_wood_forest,3306990000,0,HU
+fe083,Bükkös-erdeifenyves,Beech-pine forest,other_tree_wood_forest,3306990000,0,HU
+fe084,Gyertyános-kocsánytalan tölgyes-erdeifenyves,Hornbeam–sessile oak–Scots pine,other_tree_wood_forest,3306990000,0,HU
+fe085,Tölgyes-erdeifenyves,Oak-pine forest,other_tree_wood_forest,3306990000,0,HU
+fe086,Cseres-erdeifenyves,Conifer forest,other_tree_wood_forest,3306990000,0,HU
+fe087,Akácos-erdeifenyves,Acacia forest pine forest,other_tree_wood_forest,3306990000,0,HU
+fe088,Egyéb lomb elegyes-erdeifenyves,Other broadleaf mixed–Scots pine,other_tree_wood_forest,3306990000,7,HU
+fe089,Fenyő elegyes-erdeifenyves,Pine mixed forest pine forest,other_tree_wood_forest,3306990000,7,HU
+fe090,Feketefenyves,Black pine,other_tree_wood_forest,3306990000,0,HU
+fe091,Cseres-feketefenyves,Black pine,other_tree_wood_forest,3306990000,0,HU
+fe093,Egyéb lomb elegyes-feketefenyves,Other foliage is mixed-black pine,other_tree_wood_forest,3306990000,7,HU
+fe094,Fenyő elegyes-feketefenyves,Mixed pine-black pine,other_tree_wood_forest,3306990000,7,HU
+fe095,Lucfenyves,Spruce,other_tree_wood_forest,3306990000,0,HU
+fe096,Bükkös-lucfenyves,Beech-spruce forest,other_tree_wood_forest,3306990000,0,HU
+fe097,Egyéb lomb elegyes-lucfenyves,Other broadleaf mixed–spruce,other_tree_wood_forest,3306990000,7,HU
+fe098,Fenyő elegyes-lucfenyves,Mixed pine-spruce,other_tree_wood_forest,3306990000,7,HU
+fe099,Vörös fenyves,Red pine forest,other_tree_wood_forest,3306990000,0,HU
+fe100,Egyéb fenyves,Other pines,other_tree_wood_forest,3306990000,0,HU
+fe101,Lomb elegyes-egyéb fenyves,Broadleaf mixed–other pine,other_tree_wood_forest,3306990000,7,HU
+flo01,Lágyszárú dísznövény,Herbaceous ornamental plant,flowers_ornamental_plants,3301080000,0,HU
+flo02,Dísznövény ültetvény,Ornamental plant plantation,flowers_ornamental_plants,3301080000,0,HU
+flo03,Pillangóvirág,Cosmos (Cosmea),other_flowers_ornamental_plants,3301089900,0,HU
+for01,Lucerna,Alfalfa,alfalfa_lucerne,3301090301,0,HU
+for02,Lucerna erjesztett takarmány,Silage alfalfa,alfalfa_lucerne,3301090301,0,HU
+for03,Lucerna zöldtakarmány,Green alfalfa,alfalfa_lucerne,3301090301,0,HU
+for04,Komlós lucerna,Hop clover alfalfa,alfalfa_lucerne,3301090301,0,HU
+for05,Sárkerep lucerna,Yellow-flowered alfalfa,alfalfa_lucerne,3301090301,0,HU
+for06,Tarkavirágú lucerna,Variegated alfalfa,alfalfa_lucerne,3301090301,0,HU
+for09,Vöröshere,Red clover,clover,3301090303,0,HU
+for10,Bíborhere,Crimson clover,clover,3301090303,0,HU
+for11,Fehérhere,White clover,clover,3301090303,0,HU
+for12,Korcshere (svédhere),Black clover (Swedish clover),clover,3301090303,0,HU
+for13,Perzsahere (fonákhere),Persian clover,clover,3301090303,0,HU
+for14,Alexandriai here,Alexandria Clover	,clover,3301090303,0,HU
+for15,Lódi lóhere,Lodi clover,clover,3301090303,0,HU
+for23,Somkóró,Sweet clover (Melilot),melilot,3301090304,0,HU
+for24,Fehérvirágú somkóró,White-flowered sweet clover,melilot,3301090304,0,HU
+for25,Takarmánybaltacim,Sainfoin,onobrychis_sainfoins,3301061600,0,HU
+for27,Szarvaskerep,Birdsfoot trefoil,birdsfoot_trefoil,3301090306,0,HU
+for28,Nyúlszapuka,common kidneyvetch,vetches,3301090305,0,HU
+for30,Koronás baltavirág,Crown flower (Coronilla),vetches,3301090305,0,HU
+for32,Réparepce,Turnip rape,turnip_rape,3301210700,0,HU
+for33,Tifon,Tifton (forage grass),poaceae_grasses,3301090200,0,HU
+for34,Tarlórépa,Fodder turnip,turnips,3301290800,0,HU
+for35,Takarmányrépa,Fodder beet,mangelwurzel_fodder_beet,3301290400,0,HU
+for36,Csicsóka,Jerusalem artichoke,topinambur_jerusalem_artichoke,3301180000,0,HU
+for37,Murokrépa,Carrots,carrots_daucus,3301290300,0,HU
+for38,Tarka koronafürt,Crown vetch,vetches,3301090305,0,HU
+for39,Görög széna,Fenugreek,fenugreek,3301020400,0,HU
+for40,Keleti kecskeruta ,Eastern galega,galega,3301081900,0,HU
+for41,Mézontófű (Facélia),Honeysuckle (Phacelia),honeysuckle,3303080500,0,HU
+for42,Őszi takarmánykeverék,Autumn feed mix,other_plants_harvested_green,3301099900,1,HU
+for43,Tavaszi takarmánykeverék,Spring feed mix,other_plants_harvested_green,3301099900,1,HU
+for44,Évelő takarmánykeverék,Perennial feed mixture,other_plants_harvested_green,3301099900,1,HU
+for46,Keszthelyi keverék (rozs és káposztarepce),Keszthely mix (rye & rapeseed),cereal_oilseed_crops_mix,3301320100,1,HU
+for47,Rozsos szöszösbükköny,Rye with hairy vetch,cereal_legume_mix,3301091200,1,HU
+for48,Őszi búzás pannon bükköny,Winter wheat with Hungarian vetch,cereal_legume_mix,3301091200,1,HU
+for49,"Legány-féle keverék (pannon- vagy szöszösbükköny, rozs, búza, árpa vagy bíborhere keverék)",Legány mix (vetches/cereals/clover),cereal_legume_mix,3301091200,1,HU
+for50,Zabos bükköny,Oat with vetch,cereal_legume_mix,3301091200,1,HU
+for51,Zabos borsó,Oat with pea,cereal_legume_mix,3301091200,1,HU
+for52,Borsós kukoricacsalamádé,Pea–maize silage mix,cereal_legume_mix,3301091200,1,HU
+for53,Borsós napraforgó-csalamádé,Pea–sunflower silage mix,cereal_oilseed_crops_mix,3301320100,1,HU
+for54,Napraforgós kukoricacsalamádé,Sunflower–maize silage mix,maize_sunflower_mix,3301092000,1,HU
+for55,Szójás silókukorica,Soy–maize silage,cereal_legume_mix,3301091200,1,HU
+for56,Füves lucerna,Grass–alfalfa,alfalfa_grass_mix,3301090509,1,HU
+for57,Füves here,Grass–clover,clover_grass_mix,3301090501,1,HU
+for58,Takarmánymályva,Forage mallow,other_plants_harvested_green,3301099900,0,HU
+for59,Szilfium,Silphium,silphium_rosinweeds,3301084400,0,HU
+for60,Lósóska,Sorrel,sorrel,3301310700,0,HU
+frl01,Fásított rét-legelő,Wooded meadow-pasture,pastures_meadows_with_trees,3302010000,0,HU
+fru01,Görögdinnye,Watermelon,watermelon,3301140500,0,HU
+fru02,Tökre oltott görögdinnye,watermelon grafted onto a squash (pumpkin) rootstock,watermelon,3301140500,0,HU
+fru03,Sárgadinnye,Watermelon,watermelon,3301140500,0,HU
+fru04,Földieper (szamóca),Strawberry,strawberries,3301130000,0,HU
+fru05,Piros ribiszke,Red currant,redcurrant,3303021100,0,HU
+fru08,Málna,Raspberry,raspberry_raspberries,3303021000,0,HU
+fru09,Piszke,Gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,HU
+fru11,Szeder,Blackberry,blackberry,3303020200,0,HU
+fru12,Tüske nélküli szeder,Thornless blackberry,blackberry,3303020200,0,HU
+fru13,Yosta (rikö),Yosta (Riko),not_known_and_other,3399000000,0,HU
+fru14,Homoktövis,Sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,HU
+fru15,Fekete bodza,Black elder,elder_elderberry,3303080400,0,HU
+fru16,Egyéb bodza,Other elderberry,elder_elderberry,3303080400,0,HU
+fru17,Áfonya,Blueberry,blueberry,3303020400,0,HU
+fru18,Berkenye,Rowan,rowan_rowanberries,3303021300,0,HU
+fru19,Tökre oltott sárgadinnye,watermelon grafted onto a squash (pumpkin) rootstock,watermelon,3301140500,0,HU
+fss01,Fás sáv,Tree strip,tree_lines,3310300000,0,HU
+fum01,Füves mezsgye,Grassy field margin,field_margins_buffer_strips_flowering_areas,3310100000,0,HU
+gom01,Gomba,Mushroom,mushrooms_energy_genetically_modified_crops,3304000000,0,HU
+gye01,Ideiglenes gyep (legeltetett),Temporary grassland (grazing),temporary_grass,3301090100,0,HU
+gye02,Ideiglenes gyep (kaszált),Temporary grassland (mowed),temporary_grass,3301090100,0,HU
+hag01,hagyományos gyümölcsös alma,Traditional orchard apple,apples,3303010200,0,HU
+hag03,hagyományos gyümölcsös őszibarack,Traditional orchard peach,peach,3303011100,0,HU
+hag04,hagyományos gyümölcsös sárgabarack,Traditional orchard apricot,apricots,3303010300,0,HU
+hag06,Hagyományos gyümölcsös szilva,Traditional orchard plum,plums,3303011300,0,HU
+hag07,hagyományos gyümölcsös naspolya,Traditional orchard medlar,medlar_loquat,3303010800,0,HU
+hag08,hagyományos gyümölcsös dió,Traditional orchard walnut,nuts,3303030000,0,HU
+hag09,hagyományos gyümölcsös mogyoró,Traditional orchard hazelnut,hazelnuts_hazel,3303030200,0,HU
+hag10,Hagyományos gyümölcsös mandula,Traditional orchard almond,almond,3303030100,0,HU
+hag11,hagyományos gyümölcsös szelídgesztenye,Traditional orchard sweet chestnut,sweet_chestnuts,3303030500,0,HU
+hag12,Hagyományos gyümölcsös vegyes,Traditional mixed orchard,orchards_fruits,3303010000,7,HU
+hag15,Hagyományos gyümölcsös körte,Traditional orchard pear,pears,3303011200,0,HU
+hag16,hagyományos gyümölcsös meggy,Traditional orchard sour cherry,cherry_cherries,3303010400,0,HU
+hag17,hagyományos gyümölcsös cseresznye,Traditional orchard cherry,cherry_cherries,3303010400,0,HU
+hag18,hagyományos gyümölcsös birs,Traditional orchard quince,quinces,3303011500,0,HU
+hag19,Hagyományos gyümölcsös nektarin,Traditional orchard nectarine,nectarine,3303010900,0,HU
+hag20,Hagyományos gyümölcsös bodza,Traditional orchard elder,elder_elderberry,3303080400,0,HU
+hag21,Hagyományos gyümölcsös homoktövis,Traditional orchard sea buckthorn,hippophae_sea_buckthorns_seaberry,3303020800,0,HU
+hag22,Hagyományos gyümölcsös Áfonya,Traditional orchard blueberry,blueberry,3303020400,0,HU
+hag24,Hagyományos gyümölcsös Fekete berkenye,Traditional orchard chokeberry,aronia_chokeberries,3303020100,0,HU
+hag25,Hagyományos gyümölcsös Fehér eperfa,Traditional orchard white mulberry,berries_berry_species,3303020000,0,HU
+hag29,Hagyományos gyümölcsös galagonya,Traditional orchard hawthorn,crataegus_hawthorn,3303080300,0,HU
+ind01,Szójabab,Soy-bean,soy_soybeans,3301160000,0,HU
+ind03,Őszi káposztarepce,Winter oilseed rape,winter_rapeseed_rape,3301060401,0,HU
+ind04,Tavaszi káposztarepce,Spring oilseed rape,spring_rapeseed_rape,3301060402,0,HU
+ind06,Szezámmag,Sesame,oilseed_crops,3301060800,0,HU
+ind07,Olajlen,Linseed (oil flax),flax_linseed_oil,3301060702,0,HU
+ind08,Rostlen,Fibre flax,flax_linen,3301060701,0,HU
+ind09,Földimogyoró,Peanut,arachis,3301090302,0,HU
+ind11,Fehér mustár,White mustard,mustard,3301210100,0,HU
+ind12,Fekete mustár,Black mustard,mustard,3301210100,0,HU
+ind13,Ricinus,Castor,ricinus_castor,3303080600,0,HU
+ind14,Mák,Poppy,poppy,3301060600,0,HU
+ind15,Retek,Radish,radish,3301290600,0,HU
+ind16,Olajretek,Oil radishes,oil_fodder_radish,3301210600,0,HU
+ind18,Takarmányretek,Fodder radishes,oil_fodder_radish,3301210600,0,HU
+ind19,Négermag,Niger Seed,guizotia_abyssinica_nyger,3301060900,0,HU
+ind20,Vadrepce,Wild canola,other_brassica_oleracea_cabbage,3301210299,0,HU
+ind21,Gomborka,Camelina,camelina,3301061500,0,HU
+ind22,Cikória,Chicory,chicory_chicories,3301310200,0,HU
+ind23,Napraforgó,Sunflower,sunflower,3301060500,0,HU
+ind24,Hibrid napraforgó,Hybrid sunflower,sunflower,3301060500,0,HU
+ind25,Mák (őszi),poppy (autumn),winter_poppy,3301060601,0,HU
+kal01,Őszi búza,Winter common wheat,winter_common_soft_wheat,3301010101,0,HU
+kal02,Tavaszi búza,Spring common wheat,spring_common_soft_wheat,3301010102,0,HU
+kal04,Őszi durumbúza,Winter durum wheat,winter_durum_hard_wheat,3301010201,0,HU
+kal05,Tavaszi durumbúza,Spring durum wheat,spring_durum_hard_wheat,3301010202,0,HU
+kal06,Őszi tönköly búza,Winter spelt,winter_spelt,3301011001,0,HU
+kal07,Tavaszi tönkölybúza,Spring spelt,spring_spelt,3301011002,0,HU
+kal08,Őszi novum búza,Winter novum wheat,winter_common_soft_wheat,3301010101,0,HU
+kal09,Tavaszi novum búza,Spring novum wheat,spring_common_soft_wheat,3301010102,0,HU
+kal10,Őszi tönke búza,Winter emmer,winter_emmer,3301011201,0,HU
+kal11,Tavaszi tönke búza,Spring emmer,spring_emmer,3301011202,0,HU
+kal12,Őszi alakor búza,Winter einkorn,winter_einkorn,3301011301,0,HU
+kal13,Tavaszi alakor búza,Spring einkorn,spring_einkorn,3301011302,0,HU
+kal15,Rozs,Rye,rye,3301010300,0,HU
+kal16,Évelő rozs,Perennial rye,rye,3301010300,0,HU
+kal17,Őszi árpa,Winter barley,winter_barley,3301010401,0,HU
+kal18,Tavaszi árpa,Spring barley,spring_barley,3301010402,0,HU
+kal19,Tavaszi zab,Spring oat,spring_oats,3301010502,0,HU
+kal20,Őszi zab,Winter oat,winter_oats,3301010501,0,HU
+kal21,Kukorica,Maize,grain_maize_corn_popcorn,3301010600,0,HU
+kal22,Pattogatni való kukorica,Popcorn maize,grain_maize_corn_popcorn,3301010600,0,HU
+kal23,Csemegekukorica,Sweet corn,grain_maize_corn_popcorn,3301010600,0,HU
+kal24,Silókukorica,Silage maize,green_silo_maize,3301090400,0,HU
+kal25,Hibrid kukorica,Hybrid maize,grain_maize_corn_popcorn,3301010600,0,HU
+kal26,Tavaszi tritikálé,Spring triticale,spring_triticale,3301010802,0,HU
+kal27,Őszi tritikálé,Winter triticale,winter_triticale,3301010801,0,HU
+kal28,Pohánka (Hajdina),Buckwheat,buckwheat,3301150200,0,HU
+kal29,Mohar,Setaria,millet_sorghum,3301010900,0,HU
+kal30,Cukorcirok,Sweet sorghum,millet_sorghum,3301010900,0,HU
+kal31,Seprűcirok,Broomcorn,millet_sorghum,3301010900,0,HU
+kal32,Szemescirok,Grain sorghum,millet_sorghum,3301010900,0,HU
+kal33,Silócirok,Forage (silage) sorghum,millet_sorghum,3301010900,0,HU
+kal34,Szudáni cirokfű,Sudan grass (sorghum),millet_sorghum,3301010900,0,HU
+kal35,Indiánrizs,Wild rice,rice,3301010700,0,HU
+kal36,Termesztett köles,Cultivated millet,millet_sorghum,3301010900,0,HU
+kal37,Indiai köles,Indian millet,millet_sorghum,3301010900,0,HU
+kal38,Fénymag,Canary seed,canary_seed_canaryseed,3301011400,0,HU
+kal39,Fekete zab,Black oats,oats,3301010500,0,HU
+kar01,Karácsonyfa ültetvény,Christmas tree plantation,christmas_trees,3306100000,0,HU
+ken01,Kender (vetőmag célra) ,Hemp (for seed),hemp_cannabis,3301061000,0,HU
+kev01,Keverék kultúra,Mixed cropping,mixed_cropping,3301320000,1,HU
+khk01,Konyhakertek,Kitchen gardens,kitchen_gardens,3301120000,0,HU
+kom01,Komló,Hops,hops,3301060200,0,HU
+meh01,Méhlegelő,Bee pasture,pasture_meadow_grassland_grass,3302000000,0,HU
+mel01,Meliorációs retek,Tillage radish,oil_fodder_radish,3301210600,0,HU
+nad01,Nád,Reed,wetlands,3310400000,0,HU
+nf059,Nemes nyáras,Noble poplar,populus,3306070000,0,HU
+nf060,Hazai nyáras-nemes nyáras,Native–hybrid poplar,populus,3306070000,0,HU
+nf061,Akácos-nemes nyáras,Black locust–hybrid poplar,populus,3306070000,0,HU
+nf062,Egyéb lomb elegyes-nemes nyáras,Other broadleaf mixed–hybrid poplar,populus,3306070000,7,HU
+nf063,Fenyő elegyes-nemes nyáras,Conifer mixed–hybrid poplar,populus,3306070000,7,HU
+nf064,Nemes füzes,Noble willow,willows_osiers,3306080000,0,HU
+nf065,Elegyes-nemes füzes,Mixed-noble willow,willows_osiers,3306080000,7,HU
+paz01,Ebtippan (vetőmag célra),Ebtippan (for seed purpose),arable_land_seed_seedlings,3301100000,0,HU
+paz03,Fehér tippan,velvety bentgrass,poaceae_grasses,3301090200,0,HU
+paz05,Francia perje,false oat-grass,cocksfoot_catgrass,3301090203,0,HU
+paz06,Csenkeszperje (vetőmag célra),Festuca (for seed),festuca_fescue,3301090202,0,HU
+paz07,Olasz perje (szálkás perje),Italian ryegrass,lolium_ryegrass,3301090205,0,HU
+paz08,Angol perje,Perennial ryegrass,lolium_ryegrass,3301090205,0,HU
+paz09,Hibrid perje,Hybrid ryegrass,lolium_ryegrass,3301090205,0,HU
+paz10,Ligeti perje (vetőmag célra),Poa nemoralis (for seed purposes),poaceae_grasses,3301090200,0,HU
+paz11,Réti perje,Meadow-grass,poaceae_grasses,3301090200,0,HU
+paz12,Mocsári perje,Marsh meadow-grass,poaceae_grasses,3301090200,0,HU
+paz13,Sovány perje (vetőmag célra),Rough meadow-grass (seed),poaceae_grasses,3301090200,0,HU
+paz14,Csomós ebír (vetőmag célra),Cocksfoot (seed),cocksfoot_catgrass,3301090203,0,HU
+paz15,Nádképű csenkesz (vetőmag célra),Tall fescue (seed),festuca_fescue,3301090202,0,HU
+paz16,Juhcsenkesz (vetőmag célra),Sheep fescue (seed),festuca_fescue,3301090202,0,HU
+paz17,Réti csenkesz,Meadow fescue,festuca_fescue,3301090202,0,HU
+paz18,Vörös csenkesz,Red Fescue,festuca_fescue,3301090202,0,HU
+paz20,Réti komócsin,Timothy grass,timothy,3301090209,0,HU
+paz21,Veresnadrág csenkesz,Festuca pseudovina,festuca_fescue,3301090202,0,HU
+paz22,Magyar rozsnok,Bromus inermis leyss.,lolium_ryegrass,3301090205,0,HU
+paz23,Zöld Pántlikafű,Reed canary grass,canary_seed_canaryseed,3301011400,0,HU
+pih01,Talajtakarás nélküli pihentetett terület,Fallow land without ground cover,fallow_land_not_crop,3301110000,0,HU
+pil01,Cukorborsó,Sweet peas,peas,3301020600,0,HU
+pil02,Mezei borsó,Field peas,peas,3301020600,0,HU
+pil03,Őszi takarmányborsó,Autumn fodder peas,peas,3301020600,0,HU
+pil04,Őszi zöldborsó,Autumn green peas,peas,3301020600,0,HU
+pil05,Szárazborsó (Sárgaborsó),Dry Peas (Yellow Peas),peas,3301020600,0,HU
+pil06,Tavaszi takarmányborsó,Spring fodder peas,peas,3301020600,0,HU
+pil07,Tavaszi zöldborsó,Spring green peas,peas,3301020600,0,HU
+pil09,Lóbab (Disznóbab),Horse beans (Pig beans),beans,3301020100,0,HU
+pil11,Futóbab,Running beans,beans,3301020100,0,HU
+pil12,Szárazbab,Dry beans,beans,3301020100,0,HU
+pil13,Zöldbab,Green beans,beans,3301020100,0,HU
+pil14,Homoki bab (tehénborsó),Cowpea,beans,3301020100,0,HU
+pil15,Fehérvirágú édes csillagfürt,White-flowered sweet lupin,sweet_lupins,3301020700,0,HU
+pil16,Fehérvirágú édes csillagfürt (takarmány célra),White sweet lupin (forage),sweet_lupins,3301020700,0,HU
+pil17,Fehérvirágú édes csillagfürt (zöldtrágyázásra),White sweet lupin (green manure),sweet_lupins,3301020700,0,HU
+pil18,Sárgavirágú édes csillagfürt,Yellow sweet lupin,sweet_lupins,3301020700,0,HU
+pil19,Sárgavirágú édes csillagfürt (takarmány célra),Yellow sweet lupin (forage),sweet_lupins,3301020700,0,HU
+pil20,Sárgavirágú édes csillagfürt (zöldtrágyázásra),Yellow sweet lupin (green manure),sweet_lupins,3301020700,0,HU
+pil21,Kékvirágú édes csillagfürt,Blue sweet lupin,sweet_lupins,3301020700,0,HU
+pil22,Kékvirágú édes csillagfürt (takarmány célra),Blue sweet lupin (forage),sweet_lupins,3301020700,0,HU
+pil23,Kékvirágú édes csillagfürt (zöldtrágyázásra),Blue sweet lupin (green manure),sweet_lupins,3301020700,0,HU
+pil24,Lencse,Lentil,lentils,3301020500,0,HU
+pil25,Takarmánybükköny (Tavaszi bükköny),Fodder vetch (Spring vetch),vetches,3301090305,0,HU
+pil26,Szöszösbükköny,Hairy vetch,vetches,3301090305,0,HU
+pil27,Pannonbükköny,Hungarian Vetch,vetches,3301090305,0,HU
+pil29,Csicseriborsó,Chickpeas,chickpeas,3301020200,0,HU
+pil30,Szegletes lednek,Grass pea,lathyrus_peavine,3301020800,0,HU
+pil31,Mogyorós lednek,Tuberous pea,lathyrus_peavine,3301020800,0,HU
+riz03,Rizs egyéb fajta,Rice (other variety),rice,3301010700,0,HU
+rov01,"Energiaakác (sarjaztatásos, rövid vágásfordulójú)","Energy acacia (sprouting, short cutting cycle)",short_rotation_coppice,3306090000,0,HU
+rov02,"Egyéb nyár (sarjaztatásos, rövid vágásfordulójú)","Other poplar (sprouting, short cutting cycle)",short_rotation_coppice,3306090000,0,HU
+rov03,"Fűz (sarjaztatásos, rövid vágásfordulójú)","Willow (sprouting, short cutting cycle)",short_rotation_coppice,3306090000,0,HU
+rov05,"Egyéb éger (sarjaztatásos, rövid vágásfordulójú)","Other alder (sprouting, short cutting cycle)",short_rotation_coppice,3306090000,0,HU
+szi01,Sziki kender,Siki hemp,hemp_cannabis,3301061000,0,HU
+tar10,Tarló,Stubble,fallow_land_not_crop,3301110000,0,HU
+uga02,Zöldugar,Green fallow,fallow_land_not_crop,3301110000,0,HU
+uga03,Zöldugar kultúra,Green fallow crop,fallow_land_not_crop,3301110000,0,HU
+ult01,Alma,Apple,apples,3303010200,0,HU
+ult03,Őszibarack,Peach,peach,3303011100,0,HU
+ult04,Kajszibarack (sárgabarack),Apricot,apricots,3303010300,0,HU
+ult05,Nektarin,Nectarine,nectarine,3303010900,0,HU
+ult06,Szilva,Plum,plums,3303011300,0,HU
+ult07,Naspolya,Medlar,medlar_loquat,3303010800,0,HU
+ult08,Dió,Walnut,walnuts,3303030600,0,HU
+ult09,Mogyoró,Hazelnut,hazelnuts_hazel,3303030200,0,HU
+ult10,Mandula,Almond,almond,3303030100,0,HU
+ult11,Szelídgesztenye,Sweet chestnut,sweet_chestnuts,3303030500,0,HU
+ult12,Vegyes gyümölcsös,Mixed fruit,mixed_permanent_plantations,3303130000,1,HU
+ult15,Körte,Pear,pears,3303011200,0,HU
+ult16,Meggy,Sour cherry,cherry_cherries,3303010400,0,HU
+ult17,Cseresznye,Cherry,cherry_cherries,3303010400,0,HU
+ult18,Birs,Quince,quinces,3303011500,0,HU
+ult19,Borszőlő ültetvény,Grape plantation,vineyards_wine_vine_rebland_grapes,3303060000,0,HU
+ult20,Egyéb szőlőültetvény,Other vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,HU
+ult21,Füge,Fig,fig,3303010600,0,HU
+ult26,Csipkebogyó,Rosehips,rose_hip_rosehip,3303021200,0,HU
+ult27,Kivi,Kiwi,kiwi,3303010700,0,HU
+ult28,Egyéb ültetvény,Other plantation,other_permanent_crops_plantations,3303990000,0,HU
+ult29,Csemegeszőlő ültetvény,Sweet grape plantation,vineyards_wine_vine_rebland_grapes,3303060000,0,HU
+ult30,Fehér eperfa,White mulberry tree,berries_berry_species,3303020000,0,HU
+ult31,Fekete eperfa,Black mulberry,berries_berry_species,3303020000,0,HU
+ult32,Fekete berkenye,Black currant,blackcurrant_cassis,3303020300,0,HU
+ult33,Datolyaszilva,Persimmon,other_permanent_crops_plantations,3303990000,0,HU
+ult34,Teacserje,Tea bush,other_permanent_crops_plantations,3303990000,0,HU
+ult35,Húsos som,Cornelian cherry,other_permanent_crops_plantations,3303990000,0,HU
+ult36,Kökény,Blackthorn,berries_berry_species,3303020000,0,HU
+ult37,Mézbogyó,Honey berry,berries_berry_species,3303020000,0,HU
+ult39,Egybibés galagonya,Single seeded hawthorn,crataegus_hawthorn,3303080300,0,HU
+ult40,Szőlőalany törzsültetvény (támberendezéssel),Grapevine rootstock plantation (with support equipment),vineyards_wine_vine_rebland_grapes,3303060000,0,HU
+ult41,Szőlőalany törzsültetvény (támberendezés nélkül),Grapevine rootstock (without support),vineyards_wine_vine_rebland_grapes,3303060000,0,HU
+vad01,Vadvirág (keverék),Wildflower (mix),other_flowers_ornamental_plants,3301089900,1,HU
+veg01,Karfiol,Cauliflower,cauliflower,3301210204,0,HU
+veg02,Brokkoli,Broccoli,broccoli,3301210202,0,HU
+veg03,Bimbóskel,Brussels sprout,brussels_sprouts,3301210203,0,HU
+veg04,Fejes káposzta,Head cabbage,white_cabbage,3301210212,0,HU
+veg05,Kelkáposzta,Kale,kale,3301210208,0,HU
+veg06,Vöröskáposzta,Red cabbage,red_cabbage,3301210210,0,HU
+veg07,Takarmánykáposzta,Fodder cabbage,other_brassica_oleracea_cabbage,3301210299,0,HU
+veg08,Karalábé,Kohlrabi,kohlrabi,3301210209,0,HU
+veg09,Kínai kel,Chinese cabbage,chinese_cabbage,3301210205,0,HU
+veg10,Zeller,Celery,celery,3301250000,0,HU
+veg11,Póréhagyma,Leek,leek,3301220300,0,HU
+veg12,Őszi fokhagyma,Autumn garlic,garlic,3301220200,0,HU
+veg13,Tavaszi fokhagyma,Spring garlic,garlic,3301220200,0,HU
+veg14,Csemegehagyma,Chives,chives,3301220100,0,HU
+veg15,Őszi vöröshagyma,Autumn red onion,onions,3301220400,0,HU
+veg17,Lilahagyma,Red onion,onions,3301220400,0,HU
+veg18,Metélőhagyma,Chives,chives,3301220100,0,HU
+veg19,Fejessaláta,Lettuce,other_salads_lettuce_leaf_vegetables,3301319900,0,HU
+veg20,Endívia,Endive,endive,3301310300,0,HU
+veg21,Sóska,Sorrel,sorrel,3301310700,0,HU
+veg22,Spenót,Spinach,spinach,3301310800,0,HU
+veg23,Spárga,Asparagus,asparagus,3301200000,0,HU
+veg24,Articsóka,Artichoke,artichoke,3301270000,0,HU
+veg26,Petrezselyem gyökér,Parsley root,parsley,3301061227,0,HU
+veg27,Petrezselyem levél,Parsley leaf,parsley,3301061227,0,HU
+veg29,Rebarbara,Rhubarb,rhubarb,3301230000,0,HU
+veg30,Édeskömény (közönséges),Fennel (common),fennel,3301170000,0,HU
+veg31,Galambbegysaláta,Pigeon salad,lambs_lettuce_rapunzel,3301310500,0,HU
+veg32,Zsázsa,Cress,cress,3301210300,0,HU
+veg33,Paradicsom,Tomato,tomato,3301280000,0,HU
+veg34,Uborka,Cucumber,cucumber_pickle,3301140100,0,HU
+veg35,Padlizsán (Tojásgyümölcs),Eggplant (Egg Fruit),aubergine_eggplant,3301260000,0,HU
+veg36,Főzőtök,Cooking pumpkins,pumpkin_squash_gourd,3301140400,0,HU
+veg37,Sütőtök,Pumpkin,pumpkin_squash_gourd,3301140400,0,HU
+veg38,Káposztatök,Cabbage squash,pumpkin_squash_gourd,3301140400,0,HU
+veg39,Olajtök,Oil pumpkin,pumpkin_squash_gourd,3301140400,0,HU
+veg40,Csillagtök/patiszon,Star pumpkins/patissones,pumpkin_squash_gourd,3301140400,7,HU
+veg41,Spárgatök,Spaghetti squash,pumpkin_squash_gourd,3301140400,0,HU
+veg42,Cukkini,Zucchini,zucchini_courgette,3301140600,0,HU
+veg43,Paprika,Paprika,bell_pepper_paprika,3301300100,0,HU
+veg44,Fűszerpaprika,Spice paprika,bell_pepper_paprika,3301300100,0,HU
+veg45,Sárgarépa,Carrot,carrots_daucus,3301290300,0,HU
+veg46,Cékla,Beetroot,beetroot_beets,3301290200,0,HU
+veg47,Feketegyökér,Black salsify,black_salsify,3301290900,0,HU
+veg48,Torma,Horse-radish,horseradish,3301210400,0,HU
+veg49,Pasztinák,Parsnips,parsnips,3301290500,0,HU
+veg51,Mezei csibehúr,Chickweed,other_salads_lettuce_leaf_vegetables,3301319900,0,HU
+veg52,Egyéb zöldség,Other vegetables,other_salads_lettuce_leaf_vegetables,3301319900,0,HU
+veg53,Tavaszi vöröshagyma,Spring onion,onions,3301220400,0,HU
+veg54,Batáta (édesburgonya),Batata (sweet potato),sweet_potatoes,3301040000,0,HU
+veg55,Borsmustár (rukkola),Pepper mustard (arugula),rocket_arugula,3301310600,0,HU
+veg56,Fűszer (édes) édeskömény vagy római édeskömény,Spice (sweet) fennel or Roman fennel,fennel,3301170000,0,HU
+veg57,Olasz édeskömény vagy gumós édeskömény,Italian fennel or tuberous fennel,fennel,3301170000,0,HU
+vha01,Vegyes hasznosítás,Mixed utilization,not_known_and_other,3399000000,1,HU
+viz01,Vizes élőhely kialakítása,Creating a wetland,wetlands,3310400000,0,HU
