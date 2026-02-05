@@ -9,12 +9,8 @@ import os
 from os.path import dirname, abspath
 import time
 import pandas as pd
-import geopandas as gpd
-import warnings
-import numpy as np
 import glob
 
-import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))

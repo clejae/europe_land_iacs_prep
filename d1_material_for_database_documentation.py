@@ -17,10 +17,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import glob
-from osgeo import ogr
 import geopandas as gpd
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))

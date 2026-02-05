@@ -7,17 +7,12 @@
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
-import warnings
 from os.path import dirname, abspath
 import time
-import fiona
-import numpy as np
 import pandas as pd
-import math
 import geopandas as gpd
-from osgeo import ogr
 
-import helper_functions
+from my_utils import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(dirname(abspath(__file__))))
@@ -30,19 +25,37 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    for year in range(2020, 2025):
+    ## Exploration
+    # in_dir = os.path.join("data", "vector", "IACS", "DK", "original")
+    # iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
+    #
+    # for i, in_pth in enumerate(iacs_files):
+    #
+    #     year = helper_functions.get_year_from_path(in_pth)
+    #     print(year)
+    #     print(f"{i + 1}/{len(iacs_files)} - Processing - {in_pth}")
+    #
+    #     out_pth = os.path.join("data", "vector", "IACS", "DK", "original", f"DUPS-layer_dk_{year}.gpkg")
+    #     helper_functions.extract_geometry_duplicates(in_pth, out_pth)
+    #
+    #     gdf = gpd.read_file(in_pth)
+    #     gdf = helper_functions.drop_non_geometries(gdf)
+    #     # gdf = helper_functions.remove_geometry_duplicates(gdf)
 
-        print("Reading input", year)
-        pth1 = fr"data\vector\IACS\DK\Marker_{year}\Marker_{year}.shp"
-        pth2 = fr"data\vector\IACS\DK\Marker_{year}\Marker{year}.shp"
+    ## Actual pre-processing
+    in_dir = os.path.join("data", "vector", "IACS", "DK", "original")
+    iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
 
-        if os.path.exists(pth1):
-            iacs = gpd.read_file(pth1)
-        elif os.path.exists(pth2):
-            iacs = gpd.read_file(pth2)
-        else:
-            print("file path does not exist")
-            break
+    for i, in_pth in enumerate(iacs_files):
+
+        year = int(helper_functions.get_year_from_path(in_pth))
+        print(year)
+        if year < 2024:
+            continue
+
+        print(f"{i + 1}/{len(iacs_files)} - Processing - {in_pth}")
+
+        iacs = gpd.read_file(in_pth)
 
         ## Create field_id
         if year < 2012:
@@ -63,6 +76,9 @@ def main():
         ## Unfortunately, the combination of farm id and marknr is not unique, because of errors in both columns, thus
         ## for the duplicates we create a generic unique id
         if len(iacs) != len(iacs["field_id"].unique()):
+
+            # iacs["field_id"] = helper_functions.make_id_unique_by_adding_cumcount(iacs["field_id"])
+
             iacs["temp_id"] = range(1, len(iacs) + 1)
             print("No unique field ID", len(iacs), len(iacs["field_id"].unique()))
 
@@ -80,11 +96,12 @@ def main():
             iacs["field_id"] = iacs["temp_id"].map(field_id_dict)
 
             iacs.drop(columns=["temp_id"], inplace=True)
+            print("Number of unique IDs now:", len(iacs["field_id"].unique()))
 
-        ## For these years, there are not duplicated farm_id field id combinations, so we can use them to merge the OML
+        ## For these years, there are no duplicated farm_id field id combinations, so we can use them to merge the OML
         ## to the df
-        if year in [2018, 2019, 2020, 2021, 2022, 2023]:
-            pth = fr"data\vector\IACS\DK\HiDrive-Organic\Oekologiske_arealer_{year}.shp"
+        if year in [2018, 2019, 2020, 2021, 2022, 2023, 2024]:
+            pth = os.path.join("data", "vector", "IACS", "DK", "original", "Organic", f"Oekologiske_arealer_{year}.shp")
             org_col = "OML"
 
             print("Reading organic", year)
@@ -100,14 +117,20 @@ def main():
             if year >= 2020:
                 farm_id_col = "FSjournal"
 
+            if year == 2024:
+                gdf_organic[org_col] = "1"
+
             gdf_organic["field_id"] = gdf_organic[farm_id_col] + "_" + gdf_organic["Marknr"]
-            iacs = pd.merge(iacs, gdf_organic[["field_id", "OML"]], "left", "field_id")
+            iacs = pd.merge(iacs, gdf_organic[["field_id", org_col]], "left", "field_id")
 
-            iacs.loc[iacs["OML"].isna(), "OML"] = "0"
-            iacs["OML"] = iacs["OML"].map({"0": 0, "1": 1, "2": 2})
-            iacs["OML"] = iacs["OML"].astype(int)
+            iacs.loc[iacs[org_col].isna(), org_col] = "0"
+            iacs[org_col] = iacs[org_col].map({"0": 0, "1": 1, "2": 2})
+            iacs[org_col] = iacs[org_col].astype(int)
 
-        out_pth = fr"data\vector\IACS\DK\Marker_{year}\Marker_{year}_prep.geoparquet"
+        iacs = helper_functions.drop_non_geometries(iacs)
+        iacs = helper_functions.remove_geometry_duplicates_prefer_non_empty_crops(iacs, crop_col="Afgroede")
+
+        out_pth = os.path.join("data", "vector", "IACS", "DK", "prep", rf"Marker_{year}_prep.geoparquet")
         iacs.to_parquet(out_pth)
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())

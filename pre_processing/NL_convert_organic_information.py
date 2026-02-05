@@ -6,9 +6,10 @@ import os
 from os.path import dirname, abspath
 import time
 import geopandas as gpd
-import pandas as pd
+import glob
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(dirname(abspath(__file__))))
@@ -20,7 +21,7 @@ def add_organic_information():
 
     for year in years:
 
-        pth = fr"data\vector\IACS\NL\Percelen_{year}.gpkg"
+        pth = os.path.join("data", "vector", "IACS", "NL", f"Percelen_{year}.gpkg") #fr"data\vector\IACS\NL\Percelen_{year}.gpkg"
         org_col = "BIOLOGISCHEPRODUCTIEWIJZE"
 
         print("Reading input", year)
@@ -38,7 +39,22 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    add_organic_information()
+    # add_organic_information()
+
+    ## Exploration
+    # in_dir = os.path.join("data", "vector", "IACS", "NL")
+    # iacs_files = glob.glob(os.path.join(in_dir, "*.gpkg"))
+    #
+    # for i, in_pth in enumerate(iacs_files[:1]):
+    #
+    #     year = helper_functions.get_year_from_path(in_pth)
+    #     print(year)
+    #
+    #     print(f"{i + 1}/{len(iacs_files)} - Processing - {in_pth}")
+    #     # count_duplicate_geometries(in_pth)
+    #
+    #     out_pth = os.path.join("data", "vector", "IACS", "NL", f"DUPS-layer_nl_{year}.gpkg")
+    #     helper_functions.extract_geometry_duplicates(in_pth, out_pth)
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)

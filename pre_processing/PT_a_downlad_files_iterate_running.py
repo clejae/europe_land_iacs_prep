@@ -1,12 +1,16 @@
-import os
 import subprocess
 import time
+import os
+from os.path import dirname, abspath
+
+WD = dirname(dirname(dirname(abspath(__file__))))
+os.chdir(WD)
 
 # Path to the script you want to run
-script_path = r"Q:\Europe-LAND\scripts\a_ALL_download_files.py"
+script_path = os.path.join("scripts", "pre_processing", "PT_a_download_files.py") #r"Q:\Europe-LAND\scripts\a_ALL_download_files.py"
 
 # Retry interval in seconds
-retry_interval = 60
+retry_interval = 20
 
 x = True
 while x == True:
@@ -15,9 +19,9 @@ while x == True:
         print(f"Attempting to run {script_path}...")
         subprocess.run(["python", script_path], check=True)
         print(f"{script_path} ran successfully.")
-        # if os.path.exists(r"Q:\Europe-LAND\data\vector\IACS\PT\download\parcelas_done.txt"):
-        # if os.path.exists(r"Q:\Europe-LAND\data\vector\IACS\PT\download\ocupacoes_solo_done.txt"):
-        if os.path.exists(r"Q:\Europe-LAND\data\vector\IACS\PT\download\culturas_done.txt"):
+        # if os.path.exists(os.path.join("data", "vector", "IACS", "PT", "download", "parcelas_done.txt")):
+        # if os.path.exists(os.path.join("data", "vector", "IACS", "PT", "download", "ocupacoes_solo_done.txt")):
+        if os.path.exists(os.path.join("data", "vector", "IACS", "PT", "download", "culturas_done.txt")):
             x = False
             break  # Exit loop if the script runs successfully
     except subprocess.CalledProcessError as e:

@@ -7,16 +7,14 @@
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
 from os.path import dirname, abspath
-import sys
 # os.environ['GDAL_DATA'] = os.path.join(f'{os.sep}'.join(sys.executable.split(os.sep)[:-1]), 'Library', 'share', 'gdal')
 import time
-import pandas as pd
 import geopandas as gpd
-import warnings
 import glob
 import shutil
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))
@@ -34,53 +32,56 @@ def main():
     crop_farm_cols = ["field_id", "farm_id", "crop_code", "crop_name", "EC_trans_n", "EC_hcat_n", "EC_hcat_c", "field_size"]
 
     run_dict = {
-        # "AT": {str(year): only_crop_cols for year in range(2015, 2022)} |
-        #       {str(year): crop_org_cols for year in range(2022, 2025)},
-        "BG": {"everything": True},
-        ## "BE/FLA": {"everything": True}, # no correction needed 10.12.24
-        # "CZ": {"2023": crop_farm_cols},
-        # "DE/BRB": {str(year): only_crop_cols for year in range(2010, 2025)},
-        # "DE/LSA": {str(year): only_crop_cols for year in range(2023, 2025)},
-        ## "DE/NRW": {str(year): only_crop_cols for year in range(2019, 2025)}, # no correction needed 10.12.24
-        # "DK": {"everything": True},
-        # "EE": {"everything": True},
-        # "FI": {"everything": True},
-        # "FR/FR": {"everything": True},
-        # "IE": {"everything": True},
-        ## "HR": {"everything": True}, # no correction needed 10.12.24
-        # "LT": {"everything": True},
-        # "LV": {str(year): only_crop_cols for year in range(2023, 2025)},
-        # "NL": {str(year): only_crop_cols for year in range(2009, 2025)},
-        # "PT/PT": {"everything": True},
-        # "PT/ALE": {"everything": True},
-        # "PT/ALG": {"everything": True},
-        # "PT/AML": {"everything": True},
-        # "PT/CET": {"everything": True},
-        # "PT/CEN": {"everything": True},
-        # "PT/CES": {"everything": True},
-        # "PT/NOR": {"everything": True},
-        # "PT/NON": {"everything": True},
-        # "PT/NOS": {"everything": True},
-        # "SE": {str(year): only_crop_cols for year in range(2015, 2024)}, # no correction needed 10.12.24
-        # "SI": {str(year): only_crop_cols for year in range(2018, 2024)},
-        # "SK": {str(year): only_crop_cols for year in range(2018, 2025)}
+        "AT": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2022)} |
+              {"switch": "off"} | {str(year): crop_org_cols for year in range(2022, 2025)},
+        "BG": {"switch": "off", "everything": True},
+        "BE/FLA": {"switch": "off", "everything": True}, # no correction needed 10.12.24
+        "CZ": {"switch": "off", "2023": crop_farm_cols},
+        "DE/BRB": {"switch": "off"} | {str(year): only_crop_cols for year in range(2010, 2025)},
+        "DE/LSA": {"switch": "off"} | {str(year): only_crop_cols for year in range(2023, 2025)},
+        ## "DE/NRW": {"switch": "off", str(year): only_crop_cols for year in range(2019, 2025)}, # no correction needed 10.12.24
+        "DK": {"switch": "off", "everything": True},
+        "EE": {"switch": "off", "everything": True},
+        "FI": {"switch": "off", "everything": True},
+        "FR/FR": {"switch": "off", "everything": True},
+        "IE": {"switch": "off", "everything": True},
+        ## "HR": {"switch": "off", "everything": True}, # no correction needed 10.12.24
+        "LT": {"switch": "off", "everything": True},
+        "LV": {"switch": "off"} |  {str(year): only_crop_cols for year in range(2023, 2025)},
+        "NL": {"switch": "off"} | {str(year): only_crop_cols for year in range(2009, 2025)},
+        "PT/PT": {"switch": "off", "everything": True},
+        "PT/ALE": {"switch": "off", "everything": True},
+        "PT/ALG": {"switch": "off", "everything": True},
+        "PT/AML": {"switch": "off", "everything": True},
+        "PT/CET": {"switch": "off", "everything": True},
+        "PT/CEN": {"switch": "off", "everything": True},
+        "PT/CES": {"switch": "off", "everything": True},
+        "PT/NOR": {"switch": "off", "everything": True},
+        "PT/NON": {"switch": "off", "everything": True},
+        "PT/NOS": {"switch": "off", "everything": True},
+        "SE": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2024)}, # no correction needed 10.12.24
+        "SI": {"switch": "off"} | {str(year): only_crop_cols for year in range(2018, 2024)},
+        "SK": {"switch": "off"} | {str(year): only_crop_cols for year in range(2018, 2025)}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
-    # FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    # FR_districts = list(FR_districts["code"])
-    # for district in FR_districts:
-    #     run_dict[f"FR/{district}"] = {"everything": True}
+    FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
+    FR_districts = list(FR_districts["code"])
+    for district in FR_districts:
+        run_dict[f"FR/{district}"] = {"switch": "off", "everything": True}
 
     ## For spain create a dictionary in a loop, because of the many subregions
     ## This code snippet needs to be corrected. I did the copying manually!
-    ## ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
-    ## ES_districts = list(ES_districts["code"])
-    ## for district in ES_districts:
-    ##     run_dict[f"ES/{district}"] = {"everything": True},
+    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = list(ES_districts["code"])
+    for district in ES_districts:
+        run_dict[f"ES/{district}"] = {"switch": "off", "everything": True},
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
         ## Derive input variables for processing
         region_id = country_code.replace(r"/", "_")
         in_dir = os.path.join("data", "vector", "IACS_EU_Land", country_code)

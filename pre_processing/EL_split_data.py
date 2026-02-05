@@ -9,14 +9,14 @@
 import os
 from os.path import dirname, abspath
 import time
-import fiona
-import numpy as np
+import glob
 import pandas as pd
 import math
 import geopandas as gpd
 from osgeo import ogr
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(dirname(abspath(__file__))))
@@ -24,13 +24,13 @@ os.chdir(WD)
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 
-def records(filename, list):
-    ## see https://gis.stackexchange.com/questions/220023/only-read-specific-rows-of-a-shapefile-with-geopandas-fiona
-    list = sorted(list) # if the elements of the list are not sorted
-    with fiona.open(filename) as source:
-        for i, feature in enumerate(source[:max(list)+1]):
-            if i in list:
-                yield feature
+# def records(filename, list):
+#     ## see https://gis.stackexchange.com/questions/220023/only-read-specific-rows-of-a-shapefile-with-geopandas-fiona
+#     list = sorted(list) # if the elements of the list are not sorted
+#     with fiona.open(filename) as source:
+#         for i, feature in enumerate(source[:max(list)+1]):
+#             if i in list:
+#                 yield feature
 
 def chunk_large_vector(in_pth, out_folder, chunk_size=500000):
 
@@ -185,42 +185,55 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    run_dict = {
-        "EL": {
-            "region_id": "EL",
-            "from_lang": "el",
-            "file_encoding": "utf-8",
-            "multiple_crop_entries_sep": ",",
-            "ignore_files_descr": "stables"
-        }
-    }
+    # run_dict = {
+    #     "EL": {
+    #         "region_id": "EL",
+    #         "from_lang": "el",
+    #         "file_encoding": "utf-8",
+    #         "multiple_crop_entries_sep": ",",
+    #         "ignore_files_descr": "stables"
+    #     }
+    # }
+    #
+    # ## Loop through tasks in run_dict
+    # for country_code in run_dict:
+    #     print(country_code)
+    #     region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
+    #     encoding = run_dict[country_code]["file_encoding"]
+    #     multiple_crop_entries_sep = run_dict[country_code]["multiple_crop_entries_sep"]
+    #
+    #     if "ignore_files_descr" in run_dict[country_code]:
+    #         ignore_files_descr = run_dict[country_code]["ignore_files_descr"]
+    #     else:
+    #         ignore_files_descr = None
+    #
+    #     if "file_year_encoding" in run_dict[country_code]:
+    #         file_year_encoding = run_dict[country_code]["file_year_encoding"]
+    #     else:
+    #         file_year_encoding = None
+    #
+    #     separate_unique_crop_code_from_file(
+    #         in_dir=fr"data\vector\IACS\{country_code}",
+    #         region_id=region_id,
+    #         col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
+    #         out_folder=fr"data\vector\IACS\{country_code}",
+    #         multiple_crop_entries_sep=multiple_crop_entries_sep,
+    #         encoding=encoding,
+    #         file_year_encoding=file_year_encoding,
+    #         ignore_files_descr=ignore_files_descr)
 
-    ## Loop through tasks in run_dict
-    for country_code in run_dict:
-        print(country_code)
-        region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
-        encoding = run_dict[country_code]["file_encoding"]
-        multiple_crop_entries_sep = run_dict[country_code]["multiple_crop_entries_sep"]
+    in_dir = os.path.join("data", "vector", "IACS", "EL")
+    iacs_files = glob.glob(os.path.join(in_dir, "parcel*.gpkg"))
 
-        if "ignore_files_descr" in run_dict[country_code]:
-            ignore_files_descr = run_dict[country_code]["ignore_files_descr"]
-        else:
-            ignore_files_descr = None
+    for i, in_pth in enumerate(iacs_files):
 
-        if "file_year_encoding" in run_dict[country_code]:
-            file_year_encoding = run_dict[country_code]["file_year_encoding"]
-        else:
-            file_year_encoding = None
+        year = helper_functions.get_year_from_path(in_pth)
+        print(year)
 
-        separate_unique_crop_code_from_file(
-            in_dir=fr"data\vector\IACS\{country_code}",
-            region_id=region_id,
-            col_translate_pth=rf"data\tables\{region_id}_column_name_translation.xlsx",
-            out_folder=fr"data\vector\IACS\{country_code}",
-            multiple_crop_entries_sep=multiple_crop_entries_sep,
-            encoding=encoding,
-            file_year_encoding=file_year_encoding,
-            ignore_files_descr=ignore_files_descr)
+        print(f"{i + 1}/{len(iacs_files)} - Processing - {in_pth}")
+        # count_duplicate_geometries(in_pth)
+        out_pth = os.path.join("data", "vector", "IACS", "EL", f"DUPS-layer_el_{year}.gpkg")
+        helper_functions.extract_geometry_duplicates(in_pth, out_pth)
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)

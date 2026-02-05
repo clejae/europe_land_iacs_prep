@@ -3,21 +3,24 @@ import geopandas as gpd
 import geojson
 import glob
 import os
+from os.path import dirname, abspath
 
-import helper_functions
+WD = dirname(dirname(dirname(abspath(__file__))))
+os.chdir(WD)
 
+from my_utils import helper_functions
 
 # ## Portugal
 def download_pt_parcelas():
     url = "https://www.ifap.pt/isip/ows/isip.data/wms"
 
-    grid = gpd.read_file(r"Q:\Europe-LAND\data\vector\IACS\PT\download_grid2_4326.gpkg")
+    grid = gpd.read_file(os.path.join("data", "vector", "IACS", "PT", "download_grid2_4326.gpkg"))
 
-    for year in range(2020, 2025):
+    for year in range(2025, 2026):
         print(year)
-        out_folder = fr"Q:\Europe-LAND\data\vector\IACS\PT\download\{year}"
+        out_folder = os.path.join("data", "vector", "IACS", "PT", "download", str(year)) # fr"Q:\Europe-LAND\data\vector\IACS\PT\download\{year}"
         helper_functions.create_folder(out_folder)
-        done_lst = glob.glob(fr"{out_folder}\*.gpkg")
+        done_lst = glob.glob(os.path.join(out_folder, "*.gpkg")) #fr"{out_folder}\*.gpkg")
         done_lst = [int(os.path.basename(pth).split("_sub")[1].split("_")[0]) for pth in done_lst]
 
         # Specify parameters (read data in json format).
@@ -52,23 +55,23 @@ def download_pt_parcelas():
 
                 print("Write data out")
 
-                out_pth = fr"{out_folder}\parcelas_sub{fid}_{year}.gpkg"
+                out_pth = os.path.join(out_folder, f"parcelas_sub{fid}_{year}.gpkg") #fr"{out_folder}\parcelas_sub{fid}_{year}.gpkg"
                 data.to_file(out_pth, driver="GPKG")
 
-    with open(r"Q:\Europe-LAND\data\vector\IACS\PT\download\done.txt", "w") as file:
+    with open(os.path.join("data", "vector", "IACS", "PT", "download", "parcelas_done.txt"), "w") as file:
         file.write("done.")
 
 
 def download_pt_ocupacoes_solo():
     url = "https://www.ifap.pt/isip/ows/isip.data/wms"
 
-    grid = gpd.read_file(r"Q:\Europe-LAND\data\vector\IACS\PT\download_grid2_4326.gpkg")
+    grid = gpd.read_file(os.path.join("data", "vector", "IACS", "PT", "download_grid2_4326.gpkg"))
 
-    for year in range(2020, 2025):
+    for year in range(2025, 2026):
         print(year)
-        out_folder = fr"Q:\Europe-LAND\data\vector\IACS\PT\download\ocupacoes_solo\{year}"
+        out_folder = os.path.join("data", "vector", "IACS", "PT", "download", "ocupacoes_solo", str(year))
         helper_functions.create_folder(out_folder)
-        done_lst = glob.glob(fr"{out_folder}\*.gpkg")
+        done_lst = glob.glob(os.path.join(out_folder, "*.gpkg"))
         done_lst = [int(os.path.basename(pth).split("_sub")[1].split("_")[0]) for pth in done_lst]
 
         # Specify parameters (read data in json format).
@@ -103,23 +106,23 @@ def download_pt_ocupacoes_solo():
 
                 print("Write data out")
 
-                out_pth = fr"{out_folder}\ocupacoes_solo_sub{fid}_{year}.gpkg"
+                out_pth = os.path.join(out_folder, f"ocupacoes_solo_sub{fid}_{year}.gpkg")
                 data.to_file(out_pth, driver="GPKG")
 
-    with open(r"Q:\Europe-LAND\data\vector\IACS\PT\download\ocupacoes_solo_done.txt", "w") as file:
+    with open(os.path.join("data", "vector", "IACS", "PT", "download", "ocupacoes_solo_done.txt"), "w") as file:
         file.write("done.")
 
 
 def download_pt_culturas():
     url = "https://www.ifap.pt/isip/ows/isip.data/wms"
 
-    grid = gpd.read_file(r"Q:\Europe-LAND\data\vector\IACS\PT\download_grid2_4326.gpkg")
+    grid = gpd.read_file(os.path.join("data", "vector", "IACS", "PT", "download_grid2_4326.gpkg"))
 
-    for year in range(2020, 2025):
+    for year in range(2025, 2026):
         print(year)
-        out_folder = fr"Q:\Europe-LAND\data\vector\IACS\PT\download\culturas\{year}"
+        out_folder = os.path.join("data", "vector", "IACS", "PT", "download", "culturas", str(year))
         helper_functions.create_folder(out_folder)
-        done_lst = glob.glob(fr"{out_folder}\*.gpkg")
+        done_lst = glob.glob(os.path.join(out_folder, "*.gpkg"))
         done_lst = [int(os.path.basename(pth).split("_sub")[1].split("_")[0]) for pth in done_lst]
 
         # Specify parameters (read data in json format).
@@ -154,14 +157,14 @@ def download_pt_culturas():
 
                 print("Write data out")
 
-                out_pth = fr"{out_folder}\culturas_sub{fid}_{year}.gpkg"
+                out_pth = os.path.join(out_folder, f"culturas_sub{fid}_{year}.gpkg")
                 data.to_file(out_pth, driver="GPKG")
 
-    with open(r"Q:\Europe-LAND\data\vector\IACS\PT\download\culturas_done.txt", "w") as file:
+    with open(os.path.join("data", "vector", "IACS", "PT", "download", "culturas_done.txt"), "w") as file:
         file.write("done.")
 
 
 if __name__ == '__main__':
-    download_pt_parcelas()
-    download_pt_ocupacoes_solo()
+    # download_pt_parcelas()
+    # download_pt_ocupacoes_solo()
     download_pt_culturas()

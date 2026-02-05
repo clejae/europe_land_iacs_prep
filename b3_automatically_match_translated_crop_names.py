@@ -16,28 +16,27 @@
 # assigned HCAT class is correct. The final table should then be stored in:
 # data\tables\crop_classifications\XX_crop_classification_final.xlsx
 
-# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# If you want to run this script for a specific country, include an entry into the run_dict which can be found
+# the top of the main function.
 # The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
-# item is another dictionary. In this dictionary, you should include the following keys:
+# item should be another dictionary. In this dictionary, you should include the following keys:
 
 # "region_id" - basically the main key (XX), but for XX/XXX changed into XX_XXX
 # "file_encoding" - Encoding of the original GSA file
 # "file_year_encoding" - [optional] use if specific years deviate from that encoding
 # ""match_df_pth": [optional for second function] use to specify the classification that should be used solely.
 
-# To turn off/on the matching of a specific country, just comment/uncomment the specific line of the run_dict
+# To turn off/on the processing of a specific country, set the key "switch" in the dictionary to "off" or "on"
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
 from os.path import dirname, abspath
 import time
 import pandas as pd
-import geopandas as gpd
 import glob
 import jaro
 from typing import Literal, get_args
 
-import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))
@@ -232,10 +231,12 @@ def main():
     ## 1. For matching with all already existing classifications
     run_dict = {
         "IT/EMR": {
+            "switch": "off",
             "region_id": "IT_EMR",
             "file_encoding": "utf-8"
         },
         "IT/MAR": {
+            "switch": "off",
             "region_id": "IT_MAR",
             "file_encoding": "utf-8"
         },
@@ -244,10 +245,12 @@ def main():
             "file_encoding": "utf-8"
         },
         "IE": {
+            "switch": "off",
             "region_id": "IE",
             "file_encoding": "utf-8"
         },
         "DE/THU": {
+            "switch": "off",
             "region_id": "DE_THU",
             "file_encoding": "utf-8"
         }
@@ -255,6 +258,9 @@ def main():
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
 
@@ -272,20 +278,25 @@ def main():
 
     ## For matching with a specific df
     run_dict = {
-        # "IT/MAR": {
-        #     "region_id": "IT_MAR",
-        #     "file_encoding": "utf-8",
-        #     "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
-        # },
-        # "IT/TOS": {
-        #     "region_id": "IT_TOS",
-        #     "file_encoding": "utf-8",
-        #     "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
-        # },
+        "IT/MAR": {
+            "switch": "off",
+            "region_id": "IT_MAR",
+            "file_encoding": "utf-8",
+            "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
+        },
+        "IT/TOS": {
+            "switch": "off",
+            "region_id": "IT_TOS",
+            "file_encoding": "utf-8",
+            "match_df_pth": r"data\tables\crop_classifications\IT_EMR_crop_classification_final.xlsx"
+        },
     }
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
         ## Derive input variables for function
         region_id = run_dict[country_code]["region_id"]  #country_code.replace(r"/", "_")
 

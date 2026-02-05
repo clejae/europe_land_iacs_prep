@@ -15,9 +15,10 @@
 # Both files should be used to manually classify missing crop names to EuroCrops classification. The final table should be
 # stored in data\tables\crop_classifications\XX_crop_classification_final.xlsx
 
-# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# If you want to run this script for a specific country, include an entry into the run_dict which can be found
+# the top of the main function.
 # The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
-# item is another dictionary. In this dictionary, you should include the following keys:
+# item should be another dictionary. In this dictionary, you should include the following keys:
 
 # "region_id" - basically the main key (XX), but for XX/XXX changed into XX_XXX
 # "from_lang" - input for GoogleTranslator function to indicate which language needs to be translated
@@ -39,11 +40,15 @@
 #     "file_encoding": "utf-8",
 #     "crop_names_pth": os.path.join("data", "tables", "crop_names", "CY_unique_crop_names.csv")}
 
-# To turn off/on the processing of a specific country, just comment/uncomment the specific line of the run_dict
+# To turn off/on the processing of a specific country, set the key "switch" in the dictionary to "off" or "on"
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
 from os.path import dirname, abspath
+import sys
+# os.environ['GDAL_DATA'] = os.path.join(f'{os.sep}'.join(sys.executable.split(os.sep)[:-1]), 'Library', 'share', 'gdal')
+os.environ["GDAL_DRIVER_PATH"] = os.path.join(f'{os.sep}'.join(sys.executable.split(os.sep)[:-1]), 'Library', 'lib', 'gdalplugins')
+
 import time
 import pandas as pd
 import geopandas as gpd
@@ -54,7 +59,8 @@ from deep_translator import GoogleTranslator
 ## PonsTranslator
 # from translate import Translator
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))
@@ -199,7 +205,7 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
 def get_eurocrops_classification(eurocrops_pth, region_id, col_translate_pth, out_pth):
     print("Get EuroCrops classification from their shapefile.")
     ## Open column translation df
-    tr_df = pd.read_excel(col_translate_pth)
+    tr_df = pd.read_csv(col_translate_pth)
 
     ## Open EuroCrops Shapefile
     file_name, file_extension = os.path.splitext(eurocrops_pth)
@@ -306,9 +312,9 @@ def translate_crop_names(crop_names_pth, from_lang, country_code, out_pth):
     # translator_de = Translator(provider="mymemory", to_lang="de", from_lang=from_lang)
     # df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(translator_en.translate)
     # df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(translator_de.translate)
-    df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='de').translate)
+    # df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='de').translate)
     df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='en').translate)
-    df_cnames["crop_name_dk"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='da').translate)
+    # df_cnames["crop_name_dk"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='da').translate)
 
     ## Merge tables
     df_cnames.sort_values(by="crop_name", inplace=True)
@@ -400,28 +406,33 @@ def main():
 
     run_dict = {
         "AT": {
+            "switch": "off",
             "region_id": "AT",
             "from_lang": "de",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "BE/FLA": {
-           "region_id": "BE_FLA",
+            "switch": "off",
+            "region_id": "BE_FLA",
            "from_lang": "nl",
-           "eurocrops_pth":os.path.join("data", "vector", "EuroCrops", "BE_FLA_2021", "BE_VLG_2021_EC21.shp")
+           "eurocrops_pth": os.path.join("data", "vector", "EuroCrops", "BE_FLA_2021", "BE_VLG_2021_EC21.shp")
         },
         "BE/WAL": {
-           "region_id": "BE_WAL",
-           "from_lang": "fr",
-           "eurocrops_pth": False,
-           "file_encoding": "ISO-8859-1"
+            "switch": "off",
+            "region_id": "BE_WAL",
+            "from_lang": "fr",
+            "eurocrops_pth": False,
+            "file_encoding": "ISO-8859-1"
         },
         "BG": {
+            "switch": "off",
             "region_id": "BG",
             "from_lang": "bg",
             "eurocrops_pth": False,
             "file_encoding": "windows-1251"},
         "CY/APPL": {
+            "switch": "off",
             "region_id": "CY_APPL",
             "from_lang": "el",
             "eurocrops_pth": False,
@@ -430,60 +441,104 @@ def main():
             "crop_names_pth": os.path.join("data", "tables", "crop_names", "CY_unique_crop_names.csv"),
         },
         "CZ": {
+            "switch": "off",
             "region_id": "CZ",
             "from_lang": "cs",
             "file_encoding": "ISO-8859-1",
             "eurocrops_pth": False,
             "ignore_files_descr": "IACS_Czechia"},
         "DE/BRB": {
+            "switch": "off",
             "region_id": "DE_BRB",
             "from_lang": "de",
             "file_encoding": "ISO-8859-1",
             "eurocrops_pth": True},
+        "DE/BWB": {
+            "switch": "off",
+            "region_id": "DE_BWB",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "Original",
+            "eurocrops_pth": True},
         "DE/LSA": {
+            "switch": "off",
             "region_id": "DE_LSA",
             "from_lang": "de",
             "file_encoding": "utf-8",
             "eurocrops_pth": True,
             "ignore_files_descr": "other_files"},
+        # # "DE/NRW": { # PUBLIC
+        # #     "region_id": "DE_NRW",
+        # #     "from_lang": "de",
+        # #     "file_encoding": "ISO-8859-1",
+        # #     "ignore_files_descr": "HIST",
+        # #     "eurocrops_pth": True},
+        "DE/MWP": {
+            "switch": "off",
+            "region_id": "DE_MWP",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "public",
+            "eurocrops_pth": False},
         "DE/NRW": {
+            "switch": "off",
             "region_id": "DE_NRW",
             "from_lang": "de",
-            "file_encoding": "ISO-8859-1",
-            "ignore_files_descr": "HIST",
-            "eurocrops_pth": True},
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "public",
+            "eurocrops_pth": False},
+        "DE/RLP": {
+            "switch": "off",
+            "region_id": "DE_RLP",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "public",
+            "eurocrops_pth": False},
         "DE/SAT": {
+            "switch": "off",
             "region_id": "DE_SAT",
             "from_lang": "de",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Referenz",
             "eurocrops_pth": False},
-        "DE/SAA": {
+        "DE/SAA": { # OLD
+            "switch": "off",
             "region_id": "DE_SAA",
             "from_lang": "de",
             "file_encoding": "utf-8",
             "file_year_encoding": {"2023": "windows-1252"},
             "ignore_files_descr": "Antrag",
             "eurocrops_pth": False},
+        "DE/SAA": {
+            "switch": "off",
+            "region_id": "DE_SAA",
+            "from_lang": "de",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "public",
+            "eurocrops_pth": False},
         "DE/THU": {
+            "switch": "off",
             "region_id": "DE_THU",
             "from_lang": "de",
             "file_encoding": "utf-8",
             "ignore_files_descr": "ZN",
             "eurocrops_pth": False},
         "DK": {
+            "switch": "off",
             "region_id": "DK",
             "from_lang": "da",
             "eurocrops_pth": True,
             "file_encoding": "ISO-8859-1"
         },
         "EE": {
+            "switch": "off",
             "region_id": "EE",
             "from_lang": "et",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "EL": {
+            "switch": "off",
             "region_id": "EL",
             "from_lang": "el",
             "eurocrops_pth": False,
@@ -492,18 +547,21 @@ def main():
             "crop_names_pth": os.path.join("data", "tables", "crop_names", "EL_unique_crop_names.csv")
         },
         "ES": {
-           "region_id": "ES",
-           "from_lang": "es",
-           "eurocrops_pth": False,
+            "switch": "off",
+            "region_id": "ES",
+            "from_lang": "es",
+            "eurocrops_pth": False,
             "file_encoding": "utf-8"
             },
         "FI": {
+            "switch": "off",
             "region_id": "FI",
             "from_lang": "fi",
             "eurocrops_pth": False,
             "file_encoding": "ISO-8859-1"
         },
         "FR/SUBREGIONS": {
+            "switch": "off",
             "fr_special_function": get_french_values_from_csv,
             "region_id": "FR_SUBREGIONS",
             "from_lang": "fr",
@@ -511,6 +569,7 @@ def main():
             "file_encoding": "utf-8",
         },
         "FR/FR": {
+            "switch": "off",
             "region_id": "FR_FR",
             "from_lang": "fr",
             "eurocrops_pth": True,
@@ -518,12 +577,14 @@ def main():
             "ignore_files_descr": "ILOTS_ANONYMES"
         },
         "HR": {
+            "switch": "off",
             "region_id": "HR",
             "from_lang": "hr",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "HU": {
+            "switch": "off",
             "region_id": "HU",
             "from_lang": "hu",
             "eurocrops_pth": False,
@@ -532,96 +593,118 @@ def main():
             "crop_names_pth": os.path.join("data", "tables", "crop_names", "HU_unique_crop_names.csv")
         },
         "IE": {
+            "switch": "off",
             "region_id": "IE",
             "from_lang": "en",
             "eurocrops_pth": False,
             "file_encoding": "utf-8"
         },
         "IT/EMR": {
+            "switch": "off",
             "region_id": "IT_EMR",
             "from_lang": "it",
             "eurocrops_pth": False,
             "file_encoding": "utf-8"
         },
         "IT/MAR": {
+            "switch": "off",
             "region_id": "IT_MAR",
             "from_lang": "it",
             "eurocrops_pth": False,
             "file_encoding": "utf-8"
         },
         "IT/TOS": {
+            "switch": "off",
             "region_id": "IT_TOS",
             "from_lang": "it",
             "eurocrops_pth": False,
             "file_encoding": "utf-8"
         },
         "LV": {
+            "switch": "off",
             "region_id": "LV",
             "from_lang": "lv",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "NL": {
+            "switch": "off",
             "region_id": "NL",
             "from_lang": "nl",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
+        "PL": {
+            "switch": "off",
+            "region_id": "PL",
+            "from_lang": "en",
+            "eurocrops_pth": False,
+            "file_encoding": "windows-1250"},
         "PT/ALE": {
+            "switch": "off",
             "region_id": "PT_ALE",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/ALG": {
+            "switch": "off",
             "region_id": "PT_ALG",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/AML": {
+            "switch": "off",
             "region_id": "PT_AML",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/CE": {
+            "switch": "off",
             "region_id": "PT_CE",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/CEN": {
+            "switch": "off",
             "region_id": "PT_CEN",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/CES": {
+            "switch": "off",
             "region_id": "PT_CES",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/NO": {
+            "switch": "off",
             "region_id": "PT_NO",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/NON": {
+            "switch": "off",
             "region_id": "PT_NON",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/NOS": {
+            "switch": "off",
             "region_id": "PT_NOS",
             "from_lang": "pt",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "PT/PT": {
+            "switch": "off",
             "region_id": "PT_PT",
             "from_lang": "pt",
             "eurocrops_pth": True,
@@ -629,24 +712,28 @@ def main():
             "pt_special_function": pt_combine_crop_codes_with_crop_names
         },
         "RO": {
+            "switch": "off",
             "region_id": "RO",
             "from_lang": "ro",
             "eurocrops_pth": False,
             "file_encoding": "utf-8"
         },
         "SE": {
-           "region_id": "SE",
-           "from_lang": "sv",
-           "eurocrops_pth": True,
+            "switch": "off",
+            "region_id": "SE",
+            "from_lang": "sv",
+            "eurocrops_pth": True,
             "file_encoding": "ISO-8859-1"
         },
         "SI": {
+            "switch": "off",
             "region_id": "SI",
             "from_lang": "sl",
             "eurocrops_pth": True,
             "file_encoding": "utf-8"
         },
         "SK": {
+            "switch": "off",
             "region_id": "SK",
             "from_lang": "sk",
             "eurocrops_pth": True,
@@ -659,15 +746,20 @@ def main():
     ES_districts = list(ES_districts["code"])
     for district in ES_districts:
         run_dict[f"ES/{district}"] = {
+            "switch": "off",
             "region_id": f"ES_{district}",
             "from_lang": "es",
             "eurocrops_pth": False,
             "file_encoding": "utf-8",
-            "col_translate_pth": os.path.join("data", "tables", "IACS", "column_name_translations", "ES_column_name_translation.xlsx")
+            "col_translate_pth": os.path.join("data", "tables", "IACS", "column_name_translations",
+                                              "ES_column_name_translation.csv")
         }
 
     ## Loop through tasks in run_dict
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
         print(country_code)
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
         eurocrops_pth = run_dict[country_code]["eurocrops_pth"]
@@ -702,7 +794,8 @@ def main():
                 list_crop_names_ogr(
                     in_dir = os.path.join("data", "vector", "IACS", country_code),
                     region_id=region_id,
-                    col_translate_pth = os.path.join("data", "tables", "column_name_translations", f"{region_id}_column_name_translation.xlsx"),
+                    col_translate_pth = os.path.join("data", "tables", "column_name_translations",
+                                                     f"{region_id}_column_name_translation.csv"),
                     out_pth = os.path.join("data", "tables", "crop_names", f"{region_id}_unique_crop_names.csv"),
                     encoding=encoding,
                     file_year_encoding=file_year_encoding,
@@ -725,7 +818,7 @@ def main():
         # # get_eurocrops_classification(
         # #     eurocrops_pth=path/to/eurocrop_iacs_file_w_classification.shp,
         # #     region_id=region_id,
-        # #     col_translate_pth=rf"data\tables\column_name_translations\{country_code}_column_name_translation.xlsx",
+        # #     col_translate_pth=rf"data\tables\column_name_translations\{country_code}_column_name_translation.csv",
         # #     out_pth=rf"data\tables\crop_names\{region_id}_EuroCrops_classification.csv")
 
         if "crop_names_pth" in run_dict[country_code]:

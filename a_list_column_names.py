@@ -16,9 +16,10 @@
 # where XX stands for the country or country_subregion abbreviation (XX_XXX_). We used Excel-tables, because that was
 # easiest for handling the encoding mess of all the member states.
 
-# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# If you want to run this script for a specific country, include an entry into the run_dict which can be found
+# the top of the main function.
 # The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
-# item is another dictionary. In this dictionary, you should include the following keys:
+# item should be another dictionary. In this dictionary, you should include the following keys:
 #
 # "file_encoding" - Encoding of the original GSA file
 # "file_year_encoding" - [optional] use if specific years deviate from that encoding
@@ -26,20 +27,21 @@
 #
 # For example: CZ": {"file_encoding": "ISO-8859-1", file_year_encoding": {"2015": "utf-8"}, "ignore_files_descr": "other data"}
 
-# To turn off/on the processing of a specific country, just comment/uncomment the specific line
+# To turn off/on the processing of a specific country, set the key "switch" in the dictionary to "off" or "on"
 
 # There is a second run_dict for animal data at the bottom of the main function. This is work in progress.
 
-
-
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
+import sys
+os.environ["GDAL_DRIVER_PATH"] = os.path.join(f'{os.sep}'.join(sys.executable.split(os.sep)[:-1]), 'Library', 'lib', 'gdalplugins')
 from os.path import dirname, abspath
 import time
 import pandas as pd
 import chardet
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))
@@ -121,7 +123,6 @@ def get_geodata_column_names(path, encoding="utf-8"):
 
 def get_table_column_names(path, encoding, sep=","):
     import os
-    from osgeo import ogr
 
     print(f"Get column names of table: {path}")
 
@@ -196,7 +197,7 @@ def list_column_names_of_iacs_data_in_dir(in_dir, out_pth, encoding=None, file_y
     out_df = pd.DataFrame.from_dict(res_dict)
     out_folder = os.path.dirname(out_pth)
     helper_functions.create_folder(out_folder)
-    out_df.to_excel(out_pth, index=False)
+    out_df.to_csv(out_pth, index=False)
 
 
 def list_column_names_of_animal_data_in_dir(in_dir, out_pth, encoding, ignore_files_descr=None, sep=","):
@@ -249,66 +250,74 @@ def main():
 
     ## List column names of the IACS vector data listed in the dictionary
     run_dict = {
-        # "AT": {"file_encoding": "utf-8"},
-        # "BG": {"file_encoding": "windows-1251"},
-        # "BE/FLA": {"file_encoding": "utf-8"},
-        # "BE/WAL": {"file_encoding": "ISO-8859-1"},
-        # "CY/LPIS": {"file_encoding": "utf-8"},
-        # "CY/APPL": {"file_encoding": "utf-8"},
-        # "CZ": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "IACS_Czechia"},
-        # "DE/BRB": {"file_encoding": "ISO-8859-1"},
-        "DE/LSA": {"file_encoding": "utf-8", "file_year_encoding": {"2015": "ISO-8859-1", "2016": "ISO-8859-1",
+        "AT": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
+        "BG": {"switch": "off", "file_encoding": "windows-1251"},
+        "BE/FLA": {"switch": "off", "file_encoding": "utf-8"},
+        "BE/WAL": {"switch": "off", "file_encoding": "utf-8"},
+        "CY/LPIS": {"switch": "off", "file_encoding": "utf-8"},
+        "CY/APPL": {"switch": "off", "file_encoding": "utf-8"},
+        "CZ": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
+        "DE/BRB": {"switch": "off", "file_encoding": "ISO-8859-1"},
+        "DE/LSA": {"switch": "off", "file_encoding": "utf-8", "file_year_encoding": {"2015": "ISO-8859-1", "2016": "ISO-8859-1",
                                                                     "2017": "ISO-8859-1", "2018": "ISO-8859-1",
                                                                     "2019": "ISO-8859-1"}, "ignore_files_descr": "ignore"},
-        # "DE/NRW": {"file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"},
-        # "DE/SAT": {"file_encoding": "utf-8", "ignore_files_descr": "Referenz"},
-        # "DE/SAA": {"file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"}, "ignore_files_descr": "Antrag"},
-        # "DE/THU": {"file_encoding": "utf-8", "ignore_files_descr": "ZN"},
-        # "DK": {"file_encoding": "ISO-8859-1"},
-        # "EE": {"file_encoding": "utf-8"},
-        # "EL": {"file_encoding": "utf-8", "ignore_files_descr": "stables"},
-        # "ES/ALA": {"file_encoding": "utf-8"},
-        # "FI": {"file_encoding": "utf-8"},
-        # "FR/FR": {"file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
-        # "FR/ARA": {"file_encoding": "utf-8"},
-        # "FR/BRC": {"file_encoding": "utf-8"},
-        # "FR/BRE": {"file_encoding": "utf-8"},
-        # "FR/COR": {"file_encoding": "utf-8"},
-        # "FR/CVL": {"file_encoding": "utf-8"},
-        # "FR/GRE": {"file_encoding": "utf-8"},
-        # "FR/HDF": {"file_encoding": "utf-8"},
-        # "FR/IDF": {"file_encoding": "utf-8"},
-        # "FR/NOR": {"file_encoding": "utf-8"},
-        # "FR/NOU": {"file_encoding": "utf-8"},
-        # "FR/OCC": {"file_encoding": "utf-8"},
-        # "FR/PDL": {"file_encoding": "utf-8"},
-        # "FR/PRO": {"file_encoding": "utf-8"},
-        # "HR": {"file_encoding": "utf-8"},
-        # "HU": {"file_encoding": "utf-8"},
-        # "IE": {"file_encoding": "utf-8", "ignore_files_descr": "Exclusions"},
-        # "IT/EMR": {"file_encoding": "utf-8"},
-        # "IT/MAR": {"file_encoding": "utf-8"},
-        # "IT/TOS": {"file_encoding": "utf-8"},
-        # "LV": {"file_encoding": "utf-8"},
-        # "LT": {"file_encoding": "utf-8"},
-        # "NL": {"file_encoding": "utf-8"},
-        # "PT/ALE": {"file_encoding": "utf-8"},
-        # "PT/ALG": {"file_encoding": "utf-8"},
-        # "PT/AML": {"file_encoding": "utf-8"},
-        # "PT/CE": {"file_encoding": "utf-8"},
-        # "PT/CEN": {"file_encoding": "utf-8"},
-        # "PT/CES": {"file_encoding": "utf-8"},
-        # "PT/NO": {"file_encoding": "utf-8"},
-        # "PT/NON": {"file_encoding": "utf-8"},
-        # "PT/NOS": {"file_encoding": "utf-8"},
-        # "PT/PT": {"file_encoding": "utf-8"},
-        # "RO": {"file_encoding": "utf-8"},
-        # "SE": {"file_encoding": "utf-8", "ignore_files_descr": "skiften"},
-        # "SI": {"file_encoding": "utf-8"},
-        # "SK": {"file_encoding": "utf-8"}
+        "DE/MWP": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "public"},
+        "DE/NRW": {"switch": "off", "file_encoding": "ISO-8859-1", "ignore_files_descr": "HIST"}, # Public
+        "DE/NRW": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "public"},
+        "DE/RLP": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "public"},
+        "DE/SAT": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "Referenz"},
+        "DE/SAA": {"switch": "off", "file_encoding": "utf-8", "file_year_encoding": {"2023": "windows-1252"}, "ignore_files_descr": "Antrag"}, #old
+        "DE/SAA": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "old"},
+        "DE/THU": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "ZN"},
+        "DK": {"switch": "off", "file_encoding": "ISO-8859-1"},
+        "EE": {"switch": "off", "file_encoding": "utf-8"},
+        "EL": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "stables"},
+        "ES/ALA": {"switch": "off", "file_encoding": "utf-8"},
+        "FI": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/FR": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "ILOTS_ANONYMES"},
+        "FR/ARA": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/BRC": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/BRE": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/COR": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/CVL": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/GRE": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/HDF": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/IDF": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/NOR": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/NOU": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/OCC": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/PDL": {"switch": "off", "file_encoding": "utf-8"},
+        "FR/PRO": {"switch": "off", "file_encoding": "utf-8"},
+        "HR": {"switch": "off", "file_encoding": "utf-8"},
+        "HU": {"switch": "off", "file_encoding": "utf-8"},
+        "IE": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "Exclusions"},
+        "IT/EMR": {"switch": "off", "file_encoding": "utf-8"},
+        "IT/MAR": {"switch": "off", "file_encoding": "utf-8"},
+        "IT/TOS": {"switch": "off", "file_encoding": "utf-8"},
+        "LV": {"switch": "off", "file_encoding": "utf-8"},
+        "LT": {"switch": "off", "file_encoding": "utf-8"},
+        "NL": {"switch": "off", "file_encoding": "utf-8"},
+        "PL": {"switch": "off", "file_encoding": "windows-1250"},
+        "PT/ALE": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/ALG": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/AML": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/CE": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/CEN": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/CES": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/NO": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/NON": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/NOS": {"switch": "off", "file_encoding": "utf-8"},
+        "PT/PT": {"switch": "off", "file_encoding": "utf-8"},
+        "RO": {"switch": "off", "file_encoding": "utf-8"},
+        "SE": {"switch": "off", "file_encoding": "utf-8", "ignore_files_descr": "skiften"},
+        "SI": {"switch": "off", "file_encoding": "utf-8"},
+        "SK": {"switch": "off", "file_encoding": "utf-8"}
     }
 
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
         encoding = run_dict[country_code]["file_encoding"]
         if "file_year_encoding" in run_dict[country_code]:
             file_year_encoding = run_dict[country_code]["file_year_encoding"]
@@ -339,10 +348,12 @@ def main():
             file_year_encoding = run_dict[country_code]["file_year_encoding"]
         else:
             file_year_encoding = None
+
         if "ignore_files_descr" in run_dict[country_code]:
             ignore_files_descr = run_dict[country_code]["ignore_files_descr"]
         else:
             ignore_files_descr = None
+
         if "sep" in run_dict[country_code]:
             sep = run_dict[country_code]["sep"]
         else:

@@ -1,9 +1,15 @@
 import requests
+import os
+from os.path import dirname, abspath
+
+WD = dirname(dirname(dirname(abspath(__file__))))
+os.chdir(WD)
+
 
 ## Sweden
 url = "http://epub.sjv.se/inspire/inspire/wfs"
 
-for year in range(2015, 2022):
+for year in range(2024, 2025):
     # Define parameters
     params = {
         "SERVICE": "WFS",
@@ -20,7 +26,7 @@ for year in range(2015, 2022):
 
     # Save response content if the request was successful
     if response.status_code == 200:
-        with open(fr"Q:\Europe-LAND\data\vector\IACS\SE\arslager_skifte_{year}.zip", "wb") as f:
+        with open(os.path.join("data", "vector", "IACS", "SE_temp", "public", f"arslager_skifte_{year}.zip"), "wb") as f:
             f.write(response.content)
     else:
         print(f"Error: {response.status_code}")

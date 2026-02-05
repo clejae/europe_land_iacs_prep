@@ -13,9 +13,9 @@ import time
 import pandas as pd
 import geopandas as gpd
 import glob
-from shapely.validation import make_valid
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(dirname(abspath(__file__))))
@@ -29,7 +29,7 @@ def combine_information_from_wfs(year):
 
     if year < 2023:
 
-        sub_lst = glob.glob(fr"data\vector\IACS\PT\PT_temp\ocupacoes_solo\{year}\*.gpkg")
+        sub_lst = glob.glob(os.path.join("data", "vector", "IACS", "PT", "PT_temp", "ocupacoes_solo", str(year), "*.gpkg"))
         sub_lst = [pth.split("_sub")[1].split("_")[0] for pth in sub_lst]
         print(len(sub_lst))
 
@@ -39,9 +39,9 @@ def combine_information_from_wfs(year):
             print(year, sub)
 
             ## Open files
-            parc_pth = fr"data\vector\IACS\PT\PT_temp\parcelas\{year}\parcelas_sub{sub}_{year}.gpkg"
-            ocup_pth = fr"data\vector\IACS\PT\PT_temp\ocupacoes_solo\{year}\ocupacoes_solo_sub{sub}_{year}.gpkg"
-            cult_pth = fr"data\vector\IACS\PT\PT_temp\culturas\{year}\culturas_sub{sub}_{year}.gpkg"
+            parc_pth = os.path.join("data", "vector", "IACS", "PT", "PT_temp", "parcelas", str(year), f"parcelas_sub{sub}_{year}.gpkg")
+            ocup_pth = os.path.join("data", "vector", "IACS", "PT", "PT_temp", "ocupacoes_solo", str(year), f"ocupacoes_solo_sub{sub}_{year}.gpkg")
+            cult_pth = os.path.join("data", "vector", "IACS", "PT", "PT_temp", "culturas", str(year), f"culturas_sub{sub}_{year}.gpkg")
             ocup = gpd.read_file(ocup_pth)
 
             if not os.path.exists(parc_pth):
@@ -98,14 +98,14 @@ def combine_information_from_wfs(year):
 
         # parcels = parcels.loc[parcels["PUN_CUL"].notna()].copy()
         add_crops = pd.concat(add_crops_lst)
+        of = os.path.join("data", "vector", "IACS", "PT", "PT", str(year))
+        helper_functions.create_folder(of)
 
-        helper_functions.create_folder(rf"data\vector\IACS\PT\PT\{year}")
-
-        parcels.to_parquet(fr"data\vector\IACS\PT\PT\{year}\ocupacoes_solo_{year}.geoparquet")
-        add_crops.to_csv(fr"data\vector\IACS\PT\PT\{year}\ocupacoes_solo_{year}.csv")
+        parcels.to_parquet(os.path.join(of, f"ocupacoes_solo_{year}.geoparquet"))
+        add_crops.to_csv(os.path.join(of, f"ocupacoes_solo_{year}.csv"))
 
     else:
-        sub_lst = glob.glob(fr"data\vector\IACS\PT\PT_temp\culturas\{year}\*.gpkg")
+        sub_lst = glob.glob(os.path.join("data", "vector", "IACS", "PT", "PT_temp", "culturas", str(year), f"*.gpkg"))
         sub_lst = [pth.split("_sub")[1].split("_")[0] for pth in sub_lst]
         print(len(sub_lst))
 
@@ -114,9 +114,9 @@ def combine_information_from_wfs(year):
             print(year, sub)
 
             ## Open files
-            parc_pth = fr"data\vector\IACS\PT\PT_temp\parcelas\{year}\parcelas_sub{sub}_{year}.gpkg"
-            ocup_pth = fr"data\vector\IACS\PT\PT_temp\ocupacoes_solo\{year}\ocupacoes_solo_sub{sub}_{year}.gpkg"
-            cult_pth = fr"data\vector\IACS\PT\PT_temp\culturas\{year}\culturas_sub{sub}_{year}.gpkg"
+            parc_pth = os.path.join("data", "vector", "IACS", "PT", "PT_temp", "parcelas", str(year), f"parcelas_sub{sub}_{year}.gpkg")
+            ocup_pth = os.path.join("data", "vector", "IACS", "PT", "PT_temp", "ocupacoes_solo", str(year), f"ocupacoes_solo_sub{sub}_{year}.gpkg")
+            cult_pth = os.path.join("data", "vector", "IACS", "PT", "PT_temp", "culturas", str(year), f"culturas_sub{sub}_{year}.gpkg")
             cult = gpd.read_file(cult_pth)
 
             if not os.path.exists(parc_pth):
@@ -144,10 +144,10 @@ def combine_information_from_wfs(year):
         fields_out.drop_duplicates(inplace=True)
         fields_out.index = range(1, len(fields_out) + 1)
 
+        of = os.path.join("data", "vector", "IACS", "PT", "PT", str(year))
+        helper_functions.create_folder(of)
 
-        helper_functions.create_folder(rf"data\vector\IACS\PT\PT\{year}")
-
-        fields_out.to_parquet(fr"data\vector\IACS\PT\PT\{year}\culturas_{year}.geoparquet")
+        fields_out.to_parquet(os.path.join(of, f"culturas_{year}.geoparquet"))
 
 def pt_combine_crop_codes_with_crop_names(crop_codes_pth, crop_names_pth):
 
@@ -183,39 +183,52 @@ def main():
     ## For subregions 2011-2019
     run_dict = {
         ## The portugese files sometimes come with fieldblocks and sometimes with fields - not all years need to be separated
-        # "PT/ALE": {
-        #     "region_id": "PT_ALE",
-        #     "file_encoding": "utf-8",
-        #     "skip_years": [2018, 2019, 2020, 2021, 2022],
-        #     "ignore_files_descr":  "_sep_.gpkg"},
-        # "PT/ALG": {
-        #     "region_id": "PT_ALG",
-        #     "file_encoding": "utf-8"},
-        # "PT/AML": {
-        #     "region_id": "PT_AML",
-        #     "file_encoding": "utf-8",
-        #     "ignore_files_descr": "_sep_.gpkg"},
-        # "PT/CET": {
-        #     "region_id": "PT_CET",
-        #     "file_encoding": "utf-8"},
-        # "PT/CEN": {
-        #     "region_id": "PT_CEN",
-        #     "file_encoding": "utf-8"},
-        # "PT/CES": {
-        #     "region_id": "PT_CES",
-        #     "file_encoding": "utf-8"},
-        # "PT/NOR": {
-        #     "region_id": "PT_NOR",
-        #     "file_encoding": "utf-8"},
-        # "PT/NON": {
-        #     "region_id": "PT_NON",
-        #     "file_encoding": "utf-8"},
-        # "PT/NOS": {
-        #     "region_id": "PT_NOS",
-        #     "file_encoding": "utf-8"},
+        "PT/ALE": {
+            "switch": "off",
+            "region_id": "PT_ALE",
+            "file_encoding": "utf-8",
+            "skip_years": [2018, 2019, 2020, 2021, 2022],
+            "ignore_files_descr": "Original"},
+        "PT/ALG": {
+            "switch": "off",
+            "region_id": "PT_ALG",
+            "file_encoding": "utf-8"},
+        "PT/AML": {
+            "switch": "off",
+            "region_id": "PT_AML",
+            "file_encoding": "utf-8",
+            "ignore_files_descr": "_sep_.gpkg"},
+        "PT/CET": {
+            "switch": "off",
+            "region_id": "PT_CET",
+            "file_encoding": "utf-8"},
+        "PT/CEN": {
+            "switch": "off",
+            "region_id": "PT_CEN",
+            "file_encoding": "utf-8"},
+        "PT/CES": {
+            "switch": "off",
+            "region_id": "PT_CES",
+            "file_encoding": "utf-8"},
+        "PT/NOR": {
+            "switch": "off",
+            "region_id": "PT_NOR",
+            "file_encoding": "utf-8"},
+        "PT/NON": {
+            "switch": "off",
+            "region_id": "PT_NON",
+            "file_encoding": "utf-8"},
+        "PT/NOS": {
+            "switch": "off",
+            "region_id": "PT_NOS",
+            "file_encoding": "utf-8"},
     }
 
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
+
         print(country_code)
         region_id = run_dict[country_code]["region_id"]  # country_code.replace(r"/", "_")
         encoding = run_dict[country_code]["file_encoding"]
@@ -230,9 +243,10 @@ def main():
         else:
             ignore_files_descr = None
 
-        col_translate_pth = rf"data\tables\column_name_translations\{region_id}_column_name_translation.xlsx"
+        col_translate_pth = os.path.join("data", "tables", "column_name_translations",
+                                         f"{region_id}_column_name_translation.csv")
 
-        in_dir = fr"data\vector\IACS\{country_code}"
+        in_dir = os.path.join("data", "vector", "IACS", country_code)
 
         ## Get list of IACS files
         iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
@@ -277,7 +291,7 @@ def main():
                 print("Multiple crop columns provided. Separating them into csv.")
                 ## Create separated file
                 ## Open file and layer
-                gdf = gpd.read_file(path)
+                gdf = gpd.read_parquet(path)
                 cols = list(gdf.columns)
                 cols_csv = []
 
@@ -313,22 +327,22 @@ def main():
                 del gdf, df
 
                 ## move original file to "temp" folder
-                folder = fr"data\vector\IACS\{country_code}_temp\{year}"
+                folder = os.path.join("data", "vector", "IACS", f"{country_code}_temp", str(year))
                 helper_functions.create_folder(folder)
                 if ext == ".shp":
                     files = glob.glob(f"{root}.*")
                     for f in files:
-                        new_path = fr"{folder}\{os.path.basename(f)}"
+                        new_path = os.path.join(folder, os.path.basename(f))
                         os.rename(f, new_path)
                 else:
-                    new_path = fr"{folder}\{os.path.basename(path)}"
+                    new_path = os.path.join(folder, os.path.basename(path))
                     os.rename(path, new_path)
             else:
                 print("Only one target column ('crop_name' or 'crop_code') provided. Nothing to be done.")
 
-    ## For entire PO 2020-2024
-    for year in range(2020, 2025):
-        combine_information_from_wfs(year)
+    ## For entire PO 2020-2025
+    # for year in range(2025, 2026):
+        # combine_information_from_wfs(year)
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)

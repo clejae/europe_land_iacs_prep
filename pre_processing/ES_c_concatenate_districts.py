@@ -7,10 +7,9 @@ from os.path import dirname, abspath
 import time
 import geopandas as gpd
 import pandas as pd
-import zipfile
-from shapely.validation import make_valid
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(dirname(abspath(__file__))))
@@ -39,6 +38,18 @@ def combine_subdistricts(in_dir, crop_names_pth, district, year, out_dir):
 
     iacs_files = helper_functions.list_geospatial_data_in_dir(in_dir)
 
+    ## Create output path
+    out_folder = os.path.join(out_dir, district[:3])
+    helper_functions.create_folder(out_folder)
+    out_pth = os.path.join(out_folder, f"IACS_{district[:3]}_{year}.geoparquet")
+
+    if not "CDB" in in_dir:
+        return
+
+    # if os.path.exi sts(out_pth):
+    #     print("District already done!")
+    #     return
+
     if len(iacs_files) < 1:
         return
     crops = pd.read_csv(crop_names_pth)
@@ -47,7 +58,10 @@ def combine_subdistricts(in_dir, crop_names_pth, district, year, out_dir):
     print(f"There are {len(iacs_files)} files for {district}")
     for i, pth in enumerate(iacs_files):
         print(f"Processing {i+1}/{len(iacs_files)}")
-        file_year = os.path.basename(pth).split('_')[1]
+        if year in [2022, 2023]:
+            file_year = os.path.basename(pth).split('_')[1]
+        if year in [2024]:
+            file_year = os.path.basename(pth).split('_')[2]
 
         if int(file_year) != int(year):
             continue
@@ -63,12 +77,8 @@ def combine_subdistricts(in_dir, crop_names_pth, district, year, out_dir):
     out_file = pd.concat(file_list)
     out_file.drop_duplicates(inplace=True)
     out_file.index = range(1, len(out_file)+1)
-    out_folder = f"{out_dir}\{district[:3]}"
-    helper_functions.create_folder(out_folder)
-    # out_pth = f"{out_folder}\IACS_{district[:3]}_{year}.gpkg"
-    out_pth = f"{out_folder}\IACS_{district[:3]}_{year}.geoparquet"
+
     print("Writing out to", out_pth)
-    # out_file.to_file(out_pth, driver="GPKG")
     out_file.to_parquet(out_pth)
 
 def main():
@@ -76,9 +86,9 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    for year in [2022, 2023]: # [2022]
+    for year in [2024]: # [2022]
         # districts = [x[0] for x in os.walk(fr"data\vector\IACS\ES_temp\{year}")]
-        districts = glob.glob(f'data/vector/IACS/ES_temp/{year}/*')
+        districts = glob.glob(os.path.join("data", "vector", "IACS", "ES_temp", str(year), "*")) #(f'data/vector/IACS/ES_temp/{year}/*')
         # districts = [districts[16]]
         # districts = [x for x in districts if "CIU" in x]
         # districts = ['data/vector/IACS/ES_temp/2023/HEC - HUESCA (22)']
@@ -87,10 +97,10 @@ def main():
             district = os.path.basename(district_dir)
             combine_subdistricts(
                 in_dir=district_dir,
-                crop_names_pth=r"data\vector\IACS\ES\crop_names.csv",
+                crop_names_pth=os.path.join("data", "vector", "IACS", "ES", "crop_names.csv"), #r"data\vector\IACS\ES\crop_names.csv",
                 district=district,
                 year=year,
-                out_dir=r"data\vector\IACS\ES")
+                out_dir=os.path.join("data", "vector", "IACS", "ES"))
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)

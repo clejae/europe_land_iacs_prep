@@ -1,28 +1,26 @@
 # Author: Clemens Jaenicke
 # github repository: https://github.com/clejae/europe_land_iacs_prep
 
-# This script is optional and can be used to check an old version of the HCAT (prior to HCAT v3) with the HCAT3
+# This script is optional and can be used to validate an old version of the HCAT (prior to HCAT v3) with the HCAT3
 # version.
 
-# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# If you want to run this script for a specific country, include an entry into the run_dict which can be found
+# the top of the main function.
 # The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
-# item is another dictionary. In this dictionary, you should include the following keys:
+# item should be another dictionary. In this dictionary, you should include the following keys:
 
 # "region_id" - basically the main key (XX), but for XX/XXX changed into XX_XXX
 # "crop_class_pth" - [optional] can be used to point to a different version of the classification table that should be used as input
 
-# To turn off/on the processing of a specific country, just comment/uncomment the specific line of the run_dict
+# To turn off/on the processing of a specific country, set the key "switch" in the dictionary to "off" or "on"
 
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
 from os.path import dirname, abspath
 import time
 import pandas as pd
-import geopandas as gpd
-import warnings
 import numpy as np
 
-import helper_functions
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))
@@ -45,51 +43,56 @@ def main():
     ## To turn off/on the processing of a specific country, just comment/uncomment the specific line
 
     run_dict = {
-        "BE/FLA": {"region_id": "BE_FLA"},
-        "AT": {"region_id": "AT", "crop_class_pth": "AT_crop_classification_final_INSPIRE.xlsx"},
-        "DK": {"region_id": "DK"},
-        "SI": {"region_id": "SI"},
-        "NL": {"region_id": "NL"},
-        "FI": {"region_id": "FI"},
-        "LV": {"region_id": "LV"},
-        "SK": {"region_id": "SK"},
-        "FR/FR": {"region_id": "FR_FR"},
-        "FR/SUBREGIONS": {"region_id": "FR_SUBREGIONS"},
-        "PT/PT": {"region_id": "PT_PT"},
-        "PT/ALE": {"region_id": "PT_ALE"},
-        "PT/ALG": {"region_id": "PT_ALG"},
-        "PT/AML": {"region_id": "PT_AML"},
-        "PT/CE": {"region_id": "PT_CE"},
-        "PT/CEN": {"region_id": "PT_CEN"},
-        "PT/CES": {"region_id": "PT_CES"},
-        "PT/NO": {"region_id": "PT_NO"},
-        "PT/NON": {"region_id": "PT_NON"},
-        "PT/NOS": {"region_id": "PT_NOS"},
-        "HR": {"region_id": "HR"},
-        "SE": {"region_id": "SE"},
-        "BE/WAL": {"region_id": "BE_WAL"},
-        "DE/BB": {"region_id": "DE_BB"},
-        "CZ": {"region_id": "CZ"},
-        "RO": {"region_id": "RO"},
-        "DE/ST": {"region_id": "DE_ST"},
-        "DE/SL": {"region_id": "DE_SL"},
-        "CY/APPL": {"region_id": "CY_APPL"},
-        "ES": {"region_id": "ES"},
+        "BE/FLA": {"switch": "off", "region_id": "BE_FLA"},
+        "AT": {"switch": "off", "region_id": "AT", "crop_class_pth": "AT_crop_classification_final_INSPIRE.xlsx"},
+        "DK": {"switch": "off", "region_id": "DK"},
+        "SI": {"switch": "off", "region_id": "SI"},
+        "NL": {"switch": "off", "region_id": "NL"},
+        "FI": {"switch": "off", "region_id": "FI"},
+        "LV": {"switch": "off", "region_id": "LV"},
+        "SK": {"switch": "off", "region_id": "SK"},
+        "FR/FR": {"switch": "off", "region_id": "FR_FR"},
+        "FR/SUBREGIONS": {"switch": "off", "region_id": "FR_SUBREGIONS"},
+        "PT/PT": {"switch": "off", "region_id": "PT_PT"},
+        "PT/ALE": {"switch": "off", "region_id": "PT_ALE"},
+        "PT/ALG": {"switch": "off", "region_id": "PT_ALG"},
+        "PT/AML": {"switch": "off", "region_id": "PT_AML"},
+        "PT/CE": {"switch": "off", "region_id": "PT_CE"},
+        "PT/CEN": {"switch": "off", "region_id": "PT_CEN"},
+        "PT/CES": {"switch": "off", "region_id": "PT_CES"},
+        "PT/NO": {"switch": "off", "region_id": "PT_NO"},
+        "PT/NON": {"switch": "off", "region_id": "PT_NON"},
+        "PT/NOS": {"switch": "off", "region_id": "PT_NOS"},
+        "HR": {"switch": "off", "region_id": "HR"},
+        "SE": {"switch": "off", "region_id": "SE"},
+        "BE/WAL": {"switch": "off", "region_id": "BE_WAL"},
+        "DE/BB": {"switch": "off", "region_id": "DE_BRB"},
+        "CZ": {"switch": "off", "region_id": "CZ"},
+        "RO": {"switch": "off", "region_id": "RO"},
+        "DE/SAT": {"switch": "off", "region_id": "DE_SAT"},
+        "DE/SAA": {"switch": "off", "region_id": "DE_SAL"},
+        "CY/APPL": {"switch": "off", "region_id": "CY_APPL"},
+        "ES": {"switch": "off", "region_id": "ES"},
     }
 
     ## For spain create a dictionary in a loop, because of the many subregions
-    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = pd.read_csv(os.path.join("data", "vector", "IACS", "ES", "region_code.txt"))
     ES_districts = list(ES_districts["code"])
     run_dict = {f"ES/{district}": {
+        "switch": "off",
         "region_id": f"ES_{district}",
         "file_encoding": "utf-8",
-        "col_translate_pth": f"data/tables/column_name_translations/ES_column_name_translation.xlsx",
-        "crop_class_pth": "data/tables/crop_classifications/ES_crop_classification_final.xlsx",
+        "col_translate_pth": os.path.join("data", "tables", "column_name_translations",
+                                          "ES_column_name_translation.xlsx"),
+        "crop_class_pth": os.path.join("data", "tables", "crop_classifications", "ES_crop_classification_final.xlsx"),
         "col_transl_descr_overwrite": "ES"
     } for district in ES_districts}
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
         hcat_correct_pth = os.path.join("data", "tables", "hcat_levels_v2", "HCAT3_HCAT_mapping.csv")
         hcat_errors_pth = os.path.join("data", "tables", "hcat_levels_v2", "hcat_errors_by_kristoffer.xlsx")
 
@@ -101,9 +104,9 @@ def main():
         region_id = run_dict[country_code]["region_id"] # country_code.replace(r"/", "_")
 
         if "crop_class_pth" in run_dict[country_code]:
-            crop_class_pth = f"{CROP_CLASSIFICATION_FOLDER}/{run_dict[country_code]['crop_class_pth']}"
+            crop_class_pth = os.path.join(CROP_CLASSIFICATION_FOLDER, {run_dict[country_code]['crop_class_pth']})
         else:
-            crop_class_pth = f"{CROP_CLASSIFICATION_FOLDER}/{region_id}_crop_classification_final.xlsx"
+            crop_class_pth = os.path.join(CROP_CLASSIFICATION_FOLDER, f"{region_id}_crop_classification_final.xlsx")
 
         ## Read input
         hcat_correct = pd.read_csv(hcat_correct_pth, dtype={"EC_hcat_c": str})
@@ -136,7 +139,7 @@ def main():
 
         df_out.loc[df_out["HCAT3_code"].isna(), "comment_on_mistake"] = "class does not exist anymore in HCAT3 (maybe summer was reclassified to spring?)"
         df_out.sort_values(by="crop_name", inplace=True)
-        out_pth = rf"{CROP_CLASSIFICATION_FOLDER}/{region_id}_crop_classification_wrong_entries.xlsx"
+        out_pth = os.path.join(CROP_CLASSIFICATION_FOLDER, f"{region_id}_crop_classification_wrong_entries.xlsx" )
         df_out.to_excel(out_pth, index=False)
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())

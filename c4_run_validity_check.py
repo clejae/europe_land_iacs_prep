@@ -4,26 +4,25 @@
 # This script is optional and can be used to validate the harmonization results, i.e. it checks whether there
 # are entries that were not yet classified and if there are crop codes that were assigned to different classes of the HCAT
 
-# If you want to run this script for a specific country, put an entry in the run_dict at the top of the main function.
+# If you want to run this script for a specific country, include an entry into the run_dict which can be found
+# the top of the main function.
 # The run_dict key should be the country or country and subdivision abbreviations (for example, "DK" or "DE/THU). The
-# item is another dictionary. In this dictionary, you can include the following keys:
+# item should be another dictionary. In this dictionary, you should include the following keys:
 
 # "skip_years" - [optional] can be used to provide a list of years that should not be harmonized
 
-# To turn off/on the matching of a specific country, just comment/uncomment the specific line of the run_dict
+# To turn off/on the processing of a specific country, set the key "switch" in the dictionary to "off" or "on"
 # ------------------------------------------ LOAD PACKAGES ---------------------------------------------------#
 import os
 from os.path import dirname, abspath
-import sys
 # os.environ['GDAL_DATA'] = os.path.join(f'{os.sep}'.join(sys.executable.split(os.sep)[:-1]), 'Library', 'share', 'gdal')
 import time
 import pandas as pd
 import geopandas as gpd
-import warnings
 import glob
-import shutil
 
-import helper_functions
+from my_utils import helper_functions
+
 # ------------------------------------------ USER VARIABLES ------------------------------------------------#
 # Get parent directory of current directory where script is located
 WD = dirname(dirname(abspath(__file__)))
@@ -37,52 +36,56 @@ def main():
     os.chdir(WD)
 
     run_dict = {
-        # "AT": {}, #[2015, 2019, 2020, 2021, 2022]
-        # "BE/FLA": {},
-        # "BE/WAL": {},
-        # "CY": {},
-        # "CZ": {},
-        # "DE/BRB": {},
-        # "DE/LSA": {},
-        # "DE/NRW": {},
-        # "DE/SAA": {},
-        # "DE/SAT": {},
-        # "DK": {},
-        # "EE": {},
-        # "EL": {},
-        # "FI": {},
-        # "FR/FR": {},
-        # "IE": {},
-        # "HR": {},
-        # "HU": {},
-        # "IE": {},
-        # "IT/EMR": {},
-        # "IT/MAR": {},
-        # "IT/TOS": {},
-        # "LT": {},
-        # "LV": {},
-        # "NL": {},
-        # "PT/PT": {},
-        # "RO": {},
-        # "SE": {},
-        # "SI": {},
-        # "SK": {}
+        "AT": {"switch": "off"}, #[2015, 2019, 2020, 2021, 2022]
+        "BE/FLA": {"switch": "off"},
+        "BE/WAL": {"switch": "off"},
+        "CY": {"switch": "off"},
+        "CZ": {"switch": "off"},
+        "DE/BRB": {"switch": "off"},
+        "DE/LSA": {"switch": "off"},
+        "DE/NRW": {"switch": "off"},
+        "DE/SAA": {"switch": "off"},
+        "DE/SAT": {"switch": "off"},
+        "DK": {"switch": "off"},
+        "EE": {"switch": "off"},
+        "EL": {"switch": "off"},
+        "FI": {"switch": "off"},
+        "FR/FR": {"switch": "off"},
+        "IE": {"switch": "off"},
+        "HR": {"switch": "off"},
+        "HU": {"switch": "off"},
+        "IE": {"switch": "off"},
+        "IT/EMR": {"switch": "off"},
+        "IT/MAR": {"switch": "off"},
+        "IT/TOS": {"switch": "off"},
+        "LT": {"switch": "off"},
+        "LV": {"switch": "off"},
+        "NL": {"switch": "off"},
+        "PT/PT": {"switch": "off"},
+        "RO": {"switch": "off"},
+        "SE": {"switch": "off"},
+        "SI": {"switch": "off"},
+        "SK": {"switch": "off"}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
-    # FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    # FR_districts = list(FR_districts["code"])
-    # for district in FR_districts:
-    #     run_dict[f"FR/{district}"] = {"everything": True}
+    FR_districts = pd.read_csv(os.path.join("data", "vector", "IACS", "FR", "region_code.txt"))
+    FR_districts = list(FR_districts["code"])
+    for district in FR_districts:
+        run_dict[f"FR/{district}"] = {"switch": "off"}
     #
     ## For spain create a dictionary in a loop, because of the many subregions
-    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = pd.read_csv(os.path.join("data", "vector", "IACS", "ES", "region_code.txt"))
     ES_districts = list(ES_districts["code"])
     for district in ES_districts:
-        run_dict[f"ES/{district}"] = {"everything": True},
+        run_dict[f"ES/{district}"] = {"switch": "off"},
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
+        switch = run_dict[country_code].get("switch", "off").lower()
+        if switch != "on":
+            continue
+
         ## Derive input variables for processing
         region_id = country_code.replace(r"/", "_")
         in_dir = os.path.join("data", "vector", "IACS_EU_Land", country_code)
