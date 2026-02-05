@@ -1,0 +1,360 @@
+I want you to learn the following classification scheme. It consists of crop and land use classes that were created to classify possible crop entries of farmers that apply for agricultural subsidies in the EU. It is a hierarchical classification and consists of four classes. 
+
+The first level consists of the following classes: arable_crops, pasture_meadow_grassland_grass, permanent_crops_perennial, mushrooms_energy_genetically_modified_crops, greenhouse_foil_film, tree_wood_forest, peat_turf, agroforestry, unmaintained, agrivoltaics, non_productive_landscape_elements, environmental_protection, not_known_and_other
+
+
+The second level classes are further subdivided:
+For arable_crops the subclasses are: cereal, legumes_dried_pulses_protein_crops, potatoes, sweet_potatoes, fodder_roots, industrial_nonfood_crops, fresh_vegetables, flowers_ornamental_plants, plants_harvested_green, arable_land_seed_seedlings, fallow_land_not_crop, kitchen_gardens, strawberries, cucurbits, pseudocereal, soy_soybeans, fennel, topinambur_jerusalem_artichoke, sage_chia, asparagus, brassicaceae_cruciferae, alliums, rhubarb, purslane, celery, aubergine_eggplant, artichoke, tomato, root_vegetables, capsicum, salads_lettuce_leaf_vegetables, mixed_cropping, other_arable_land_crops
+For pasture_meadow_grassland_grass the subclasses are: pastures_meadows_with_trees
+For permanent_crops_perennial the subclasses are: orchards_fruits, berries_berry_species, nuts, citrus_plantations, olive_plantations, vineyards_wine_vine_rebland_grapes, nurseries_nursery, shrubberries_shrubs, ginko, avocado, legumes_from_trees, unspecified_permanent_crops, mixed_permanent_plantations, other_permanent_crops_plantations
+For mushrooms_energy_genetically_modified_crops the subclasses are: energy_crops, genetically_modified_crops, sida_virginia_mallow, truffle, other_mushrooms_energy_crops_genetically_modified_crops
+For greenhouse_foil_film the subclasses are: greenhouses, foil_films
+For tree_wood_forest the subclasses are: afforestation_reforestation, aspen, birch, dogwood_cornus, eucalyptus, oak, populus, willows_osiers, short_rotation_coppice, christmas_trees, unspecified_tree_wood_forest, other_tree_wood_forest
+For peat_turf the subclasses are: paludiculture
+For agroforestry there is no further subdivision.
+For unmaintained there is no further subdivision.
+For agrivoltaics there is no further subdivision.
+For non_productive_landscape_elements the subclasses are: field_margins_buffer_strips_flowering_areas, hedges, tree_lines, wetlands, ditches, stone_walls, wetland_buffers
+For environmental_protection there is no further subdivision.
+For not_known_and_other there is no further subdivision.
+
+
+The third level classes are further subdivided:
+
+For cereal the subclasses are: common_soft_wheat, durum_hard_wheat, rye, barley, oats, grain_maize_corn_popcorn, rice, triticale, millet_sorghum, spelt, meslin, emmer, einkorn, canary_seed_canaryseed, unspecified_cereals, other_cereals
+For legumes_dried_pulses_protein_crops the subclasses are: beans, chickpeas, esparsette_onobrychis, fenugreek, lentils, peas, sweet_lupins, lathyrus_peavine, unspecified_legumes_dried_pulses_protein_crops, other_dry_pulses
+potatoes are a special class. Although, there is no further subdivision in level three. It will be further subdivided in level four.
+For sweet_potatoes there is no further subdivision.
+For fodder_roots there is no further subdivision.
+For industrial_nonfood_crops the subclasses are: tobacco, hops, cotton, rapeseed_rape, sunflower, poppy, flax_linseed, oilseed_crops, guizotia_abyssinica_nyger, hemp_cannabis, fibre_crops, aromatic_medicinal_culinary_plants_spices_herbs, marian_thistles, phacelia, camelina, onobrychis_sainfoins, sugar_cane, other_industrial_crops
+For fresh_vegetables there is no further subdivision.
+For flowers_ornamental_plants the subclasses are: adonis, anemones_windflowers, asters, begonias, bluebells, bulrush, burnet, carnation, chrysanthemum, cornflowers, corsican_hellebore, dahlia, daisy_daisies, dandelions, echinacea_sun_hat, edelweiss, fiddleneck_amsinckia, fuchsias, galega, gentians, gladiolus_gladioli, goldenrod, iris, isatis_tinctoria_woad, lilies, lotus, lunaria_honesty_silver, malva, milk_star, miscanthus_silvergrass, monstera_adansonii_eyelet, moonseed, narcissus_daffodil, peony_peonies, primrose, rhododendron, roses, rudbeckia_coneflowers, safflower, salsify, sanvitalia_procumbens, serradella, silene_catchfly, silphium_rosinweeds, snapdragons, stonecrop, tagetes, thimbles, tulips, viola, violets_pansies, zinnias, unspecified_flowers_ornamental_plants, other_flowers_ornamental_plants
+For plants_harvested_green the subclasses are: temporary_grass, poaceae_grasses, legumes_harvested_green, green_silo_maize, legume_grass_mix, green_cut_rye, green_cut_barley, green_cut_oat, green_cut_wheat, green_cut_triticale, unspecified_cereals_cut_green, cereal_legume_mix, cereal_grass_mix, brassica_cereal_mix, phacelia_with_undersowing, turnip_rape_with_undersowing, meslin_with_undersowing, mustard_with_undersowing, maize_with_undersowing, maize_sunflower_mix, bitter_lupins, other_plants_harvested_green
+For arable_land_seed_seedlings there is no further subdivision.
+For fallow_land_not_crop there is no further subdivision.
+For kitchen_gardens there is no further subdivision.
+For strawberries there is no further subdivision.
+For cucurbits the subclasses are: cucumber_pickle, honeydew, melon, pumpkin_squash_gourd, watermelon, zucchini_courgette
+For pseudocereal the subclasses are: amaranth, buckwheat, quinoa
+For soy_soybeans there is no further subdivision.
+For fennel there is no further subdivision.
+For topinambur_jerusalem_artichoke there is no further subdivision.
+For sage_chia there is no further subdivision.
+For asparagus there is no further subdivision.
+For brassicaceae_cruciferae the subclasses are: mustard, brassica_oleracea_cabbage, cress, horseradish, swede_rutabaga, oil_fodder_radish, turnip_rape
+For alliums the subclasses are: chives, garlic, leek, onions, scallion, shallot
+For rhubarb there is no further subdivision.
+For purslane there is no further subdivision.
+For celery the subclasses are: celeriac, leaf_celery
+For aubergine_eggplant there is no further subdivision.
+For artichoke there is no further subdivision.
+For tomato there is no further subdivision.
+For root_vegetables the subclasses are: arctium_burdock, beetroot_beets, carrots_daucus, mangelwurzel_fodder_beet, parsnips, radish, sugar_beet, turnips, black_salsify, unspecified_root_vegetables
+For capsicum the subclasses are: bell_pepper_paprika, chili_pepper
+For salads_lettuce_leaf_vegetables the subclasses are: chard, chicory_chicories, endive, iceberg, lambs_lettuce_rapunzel, rocket_arugula, sorrel, spinach, other_salads_lettuce_leaf_vegetables
+For mixed_cropping the subclasses are: cereal_oilseed_crops_mix, common_soft_wheat_with_undersowing, durum_hard_wheat_with_undersowing, barley_with_undersowing, oats_with_undersowing, rye_with_undersowing, triticale_with_undersowing, spelt_with_undersowing, buckwheat_with_undersowing, rapeseed_with_undersowing, beans_with_undersown_legumes, legumes_oilseed_crops_mix, mixed_row_cropping, emmer_with_undersowing, potatoes_with_undersowing
+For other_arable_land_crops there is no further subdivision.
+For pastures_meadows_with_trees there is no further subdivision.
+For orchards_fruits the subclasses are: amelanchier_serviceberry, apples, apricots, cherry_cherries, feijoa, fig, kiwi, medlar_loquat, nectarine, pawpaw, peach, pears, plums, pomegranate, quinces, unspecified_orchards_fruits
+For berries_berry_species the subclasses are: aronia_chokeberries, blackberry, blackcurrant_cassis, blueberry, cranberry, currants, gooseberry_gooseberries_cranberries, hippophae_sea_buckthorns_seaberry, jostaberry, raspberry_raspberries, redcurrant, rose_hip_rosehip, rowan_rowanberries, tayberry, unspecified_berries_berry_species
+For nuts the subclasses are: almond, hazelnuts_hazel, pecan, pistachio, sweet_chestnuts, walnuts
+For citrus_plantations there is no further subdivision.
+For olive_plantations the subclasses are: olives_for_oil_production, table_olives
+For vineyards_wine_vine_rebland_grapes there is no further subdivision.
+For nurseries_nursery there is no further subdivision.
+For shrubberries_shrubs the subclasses are: azaleas, chaenomeles_cathayensis, crataegus_hawthorn, elder_elderberry, honeysuckle, ricinus_castor, wire_bush
+For ginko there is no further subdivision.
+For avocado there is no further subdivision.
+For legumes_from_trees the subclasses are: carob, mesquite, tamarind
+For unspecified_permanent_crops there is no further subdivision.
+For mixed_permanent_plantations the subclasses are: citrus_khaki_plantations
+For other_permanent_crops_plantations there is no further subdivision.
+For energy_crops there is no further subdivision.
+For genetically_modified_crops the subclasses are: igniscum_candy
+For sida_virginia_mallow there is no further subdivision.
+For truffle there is no further subdivision.
+For other_mushrooms_energy_crops_genetically_modified_crops there is no further subdivision.
+For greenhouses the subclasses are: greenhouse_strawberries, greenhouse_cucumbers, greenhouse_eggplants, greenhouse_tomatoes, greenhouse_bell_peppers, greenhouse_berries, greenhouse_cabbage, greenhouse_flowers, greenhouse_vegetables, greenhouse_herbals, greenhouse_fruits, greenhouse_vine, greenhouse_mushrooms, greenhouse_salads
+For foil_films the subclasses are: foil_films_flowers, foil_films_herbals, foil_films_asparagus
+For afforestation_reforestation there is no further subdivision.
+For aspen there is no further subdivision.
+For birch there is no further subdivision.
+For dogwood_cornus there is no further subdivision.
+For eucalyptus there is no further subdivision.
+For oak there is no further subdivision.
+For populus there is no further subdivision.
+For willows_osiers there is no further subdivision.
+For short_rotation_coppice the subclasses are: short_rotation_coppice_robinia
+For christmas_trees there is no further subdivision.
+For unspecified_tree_wood_forest there is no further subdivision.
+For other_tree_wood_forest there is no further subdivision.
+For paludiculture there is no further subdivision.
+For field_margins_buffer_strips_flowering_areas there is no further subdivision.
+For hedges there is no further subdivision.
+For tree_lines there is no further subdivision.
+For wetlands there is no further subdivision.
+For ditches there is no further subdivision.
+For stone_walls there is no further subdivision.
+For wetland_buffers there is no further subdivision.
+
+
+The forth level classes are further subdivided:
+For common_soft_wheat the subclasses are: winter_common_soft_wheat, spring_common_soft_wheat
+For durum_hard_wheat the subclasses are: winter_durum_hard_wheat, spring_durum_hard_wheat
+For rye the subclasses are: winter_rye, spring_rye
+For barley the subclasses are: winter_barley, spring_barley
+For oats the subclasses are: winter_oats, spring_oats
+For grain_maize_corn_popcorn there is no further subdivision.
+For rice there is no further subdivision.
+For triticale the subclasses are: winter_triticale, spring_triticale
+For millet_sorghum the subclasses are: winter_millet_sorghum, spring_millet_sorghum, teff
+For spelt the subclasses are: winter_spelt, spring_spelt
+For meslin the subclasses are: winter_meslin, spring_meslin
+For emmer the subclasses are: winter_emmer, spring_emmer
+For einkorn the subclasses are: winter_einkorn, spring_einkorn
+For canary_seed_canaryseed there is no further subdivision.
+For unspecified_cereals the subclasses are: winter_unspecified_cereals, spring_unspecified_cereals
+For other_cereals there is no further subdivision.
+For beans there is no further subdivision.
+For chickpeas there is no further subdivision.
+For esparsette_onobrychis there is no further subdivision.
+For fenugreek there is no further subdivision.
+For lentils there is no further subdivision.
+For peas there is no further subdivision.
+For sweet_lupins there is no further subdivision.
+For lathyrus_peavine there is no further subdivision.
+For unspecified_legumes_dried_pulses_protein_crops there is no further subdivision.
+For other_dry_pulses there is no further subdivision.
+For early_season_potatoes there is no further subdivision.
+For late_season_potatoes there is no further subdivision.
+For tobacco there is no further subdivision.
+For hops there is no further subdivision.
+For cotton there is no further subdivision.
+For rapeseed_rape the subclasses are: winter_rapeseed_rape, spring_rapeseed_rape, summer_rapeseed_rape
+For sunflower there is no further subdivision.
+For poppy the subclasses are: winter_poppy, summer_poppy
+For flax_linseed the subclasses are: flax_linen, flax_linseed_oil
+For oilseed_crops there is no further subdivision.
+For guizotia_abyssinica_nyger there is no further subdivision.
+For hemp_cannabis the subclasses are: finola
+For fibre_crops there is no further subdivision.
+For aromatic_medicinal_culinary_plants_spices_herbs the subclasses are: actaea_baneberry_christopher_herbs, alchemilla_ladys_mantle, anethum_dill, angelica, anise_aniseed, artemisia, basil, black_cumin, borage, calendula_marigold, caraway, catnip, chamomile, chervil, coriander, ericaceae_heather, galium_bedstraw, hibiscus, lavender_lavandula, lemon_balm_melissa, lovage_maggiplant, mints_peppermint, moldavian_dragonhead, nasturtiums, nettles, oregano, parsley, piper_pepper, polygonum, rosemary, rubia_tinctorum_common_madder, saffron_crocus_sativus, silver_comb, st_johns_wort, stachys_hedgenettle_chinese_artichoke, tarragon, thyme, valerian, yarrow, unspecified_aromatic_medicinal_culinary_plants_spices_herbs, other_aromatic_medicinal_culinary_plants_spices_herbs
+For marian_thistles there is no further subdivision.
+For phacelia there is no further subdivision.
+For camelina there is no further subdivision.
+For onobrychis_sainfoins there is no further subdivision.
+For sugar_cane there is no further subdivision.
+For other_industrial_crops there is no further subdivision.
+For adonis there is no further subdivision.
+For anemones_windflowers there is no further subdivision.
+For asters there is no further subdivision.
+For begonias there is no further subdivision.
+For bluebells there is no further subdivision.
+For bulrush there is no further subdivision.
+For burnet there is no further subdivision.
+For carnation there is no further subdivision.
+For chrysanthemum there is no further subdivision.
+For cornflowers there is no further subdivision.
+For corsican_hellebore there is no further subdivision.
+For dahlia there is no further subdivision.
+For daisy_daisies there is no further subdivision.
+For dandelions there is no further subdivision.
+For echinacea_sun_hat there is no further subdivision.
+For edelweiss there is no further subdivision.
+For fiddleneck_amsinckia there is no further subdivision.
+For fuchsias there is no further subdivision.
+For galega there is no further subdivision.
+For gentians there is no further subdivision.
+For gladiolus_gladioli there is no further subdivision.
+For goldenrod there is no further subdivision.
+For iris there is no further subdivision.
+For isatis_tinctoria_woad there is no further subdivision.
+For lilies there is no further subdivision.
+For lotus there is no further subdivision.
+For lunaria_honesty_silver there is no further subdivision.
+For malva there is no further subdivision.
+For milk_star there is no further subdivision.
+For miscanthus_silvergrass there is no further subdivision.
+For monstera_adansonii_eyelet there is no further subdivision.
+For moonseed there is no further subdivision.
+For narcissus_daffodil there is no further subdivision.
+For peony_peonies there is no further subdivision.
+For primrose there is no further subdivision.
+For rhododendron there is no further subdivision.
+For roses there is no further subdivision.
+For rudbeckia_coneflowers there is no further subdivision.
+For safflower there is no further subdivision.
+For salsify there is no further subdivision.
+For sanvitalia_procumbens there is no further subdivision.
+For serradella there is no further subdivision.
+For silene_catchfly there is no further subdivision.
+For silphium_rosinweeds there is no further subdivision.
+For snapdragons there is no further subdivision.
+For stonecrop there is no further subdivision.
+For tagetes there is no further subdivision.
+For thimbles there is no further subdivision.
+For tulips there is no further subdivision.
+For viola there is no further subdivision.
+For violets_pansies there is no further subdivision.
+For zinnias there is no further subdivision.
+For unspecified_flowers_ornamental_plants there is no further subdivision.
+For other_flowers_ornamental_plants there is no further subdivision.
+For temporary_grass there is no further subdivision.
+For poaceae_grasses the subclasses are: elymus, festuca_fescue, cocksfoot_catgrass, festulolium, lolium_ryegrass, setaria, sod_turf, switchgrass, timothy
+For legumes_harvested_green the subclasses are: alfalfa_lucerne, arachis, clover, melilot, vetches, birdsfoot_trefoil, unspecified_legumes_harvested_green
+For green_silo_maize there is no further subdivision.
+For legume_grass_mix the subclasses are: clover_grass_mix, peanut_grass_mix, bean_grass_mix, chickpea_grass_mix, lentil_grass_mix, pea_grass_mix, lupin_grass_mix, esparsette_grass_mix, alfalfa_grass_mix, soy_grass_mix
+For green_cut_rye the subclasses are: green_cut_winter_rye, green_cut_spring_rye
+For green_cut_barley the subclasses are: green_cut_winter_barley, green_cut_spring_barley
+For green_cut_oat the subclasses are: green_cut_winter_oat, green_cut_spring_oat
+For green_cut_wheat the subclasses are: green_cut_winter_wheat, green_cut_spring_wheat
+For green_cut_triticale the subclasses are: green_cut_winter_triticale, green_cut_spring_triticale
+For unspecified_cereals_cut_green there is no further subdivision.
+For cereal_legume_mix there is no further subdivision.
+For cereal_grass_mix there is no further subdivision.
+For brassica_cereal_mix there is no further subdivision.
+For phacelia_with_undersowing the subclasses are: phacelia_with_legumes
+For turnip_rape_with_undersowing the subclasses are: winter_turnip_rape_with_undersowing, spring_turnip_rape_with_undersowing
+For meslin_with_undersowing there is no further subdivision.
+For mustard_with_undersowing the subclasses are: mustard_with_legumes
+For maize_with_undersowing there is no further subdivision.
+For maize_sunflower_mix there is no further subdivision.
+For bitter_lupins there is no further subdivision.
+For other_plants_harvested_green there is no further subdivision.
+For cucumber_pickle there is no further subdivision.
+For honeydew there is no further subdivision.
+For melon there is no further subdivision.
+For pumpkin_squash_gourd there is no further subdivision.
+For watermelon there is no further subdivision.
+For zucchini_courgette there is no further subdivision.
+For amaranth there is no further subdivision.
+For buckwheat there is no further subdivision.
+For quinoa there is no further subdivision.
+For mustard there is no further subdivision.
+For brassica_oleracea_cabbage the subclasses are: bok_choy_pak_choi, broccoli, brussels_sprouts, cauliflower, chinese_cabbage, collard_greens, gai_lan, kale, kohlrabi, red_cabbage, savoy_cabbage, white_cabbage, other_brassica_oleracea_cabbage
+For cress there is no further subdivision.
+For horseradish there is no further subdivision.
+For swede_rutabaga there is no further subdivision.
+For oil_fodder_radish there is no further subdivision.
+For turnip_rape the subclasses are: winter_turnip_rape, spring_turnip_rape
+For chives there is no further subdivision.
+For garlic there is no further subdivision.
+For leek there is no further subdivision.
+For onions there is no further subdivision.
+For scallion there is no further subdivision.
+For shallot there is no further subdivision.
+For celeriac there is no further subdivision.
+For leaf_celery there is no further subdivision.
+For arctium_burdock there is no further subdivision.
+For beetroot_beets there is no further subdivision.
+For carrots_daucus there is no further subdivision.
+For mangelwurzel_fodder_beet there is no further subdivision.
+For parsnips there is no further subdivision.
+For radish there is no further subdivision.
+For sugar_beet there is no further subdivision.
+For turnips there is no further subdivision.
+For black_salsify there is no further subdivision.
+For unspecified_root_vegetables there is no further subdivision.
+For bell_pepper_paprika there is no further subdivision.
+For chili_pepper there is no further subdivision.
+For chard there is no further subdivision.
+For chicory_chicories there is no further subdivision.
+For endive there is no further subdivision.
+For iceberg there is no further subdivision.
+For lambs_lettuce_rapunzel there is no further subdivision.
+For rocket_arugula there is no further subdivision.
+For sorrel there is no further subdivision.
+For spinach there is no further subdivision.
+For other_salads_lettuce_leaf_vegetables there is no further subdivision.
+For cereal_oilseed_crops_mix there is no further subdivision.
+For common_soft_wheat_with_undersowing the subclasses are: winter_common_soft_wheat_with_undersowing, spring_common_soft_wheat_with_undersowing
+For durum_hard_wheat_with_undersowing the subclasses are: winter_durum_hard_wheat_with_undersowing, spring_durum_hard_wheat_with_undersowing
+For barley_with_undersowing the subclasses are: winter_barley_with_undersowing, spring_barley_with_undersowing
+For oats_with_undersowing the subclasses are: winter_oats_with_undersowing, spring_oats_with_undersowing
+For rye_with_undersowing the subclasses are: spring_rye_with_undersowing, winter_rye_with_undersowing
+For triticale_with_undersowing the subclasses are: winter_triticale_with_undersowing, spring_triticale_with_undersowing
+For spelt_with_undersowing the subclasses are: winter_spelt_with_undersowing, spring_spelt_with_undersowing
+For buckwheat_with_undersowing the subclasses are: buckwheat_with_legumes
+For rapeseed_with_undersowing the subclasses are: winter_rapeseed_with_undersowing, spring_rapeseed_with_undersowing
+For beans_with_undersown_legumes there is no further subdivision.
+For legumes_oilseed_crops_mix there is no further subdivision.
+For mixed_row_cropping the subclasses are: maize_bean_row_mix, soybeans_vetches_row_mix
+For emmer_with_undersowing there is no further subdivision.
+For potatoes_with_undersowing there is no further subdivision.
+For amelanchier_serviceberry there is no further subdivision.
+For apples there is no further subdivision.
+For apricots there is no further subdivision.
+For cherry_cherries there is no further subdivision.
+For feijoa there is no further subdivision.
+For fig there is no further subdivision.
+For kiwi there is no further subdivision.
+For medlar_loquat there is no further subdivision.
+For nectarine there is no further subdivision.
+For pawpaw there is no further subdivision.
+For peach there is no further subdivision.
+For pears there is no further subdivision.
+For plums there is no further subdivision.
+For pomegranate there is no further subdivision.
+For quinces there is no further subdivision.
+For unspecified_orchards_fruits there is no further subdivision.
+For aronia_chokeberries there is no further subdivision.
+For blackberry there is no further subdivision.
+For blackcurrant_cassis there is no further subdivision.
+For blueberry there is no further subdivision.
+For cranberry there is no further subdivision.
+For currants there is no further subdivision.
+For gooseberry_gooseberries_cranberries there is no further subdivision.
+For hippophae_sea_buckthorns_seaberry there is no further subdivision.
+For jostaberry there is no further subdivision.
+For raspberry_raspberries there is no further subdivision.
+For redcurrant there is no further subdivision.
+For rose_hip_rosehip there is no further subdivision.
+For rowan_rowanberries there is no further subdivision.
+For tayberry there is no further subdivision.
+For unspecified_berries_berry_species there is no further subdivision.
+For almond there is no further subdivision.
+For hazelnuts_hazel there is no further subdivision.
+For pecan there is no further subdivision.
+For pistachio there is no further subdivision.
+For sweet_chestnuts there is no further subdivision.
+For walnuts there is no further subdivision.
+For olives_for_oil_production there is no further subdivision.
+For table_olives there is no further subdivision.
+For azaleas there is no further subdivision.
+For chaenomeles_cathayensis there is no further subdivision.
+For crataegus_hawthorn there is no further subdivision.
+For elder_elderberry there is no further subdivision.
+For honeysuckle there is no further subdivision.
+For ricinus_castor there is no further subdivision.
+For wire_bush there is no further subdivision.
+For carob there is no further subdivision.
+For mesquite there is no further subdivision.
+For tamarind there is no further subdivision.
+For citrus_khaki_plantations there is no further subdivision.
+For igniscum_candy there is no further subdivision.
+For greenhouse_strawberries there is no further subdivision.
+For greenhouse_cucumbers there is no further subdivision.
+For greenhouse_eggplants there is no further subdivision.
+For greenhouse_tomatoes there is no further subdivision.
+For greenhouse_bell_peppers there is no further subdivision.
+For greenhouse_berries there is no further subdivision.
+For greenhouse_cabbage there is no further subdivision.
+For greenhouse_flowers there is no further subdivision.
+For greenhouse_vegetables there is no further subdivision.
+For greenhouse_herbals there is no further subdivision.
+For greenhouse_fruits there is no further subdivision.
+For greenhouse_vine there is no further subdivision.
+For greenhouse_mushrooms there is no further subdivision.
+For greenhouse_salads there is no further subdivision.
+For foil_films_flowers there is no further subdivision.
+For foil_films_herbals there is no further subdivision.
+For foil_films_asparagus there is no further subdivision.
+For short_rotation_coppice_robinia there is no further subdivision.
+For potatoes the subclasses are: early_season_potatoes, late_season_potatoes.
+
+When I provide you with crop lists, classify them row by row, and do not skip double entries. Do not add any information to the class names! If a cereals or rapeseed does not come with information on the season, do not assume any seasonality.
+Provide me with the following columns in the output:
+code - the original numerical code that comes with the name,
+crop_name - the original name
+crop_name_en - the tranlsation of the original name into English,
+L1, L2, L3, L4 - the four levels. 
