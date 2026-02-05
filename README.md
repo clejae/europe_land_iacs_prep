@@ -5,7 +5,7 @@ This repository comes along with the inventory and contains all scripts that wer
 1) to obtain and preprocess the data and
 2) a workflow to harmonize the data across the European Union
 
-The crop information were harmonized using the Hierarchical Crop and Agriculture Taxonomy (HCAT) of the [EuroCrops project](https://github.com/maja601/EuroCrops).
+The crop information were harmonized using the Hierarchical Crop and Agriculture Taxonomy (HCAT) v3 of the [EuroCrops project](https://github.com/maja601/EuroCrops).
 
 ## Workflow
 All pre-processing scripts can be found in the "pre_processing" folder. These scripts are country specific and prepare the data for the workflow. During pre-processing we made sure that all fields have a unique field-id. If possible, we used information from other columns, such as the "FLIK" in Germany - the official area indicators, and added running cumulative counts to make them unique. If not, we used the first seven digits of the x and y- coordinates of the representative point of the fields to construct a unique ID xxxxxxx_yyyyyyy_cc (where cc is also a cumulative count). Uunfortunately, for half of the countries, we used the centroid points, but cannot reconstruct, where we changed the procedure. We also made sure, that there are not entries with no geometries in the input files, and no duplicate entries. Lastly, in case the crops were recorded in field-blocks (i.e. multiple crops per field block without specific locations), we kept only the largest recorded block in vector file and saved the other ones in an accompanying .csv table.
