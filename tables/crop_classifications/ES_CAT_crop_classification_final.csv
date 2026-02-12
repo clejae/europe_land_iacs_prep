@@ -1,0 +1,394 @@
+crop_code,crop_name,crop_name_de,crop_name_en,crop_name_dk,EC_trans_n,EC_hcat_n,EC_hcat_c,country_code
+,'ALGARROBA' HERBÀCIA,,Forage legume,,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,'ALGARROBA' HERBÀCIA NO SI,,Forage legume (not Ecological Focus Areas),,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,'ALGARROBA' HERBÀCIA NO SIE,,Forage legume (not Ecological Focus Areas),,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,'ALGARROBA' HERBÀCIA SIE,,Forage legume (Ecological Focus Areas),,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,AGROSTIS,,Agrostis (bentgrass),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,ALBERCOQUER,,Apricot,,,apricots,3303010300,ES_CAT
+,ALBERCOQUERS,,Apricot,,,apricots,3303010300,ES_CAT
+,ALBERGINIA,,Eggplant,,,aubergine_eggplant,3301260000,ES_CAT
+,ALBERGÍNIA,,Eggplant,,,aubergine_eggplant,3301260000,ES_CAT
+,ALFABREGA,,Basil,,,basil,3301061207,ES_CAT
+,ALFALS,,Alfalfa,,,alfalfa_lucerne,3301090301,ES_CAT
+,ALFALS NO SIE,,Alfalfa (not Ecological Focus Areas),,,alfalfa_lucerne,3301090301,ES_CAT
+,ALFALS SIE,,Alfalfa (Ecological Focus Areas),,,alfalfa_lucerne,3301090301,ES_CAT
+,ALFÀBREGA,,Basil,,,basil,3301061207,ES_CAT
+,ALGARROBA HERBACIA,,Forage legume,,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,ALGARROBA HERBASCIA,,Forage legume,,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,ALL,,Garlic,,,garlic,3301220200,ES_CAT
+,ALOE VERA,,Aloe Vera,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ALTRES FRUITERS,,Other fruit trees,,,orchards_fruits,3303010000,ES_CAT
+,ALTRES PRODUCTES,,Other products,,,not_known_and_other,3399000000,ES_CAT
+,ALVOCAT,,Avocado,,,avocado,3303100000,ES_CAT
+,AMETLLER,,Almond,,,almond,3303030100,ES_CAT
+,AMETLLERS,,Almond,,,almond,3303030100,ES_CAT
+,ANET,,Dill,,,anethum_dill,3301061203,ES_CAT
+,ANTARA VINYA,,Between Vineyards (cover),,,not_known_and_other,3399000000,ES_CAT
+,ANÍS DOLÇ,,Sweet anise,,,anise_aniseed,3301061205,ES_CAT
+,API,,Celery,,,celery,3301250000,ES_CAT
+,"ARANYONER, PRUNYONER",,Blackthorn/Sloe and Plum Tree(s),,,plums,3303011300,ES_CAT
+,ARROS,,Rice,,,rice,3301010700,ES_CAT
+,ARRÒS,,Rice,,,rice,3301010700,ES_CAT
+,ARTEMÍSIA O ESTRAGÓ,,Artemisia or Tarragon,,,artemisia,3301061206,ES_CAT
+,AVELLANER,,Hazelnut Tree,,,hazelnuts_hazel,3303030200,ES_CAT
+,BARREJA FARRATGERES,,Fodder mix,,,other_plants_harvested_green,3301099900,ES_CAT
+,BERBENA,,Verbena,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,"BITXO, VITXO",,Chilli Pepper or Capsicum,,,chili_pepper,3301300200,ES_CAT
+,BLAT DE MORO,,Corn,,,grain_maize_corn_popcorn,3301010600,ES_CAT
+,BLAT DUR,,Hard wheat,,,durum_hard_wheat,3301010200,ES_CAT
+,BLAT KAMUT,,Kamut wheat,,,durum_hard_wheat,3301010200,ES_CAT
+,BLAT KHORASAN,,Wheat khorasan,,,durum_hard_wheat,3301010200,ES_CAT
+,BLAT TOU,,Soft wheat,,,common_soft_wheat,3301010100,ES_CAT
+,BLEDA,,swiss Chard,,,chard,3301310100,ES_CAT
+,BOIXAC O CALENDULA,,sidia Mallow or Calendula,,,sida_virginia_mallow,3304030000,ES_CAT
+,BOIXAC O CALÈNDULA,,sidia Mallow or Calendula,,,sida_virginia_mallow,3304030000,ES_CAT
+,BOLETS,,Mushroom,,,mushrooms_energy_genetically_modified_crops,3304000000,ES_CAT
+,BORRATJA,,Borage,,,borage,3301061209,ES_CAT
+,BRÒCOLI,,Broccoli,,,broccoli,3301210202,ES_CAT
+,CACAUET,,Peanut,,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,CACAUET NO SIE,,Peanut (not Ecological Focus Areas),,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,CACAUET SIE,,peanut (Ecological Focus Areas),,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,CAMAMILLA,,Chamomile,,,chamomile,3301061213,ES_CAT
+,CAMAMILLA DOLÇA,,Sweet Chamomile,,,chamomile,3301061213,ES_CAT
+,CAMELINA,,Cameline,,,camelina,3301061500,ES_CAT
+,CANEM,,hemp,,,hemp_cannabis,3301061000,ES_CAT
+,CANYA COMU,,Common Reed (cane),,,other_industrial_crops,3301069900,ES_CAT
+,CANYA COMUNA,,Common Reed (cane),,,other_industrial_crops,3301069900,ES_CAT
+,CAQUI,,Persimmon/Kaki,,,citrus_khaki_plantations,3303130100,ES_CAT
+,CARABASSA,,Pumpkin,,,pumpkin_squash_gourd,3301140400,ES_CAT
+,CARBASSO,,Zucchini,,,zucchini_courgette,3301140600,ES_CAT
+,CARBASSÓ,,Zucchini,,,zucchini_courgette,3301140600,ES_CAT
+,CARD,,Thistle,,,topinambur_jerusalem_artichoke,3301180000,ES_CAT
+,CARTAM O SAFRANS,,Safflower or Saffron,,,saffron_crocus_sativus,3301061232,ES_CAT
+,CARXOFA,,Artichoke,,,topinambur_jerusalem_artichoke,3301180000,ES_CAT
+,CASTANYER,,Chestnut,,,sweet_chestnuts,3303030500,ES_CAT
+,CASTANYERS,,Chestnut trees,,,sweet_chestnuts,3303030500,ES_CAT
+,CEBA I CALÇOT,,Onion and spring onion,,,onions,3301220400,ES_CAT
+,CEBA TENDRA,,Tender onion,,,onions,3301220400,ES_CAT
+,"CEBES, CAL",,Onions,,,onions,3301220400,ES_CAT
+,"CEBES, CALCOTS, PORROS I ALLS",,Onions,,,onions,3301220400,ES_CAT
+,"CEBES, CALÇOTS, PORROS I ALLS",,Onions,,,onions,3301220400,ES_CAT
+,CEREALS,,Corn,,,grain_maize_corn_popcorn,3301010600,ES_CAT
+,CIBULET,,Chives,,,chives,3301220100,ES_CAT
+,CIGRONS,,Chickpea,,,chickpeas,3301020200,ES_CAT
+,CIGRONS NO SIE,,Chickpeas no yes,,,chickpeas,3301020200,ES_CAT
+,CIGRONS SIE,,chickpea (Ecological Focus Areas),,,chickpeas,3301020200,ES_CAT
+,CIGRÓ,,Chickpea,,,chickpeas,3301020200,ES_CAT
+,CIRERER,,Cherry,,,cherry_cherries,3303010400,ES_CAT
+,CIRERERS,,Cherry trees,,,cherry_cherries,3303010400,ES_CAT
+,CIVADA,,Oats,,,oats,3301010500,ES_CAT
+,CIVADA I BLAT,,Oats and wheat,,,oats,3301010500,ES_CAT
+,CIVADA I ORDI,,Oats and barley,,,oats,3301010500,ES_CAT
+,CIVADA I TRITICALE,,Oats and triticale,,,oats,3301010500,ES_CAT
+,CLEMENTINA,,Clementine,,,citrus_plantations,3303040000,ES_CAT
+,CLOSA ANY 1,,Enclosed field year 1,,,not_known_and_other,3399000000,ES_CAT
+,CLOSES,,Enclosed field,,,not_known_and_other,3399000000,ES_CAT
+,CLOSES ANY 1,,Enclosed field year 1,,,not_known_and_other,3399000000,ES_CAT
+,CODONY,,Quince,,,quinces,3303011500,ES_CAT
+,COGOMBRE,,Cucumber,,,cucumber_pickle,3301140100,ES_CAT
+,COL DE BRUSEL·LES,,Brussels Sprouts,,,brussels_sprouts,3301210203,ES_CAT
+,COL DE CABDELL,,White Cabbage,,,white_cabbage,3301210212,ES_CAT
+,COL DE MILÀ,,savoy cabbage,,,savoy_cabbage,3301210211,ES_CAT
+,COL GEGANT,,Giant Cabbage,,,brassica_oleracea_cabbage,3301210200,ES_CAT
+,COL I COLIFLOR,,Cabbage and cauliflower,,,cauliflower,3301210204,ES_CAT
+,COL KALE,,Kale,,,kale,3301210208,ES_CAT
+,COL LLOMBARDA O MORADA,,Cabbage Lombard or purple,,,red_cabbage,3301210210,ES_CAT
+,COL XINESA,,Chinese cabbage,,,chinese_cabbage,3301210205,ES_CAT
+,COL-I-FLOR,,cauliflower,,,cauliflower,3301210204,ES_CAT
+,COLRAVE,,kohlrabi,,,kohlrabi,3301210209,ES_CAT
+,COLZA,,Canola/Rapeseed,,,rapeseed_rape,3301060400,ES_CAT
+,COMÍ,,Cumin,,,black_cumin,3301061208,ES_CAT
+,CONREU DE FRUITS DEL BOSC,,Cultivation of forest fruits,,,tree_wood_forest,3306000000,ES_CAT
+,CORIANDRE,,Coriander,,,coriander,3301061215,ES_CAT
+,COTO,,Cotton,,,cotton,3301060300,ES_CAT
+,COTÓ,,Cotton,,,cotton,3301060300,ES_CAT
+,CREIXEN,,Cover Crops / Succession,,,not_known_and_other,3399000000,ES_CAT
+,CREIXENS,,Cover Crops / Succession,,,not_known_and_other,3399000000,ES_CAT
+,CROTALÀRIA,,rattlepods,,,unspecified_legumes_dried_pulses_protein_crops,3301029800,ES_CAT
+,CRÈIXENS,,Cover Crops / Succession,,,not_known_and_other,3399000000,ES_CAT
+,CUA DE RATA (PHLEUM),,Timothy Grass (Phleum),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,CÀNEM,,Hemp,,,hemp_cannabis,3301061000,ES_CAT
+,CÀNEM NO TÈXTIL,,Non -textile hemp,,,finola,3301061001,ES_CAT
+,CÀNEM TÈXTIL,,Textile hemp,,,hemp_cannabis,3301061000,ES_CAT
+,CÀRTAM O SAFRANÓ,,Safflower or Saffron,,,safflower,3301083900,ES_CAT
+,DACTIL (DACTYLIS),,Dactyl (Dactylis),,,other_permanent_crops_plantations,3303990000,ES_CAT
+,DALL O FROMENTAL (ARRHENANTHE*,,Dall or from (Arrhenanthe*,,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,DALL O FROMENTAL (ARRHENATHER*,,Dall or from from (Arrhenather*,,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,DALL O FROMENTAL (ARRHENATHERUM),,Dall or from (Arrhenenherum),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,DÀCTIL (DACTYLIS),,Dactyl (dactylis),,,other_permanent_crops_plantations,3303990000,ES_CAT
+,ENCIAM,,Lettuce,,,salads_lettuce_leaf_vegetables,3301310000,ES_CAT
+,"ENDIVIA, ESCAROLA I XICOIRA",,endive,,,endive,3301310300,ES_CAT
+,ENDÍVIA,,endive,,,endive,3301310300,ES_CAT
+,"ENDÍVIA, ESCAROLA I XICOIRA",,endive,,,endive,3301310300,ES_CAT
+,ERB,,Herbal plants,,,aromatic_medicinal_culinary_plants_spices_herbs;3301061200,3301061200,ES_CAT
+,ERBS (LLEGUM) NO SIE,,Herbal plants (legumins) (not Ecological Focus Areas),,,aromatic_medicinal_culinary_plants_spices_herbs;3301061200,3301061200,ES_CAT
+,ERBS (LLEGUM) SIE,,Herbal plants (legumins) (Ecological Focus Areas),,,aromatic_medicinal_culinary_plants_spices_herbs;3301061200,3301061200,ES_CAT
+,ERBS (LLEGUMINOSA),,Herbal plants (legumins),,,aromatic_medicinal_culinary_plants_spices_herbs;3301061200,3301061200,ES_CAT
+,ERBS I CIVADA,,herbs and oats,,,cereal_grass_mix,3301091300,ES_CAT
+,ERBS I ORDI,,herbs and barley,,,cereal_grass_mix,3301091300,ES_CAT
+,ERBS I ORDI NO SIE,,herbs and barley (not Ecological Focus Areas),,,cereal_grass_mix,3301091300,ES_CAT
+,ERBS I ORDI SIE,,herbs and barley (Ecological Focus Areas),,,cereal_grass_mix,3301091300,ES_CAT
+,ESBARZER,,Blackberry bush,,,blackberry,3303020200,ES_CAT
+,ESCAIOLA,,Gypsophila,,,other_flowers_ornamental_plants,3301089900,ES_CAT
+,ESCAROLA,,Escarole,,,salads_lettuce_leaf_vegetables,3301310000,ES_CAT
+,ESPARRECS,,Asparagus,,,asparagus,3301200000,ES_CAT
+,ESPECIES AROMATIQUES HERBACI,,Herbaceous aromatic species,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ESPECIES AROMATIQUES HERBACIES,,Herbacious aromatic species,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ESPECIES AROMATIQUES LLENYOSES,,Woody flavoring species,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ESPECIES AROMÀTIQUES HERBÀCI,,Herbaceous aromatic species,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ESPECIES AROMÀTIQUES HERBÀCIES,,Herbaceous aromatic species,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ESPECIES AROMÀTIQUES LLENYOSES,,Woody aromatic species,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ESPELTA,,spelt,,,spelt,3301011000,ES_CAT
+,ESPELTA PETITA,,Small spelt,,,spelt,3301011000,ES_CAT
+,ESPINAC,,Spinach,,,spinach,3301310800,ES_CAT
+,ESPÀRREC,,Asparagus,,,asparagus,3301200000,ES_CAT
+,ESPÍGOL O LAVANDA,,Lavender or lavender,,,lavender_lavandula,3301061219,ES_CAT
+,ESTEVIA,,Stevia,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,EUCALIPTUS ROT. CURTA,,Eucalyptus Rot. Short,,,eucalyptus,3306050000,ES_CAT
+,FAJOL,,Buskwheat,,,buskwheat,3301150200,ES_CAT
+,FARIGOLA O TIMO,,Thyme or thymo,,,thyme,3301061237,ES_CAT
+,FARIGOLA O TIMÓ,,Thyme or thyme,,,thyme,3301061237,ES_CAT
+,FARRATGERES,,forage crops,,,temporary_grass,3301090100,ES_CAT
+,FAVA,,Broad Bean (Fava),,,beans,3301020100,ES_CAT
+,FAVA I CIVADA,,Fava and oats,,,beans,3301020100,ES_CAT
+,FAVA I CIVADA SIE,,Fava and oats yes,,,beans,3301020100,ES_CAT
+,FAVERA BORDA NO SIE O MOREU N*,,Favera Borda (not Ecological Focus Areas),,,beans,3301020100,ES_CAT
+,FAVERA BORDA NO SIE O MOREU NO SIE,,Favera Borda (not Ecological Focus Areas),,,beans,3301020100,ES_CAT
+,FAVERA BORDA O MOREU,,Favera Borda or Moreu,,,beans,3301020100,ES_CAT
+,FAVERS BORDA O MOREU,,Favers Borda or Moreu,,,beans,3301020100,ES_CAT
+,FAVERS BORDA SIE O MOREU SIE,,FAVERS BORDA (Ecological Focus Areas),,,beans,3301020100,ES_CAT
+,FAVES I FAVONS,,Fava & Field Beans,,,beans,3301020100,ES_CAT
+,FAVES I FAVONS NO SIE,,Fava & Field Beans,,,beans,3301020100,ES_CAT
+,FAVES I FAVONS SIE,,Fava & Field Beans,,,beans,3301020100,ES_CAT
+,FAVÓ,,Fava bean,,,beans,3301020100,ES_CAT
+,FENIGREC,,Fenugreek,,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,FENIGREC NO SIE,,Fenigrec (not Ecological Focus Areas),,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,FENIGREC SIE,,Fenigrec (Ecological Focus Areas),,,legumes_dried_pulses_protein_crops,3301020000,ES_CAT
+,FESTUCA,,Fescue grass,,,festuca_fescue,3301090202,ES_CAT
+,FIGUERA,,Fig tree,,,fig,3303010600,ES_CAT
+,FLOR TALLADA,,Cut Flowers,,,other_flowers_ornamental_plants,3301089900,ES_CAT
+,FLORS I ORNAMENTALS,,Flowers and ornamental,,,other_flowers_ornamental_plants,3301089900,ES_CAT
+,FONOLL,,Fennel,,,fennel,3301170000,ES_CAT
+,FRUITERS VARIS,,Various fruit trees,,,orchards_fruits,3303010000,ES_CAT
+,GARLANDA,,Cover Crop (Garland),,,temporary_grass,3301090100,ES_CAT
+,GARLANDA NO SIE,,Garland (not Ecological Focus Areas),,,temporary_grass,3301090100,ES_CAT
+,GARLANDA SIE,,Garland (Ecological Focus Areas),,,temporary_grass,3301090100,ES_CAT
+,GARROFA HERBÀCIA,,Herbaceous carob,,,carob,3303110100,ES_CAT
+,GARROFER,,Carob tree,,,carob,3303110100,ES_CAT
+,GERD,,Raspberry,,,raspberry_raspberries,3303021000,ES_CAT
+,GERDS,,Raspberry,,,raspberry_raspberries,3303021000,ES_CAT
+,GINJOLER,,Jujube Tree,,,orchards_fruits,3303010000,ES_CAT
+,GIRA-SOL,,Sunflower,,,sunflower,3301060500,ES_CAT
+,GROSELLA,,Currant,,,currants,3303020600,ES_CAT
+,GROSELLER,,Currant,,,currants,3303020600,ES_CAT
+,GUAR N SIE,,Guar,,,other_industrial_crops,3301069900,ES_CAT
+,GUARET / SUP. LLIURE SEMBRA,,Guar,,,other_industrial_crops,3301069900,ES_CAT
+,GUARET BIODIVERSITAT,,Guar,,,other_industrial_crops,3301069900,ES_CAT
+,GUARET NO SIE/ SUP. LLIURE SE*,,Guar (not Ecological Focus Areas),,,other_industrial_crops,3301069900,ES_CAT
+,GUARET NO SIE/ SUP. LLIURE SEMBRA,,Guar (not Ecological Focus Areas),,,other_industrial_crops,3301069900,ES_CAT
+,GUARET SIE AMB ESPÈCIES MEL.L*,,Guar (Ecological Focus Areas),,,other_industrial_crops,3301069900,ES_CAT
+,GUARET SIE AMB ESPÈCIES MEL?L,,Guar (Ecological Focus Areas),,,other_industrial_crops,3301069900,ES_CAT
+,GUARET SIE AMB ESPÈCIES MEL·LÍFERES,,Guar (Ecological Focus Areas),,,other_industrial_crops,3301069900,ES_CAT
+,GUARET SIE/ SUP. LLIURE SEMBRA,,Guar (Ecological Focus Areas),,,other_industrial_crops,3301069900,ES_CAT
+,GUARSIEMEL,,Guar,,,other_industrial_crops,3301069900,ES_CAT
+,GUIXES NO SIE O PEDREROL NO S*,,Grass Pea or Pedrerol (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXES NO SIE O PEDREROL NO SIE,,Grass Peas (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXES NS,,Grass Peas (not SEcological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXES O PEDREROL,,Grass Peas (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXES SIE O PEDREROL SIE,,Grass Peas (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXO O PESOL QUADRAT,,Grass Peas (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXÓ NO SIE O PÈSOL QUADRAT,,Grass Peas (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXÓ NO SIE O PÈSOL QUADRAT NO SIE,,Grass Peas (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,GUIXÓ NSIE,,Grass Peas (not Ecological Focus Areas),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,HISOP,,Hyssop,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,HORTA,,vegetable garden ,,,kitchen_gardens,3301120000,ES_CAT
+,HORTA AUTOCONSUM,,vegetable garden ,,,kitchen_gardens,3301120000,ES_CAT
+,HORTICOLES,,Horticoles,,,kitchen_gardens,3301120000,ES_CAT
+,JULIVERT,,Parsley,,,parsly,3301061227,ES_CAT
+,KIWI,,Kiwi,,,kiwi,3303010700,ES_CAT
+,LAVANDA,,Lavender,,,lavender_lavandula,3301061219,ES_CAT
+,LAVANDA O ESPIGOL,,Lavender or espigol,,,lavender_lavandula,3301061219,ES_CAT
+,LAVANDA O ESPÍGOL,,Lavender or lavender,,,lavender_lavandula,3301061219,ES_CAT
+,LAVANDA X ESPIGOL,,Lavender x espigol,,,lavender_lavandula,3301061219,ES_CAT
+,LLENTIA,,Lentil,,,lentils,3301020500,ES_CAT
+,LLENTIES,,Lentils,,,lentils,3301020500,ES_CAT
+,LLENTIES NO SIE,,Lentils (not Ecological Focus Areas),,,lentils,3301020500,ES_CAT
+,LLENTIES SIE,,Lentils (Ecological Focus Areas),,,lentils,3301020500,ES_CAT
+,LLI,,flax_linen,,,flax_linen,3301060701,ES_CAT
+,LLIMONER,,Lemon tree,,,citrus_plantations,3303040000,ES_CAT
+,LLOBÍ (TRAMÚS),,Lupin,,,sweet_lupins,3301020700,ES_CAT
+,LLOBÍ GROC (TRAMÚS GROC),,Yellow Lupin,,,sweet_lupins,3301020700,ES_CAT
+,LLTPOL,,Hops,,,hops,3301060200,ES_CAT
+,LLUPOL,,Hops,,,hops,3301060200,ES_CAT
+,LLÚPOL,,Hops,,,hops,3301060200,ES_CAT
+,LOT CORNICULAT,,Bird's-foot trefoil,,,legumes_harvested_green,3301090300,ES_CAT
+,MACANELLA O SEMPREVIVA,,Everlasting Flower or Helichrysum,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,MADUIXA,,Strawberry,,,strawberries,3301130000,ES_CAT
+,MADUIXOT,,Strawberry,,,strawberries,3301130000,ES_CAT
+,MAGRANER,,Pomegranate,,,pomegranate,3303011400,ES_CAT
+,MALVA,,Mallow,,,sida_virginia_mallow,3304030000,ES_CAT
+,MANDARINER,,Tangerine,,,citrus_plantations,3303040000,ES_CAT
+,MANDARINER HÍBRID,,Hybrid mandariner,,,citrus_plantations,3303040000,ES_CAT
+,MARDUIX,,marjoram,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,MARIALLUÏSA,,lemon verbena,,,citrus_plantations,3303040000,ES_CAT
+,"MARXANT, BLET",,wild weeds / wild chard,,,chard,3301310100,ES_CAT
+,MAÇANELLA O SEMPREVIVA,,variety of herbs,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,MELCA DEL SUDAN,,Sudan Grass (Sorghum × drummondii),,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,MELISSA O TARONGINA,,Hybrid Mandarin Tree,,,citrus_plantations,3303040000,ES_CAT
+,MELO,,Melon,,,melon,3301140300,ES_CAT
+,MELT,,Melon,,,melon,3301140300,ES_CAT
+,MELÓ,,Melon,,,melon,3301140300,ES_CAT
+,MENTA,,Peppermint,,,mints_peppermint,3301061222,ES_CAT
+,"MENTA VERDA, HERBA DE SANTA MARIA",,Spearmint,,,mints_peppermint,3301061222,ES_CAT
+,MESTALL,,mixture of wheats,,,common_soft_wheat,3301010100,ES_CAT
+,MILL,,Millet,,,millet_sorghum,3301010900,ES_CAT
+,"MILL ITALIÀ, CUA DE GUILLA",,Italian Millet (Foxtail Millet),,,millet_sorghum,3301010900,ES_CAT
+,MONGETA,,Bean,,,beans,3301020100,ES_CAT
+,MONGETA NO SIE,,Bean (not Ecological Focus Areas),,,beans,3301020100,ES_CAT
+,MONGETA SIE,,Bean (Ecological Focus Areas),,,beans,3301020100,ES_CAT
+,MONGETA VERMELLA,,Red bean,,,beans,3301020100,ES_CAT
+,MONIATO,,Sweet potato,,,sweet_potatoes,3301040000,ES_CAT
+,MORER,,Mulberry Tree,,,other_tree_wood_forest,3306990000,ES_CAT
+,MOREU NSIE,,Field Bean (not Ecological Focus Areas),,,beans,3301020100,ES_CAT
+,MOSTASSA,,Mustard,,,mustard,3301210100,ES_CAT
+,NABIU,,Blueberry,,,blueberry,3303020400,ES_CAT
+,NABIUS,,Blueberry,,,blueberry,3303020400,ES_CAT
+,NAP,,Turnip,,,turnips,3301290800,ES_CAT
+,NAP I COL XINESA,,Turnip and Chinese cabbage,,,chinese_cabbage,3301210205,ES_CAT
+,NASHI,,Nashi pear,,,pears,3303011200,ES_CAT
+,NECTARINA PLANA,,Flat nectarine,,,nectarine,3303010900,ES_CAT
+,NECTARINER,,Nectariner,,,nectarine,3303010900,ES_CAT
+,NECTARINS,,Nectarins,,,nectarine,3303010900,ES_CAT
+,NESPRER,,loquat,,,orchards_fruits,3303010000,ES_CAT
+,NOGUERA,,Walnut,,,walnuts,3303030600,ES_CAT
+,NOGUERES,,Walnut,,,walnuts,3303030600,ES_CAT
+,"NYÀMERA, PATATA DE CANYA",,Jerusalem artichoke,,,artichoke,3301270000,ES_CAT
+,OKRA,,Okra,,,other_arable_land_crops,3301990000,ES_CAT
+,OLIVERA,,Olive tree,,,olives_for_oil_production,3303050100,ES_CAT
+,OLIVERES,,Olive trees,,,olives_for_oil_production,3303050100,ES_CAT
+,ORDI,,Barley,,,barley,3301010400,ES_CAT
+,ORENGA,,Orenga,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,PASSACAMINS,,side-of-the-road vegetation,,,non_productive_landscape_elements,3310000000,ES_CAT
+,PASTANAGA,,Carrot,,,carrots_daucus,3301290300,ES_CAT
+,PASTURES DE MENYS DE 5 ANYS,,Pastures under 5 years,,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,PATATA,,Potato,,,potatoes,3301030000,ES_CAT
+,PAULÒNIA ROT. CURTA,,Paulonia Short rotation,,,tree_wood_forest,3306000000,ES_CAT
+,PEBROT,,bell peppers,,,bell_pepper_paprika,3301300100,ES_CAT
+,PERERA,,Pear,,,pears,3303011200,ES_CAT
+,PERERES,,Pear,,,pears,3303011200,ES_CAT
+,PERERES/POMERES,,Pearies/apple trees,,,orchards_fruits,3303010000,ES_CAT
+,PERICÓ O HERBA DE SANT JOAN,,St. John's Wort,,,fallow_land_not_crop,3301110000,ES_CAT
+,PESOLS,,Peas,,,peas,3301020600,ES_CAT
+,"PISANA, ESPELTA BESSONA",,"Pisana, twin spelled",,,spelt,3301011000,ES_CAT
+,PISTATXER O FESTUC,,Pistachio,,,pistachio,3303030400,ES_CAT
+,PLANTA ORNAMENTAL,,Ornamental plant,,,other_flowers_ornamental_plants,3301089900,ES_CAT
+,POA,,Bluegrass,,,pasture_meadow_grassland_grass,3302000000,ES_CAT
+,POLLANCRE ROT. CURTA,,Short-Rotation Poplar,,,tree_wood_forest,3306000000,ES_CAT
+,POMELO O ARANJA,,Pomelo or grapefruit,,,citrus_plantations,3303040000,ES_CAT
+,POMERA,,Apple tree,,,apples,3303010200,ES_CAT
+,POMERES,,Apple trees,,,apples,3303010200,ES_CAT
+,PORRO,,Leek,,,leek,3301220300,ES_CAT
+,PRESSEGUER,,Peach,,,peach,3303011100,ES_CAT
+,PRESSEGUERS,,Peach,,,peach,3303011100,ES_CAT
+,PRESSEGUERS/NECTARINS,,peach/nectarins,,,peach,3303011100,ES_CAT
+,PROTEAGINOSES,,Protein Crops,,,unspecified_legumes_dried_pulses_protein_crops,3301029800,ES_CAT
+,PRUNERA,,Plum Tree,,,plums,3303011300,ES_CAT
+,PRUNERES,,Plum Tree,,,plums,3303011300,ES_CAT
+,PRÉSSEC PLA,,Flat peach,,,peach,3303011100,ES_CAT
+,PÈSOL,,Pea,,,peas,3301020600,ES_CAT
+,PÈSOL I CIVADA,,Pea and oats,,,cereal_legume_mix,3301091200,ES_CAT
+,PÈSOL I CIVADA NO SIE,,Peas and oats (not Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,PÈSOL I CIVADA SIE,,Pea and oats (Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,PÈSOL I ORDI,,Pea and barley,,,cereal_legume_mix,3301091200,ES_CAT
+,PÈSOL I ORDI NO SIE,,Peas and barley (not Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,PÈSOL I ORDI SIE,,Pea and barley (Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,PÈSOLS NO SIE,,Peas (not Ecological Focus Areas),,,peas,3301020600,ES_CAT
+,PÈSOLS SIE,,Peas (Ecological Focus Areas),,,peas,3301020600,ES_CAT
+,QUINOA,,Quinoa,,,quinoa,3301150300,ES_CAT
+,RAIGRÀS MULTIFLORUM,,Italian ryegrass,,,lolium_ryegrass,3301090205,ES_CAT
+,RAIGRÀS PERENNE,,Perennial Ryegrass,,,lolium_ryegrass,3301090205,ES_CAT
+,RAIM DE TAULA,,Table Grapes,,,vineyards_wine_vine_rebland_grapes,3303060000,ES_CAT
+,RAVE,,Turnip,,,turnips,3301290800,ES_CAT
+,"RAVE PICANT, RAVE RUSTICÀ",,Hot Turnip,,,turnips,3301290800,ES_CAT
+,RAY-GRASS,,Ray-grass,,,lolium_ryegrass,3301090205,ES_CAT
+,RAÏM DE TAULA,,Table grape,,,vineyards_wine_vine_rebland_grapes,3303060000,ES_CAT
+,REMOLATXA,,Beetroot,,,beetroot_beets,3301290200,ES_CAT
+,RETIRADA MIN. 20 ANYS (RAMSAR),,fallow minimum 20 years,,,fallow_land_not_crop,3301110000,ES_CAT
+,ROMANESCO,,Romanesco broccoli,,,broccoli,3301210202,ES_CAT
+,ROMANI,,rosemary,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ROMANS,,rosemary,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,ROMANÍ,,rosemary,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,RUIBARBRE,,rhubarb,,,rhubarb,3301230000,ES_CAT
+,SAFRA,,Safflower,,,safflower,3301083900,ES_CAT
+,SAFRE,,Safflower,,,safflower,3301083900,ES_CAT
+,SAFRÀ,,Safflower,,,safflower,3301083900,ES_CAT
+,SAJOLIDA,,savory,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,SALVIA,,Salvia,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,SALZE ROT. CURTA,,willow short rotation,,,tree_wood_forest,3306000000,ES_CAT
+,SATSUMA,,Satsuma Mandarin,,,citrus_plantations,3303040000,ES_CAT
+,SEGOL,,Sorghum (Segol variety),,,millet_sorghum,3301010900,ES_CAT
+,SINDRIA,,Seny,,,watermelon,3301140500,ES_CAT
+,SOIA,,Soybean,,,soy_soybeans,3301160000,ES_CAT
+,SOIA NO SIE,,Soybean (not Ecological Focus Areas),,,soy_soybeans,3301160000,ES_CAT
+,SOIA SIE,,Soybean (Ecological Focus Areas),,,soy_soybeans,3301160000,ES_CAT
+,SORGO,,Sorgo,,,millet_sorghum,3301010900,ES_CAT
+,SULLA NO SIE O ENCLOVA NO SIE,,not planted/sown (not Ecological Focus Areas),,,fallow_land_not_crop,3301110000,ES_CAT
+,SULLA O ENCLOVA,,not planted/sown,,,fallow_land_not_crop,3301110000,ES_CAT
+,SULLA SIE O ENCLOVA SIE,,not planted/sown (Ecological Focus Areas),,,fallow_land_not_crop,3301110000,ES_CAT
+,SÀLVIA,,Sage,,,sage_chia,3301190000,ES_CAT
+,SÈGOL,,Rye,,,rye,3301010300,ES_CAT
+,SÍNDRIA,,Watermelon,,,watermelon,3301140500,ES_CAT
+,TABAC,,Tobacco,,,tobacco,3301060100,ES_CAT
+,TARONGER,,Orange,,,citrus_plantations,3303040000,ES_CAT
+,TARONGER AGRE,,Orange,,,citrus_plantations,3303040000,ES_CAT
+,TEFF,,Teff,,,teff,3301010904,ES_CAT
+,TOFONA,,Truffle,,,truffle,3304040000,ES_CAT
+,TOMAQUET,,Tomato,,,tomato,3301280000,ES_CAT
+,TOMÀQUET,,Tomato,,,tomato,3301280000,ES_CAT
+,TOMÀQUET PER LA INDÚSTRIA,,Tomato for the industry,,,tomato,3301280000,ES_CAT
+,TRAMUSSOS DOLCOS,,Sweet Lupins,,,sweet_lupins,3301020700,ES_CAT
+,TRAMUSSOS DOLÇOS NO SIE,,Sweet Lupins (not Ecological Focus Areas),,,sweet_lupins,3301020700,ES_CAT
+,TRAMUSSOS DOLÇOS SIE,,Sweet Lupins (Ecological Focus Areas),,,sweet_lupins,3301020700,ES_CAT
+,TREPADELLA,,Trepadella (local decoction plant),,,other_flowers_ornamental_plants,3301089900,ES_CAT
+,TREPADELLA NO SIE,,Trepadella (local decoction plant) (not Ecological Focus Areas),,,other_flowers_ornamental_plants,3301089900,ES_CAT
+,TREPADELLA SIE,,Trepadella (local decoction plant) (Ecological Focus Areas),,,other_flowers_ornamental_plants,3301089900,ES_CAT
+,TREVOL,,Clover,,,clover,3301090303,ES_CAT
+,TRITICALE,,Triticale,,,common_soft_wheat,3301010100,ES_CAT
+,TRITORDEUM,,Tritorodeum (wheat-barley hybrid),,,common_soft_wheat,3301010100,ES_CAT
+,TRÈVOL,,Clover,,,clover,3301090303,ES_CAT
+,TRÈVOL NO SIE,,Clover (not Ecological Focus Areas),,,clover,3301090303,ES_CAT
+,TRÈVOL SIE,,Clover (Ecological Focus Areas),,,clover,3301090303,ES_CAT
+,TÀPERA,,caper bush,,,shrubberries_shrubs,3303080000,ES_CAT
+,TÒFONA,,Truffle,,,truffle,3304040000,ES_CAT
+,VALERIANA,,Valerian,,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,ES_CAT
+,VECA I CIVADA,,Vetch with Oats,,,cereal_legume_mix,3301091200,ES_CAT
+,VECES,,Vetch with Oats,,,cereal_legume_mix,3301091200,ES_CAT
+,VECES NO SIE,,(not Ecological Focus Areas),,,vetches,3301090305,ES_CAT
+,VECES SIE,,(Ecological Focus Areas),,,vetches,3301090305,ES_CAT
+x,VERA I CIVADA,,Vetch and oats,,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA,,Vetch,,,vetches,3301090305,ES_CAT
+,VEÇA I BLAT,,Vetch and wheat,,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I BLAT NO SIE,,Vetch and wheat (not Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I BLAT SIE,,Vetch and wheat (Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I CIVADA,,Vetch and oats,,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I CIVADA NO SIE,,Vetch and oats (not Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I CIVADA SIE,,Vetch and oats (Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I ORDI,,Vetch and barley,,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I ORDI NO SIE,,Vetch and barley (not Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I ORDI SIE,,Vetch and barley (Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I RAIGRÀS,,Vetch and ryegrass,,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I TRITICALE,,Vetch and triticale,,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I TRITICALE  NO SIE,,Vetch and triticale (not Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA I TRITICALE SIE,,Vetch and triticale (Ecological Focus Areas),,,cereal_legume_mix,3301091200,ES_CAT
+,VEÇA VELLOSA,,Hairy vetch,,,vetches,3301090305,ES_CAT
+x,"VEÇA, CIVADA I ORDI",,"Veça, oats and barley",,,cereal_legume_mix,3301091200,ES_CAT
+,"VEÇA, CIVADA I ORDI NO SIE",,"Veça, oats and barley (not Ecological Focus Areas)",,,cereal_legume_mix,3301091200,ES_CAT
+,"VEÇA, CIVADA I ORDI SIE",,"Veça, oats and barley (Ecological Focus Areas)",,,cereal_legume_mix,3301091200,ES_CAT
+,VIMETERA,,Wicker (basketry willow),,,other_tree_wood_forest,3306990000,ES_CAT
+,VINYA,,Vineyard,,,vineyards_wine_vine_rebland_grapes,3303060000,ES_CAT
+,VINYES,,Vineyards,,,vineyards_wine_vine_rebland_grapes,3303060000,ES_CAT
+,VIVER - PRODUCTOR MVR,,Nursery - MVR producer,,,nurseries_nursery,3303070000,ES_CAT
+,VIVER ARBRE I ARBUST,,Tree nursery and shrub,,,nurseries_nursery,3303070000,ES_CAT
+,XICÒRIA,,Chicory,,,chicory_chicories,3301310200,ES_CAT
+,XIRIMOIER,,Jujube (Ziziphus),,,orchards_fruits,3303010000,ES_CAT
+,XIRIVIA,,Parsnip,,,parsnips,3301290500,ES_CAT

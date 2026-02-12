@@ -1,0 +1,273 @@
+crop_code,crop_name,crop_name_de,crop_name_en,EC_trans_n,EC_hcat_n,EC_hcat_c,country_code
+10001,,,unknown,,not_known_and_other,3390000000,BG
+10002,,,tobacco,,tobacco,3301060100,BG
+10003,,,tobacco,,tobacco,3301060100,BG
+10004,,,White willow,,willows_osiers,3306080000,BG
+10005,,,White poplar,,populus,3306070000,BG
+10006,,,White mulberry,,unspecified_orchards_fruits,3303019800,BG
+10007,,,Wine vineyards,,vineyards_wine_vine_rebland_grapes,3303060000,BG
+10008,,,Virginia tobacco,,tobacco,3301060100,BG
+10009,,,Fibre crops,,fibre_crops,3301061100,BG
+10010,,,OTHER PERMANENT CROPS,,permanent_crops_perennial,3303000000,BG
+10011,,,Ornamental shrubs,,unspecified_flowers_ornamental_plants,3301089800,BG
+10012,,,Dessert vineyards,,vineyards_wine_vine_rebland_grapes,3303060000,BG
+10013,,,Other ornamental plants,,other_flowers_ornamental_plants,3301089900,BG
+10014,,,Other vegetable crops,,fresh_vegetables,3301070000,BG
+10015,,,Other fruit types,,unspecified_orchards_fruits,3303019800,BG
+10016,,,Tree crops with a short rotation cycle,,short_rotation_coppice,3306090000,BG
+10017,,,Annual forage crops,,arable_crops,3301000000,BG
+10018,,,Vegetables,,fresh_vegetables,3301070000,BG
+10019,,,Grain and legume crops,,cereal,3301010000,BG
+10020,,,Cereals,,cereal,3301010000,BG
+10021,,,Cultivated meadows,,pasture_meadow_grassland_grass,3302000000,BG
+10022,,,Oriental Plane,,other_tree_wood_forest,3306990000,BG
+10023,,,Industrial crops,,industrial_nonfood_crops,3301060000,BG
+10024,,,POTATOES,,potatoes,3301030000,BG
+10025,,,CULTIVATED MUSHROOMS,,mushrooms_energy_genetically_modified_crops,3304000000,BG
+10026,,,tobacco,,tobacco,3301060100,BG
+10027,,,Root vegetables,,root_vegetables,3301290000,BG
+10028,,,Stone fruit species,,orchards_fruits,3303010000,BG
+10029,,,VINEYARD,,vineyards_wine_vine_rebland_grapes,3303060000,BG
+10030,,,Hazel,,hazelnuts_hazel,3303030200,BG
+10031,,,Mowing meadows,,pasture_meadow_grassland_grass,3302000000,BG
+10032,,,Leafy vegetable crops,,salads_lettuce_leaf_vegetables,3301310000,BG
+10033,,,Vine planting material,,vineyards_wine_vine_rebland_grapes,3303060000,BG
+10034,,,Bulb vegetable crops,,root_vegetables,3301290000,BG
+10035,,,PERENNIAL MEDICINAL AND AROMATIC CROPS,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,BG
+10036,,,Oil crops,,oilseed_crops,3301060800,BG
+10037,,,Medicinal and Aromatic Crops,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,BG
+10038,,,Medical and aromatic crops,,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,BG
+10039,,,Perennial grass species,,pasture_meadow_grassland_grass,3302000000,BG
+10040,,,Perennial forage crops,,pasture_meadow_grassland_grass,3302000000,BG
+10041,,,FRUIT TYPES,,orchards_fruits,3303010000,BG
+10042,,,GREENHOUSE AREAS,,greenhouses,3305010000,BG
+10043,,,Fruit planting material,,orchards_fruits,3303010000,BG
+10044,,,AREA WITH FALLOW LAND,,fallow_land_not_crop,3301110000,BG
+10045,,,"PERMANENT GRASSLANDS (permanent pastures, meadows and pastures)",,pasture_meadow_grassland_grass,3302000000,BG
+10046,,,FRESH VEGETABLES,,fresh_vegetables,3301070000,BG
+10047,,,Fruiting vegetables,,fresh_vegetables,3301070000,BG
+10048,,,Areas for the production of seed and seed material,,arable_land_seed_seedlings,3301100000,BG
+10049,,,Field elm,,other_tree_wood_forest,3306990000,BG
+10050,,,Permanent grassland kept in a state suitable for grazing or mowing,,pasture_meadow_grassland_grass,3302000000,BG
+10051,,,Permanent grassland (mowed meadows),,pasture_meadow_grassland_grass,3302000000,BG
+10052,,,Permanent grassland (pastures and grazing measures),,pasture_meadow_grassland_grass,3302000000,BG
+10053,,,Permanent grassland kept in a state suitable for grazing or mowing,,pasture_meadow_grassland_grass,3302000000,BG
+10054,,,NURSERIES,,nurseries_nursery,3303070000,BG
+10055,,,Nurseries for forest saplings,,nurseries_nursery,3303070000,BG
+10056,,,Nurseries for ornamental plants,,nurseries_nursery,3303070000,BG
+10057,,,FAMILY GARDENES,,kitchen_gardens,3301120000,BG
+10058,,,Potted plants,,nurseries_nursery,3303070000,BG
+10059,,,Pome fruits,,orchards_fruits,3303010000,BG
+10060,,,Spelt,,spelt,3301011000,BG
+10061,,,Silver Linden,,other_tree_wood_forest,3306990000,BG
+10062,,,Industrial Crop,,industrial_nonfood_crops,3301060000,BG
+10063,,,POPLARS,,other_tree_wood_forest,3306990000,BG
+10064,,,Pumpkins for seeds,,pumpkin_squash_gourd,3301140400,BG
+10065,,,Aspen,,aspen,3306020000,BG
+10066,,,Almond Willow,,willows_osiers,3306080000,BG
+10067,,,FORAGE CROPS,,arable_crops,3301000000,BG
+10068,,,FLOWERS AND DECORATIVE PLANTS,,flowers_ornamental_plants,3301080000,BG
+10069,,,Flowers,,flowers_ornamental_plants,3301080000,BG
+10070,,,Flowers and ornamental plants,,flowers_ornamental_plants,3301080000,BG
+10071,,,Flowers grown for bulbs,,flowers_ornamental_plants,3301080000,BG
+10072,,,Flowers grown for cut flowers,,flowers_ornamental_plants,3301080000,BG
+10073,,,Mulberries,,unspecified_orchards_fruits,3303019800,BG
+10074,,,Black alder,,other_tree_wood_forest,3306990000,BG
+10075,,,Black poplar,,populus,3306070000,BG
+10076,,,Black mulberry,,unspecified_orchards_fruits,3303019800,BG
+10077,,,Berry fruit,,unspecified_berries_berry_species,3303029800,BG
+10078,,,Berry fruit species,,unspecified_berries_berry_species,3303029800,BG
+10079,,,other pome fruit species,,unspecified_orchards_fruits,3303019800,BG
+10080,,,actinidia (kiwi),,kiwi,3303010700,BG
+10081,,,anise,,anise_aniseed,3301061205,BG
+10082,,,aronia,,aronia_chokeberries,3303020100,BG
+10083,,,shallot,,shallot,3301220600,BG
+10084,,,artichoke,,artichoke,3301270000,BG
+10085,,,asparagus,,asparagus,3301200000,BG
+10086,,,almonds,,almond,3303030100,BG
+10087,,,broad beans for grain,,beans,3301020100,BG
+10088,,,okra,,fresh_vegetables,3301070000,BG
+10089,,,belladonna,,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,BG
+10090,,,Leucojum,,other_flowers_ornamental_plants,3301089900,BG
+10091,,,gooseberry,,gooseberry_gooseberries_cranberries,3303020700,BG
+10092,,,blueberries,,blueberry,3303020400,BG
+10093,,,basil,,basil,3301061207,BG
+10094,,,broccoli,,broccoli,3301210202,BG
+10095,,,bitter vetch,,vetches,3301090305,BG
+10096,,,Oregano,,oregano,3301061226,BG
+10097,,,milk thistle,,marian_thistles,3301061300,BG
+10098,,,valerian,,valerian,3301061238,BG
+10099,,,vigna,,beans,3301020100,BG
+10100,,,sour cherries,,cherry_cherries,3303010400,BG
+10101,,,cabbage,,white_cabbage,3301210212,BG
+10102,,,peas for grain - winter,,peas,3301020600,BG
+10103,,,peas for grain - spring,,peas,3301020600,BG
+10104,,,field peas,,peas,3301020600,BG
+10105,,,emmer,,emmer,3301011200,BG
+10106,,,clover,,clover,3301090303,BG
+10107,,,watermelons,,watermelon,3301140500,BG
+10108,,,tomatoes,,tomato,3301280000,BG
+10109,,,tomatoes - garden,,greenhouse_tomatoes,3305010400,BG
+10110,,,tomatoes - non-heated greenhouses,,greenhouse_tomatoes,3305010400,BG
+10111,,,tomatoes - greenhouse production,,greenhouse_tomatoes,3305010400,BG
+10112,,,tomatoes - heated greenhouses,,greenhouse_tomatoes,3305010400,BG
+10113,,,tomatoes - field,,tomato,3301280000,BG
+10114,,,tomatoes outdoors,,tomato,3301280000,BG
+10115,,,other cereals and legumes,,other_cereals,3301019900,BG
+10116,,,Other cereals,,other_cereals,3301019900,BG
+10117,,,Other industrial crops,,other_industrial_crops,3301069900,BG
+10118,,,other root crops,,unspecified_root_vegetables,3301299800,BG
+10119,,,other stone fruit species,,unspecified_orchards_fruits,3303019800,BG
+10120,,,other leafy crops,,other_salads_lettuce_leaf_vegetables,3301319900,BG
+10121,,,other bulbous vegetable crops,,alliums,3301220000,BG
+10122,,,other oilseeds,,oilseed_crops,3301060800,BG
+10123,,,other medicinal and aromatic crops,,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,BG
+10124,,,other perennial aromatic crops,,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,BG
+10125,,,other perennial vegetable crops,,fresh_vegetables,3301070000,BG
+10126,,,Other fruiting vegetables,,fresh_vegetables,3301070000,BG
+10127,,,other pome fruit species,,unspecified_orchards_fruits,3303019800,BG
+10128,,,other fodder vegetables,,arable_crops,3301000000,BG
+10129,,,Other feed crops,,arable_crops,3301000000,BG
+10130,,,other berry crops,,unspecified_berries_berry_species,3303029800,BG
+10131,,,other nut (shell) species,,nuts,3303030000,BG
+10132,,,dogwood,,dogwood_cornus,3306040000,BG
+10133,,,quinces,,quinces,3303011500,BG
+10134,,,annual cereal and legumes,,arable_crops,3301000000,BG
+10135,,,annual cereals,,arable_crops,3301000000,BG
+10136,,,annual forage vegetables,,arable_crops,3301000000,BG
+10137,,,einkorn,,einkorn,3301011300,BG
+10138,,,Sainfoin,,onobrychis_sainfoins,3301061600,BG
+10139,,,echinacea,,echinacea_sun_hat,3301081500,BG
+10140,,,Barley,,barley,3301010400,BG
+10141,,,barley-winter,,winter_barley,3301010401,BG
+10142,,,barley-Spring,,spring_barley,3301010402,BG
+10143,,,Yellow horned poppy,,poppy,3301060600,BG
+10144,,,sweet corn,,grain_maize_corn_popcorn,3301010600,BG
+10145,,,sugar beet,,sugar_beet,3301290700,BG
+10146,,,Birdâ€™s foot Trefoil,,unspecified_legumes_harvested_green,3301090398,BG
+10147,,,green peas,,unspecified_legumes_harvested_green,3301090398,BG
+10148,,,green beans,,unspecified_legumes_harvested_green,3301090398,BG
+10149,,,green broad beans,,unspecified_legumes_harvested_green,3301090398,BG
+10150,,,Periwinkle,,other_flowers_ornamental_plants,3301089900,BG
+10151,,,Cultivated grasslands â€“ leguminous crops,,legume_grass_mix,3301090500,BG
+10152,,,Cultivated grasslands â€“ cereal crops,,legume_grass_mix,3301090500,BG
+10153,,,cultivated meadows mixed plantations,,pasture_meadow_grassland_grass,3302000000,BG
+10154,,,apricots,,apricots,3303010300,BG
+10155,,,cauliflower,,cauliflower,3301210204,BG
+10156,,,blackcurrant,,blackcurrant_cassis,3303020300,BG
+10157,,,chestnuts,,sweet_chestnuts,3303030500,BG
+10158,,,cumin,,black_cumin,3301061208,BG
+10159,,,hemp,,hemp_cannabis,3301061000,BG
+10160,,,dill,,anethum_dill,3301061203,BG
+10161,,,coriander,,coriander,3301061215,BG
+10162,,,gherkins outdoors,,cucumber_pickle,3301140100,BG
+10163,,,cucumbers,,cucumber_pickle,3301140100,BG
+10164,,,cucumbers - garden,,cucumber_pickle,3301140100,BG
+10165,,,cucumbers - non-heated greenhouses,,greenhouse_cucumbers,3305010200,BG
+10166,,,cucumbers - greenhouse production,,greenhouse_cucumbers,3305010200,BG
+10167,,,cucumbers - heated greenhouses,,greenhouse_cucumbers,3305010200,BG
+10168,,,cucumbers - field,,cucumber_pickle,3301140100,BG
+10169,,,cucumbers outdoors,,cucumber_pickle,3301140100,BG
+10170,,,pears,,pears,3303011200,BG
+10171,,,brambles,,unspecified_berries_berry_species,3303029800,BG
+10172,,,lavender,,lavender_lavandula,3301061219,BG
+10173,,,chamomile,,chamomile,3301061213,BG
+10174,,,Maral root,,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,BG
+10175,,,flax fiber,,flax_linen,3301060701,BG
+10176,,,oilseed flax,,flax_linseed_oil,3301060702,BG
+10177,,,Hazelnuts,,hazelnuts_hazel,3303030200,BG
+10178,,,Lentil,,lentils,3301020500,BG
+10179,,,onions,,onions,3301220400,BG
+10180,,,lupin,,sweet_lupins,3301020700,BG
+10181,,,alfalfa,,alfalfa_lucerne,3301090301,BG
+10182,,,parsley,,parsley,3301061227,BG
+10183,,,raspberry,,raspberry_raspberries,3303021000,BG
+10184,,,raspberries-unheated greenhouses,,greenhouses,3305010000,BG
+10185,,,raspberry-heated greenhouses,,greenhouses,3305010000,BG
+10186,,,lettuce,,salads_lettuce_leaf_vegetables,3301310000,BG
+10187,,,Gallic rose,,garlic,3301220200,BG
+10188,,,lemon balm,,lemon_balm_melissa,3301061220,BG
+10189,,,thyme,,thyme,3301061237,BG
+10190,,,Marsh Mallow,,other_flowers_ornamental_plants,3301089900,BG
+10191,,,soft wheat,,common_soft_wheat,3301010100,BG
+10192,,,soft winter wheat,,winter_common_soft_wheat,3301010101,BG
+10193,,,soft spring wheat,,spring_common_soft_wheat,3301010102,BG
+10194,,,mint,,mints_peppermint,3301061222,BG
+10195,,,carrots,,carrots_daucus,3301290300,BG
+10196,,,Medlars,,medlar_loquat,3303010800,BG
+10197,,,chickpeas,,chickpeas,3301020200,BG
+10198,,,Not known,,not_known_and_other,3399000000,BG
+10199,,,nectarines,,nectarine,3303010900,BG
+10200,,,Nepeta,,other_flowers_ornamental_plants,3301089900,BG
+10201,,,oats,,oats,3301010500,BG
+10202,,,Oats - winter,,winter_oats,3301010501,BG
+10203,,,oats - spring,,spring_oats,3301010502,BG
+10204,,,nuts,,nuts,3303030000,BG
+10205,,,rice,,rice,3301010700,BG
+10206,,,cotton,,cotton,3301060300,BG
+10207,,,aubergine,,aubergine_eggplant,3301260000,BG
+10208,,,Artemesia,,artemisia,3301061206,BG
+10209,,,Peppers,,bell_pepper_paprika,3301300100,BG
+10210,,,pepper - garden,,bell_pepper_paprika,3301300100,BG
+10211,,,pepper - non-heated greenhouses,,greenhouse_bell_peppers,3305010500,BG
+10212,,,pepper - greenhouse production,,greenhouse_bell_peppers,3305010500,BG
+10213,,,pepper - heated greenhouses,,greenhouse_bell_peppers,3305010500,BG
+10214,,,pepper - field,,bell_pepper_paprika,3301300100,BG
+10215,,,pepper outdoors,,bell_pepper_paprika,3301300100,BG
+10216,,,Pyrethrum,,other_flowers_ornamental_plants,3301089900,BG
+10217,,,leek,,leek,3301220300,BG
+10218,,,peaches,,peach,3303011100,BG
+10219,,,peaches/nectarines,,peach,3303011100,BG
+10220,,,Millet,,millet_sorghum,3301010900,BG
+10221,,,melons,,melon,3301140300,BG
+10222,,,Rapeseeds/canolas,,rapeseed_rape,3301060400,BG
+10223,,,rape - winter,,winter_rapeseed_rape,3301060401,BG
+10224,,,rape - spring,,spring_rapeseed_rape,3301060402,BG
+10225,,,fennel,,fennel,3301170000,BG
+10226,,,radishes,,radish,3301290600,BG
+10227,,,RAPE,,rapeseed_rape,3301060400,BG
+10228,,,rosemary,,rosemary,3301061230,BG
+10229,,,rye,,rye,3301010300,BG
+10230,,,rye - winter,,winter_rye,3301010301,BG
+10231,,,rye - spring,,spring_rye,3301010302,BG
+10232,,,Brassica rapa,,brassicaceae_cruciferae,3301210000,BG
+10233,,,Salad,,salads_lettuce_leaf_vegetables,3301310000,BG
+10234,,,beetroot for salad,,beetroot_beets,3301290200,BG
+10235,,,sage,,sage_chia,3301190000,BG
+10236,,,mustard,,mustard,3301210100,BG
+10237,,,plums,,plums,3303011300,BG
+10238,,,sunflower,,sunflower,3301060500,BG
+10239,,,mixed annuals,,arable_crops,3301000000,BG
+10240,,,figs,,fig,3303010600,BG
+10241,,,sorghum,,millet_sorghum,3301010900,BG
+10242,,,Soybeans,,soy_soybeans,3301160000,BG
+10243,,,spinach,,spinach,3301310800,BG
+10244,,,sesame,,oilseed_crops,3301060800,BG
+10245,,,Durum wheat,,durum_hard_wheat,3301010200,BG
+10246,,,Pumpkins,,pumpkin_squash_gourd,3301140400,BG
+10247,,,zucchini,,zucchini_courgette,3301140600,BG
+10248,,,triticale,,triticale,3301010800,BG
+10249,,,Triticale-winter,,winter_triticale,3301010801,BG
+10250,,,triticale-spring,,spring_triticale,3301010802,BG
+10251,,,tobacco,,tobacco,3301060100,BG
+10252,,,field beans,,beans,3301020100,BG
+10253,,,vetch,,vetches,3301090305,BG
+10254,,,ribes,,currants,3303020600,BG
+10255,,,fodder beet,,mangelwurzel_fodder_beet,3301290400,BG
+10256,,,peanuts,,other_dry_pulses,3301029900,BG
+10257,,,hyssop,,other_aromatic_medicinal_culinary_plants_spices_herbs,3301061299,BG
+10258,,,hops,,hops,3301060200,BG
+10259,,,corn for grain,,grain_maize_corn_popcorn,3301010600,BG
+10260,,,maize for silage,,green_silo_maize,3301090400,BG
+10261,,,Flowers,,flowers_ornamental_plants,3301080000,BG
+10262,,,Celery,,celery,3301250000,BG
+10263,,,cherries,,cherry_cherries,3303010400,BG
+10264,,,Black cumin,,black_cumin,3301061208,BG
+10265,,,garlic,,garlic,3301220200,BG
+10266,,,Good-king-henry,,other_salads_lettuce_leaf_vegetables,3301319900,BG
+10267,,,pistachios,,pistachio,3303030400,BG
+10268,,,Dog rose,,roses,3301083700,BG
+10269,,,Apples,,apples,3303010200,BG
+10270,,,strawberries,,strawberries,3301130000,BG
+10271,,,strawberries-unheated greenhouses,,greenhouse_strawberries,3305010100,BG
+10272,,,strawberries-heated greenhouses,,greenhouse_strawberries,3305010100,BG
