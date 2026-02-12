@@ -6,11 +6,15 @@ This repository comes along with the inventory and contains all scripts that wer
 2) a workflow to harmonize the data across the European Union
 
 The crop information were harmonized using the Hierarchical Crop and Agriculture Taxonomy (HCAT) v3 of the [EuroCrops project](https://github.com/maja601/EuroCrops).
+The respective crop mappings can be found in the [tables folder](tables). Feedback is welcome.
 
 ## Workflow
 All pre-processing scripts can be found in the "pre_processing" folder. These scripts are country specific and prepare the data for the workflow. During pre-processing we made sure that all fields have a unique field-id. If possible, we used information from other columns, such as the "FLIK" in Germany - the official area indicators, and added incremental counts to make them unique. If not, we used the first seven digits of the x and y- coordinates of the representative point of the fields to construct a unique ID xxxxxxx_yyyyyyy_ic (where ic is also an incremental counter). Unfortunately, for half of the countries, we used the centroid points, but cannot reconstruct, where we changed the procedure. We also made sure, that there are not entries with no geometries in the input files, and no duplicate entries. Lastly, in case the crops were recorded in field-blocks (i.e. multiple crops per field block without specific locations), we kept only the largest recorded block in vector file and saved the other ones in an accompanying .csv table.
 
 The harmonization workflow is indicated with the letters a - d. We provide a diagramm of our the project structure below and tables we created for the harmonization to exemplify the workflow. Each script contains a detailed description of what it does, what inputs are needed and where the output is stored at the top. We used a "run_dict" that is specified at the top of the main function to turn off or on the processing of a specific country. You can use the "switch" key in the country-specific item of the run_dict to turn on or off the script for the respective countries. With the latest version all tables are saved as csv.
+
+__Note: The scripts only process the first layer of the input geodata. All other layers are ignored.__
+
 1) __Script a__ lists all columns found in the vector data and provides an example of an attribute for each column. The input vector data should be stored in `\data\vector\IACS\XX\`, where XX is the member state code
 of the [Interinstitutional Style Guide of the EU](https://style-guide.europa.eu/en/content/-/isg/topic?identifier=annex-a6-country-and-territory-codes). If you have sub-datasets for the country, e.g. for federal states in Germany, create a subfolder `\data\vector\IACS\XX\XXX\`. Choose an abbreviation of your liking. For example, for Thuringian data from Germany, the data would be stored here: `\data\vector\IACS\DE\THU\`. Each file should contain a number indicating the year of the data, best case 4 digits, but the last 2 digits of the year also work.
 

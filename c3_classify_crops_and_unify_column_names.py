@@ -149,7 +149,7 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
     print("Reading input.")
 
     if ext in ['.gpkg', '.gdb', '.shp', '.geojson']:
-        iacs = gpd.read_file(iacs_pth, encoding=file_encoding)
+        iacs = helper_functions.load_geodata_safe(iacs_pth, encoding=file_encoding)
     elif ext in ['.geoparquet']:
         iacs = gpd.read_parquet(iacs_pth)
     elif ext in ['.csv']:

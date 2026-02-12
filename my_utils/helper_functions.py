@@ -4,6 +4,8 @@ import os
 import geopandas as gpd
 import pandas as pd
 import numpy as np
+import warnings
+from pathlib import Path
 
 def list_geospatial_data_in_dir(dir):
 
@@ -237,4 +239,46 @@ def extract_fields_with_double_field_id(iacs_pth, id_col, out_pth):
     iacs_sub = iacs[iacs[id_col].isin(duplicated_ids)].copy()
     print("Number of fields with non-unique IDs:", len(iacs_sub))
     iacs_sub.to_file(out_pth, driver="GPKG")
+
+
+def load_geodata_safe(filepath, encoding=None):
+    """
+    Safely loads a geodata file.
+    - For multi-layer formats (GPKG, KML): Warns if >1 layer and loads the first.
+    - For single-layer formats (Parquet, Shapefile, GeoJSON): Loads directly.
+    """
+    path = Path(filepath)
+
+    # 1. Handle Parquet/GeoParquet explicitly
+    # These formats do not support layers, so list_layers() would fail.
+    if path.suffix.lower() in ['.parquet', '.geoparquet']:
+        return gpd.read_parquet(filepath)
+
+    # 2. Try to list layers for other formats (GPKG, KML, GDB, etc.)
+    try:
+        layers_df = gpd.list_layers(filepath)
+
+        # Check for multiple layers
+        if len(layers_df) > 1:
+            layer_names = layers_df['name'].tolist()
+            warnings.warn(
+                f"File '{path.name}' contains {len(layers_df)} layers: {layer_names}. "
+                f"Only the first layer ('{layer_names[0]}') will be loaded.",
+                UserWarning
+            )
+
+        # Load the specific first layer by name
+        first_layer_name = layers_df.iloc[0]['name']
+        if encoding:
+            return gpd.read_file(filepath, layer=first_layer_name, encoding=encoding)
+        else:
+            return gpd.read_file(filepath, layer=first_layer_name)
+
+    except Exception:
+        # 3. Fallback: If list_layers fails (e.g. Shapefiles sometimes),
+        # just try to load it directly.
+        if encoding:
+            return gpd.read_file(filepath, encoding=encoding)
+        else:
+            return gpd.read_file(filepath)
 

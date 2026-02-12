@@ -97,6 +97,10 @@ def get_geodata_column_names(path, encoding="utf-8"):
     lyr = ds.GetLayer(0)
     lyr_def = lyr.GetLayerDefn()
 
+    # Check if file has multiple layers
+    if ds.GetLayerCount() > 1:
+        print(f"Warning: File '{path}' contains {ds.GetLayerCount()} layers. Only the first layer will be processed.")
+
     column_names = []
     for i in range(lyr_def.GetFieldCount()):
         column_names.append(lyr_def.GetFieldDefn(i).GetName())

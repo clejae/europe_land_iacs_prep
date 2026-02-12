@@ -84,7 +84,7 @@ def check_uniqueness_of_field_ids_duplicates_and_non_geometries(iacs_pth, file_e
     print("Reading GSA data:")
 
     if ext in ['.gpkg', '.gdb', '.shp', '.geojson']:
-        iacs = gpd.read_file(iacs_pth, encoding=file_encoding)
+        iacs = helper_functions.load_geodata_safe(iacs_pth, encoding=file_encoding)
     elif ext in ['.geoparquet']:
         iacs = gpd.read_parquet(iacs_pth)
     elif ext in ['.csv']:

@@ -80,7 +80,7 @@ def list_crop_names(in_dir, region_id, col_translate_pth, out_pth):
     for pth in iacs_files:
         year = helper_functions.get_year_from_path(pth)
         print(f"Processing: {year} - {pth}")
-        gdf = gpd.read_file(pth)
+        gdf = helper_functions.load_geodata_safe(pth)
         col_year = f"{region_id}_{year}"
         col_dict = dict(zip(tr_df["column_name"], tr_df[col_year]))
         cols = [col_dict["crop_code"], col_dict["crop_name"]]
@@ -136,6 +136,12 @@ def list_crop_names_ogr(in_dir, region_id, col_translate_pth, out_pth, encoding,
         driver = ogr.GetDriverByName(driver_dict[file_extension])
         ds = driver.Open(path, 0)
         lyr = ds.GetLayer(0)
+
+        # Check if file has multiple layers
+        if ds.GetLayerCount() > 1:
+            print(
+                f"Warning: File '{path}' contains {ds.GetLayerCount()} layers. Only the first layer will be processed.")
+
         col_year = f"{region_id}_{year}"
         col_dict = dict(zip(tr_df["column_name"], tr_df[col_year]))
 
