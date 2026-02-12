@@ -55,6 +55,7 @@ import geopandas as gpd
 from osgeo import ogr
 import glob
 from deep_translator import GoogleTranslator
+from deep_translator.exceptions import TranslationNotFound
 ## LingueeTranslator --> language specification is different. Words instead of abbreviations
 ## PonsTranslator
 # from translate import Translator
@@ -242,6 +243,22 @@ def get_eurocrops_classification(eurocrops_pth, region_id, col_translate_pth, ou
     out_df.to_csv(out_pth, index=False)
 
 
+def safe_translate(text, source_lang, target_lang):
+    """
+    Translates text with error handling for missing translations.
+    """
+    if not text or pd.isna(text):
+        return None
+    try:
+        translator = GoogleTranslator(source=source_lang, target=target_lang)
+        return translator.translate(text)
+    except TranslationNotFound:
+        return None
+    except Exception as e:
+        print(f"Warning: Could not translate '{text}'. Error: {e}")
+        return None
+
+
 def match_crop_names_with_eurocrops_classification(crop_names_pth, eurocrops_cl_pth, from_lang, out_pth):
     print("Match crop names with EuroCrops classification and translate crop names.")
 
@@ -260,9 +277,16 @@ def match_crop_names_with_eurocrops_classification(crop_names_pth, eurocrops_cl_
     # translator_de = Translator(provider="mymemory", to_lang="de", from_lang=from_lang)
     # df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(translator_en.translate)
     # df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(translator_de.translate)
-    df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='de').translate)
-    df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='en').translate)
-
+    df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(
+        safe_translate,
+        source_lang=from_lang,
+        target_lang='de'
+    )
+    df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(
+        safe_translate,
+        source_lang=from_lang,
+        target_lang='en'
+    )
 
     ## Rename columns in EuroCrops classification
     col_dict = {
@@ -288,8 +312,16 @@ def match_crop_names_with_eurocrops_classification(crop_names_pth, eurocrops_cl_
         df_match = pd.merge(df_cnames[cn_cols], df_eucr[ec_cols + ["original_code"]], how="outer", left_on="crop_code", right_on="original_code")
         df_match.sort_values(by="crop_code", inplace=True)
         df_match.loc[df_match["crop_name"].isna(), "crop_name"] = ""
-        df_match["crop_name_de"] = df_match["crop_name"].apply(GoogleTranslator(source=from_lang, target='de').translate)
-        df_match["crop_name_en"] = df_match["crop_name"].apply(GoogleTranslator(source=from_lang, target='en').translate)
+        df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(
+            safe_translate,
+            source_lang=from_lang,
+            target_lang='de'
+        )
+        df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(
+            safe_translate,
+            source_lang=from_lang,
+            target_lang='en'
+        )
         df_match = df_match[["crop_code", "crop_name", "crop_name_de", "crop_name_en", "EC_trans_n", "EC_hcat_n", "EC_hcat_c"]]
     else:
         df_match = pd.merge(df_cnames, df_eucr[ec_cols], how="outer", on="crop_name")
@@ -312,10 +344,21 @@ def translate_crop_names(crop_names_pth, from_lang, country_code, out_pth):
     # translator_de = Translator(provider="mymemory", to_lang="de", from_lang=from_lang)
     # df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(translator_en.translate)
     # df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(translator_de.translate)
-    # df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='de').translate)
-    df_cnames["crop_name_en"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='en').translate)
-    # df_cnames["crop_name_dk"] = df_cnames["crop_name"].apply(GoogleTranslator(source=from_lang, target='da').translate)
-
+    # df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(
+    #     safe_translate,
+    #     source_lang=from_lang,
+    #     target_lang='de'
+    # )
+    df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(
+        safe_translate,
+        source_lang=from_lang,
+        target_lang='en'
+    )
+    df_cnames["crop_name_de"] = df_cnames["crop_name"].apply(
+        safe_translate,
+        source_lang=from_lang,
+        target_lang='dk'
+    )
     ## Merge tables
     df_cnames.sort_values(by="crop_name", inplace=True)
     df_cnames["EC_trans_n"] = ""
