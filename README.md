@@ -48,8 +48,9 @@ Please use one of the files distributed with the codes as a template. The meanin
 9) __Scripts c1 and c2__ are optional. They can be used to explore the unmaintained and not_known_and_other HCAT classes and to verify our version of the HCAT with a new version of the HCAT.
 10) __Script c3__ uses the manually generated classification table in `\data\tables\crop_classifications\` and the column name translation tables in `\data\tables\column_names\` to harmonize the crop codes and the column names from the original GSA data. Removes also geometry duplicates and creates a unique field id and calculates the field area, if needed. The results will be saved as geoparquets to `\data\vector\IACS_EU_Land\XX\`.
 11) __Script d1__ prepares information on the harmonized data and the classifications.
-12) __Script d3__ prepares the data for publication (e.g. removes information that cannot be shared).
-13) __Script e1__ creates the prompt for a LLM to learn the current version of the HCAT v3 classification.  
+12) __Script d2__ prepares the data for publication (e.g. removes information that cannot be shared).
+13) __Script d3__ zips files for upload on Zenodo.
+14) __Script e1__ creates the prompt for a LLM to learn the current version of the HCAT v3 classification.  
 
 __We provide all column name translation tables and crop classification tables that we created in the [tables folder](tables) .__ If you find errors, please do not hesitate to contact us.
 
