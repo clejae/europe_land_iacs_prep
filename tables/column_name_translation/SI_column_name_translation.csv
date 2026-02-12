@@ -1,14 +1,14 @@
-column_name,column_description,prelim,SI_2018,SI_2019,SI_2020,SI_2021,SI_2022,SI_2023,SI_2024
-field_id,Unique identifier for each field in country or state,1,OBJECTID,OBJECTID,OBJECTID,OBJECTID,OBJECTID,OBJECTID_1,ID
-farm_id,Unique identifier for each farm in country,1,Farm_ID,Farm_ID,Farm_ID,Farm_ID,Farm_ID,Farm_ID,
-crop_code,"The original, country-specific crop code",1,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS
-crop_name,"The original, country-specific crop name",1,,,,,,,RASTLINA
-EC_trans_n,The original crop name translated into English,1,,,,,,,
-EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,
-EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,
-EC_NUTS3,NUTS3 code for region,0,,,,,,,
-info_organic,Information and organic cultivation,0,,,,,,,
-organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,EK,EK,EK,EK,EK,EK,
-field_size,Size of field in hectar,1,,,,,,,
-intercrop_code,"The original, country-specific intercrop code",0,,,,,,,
-intercrop_name,"The original, country-specific intercrop name",0,,,,,,,
+column_name,column_description,prelim,SI_2018,SI_2019,SI_2020,SI_2021,SI_2022,SI_2023,SI_2024,SI_2025
+field_id,Unique identifier for each field in country or state,1,OBJECTID,OBJECTID,OBJECTID,OBJECTID,OBJECTID,OBJECTID_1,OBJECTID_2,ID
+farm_id,Unique identifier for each farm in country,1,Farm_ID,Farm_ID,Farm_ID,Farm_ID,Farm_ID,Farm_ID,Farm_ID,
+crop_code,"The original, country-specific crop code",1,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS,SIFRA_KMRS
+crop_name,"The original, country-specific crop name",1,,,,,,,,RASTLINA
+EC_trans_n,The original crop name translated into English,1,,,,,,,,
+EC_hcat_n,The machine-readable HCAT name of the crop,1,,,,,,,,
+EC_hcat_c,The 10-digit HCAT code indicating the hierarchy of the crop,1,,,,,,,,
+EC_NUTS3,NUTS3 code for region,0,,,,,,,,
+info_organic,Information and organic cultivation,0,,,,,,,,
+organic,"Indicates whether a field was organically cultivated or not. Values: [0,1] ",1,EK,EK,EK,EK,EK,EK,EK,
+field_size,Size of field in hectar,1,,,,,,,,
+intercrop_code,"The original, country-specific intercrop code",0,,,,,,,,
+intercrop_name,"The original, country-specific intercrop name",0,,,,,,,,
