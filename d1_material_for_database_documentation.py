@@ -29,12 +29,14 @@ os.chdir(WD)
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 def plot_number_original_crops_and_harmonized_crops(crop_class_folder, out_pth):
 
-    in_pths = glob.glob(os.path.join(crop_class_folder, "*final.xlsx"))
+    in_pths = glob.glob(os.path.join(crop_class_folder, "*final.csv"))
+    in_pths = [pth for pth in in_pths if "EuroCrops2" not in pth]
+    in_pths = [pth for pth in in_pths if "backup" not in pth]
 
     out_dict = {}
     for in_pth in in_pths:
         region_id = os.path.basename(in_pth).split("_crop_")[0]
-        df = pd.read_excel(in_pth)
+        df = pd.read_csv(in_pth)
 
         num_original_entries = len(df.drop_duplicates(subset=["crop_code", "crop_name"]))
         num_ec_entries = len(df.drop_duplicates(subset="EC_hcat_c"))
@@ -44,21 +46,68 @@ def plot_number_original_crops_and_harmonized_crops(crop_class_folder, out_pth):
 
     out_df = pd.DataFrame.from_dict(out_dict, orient="index").reset_index()
     out_df.rename(columns={"index": "country"}, inplace=True)
+
+    out_df["country_name"] = out_df["country"].map(
+        {
+            "AT": "Austria",
+            "BE_FLA": "Belgium (Flanders)",
+            "BE_WAL": "Belgium (Wallonia)",
+            "BG": "Bulgaria",
+            "CY": "Cyprus",
+            "CZ": "Czech Republic",
+            "DE_BWB": "Germany (Baden-Württemberg)",
+            "DE_BAV": "Germany (Bavaria)",
+            "DE_BRB": "Germany (Brandenburg)",
+            "DE_LSA": "Germany (Lower Saxony)",
+            "DE_MWP": "Germany (Mecklenburg-Western Pomerania)",
+            "DE_NRW": "Germany (North Rhine-Westphalia)",
+            "DE_RLP": "Germany (Rhineland-Palatinate)",
+            "DE_SAA": "Germany (Saarland)",
+            "DE_SAT": "Germany (Saxony-Anhalt)",
+            "DE_THU": "Germany (Thuringia)",
+            "DK": "Denmark",
+            "EE": "Estonia",
+            "EL": "Greece",
+            "ES": "Spain",
+            "ES_CAT": "Spain (Catalonia)",
+            "FI": "Finland",
+            "FR_FR": "France",
+            "FR_SUBREGIONS": "France (Subregions)",
+            "IE": "Ireland",
+            "IT_EMR": "Italy (Emilia-Romagna)",
+            "IT_MAR": "Italy (Marche)",
+            "IT_TOS": "Italy (Tuscany)",
+            "HR": "Croatia",
+            "HU": "Hungary",
+            "LT": "Lithuania",
+            "LU": "Luxembourg",
+            "LV": "Latvia",
+            "MT": "Malta",
+            "NL": "Netherlands",
+            "PL": "Poland",
+            "PT_PT": "Portugal",
+            "PT_SUBREGIONS": "Portugal (Subregions)",
+            "RO": "Romania",
+            "SE": "Sweden",
+            "SI": "Slovenia",
+            "SK": "Slovakia"
+        }
+    )
     
      # chech if the output dir structure exist and create it if des not
     os.makedirs(os.path.join("data", "tables", "statistics"), exist_ok=True)
     os.makedirs(os.path.join("data", "tables", "statistics", "crop_classifications"), exist_ok=True)
 
-    out_df.to_excel(os.path.join("data", "tables", "statistics", "crop_classifications", "number_of_crop_entries.xlsx"))
+    out_df.to_csv(os.path.join("data", "tables", "statistics", "crop_classifications", "number_of_crop_entries.csv"))
     
     print("Plotting")
-    plt.figure(figsize=(8, 6))
-    sns.barplot(x='country', y='num_original_entries', data=out_df.sort_values(by="num_original_entries"), color="blue")
+    plt.figure(figsize=(10, 8))
+    sns.barplot(x='num_original_entries', y='country_name', data=out_df.sort_values(by="num_original_entries"),
+                color="blue")
     plt.grid(which='both', axis="both")
     plt.title("Number of original crop entries")
-    plt.xticks(rotation=90)
-    plt.xlabel("Country")
-    plt.ylabel("Number entries")
+    plt.xlabel("Number entries")
+    plt.ylabel("Country")
     plt.tight_layout()
     # chech if the output dir structure exist and create it if des not
     os.makedirs(os.path.join("figures", "statistics_on_crop_classifications"), exist_ok=True)
@@ -66,18 +115,20 @@ def plot_number_original_crops_and_harmonized_crops(crop_class_folder, out_pth):
     plt.close()
 
     # Plot for `num2`
-    plt.figure(figsize=(8, 6))
-    sns.barplot(x='country', y='num_ec_entries', data=out_df.sort_values(by="num_ec_entries"))
+    plt.figure(figsize=(10, 8))
+    sns.barplot(x='num_ec_entries', y='country_name', data=out_df.sort_values(by="num_ec_entries"))
     plt.title("Number of original crop entries")
-    plt.xlabel("Country")
-    plt.ylabel("Number entries")
+    plt.xlabel("Number entries")
+    plt.ylabel("Country")
     plt.savefig(os.path.join("figures", "statistics_on_crop_classifications", "num_ec_crop_entries.png"))  # Save plot to disk
     plt.close()  # Close the figure
 
 def count_number_features_per_year(region_id, out_pth):
 
+    ## Get all geodata from current region/country
     in_pths = glob.glob(os.path.join("data", "vector", "IACS_EU_Land", region_id, "*.geoparquet"))
 
+    ## Loop over files
     out_dict = {}
     for in_pth in in_pths:
         print(in_pth)
@@ -85,6 +136,8 @@ def count_number_features_per_year(region_id, out_pth):
         csv_pth = root + ".csv"
 
         gdf = gpd.read_parquet(in_pth)
+
+        ## Count features and if companion csv file exists, also count these fields
         num_feat_csv = 0
         total_area_csv = 0
         if os.path.exists(csv_pth):
@@ -109,7 +162,7 @@ def count_number_features_per_year(region_id, out_pth):
         gdf["field_size"] = gdf["field_size"].astype(float)
         total_area = gdf["field_size"].sum() + total_area_csv
 
-        ## Only for ES
+        ## Only becaue of ES
         unknown_area = gdf.loc[gdf["EC_hcat_n"] == "not_known_and_other", "field_size"].sum()
         pastures = gdf.loc[gdf["EC_hcat_n"] == "pasture_meadow_grassland_grass", "field_size"].sum()
 
@@ -151,11 +204,7 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    regions_ids = ["AT", "BE_FLA", "BE_WAL", "BG", "CY", "CZ", "DE_BRB", "DE_LSA", "DE_NRW", "DE_SAA", "DE_SAT", "DE_THU",
-                   "DK", "EE", "EL", "ES", "FI", "FR", "FR_SUBREGIONS", "IE", "IT_EMR", "IT_MAR", "IT_TOS", "HR", "HU",
-                   "LT", "LU", "LV", "MT", "NL", "PL", "PT", "PT_ALE", "RO", "SE", "SI", "SK"]
-
-    # chech if the output dir structure exist and create it if des not
+    # check if the output dir structure exist and create it if des not
     os.makedirs(os.path.join("data", "tables", "statistics"), exist_ok=True)
     os.makedirs(os.path.join("data", "tables", "statistics", "crop_classifications"), exist_ok=True)
 
@@ -163,75 +212,69 @@ def main():
         crop_class_folder = os.path.join("data", "tables", "crop_classifications"),
         out_pth="")
 
-    regions_ids = ["AT", "BE/FLA", "BE/WAL", "CY", "CZ", "DE/BRB", "DE/LSA", "DE/NRW", "DE/SAA", "DE/SAT",
+    ## List all regions for which the fields should be counted
+    regions_ids = ["AT", "BG", "BE/FLA", "BE/WAL", "CY", "CZ", "DE/BWB", "DE/BAV", "DE/BRB", "DE/LSA", "DE/MWP",
+                   "DE/NRW", "DE/RLP",  "DE/SAA", "DE/SAT", "DE_THU",
                    "DK", "EE", "EL", "FI", "FR/FR", "HR", "HU", "IE", "IT/EMR", "IT/MAR", "IT/TOS",
                    "LV", "LT", "NL", "PL", "PT/PT", "PT/ALE", "PT/ALG", "PT/AML", "PT/CEN", "PT/CES", "PT/CET",
                    "PT/NON", "PT/NOR", "PT/NOS", "RO", "SE", "SI", "SK"]
-    # regions_ids = ["PT/PT", "PT/ALE", "PT/ALG", "PT/AML", "PT/CEN", "PT/CES", "PT/CET",
-    #                "PT/NON", "PT/NOR", "PT/NOS"]
-    # regions_ids = ["PT/PT"]
-    # # regions_ids = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    # # regions_ids = list(regions_ids["code"])
-    # # regions_ids = [f"FR/{n}" for n in regions_ids]
-    regions_ids_es = pd.read_csv(os.path.join("data", "vector", "IACS", "FI", "region_code.txt"))
+    regions_ids_fr = pd.read_csv(os.path.join("data", "vector", "IACS", "FR", "region_code.txt"))
+    regions_ids_fr = list(regions_ids_fr["code"])
+    regions_ids_fr = [f"FR/{n}" for n in regions_ids_fr]
+    regions_ids_es = pd.read_csv(os.path.join("data", "vector", "IACS", "ES", "region_code.txt"))
     regions_ids_es = list(regions_ids_es["code"])
     regions_ids_es = [f"ES/{n}" for n in regions_ids_es]
+
+    regions_ids += regions_ids_fr
     regions_ids += regions_ids_es
 
-    for region_id in regions_ids:
-        print(region_id)
-        out_pth = os.path.join("data", "tables", "statistics", "num_parcels", f"{region_id.replace('/', '_')}_count_num_parcels_per_year.xlsx")
-        count_number_features_per_year(region_id, out_pth)
+    # for region_id in regions_ids:
+    #     print(region_id)
+    #     out_pth = os.path.join("data", "tables", "statistics", "num_parcels",
+    #                            f"{region_id.replace('/', '_')}_count_num_parcels_per_year.xlsx")
+    #     count_number_features_per_year(region_id, out_pth)
 
     ## Aggregate regions of France
-    # regions_ids = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
-    # regions_ids = list(regions_ids["code"])
-    # regions_ids = [f"FR_{n}" for n in regions_ids]
-    #
-    # df_lst = [pd.read_excel(fr"data\tables\statistics\num_parcels\{region_id}_count_num_parcels_per_year.xlsx") for region_id in regions_ids]
-    # summed_df = sum_dataframes(df_lst)
-    # summed_df.to_excel(fr"data\tables\statistics\num_parcels\FR_FR_count_num_parcels_per_year_05-14.xlsx")
+    df_lst = [pd.read_excel(os.path.join("data", "tables", "statistics", "num_parcels",
+                                          f"{region_id.replace('/','_')}_count_num_parcels_per_year.xlsx"))
+               for region_id in regions_ids_fr]
+    summed_df = sum_dataframes(df_lst)
+    summed_df.to_excel(os.path.join("data", "tables", "statistics", "num_parcels",
+                                    "FR_FR_count_num_parcels_per_year_05-14.xlsx"))
 
     ## Aggregate provinces of Spain
-    regions_ids = pd.read_csv(os.path.join("data", "vector", "IACS", "FI", "region_code.txt"))
-    regions_ids = list(regions_ids["code"])
-    regions_ids = [f"ES_{n}" for n in regions_ids]
+    if "CAT" in regions_ids_es:
+        regions_ids_es.remove("CAT")
 
-    df_lst = [pd.read_excel(os.path.join("data", "tables", "statistics", "num_parcels", f"{region_id}_count_num_parcels_per_year.xlsx")) for 
-              region_id in regions_ids]
+    df_lst = [pd.read_excel(os.path.join("data", "tables", "statistics", "num_parcels",
+                                         f"{region_id.replace('/','_')}_count_num_parcels_per_year.xlsx")) for
+              region_id in regions_ids_es]
     df_new_lst = []
+    missing_years = [2022, 2023, 2024]
     for i, df in enumerate(df_lst):
-        if 2022 not in list(df["year"]):
-            print(2022, regions_ids[i])
-            df2 = pd.DataFrame.from_dict({2022: {
-                "Number features": 0,
-                "Number farms": 0,
-                "Total area [ha]": 0,
-                "not_known_and_other [ha]": 0,
-                "pasture_meadow_grassland_grass [ha]": 0}}, orient="index")
-            df2.reset_index(inplace=True, names="year")
-            df_new = pd.concat([df2, df])
-            df_new.sort_values(by="year", inplace=True)
-            df_new.index = range(len(df_new))
-            df_new_lst.append(df_new)
-        elif 2023 not in list(df["year"]):
-            print(2023, regions_ids[i])
-            df2 = pd.DataFrame.from_dict({2023: {
-                "Number features": 0,
-                "Number farms": 0,
-                "Total area [ha]": 0,
-                "not_known_and_other [ha]": 0,
-                "pasture_meadow_grassland_grass [ha]": 0}}, orient="index")
-            df2.reset_index(inplace=True, names="year")
-            df_new = pd.concat([df2, df])
-            df_new.sort_values(by="year", inplace=True)
-            df_new.index = range(len(df_new))
-            df_new_lst.append(df_new)
+        # Check which years are missing
+        missing = [year for year in missing_years if year not in list(df["year"])]
+
+        if missing:
+            for year in missing:
+                print(year, regions_ids_es[i])
+                df2 = pd.DataFrame.from_dict({year: {
+                    "Number features": 0,
+                    "Number farms": 0,
+                    "Total area [ha]": 0,
+                    "not_known_and_other [ha]": 0,
+                    "pasture_meadow_grassland_grass [ha]": 0}}, orient="index")
+                df2.reset_index(inplace=True, names="year")
+                df_new = pd.concat([df2, df], ignore_index=True)
+                df_new.sort_values(by="year", inplace=True)
+                df_new.index = range(len(df_new))
+                df_new_lst.append(df_new)
         else:
             df_new_lst.append(df)
 
     summed_df = sum_dataframes(df_new_lst)
-    summed_df.to_excel(os.path.join("data", "tables", "statistics", "num_parcels", "ES_ES_count_num_parcels_per_year_23-24.xlsx"))
+    summed_df.to_excel(os.path.join("data", "tables", "statistics", "num_parcels",
+                                    "ES_ES_count_num_parcels_per_year_22-24.xlsx"))
 
     directory_path = os.path.join("data", "vector", "IACS_EU_Land")
     count = count_geoparquet_files(directory_path)

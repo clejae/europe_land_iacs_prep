@@ -178,8 +178,8 @@ def main():
         "IT/TOS": {"switch": "off", "region_id": "IT_TOS", "file_encoding": "utf-8", "ignore_files_descr": "Toscana"},
         "LT": {"switch": "off", "region_id": "LT", "file_encoding": "ISO-8859-1", "skip_years":[2024]},
         "LV": {"switch": "off", "region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "DATA"}, #, "skip_years": range(2019, 2024)
-        "NL": {"switch": "off", "region_id": "NL", "file_encoding": "utf-8",
-               "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}, "skip_years": range(2024, 2026),
+        "NL": {"switch": "on", "region_id": "NL", "file_encoding": "utf-8",
+               "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2}, "skip_years": list(range(0, 2024)) + [2025],
                "ignore_files_descr": "pre_processed"},
         "PL": {"switch": "off", "region_id": "PL", "file_encoding": "utf-8", "ignore_files_descr": "GSAA_Poland"},
         "PT/PT": {"switch": "off", "region_id": "PT_PT", "file_encoding": "utf-8"},

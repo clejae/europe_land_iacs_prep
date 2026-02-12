@@ -12,6 +12,12 @@ import time
 import geopandas as gpd
 import glob
 import shutil
+import pandas as pd
+import os
+import zipfile
+import re
+from collections import defaultdict
+from pathlib import Path
 
 from my_utils import helper_functions
 
@@ -22,6 +28,7 @@ os.chdir(WD)
 
 # ------------------------------------------ DEFINE FUNCTIONS ------------------------------------------------#
 
+
 def main():
     stime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
@@ -30,25 +37,30 @@ def main():
     only_crop_cols = ["field_id", "crop_code", "crop_name", "EC_trans_n", "EC_hcat_n", "EC_hcat_c", "field_size"]
     crop_org_cols = ["field_id", "crop_code", "crop_name", "EC_trans_n", "EC_hcat_n", "EC_hcat_c", "organic", "field_size"]
     crop_farm_cols = ["field_id", "farm_id", "crop_code", "crop_name", "EC_trans_n", "EC_hcat_n", "EC_hcat_c", "field_size"]
+    crop_farm_org_cols = ["field_id", "farm_id", "crop_code", "crop_name", "EC_trans_n", "EC_hcat_n", "EC_hcat_c",
+                      "organic", "field_size"]
 
     run_dict = {
         "AT": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2022)} |
-              {"switch": "off"} | {str(year): crop_org_cols for year in range(2022, 2025)},
+              {"switch": "off"} | {str(year): crop_org_cols for year in range(2022, 2026)},
         "BG": {"switch": "off", "everything": True},
-        "BE/FLA": {"switch": "off", "everything": True}, # no correction needed 10.12.24
-        "CZ": {"switch": "off", "2023": crop_farm_cols},
-        "DE/BRB": {"switch": "off"} | {str(year): only_crop_cols for year in range(2010, 2025)},
-        "DE/LSA": {"switch": "off"} | {str(year): only_crop_cols for year in range(2023, 2025)},
-        ## "DE/NRW": {"switch": "off", str(year): only_crop_cols for year in range(2019, 2025)}, # no correction needed 10.12.24
+        "BE/FLA": {"switch": "off", "everything": True},
+        "BE/WAL": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2024)},
+        "CZ": {"switch": "off"} | {str(year): crop_farm_org_cols for year in range(2023, 2026)},
+        "DE/BRB": {"switch": "off"} | {str(year): crop_org_cols for year in range(2010, 2026)},
+        "DE/BWB": {"switch": "off"} | {str(year): only_crop_cols for year in range(2022, 2023)},
+        "DE/LSA": {"switch": "off"} | {str(year): only_crop_cols for year in range(2023, 2026)},
+        "DE/NRW": {"switch": "off"} | {str(year): only_crop_cols for year in range(2019, 2026)},
         "DK": {"switch": "off", "everything": True},
         "EE": {"switch": "off", "everything": True},
         "FI": {"switch": "off", "everything": True},
         "FR/FR": {"switch": "off", "everything": True},
         "IE": {"switch": "off", "everything": True},
-        ## "HR": {"switch": "off", "everything": True}, # no correction needed 10.12.24
-        "LT": {"switch": "off", "everything": True},
-        "LV": {"switch": "off"} |  {str(year): only_crop_cols for year in range(2023, 2025)},
-        "NL": {"switch": "off"} | {str(year): only_crop_cols for year in range(2009, 2025)},
+        "IT/TOS": {"switch": "off", "everything": True},
+        "HR": {"switch": "off", "everything": True}, #LPIS Data
+        "LT": {"switch": "off", "everything": True}, #LPIS Data
+        "LV": {"switch": "off"} | {str(year): only_crop_cols for year in range(2023, 2025)},
+        "NL": {"switch": "off"} | {str(year): only_crop_cols for year in range(2009, 2026)},
         "PT/PT": {"switch": "off", "everything": True},
         "PT/ALE": {"switch": "off", "everything": True},
         "PT/ALG": {"switch": "off", "everything": True},
@@ -59,23 +71,23 @@ def main():
         "PT/NOR": {"switch": "off", "everything": True},
         "PT/NON": {"switch": "off", "everything": True},
         "PT/NOS": {"switch": "off", "everything": True},
-        "SE": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2024)}, # no correction needed 10.12.24
-        "SI": {"switch": "off"} | {str(year): only_crop_cols for year in range(2018, 2024)},
-        "SK": {"switch": "off"} | {str(year): only_crop_cols for year in range(2018, 2025)}
+        "SE": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2025)},
+        "SI": {"switch": "off"} | {str(year): only_crop_cols for year in range(2018, 2026)},
+        "SK": {"switch": "off"} | {str(year): only_crop_cols for year in range(2018, 2026)}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
-    FR_districts = pd.read_csv(r"data\vector\IACS\FR\region_code.txt")
+    FR_districts = pd.read_csv(os.path.join(r"data", "vector", "IACS", "FR", "region_code.txt"))
     FR_districts = list(FR_districts["code"])
     for district in FR_districts:
         run_dict[f"FR/{district}"] = {"switch": "off", "everything": True}
 
     ## For spain create a dictionary in a loop, because of the many subregions
     ## This code snippet needs to be corrected. I did the copying manually!
-    ES_districts = pd.read_csv(r"data\vector\IACS\ES\region_code.txt")
+    ES_districts = pd.read_csv(os.path.join(r"data", "vector", "IACS", "ES", "region_code.txt"))
     ES_districts = list(ES_districts["code"])
     for district in ES_districts:
-        run_dict[f"ES/{district}"] = {"switch": "off", "everything": True},
+        run_dict[f"ES/{district}"] = {"switch": "off", "everything": True}
 
     ## Loop over country codes in dict for processing
     for country_code in run_dict:
@@ -103,46 +115,46 @@ def main():
         ## If not everything can be shared, there are only years as keys left in the dictionary
         ## Loop over them
         for year in run_dict[country_code]:
-            print(f"Subsetting {year}")
-            ## Retrieve columns that can be shared.
-            cols = run_dict[country_code][year] + ["geometry"]
+            if year != "switch":
+                print(f"Subsetting {year}")
+                ## Retrieve columns that can be shared.
+                cols = run_dict[country_code][year] + ["geometry"]
 
-            ## Open file and copy with relevant columns
-            in_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.geoparquet")
-            gdf = gpd.read_parquet(in_pth)
-            gdf_out = gdf[cols].copy()
+                ## Open file and copy with relevant columns
+                in_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.geoparquet")
+                gdf = gpd.read_parquet(in_pth)
+                gdf_out = gdf[cols].copy()
 
-            ## Copy to public database folder
-            file_name = os.path.basename(in_pth)
-            out_folder = os.path.join("data", "vector", "IACS_public_database", country_code)
-            out_pth = os.path.join(out_folder, file_name)
-            helper_functions.create_folder(out_folder)
-            print(f"Writing to {out_pth}")
-            gdf_out.to_parquet(out_pth)
+                ## Copy to public database folder
+                file_name = os.path.basename(in_pth)
+                out_folder = os.path.join("data", "vector", "IACS_public_database", country_code)
+                out_pth = os.path.join(out_folder, file_name)
+                helper_functions.create_folder(out_folder)
+                print(f"Writing to {out_pth}")
+                gdf_out.to_parquet(out_pth)
 
-            ## Check if there is also a supplementary table and copy that as well
-            csv_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.csv")
-            if os.path.exists(csv_pth):
-                print("Supplementary table found. Copying.")
-                ## So far there are not countries with supplementary tables for which we cannot share everything
-                ## Therefore, we can simply copy them.
-                file_name = os.path.basename(csv_pth)
-                to_pth = os.path.join("data", "vector", "IACS_public_database", country_code, file_name)
-                shutil.copy(csv_pth, to_pth)
+                ## Check if there is also a supplementary table and copy that as well
+                csv_pth = os.path.join("data", "vector", "IACS_EU_Land", country_code, f"GSA-{region_id}-{year}.csv")
+                if os.path.exists(csv_pth):
+                    print("Supplementary table found. Copying.")
+                    ## So far there are not countries with supplementary tables for which we cannot share everything
+                    ## Therefore, we can simply copy them.
+                    file_name = os.path.basename(csv_pth)
+                    to_pth = os.path.join("data", "vector", "IACS_public_database", country_code, file_name)
+                    shutil.copy(csv_pth, to_pth)
 
-                ## Once there are countries with supplementary tables, we need to make sure, that these tables also
-                ## do not include the "unsharable" information. This could be a solution:
-                # cols = run_dict[country_code][year]
-                # df = pd.read_csv(file_name)
-                # df = df[cols].copy()
-                # df.to_csv(to_pth, index=False)
+                    ## Once there are countries with supplementary tables, we need to make sure, that these tables also
+                    ## do not include the "unsharable" information. This could be a solution:
+                    # cols = run_dict[country_code][year]
+                    # df = pd.read_csv(file_name)
+                    # df = df[cols].copy()
+                    # df.to_csv(to_pth, index=False)
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
     print("end: " + etime)
 
-    # POSTGRESQL Database
-
 
 if __name__ == '__main__':
     main()
+

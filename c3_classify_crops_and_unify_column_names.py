@@ -378,13 +378,15 @@ def main():
                    "file_year_encoding": {"2020": "ISO-8859-1"},
                    "organic_dict": {"J": 1, "N": 0}, "skip_years": list(range(3008, 3025)),
                    "ignore_files_descr": "Original"}, #"skip_years": list(range(2008, 2022))+[2024],
-        "BE/WAL": {"switch": "off", "region_id": "BE_WAL", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
+        "BE/WAL": {"switch": "off", "region_id": "BE_WAL", "file_encoding": "utf-8", "ignore_files_descr": "Original",
+                   "organic_dict": {"N":0, "O": 1}},
             # , 2018: "utf-8", 2019: "utf-8", 2020: "utf-8",
             # 2021: "utf-8", 2022: "utf-8" , "file_year_encoding":  {"2015": "windows-1252", "2016":
             # "windows-1252", "2017": "windows-1252"
         "BG": {"switch": "off", "region_id": "BG", "file_encoding": "utf-8",
                "ignore_files_descr": "LPIS", "skip_years": list(range(3023, 3025))},
-        "CY": {"switch": "off", "region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
+        "CY": {"switch": "off", "region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "Original",
+               "skip_years": [2021, 2022, 2024]},
         "CZ": {"switch": "off", "region_id": "CZ", "file_encoding": "utf-8", "organic_dict": {1:0, 2:2, 3:2, 4:1, 5:2},
                "ignore_files_descr": "Original", "skip_years": list(range(3016, 3024))},
         "DE/BAV": {"switch": "off", "region_id": "DE_BAV", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
@@ -433,9 +435,9 @@ def main():
         # "LT": {"switch": "off", "region_id": "LT", "file_encoding": "ISO-8859-1", "skip_years":[2024]},
         "LV": {"switch": "off", "region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                "skip_years": range(0, 2024)}, #, "skip_years": range(2019, 2024)
-        "NL": {"switch": "off", "region_id": "NL", "file_encoding": "utf-8",
+        "NL": {"switch": "on", "region_id": "NL", "file_encoding": "utf-8",
                "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2},
-               "ignore_files_descr": "Original", "skip_years": range(0, 2024)},
+               "ignore_files_descr": "Original", "skip_years": list(range(0, 2024)) + [2025]},
         "PL": {"switch": "off", "region_id": "PL", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "PT/PT": {"switch": "off", "region_id": "PT_PT", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                   "skip_years": list(range(2025))},
@@ -470,9 +472,10 @@ def main():
         "SE": {"switch": "off", "region_id": "SE", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                "skip_years": range(224)}, ## With applicant ID
         "SE/NOAPPL": {"switch": "off", "region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
-        "SI": {"switch": "on", "region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2},
-               "skip_years": range(2025), "file_year_encoding": {"2025": "cp1250"}},
-        "SK": {"switch": "off", "region_id": "SK", "file_encoding": "utf-8", "ignore_files_descr":"no_crop",
+        "SI": {"switch": "off", "region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2},
+               "skip_years": list(range(2024)) + [2025], "file_year_encoding": {"2025": "cp1250"},
+               "ignore_files_descr": "KMRS_2024"},
+        "SK": {"switch": "off", "region_id": "SK", "file_encoding": "utf-8", "ignore_files_descr": "no_crop",
                "skip_years": range(2025)},
     }
 
