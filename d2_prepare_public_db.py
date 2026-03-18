@@ -44,17 +44,17 @@ def main():
         "AT": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2022)} |
               {"switch": "off"} | {str(year): crop_org_cols for year in range(2022, 2026)},
         "BG": {"switch": "off", "everything": True},
-        "BE/FLA": {"switch": "off", "everything": True},
+        "BE/FLA": {"switch": "off", "everything": True}, # no farm id in data 2026-02-17
         "BE/WAL": {"switch": "off"} | {str(year): only_crop_cols for year in range(2015, 2024)},
-        "CZ": {"switch": "off"} | {str(year): crop_farm_org_cols for year in range(2023, 2026)},
+        "CZ": {"switch": "off"} | {str(year): crop_farm_org_cols for year in range(2023, 2026)}, # ID_UZ in public data is farm id
         "DE/BRB": {"switch": "off"} | {str(year): crop_org_cols for year in range(2010, 2026)},
         "DE/BWB": {"switch": "off"} | {str(year): only_crop_cols for year in range(2022, 2023)},
         "DE/LSA": {"switch": "off"} | {str(year): only_crop_cols for year in range(2023, 2026)},
         "DE/NRW": {"switch": "off"} | {str(year): only_crop_cols for year in range(2019, 2026)},
         "DK": {"switch": "off", "everything": True},
         "EE": {"switch": "off", "everything": True},
-        "FI": {"switch": "off", "everything": True},
-        "FR/FR": {"switch": "off", "everything": True},
+        "FI": {"switch": "off", "everything": True}, # no farm id in data 2026-02-17
+        "FR/FR": {"switch": "off", "everything": True}, # no farm id in data 2026-02-17
         "IE": {"switch": "off", "everything": True},
         "IT/TOS": {"switch": "off", "everything": True},
         "HR": {"switch": "off", "everything": True}, #LPIS Data

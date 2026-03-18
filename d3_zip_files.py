@@ -148,43 +148,43 @@ def main():
     run_dict = {
         "AT": {"switch": "off"},
         "BG": {"switch": "on"},
-        "BE/FLA": {"switch": "on"},
-        "BE/WAL": {"switch": "on"},
-        "CZ": {"switch": "on"},
-        "DE/BRB": {"switch": "on"},
-        "DE/BWB": {"switch": "on"},
-        "DE/LSA": {"switch": "on"},
-        "DE/NRW": {"switch": "on"},
-        "DK": {"switch": "on"},
-        "EE": {"switch": "on"},
-        "FI": {"switch": "on"},
-        "FR/FR": {"switch": "on"},
-        "IE": {"switch": "on"},
-        "IT/TOS": {"switch": "on"},
-        "HR": {"switch": "on"},
-        "LT": {"switch": "on"},
-        "LV": {"switch": "on"},
-        "NL": {"switch": "on"},
-        "PT/PT": {"switch": "on"},
-        "PT/ALE": {"switch": "on"},
-        "PT/ALG": {"switch": "on"},
-        "PT/AML": {"switch": "on"},
-        "PT/CET": {"switch": "on"},
-        "PT/CEN": {"switch": "on"},
-        "PT/CES": {"switch": "on"},
-        "PT/NOR": {"switch": "on"},
-        "PT/NON": {"switch": "on"},
-        "PT/NOS": {"switch": "on"},
-        "SE": {"switch": "on"},
-        "SI": {"switch": "on"},
-        "SK": {"switch": "on"}
+        "BE/FLA": {"switch": "off"},
+        "BE/WAL": {"switch": "off"},
+        "CZ": {"switch": "off"},
+        "DE/BRB": {"switch": "off"},
+        "DE/BWB": {"switch": "off"},
+        "DE/LSA": {"switch": "off"},
+        "DE/NRW": {"switch": "off"},
+        "DK": {"switch": "off"},
+        "EE": {"switch": "off"},
+        "FI": {"switch": "off"},
+        "FR/FR": {"switch": "off"},
+        "IE": {"switch": "off"},
+        "IT/TOS": {"switch": "off"},
+        "HR": {"switch": "off"},
+        "LT": {"switch": "off"},
+        "LV": {"switch": "off"},
+        "NL": {"switch": "off"},
+        "PT/PT": {"switch": "off"},
+        "PT/ALE": {"switch": "off"},
+        "PT/ALG": {"switch": "off"},
+        "PT/AML": {"switch": "off"},
+        "PT/CET": {"switch": "off"},
+        "PT/CEN": {"switch": "off"},
+        "PT/CES": {"switch": "off"},
+        "PT/NOR": {"switch": "off"},
+        "PT/NON": {"switch": "off"},
+        "PT/NOS": {"switch": "off"},
+        "SE": {"switch": "off"},
+        "SI": {"switch": "off"},
+        "SK": {"switch": "off"}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
     FR_districts = pd.read_csv(os.path.join(r"data", "vector", "IACS", "FR", "region_code.txt"))
     FR_districts = list(FR_districts["code"])
     for district in FR_districts:
-        run_dict[f"FR/{district}"] = {"switch": "on"}
+        run_dict[f"FR/{district}"] = {"switch": "off"}
 
     ## For spain create a dictionary in a loop, because of the many subregions
     ## This code snippet needs to be corrected. I did the copying manually!

@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import warnings
 from pathlib import Path
+import pyarrow.parquet as pq
 
 def list_geospatial_data_in_dir(dir):
 
@@ -281,4 +282,25 @@ def load_geodata_safe(filepath, encoding=None):
             return gpd.read_file(filepath, encoding=encoding)
         else:
             return gpd.read_file(filepath)
+
+
+def check_existence_of_column_in_parquets(file_paths, column_name):
+    """
+    Most efficient approach - read only column information
+    """
+
+    results = {}
+
+    for file_path in file_paths:
+        try:
+            # Get column names from parquet metadata (fastest)
+            pf = pq.ParquetFile(file_path)
+            column_names = [field.name for field in pf.schema]
+            results[file_path] = column_name in column_names
+
+        except Exception as e:
+            print(f"Error processing {file_path}: {e}")
+            results[file_path] = False
+
+    return results
 
