@@ -387,9 +387,9 @@ def main():
                "ignore_files_descr": "LPIS", "skip_years": list(range(2000, 2023)), "organic_dict": {"N":0, "Y": 1}},
         "CY": {"switch": "off", "region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                "skip_years": [2021, 2022, 2024]},
-        "CZ": {"switch": "off", "region_id": "CZ", "file_encoding": "utf-8", "organic_dict": {1:0, 2:2, 3:2, 4:1, 5:2},
+        "CZ": {"switch": "on", "region_id": "CZ", "file_encoding": "utf-8", "organic_dict": {1:0, 2:2, 3:2, 4:1, 5:2},
                "ignore_files_descr": "Original", "skip_years": list(range(3016, 3024))},
-        "DE/BAV": {"switch": "offn", "region_id": "DE_BAV", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
+        "DE/BAV": {"switch": "off", "region_id": "DE_BAV", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "DE/BRB": {"switch": "off", "region_id": "DE_BRB", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "DE/BWB": {"switch": "off", "region_id": "DE_BWB", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "DE/LSA": {"switch": "off", "region_id": "DE_LSA", "file_encoding": "utf-8", "ignore_files_descr": "Original",
@@ -410,7 +410,7 @@ def main():
                    "skip_years": range(2015, 2030)},
         "DK": {"switch": "off", "region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original",
                "skip_years": range(2010, 2025)},
-        "EE": {"switch": "on", "region_id": "EE", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
+        "EE": {"switch": "off", "region_id": "EE", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "EL": {"switch": "off", "region_id": "EL", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "FI": {"switch": "off", "region_id": "FI", "file_encoding": "utf-8", "remove_geometry_duplicates": True},
         "FR/FR": {"switch": "off", "region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "Original",
@@ -484,6 +484,7 @@ def main():
     ## For france create a dictionary in a loop, because of the many subregions
     FR_districts = pd.read_csv(os.path.join("data", "vector", "IACS", "FR", "region_code.txt"))
     FR_districts = list(FR_districts["code"])
+    # FR_districts = ["BRC"]
     for district in FR_districts:
         run_dict[f"FR/{district}"] = {
             "switch": "off",
@@ -494,7 +495,8 @@ def main():
             "crop_class_pth": os.path.join("data", "tables", "crop_classifications", #
                                            "FR_SUBREGIONS_crop_classification_final.csv"),
             "col_transl_descr_overwrite": "FR",
-            "ignore_files_descr": "Original"
+            "ignore_files_descr": "Original",
+            "skip_years": [2007, 2008, 2009, 2010, 2011, 2013, 2014]
             }
 
     ## For spain create a dictionary in a loop, because of the many subregions
@@ -789,6 +791,7 @@ def main():
     ## For france create a dictionary in a loop, because of the many subregions
     FR_districts = pd.read_csv(os.path.join("data", "vector", "IACS", "FR", "region_code.txt"))
     FR_districts = list(FR_districts["code"])
+    # FR_districts = ["BRC"]
     for district in FR_districts:
         run_dict[f"FR/{district}"] = {
             "switch": "off",
@@ -799,7 +802,7 @@ def main():
             "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
                                            "FR_SUBREGIONS_crop_classification_final.csv"),
             "col_transl_descr_overwrite": "FR",
-            "skip_years": [2007, 2008, 2009],
+            "skip_years": [2007, 2008, 2009, 2010, 2011, 2013, 2014],
             "ignore_files_descr": "Original"
             }
 

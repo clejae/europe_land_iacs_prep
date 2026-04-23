@@ -639,4 +639,33 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 112,Žito ozimé,winter rye,winter_rye,3301010301,0,CZ
 449,Žito trsnaté (lesní),Bunch rye (forest),lolium_ryegrass,3301090205,0,CZ
 605,Žito trsnaté (lesní),Bunch rye (forest),lolium_ryegrass,3301090205,0,CZ
+60002,orna puda,arable land,not_known_and_other,3399000000,0,CZ
+60009,jina kultura,other crops,not_known_and_other,3399000000,0,CZ
+60010,uhor,fallow land,fallow_land_not_crop,3301110000,0,CZ
+60011,trava na orne,grass on arable land,temporary_grass,3301090100,0,CZ
+60005,jina trvala kultura,other permanent crops,permanent_crops_perennial,3303000000,0,CZ
+60006,ovocny sad,orchard,orchards_fruits,3303010000,0,CZ
+60007,travni porost,grassland,pasture_meadow_grassland_grass,3302000000,0,CZ
+60012,mimoprodukcni plocha,non-productive land,not_known_and_other,3399000000,0,CZ
+60004,vinice,vineyard,vineyards_wine_vine_rebland_grapes,3303060000,0,CZ
+60091,skolka,nursery,nurseries_nursery,3303070000,0,CZ
+60099,zalesnena puda,forested land,tree_wood_forest,3306000000,0,CZ
+60098,porost RRD,semi-natural vegetation,not_known_and_other,3399000000,0,CZ
+60097,rybnik,pond,wetlands,3310400000,0,CZ
+60003,chmelnice,hop field,hops,3301060200,0,CZ
+60002,standardní orná půda,standard arable land,arable_crops,3301000000,0,CZ
+60009,jiná kultura,other crop,not_known_and_other,3399000000,0,CZ
+60010,úhor,fallow land,fallow_land_not_crop,3301110000,0,CZ
+60007,trvalý travní porost,permanent grassland,pasture_meadow_grassland_grass,3302000000,0,CZ
+60011,travní porost (na orné půdě),grassland (on arable land),temporary_grass,3301090100,0,CZ
+60005,jiná trvalá kultura,other permanent crops,permanent_crops_perennial,3303000000,0,CZ
+60006,ovocný sad,fruit orchard,orchards_fruits,3303010000,0,CZ
+60012,mimoprodukční plocha,non-productive area,not_known_and_other,3399000000,0,CZ
+60091,školka,nursery,nurseries_nursery,3303070000,0,CZ
+60098,rychle rostoucí dřeviny,fast-growing trees,short_rotation_coppice,3306090000,0,CZ
+60099,zalesněná půda,forested land,tree_wood_forest,3306000000,0,CZ
+60097,rybník,pond,wetlands,3310400000,0,CZ
+60015,plocha s kontejnery,area with containers,not_known_and_other,3399000000,0,CZ
+60013,plocha s víceletými produkčními plodinami,area with perennial crops,permanent_crops_perennial,3303000000,0,CZ
+60014,plocha s lanýži,area with truffles,truffle,3304040000,0,CZ
 ,,,not_known_and_other,3399000000,0,CZ

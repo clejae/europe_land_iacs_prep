@@ -109,7 +109,66 @@ def add_crops_clean_data_and_separate_parcels_within_field_blocks(in_dir, out_di
         gdf_out.to_parquet(out_dir + fr'\IACS-CZ-{year}_with_crops.geoparquet')
         df_out.to_csv(out_dir + fr'\IACS-CZ-{year}_with_crops.csv', index=False)
 
+def add_land_use_from_lpis():
 
+    for year in range(2024, 2026):
+        print(year)
+
+        in_pth = os.path.join("data", "vector", "IACS", "CZ", f"IACS-CZ-{year}_with_crops.geoparquet")
+        lps_pth = glob.glob(os.path.join("data", "vector", "IACS", "CZ", "Original", "LPIS", f"DPB_VEREJNY_GUI_{year}*.shp"))[0]
+
+        gsa_crop_col = "PLODINA_NAZEV"
+        gsa_crop_id_col = "PLODINA_ID"
+
+        lpis_lu_col = "KULTURANAZ"
+        lpis_lu_id_col =  "KULTURA"
+
+        gdf1 = gpd.read_parquet(in_pth)
+        lpis = gpd.read_file(lps_pth)
+        gdf1[gsa_crop_id_col] = pd.to_numeric(gdf1[gsa_crop_id_col], errors='coerce')
+        print("crop_code max:", gdf1["PLODINA_ID"].max())
+        print("lu_code_max:", lpis["KULTURA"].max())
+        gdf1[gsa_crop_id_col] = gdf1[gsa_crop_id_col]
+        lpis[lpis_lu_id_col] += 60000
+
+        gdf2 = gdf1.loc[gdf1[gsa_crop_col].isna()].copy()
+        gdf2.geometry = gdf2.geometry.representative_point()
+        gdf2.to_crs(lpis.crs, inplace=True)
+        gdf3 = gpd.overlay(gdf2, lpis[[lpis_lu_id_col, lpis_lu_col, "geometry"]], "intersection")
+
+        gdf1 = pd.merge(gdf1, gdf3[["NKOD_DPB", lpis_lu_id_col, lpis_lu_col]], how="left", on="NKOD_DPB")
+
+        mask = gdf1[gsa_crop_col].isna()
+        gdf1.loc[mask, gsa_crop_col] = gdf1.loc[mask, lpis_lu_col]
+        gdf1.loc[mask, gsa_crop_id_col] = gdf1.loc[mask, lpis_lu_id_col]
+
+        gdf1.drop(columns=[lpis_lu_id_col, lpis_lu_col], inplace=True)
+
+        gdf1.to_parquet(in_pth)
+
+
+def list_lpis_lu_names_and_codes():
+
+    lst = []
+    for year in range(2015, 2026):
+        print(year)
+
+        lps_pth = glob.glob(os.path.join("data", "vector", "IACS", "CZ", "Original", "LPIS", f"DPB_VEREJNY_GUI_{year}*.shp"))[0]
+
+        lpis_lu_col = "KULTURANAZ"
+        lpis_lu_id_col =  "KULTURA"
+
+        lpis = gpd.read_file(lps_pth)
+
+        lpis.drop_duplicates(subset=[lpis_lu_col, lpis_lu_id_col], inplace=True)
+
+        df = lpis[[lpis_lu_col, lpis_lu_id_col]]
+        lst.append(df)
+
+    out_df = pd.concat(lst)
+    out_df.drop_duplicates(inplace=True)
+
+    out_df.to_csv(os.path.join("data", "vector", "IACS", "CZ", "unique_LPIS_LU_codes_and_names.csv"), index=False)
 
 def main():
     stime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
@@ -121,9 +180,13 @@ def main():
     #     id_col="NKOD_DPB",
     #     out_pth=os.path.join("data", "vector", "IACS", "CZ", "Original", "SUB_DPB_VEREJNY_GUI_2025-08-01_epsg4258.shp"))
 
-    add_crops_clean_data_and_separate_parcels_within_field_blocks(
-        in_dir=os.path.join("data", "vector", "IACS", "CZ", "Original"),
-        out_dir=os.path.join("data", "vector", "IACS", "CZ"))
+    # add_crops_clean_data_and_separate_parcels_within_field_blocks(
+    #     in_dir=os.path.join("data", "vector", "IACS", "CZ", "Original"),
+    #     out_dir=os.path.join("data", "vector", "IACS", "CZ"))
+
+    # add_land_use_from_lpis()
+
+    list_lpis_lu_names_and_codes()
 
     etime = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
     print("start: " + stime)
