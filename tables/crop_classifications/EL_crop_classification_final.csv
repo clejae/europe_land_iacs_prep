@@ -2393,83 +2393,83 @@ crop_code,crop_name,crop_name_en,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,coun
 66514,ΚΕΡΑΣΙΑ BIGI SOL (EARLY BG) - ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ,Cherry Bigi Sol (Early BG),Cherry Bigi Sol (Early BG),cherry_cherries,3303010400,0,EL,Cherry (Prunus avium)
 66515,ΝΕΚΤΑΡΙΝΙΑ ΕΡΛΙ ΜΠΟΜΠΑ - ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ,Nectarine Early Bomba,Nectarine Early Bomba,nectarine,3303010900,0,EL,Nectarine (Prunus persica)
 69061,ARMANCA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Armanca (Greenhouse Cultivation),Armanca (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
-69062,CARMAGNOLA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Carmagnola (Greenhouse Cultivation),Carmagnola (Greenhouse Cultivation),greenhouse_hemp,3305011901,0,EL,Industrial Hemp
-69063,DELTA-405 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Delta-405 (Greenhouse Cultivation),Delta-405 (Greenhouse Cultivation),greenhouse_hemp,3305011902,0,EL,Industrial Hemp
-69064,ELETTA CAMPANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Eletta Campana (Greenhouse Cultivation),Eletta Campana (Greenhouse Cultivation),greenhouse_hemp,3305011903,0,EL,Industrial Hemp
-69065,FINOLA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Finola (Greenhouse Cultivation),Finola (Greenhouse Cultivation),greenhouse_hemp,3305011904,0,EL,Industrial Hemp
-69066,FUTURA 75 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Futura 75 (Greenhouse Cultivation),Futura 75 (Greenhouse Cultivation),greenhouse_hemp,3305011905,0,EL,Industrial Hemp
-69067,GLIANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Gliana (Greenhouse Cultivation),Gliana (Greenhouse Cultivation),greenhouse_hemp,3305011906,0,EL,Industrial Hemp
-69068,IVORY (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Ivory (Greenhouse Cultivation),Ivory (Greenhouse Cultivation),greenhouse_hemp,3305011907,0,EL,Industrial Hemp
-69069,MONOICA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Monoica (Greenhouse Cultivation),Monoica (Greenhouse Cultivation),greenhouse_hemp,3305011908,0,EL,Industrial Hemp
-69070,RAJAN (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Rajan (Greenhouse Cultivation),Rajan (Greenhouse Cultivation),greenhouse_hemp,3305011909,0,EL,Industrial Hemp
-69072,WOJKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Wojko (Greenhouse Cultivation),Wojko (Greenhouse Cultivation),greenhouse_hemp,3305011910,0,EL,Industrial Hemp
-69075,CARMALEONTE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Carmaleonte (Greenhouse Cultivation),Carmaleonte (Greenhouse Cultivation),greenhouse_hemp,3305011911,0,EL,Industrial Hemp
-69076,FIBRANTE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibrante (Greenhouse Cultivation),Fibrante (Greenhouse Cultivation),greenhouse_hemp,3305011912,0,EL,Industrial Hemp
-69077,HENOLA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Henola (Greenhouse Cultivation),Henola (Greenhouse Cultivation),greenhouse_hemp,3305011913,0,EL,Industrial Hemp
-69078,KC BONUSZ (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Bonusz (Greenhouse Cultivation),KC Bonusz (Greenhouse Cultivation),greenhouse_hemp,3305011914,0,EL,Industrial Hemp
-69080,KCA BORANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KCA Borana (Greenhouse Cultivation),KCA Borana (Greenhouse Cultivation),greenhouse_hemp,3305011915,0,EL,Industrial Hemp
-69081,LIPKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Lipko (Greenhouse Cultivation),Lipko (Greenhouse Cultivation),greenhouse_hemp,3305011916,0,EL,Industrial Hemp
-69082,LOVRIN 110 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Lovrin 110 (Greenhouse Cultivation),Lovrin 110 (Greenhouse Cultivation),greenhouse_hemp,3305011917,0,EL,Industrial Hemp
-69083,MARKANT (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Markant (Greenhouse Cultivation),Markant (Greenhouse Cultivation),greenhouse_hemp,3305011918,0,EL,Industrial Hemp
-69084,USO-31 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Uso-31 (Greenhouse Cultivation),Uso-31 (Greenhouse Cultivation),greenhouse_hemp,3305011919,0,EL,Industrial Hemp
-69085,ZENIT (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Zenit (Greenhouse Cultivation),Zenit (Greenhouse Cultivation),greenhouse_hemp,3305011920,0,EL,Industrial Hemp
-69086,CHAMAELEON (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Chamaeleon (Greenhouse Cultivation),Chamaeleon (Greenhouse Cultivation),greenhouse_hemp,3305011921,0,EL,Industrial Hemp
-69087,GLECIA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Glecia (Greenhouse Cultivation),Glecia (Greenhouse Cultivation),greenhouse_hemp,3305011922,0,EL,Industrial Hemp
-69088,GLYANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Glyana (Greenhouse Cultivation),Glyana (Greenhouse Cultivation),greenhouse_hemp,3305011923,0,EL,Industrial Hemp
-69089,SANTHICA 70 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Santhica 70 (Greenhouse Cultivation),Santhica 70 (Greenhouse Cultivation),greenhouse_hemp,3305011924,0,EL,Industrial Hemp
-69090,SECUIENI JUBILEU (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Secuieni Jubileu (Greenhouse Cultivation),Secuieni Jubileu (Greenhouse Cultivation),greenhouse_hemp,3305011925,0,EL,Industrial Hemp
-69091,SILVANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Silvana (Greenhouse Cultivation),Silvana (Greenhouse Cultivation),greenhouse_hemp,3305011926,0,EL,Industrial Hemp
-69092,TISZA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Tisza (Greenhouse Cultivation),Tisza (Greenhouse Cultivation),greenhouse_hemp,3305011927,0,EL,Industrial Hemp
-69093,UNIKO B (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Uniko B (Greenhouse Cultivation),Uniko B (Greenhouse Cultivation),greenhouse_hemp,3305011928,0,EL,Industrial Hemp
-69094,VILLANOVA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Villanova (Greenhouse Cultivation),Villanova (Greenhouse Cultivation),greenhouse_hemp,3305011929,0,EL,Industrial Hemp
-69095,WIELKOPOLSKIE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Wielkopolskie (Greenhouse Cultivation),Wielkopolskie (Greenhouse Cultivation),greenhouse_hemp,3305011930,0,EL,Industrial Hemp
-69096,CANNAKOMP (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Cannakomp (Greenhouse Cultivation),Cannakomp (Greenhouse Cultivation),greenhouse_hemp,3305011931,0,EL,Industrial Hemp
-69097,CARMA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Carma (Greenhouse Cultivation),Carma (Greenhouse Cultivation),greenhouse_hemp,3305011932,0,EL,Industrial Hemp
-69098,CS (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),CS (Greenhouse Cultivation),CS (Greenhouse Cultivation),greenhouse_hemp,3305011933,0,EL,Industrial Hemp
-69099,DELTA-LLOSA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Delta-Llosa (Greenhouse Cultivation),Delta-Llosa (Greenhouse Cultivation),greenhouse_hemp,3305011934,0,EL,Industrial Hemp
-69100,KOMPOLTI (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Kompolti (Greenhouse Cultivation),Kompolti (Greenhouse Cultivation),greenhouse_hemp,3305011935,0,EL,Industrial Hemp
-69101,CODIMONO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Codimono (Greenhouse Cultivation),Codimono (Greenhouse Cultivation),greenhouse_hemp,3305011936,0,EL,Industrial Hemp
-69102,DACIA SECUIENI (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Dacia Secuieni (Greenhouse Cultivation),Dacia Secuieni (Greenhouse Cultivation),greenhouse_hemp,3305011937,0,EL,Industrial Hemp
-69104,DIOICA 88 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Dioica 88 (Greenhouse Cultivation),Dioica 88 (Greenhouse Cultivation),greenhouse_hemp,3305011938,0,EL,Industrial Hemp
-69105,FEDORA 17 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fedora 17 (Greenhouse Cultivation),Fedora 17 (Greenhouse Cultivation),greenhouse_hemp,3305011939,0,EL,Industrial Hemp
-69106,FIBROR 79 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibror 79 (Greenhouse Cultivation),Fibror 79 (Greenhouse Cultivation),greenhouse_hemp,3305011940,0,EL,Industrial Hemp
-69107,KC ZUZANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Zuzana (Greenhouse Cultivation),KC Zuzana (Greenhouse Cultivation),greenhouse_hemp,3305011941,0,EL,Industrial Hemp
-69108,KOMPOLTI HIBRID TC (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Kompolti Hibrid TC (Greenhouse Culti[...]),Kompolti Hibrid TC (Greenhouse Culti[...]),greenhouse_hemp,3305011942,0,EL,Industrial Hemp
-69109,MARCELLO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Marcello (Greenhouse Cultivation),Marcello (Greenhouse Cultivation),greenhouse_hemp,3305011943,0,EL,Industrial Hemp
-69110,SANTHICA 23 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Santhica 23 (Greenhouse Cultivation),Santhica 23 (Greenhouse Cultivation),greenhouse_hemp,3305011944,0,EL,Industrial Hemp
-69111,EARLINA 8 FC (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Earlina 8 FC (Greenhouse Cultivation),Earlina 8 FC (Greenhouse Cultivation),greenhouse_hemp,3305011945,0,EL,Industrial Hemp
-69112,FIBRANOVA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibranova (Greenhouse Cultivation),Fibranova (Greenhouse Cultivation),greenhouse_hemp,3305011946,0,EL,Industrial Hemp
-69113,RATZA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Ratza (Greenhouse Cultivation),Ratza (Greenhouse Cultivation),greenhouse_hemp,3305011947,0,EL,Industrial Hemp
-69114,SANTHICA 27 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Santhica 27 (Greenhouse Cultivation),Santhica 27 (Greenhouse Cultivation),greenhouse_hemp,3305011948,0,EL,Industrial Hemp
-69115,SUCCESIV (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Succesiv (Greenhouse Cultivation),Succesiv (Greenhouse Cultivation),greenhouse_hemp,3305011949,0,EL,Industrial Hemp
-69116,TIBORSZALLASI (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Tiborszallasi (Greenhouse Cultivation),Tiborszallasi (Greenhouse Cultivation),greenhouse_hemp,3305011950,0,EL,Industrial Hemp
-69117,AUSTA SK (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Austa SK (Greenhouse Cultivation),Austa SK (Greenhouse Cultivation),greenhouse_hemp,3305011951,0,EL,Industrial Hemp
-69118,BENIKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Beniko (Greenhouse Cultivation),Beniko (Greenhouse Cultivation),greenhouse_hemp,3305011952,0,EL,Industrial Hemp
-69121,FELINA 32 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Felina 32 (Greenhouse Cultivation),Felina 32 (Greenhouse Cultivation),greenhouse_hemp,3305011953,0,EL,Industrial Hemp
-69122,FERIMON (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Ferimon (Greenhouse Cultivation),Ferimon (Greenhouse Cultivation),greenhouse_hemp,3305011954,0,EL,Industrial Hemp
-69124,KC VIRTUS (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Virtus (Greenhouse Cultivation),KC Virtus (Greenhouse Cultivation),greenhouse_hemp,3305011955,0,EL,Industrial Hemp
-69125,BIALOBREZESKIE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Bialobrezeskie (Greenhouse Cultivation),Bialobrezeskie (Greenhouse Cultivation),greenhouse_hemp,3305011956,0,EL,Industrial Hemp
-69126,EPSILON 68 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Epsilon 68 (Greenhouse Cultivation),Epsilon 68 (Greenhouse Cultivation),greenhouse_hemp,3305011957,0,EL,Industrial Hemp
-69127,FIBROL (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibrol (Greenhouse Cultivation),Fibrol (Greenhouse Cultivation),greenhouse_hemp,3305011958,0,EL,Industrial Hemp
-69129,KC DORA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Dora (Greenhouse Cultivation),KC Dora (Greenhouse Cultivation),greenhouse_hemp,3305011959,0,EL,Industrial Hemp
-69130,TYGRA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Tygra (Greenhouse Cultivation),Tygra (Greenhouse Cultivation),greenhouse_hemp,3305011960,0,EL,Industrial Hemp
-69134,BALATON (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Balaton (Greenhouse Cultivation),Balaton (Greenhouse Cultivation),greenhouse_hemp,3305011961,0,EL,Industrial Hemp
-69136,FUTURA 83 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Futura 83 (Greenhouse Cultivation),Futura 83 (Greenhouse Cultivation),greenhouse_hemp,3305011962,0,EL,Industrial Hemp
-69138,ORION 33 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Orion 33 (Greenhouse Cultivation),Orion 33 (Greenhouse Cultivation),greenhouse_hemp,3305011963,0,EL,Industrial Hemp
-69140,THEODORA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Theodora (Greenhouse Cultivation),Theodora (Greenhouse Cultivation),greenhouse_hemp,3305011964,0,EL,Industrial Hemp
-69144,MGC 1013 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),MGC 1013 (Greenhouse Cultivation),MGC 1013 (Greenhouse Cultivation),greenhouse_hemp,3305011965,0,EL,Industrial Hemp
-69146,HELENA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Helena (Greenhouse Cultivation),Helena (Greenhouse Cultivation),greenhouse_hemp,3305011966,0,EL,Industrial Hemp
-69148,MARINA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Marina (Greenhouse Cultivation),Marina (Greenhouse Cultivation),greenhouse_hemp,3305011967,0,EL,Industrial Hemp
-69150,MATRIX (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Matrix (Greenhouse Cultivation),Matrix (Greenhouse Cultivation),greenhouse_hemp,3305011968,0,EL,Industrial Hemp
-69152,MIETKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Mietko (Greenhouse Cultivation),Mietko (Greenhouse Cultivation),greenhouse_hemp,3305011969,0,EL,Industrial Hemp
-69154,OLIVIA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Olivia (Greenhouse Cultivation),Olivia (Greenhouse Cultivation),greenhouse_hemp,3305011970,0,EL,Industrial Hemp
-69158,SOFIA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Sofia (Greenhouse Cultivation),Sofia (Greenhouse Cultivation),greenhouse_hemp,3305011971,0,EL,Industrial Hemp
-69160,ALIVE SK (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Alive SK (Greenhouse Cultivation),Alive SK (Greenhouse Cultivation),greenhouse_hemp,3305011972,0,EL,Industrial Hemp
-69162,ESTICA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Estica (Greenhouse Cultivation),Estica (Greenhouse Cultivation),greenhouse_hemp,3305011973,0,EL,Industrial Hemp
-69164,FIONA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fiona (Greenhouse Cultivation),Fiona (Greenhouse Cultivation),greenhouse_hemp,3305011974,0,EL,Industrial Hemp
-69166,LOJA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Loja (Greenhouse Cultivation),Loja (Greenhouse Cultivation),greenhouse_hemp,3305011975,0,EL,Industrial Hemp
-69168,MARA 21 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Mara 21 (Greenhouse Cultivation),Mara 21 (Greenhouse Cultivation),greenhouse_hemp,3305011976,0,EL,Industrial Hemp
-69170,MUKA 76 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Muka 76 (Greenhouse Cultivation),Muka 76 (Greenhouse Cultivation),greenhouse_hemp,3305011977,0,EL,Industrial Hemp
+69062,CARMAGNOLA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Carmagnola (Greenhouse Cultivation),Carmagnola (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69063,DELTA-405 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Delta-405 (Greenhouse Cultivation),Delta-405 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69064,ELETTA CAMPANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Eletta Campana (Greenhouse Cultivation),Eletta Campana (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69065,FINOLA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Finola (Greenhouse Cultivation),Finola (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69066,FUTURA 75 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Futura 75 (Greenhouse Cultivation),Futura 75 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69067,GLIANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Gliana (Greenhouse Cultivation),Gliana (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69068,IVORY (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Ivory (Greenhouse Cultivation),Ivory (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69069,MONOICA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Monoica (Greenhouse Cultivation),Monoica (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69070,RAJAN (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Rajan (Greenhouse Cultivation),Rajan (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69072,WOJKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Wojko (Greenhouse Cultivation),Wojko (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69075,CARMALEONTE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Carmaleonte (Greenhouse Cultivation),Carmaleonte (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69076,FIBRANTE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibrante (Greenhouse Cultivation),Fibrante (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69077,HENOLA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Henola (Greenhouse Cultivation),Henola (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69078,KC BONUSZ (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Bonusz (Greenhouse Cultivation),KC Bonusz (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69080,KCA BORANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KCA Borana (Greenhouse Cultivation),KCA Borana (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69081,LIPKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Lipko (Greenhouse Cultivation),Lipko (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69082,LOVRIN 110 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Lovrin 110 (Greenhouse Cultivation),Lovrin 110 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69083,MARKANT (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Markant (Greenhouse Cultivation),Markant (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69084,USO-31 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Uso-31 (Greenhouse Cultivation),Uso-31 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69085,ZENIT (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Zenit (Greenhouse Cultivation),Zenit (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69086,CHAMAELEON (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Chamaeleon (Greenhouse Cultivation),Chamaeleon (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69087,GLECIA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Glecia (Greenhouse Cultivation),Glecia (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69088,GLYANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Glyana (Greenhouse Cultivation),Glyana (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69089,SANTHICA 70 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Santhica 70 (Greenhouse Cultivation),Santhica 70 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69090,SECUIENI JUBILEU (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Secuieni Jubileu (Greenhouse Cultivation),Secuieni Jubileu (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69091,SILVANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Silvana (Greenhouse Cultivation),Silvana (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69092,TISZA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Tisza (Greenhouse Cultivation),Tisza (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69093,UNIKO B (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Uniko B (Greenhouse Cultivation),Uniko B (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69094,VILLANOVA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Villanova (Greenhouse Cultivation),Villanova (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69095,WIELKOPOLSKIE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Wielkopolskie (Greenhouse Cultivation),Wielkopolskie (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69096,CANNAKOMP (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Cannakomp (Greenhouse Cultivation),Cannakomp (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69097,CARMA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Carma (Greenhouse Cultivation),Carma (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69098,CS (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),CS (Greenhouse Cultivation),CS (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69099,DELTA-LLOSA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Delta-Llosa (Greenhouse Cultivation),Delta-Llosa (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69100,KOMPOLTI (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Kompolti (Greenhouse Cultivation),Kompolti (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69101,CODIMONO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Codimono (Greenhouse Cultivation),Codimono (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69102,DACIA SECUIENI (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Dacia Secuieni (Greenhouse Cultivation),Dacia Secuieni (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69104,DIOICA 88 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Dioica 88 (Greenhouse Cultivation),Dioica 88 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69105,FEDORA 17 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fedora 17 (Greenhouse Cultivation),Fedora 17 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69106,FIBROR 79 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibror 79 (Greenhouse Cultivation),Fibror 79 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69107,KC ZUZANA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Zuzana (Greenhouse Cultivation),KC Zuzana (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69108,KOMPOLTI HIBRID TC (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Kompolti Hibrid TC (Greenhouse Culti[...]),Kompolti Hibrid TC (Greenhouse Culti[...]),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69109,MARCELLO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Marcello (Greenhouse Cultivation),Marcello (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69110,SANTHICA 23 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Santhica 23 (Greenhouse Cultivation),Santhica 23 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69111,EARLINA 8 FC (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Earlina 8 FC (Greenhouse Cultivation),Earlina 8 FC (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69112,FIBRANOVA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibranova (Greenhouse Cultivation),Fibranova (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69113,RATZA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Ratza (Greenhouse Cultivation),Ratza (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69114,SANTHICA 27 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Santhica 27 (Greenhouse Cultivation),Santhica 27 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69115,SUCCESIV (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Succesiv (Greenhouse Cultivation),Succesiv (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69116,TIBORSZALLASI (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Tiborszallasi (Greenhouse Cultivation),Tiborszallasi (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69117,AUSTA SK (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Austa SK (Greenhouse Cultivation),Austa SK (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69118,BENIKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Beniko (Greenhouse Cultivation),Beniko (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69121,FELINA 32 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Felina 32 (Greenhouse Cultivation),Felina 32 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69122,FERIMON (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Ferimon (Greenhouse Cultivation),Ferimon (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69124,KC VIRTUS (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Virtus (Greenhouse Cultivation),KC Virtus (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69125,BIALOBREZESKIE (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Bialobrezeskie (Greenhouse Cultivation),Bialobrezeskie (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69126,EPSILON 68 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Epsilon 68 (Greenhouse Cultivation),Epsilon 68 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69127,FIBROL (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fibrol (Greenhouse Cultivation),Fibrol (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69129,KC DORA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),KC Dora (Greenhouse Cultivation),KC Dora (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69130,TYGRA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Tygra (Greenhouse Cultivation),Tygra (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69134,BALATON (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Balaton (Greenhouse Cultivation),Balaton (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69136,FUTURA 83 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Futura 83 (Greenhouse Cultivation),Futura 83 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69138,ORION 33 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Orion 33 (Greenhouse Cultivation),Orion 33 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69140,THEODORA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Theodora (Greenhouse Cultivation),Theodora (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69144,MGC 1013 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),MGC 1013 (Greenhouse Cultivation),MGC 1013 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69146,HELENA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Helena (Greenhouse Cultivation),Helena (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69148,MARINA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Marina (Greenhouse Cultivation),Marina (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69150,MATRIX (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Matrix (Greenhouse Cultivation),Matrix (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69152,MIETKO (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Mietko (Greenhouse Cultivation),Mietko (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69154,OLIVIA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Olivia (Greenhouse Cultivation),Olivia (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69158,SOFIA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Sofia (Greenhouse Cultivation),Sofia (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69160,ALIVE SK (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Alive SK (Greenhouse Cultivation),Alive SK (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69162,ESTICA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Estica (Greenhouse Cultivation),Estica (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69164,FIONA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Fiona (Greenhouse Cultivation),Fiona (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69166,LOJA (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Loja (Greenhouse Cultivation),Loja (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69168,MARA 21 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Mara 21 (Greenhouse Cultivation),Mara 21 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
+69170,MUKA 76 (ΘΕΡΜΟΚΗΠΙΑΚΗ ΚΑΛΛΙΕΡΓΕΙΑ),Muka 76 (Greenhouse Cultivation),Muka 76 (Greenhouse Cultivation),greenhouse_hemp,3305011900,0,EL,Industrial Hemp
 98200,ΠΑΤΑΤΑ ΘΕΡΜΟΚΗΠΙΟΥ,Greenhouse Potato,Greenhouse Potato,greenhous_potatoes,3305012000,0,EL,Potato
 98201,ΠΑΤΑΤΑ ΘΕΡΜΟΚΗΠΙΟΥ ΕΞΑΙΡΕΣΗ,Greenhouse Potato Exception,Greenhouse Potato Exception,greenhous_potatoes,3305012000,0,EL,Potato
 102120,ΚΑΡΠΟΥΖΙ ΘΕΡΜΟΚΗΠΙΟΥ,Greenhouse Watermelon,Greenhouse Watermelon,greenhouse_melons,3305011600,0,EL,Watermelon

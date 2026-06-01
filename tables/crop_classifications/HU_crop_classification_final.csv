@@ -328,7 +328,7 @@ ken01,Kender (vetőmag célra) ,Hemp (for seed),hemp_cannabis,3301061000,0,HU
 kev01,Keverék kultúra,Mixed cropping,mixed_cropping,3301320000,1,HU
 khk01,Konyhakertek,Kitchen gardens,kitchen_gardens,3301120000,0,HU
 kom01,Komló,Hops,hops,3301060200,0,HU
-meh01,Méhlegelő,Bee pasture,pasture_meadow_grassland_grass,3302000000,0,HU
+meh01,Méhlegelő,Bee pasture,field_margins_buffer_strips_flowering_areas,3310100000,0,HU
 mel01,Meliorációs retek,Tillage radish,oil_fodder_radish,3301210600,0,HU
 nad01,Nád,Reed,wetlands,3310400000,0,HU
 nf059,Nemes nyáras,Noble poplar,populus,3306070000,0,HU
@@ -357,14 +357,14 @@ paz18,Vörös csenkesz,Red Fescue,festuca_fescue,3301090202,0,HU
 paz20,Réti komócsin,Timothy grass,timothy,3301090209,0,HU
 paz21,Veresnadrág csenkesz,Festuca pseudovina,festuca_fescue,3301090202,0,HU
 paz22,Magyar rozsnok,Bromus inermis leyss.,lolium_ryegrass,3301090205,0,HU
-paz23,Zöld Pántlikafű,Reed canary grass,canary_seed_canaryseed,3301011400,0,HU
+paz23,Zöld Pántlikafű,Reed canary grass,poaceae_grasses,3301090200,0,HU
 pih01,Talajtakarás nélküli pihentetett terület,Fallow land without ground cover,fallow_land_not_crop,3301110000,0,HU
 pil01,Cukorborsó,Sweet peas,peas,3301020600,0,HU
 pil02,Mezei borsó,Field peas,peas,3301020600,0,HU
-pil03,Őszi takarmányborsó,Autumn fodder peas,peas,3301020600,0,HU
+pil03,Őszi takarmányborsó,Autumn fodder peas,whole_crop_peas,3301092200,0,HU
 pil04,Őszi zöldborsó,Autumn green peas,peas,3301020600,0,HU
 pil05,Szárazborsó (Sárgaborsó),Dry Peas (Yellow Peas),peas,3301020600,0,HU
-pil06,Tavaszi takarmányborsó,Spring fodder peas,peas,3301020600,0,HU
+pil06,Tavaszi takarmányborsó,Spring fodder peas,whole_crop_peas,3301092200,0,HU
 pil07,Tavaszi zöldborsó,Spring green peas,peas,3301020600,0,HU
 pil09,Lóbab (Disznóbab),Horse beans (Pig beans),beans,3301020100,0,HU
 pil11,Futóbab,Running beans,beans,3301020100,0,HU
@@ -420,7 +420,7 @@ ult28,Egyéb ültetvény,Other plantation,other_permanent_crops_plantations,3303
 ult29,Csemegeszőlő ültetvény,Sweet grape plantation,vineyards_wine_vine_rebland_grapes,3303060000,0,HU
 ult30,Fehér eperfa,White mulberry tree,berries_berry_species,3303020000,0,HU
 ult31,Fekete eperfa,Black mulberry,berries_berry_species,3303020000,0,HU
-ult32,Fekete berkenye,Black currant,blackcurrant_cassis,3303020300,0,HU
+ult32,Fekete berkenye,Black chokeberry,aronia_chokeberries,3303020100,0,HU
 ult33,Datolyaszilva,Persimmon,other_permanent_crops_plantations,3303990000,0,HU
 ult34,Teacserje,Tea bush,other_permanent_crops_plantations,3303990000,0,HU
 ult35,Húsos som,Cornelian cherry,other_permanent_crops_plantations,3303990000,0,HU
@@ -465,7 +465,7 @@ veg35,Padlizsán (Tojásgyümölcs),Eggplant (Egg Fruit),aubergine_eggplant,3301
 veg36,Főzőtök,Cooking pumpkins,pumpkin_squash_gourd,3301140400,0,HU
 veg37,Sütőtök,Pumpkin,pumpkin_squash_gourd,3301140400,0,HU
 veg38,Káposztatök,Cabbage squash,pumpkin_squash_gourd,3301140400,0,HU
-veg39,Olajtök,Oil pumpkin,pumpkin_squash_gourd,3301140400,0,HU
+veg39,Olajtök,Oil pumpkin,oil_pumpkin,3301140401,0,HU
 veg40,Csillagtök/patiszon,Star pumpkins/patissones,pumpkin_squash_gourd,3301140400,7,HU
 veg41,Spárgatök,Spaghetti squash,pumpkin_squash_gourd,3301140400,0,HU
 veg42,Cukkini,Zucchini,zucchini_courgette,3301140600,0,HU

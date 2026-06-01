@@ -33,7 +33,7 @@ def main():
     print("start: " + stime)
     os.chdir(WD)
 
-    for year in range(2025, 2026):
+    for year in range(2023, 2025):
         if year < 2023:
             in_pth = os.path.join("data", "vector", "IACS", "DE", "BRB", "Original", f"IACS_BB_{year}.shp")
         else:

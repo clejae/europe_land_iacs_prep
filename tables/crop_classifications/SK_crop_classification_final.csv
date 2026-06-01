@@ -64,7 +64,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,Hrab obyčajný,Common hornbeam,tree_wood_forest,3306000000,0,SK
 ,Hrach siaty,Peas,peas,3301020600,0,SK
 ,Hrach siaty (peluška),Peas (peas),peas,3301020600,0,SK
-,Hrach siaty kŕmny,Feed peas,peas,3301020600,0,SK
+,Hrach siaty kŕmny,Feed peas,whole_crop_peas,3301092200,0,SK
 ,Hrach siaty pravý stržňový,Peas sown,peas,3301020600,0,SK
 ,Hrachor siaty,Indian pea,lathyrus_peavine,3301020800,0,SK
 ,Hruška obyčajná,Common pear,pears,3303011200,0,SK
@@ -246,9 +246,9 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,Tekvica,Pumpkin,pumpkin_squash_gourd,3301140400,0,SK
 ,Tekvica hokkaido,Pumpkin,pumpkin_squash_gourd,3301140400,0,SK
 ,Tekvica obrovská (pre produkciu na priamy konzum),Giant pumpkin (for production for direct consumption),pumpkin_squash_gourd,3301140400,0,SK
-,Tekvica obrovská (pre produkciu semien na konzum a lisovanie),Giant pumpkin (for seed production for consumption and pressing),pumpkin_squash_gourd,3301140400,0,SK
+,Tekvica obrovská (pre produkciu semien na konzum a lisovanie),Giant pumpkin (for seed production for consumption and pressing),oil_pumpkin,3301140401,0,SK
 ,Tekvica obyčajná (pre produkciu na priamy konzum),Pumpkin (for production for direct consumption),pumpkin_squash_gourd,3301140400,0,SK
-,Tekvica obyčajná (pre produkciu semien na konzum a lisovanie),Pumpkin (for seed production for consumption and pressing),pumpkin_squash_gourd,3301140400,0,SK
+,Tekvica obyčajná (pre produkciu semien na konzum a lisovanie),Pumpkin (for seed production for consumption and pressing),oil_pumpkin,3301140401,0,SK
 ,Teplomilné a suchomilné trvalé trávne porasty (typ A),Thermophilic and drought-tolerant permanent grassland (type A),pasture_meadow_grassland_grass,3302000000,0,SK
 ,Topoľ biely,White poplar,populus,3306070000,0,SK
 ,Topoľ chlpatoplodý,Poplar hairy fruit,populus,3306070000,0,SK

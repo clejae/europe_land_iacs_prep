@@ -159,7 +159,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 9785,GHIZDEI (în amestec cu graminee perene),Bird's-foot trefoil (mixed with perennial grasses),birdsfoot_trefoil,3301090306,0,RO
 452,MIXTURI DE LEGUMINOASE FURAJERE PERENE CU GRAMINEE PERENE,MIXTURES OF PERENNIAL FORAGE LEGUMES WITH PERENNIAL GRASSES,legumes_harvested_green,3301090300,0,RO
 9545,MEI ENERGETIC,Energy MEI (proso millet),millet_sorghum,3301010900,0,RO
-160,ALTE LEGUMINOASE PENTRU BOABE,OTHER LEGUMES FOR BEANS,legumes_harvested_green,3301090300,0,RO
+160,ALTE LEGUMINOASE PENTRU BOABE,OTHER LEGUMES FOR BEANS,legumes_dried_pulses_protein_crops,3301020000,0,RO
 9748,LUCERNĂ (sămânță certificată),ALFALFA (certified seed),alfalfa_lucerne,3301090301,0,RO
 97481,LUCERNĂ (sămânță certificată),ALFALFA (certified seed),alfalfa_lucerne,3301090301,0,RO
 9745,LUCERNĂ (în amestec cu graminee perene),ALFALFA (mixed with perennial grasses),alfalfa_grass_mix,3301090509,1,RO
@@ -187,7 +187,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 1587,MĂZĂRICHE,VETCH,vetches,3301090305,0,RO
 15871,MĂZĂRICHE,VETCH,vetches,3301090305,0,RO
 466,MĂZĂRICHE DE TOAMNĂ + OVĂZ,AUTUMN VETCH + OATS,cereal_legume_mix,3301091200,1,RO
-467,MĂZĂRICHE DE TOAMNĂ+SECARĂ,AUTUMN VETCH + SORREL,mixed_cropping,3301320000,1,RO
+467,MĂZĂRICHE DE TOAMNĂ+SECARĂ,AUTUMN VETCH + SORREL,cereal_legume_mix,3301091200,1,RO
 468,MĂZĂRICHE DE TOAMNĂ+TRITICALE,AUTUMN VETCH + TRITICALE,cereal_legume_mix,3301091200,1,RO
 500,LOT SEMINCER pentru culturi anuale,seed lot for annual crops,arable_land_seed_seedlings,3301100000,0,RO
 501,LOT SEMINCER pentru culturi perene,seed lot for perennial crops,arable_land_seed_seedlings,3301100000,0,RO
@@ -225,7 +225,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 461,MUŞTAR+ PHACELIA,MUSTARD + PHACELIA,mixed_cropping,3301320000,1,RO
 462,MUŞTAR + RAPIŢĂ,MUSTARD + RAPESEED,oilseed_crops,3301060800,1,RO
 477,MUȘTAR + RAPIȚĂ DE PRIMĂVARĂ,MUSTARD + SPRING RAPESEED,oilseed_crops,3301060800,1,RO
-9535,NAP,kale,kale,3301210208,0,RO
+9535,NAP,kale,turnip_rape,3301210700,0,RO
 3597,VINETE ÎN CÂMP,EGGPLANT IN THE FIELD,aubergine_eggplant,3301260000,0,RO
 363,VINETE ÎN SOLARII,EGGPLANTS IN GREENHOUSE,greenhouse_eggplants,3305010300,0,RO
 364,VINETE ÎN SERE,EGGPLANTS IN THE GREENHOUSE,greenhouse_eggplants,3305010300,0,RO
@@ -246,7 +246,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 3507,ARDEI ÎN CÂMP,PEPPERS IN THE FIELD,bell_pepper_paprika,3301300100,0,RO
 357,ARDEI ÎN SERE,PEPPERS IN THE GREENHOUSE,greenhouse_bell_peppers,3305010500,0,RO
 361,ARDEI ÎN SOLARII,PEPPERS IN THE GREENHOUSE,greenhouse_bell_peppers,3305010500,0,RO
-463,LATIR + MĂZĂRICHE DE TOAMNĂ,LATIR + AUTUMN VETCH,salads_lettuce_leaf_vegetables,3301310000,0,RO
+463,LATIR + MĂZĂRICHE DE TOAMNĂ,flat pea + AUTUMN VETCH,legumes_dried_pulses_protein_crops,3301020000,0,RO
 805,CICOARE,Chicory,chicory_chicories,3301310200,0,RO
 1545,BOB  (în amestec cu graminee perene),Grain (mixed with perennial grasses),cereal_grass_mix,3301091300,1,RO
 15451,BOB  (în amestec cu graminee perene),Grain (mixed with perennial grasses),cereal_grass_mix,3301091300,1,RO
@@ -293,7 +293,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 804,"ALŢI ARBUŞTI FRUCTIFERI (cătină, afin etc.)","OTHER FRUIT BUSHES (buckthorn, blueberry, etc.)",berries_berry_species,3303020000,0,RO
 8043,"ALŢI ARBUŞTI FRUCTIFERI ÎN SERE ȘI I SOLARII (cătină, afin, mur etc.)","OTHER FRUIT-BEARING SHRUBS IN GREENHOUSES AND SOLARIUMS (buckthorn, blueberry, blackberry, etc.)",greenhouse_berries,3305010600,0,RO
 8023,COACĂZ ÎN SERE ȘI SOLARII,BLACKCURRENT IN GREENHOUSES AND SOLARIUMS,greenhouse_berries,3305010600,0,RO
-802,COACĂZ,gooseberry bush,gooseberry_gooseberries_cranberries,3303020700,0,RO
+802,COACĂZ,redcurrant,redcurrant,3303021100,0,RO
 8013,ZMEUR ÎN SERE ȘI SOLARII,RASPBERRIES IN GREENHOUSES AND SOLARIA,greenhouse_berries,3305010600,0,RO
 801,ZMEUR,raspberry,raspberry_raspberries,3303021000,0,RO
 702,NUCI ŞI ALUNI,NUTS AND HAZELNUTS,nuts,3303030000,0,RO
@@ -312,7 +312,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 909,PEPINIERE DE CONIFERE ORNAMENTALE ȘI PORTALTOI,ORNAMENTAL CONIFIER NURSERIES AND PORTALS,nurseries_nursery,3303070000,0,RO
 904,ALTE PEPINIERE,OTHER NURSERIES,nurseries_nursery,3303070000,0,RO
 907,PEPINIERE DE PLANTE PT. GARDURI VII ȘI PORTALTOI,PLANT NURSERY PT. HEDGES AND GATES,nurseries_nursery,3303070000,0,RO
-652,PERI,BRUSHES,shrubberries_shrubs,3303080000,0,RO
+652,PERI,Pears,pears,3303011200,0,RO
 217,RICIN,ricinus,ricinus_castor,3303080600,0,RO
 780,SĂLCIOARĂ,Russian olive,other_permanent_crops_plantations,3303990000,0,RO
 979,CIUPERCI,Mushrooms,mushrooms_energy_genetically_modified_crops,3304000000,0,RO
@@ -347,8 +347,8 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 95331,"PLOP ALB, PLOP NEGRU (Populus alba, Populus nigra)","WHITE POPLAR, BLACK POPLAR (Populus alba, Populus nigra)",populus,3306070000,0,RO
 9531,SALCIE ENERGETICĂ (Salix spp),ENERGY WILLOW (Salix spp),short_rotation_coppice,3306090000,0,RO
 95311,SALCIE (Salix spp),WILLOW (Salix spp),willows_osiers,3306080000,0,RO
-97571,SPARCETĂ,beekeeping,not_known_and_other,3399000000,0,RO
-9751,SPARCETĂ,beekeeping,not_known_and_other,3399000000,0,RO
-9757,SPARCETĂ,beekeeping,not_known_and_other,3399000000,0,RO
-975,SPARCETĂ,beekeeping,not_known_and_other,3399000000,0,RO
-9807,GOLOMĂȚ,EMPTY,not_known_and_other,3399000000,0,RO
+97571,SPARCETĂ,Esparsette,esparsette_onobrychis,3301020300,0,RO
+9751,SPARCETĂ,Esparsette,esparsette_onobrychis,3301020300,0,RO
+9757,SPARCETĂ,Esparsette,esparsette_onobrychis,3301020300,0,RO
+975,SPARCETĂ,Esparsette,esparsette_onobrychis,3301020300,0,RO
+9807,GOLOMĂȚ,Dactylis glomerata,poaceae_grasses,3301090200,0,RO

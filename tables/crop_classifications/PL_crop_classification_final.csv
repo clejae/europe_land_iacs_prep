@@ -13,7 +13,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,barberry,barberry,shrubberries_shrubs,3303080000,0,PL
 ,basil,basil,basil,3301061207,0,PL
 ,bean,bean,beans,3301020100,0,PL
-,beet,beet,chard,3301310100,0,PL
+,beet,beet,beetroot_beets,3301290200,0,PL
 ,birch,birch,birch,3306030000,0,PL
 ,bird’s foot trefoil,bird’s foot trefoil,birdsfoot_trefoil,3301090306,0,PL
 ,black cumin,black cumin,black_cumin,3301061208,0,PL
@@ -64,7 +64,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,goatsbeard,goatsbeard,flowers_ornamental_plants,3301080000,0,PL
 ,goldenrod,goldenrod,goldenrod,3301082200,0,PL
 ,gooseberry,gooseberry,gooseberry_gooseberries_cranberries,3303020700,0,PL
-,grasses,grasses,poaceae_grasses,3301090200,0,PL
+,grasses,grasses,temporary_grass,3301090100,0,PL
 ,grindelia,grindelia,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,PL
 ,hawthorn,hawthorn,crataegus_hawthorn,3303080300,0,PL
 ,hemp,hemp,hemp_cannabis,3301061000,0,PL
@@ -120,7 +120,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,parsnip,parsnip,parsnips,3301290500,0,PL
 ,peach tree,peach tree,peach,3303011100,0,PL
 ,pepper,pepper,bell_pepper_paprika,3301300100,0,PL
-,permanent grassland,permanent grassland,pastures_meadows_with_trees,3302010000,0,PL
+,permanent grassland,permanent grassland,pasture_meadow_grassland_grass,3302000000,0,PL
 ,phacelia,phacelia,phacelia,3301061400,0,PL
 ,plantain,plantain,orchards_fruits,3303010000,0,PL
 ,plum tree,plum tree,plums,3303011300,0,PL
@@ -193,21 +193,21 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,zucchini,zucchini,zucchini_courgette,3301140600,0,PL
 ,cherry tree,cherry tree,cherry_cherries,3303010400,0,PL
 ,hazel tree,hazel tree,hazelnuts_hazel,3303030200,0,PL
-,cereal mix,cereal mix,meslin,3301011100,7,PL
+,cereal mix,cereal mix,mixed_cropping,3301320000,7,PL
 ,floriculture,floriculture,unspecified_flowers_ornamental_plants,3301089800,0,PL
 ,pear tree,pear tree,pears,3303011200,0,PL
 ,field peas,field peas,peas,3301020600,0,PL
 ,peas,peas,peas,3301020600,0,PL
 ,mixed cropping,mixed cropping,mixed_cropping,3301320000,1,PL
-,grasses on arable land,grasses on arable land,poaceae_grasses,3301090200,0,PL
+,grasses on arable land,grasses on arable land,temporary_grass,3301090100,0,PL
 ,grapevine,grapevine,vineyards_wine_vine_rebland_grapes,3303060000,0,PL
 ,grasses on fallow land,grasses on fallow land,fallow_land_not_crop,3301110000,0,PL
 ,tree nurseries,tree nurseries,nurseries_nursery,3303070000,0,PL
 ,sweet cherry tree,sweet cherry tree,cherry_cherries,3303010400,0,PL
 ,spring cereal mixture,spring cereal mixture,spring_meslin,3301011102,7,PL
 ,chaenomeles,chaenomeles,chaenomeles_cathayensis,3303080200,0,PL
-,transitional grassland,transitional grassland,pastures_meadows_with_trees,3302010000,0,PL
-,grass mixture,grass mixture,poaceae_grasses,3301090200,3,PL
+,transitional grassland,transitional grassland,pasture_meadow_grassland_grass,3302000000,0,PL
+,grass mixture,grass mixture,temporary_grass,3301090100,3,PL
 ,short-rotation tree plantation,short-rotation tree plantation,short_rotation_coppice,3306090000,0,PL
 ,clover,clover,clover,3301090303,0,PL
 ,fallow land with honey plants,fallow land with honey plants,fallow_land_not_crop,3301110000,0,PL

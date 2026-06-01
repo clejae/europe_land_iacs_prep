@@ -10,8 +10,8 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 40059,Bazalka vonná,Fragrant basil,basil,3301061207,0,CZ
 40060,Bedrník anýz,Anise (Pimpinella anisum),anise_aniseed,3301061205,0,CZ
 23,Benedikt lékařský (čubet),Blessed thistle (Cnicus benedictus),aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CZ
-8,Bér italský,Setaria italica,millet_sorghum,3301010900,0,CZ
-8,Bér vlašský,Sorghum / millet,millet_sorghum,3301010900,0,CZ
+8,Bér italský,Setaria italica,setaria,3301090206,0,CZ
+8,Bér vlašský,Sorghum / millet,setaria,3301090206,0,CZ
 8,Bér vlašský (italský),Italian millet (Setaria italica),setaria,3301090206,0,CZ
 266,Bez černý,Black elderberry,elder_elderberry,3303080400,0,CZ
 64,Bob ,Bean,beans,3301020100,0,CZ
@@ -59,9 +59,9 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 358,Cibule ozimá,Onions overwinter,onions,3301220400,0,CZ
 358,Cibule zimní,Winter onions,onions,3301220400,0,CZ
 414,Cibule zimní (sečka),Winter onions (chopped),onions,3301220400,0,CZ
-592,Čičorka,crownvetch,vetches,3301090300,0,CZ
-40137,Čičorka (jinde neuvedená),crownvetch (not elsewhere specified),vetches,3301090300,0,CZ
-66,Čičorka pestrá,crownvetch,vetches,3301090300,0,CZ
+592,Čičorka,crownvetch,vetches,3301090305,0,CZ
+40137,Čičorka (jinde neuvedená),crownvetch (not elsewhere specified),vetches,3301090305,0,CZ
+66,Čičorka pestrá,crownvetch,vetches,3301090305,0,CZ
 9,Čirok,Sorghum,millet_sorghum,3301010900,0,CZ
 9,Čirok cukrový,Sugar sorghum,millet_sorghum,3301010900,0,CZ
 249,Čirok sudanská tráva,Sorghum Sudan grass,millet_sorghum,3301010900,0,CZ
@@ -240,7 +240,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 376,Křen selský,Horseradish,horseradish,3301210400,0,CZ
 50025,Křen selský jednoletý,Annual horseradish,horseradish,3301210400,0,CZ
 376,Křen selský víceletý,Perennial horseradish,horseradish,3301210400,0,CZ
-433,Kukuřice (jinde neuvedená),Maize (not elsewhere specified),grain_maize_corn_popcorn,3301010600,0,CZ
+433,Kukuřice (jinde neuvedená),Maize (not elsewhere specified),green_silo_maize,3301090400,0,CZ
 373,Kukuřice cukrová,Sweet corn,grain_maize_corn_popcorn,3301010600,0,CZ
 433,Kukuřice na siláž,silage maize,green_silo_maize,3301090400,0,CZ
 434,Kukuřice na zrno,Corn on the grain,grain_maize_corn_popcorn,3301010600,0,CZ
@@ -471,7 +471,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 50045,Směs pro dělící pás,Mixture for dividing strip,field_margins_buffer_strips_flowering_areas,3310100000,0,CZ
 50045,Směs pro dělící pás ,Compound for dividing strip,field_margins_buffer_strips_flowering_areas,3310100000,0,CZ
 50046,Směs pro dělící pás (premiová),Mixture for a dividing strip (premium),field_margins_buffer_strips_flowering_areas,3310100000,7,CZ
-50018,Směs pro druhově bohaté pokrytí orné půdy,Mixture for species-rich arable land cover,mixed_cropping,3301320000,1,CZ
+50018,Směs pro druhově bohaté pokrytí orné půdy,Mixture for species-rich arable land cover,field_margins_buffer_strips_flowering_areas,3310100000,1,CZ
 50018,Směs pro druhově bohaté pokrytí orné půdy ,Mixture for species-rich cover of arable land,field_margins_buffer_strips_flowering_areas,3310100000,7,CZ
 522,Směs pro erozní pás,Erosion strip compound,field_margins_buffer_strips_flowering_areas,3310100000,0,CZ
 50044,Směs pro erozní pás (prémiová),Erosion Strip Compound (Premium),field_margins_buffer_strips_flowering_areas,3310100000,0,CZ
@@ -565,7 +565,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 587,Třapatka nachová (Terčovka nachová),Purple coneflower (Echinacea purpurea),echinacea_sun_hat,3301081500,0,CZ
 315,Trávy,Grasses,pasture_meadow_grassland_grass,3302000000,0,CZ
 40284,Trávy čeledi lipnicovité s výjimkou obilnin,"Grasses of the ryegrass family, with the exception of cereals",lolium_ryegrass,3301090205,0,CZ
-40287,Trávy na semeno,Grasses for seed,pasture_meadow_grassland_grass,3302000000,0,CZ
+40287,Trávy na semeno,Grasses for seed,grass_seed_propagation,3301101000,0,CZ
 40286,Trávy pro ochranné pásy,Grasses for protective strips,field_margins_buffer_strips_flowering_areas,3310100000,0,CZ
 471,Trávy pro ochranné pásy,Grasses for protective strips,field_margins_buffer_strips_flowering_areas,3310100000,0,CZ
 424,Trávy s leguminozami,Grasses with legumes,legume_grass_mix,3301090500,1,CZ
@@ -584,8 +584,8 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 602,Tykev muškátová,Nutmeg gourd,pumpkin_squash_gourd,3301140400,0,CZ
 470,Tykev muškátová,Nutmeg gourd,pumpkin_squash_gourd,3301140400,0,CZ
 406,Tykev obecná (s výjimkou tykve olejné),Gourd (except butternut squash),pumpkin_squash_gourd,3301140400,0,CZ
-40365,Tykev olejná,Oil gourd,pumpkin_squash_gourd,3301140400,0,CZ
-407,Tykev olejná,Oil gourd,pumpkin_squash_gourd,3301140400,0,CZ
+40365,Tykev olejná,Oil gourd,oil_pumpkin,3301140401,0,CZ
+407,Tykev olejná,Oil gourd,oil_pumpkin,3301140401,0,CZ
 607,Tykev pomíchaná,Mixed pumpkin,pumpkin_squash_gourd,3301140400,7,CZ
 466,Tykev pomíchaná,Mixed pumpkin,pumpkin_squash_gourd,3301140400,7,CZ
 408,Tykev velkoplodá,Large-fruited gourd,pumpkin_squash_gourd,3301140400,0,CZ
@@ -596,8 +596,8 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 50138,Úhor po vyklučené trvalé kultuře,Fallow land after clearing permanent crops,fallow_land_not_crop,3301110000,0,CZ
 50052,Úhor pro staré ekologické zemědělství,Fallow  for old organic farming,fallow_land_not_crop,3301110000,0,CZ
 10000,Úhor s porostem,Fallow with vegetation,fallow_land_not_crop,3301110000,0,CZ
-86,Úročník ,Sweet clover (Melilot,melilot,3301090304,0,CZ
-86,Úročník bolhoj,Anthyllis vulneraria,aromatic_medicinal_culinary_plants_spices_herbs,3301061200,0,CZ
+86,Úročník ,vetch ,vetches,3301090305,0,CZ
+86,Úročník bolhoj,kidney vetch ,vetches,3301090305,0,CZ
 59,Včelník moldavský,Moldavian dragonhead,moldavian_dragonhead,3301061223,0,CZ
 87,Vičenec ,common sainfoin,onobrychis_sainfoins,3301061600,0,CZ
 87,Vičenec ligrus,common sainfoin,onobrychis_sainfoins,3301061600,0,CZ
@@ -639,7 +639,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 112,Žito ozimé,winter rye,winter_rye,3301010301,0,CZ
 449,Žito trsnaté (lesní),Bunch rye (forest),lolium_ryegrass,3301090205,0,CZ
 605,Žito trsnaté (lesní),Bunch rye (forest),lolium_ryegrass,3301090205,0,CZ
-60002,orna puda,arable land,not_known_and_other,3399000000,0,CZ
+60002,orna puda,arable land,arable_crops,3301000000,0,CZ
 60009,jina kultura,other crops,not_known_and_other,3399000000,0,CZ
 60010,uhor,fallow land,fallow_land_not_crop,3301110000,0,CZ
 60011,trava na orne,grass on arable land,temporary_grass,3301090100,0,CZ

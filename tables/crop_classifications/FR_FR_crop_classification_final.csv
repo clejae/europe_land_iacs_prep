@@ -114,7 +114,7 @@ Autre céréale de genre Fagopyrum,Autre céréale de genre Fagopyrum,Other cere
 Autre céréale de genre Panicum,Autre céréale de genre Panicum,Other cereal of the genus Panicum,poaceae_grasses,3301090200,0,FR_FR
 Autre céréale de genre Phalaris,Autre céréale de genre Phalaris,Other cereal of the genus Phalaris,poaceae_grasses,3301090200,0,FR_FR
 CAG,Autre céréale d’un autre genre,Other cereal of a different type,other_cereals,3301019900,0,FR_FR
-CAG,"Autre céréale ou pseudo-céréale secondaire de printemps (alpiste, quinoa, chia, …)","Other secondary spring cereal or pseudo-cereal (canary seed, quinoa, chia, etc.)",other_arable_land_crops,3301990000,1,FR_FR
+CAG,"Autre céréale ou pseudo-céréale secondaire de printemps (alpiste, quinoa, chia, …)","Other secondary spring cereal or pseudo-cereal (canary seed, quinoa, chia, etc.)",other_cereals,3301019900,1,FR_FR
 CAH,Autre céréale ou pseudo-céréale secondaire d'hiver,Other secondary winter cereal or pseudo-cereal,other_arable_land_crops,3301990000,0,FR_FR
 CGF,Autre céréale de genre Fagopyrum,Other cereal of the genus Fagopyrum,buckwheat,3301150200,0,FR_FR
 CGH,Autre céréale de genre Phalaris,Other cereal of the genus Phalaris,poaceae_grasses,3301090200,0,FR_FR
@@ -185,8 +185,8 @@ LEC,Lentille,Lentil,lentils,3301020500,0,FR_FR
 Lentille cultivée (non fourragère),Lentille cultivée (non fourragère),Cultivated lentil (not fodder),lentils,3301020500,0,FR_FR
 Lentille fourragère,Lentille fourragère,Forage lentil,lentils,3301020500,0,FR_FR
 LH,Lentilles commercialisées,Marketed lentils,lentils,3301020500,0,FR_FR
-Autre pois fourrager d’hiver,Autre pois fourrager d’hiver,Other winter feed peas,peas,3301020600,0,FR_FR
-Autre pois fourrager de printemps,Autre pois fourrager de printemps,Other spring feed peas,peas,3301020600,0,FR_FR
+Autre pois fourrager d’hiver,Autre pois fourrager d’hiver,Other winter feed peas,whole_crop_peas,3301092200,0,FR_FR
+Autre pois fourrager de printemps,Autre pois fourrager de printemps,Other spring feed peas,whole_crop_peas,3301092200,0,FR_FR
 Cornille,Cornille,Cowpea,beans,3301020100,0,FR_FR
 DOL,Dolique,Hyacinth bean (Dolichos),beans,3301020100,0,FR_FR
 Dolique,Dolique,Hyacinth bean (Dolichos),beans,3301020100,0,FR_FR
@@ -196,34 +196,34 @@ I2,Pois de printemps semé tardivemt (après 31/05) commercialisé,Spring peas s
 P8,Pois d'hiver commercialisé,Marketed winter peas,peas,3301020600,0,FR_FR
 P9,Pois de printemps commercialisé,Marketed spring peas,peas,3301020600,0,FR_FR
 Petits pois,Petits pois,Green peas,peas,3301020600,0,FR_FR
-PFH,Autre pois fourrager d’hiver,Other winter feed peas,peas,3301020600,0,FR_FR
-PFH,Autre pois fourrager d'hiver,Other winter field pea,peas,3301020600,0,FR_FR
-PFP,Autre pois fourrager de printemps,Other spring feed peas,peas,3301020600,0,FR_FR
+PFH,Autre pois fourrager d’hiver,Other winter feed peas,whole_crop_peas,3301092200,0,FR_FR
+PFH,Autre pois fourrager d'hiver,Other winter field pea,whole_crop_peas,3301092200,0,FR_FR
+PFP,Autre pois fourrager de printemps,Other spring feed peas,whole_crop_peas,3301092200,0,FR_FR
 PH,Pois d'hiver,winter peas,peas,3301020600,0,FR_FR
-PH5,Pois fourrager d'hiver implante pour la recolte 2015,Winter forage peas planted for the 2015 harvest,peas,3301020600,0,FR_FR
-PH5,Pois fourrager d’hiver implanté pour la récolte 2015,Winter forage peas planted for the 2015 harvest,peas,3301020600,0,FR_FR
-PH5,Pois fourrager d'hiver implanté pour la récolte 2015,Winter forage peas planted for the 2015 harvest,peas,3301020600,0,FR_FR
-PH6,Pois fourrager d’hiver implanté pour la récolte 2016,Winter forage peas planted for the 2016 harvest,peas,3301020600,0,FR_FR
-PH6,Pois fourrager d'hiver implanté pour la récolte 2016,Winter forage peas planted for the 2016 harvest,peas,3301020600,0,FR_FR
-PH7,Pois fourrager d’hiver implanté pour la récolte 2017,Winter forage peas planted for the 2017 harvest,peas,3301020600,0,FR_FR
-PH7,Pois fourrager d'hiver implanté pour la récolte 2017,Winter forage peas planted for the 2017 harvest,peas,3301020600,0,FR_FR
-PH8,Pois fourrager d’hiver implanté pour la récolte 2018,Winter forage peas planted for the 2018 harvest,peas,3301020600,0,FR_FR
-PH8,Pois fourrager d'hiver implanté pour la récolte 2018,Winter forage peas planted for the 2018 harvest,peas,3301020600,0,FR_FR
+PH5,Pois fourrager d'hiver implante pour la recolte 2015,Winter forage peas planted for the 2015 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH5,Pois fourrager d’hiver implanté pour la récolte 2015,Winter forage peas planted for the 2015 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH5,Pois fourrager d'hiver implanté pour la récolte 2015,Winter forage peas planted for the 2015 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH6,Pois fourrager d’hiver implanté pour la récolte 2016,Winter forage peas planted for the 2016 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH6,Pois fourrager d'hiver implanté pour la récolte 2016,Winter forage peas planted for the 2016 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH7,Pois fourrager d’hiver implanté pour la récolte 2017,Winter forage peas planted for the 2017 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH7,Pois fourrager d'hiver implanté pour la récolte 2017,Winter forage peas planted for the 2017 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH8,Pois fourrager d’hiver implanté pour la récolte 2018,Winter forage peas planted for the 2018 harvest,whole_crop_peas,3301092200,0,FR_FR
+PH8,Pois fourrager d'hiver implanté pour la récolte 2018,Winter forage peas planted for the 2018 harvest,whole_crop_peas,3301092200,0,FR_FR
 PHI,Pois d’hiver,winter peas,peas,3301020600,0,FR_FR
 PHI,Pois protéagineux d'hiver (alimentation animale),winter peas,peas,3301020600,0,FR_FR
 PJ,Petits pois commercialisés,Marketed peas,peas,3301020600,0,FR_FR
 Pois d’hiver,Pois d’hiver,winter peas,peas,3301020600,0,FR_FR
 Pois de printemps semé avant le 31/05,Pois de printemps semé avant le 31/05,Spring peas sown before 31 May,peas,3301020600,0,FR_FR
-Pois fourrager d’hiver implanté pour la récolte 2016,Pois fourrager d’hiver implanté pour la récolte 2016,Winter forage peas planted for the 2016 harvest,peas,3301020600,0,FR_FR
-Pois fourrager d’hiver implanté pour la récolte 2017,Pois fourrager d’hiver implanté pour la récolte 2017,Winter forage peas planted for the 2017 harvest,peas,3301020600,0,FR_FR
-Pois fourrager d’hiver implanté pour la récolte 2018,Pois fourrager d’hiver implanté pour la récolte 2018,Winter forage peas planted for the 2018 harvest,peas,3301020600,0,FR_FR
-Pois fourrager de printemps implanté pour la récolte 2017,Pois fourrager de printemps implanté pour la récolte 2017,Spring fodder pea planted for the 2017 harvest,peas,3301020600,0,FR_FR
-Pois fourrager de printemps implanté pour la récolte 2018,Pois fourrager de printemps implanté pour la récolte 2018,Spring Fodder Pea planted for the 2018 harvest,peas,3301020600,0,FR_FR
+Pois fourrager d’hiver implanté pour la récolte 2016,Pois fourrager d’hiver implanté pour la récolte 2016,Winter forage peas planted for the 2016 harvest,whole_crop_peas,3301092200,0,FR_FR
+Pois fourrager d’hiver implanté pour la récolte 2017,Pois fourrager d’hiver implanté pour la récolte 2017,Winter forage peas planted for the 2017 harvest,whole_crop_peas,3301092200,0,FR_FR
+Pois fourrager d’hiver implanté pour la récolte 2018,Pois fourrager d’hiver implanté pour la récolte 2018,Winter forage peas planted for the 2018 harvest,whole_crop_peas,3301092200,0,FR_FR
+Pois fourrager de printemps implanté pour la récolte 2017,Pois fourrager de printemps implanté pour la récolte 2017,Spring fodder pea planted for the 2017 harvest,whole_crop_peas,3301092200,0,FR_FR
+Pois fourrager de printemps implanté pour la récolte 2018,Pois fourrager de printemps implanté pour la récolte 2018,Spring Fodder Pea planted for the 2018 harvest,whole_crop_peas,3301092200,0,FR_FR
 PP,Pois de printemps,spring peas,peas,3301020600,0,FR_FR
-PP5,Pois fourrager de printemps implanté pour la récolte 2015,Spring forage peas planted for the 2015 harvest,peas,3301020600,0,FR_FR
-PP6,Pois fourrager de printemps implanté pour la récolte 2016,Spring forage peas planted for the 2016 harvest,peas,3301020600,0,FR_FR
-PP7,Pois fourrager de printemps implanté pour la récolte 2017,Spring fodder pea planted for the 2017 harvest,peas,3301020600,0,FR_FR
-PP8,Pois fourrager de printemps implanté pour la récolte 2018,Spring Fodder Pea planted for the 2018 harvest,peas,3301020600,0,FR_FR
+PP5,Pois fourrager de printemps implanté pour la récolte 2015,Spring forage peas planted for the 2015 harvest,whole_crop_peas,3301092200,0,FR_FR
+PP6,Pois fourrager de printemps implanté pour la récolte 2016,Spring forage peas planted for the 2016 harvest,whole_crop_peas,3301092200,0,FR_FR
+PP7,Pois fourrager de printemps implanté pour la récolte 2017,Spring fodder pea planted for the 2017 harvest,whole_crop_peas,3301092200,0,FR_FR
+PP8,Pois fourrager de printemps implanté pour la récolte 2018,Spring Fodder Pea planted for the 2018 harvest,whole_crop_peas,3301092200,0,FR_FR
 PPO,Petits pois,Green peas,peas,3301020600,0,FR_FR
 PPR,Pois de printemps semé avant le 31/05,Spring peas sown before 31 May,peas,3301020600,0,FR_FR
 PPR,Pois protéagineux de printemps (alimentation animale),Spring protein peas (animal feed),peas,3301020600,0,FR_FR
@@ -649,7 +649,7 @@ Autre vesce,Autre vesce,Other vetch,vetches,3301090305,0,FR_FR
 Gesse,Gesse,Grass pea,lathyrus_peavine,3301020800,0,FR_FR
 Jarosse implantée pour la récolte 2016,Jarosse implantée pour la récolte 2016,Vetch (jarosse) planted for 2016 harvest,vetches,3301090305,0,FR_FR
 Jarosse implantée pour la récolte 2018,Jarosse implantée pour la récolte 2018,Vetch (jarosse) planted for 2018 harvest,vetches,3301090305,0,FR_FR
-Pois fourrager de printemps implanté pour la récolte 2016,Pois fourrager de printemps implanté pour la récolte 2016,Spring forage peas planted for the 2016 harvest,peas,3301020600,0,FR_FR
+Pois fourrager de printemps implanté pour la récolte 2016,Pois fourrager de printemps implanté pour la récolte 2016,Spring forage peas planted for the 2016 harvest,whole_crop_peas,3301092200,0,FR_FR
 VD,Vesces commercialisées,Marketed vetches,vetches,3301090305,0,FR_FR
 VE5,Vesce implantee pour la recolte 2015,Vetch planted for the 2015 harvest,vetches,3301090305,0,FR_FR
 VE5,Vesce implantée pour la récolte 2015,Vetch planted for the 2015 harvest,vetches,3301090305,0,FR_FR

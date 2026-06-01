@@ -6,8 +6,8 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,Apples,Apples,apples,3303010200,0,IE
 ,Arable Habitat,Arable Habitat,arable_crops,3301000000,0,IE
 ,Arable Silage,Arable Silage,plants_harvested_green,3301090000,0,IE
-,Arable Silage (Grass),Arable Silage (Grass),plants_harvested_green,3301090000,0,IE
-,Arable Silage (No Grass),Arable Silage (No Grass),arable_crops,3301000000,0,IE
+,Arable Silage (Grass),Arable Silage (Grass),temporary_grass,3301090100,0,IE
+,Arable Silage (No Grass),Arable Silage (No Grass),plants_harvested_green,3301090000,0,IE
 ,Artichoke,Artichoke,artichoke,3301270000,0,IE
 ,Asparagus,Asparagus,asparagus,3301200000,0,IE
 ,Aubergines,Aubergines,aubergine_eggplant,3301260000,0,IE
@@ -61,7 +61,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,Flax,Flax,flax_linen,3301060701,0,IE
 ,Fodder Beet,Fodder Beet,mangelwurzel_fodder_beet,3301290400,0,IE
 ,Foliage,Foliage,other_tree_wood_forest,3306990000,0,IE
-,Forage Rape,Forage Rape,rapeseed_rape,3301060400,0,IE
+,Forage Rape,Forage Rape,forage_rapeseed,3301092300,0,IE
 ,Forestry,Forestry,tree_wood_forest,3306000000,0,IE
 ,Forestry 2009,Forestry 2009,tree_wood_forest,3306000000,0,IE
 ,Forestry 2010,Forestry 2010,tree_wood_forest,3306000000,0,IE
@@ -128,7 +128,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 ,Low Input Permanent Pasture,Low Input Permanent Pasture,pasture_meadow_grassland_grass,3302000000,0,IE
 ,Lucerne,Lucerne,alfalfa_lucerne,3301090301,0,IE
 ,Lupins,Lupins,sweet_lupins,3301020700,0,IE
-,Maize,Maize,grain_maize_corn_popcorn,3301010600,0,IE
+,Maize,Maize,green_silo_maize,3301090400,0,IE
 ,Management of Environmental Fallow (horticulture),Management of Environmental Fallow (horticulture),fallow_land_not_crop,3301110000,0,IE
 ,Management of intensive grassland next to a watercourse,Management of intensive grassland next to a watercourse,pasture_meadow_grassland_grass,3302000000,0,IE
 ,Marrows,Marrows,pumpkin_squash_gourd,3301140400,0,IE

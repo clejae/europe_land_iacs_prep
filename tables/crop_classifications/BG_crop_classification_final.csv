@@ -210,7 +210,7 @@ crop_code,crop_name,EC_trans_n,EC_hcat_n,EC_hcat_c,mixed_crops,country_code
 222040,череши,cherry,cherry_cherries,3303010400,0,BG
 124100,черна мерудия,black marudia,black_cumin,3301061208,0,BG
 251110,Черна топола,Black poplar,populus,3306070000,0,BG
-251820,Черна черница,Black pine,tree_wood_forest,3306000000,0,BG
+251820,Черна черница,mulberry,berries_berry_species,3303020000,0,BG
 251800,ЧЕРНИЦИ,mulberries (general),other_permanent_crops_plantations,3303990000,0,BG
 144020,чесън,garlic,garlic,3301220200,0,BG
 223050,шам-фъстъци,pistachio,pistachio,3303030400,0,BG

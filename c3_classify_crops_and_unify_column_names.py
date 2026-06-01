@@ -215,9 +215,16 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
         dict_field_id = "field_id"
 
         if ("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns):
-            crop_codes = dict(zip(iacs[dict_field_id], iacs["crop_code"]))
-            ## Drop crop_code because otherwise it will occur twice with appendix _x and _y
-            iacs.drop(columns="crop_code", inplace=True)
+
+            if ext in ['.gpkg', '.gdb', '.shp', '.geojson', '.geoparquet']:
+                crop_codes = dict(zip(iacs[dict_field_id], iacs["crop_code"]))
+                ## Drop crop_code because otherwise it will occur twice with appendix _x and _y
+                iacs.drop(columns="crop_code", inplace=True)
+
+            else:
+                crop_codes = dict(zip(iacs.index, iacs["crop_code"]))
+                iacs.drop(columns="crop_code", inplace=True)
+
             crop_codes_bool = True
 
         ## As we are classifying on crop name, we drop duplicates in the classification table that might have arisen
@@ -238,7 +245,10 @@ def unify_column_names_in_vector_data(iacs_pth, file_encoding, col_translate_pth
         ## original crop code column (e.g. BRB 2005, crop nan -->710). To be correct, we assign the code back.
         if crop_codes_bool:
             iacs.drop(columns="crop_code", inplace=True)
-            iacs["crop_code"] = iacs[dict_field_id].map(crop_codes)
+            if ext in ['.gpkg', '.gdb', '.shp', '.geojson', '.geoparquet']:
+                iacs["crop_code"] = iacs[dict_field_id].map(crop_codes)
+            else:
+                iacs["crop_code"] = iacs.index.map(crop_codes)
 
     ## If not merged on crop name, merge on crop code if available
     elif (("crop_code" in iacs.columns) & ("crop_code" in cl_df.columns)) and (classify_on in ["crop_code", "automatic"]):
@@ -384,39 +394,39 @@ def main():
             # 2021: "utf-8", 2022: "utf-8" , "file_year_encoding":  {"2015": "windows-1252", "2016":
             # "windows-1252", "2017": "windows-1252"
         "BG": {"switch": "off", "region_id": "BG", "file_encoding": "utf-8",
-               "ignore_files_descr": "LPIS", "skip_years": list(range(2000, 2023)), "organic_dict": {"N":0, "Y": 1}},
+               "ignore_files_descr": "LPIS", "skip_years": list(range(3000, 3023)), "organic_dict": {"N":0, "Y": 1}},
         "CY": {"switch": "off", "region_id": "CY", "file_encoding": "utf-8", "ignore_files_descr": "Original",
-               "skip_years": [2021, 2022, 2024]},
+               "skip_years": [3021, 3022, 3024]},
         "CZ": {"switch": "on", "region_id": "CZ", "file_encoding": "utf-8", "organic_dict": {1:0, 2:2, 3:2, 4:1, 5:2},
                "ignore_files_descr": "Original", "skip_years": list(range(3016, 3024))},
         "DE/BAV": {"switch": "off", "region_id": "DE_BAV", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "DE/BRB": {"switch": "off", "region_id": "DE_BRB", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "DE/BWB": {"switch": "off", "region_id": "DE_BWB", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "DE/LSA": {"switch": "off", "region_id": "DE_LSA", "file_encoding": "utf-8", "ignore_files_descr": "Original",
-                   "skip_years": [2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2025, 2024]},
+                   }, #"skip_years": [2015, 2016, 2018, 2019, 2020, 2021, 2022, 2023, 2025, 2024]
         "DE/MWP": {"switch": "off", "region_id": "DE_MWP", "file_encoding": "utf-8",
-                   "ignore_files_descr": "TI_Original", "skip_years": range(2016, 3000)},
+                   "ignore_files_descr": "TI_Original", "skip_years": range(2056, 3000)},
         "DE/NRW": {"switch": "off", "region_id": "DE_NRW", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "organic_dict_year": {"2010": {False: 0, True: 1}, "2025": {"false": 0, "true": 1}},
-                   "skip_years": range(2011, 2030)},
+                   "skip_years": range(3011, 3030)},
         "DE/RLP": {"switch": "off", "region_id": "DE_RLP", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "organic_dict_year": {"2010": {False: 0, True: 1}},
-                   "skip_years": range(2011, 3000)},
+                   "skip_years": range(1011, 2000)},
         "DE/SAA": {"switch": "off", "region_id": "DE_SAA", "file_encoding": "utf-8", "ignore_files_descr": "Original",
-                   "classify_on_year_dict": {"2020": "crop_code"}, "skip_years": list(range(2000, 2020)) +
-                                                                                 list(range(2021, 3000))},
+                   "classify_on_year_dict": {"2020": "crop_code"}, "skip_years": list(range(1000, 1020)) +
+                                                                                 list(range(1021, 2000))},
         "DE/SAT": {"switch": "off", "region_id": "DE_SAT", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "DE/THU": {"switch": "off", "region_id": "DE_THU", "file_encoding": "utf-8", "ignore_files_descr": "Original",
-                   "skip_years": range(2015, 2030)},
+                   "skip_years": range(1015, 1030)},
         "DK": {"switch": "off", "region_id": "DK", "file_encoding": "ISO-8859-1", "ignore_files_descr": "original",
-               "skip_years": range(2010, 2025)},
+               "skip_years": range(1010, 1025)},
         "EE": {"switch": "off", "region_id": "EE", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "EL": {"switch": "off", "region_id": "EL", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "FI": {"switch": "off", "region_id": "FI", "file_encoding": "utf-8", "remove_geometry_duplicates": True},
         "FR/FR": {"switch": "off", "region_id": "FR_FR", "file_encoding": "utf-8", "ignore_files_descr": "Original",
-                  "classify_on": "crop_code", "skip_years": range(2015, 2024)},
+                  "classify_on": "crop_code", "skip_years": range(3015, 3024)},
         "IE": {"switch": "off", "region_id": "IE", "file_encoding": "utf-8",
-               "ignore_files_descr": "Original", "organic_dict": {"Y": 1, "N": 0}, "skip_years": range(2015, 2024)},
+               "ignore_files_descr": "Original", "organic_dict": {"Y": 1, "N": 0}, "skip_years": range(3015, 3024)},
         "HR": {"switch": "off", "region_id": "HR", "file_encoding": "utf-8", "pre_transformation_crs": 3765},
         "HU": {"switch": "off", "region_id": "HU", "file_encoding": "utf-8"},
         "IT/EMR": {"switch": "off", "region_id": "IT_EMR", "file_encoding": "utf-8", #"skip_years": range(2016, 2021),
@@ -427,58 +437,58 @@ def main():
                                          "2024": {"1": 0, "2": 2, "3": 1, "4": 0}},
                    "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "IT_crop_classification_final.xlsx")},
+                                                  "IT_crop_classification_final.csv")},
         "IT/MAR": {"switch": "off", "region_id": "IT_MAR", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "IT_crop_classification_final.xlsx")},
+                                                  "IT_crop_classification_final.csv")},
         "IT/TOS": {"switch": "off", "region_id": "IT_TOS", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "IT_crop_classification_final.xlsx")},
+                                                  "IT_crop_classification_final.csv")},
         # "LT": {"switch": "off", "region_id": "LT", "file_encoding": "ISO-8859-1", "skip_years":[2024]},
         "LV": {"switch": "off", "region_id": "LV", "file_encoding": "utf-8", "ignore_files_descr": "Original",
-               "skip_years": range(0, 2024)}, #, "skip_years": range(2019, 2024)
+               "skip_years": range(0, 1024)}, #, "skip_years": range(2019, 2024)
         "NL": {"switch": "off", "region_id": "NL", "file_encoding": "utf-8",
                "organic_dict": {"01": 1, "02": 2, "03": 2, "04": 2},
-               "ignore_files_descr": "Original", "skip_years": list(range(0, 2024)) + [2025]},
+               "ignore_files_descr": "Original", "skip_years": list(range(0, 1024)) + [1025]},
         "PL": {"switch": "off", "region_id": "PL", "file_encoding": "utf-8", "ignore_files_descr": "Original"},
         "PT/PT": {"switch": "off", "region_id": "PT_PT", "file_encoding": "utf-8", "ignore_files_descr": "Original",
-                  "skip_years": list(range(2025))},
+                  "skip_years": list(range(1025))},
         "PT/ALE": {"switch": "off", "region_id": "PT_ALE", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/ALG": {"switch": "off", "region_id": "PT_ALG", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/AML": {"switch": "off", "region_id": "PT_AML", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/CET": {"switch": "off", "region_id": "PT_CET", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/CEN": {"switch": "off", "region_id": "PT_CEN", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/CES": {"switch": "off", "region_id": "PT_CES", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/NOR": {"switch": "off", "region_id": "PT_NOR", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/NON": {"switch": "off", "region_id": "PT_NON", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/NOS": {"switch": "off", "region_id": "PT_NOS", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "RO": {"switch": "off", "region_id": "RO", "file_encoding": "utf-8"},
         "SE": {"switch": "off", "region_id": "SE", "file_encoding": "utf-8", "ignore_files_descr": "Original",
                "skip_years": range(224)}, ## With applicant ID
-        "SE/NOAPPL": {"switch": "off", "region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
+        ## "SE/NOAPPL": {"switch": "off", "region_id": "SE_NOAPPL", "file_encoding": "ISO-8859-1"}, ## Without applicant ID
         "SI": {"switch": "off", "region_id": "SI", "file_encoding": "utf-8", "organic_dict": {"E": 1, "P": 2},
-               "skip_years": list(range(2024)) + [2025], "file_year_encoding": {"2025": "cp1250"},
+               "skip_years": list(range(1024)) + [1025], "file_year_encoding": {"2025": "cp1250"},
                "ignore_files_descr": "KMRS_2024"},
         "SK": {"switch": "off", "region_id": "SK", "file_encoding": "utf-8", "ignore_files_descr": "no_crop",
-               "skip_years": range(2025)},
+               "skip_years": range(1025)},
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
@@ -496,7 +506,7 @@ def main():
                                            "FR_SUBREGIONS_crop_classification_final.csv"),
             "col_transl_descr_overwrite": "FR",
             "ignore_files_descr": "Original",
-            "skip_years": [2007, 2008, 2009, 2010, 2011, 2013, 2014]
+            #"skip_years": [2007, 2008, 2009, 2010, 2011, 2013, 2014]
             }
 
     ## For spain create a dictionary in a loop, because of the many subregions
@@ -688,7 +698,7 @@ def main():
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
             "organic_dict_year": {"2010": {False: 0, True: 1}},
-            "skip_years": range(2011, 3000)},
+            "skip_years": range(3011, 4000)},
         "EL": {
             "switch": "off",
             "region_id": "EL",
@@ -710,14 +720,14 @@ def main():
             "region_id": "IT_EMR",
             "file_encoding": "utf-8",
             "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                           "IT_crop_classification_final.xlsx")
+                                           "IT_crop_classification_final.csv")
         },
         "IT/TOS": {
             "switch": "off",
             "region_id": "IT_TOS",
             "file_encoding": "utf-8",
             "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                           "IT_crop_classification_final.xlsx")
+                                           "IT_crop_classification_final.csv")
         },
         "PT/PT": {
             "switch": "off",
@@ -729,63 +739,63 @@ def main():
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/ALG": {
             "switch": "off",
             "region_id": "PT_ALG",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/AML": {
             "switch": "off",
             "region_id": "PT_AML",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/CET": {
             "switch": "off",
             "region_id": "PT_CET",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/CEN": {
             "switch": "off",
             "region_id": "PT_CEN",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/CES": {
             "switch": "off",
             "region_id": "PT_CES",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/NOR": {
             "switch": "off",
             "region_id": "PT_NOR",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/NON": {
             "switch": "off",
             "region_id": "PT_NON",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")},
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")},
         "PT/NOS": {
             "switch": "off",
             "region_id": "PT_NOS",
             "file_encoding": "utf-8",
             "ignore_files_descr": "Original",
                    "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
-                                                  "PT_SUBREGIONS_crop_classification_final.xlsx")}
+                                                  "PT_SUBREGIONS_crop_classification_final.csv")}
     }
 
     ## For france create a dictionary in a loop, because of the many subregions
@@ -802,7 +812,7 @@ def main():
             "crop_class_pth": os.path.join("data", "tables", "crop_classifications",
                                            "FR_SUBREGIONS_crop_classification_final.csv"),
             "col_transl_descr_overwrite": "FR",
-            "skip_years": [2007, 2008, 2009, 2010, 2011, 2013, 2014],
+            #"skip_years": [2007, 2008, 2009, 2010, 2011, 2013, 2014],
             "ignore_files_descr": "Original"
             }
 
